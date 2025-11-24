@@ -1,4 +1,4 @@
-import { initStockfish, sendCommand } from './stockfishWorker';
+import { initStockfish, sendCommand, waitForReady } from './stockfishWorker';
 
 let isStockfishReady = false;
 
@@ -28,16 +28,22 @@ export const getEngineMove = async (fen: string, difficulty: number): Promise<st
     
     // Set UCI options
     await sendCommand('uci');
+    await waitForReady();
     await sendCommand(`setoption name Skill Level value ${skillLevel}`);
+    await waitForReady();
     
     // Set position
     await sendCommand(`position fen ${fen}`);
+    await waitForReady();
     
     // Calculate move time based on difficulty (easier = faster, harder = more time to think)
     const moveTime = 100 + (difficulty * 100); // 200ms to 1100ms
     
     // Request best move
-    const bestMove = await sendCommand(`go movetime ${moveTime}`);
+    const bestMove = await sendCommand(`go movetime ${moveTime}`, true);
+    if (typeof bestMove !== 'string') {
+      throw new Error('No move received from engine');
+    }
     
     return bestMove;
   } catch (error) {

@@ -1,6 +1,7 @@
 // Stockfish Web Worker setup
 let stockfishInstance: Worker | null = null;
 let messageQueue: Array<{ resolve: (value: string) => void; reject: (reason: Error) => void }> = [];
+let readyQueue: Array<{ resolve: () => void; reject: (reason: Error) => void; timer: ReturnType<typeof setTimeout> }> = [];
 let isInitialized = false;
 
 export const initStockfish = (): Promise<void> => {
@@ -11,47 +12,29 @@ export const initStockfish = (): Promise<void> => {
     }
 
     try {
-      // Use CDN-hosted Stockfish WASM
-      const workerCode = `
-        importScripts('https://cdn.jsdelivr.net/npm/stockfish@16.0.0/stockfish.js');
-        
-        let stockfish = null;
-        
-        self.onmessage = function(e) {
-          const { type, data } = e.data;
-          
-          if (type === 'init') {
-            if (typeof Stockfish === 'function') {
-              stockfish = Stockfish();
-              stockfish.onmessage = function(line) {
-                self.postMessage({ type: 'output', data: line });
-              };
-              self.postMessage({ type: 'ready' });
-            }
-          } else if (type === 'command' && stockfish) {
-            stockfish.postMessage(data);
-          }
-        };
-      `;
-
-      const blob = new Blob([workerCode], { type: 'application/javascript' });
-      const workerUrl = URL.createObjectURL(blob);
-      stockfishInstance = new Worker(workerUrl);
+      // Use the single-thread engine bundle directly as a worker; it already handles UCI messages
+      stockfishInstance = new Worker('/stockfish/stockfish-nnue-16-single.js');
 
       stockfishInstance.onmessage = (e) => {
-        const { type, data } = e.data;
-        
-        if (type === 'ready') {
+        const data = typeof e.data === 'string' ? e.data : '';
+
+        // First message means the engine is alive
+        if (!isInitialized) {
           isInitialized = true;
           resolve();
-        } else if (type === 'output') {
-          // Handle bestmove responses
-          if (data.startsWith('bestmove')) {
-            const match = data.match(/bestmove\s+(\S+)/);
-            if (match && messageQueue.length > 0) {
-              const { resolve } = messageQueue.shift()!;
-              resolve(match[1]);
-            }
+        }
+
+        if ((data.includes('readyok') || data.includes('uciok')) && readyQueue.length > 0) {
+          const { resolve, timer } = readyQueue.shift()!;
+          clearTimeout(timer);
+          resolve();
+        }
+
+        if (data.startsWith('bestmove')) {
+          const match = data.match(/bestmove\\s+(\\S+)/);
+          if (match && messageQueue.length > 0) {
+            const { resolve } = messageQueue.shift()!;
+            resolve(match[1]);
           }
         }
       };
@@ -60,10 +43,6 @@ export const initStockfish = (): Promise<void> => {
         console.error('Stockfish worker error:', error);
         reject(new Error('Failed to initialize Stockfish'));
       };
-
-      // Initialize the worker
-      stockfishInstance.postMessage({ type: 'init' });
-
     } catch (error) {
       console.error('Error creating Stockfish worker:', error);
       reject(error as Error);
@@ -71,17 +50,25 @@ export const initStockfish = (): Promise<void> => {
   });
 };
 
-export const sendCommand = (command: string): Promise<string> => {
+export const sendCommand = (command: string, expectBestMove: boolean = false): Promise<string | void> => {
   return new Promise((resolve, reject) => {
     if (!stockfishInstance || !isInitialized) {
       reject(new Error('Stockfish not initialized'));
       return;
     }
 
-    messageQueue.push({ resolve, reject });
-    stockfishInstance.postMessage({ type: 'command', data: command });
+    // The stockfish.js worker expects plain strings, not wrapped objects
+    if (!expectBestMove) {
+      stockfishInstance.postMessage(command);
+      resolve();
+      return;
+    }
 
-    // Timeout after 10 seconds
+    // Commands expecting a best move (e.g., "go") are queued and resolved on response
+    messageQueue.push({ resolve, reject });
+    stockfishInstance.postMessage(command);
+
+    // Timeout after 10 seconds to avoid hanging if the engine fails to respond
     setTimeout(() => {
       const index = messageQueue.findIndex(item => item.resolve === resolve);
       if (index !== -1) {
@@ -98,5 +85,24 @@ export const terminateStockfish = () => {
     stockfishInstance = null;
     isInitialized = false;
     messageQueue = [];
+    readyQueue = [];
   }
+};
+
+export const waitForReady = (): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    if (!stockfishInstance || !isInitialized) {
+      reject(new Error('Stockfish not initialized'));
+      return;
+    }
+    const timer = setTimeout(() => {
+      const index = readyQueue.findIndex(item => item.resolve === resolve);
+      if (index !== -1) {
+        readyQueue.splice(index, 1);
+      }
+      reject(new Error('Stockfish readyok timeout'));
+    }, 5000);
+    readyQueue.push({ resolve, reject, timer });
+    stockfishInstance.postMessage('isready');
+  });
 };

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useGameState } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
 import { GameConfigPanel } from '@/components/GameConfigPanel';
@@ -8,12 +8,28 @@ import { MoveList } from '@/components/MoveList';
 import { StatusBar } from '@/components/StatusBar';
 import { InstructionsBox } from '@/components/InstructionsBox';
 import { useToast } from '@/hooks/use-toast';
+import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
+import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
 
 const Index = () => {
   const { gameState, startNewGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus } = useGameState();
   const [isEngineThinking, setIsEngineThinking] = useState(false);
   const [moveError, setMoveError] = useState<string>('');
   const { toast } = useToast();
+
+  useEffect(() => {
+    if (import.meta.env.DEV) {
+      // Expose a manual diagnostic helper in the console: await window.runEngineSelfTest()
+      window.runEngineSelfTest = runEngineSelfTest;
+      window.runEngineDebug = runEngineDebug;
+    }
+    return () => {
+      if (import.meta.env.DEV) {
+        delete window.runEngineSelfTest;
+        delete window.runEngineDebug;
+      }
+    };
+  }, []);
 
   const handleEngineMove = async () => {
     if (!gameState || gameState.isOver) return;
