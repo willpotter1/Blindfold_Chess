@@ -12,7 +12,7 @@ import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
 
 const Index = () => {
-  const { gameState, startNewGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus } = useGameState();
+  const { gameState, startNewGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState } = useGameState();
   const [isEngineThinking, setIsEngineThinking] = useState(false);
   const [moveError, setMoveError] = useState<string>('');
   const { toast } = useToast();
@@ -32,11 +32,12 @@ const Index = () => {
   }, []);
 
   const handleEngineMove = async () => {
-    if (!gameState || gameState.isOver) return;
+    const snapshot = getCurrentState();
+    if (!snapshot || snapshot.isOver) return;
 
     setIsEngineThinking(true);
     try {
-      const engineMoveUci = await getEngineMove(gameState.fen, gameState.difficulty);
+      const engineMoveUci = await getEngineMove(snapshot.fen, snapshot.difficulty);
       const success = makeMoveUci(engineMoveUci);
       
       if (!success) {
@@ -61,7 +62,7 @@ const Index = () => {
 
   const handleStartGame = async (playerColor: 'white' | 'black', difficulty: number, revealEvery: number) => {
     setMoveError('');
-    const newGame = startNewGame(playerColor, difficulty, revealEvery);
+    startNewGame(playerColor, difficulty, revealEvery);
 
     // If player chose black, engine moves first
     if (playerColor === 'black') {
@@ -83,7 +84,8 @@ const Index = () => {
     // After player's move, let engine respond
     // Use setTimeout to ensure state updates first
     setTimeout(async () => {
-      if (!gameState?.isOver) {
+      const snapshot = getCurrentState();
+      if (!snapshot?.isOver) {
         await handleEngineMove();
       }
     }, 100);

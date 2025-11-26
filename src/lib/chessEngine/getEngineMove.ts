@@ -17,6 +17,7 @@ const mapDifficultyToSkillLevel = (difficulty: number): number => {
  */
 export const getEngineMove = async (fen: string, difficulty: number): Promise<string> => {
   try {
+    console.log('[engine] request', { fen, difficulty });
     // Initialize Stockfish if not already done
     if (!isStockfishReady) {
       await initStockfish();
@@ -45,6 +46,7 @@ export const getEngineMove = async (fen: string, difficulty: number): Promise<st
       throw new Error('No move received from engine');
     }
     
+    console.log('[engine] bestmove', bestMove);
     return bestMove;
   } catch (error) {
     console.error('Error getting engine move:', error);

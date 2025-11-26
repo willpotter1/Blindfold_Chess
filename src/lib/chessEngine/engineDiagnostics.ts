@@ -1,10 +1,13 @@
-import { initStockfish, sendCommand, terminateStockfish } from './stockfishWorker';
+import { initStockfish, sendCommand, terminateStockfish, waitForReady } from './stockfishWorker';
 
 export type EngineSelfTestStep =
   | 'init'
   | 'uci'
+  | 'uci-ready'
   | 'setoption'
+  | 'setoption-ready'
   | 'position'
+  | 'position-ready'
   | 'go';
 
 export interface EngineSelfTestResult {
@@ -43,8 +46,11 @@ export const runEngineSelfTest = async (): Promise<EngineSelfTestResult> => {
 
     await recordStep('init', () => initStockfish());
     await recordStep('uci', () => sendCommand('uci'));
+    await recordStep('uci-ready', () => waitForReady());
     await recordStep('setoption', () => sendCommand('setoption name Skill Level value 5'));
+    await recordStep('setoption-ready', () => waitForReady());
     await recordStep('position', () => sendCommand('position startpos'));
+    await recordStep('position-ready', () => waitForReady());
 
     await recordStep('go', async () => {
       const move = await sendCommand('go movetime 200', true);

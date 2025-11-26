@@ -16,6 +16,7 @@ export const initStockfish = (): Promise<void> => {
       stockfishInstance = new Worker('/stockfish/stockfish-nnue-16-single.js');
 
       stockfishInstance.onmessage = (e) => {
+        console.log('[sf msg]', e.data);
         const data = typeof e.data === 'string' ? e.data : '';
 
         // First message means the engine is alive
@@ -31,7 +32,7 @@ export const initStockfish = (): Promise<void> => {
         }
 
         if (data.startsWith('bestmove')) {
-          const match = data.match(/bestmove\\s+(\\S+)/);
+          const match = data.match(/bestmove\s+(\S+)/);
           if (match && messageQueue.length > 0) {
             const { resolve } = messageQueue.shift()!;
             resolve(match[1]);
@@ -58,6 +59,7 @@ export const sendCommand = (command: string, expectBestMove: boolean = false): P
     }
 
     // The stockfish.js worker expects plain strings, not wrapped objects
+    console.log('[sf send]', command, 'expectBestMove=', expectBestMove);
     if (!expectBestMove) {
       stockfishInstance.postMessage(command);
       resolve();

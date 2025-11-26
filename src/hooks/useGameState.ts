@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { Chess } from 'chess.js';
 
 export type GameState = {
@@ -17,6 +17,8 @@ export type GameState = {
 export const useGameState = () => {
   const [game, setGame] = useState<Chess | null>(null);
   const [gameState, setGameState] = useState<GameState | null>(null);
+  const gameRef = useRef<Chess | null>(null);
+  const gameStateRef = useRef<GameState | null>(null);
 
   const startNewGame = useCallback((
     playerColor: 'white' | 'black',
@@ -25,8 +27,9 @@ export const useGameState = () => {
   ) => {
     const newGame = new Chess();
     
+    gameRef.current = newGame;
     setGame(newGame);
-    setGameState({
+    const initialState: GameState = {
       fen: newGame.fen(),
       moves: [],
       halfMoveCount: 0,
@@ -37,59 +40,72 @@ export const useGameState = () => {
       result: null,
       isCheck: newGame.inCheck(),
       turnColor: newGame.turn() === 'w' ? 'white' : 'black',
-    });
+    };
+    gameStateRef.current = initialState;
+    setGameState(initialState);
 
     return newGame;
   }, []);
 
   const makeMove = useCallback((san: string): { success: boolean; error?: string } => {
-    if (!game || !gameState) {
+    const currentGame = gameRef.current;
+    const currentState = gameStateRef.current;
+
+    if (!currentGame || !currentState) {
       return { success: false, error: 'Game not initialized' };
     }
 
     try {
       // Try to make the move - chess.js will throw on invalid moves
-      const move = game.move(san);
+      const move = currentGame.move(san);
       
       if (!move) {
         return { success: false, error: 'Illegal move' };
       }
 
       // Update game state
-      const newMoves = [...gameState.moves, move.san];
-      const newHalfMoveCount = gameState.halfMoveCount + 1;
+      const newMoves = [...currentState.moves, move.san];
+      const newHalfMoveCount = currentState.halfMoveCount + 1;
       
       // Check game status
-      const isOver = game.isGameOver();
+      const isOver = currentGame.isGameOver();
       let result: '1-0' | '0-1' | '1/2-1/2' | null = null;
       
       if (isOver) {
-        if (game.isCheckmate()) {
-          result = game.turn() === 'w' ? '0-1' : '1-0';
+        if (currentGame.isCheckmate()) {
+          result = currentGame.turn() === 'w' ? '0-1' : '1-0';
         } else {
           result = '1/2-1/2';
         }
       }
 
-      setGameState({
-        ...gameState,
-        fen: game.fen(),
-        moves: newMoves,
-        halfMoveCount: newHalfMoveCount,
-        isOver,
-        result,
-        isCheck: game.inCheck(),
-        turnColor: game.turn() === 'w' ? 'white' : 'black',
+      setGameState((prev) => {
+        if (!prev) return prev;
+        const nextState: GameState = {
+          ...prev,
+          fen: currentGame.fen(),
+          moves: newMoves,
+          halfMoveCount: newHalfMoveCount,
+          isOver,
+          result,
+          isCheck: currentGame.inCheck(),
+          turnColor: currentGame.turn() === 'w' ? 'white' : 'black',
+        };
+        gameStateRef.current = nextState;
+        return nextState;
       });
 
       return { success: true };
     } catch (error) {
       return { success: false, error: 'Invalid move format' };
     }
-  }, [game, gameState]);
+  }, []);
 
   const makeMoveUci = useCallback((uciMove: string): boolean => {
-    if (!game || !gameState) {
+    const currentGame = gameRef.current;
+    const currentState = gameStateRef.current;
+
+    if (!currentGame || !currentState) {
       return false;
     }
 
@@ -99,37 +115,42 @@ export const useGameState = () => {
       const to = uciMove.substring(2, 4);
       const promotion = uciMove.length > 4 ? uciMove[4] : undefined;
 
-      const move = game.move({ from, to, promotion });
+      const move = currentGame.move({ from, to, promotion });
       
       if (!move) {
         return false;
       }
 
       // Update game state
-      const newMoves = [...gameState.moves, move.san];
-      const newHalfMoveCount = gameState.halfMoveCount + 1;
+      const newMoves = [...currentState.moves, move.san];
+      const newHalfMoveCount = currentState.halfMoveCount + 1;
       
       // Check game status
-      const isOver = game.isGameOver();
+      const isOver = currentGame.isGameOver();
       let result: '1-0' | '0-1' | '1/2-1/2' | null = null;
       
       if (isOver) {
-        if (game.isCheckmate()) {
-          result = game.turn() === 'w' ? '0-1' : '1-0';
+        if (currentGame.isCheckmate()) {
+          result = currentGame.turn() === 'w' ? '0-1' : '1-0';
         } else {
           result = '1/2-1/2';
         }
       }
 
-      setGameState({
-        ...gameState,
-        fen: game.fen(),
-        moves: newMoves,
-        halfMoveCount: newHalfMoveCount,
-        isOver,
-        result,
-        isCheck: game.inCheck(),
-        turnColor: game.turn() === 'w' ? 'white' : 'black',
+      setGameState((prev) => {
+        if (!prev) return prev;
+        const nextState: GameState = {
+          ...prev,
+          fen: currentGame.fen(),
+          moves: newMoves,
+          halfMoveCount: newHalfMoveCount,
+          isOver,
+          result,
+          isCheck: currentGame.inCheck(),
+          turnColor: currentGame.turn() === 'w' ? 'white' : 'black',
+        };
+        gameStateRef.current = nextState;
+        return nextState;
       });
 
       return true;
@@ -137,7 +158,7 @@ export const useGameState = () => {
       console.error('Error making UCI move:', error);
       return false;
     }
-  }, [game, gameState]);
+  }, []);
 
   const shouldShowBoard = useCallback((): boolean => {
     if (!gameState) return false;
@@ -175,5 +196,6 @@ export const useGameState = () => {
     makeMoveUci,
     shouldShowBoard,
     getGameStatus,
+    getCurrentState: () => gameStateRef.current,
   };
 };
