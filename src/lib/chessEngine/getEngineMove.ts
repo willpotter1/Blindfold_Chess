@@ -3,10 +3,14 @@ import { initStockfish, sendCommand, waitForReady } from './stockfishWorker';
 let isStockfishReady = false;
 
 /**
- * Maps user difficulty (1-10) to Stockfish skill level (0-20)
+ * Maps user difficulty (1-10) to an Elo value within Stockfish's UCI_Elo range.
+ * Engine supports roughly 1320–3190; we clamp to a sensible upper bound.
  */
-const mapDifficultyToSkillLevel = (difficulty: number): number => {
-  return Math.round((difficulty - 1) * (20 / 9));
+const mapDifficultyToElo = (difficulty: number): number => {
+  const minElo = 1320;
+  const maxElo = 2800;
+  const raw = minElo + ((difficulty - 1) * (maxElo - minElo)) / 9;
+  return Math.round(Math.max(minElo, Math.min(maxElo, raw)));
 };
 
 /**
@@ -24,13 +28,18 @@ export const getEngineMove = async (fen: string, difficulty: number): Promise<st
       isStockfishReady = true;
     }
 
-    // Configure Stockfish based on difficulty
-    const skillLevel = mapDifficultyToSkillLevel(difficulty);
+    // Configure Stockfish based on Elo difficulty
+    const targetElo = mapDifficultyToElo(difficulty);
     
     // Set UCI options
     await sendCommand('uci');
     await waitForReady();
-    await sendCommand(`setoption name Skill Level value ${skillLevel}`);
+    await sendCommand('setoption name UCI_LimitStrength value true');
+    await waitForReady();
+    await sendCommand(`setoption name UCI_Elo value ${targetElo}`);
+    await waitForReady();
+    // Keep Skill Level maxed so Elo cap is the main limiter
+    await sendCommand('setoption name Skill Level value 20');
     await waitForReady();
     
     // Set position

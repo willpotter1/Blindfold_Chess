@@ -5,6 +5,7 @@ export type GameState = {
   fen: string;
   moves: string[];
   halfMoveCount: number;
+  playerMoveCount: number;
   playerColor: 'white' | 'black';
   difficulty: number;
   revealEvery: number;
@@ -33,6 +34,7 @@ export const useGameState = () => {
       fen: newGame.fen(),
       moves: [],
       halfMoveCount: 0,
+      playerMoveCount: 0,
       playerColor,
       difficulty,
       revealEvery,
@@ -66,6 +68,7 @@ export const useGameState = () => {
       // Update game state
       const newMoves = [...currentState.moves, move.san];
       const newHalfMoveCount = currentState.halfMoveCount + 1;
+      const newPlayerMoveCount = currentState.playerMoveCount + 1;
       
       // Check game status
       const isOver = currentGame.isGameOver();
@@ -86,6 +89,7 @@ export const useGameState = () => {
           fen: currentGame.fen(),
           moves: newMoves,
           halfMoveCount: newHalfMoveCount,
+          playerMoveCount: newPlayerMoveCount,
           isOver,
           result,
           isCheck: currentGame.inCheck(),
@@ -124,6 +128,7 @@ export const useGameState = () => {
       // Update game state
       const newMoves = [...currentState.moves, move.san];
       const newHalfMoveCount = currentState.halfMoveCount + 1;
+      const newPlayerMoveCount = currentState.playerMoveCount;
       
       // Check game status
       const isOver = currentGame.isGameOver();
@@ -144,6 +149,7 @@ export const useGameState = () => {
           fen: currentGame.fen(),
           moves: newMoves,
           halfMoveCount: newHalfMoveCount,
+          playerMoveCount: newPlayerMoveCount,
           isOver,
           result,
           isCheck: currentGame.inCheck(),
@@ -162,7 +168,8 @@ export const useGameState = () => {
 
   const shouldShowBoard = useCallback((): boolean => {
     if (!gameState) return false;
-    return (gameState.halfMoveCount % gameState.revealEvery === 0) || gameState.isOver;
+    // Reveal based on the number of moves the player has made (not total plies)
+    return (gameState.playerMoveCount % gameState.revealEvery === 0) || gameState.isOver;
   }, [gameState]);
 
   const getGameStatus = useCallback((): string => {

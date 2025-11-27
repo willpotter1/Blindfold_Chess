@@ -16,6 +16,13 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
   const [difficulty, setDifficulty] = useState<number>(5);
   const [revealEvery, setRevealEvery] = useState<number>(6);
 
+  const mapDifficultyToElo = (value: number): number => {
+    const minElo = 1320;
+    const maxElo = 2800;
+    const raw = minElo + ((value - 1) * (maxElo - minElo)) / 9;
+    return Math.round(Math.max(minElo, Math.min(maxElo, raw)));
+  };
+
   const handleStartGame = () => {
     if (revealEvery < 1) {
       alert('Reveal frequency must be at least 1');
@@ -48,8 +55,8 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
 
         <div className="space-y-2">
           <div className="flex justify-between">
-            <Label htmlFor="difficulty">Engine Difficulty</Label>
-            <span className="text-sm text-muted-foreground">{difficulty}/10</span>
+            <Label htmlFor="difficulty">Engine Elo</Label>
+            <span className="text-sm text-muted-foreground">{mapDifficultyToElo(difficulty)}</span>
           </div>
           <Slider
             id="difficulty"
@@ -61,7 +68,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
             className="w-full"
           />
           <p className="text-xs text-muted-foreground">
-            1 = Beginner, 10 = Expert
+            Scaled to UCI_Elo (approx 1320–2800)
           </p>
         </div>
 
@@ -76,7 +83,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
             placeholder="Show board every N moves"
           />
           <p className="text-xs text-muted-foreground">
-            The board will be revealed every N half-moves (plies)
+            The board will be revealed every N of your moves
           </p>
         </div>
 

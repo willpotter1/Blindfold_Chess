@@ -5,20 +5,20 @@ interface BlindfoldBoardProps {
   isVisible: boolean;
 }
 
-// Wikimedia chess set (open source, stable URLs)
+// Locally served piece sprites (copied to /public/pieces)
 const pieceSprites: Record<string, string> = {
-  wk: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Chess_klt60.png',
-  wq: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Chess_qlt60.png',
-  wr: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt60.png',
-  wb: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt60.png',
-  wn: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt60.png',
-  wp: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt60.png',
-  bk: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Chess_kdt60.png',
-  bq: 'https://upload.wikimedia.org/wikipedia/commons/4/47/Chess_qdt60.png',
-  br: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Chess_rdt60.png',
-  bb: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt60.png',
-  bn: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Chess_ndt60.png',
-  bp: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt60.png',
+  wk: '/pieces/wK.svg',
+  wq: '/pieces/wQ.svg',
+  wr: '/pieces/wR.svg',
+  wb: '/pieces/wB.svg',
+  wn: '/pieces/wN.svg',
+  wp: '/pieces/wP.svg',
+  bk: '/pieces/bK.svg',
+  bq: '/pieces/bQ.svg',
+  br: '/pieces/bR.svg',
+  bb: '/pieces/bB.svg',
+  bn: '/pieces/bN.svg',
+  bp: '/pieces/bP.svg',
 };
 
 export const BlindfoldBoard = ({ fen, isVisible }: BlindfoldBoardProps) => {
