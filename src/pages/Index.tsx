@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Chess } from 'chess.js';
 import { useGameState } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
 import { GameConfigPanel } from '@/components/GameConfigPanel';
@@ -91,10 +92,45 @@ const Index = () => {
     }, 100);
   };
 
-  const isPlayerTurn = gameState && 
-    gameState.turnColor === gameState.playerColor && 
-    !gameState.isOver && 
-    !isEngineThinking;
+  const handleBoardMove = async (from: string, to: string): Promise<boolean> => {
+    if (!gameState || isEngineThinking || gameState.isOver) return false;
+
+    setMoveError('');
+    const chess = new Chess(gameState.fen);
+    const legalFromMoves = chess.moves({ square: from, verbose: true });
+    const matchingMoves = legalFromMoves.filter((move) => move.to === to);
+
+    if (matchingMoves.length === 0) {
+      setMoveError('Invalid move');
+      return false;
+    }
+
+    const selectedMove = matchingMoves.find((move) => move.promotion === 'q') || matchingMoves[0];
+    const promotionSuffix = selectedMove.promotion ?? '';
+    const uciMove = `${from}${to}${promotionSuffix}`;
+    const success = makeMoveUci(uciMove);
+
+    if (!success) {
+      setMoveError('Invalid move');
+      return false;
+    }
+
+    setTimeout(async () => {
+      const snapshot = getCurrentState();
+      if (!snapshot?.isOver) {
+        await handleEngineMove();
+      }
+    }, 100);
+
+    return true;
+  };
+
+  const isPlayerTurn = Boolean(
+    gameState &&
+    gameState.turnColor === gameState.playerColor &&
+    !gameState.isOver &&
+    !isEngineThinking
+  );
 
   return (
     <div className="min-h-screen bg-background">
@@ -126,6 +162,8 @@ const Index = () => {
                 <BlindfoldBoard 
                   fen={gameState.fen} 
                   isVisible={shouldShowBoard()}
+                  isInteractive={isPlayerTurn}
+                  onMove={handleBoardMove}
                 />
                 <StatusBar 
                   status={getGameStatus()}

@@ -1,8 +1,11 @@
+import { useEffect, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
 
 interface BlindfoldBoardProps {
   fen: string;
   isVisible: boolean;
+  isInteractive?: boolean;
+  onMove?: (from: string, to: string) => Promise<boolean> | boolean;
 }
 
 // Locally served piece sprites (copied to /public/pieces)
@@ -21,13 +24,59 @@ const pieceSprites: Record<string, string> = {
   bp: '/pieces/bP.svg',
 };
 
-export const BlindfoldBoard = ({ fen, isVisible }: BlindfoldBoardProps) => {
+export const BlindfoldBoard = ({ fen, isVisible, isInteractive = false, onMove }: BlindfoldBoardProps) => {
+  const [selectedSquare, setSelectedSquare] = useState<string | null>(null);
+  const boardRef = useRef<HTMLDivElement>(null);
   const chess = new Chess(fen);
   const board = chess.board();
   const showPieces = isVisible;
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (boardRef.current && !boardRef.current.contains(event.target as Node)) {
+        setSelectedSquare(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, []);
+
+  // Clear selection any time the board position changes
+  useEffect(() => {
+    setSelectedSquare(null);
+  }, [fen]);
+
+  const handleSquareClick = async (square: string) => {
+    if (!onMove || !isInteractive) return;
+
+    if (!selectedSquare) {
+      setSelectedSquare(square);
+      return;
+    }
+
+    // Clicking the same square clears the selection
+    if (square === selectedSquare) {
+      setSelectedSquare(null);
+      return;
+    }
+
+    const moveResult = await onMove(selectedSquare, square);
+    if (moveResult) {
+      setSelectedSquare(null);
+    } else {
+      // Keep the selection so the player can try another destination
+      setSelectedSquare(selectedSquare);
+    }
+  };
+
   return (
-    <div className="inline-block w-full max-w-[520px]">
+    <div className="inline-block w-full max-w-[520px]" ref={boardRef}>
       <div
         className="rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-3 border border-slate-700 w-full aspect-square"
       >
@@ -39,6 +88,8 @@ export const BlindfoldBoard = ({ fen, isVisible }: BlindfoldBoardProps) => {
               const pieceSrc = showPieces && spriteKey ? pieceSprites[spriteKey] : null;
               const file = String.fromCharCode(97 + colIndex); // a-h
               const rank = 8 - rowIndex; // 8-1
+              const algebraic = `${file}${rank}`;
+              const isSelected = selectedSquare === algebraic;
 
               return (
                 <div
@@ -47,7 +98,10 @@ export const BlindfoldBoard = ({ fen, isVisible }: BlindfoldBoardProps) => {
                     relative aspect-square flex items-center justify-center overflow-hidden
                     ${isLight ? 'bg-amber-200' : 'bg-emerald-700'}
                     transition-colors duration-150
+                    ${isSelected ? 'ring-4 ring-sky-400/70 ring-inset' : ''}
+                    ${isInteractive ? 'cursor-pointer' : 'cursor-default'}
                   `}
+                  onClick={() => handleSquareClick(algebraic)}
                 >
                   {pieceSrc && (
                     <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[76%] h-[76%] grid place-items-center">
