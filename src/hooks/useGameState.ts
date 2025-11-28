@@ -15,6 +15,29 @@ export type GameState = {
   turnColor: 'white' | 'black';
 };
 
+const normalizeSan = (input: string): string => {
+  // Remove whitespace and normalize zeros to letter o (common in castling typos).
+  let san = input.trim().replace(/\s+/g, '').replace(/0/g, 'o');
+
+  // Handle castling in any case (e.g., o-o, O-O-O+, 0-0).
+  const castleMatch = san.match(/^o-?o(-?o)?([+#])?$/i);
+  if (castleMatch) {
+    const isLong = Boolean(castleMatch[1]);
+    const suffix = castleMatch[2] ?? '';
+    return isLong ? `O-O-O${suffix}` : `O-O${suffix}`;
+  }
+
+  // Normalize capture indicator to lowercase.
+  san = san.replace(/X/g, 'x');
+
+  // Uppercase piece designators and promotion piece, lowercase files.
+  san = san.replace(/^([kqrbn])/i, (m) => m.toUpperCase());
+  san = san.replace(/=([kqrbn])/i, (_, p) => `=${p.toUpperCase()}`);
+  san = san.replace(/([a-h])/gi, (m) => m.toLowerCase());
+
+  return san;
+};
+
 export const useGameState = () => {
   const [game, setGame] = useState<Chess | null>(null);
   const [gameState, setGameState] = useState<GameState | null>(null);
@@ -58,8 +81,9 @@ export const useGameState = () => {
     }
 
     try {
+      const normalizedSan = normalizeSan(san);
       // Try to make the move - chess.js will throw on invalid moves
-      const move = currentGame.move(san);
+      const move = currentGame.move(normalizedSan);
       
       if (!move) {
         return { success: false, error: 'Illegal move' };
