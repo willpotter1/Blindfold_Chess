@@ -106,9 +106,7 @@ const Index = () => {
     }
 
     const selectedMove = matchingMoves.find((move) => move.promotion === 'q') || matchingMoves[0];
-    const promotionSuffix = selectedMove.promotion ?? '';
-    const uciMove = `${from}${to}${promotionSuffix}`;
-    const success = makeMoveUci(uciMove);
+    const success = makeMove(selectedMove.san).success;
 
     if (!success) {
       setMoveError('Invalid move');
