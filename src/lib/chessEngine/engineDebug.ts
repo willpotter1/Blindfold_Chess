@@ -13,8 +13,9 @@ export interface EngineDebugSnapshot {
  * Use from console: await window.runEngineDebug()
  */
 export const runEngineDebug = async (): Promise<EngineDebugSnapshot> => {
+  const assetBase = import.meta.env.BASE_URL.replace(/\/$/, '');
   return new Promise((resolve) => {
-    const worker = new Worker('/stockfish/engine-worker.js');
+    const worker = new Worker(`${assetBase}/stockfish/engine-worker.js`);
 
     const finish = (snapshot: EngineDebugSnapshot) => {
       worker.terminate();

@@ -3,6 +3,7 @@ let stockfishInstance: Worker | null = null;
 let messageQueue: Array<{ resolve: (value: string) => void; reject: (reason: Error) => void }> = [];
 let readyQueue: Array<{ resolve: () => void; reject: (reason: Error) => void; timer: ReturnType<typeof setTimeout> }> = [];
 let isInitialized = false;
+const assetBase = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export const initStockfish = (): Promise<void> => {
   return new Promise((resolve, reject) => {
@@ -13,7 +14,7 @@ export const initStockfish = (): Promise<void> => {
 
     try {
       // Use the single-thread engine bundle directly as a worker; it already handles UCI messages
-      stockfishInstance = new Worker('/stockfish/stockfish-nnue-16-single.js');
+      stockfishInstance = new Worker(`${assetBase}/stockfish/stockfish-nnue-16-single.js`);
 
       stockfishInstance.onmessage = (e) => {
         console.log('[sf msg]', e.data);

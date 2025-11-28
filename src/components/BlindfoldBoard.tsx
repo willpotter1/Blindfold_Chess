@@ -8,20 +8,21 @@ interface BlindfoldBoardProps {
   onMove?: (from: string, to: string) => Promise<boolean> | boolean;
 }
 
-// Locally served piece sprites (copied to /public/pieces)
+// Prefix assets with the deployed base (e.g. /Blindfold_Chess/) so they load in subpaths
+const assetBase = import.meta.env.BASE_URL.replace(/\/$/, '');
 const pieceSprites: Record<string, string> = {
-  wk: '/pieces/wK.svg',
-  wq: '/pieces/wQ.svg',
-  wr: '/pieces/wR.svg',
-  wb: '/pieces/wB.svg',
-  wn: '/pieces/wN.svg',
-  wp: '/pieces/wP.svg',
-  bk: '/pieces/bK.svg',
-  bq: '/pieces/bQ.svg',
-  br: '/pieces/bR.svg',
-  bb: '/pieces/bB.svg',
-  bn: '/pieces/bN.svg',
-  bp: '/pieces/bP.svg',
+  wk: `${assetBase}/pieces/wK.svg`,
+  wq: `${assetBase}/pieces/wQ.svg`,
+  wr: `${assetBase}/pieces/wR.svg`,
+  wb: `${assetBase}/pieces/wB.svg`,
+  wn: `${assetBase}/pieces/wN.svg`,
+  wp: `${assetBase}/pieces/wP.svg`,
+  bk: `${assetBase}/pieces/bK.svg`,
+  bq: `${assetBase}/pieces/bQ.svg`,
+  br: `${assetBase}/pieces/bR.svg`,
+  bb: `${assetBase}/pieces/bB.svg`,
+  bn: `${assetBase}/pieces/bN.svg`,
+  bp: `${assetBase}/pieces/bP.svg`,
 };
 
 export const BlindfoldBoard = ({ fen, isVisible, isInteractive = false, onMove }: BlindfoldBoardProps) => {
