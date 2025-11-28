@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/",
+  // Use repo name for GitHub Pages so assets load under /Blindfold_Chess/
+  base: "/Blindfold_Chess/",
   server: {
     host: "::",
     port: 8080,
