@@ -21,8 +21,12 @@ export const initAnalytics = async () => {
   if (analyticsInstance) return analyticsInstance;
 
   const supported = await isSupported();
-  if (!supported) return undefined;
+  if (!supported) {
+    console.info("Firebase Analytics not supported in this environment");
+    return undefined;
+  }
 
   analyticsInstance = getAnalytics(app);
+  console.info("Firebase Analytics initialized");
   return analyticsInstance;
 };

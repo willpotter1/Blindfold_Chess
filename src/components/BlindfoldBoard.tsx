@@ -40,51 +40,57 @@ export const BlindfoldBoard = ({ fen, isVisible }: BlindfoldBoardProps) => {
   const board = chess.board();
 
   return (
-    <div className="inline-block rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-3 border border-slate-700">
-      <div className="grid grid-cols-8 gap-0 rounded-lg overflow-hidden border border-slate-700">
-        {board.map((row, rowIndex) => (
-          row.map((square, colIndex) => {
-            const isLight = (rowIndex + colIndex) % 2 === 0;
-            const spriteKey = square ? `${square.color}${square.type}` : null;
-            const pieceSrc = spriteKey ? pieceSprites[spriteKey] : null;
-            const file = String.fromCharCode(97 + colIndex); // a-h
-            const rank = 8 - rowIndex; // 8-1
+    <div className="inline-block w-full max-w-[520px]">
+      <div
+        className="rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-3 border border-slate-700 w-full aspect-square"
+      >
+        <div className="grid grid-cols-8 grid-rows-8 gap-0 rounded-lg overflow-hidden border border-slate-700 w-full h-full">
+          {board.map((row, rowIndex) => (
+            row.map((square, colIndex) => {
+              const isLight = (rowIndex + colIndex) % 2 === 0;
+              const spriteKey = square ? `${square.color}${square.type}` : null;
+              const pieceSrc = spriteKey ? pieceSprites[spriteKey] : null;
+              const file = String.fromCharCode(97 + colIndex); // a-h
+              const rank = 8 - rowIndex; // 8-1
 
-            return (
-              <div
-                key={`${rowIndex}-${colIndex}`}
-                className={`
-                  relative aspect-square flex items-center justify-center
-                  ${isLight ? 'bg-amber-200' : 'bg-emerald-700'}
-                  w-12 h-12 md:w-14 md:h-14 transition-colors duration-150
-                `}
-              >
-                {pieceSrc && (
-                  <img
-                    src={pieceSrc}
-                    alt={spriteKey || 'piece'}
-                    className="w-10 h-10 md:w-12 md:h-12 select-none drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]"
-                    draggable={false}
-                  />
-                )}
-                
+              return (
+                <div
+                  key={`${rowIndex}-${colIndex}`}
+                  className={`
+                    relative aspect-square flex items-center justify-center overflow-hidden
+                    ${isLight ? 'bg-amber-200' : 'bg-emerald-700'}
+                    transition-colors duration-150
+                  `}
+                >
+                  {pieceSrc && (
+                    <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[76%] h-[76%] grid place-items-center">
+                      <img
+                        src={pieceSrc}
+                        alt={spriteKey || 'piece'}
+                        className="h-full w-full object-contain select-none drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]"
+                        draggable={false}
+                      />
+                    </div>
+                  )}
+                  
                 {/* File labels (a-h) at bottom */}
                 {rowIndex === 7 && (
-                  <span className={`absolute bottom-0.5 right-1 text-[10px] font-semibold ${isLight ? 'text-emerald-900' : 'text-amber-100'}`}>
-                    {file}
-                  </span>
-                )}
-                
-                {/* Rank labels (1-8) on left */}
-                {colIndex === 0 && (
-                  <span className={`absolute top-0.5 left-1 text-[10px] font-semibold ${isLight ? 'text-emerald-900' : 'text-amber-100'}`}>
-                    {rank}
-                  </span>
-                )}
-              </div>
-            );
-          })
-        ))}
+                    <span className={`pointer-events-none absolute bottom-0 right-[3px] text-[10px] font-semibold z-20 ${isLight ? 'text-emerald-900' : 'text-amber-100'}`}>
+                      {file}
+                    </span>
+                  )}
+                  
+                  {/* Rank labels (1-8) on left */}
+                  {colIndex === 0 && (
+                    <span className={`pointer-events-none absolute top-[2px] left-[3px] text-[10px] font-semibold z-20 ${isLight ? 'text-emerald-900' : 'text-amber-100'}`}>
+                      {rank}
+                    </span>
+                  )}
+                </div>
+              );
+            })
+          ))}
+        </div>
       </div>
     </div>
   );
