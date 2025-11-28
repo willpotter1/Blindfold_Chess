@@ -17,6 +17,9 @@ export const MoveList = ({ moves }: MoveListProps) => {
     });
   }
 
+  // Show latest moves at the top.
+  const orderedPairs = [...movePairs].reverse();
+
   return (
     <Card className="w-full">
       <CardHeader>
@@ -30,7 +33,7 @@ export const MoveList = ({ moves }: MoveListProps) => {
             </p>
           ) : (
             <div className="space-y-1">
-              {movePairs.map((pair) => (
+              {orderedPairs.map((pair) => (
                 <div
                   key={pair.number}
                   className="flex items-center gap-3 text-sm font-mono py-1 px-2 hover:bg-muted rounded"

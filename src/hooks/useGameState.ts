@@ -33,7 +33,9 @@ const normalizeSan = (input: string): string => {
   // Uppercase piece designators and promotion piece, lowercase files.
   san = san.replace(/^([kqrbn])/i, (m) => m.toUpperCase());
   san = san.replace(/=([kqrbn])/i, (_, p) => `=${p.toUpperCase()}`);
-  san = san.replace(/([a-h])/gi, (m) => m.toLowerCase());
+  const head = san.slice(0, 1);
+  const tail = san.slice(1).replace(/([a-h])/gi, (m) => m.toLowerCase());
+  san = `${head}${tail}`;
 
   return san;
 };

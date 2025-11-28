@@ -22,22 +22,9 @@ const pieceSprites: Record<string, string> = {
 };
 
 export const BlindfoldBoard = ({ fen, isVisible }: BlindfoldBoardProps) => {
-  if (!isVisible) {
-    return (
-      <div className="flex items-center justify-center bg-card border-2 border-chess-border rounded-lg aspect-square max-w-[500px] w-full">
-        <div className="text-center p-8">
-          <div className="text-6xl mb-4">👁️‍🗨️</div>
-          <h3 className="text-xl font-semibold mb-2">Board Hidden</h3>
-          <p className="text-muted-foreground">
-            Visualize the position in your mind
-          </p>
-        </div>
-      </div>
-    );
-  }
-
   const chess = new Chess(fen);
   const board = chess.board();
+  const showPieces = isVisible;
 
   return (
     <div className="inline-block w-full max-w-[520px]">
@@ -49,7 +36,7 @@ export const BlindfoldBoard = ({ fen, isVisible }: BlindfoldBoardProps) => {
             row.map((square, colIndex) => {
               const isLight = (rowIndex + colIndex) % 2 === 0;
               const spriteKey = square ? `${square.color}${square.type}` : null;
-              const pieceSrc = spriteKey ? pieceSprites[spriteKey] : null;
+              const pieceSrc = showPieces && spriteKey ? pieceSprites[spriteKey] : null;
               const file = String.fromCharCode(97 + colIndex); // a-h
               const rank = 8 - rowIndex; // 8-1
 
