@@ -17,8 +17,7 @@ export const saveCompletedGame = async (gameState: GameState): Promise<SaveResul
     moves: gameState.moves,
     result: gameState.result,
     finalFen: gameState.fen,
-    halfMoveCount: gameState.halfMoveCount,
-    playerMoveCount: gameState.playerMoveCount,
+    moveCount: gameState.playerMoveCount,
     config: {
       playerColor: gameState.playerColor,
       difficulty: gameState.difficulty,
