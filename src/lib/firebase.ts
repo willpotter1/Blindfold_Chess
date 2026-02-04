@@ -58,5 +58,6 @@ export const getFirestoreDb = (): Firestore | undefined => {
   if (!app) return undefined;
 
   firestoreInstance = getFirestore(app);
+  console.info("Firestore initialized");
   return firestoreInstance;
 };

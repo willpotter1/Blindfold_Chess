@@ -30,6 +30,7 @@ export const saveCompletedGame = async (gameState: GameState): Promise<SaveResul
 
   try {
     const docRef = await addDoc(collection(db, "games"), payload);
+    console.info("Saved completed game:", docRef.id);
     return { ok: true, id: docRef.id };
   } catch (error) {
     console.error("Failed to save completed game:", error);
