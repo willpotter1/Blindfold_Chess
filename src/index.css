@@ -112,10 +112,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
-    background-image: url("/BrownPawnNB.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  @apply bg-background text-foreground;
+}
 }
