@@ -5,8 +5,13 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Use root base because the site is served at blindchess.org (custom domain)
-  base: "/",
+  /**
+   * When deployed to GitHub Pages the app lives under /<repo> so absolute
+   * asset paths like "/assets/..." 404. Using a relative base for production
+   * keeps assets and web workers loading regardless of host, while dev
+   * keeps the default "/" for simplicity.
+   */
+  base: mode === "production" ? "./" : "/",
   server: {
     host: "::",
     port: 8080,

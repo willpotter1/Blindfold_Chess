@@ -10,8 +10,15 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Trim trailing slash from BASE_URL so it works as BrowserRouter basename
-const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
+/**
+ * Vite injects BASE_URL from the `base` option.
+ * We use it for BrowserRouter's basename, but when the base is "./"
+ * (used for static/relative deployments like GitHub Pages) we want an
+ * empty basename so routes resolve at the current path.
+ */
+const rawBase = import.meta.env.BASE_URL;
+const basename =
+  rawBase === "./" ? "" : rawBase.replace(/\/$/, "");
 
 const App = () => {
   useEffect(() => {
