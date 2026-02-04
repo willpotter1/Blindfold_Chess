@@ -129,7 +129,7 @@ export const useGameState = () => {
         };
         gameStateRef.current = nextState;
 
-        if (isOver && currentGame.isCheckmate() && !hasSavedResultRef.current) {
+        if (isOver && result && !hasSavedResultRef.current) {
           hasSavedResultRef.current = true;
           void saveCompletedGame(nextState);
         }
@@ -195,7 +195,7 @@ export const useGameState = () => {
         };
         gameStateRef.current = nextState;
 
-        if (isOver && currentGame.isCheckmate() && !hasSavedResultRef.current) {
+        if (isOver && result && !hasSavedResultRef.current) {
           hasSavedResultRef.current = true;
           void saveCompletedGame(nextState);
         }
