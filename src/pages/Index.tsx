@@ -7,7 +7,6 @@ import { BlindfoldBoard } from '@/components/BlindfoldBoard';
 import { MoveInput } from '@/components/MoveInput';
 import { MoveList } from '@/components/MoveList';
 import { StatusBar } from '@/components/StatusBar';
-import { InstructionsBox } from '@/components/InstructionsBox';
 import { useToast } from '@/hooks/use-toast';
 import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
@@ -135,22 +134,20 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-foreground">
-            ♟️ Blindfold Chess Trainer
-          </h1>
-          <p className="text-muted-foreground">
-            Train your visualization skills by playing without seeing the board
-          </p>
+          <div className="flex flex-row items-center justify-center gap-3 flex-wrap">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+              Blindfold Chess Trainer
+            </h1>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {/* Left Column - Config and Instructions */}
+          {/* Left Column - Config */}
           <div className="space-y-6">
             <GameConfigPanel 
               onStartGame={handleStartGame}
               isGameActive={!!gameState}
             />
-            <InstructionsBox />
           </div>
 
           {/* Middle Column - Board */}
@@ -172,7 +169,11 @@ const Index = () => {
             ) : (
               <div className="flex items-center justify-center bg-card border-2 border-dashed border-border rounded-lg aspect-square max-w-[500px] w-full">
                 <div className="text-center p-8">
-                  <div className="text-6xl mb-4">♟️</div>
+                  <img
+                    src="/PawnWB.png"
+                    alt="Pawn logo"
+                    className="w-40 h-40 mx-auto mb-4 object-contain"
+                  />
                   <p className="text-muted-foreground">
                     Configure and start a new game to begin training
                   </p>
