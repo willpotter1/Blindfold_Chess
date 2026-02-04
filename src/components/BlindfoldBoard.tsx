@@ -79,9 +79,9 @@ export const BlindfoldBoard = ({ fen, isVisible, isInteractive = false, onMove }
   return (
     <div className="inline-block w-full max-w-[520px]" ref={boardRef}>
       <div
-        className="rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-3 border border-slate-700 w-full aspect-square"
+        className="rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 w-full aspect-square overflow-hidden"
       >
-        <div className="grid grid-cols-8 grid-rows-8 gap-0 rounded-lg overflow-hidden border border-slate-700 w-full h-full">
+        <div className="grid grid-cols-8 grid-rows-8 gap-0 w-full h-full">
           {board.map((row, rowIndex) => (
             row.map((square, colIndex) => {
               const isLight = (rowIndex + colIndex) % 2 === 0;
