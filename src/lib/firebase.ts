@@ -1,4 +1,4 @@
-import { initializeApp, getApps, getApp } from "firebase/app";
+import { initializeApp, getApps, getApp, type FirebaseApp } from "firebase/app";
 import { getAnalytics, isSupported, type Analytics } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -11,13 +11,27 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize once, even if module is imported multiple times.
-export const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+const hasFirebaseConfig = Boolean(
+  firebaseConfig.apiKey &&
+    firebaseConfig.authDomain &&
+    firebaseConfig.projectId &&
+    firebaseConfig.appId
+);
+
+const getOrInitApp = (): FirebaseApp | undefined => {
+  if (!hasFirebaseConfig) {
+    console.info("Firebase config missing; analytics disabled.");
+    return undefined;
+  }
+
+  return getApps().length ? getApp() : initializeApp(firebaseConfig);
+};
 
 let analyticsInstance: Analytics | undefined;
 
 export const initAnalytics = async () => {
   if (typeof window === "undefined") return undefined;
+  if (!hasFirebaseConfig) return undefined;
   if (analyticsInstance) return analyticsInstance;
 
   const supported = await isSupported();
@@ -25,6 +39,9 @@ export const initAnalytics = async () => {
     console.info("Firebase Analytics not supported in this environment");
     return undefined;
   }
+
+  const app = getOrInitApp();
+  if (!app) return undefined;
 
   analyticsInstance = getAnalytics(app);
   console.info("Firebase Analytics initialized");
