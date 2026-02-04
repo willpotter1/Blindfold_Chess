@@ -1,5 +1,6 @@
 import { initializeApp, getApps, getApp, type FirebaseApp } from "firebase/app";
 import { getAnalytics, isSupported, type Analytics } from "firebase/analytics";
+import { getFirestore, type Firestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -28,6 +29,7 @@ const getOrInitApp = (): FirebaseApp | undefined => {
 };
 
 let analyticsInstance: Analytics | undefined;
+let firestoreInstance: Firestore | undefined;
 
 export const initAnalytics = async () => {
   if (typeof window === "undefined") return undefined;
@@ -46,4 +48,15 @@ export const initAnalytics = async () => {
   analyticsInstance = getAnalytics(app);
   console.info("Firebase Analytics initialized");
   return analyticsInstance;
+};
+
+export const getFirestoreDb = (): Firestore | undefined => {
+  if (!hasFirebaseConfig) return undefined;
+  if (firestoreInstance) return firestoreInstance;
+
+  const app = getOrInitApp();
+  if (!app) return undefined;
+
+  firestoreInstance = getFirestore(app);
+  return firestoreInstance;
 };

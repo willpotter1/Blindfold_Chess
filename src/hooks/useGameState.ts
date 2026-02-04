@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef } from 'react';
 import { Chess } from 'chess.js';
+import { saveCompletedGame } from '@/lib/saveGameResult';
 
 export type GameState = {
   fen: string;
@@ -46,6 +47,7 @@ export const useGameState = () => {
   const [gameState, setGameState] = useState<GameState | null>(null);
   const gameRef = useRef<Chess | null>(null);
   const gameStateRef = useRef<GameState | null>(null);
+  const hasSavedResultRef = useRef(false);
 
   const startNewGame = useCallback((
     playerColor: 'white' | 'black',
@@ -56,6 +58,7 @@ export const useGameState = () => {
     const newGame = new Chess();
     
     gameRef.current = newGame;
+    hasSavedResultRef.current = false;
     setGame(newGame);
     const initialState: GameState = {
       fen: newGame.fen(),
@@ -125,6 +128,12 @@ export const useGameState = () => {
           turnColor: currentGame.turn() === 'w' ? 'white' : 'black',
         };
         gameStateRef.current = nextState;
+
+        if (isOver && currentGame.isCheckmate() && !hasSavedResultRef.current) {
+          hasSavedResultRef.current = true;
+          void saveCompletedGame(nextState);
+        }
+
         return nextState;
       });
 
@@ -185,6 +194,12 @@ export const useGameState = () => {
           turnColor: currentGame.turn() === 'w' ? 'white' : 'black',
         };
         gameStateRef.current = nextState;
+
+        if (isOver && currentGame.isCheckmate() && !hasSavedResultRef.current) {
+          hasSavedResultRef.current = true;
+          void saveCompletedGame(nextState);
+        }
+
         return nextState;
       });
 
