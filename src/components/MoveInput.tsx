@@ -26,7 +26,7 @@ export const MoveInput = ({ onSubmitMove, disabled, errorMessage }: MoveInputPro
         <form onSubmit={handleSubmit} className="space-y-3">
           <div className="space-y-2">
             <label htmlFor="move-input" className="text-sm font-medium">
-              Enter Your Move (SAN)
+              Enter Your Move (SAN) or click-to-move
             </label>
             <div className="flex gap-2">
               <Input
