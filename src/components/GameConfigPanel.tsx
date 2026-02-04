@@ -3,32 +3,57 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Slider } from '@/components/ui/slider';
 import { Input } from '@/components/ui/input';
 
 interface GameConfigPanelProps {
-  onStartGame: (playerColor: 'white' | 'black', difficulty: number, revealEvery: number) => void;
+  onStartGame: (playerColor: 'white' | 'black', difficulty: number, engineElo: number, revealEvery: number) => void;
   isGameActive: boolean;
 }
+
+const MIN_ELO = 1300;
+const MAX_ELO = 2800;
+
+const mapDifficultyToElo = (value: number): number => {
+  const raw = MIN_ELO + ((value - 1) * (MAX_ELO - MIN_ELO)) / 9;
+  return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, raw)));
+};
+
+const mapEloToDifficulty = (elo: number): number => {
+  const normalized = (elo - MIN_ELO) / (MAX_ELO - MIN_ELO);
+  const scaled = 1 + normalized * 9;
+  return Math.round(Math.max(1, Math.min(10, scaled)));
+};
+
+const clampElo = (elo: number): number => {
+  return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, elo)));
+};
 
 export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelProps) => {
   const [playerColor, setPlayerColor] = useState<'white' | 'black'>('white');
   const [difficulty, setDifficulty] = useState<number>(5);
+  const [engineElo, setEngineElo] = useState<number>(mapDifficultyToElo(5));
+  const [engineEloInput, setEngineEloInput] = useState<string>(String(mapDifficultyToElo(5)));
   const [revealEvery, setRevealEvery] = useState<number>(6);
-
-  const mapDifficultyToElo = (value: number): number => {
-    const minElo = 1320;
-    const maxElo = 2800;
-    const raw = minElo + ((value - 1) * (maxElo - minElo)) / 9;
-    return Math.round(Math.max(minElo, Math.min(maxElo, raw)));
-  };
 
   const handleStartGame = () => {
     if (revealEvery < 1) {
       alert('Reveal frequency must be at least 1');
       return;
     }
-    onStartGame(playerColor, difficulty, revealEvery);
+    onStartGame(playerColor, difficulty, engineElo, revealEvery);
+  };
+
+  const commitEloInput = () => {
+    const parsed = Math.round(Number(engineEloInput));
+    if (!Number.isFinite(parsed)) {
+      // Revert to the last good value
+      setEngineEloInput(String(engineElo));
+      return;
+    }
+    const clamped = clampElo(parsed);
+    setEngineElo(clamped);
+    setDifficulty(mapEloToDifficulty(clamped));
+    setEngineEloInput(String(clamped));
   };
 
   return (
@@ -54,22 +79,26 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
         </div>
 
         <div className="space-y-2">
-          <div className="flex justify-between">
-            <Label htmlFor="difficulty">Engine Elo</Label>
-            <span className="text-sm text-muted-foreground">{mapDifficultyToElo(difficulty)}</span>
+          <Label htmlFor="engine-elo">Engine Elo</Label>
+          <div className="flex items-center gap-2">
+            <Input
+              id="engine-elo"
+              type="number"
+              min={MIN_ELO}
+              max={MAX_ELO}
+              step={10}
+              value={engineEloInput}
+              onChange={(e) => setEngineEloInput(e.target.value)}
+              onBlur={commitEloInput}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.currentTarget.blur();
+                }
+              }}
+              className="w-28"
+            />
           </div>
-          <Slider
-            id="difficulty"
-            min={1}
-            max={10}
-            step={1}
-            value={[difficulty]}
-            onValueChange={(value) => setDifficulty(value[0])}
-            className="w-full"
-          />
-          <p className="text-xs text-muted-foreground">
-            Scaled to UCI_Elo (approx 1320–2800)
-          </p>
+          <p className="text-xs text-muted-foreground">Min: {MIN_ELO}, Max: {MAX_ELO}</p>
         </div>
 
         <div className="space-y-2">

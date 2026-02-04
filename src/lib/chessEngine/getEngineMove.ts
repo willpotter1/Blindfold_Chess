@@ -6,22 +6,28 @@ let isStockfishReady = false;
  * Maps user difficulty (1-10) to an Elo value within Stockfish's UCI_Elo range.
  * Engine supports roughly 1320–3190; we clamp to a sensible upper bound.
  */
+const MIN_ELO = 1300;
+const MAX_ELO = 2800;
+
 const mapDifficultyToElo = (difficulty: number): number => {
-  const minElo = 1320;
-  const maxElo = 2800;
-  const raw = minElo + ((difficulty - 1) * (maxElo - minElo)) / 9;
-  return Math.round(Math.max(minElo, Math.min(maxElo, raw)));
+  const raw = MIN_ELO + ((difficulty - 1) * (MAX_ELO - MIN_ELO)) / 9;
+  return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, raw)));
+};
+
+const clampElo = (elo: number): number => {
+  return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, elo)));
 };
 
 /**
  * Gets the best move from Stockfish for the given position
  * @param fen - The current position in FEN notation
  * @param difficulty - Difficulty level from 1 (easiest) to 10 (hardest)
+ * @param explicitElo - Optional explicit Elo override (will be clamped to engine range)
  * @returns UCI move string (e.g., "e2e4")
  */
-export const getEngineMove = async (fen: string, difficulty: number): Promise<string> => {
+export const getEngineMove = async (fen: string, difficulty: number, explicitElo?: number): Promise<string> => {
   try {
-    console.log('[engine] request', { fen, difficulty });
+    console.log('[engine] request', { fen, difficulty, explicitElo });
     // Initialize Stockfish if not already done
     if (!isStockfishReady) {
       await initStockfish();
@@ -29,7 +35,7 @@ export const getEngineMove = async (fen: string, difficulty: number): Promise<st
     }
 
     // Configure Stockfish based on Elo difficulty
-    const targetElo = mapDifficultyToElo(difficulty);
+    const targetElo = clampElo(explicitElo ?? mapDifficultyToElo(difficulty));
     
     // Set UCI options
     await sendCommand('uci');
