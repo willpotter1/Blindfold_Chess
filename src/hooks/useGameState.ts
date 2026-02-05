@@ -32,8 +32,11 @@ const normalizeSan = (input: string): string => {
   // Normalize capture indicator to lowercase.
   san = san.replace(/X/g, 'x');
 
-  // Uppercase piece designators and promotion piece, lowercase files.
-  san = san.replace(/^([kqrbn])/i, (m) => m.toUpperCase());
+  // Uppercase piece designators (but not pawn file letters) and promotion piece, lowercase files.
+  const isPawnSan = /^[a-h](x|[1-8])/i.test(san);
+  if (!isPawnSan) {
+    san = san.replace(/^([kqrbn])/i, (m) => m.toUpperCase());
+  }
   san = san.replace(/=([kqrbn])/i, (_, p) => `=${p.toUpperCase()}`);
   const head = san.slice(0, 1);
   const tail = san.slice(1).replace(/([a-h])/gi, (m) => m.toLowerCase());
