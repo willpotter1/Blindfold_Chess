@@ -12,6 +12,8 @@ interface GameConfigPanelProps {
 
 const MIN_ELO = 1300;
 const MAX_ELO = 2800;
+const DEFAULT_ENGINE_ELO = 1500;
+const DEFAULT_REVEAL_EVERY = 3;
 
 const mapDifficultyToElo = (value: number): number => {
   const raw = MIN_ELO + ((value - 1) * (MAX_ELO - MIN_ELO)) / 9;
@@ -30,30 +32,28 @@ const clampElo = (elo: number): number => {
 
 export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelProps) => {
   const [playerColor, setPlayerColor] = useState<'white' | 'black'>('white');
-  const [difficulty, setDifficulty] = useState<number>(5);
-  const [engineElo, setEngineElo] = useState<number>(mapDifficultyToElo(5));
-  const [engineEloInput, setEngineEloInput] = useState<string>(String(mapDifficultyToElo(5)));
-  const [revealEvery, setRevealEvery] = useState<number>(6);
-  const [revealEveryInput, setRevealEveryInput] = useState<string>('6');
+  const [difficulty, setDifficulty] = useState<number>(mapEloToDifficulty(DEFAULT_ENGINE_ELO));
+  const [engineElo, setEngineElo] = useState<number>(DEFAULT_ENGINE_ELO);
+  const [engineEloInput, setEngineEloInput] = useState<string>(String(DEFAULT_ENGINE_ELO));
+  const [revealEvery, setRevealEvery] = useState<number>(DEFAULT_REVEAL_EVERY);
+  const [revealEveryInput, setRevealEveryInput] = useState<string>(String(DEFAULT_REVEAL_EVERY));
   const [revealEveryTouched, setRevealEveryTouched] = useState<boolean>(false);
 
-  const parseRevealEvery = () => {
-    const parsed = Number(revealEveryInput);
-    return Number.isInteger(parsed) ? parsed : Number.NaN;
-  };
-
   const isRevealEveryValid = () => {
-    const parsed = parseRevealEvery();
+    if (!/^\d+$/.test(revealEveryInput)) {
+      return false;
+    }
+    const parsed = Number(revealEveryInput);
     return Number.isFinite(parsed) && parsed >= 1;
   };
 
   const handleStartGame = () => {
-    const parsed = parseRevealEvery();
-    if (!Number.isFinite(parsed) || parsed < 1) {
+    if (!isRevealEveryValid()) {
       setRevealEveryTouched(true);
       alert('Reveal frequency must be a whole number of at least 1');
       return;
     }
+    const parsed = Number(revealEveryInput);
     if (parsed !== revealEvery) {
       setRevealEvery(parsed);
     }
@@ -74,11 +74,11 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
   };
 
   const commitRevealEveryInput = () => {
-    const parsed = parseRevealEvery();
-    if (!Number.isFinite(parsed) || parsed < 1) {
+    if (!isRevealEveryValid()) {
       setRevealEveryInput(String(revealEvery));
       return;
     }
+    const parsed = Number(revealEveryInput);
     setRevealEvery(parsed);
     setRevealEveryInput(String(parsed));
   };
@@ -132,8 +132,9 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
           <Label htmlFor="reveal-frequency">Board Reveal Frequency</Label>
           <Input
             id="reveal-frequency"
-            type="text"
-            inputMode="numeric"
+            type="number"
+            min={1}
+            step={1}
             value={revealEveryInput}
             onChange={(e) => {
               setRevealEveryInput(e.target.value);
