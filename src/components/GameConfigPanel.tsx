@@ -34,13 +34,30 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
   const [engineElo, setEngineElo] = useState<number>(mapDifficultyToElo(5));
   const [engineEloInput, setEngineEloInput] = useState<string>(String(mapDifficultyToElo(5)));
   const [revealEvery, setRevealEvery] = useState<number>(6);
+  const [revealEveryInput, setRevealEveryInput] = useState<string>('6');
+  const [revealEveryTouched, setRevealEveryTouched] = useState<boolean>(false);
+
+  const parseRevealEvery = () => {
+    const parsed = Number(revealEveryInput);
+    return Number.isInteger(parsed) ? parsed : Number.NaN;
+  };
+
+  const isRevealEveryValid = () => {
+    const parsed = parseRevealEvery();
+    return Number.isFinite(parsed) && parsed >= 1;
+  };
 
   const handleStartGame = () => {
-    if (revealEvery < 1) {
-      alert('Reveal frequency must be at least 1');
+    const parsed = parseRevealEvery();
+    if (!Number.isFinite(parsed) || parsed < 1) {
+      setRevealEveryTouched(true);
+      alert('Reveal frequency must be a whole number of at least 1');
       return;
     }
-    onStartGame(playerColor, difficulty, engineElo, revealEvery);
+    if (parsed !== revealEvery) {
+      setRevealEvery(parsed);
+    }
+    onStartGame(playerColor, difficulty, engineElo, parsed);
   };
 
   const commitEloInput = () => {
@@ -54,6 +71,16 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
     setEngineElo(clamped);
     setDifficulty(mapEloToDifficulty(clamped));
     setEngineEloInput(String(clamped));
+  };
+
+  const commitRevealEveryInput = () => {
+    const parsed = parseRevealEvery();
+    if (!Number.isFinite(parsed) || parsed < 1) {
+      setRevealEveryInput(String(revealEvery));
+      return;
+    }
+    setRevealEvery(parsed);
+    setRevealEveryInput(String(parsed));
   };
 
   return (
@@ -105,11 +132,21 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
           <Label htmlFor="reveal-frequency">Board Reveal Frequency</Label>
           <Input
             id="reveal-frequency"
-            type="number"
-            min={1}
-            value={revealEvery}
-            onChange={(e) => setRevealEvery(parseInt(e.target.value) || 1)}
+            type="text"
+            inputMode="numeric"
+            value={revealEveryInput}
+            onChange={(e) => {
+              setRevealEveryInput(e.target.value);
+              setRevealEveryTouched(true);
+            }}
+            onBlur={commitRevealEveryInput}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.currentTarget.blur();
+              }
+            }}
             placeholder="Show board every N moves"
+            className={isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}
           />
           <p className="text-xs text-muted-foreground">
             The board will be revealed every N of your moves
