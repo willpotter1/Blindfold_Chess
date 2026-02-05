@@ -105,7 +105,8 @@ const Index = () => {
     }
 
     const selectedMove = matchingMoves.find((move) => move.promotion === 'q') || matchingMoves[0];
-    const success = makeMove(selectedMove.san).success;
+    const uciMove = `${selectedMove.from}${selectedMove.to}${selectedMove.promotion ?? ''}`;
+    const success = makeMoveUci(uciMove, { countPlayerMove: true });
 
     if (!success) {
       setMoveError('Invalid move');

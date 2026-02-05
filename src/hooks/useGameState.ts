@@ -146,13 +146,15 @@ export const useGameState = () => {
     }
   }, []);
 
-  const makeMoveUci = useCallback((uciMove: string): boolean => {
+  const makeMoveUci = useCallback((uciMove: string, options?: { countPlayerMove?: boolean }): boolean => {
     const currentGame = gameRef.current;
     const currentState = gameStateRef.current;
 
     if (!currentGame || !currentState) {
       return false;
     }
+
+    const countPlayerMove = options?.countPlayerMove ?? false;
 
     try {
       // UCI moves are in format like "e2e4" or "e7e8q" for promotion
@@ -169,7 +171,7 @@ export const useGameState = () => {
       // Update game state
       const newMoves = [...currentState.moves, move.san];
       const newHalfMoveCount = currentState.halfMoveCount + 1;
-      const newPlayerMoveCount = currentState.playerMoveCount;
+      const newPlayerMoveCount = currentState.playerMoveCount + (countPlayerMove ? 1 : 0);
       
       // Check game status
       const isOver = currentGame.isGameOver();
