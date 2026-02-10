@@ -10,6 +10,12 @@ import { StatusBar } from '@/components/StatusBar';
 import { useToast } from '@/hooks/use-toast';
 import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
+import SeoHead from '@/components/SeoHead';
+
+const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
+const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
+const SEO_CANONICAL_URL = 'https://blindchess.org/';
+const SEO_OG_IMAGE = 'https://blindchess.org/circlepawnwb-circle-512.png?v=5';
 
 const Index = () => {
   const { gameState, startNewGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState } = useGameState();
@@ -132,6 +138,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SeoHead
+        title={SEO_TITLE}
+        description={SEO_DESCRIPTION}
+        canonicalUrl={SEO_CANONICAL_URL}
+        ogImage={SEO_OG_IMAGE}
+      />
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
