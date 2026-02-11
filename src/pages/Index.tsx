@@ -43,7 +43,7 @@ const Index = () => {
 
     setIsEngineThinking(true);
     try {
-      const engineMoveUci = await getEngineMove(snapshot.fen, snapshot.difficulty, snapshot.engineElo);
+      const engineMoveUci = await getEngineMove(snapshot.fen, snapshot.engineElo);
       const success = makeMoveUci(engineMoveUci);
       
       if (!success) {
@@ -66,9 +66,9 @@ const Index = () => {
     }
   };
 
-  const handleStartGame = async (playerColor: 'white' | 'black', difficulty: number, engineElo: number, revealEvery: number) => {
+  const handleStartGame = async (playerColor: 'white' | 'black', engineElo: number, revealEvery: number) => {
     setMoveError('');
-    startNewGame(playerColor, difficulty, engineElo, revealEvery);
+    startNewGame(playerColor, engineElo, revealEvery);
 
     // If player chose black, engine moves first
     if (playerColor === 'black') {

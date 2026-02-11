@@ -8,7 +8,6 @@ export type GameState = {
   halfMoveCount: number;
   playerMoveCount: number;
   playerColor: 'white' | 'black';
-  difficulty: number; // 1-10 slider level
   engineElo: number;  // explicit UCI_Elo used for the engine
   revealEvery: number;
   isOver: boolean;
@@ -54,7 +53,6 @@ export const useGameState = () => {
 
   const startNewGame = useCallback((
     playerColor: 'white' | 'black',
-    difficulty: number,
     engineElo: number,
     revealEvery: number
   ) => {
@@ -69,7 +67,6 @@ export const useGameState = () => {
       halfMoveCount: 0,
       playerMoveCount: 0,
       playerColor,
-      difficulty,
       engineElo,
       revealEvery,
       isOver: false,

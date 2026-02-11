@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Input } from '@/components/ui/input';
 
 interface GameConfigPanelProps {
-  onStartGame: (playerColor: 'white' | 'black', difficulty: number, engineElo: number, revealEvery: number) => void;
+  onStartGame: (playerColor: 'white' | 'black', engineElo: number, revealEvery: number) => void;
   isGameActive: boolean;
 }
 
@@ -15,24 +15,12 @@ const MAX_ELO = 2800;
 const DEFAULT_ENGINE_ELO = 1500;
 const DEFAULT_REVEAL_EVERY = 3;
 
-const mapDifficultyToElo = (value: number): number => {
-  const raw = MIN_ELO + ((value - 1) * (MAX_ELO - MIN_ELO)) / 9;
-  return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, raw)));
-};
-
-const mapEloToDifficulty = (elo: number): number => {
-  const normalized = (elo - MIN_ELO) / (MAX_ELO - MIN_ELO);
-  const scaled = 1 + normalized * 9;
-  return Math.round(Math.max(1, Math.min(10, scaled)));
-};
-
 const clampElo = (elo: number): number => {
   return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, elo)));
 };
 
 export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelProps) => {
   const [playerColor, setPlayerColor] = useState<'white' | 'black'>('white');
-  const [difficulty, setDifficulty] = useState<number>(mapEloToDifficulty(DEFAULT_ENGINE_ELO));
   const [engineElo, setEngineElo] = useState<number>(DEFAULT_ENGINE_ELO);
   const [engineEloInput, setEngineEloInput] = useState<string>(String(DEFAULT_ENGINE_ELO));
   const [revealEvery, setRevealEvery] = useState<number>(DEFAULT_REVEAL_EVERY);
@@ -57,7 +45,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
     if (parsed !== revealEvery) {
       setRevealEvery(parsed);
     }
-    onStartGame(playerColor, difficulty, engineElo, parsed);
+    onStartGame(playerColor, engineElo, parsed);
   };
 
   const commitEloInput = () => {
@@ -69,7 +57,6 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
     }
     const clamped = clampElo(parsed);
     setEngineElo(clamped);
-    setDifficulty(mapEloToDifficulty(clamped));
     setEngineEloInput(String(clamped));
   };
 

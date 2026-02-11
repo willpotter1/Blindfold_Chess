@@ -2,17 +2,8 @@ import { initStockfish, sendCommand, waitForReady } from './stockfishWorker';
 
 let isStockfishReady = false;
 
-/**
- * Maps user difficulty (1-10) to an Elo value within Stockfish's UCI_Elo range.
- * Engine supports roughly 1320–3190; we clamp to a sensible upper bound.
- */
 const MIN_ELO = 1300;
 const MAX_ELO = 2800;
-
-const mapDifficultyToElo = (difficulty: number): number => {
-  const raw = MIN_ELO + ((difficulty - 1) * (MAX_ELO - MIN_ELO)) / 9;
-  return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, raw)));
-};
 
 const clampElo = (elo: number): number => {
   return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, elo)));
@@ -21,21 +12,19 @@ const clampElo = (elo: number): number => {
 /**
  * Gets the best move from Stockfish for the given position
  * @param fen - The current position in FEN notation
- * @param difficulty - Difficulty level from 1 (easiest) to 10 (hardest)
- * @param explicitElo - Optional explicit Elo override (will be clamped to engine range)
+ * @param engineElo - Explicit Elo setting (clamped to engine range)
  * @returns UCI move string (e.g., "e2e4")
  */
-export const getEngineMove = async (fen: string, difficulty: number, explicitElo?: number): Promise<string> => {
+export const getEngineMove = async (fen: string, engineElo: number): Promise<string> => {
   try {
-    console.log('[engine] request', { fen, difficulty, explicitElo });
+    console.log('[engine] request', { fen, engineElo });
     // Initialize Stockfish if not already done
     if (!isStockfishReady) {
       await initStockfish();
       isStockfishReady = true;
     }
 
-    // Configure Stockfish based on Elo difficulty
-    const targetElo = clampElo(explicitElo ?? mapDifficultyToElo(difficulty));
+    const targetElo = clampElo(engineElo);
     
     // Set UCI options
     await sendCommand('uci');
@@ -52,8 +41,9 @@ export const getEngineMove = async (fen: string, difficulty: number, explicitElo
     await sendCommand(`position fen ${fen}`);
     await waitForReady();
     
-    // Calculate move time based on difficulty (easier = faster, harder = more time to think)
-    const moveTime = 100 + (difficulty * 100); // 200ms to 1100ms
+    // Scale think time by Elo so stronger settings get more time.
+    const normalized = (targetElo - MIN_ELO) / (MAX_ELO - MIN_ELO);
+    const moveTime = Math.round(200 + normalized * 900); // 200ms to 1100ms
     
     // Request best move
     const bestMove = await sendCommand(`go movetime ${moveTime}`, true);
