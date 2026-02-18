@@ -4,10 +4,9 @@ import { Badge } from '@/components/ui/badge';
 interface StatusBarProps {
   status: string;
   result?: string | null;
-  isEngineThinking?: boolean;
 }
 
-export const StatusBar = ({ status, result, isEngineThinking }: StatusBarProps) => {
+export const StatusBar = ({ status, result }: StatusBarProps) => {
   return (
     <Card>
       <CardContent className="py-4">
@@ -20,11 +19,6 @@ export const StatusBar = ({ status, result, isEngineThinking }: StatusBarProps) 
               </Badge>
             )}
           </div>
-          {isEngineThinking && (
-            <Badge variant="outline" className="animate-pulse">
-              🤔 Engine thinking...
-            </Badge>
-          )}
         </div>
       </CardContent>
     </Card>

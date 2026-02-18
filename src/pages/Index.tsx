@@ -202,7 +202,6 @@ const Index = () => {
                 <StatusBar 
                   status={getGameStatus()}
                   result={gameState.result}
-                  isEngineThinking={isEngineThinking}
                 />
               </>
             ) : (

@@ -239,7 +239,14 @@ export const useGameState = () => {
       return `${gameState.turnColor === 'white' ? 'White' : 'Black'} is in check`;
     }
 
-    return `${gameState.turnColor === 'white' ? 'White' : 'Black'} to move`;
+    const engineMoveParity = gameState.playerColor === 'white' ? 1 : 0;
+    for (let i = gameState.moves.length - 1; i >= 0; i -= 1) {
+      if (i % 2 === engineMoveParity) {
+        return `Last computer move: ${gameState.moves[i]}`;
+      }
+    }
+
+    return 'Last computer move: None yet';
   }, [game, gameState]);
 
   return {
