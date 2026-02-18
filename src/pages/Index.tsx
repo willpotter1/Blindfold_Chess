@@ -11,6 +11,7 @@ import { useToast } from '@/hooks/use-toast';
 import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
 import SeoHead from '@/components/SeoHead';
+import { Button } from '@/components/ui/button';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
@@ -21,6 +22,7 @@ const Index = () => {
   const { gameState, startNewGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState } = useGameState();
   const [isEngineThinking, setIsEngineThinking] = useState(false);
   const [moveError, setMoveError] = useState<string>('');
+  const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
   const { toast } = useToast();
 
   useEffect(() => {
@@ -68,6 +70,7 @@ const Index = () => {
 
   const handleStartGame = async (playerColor: 'white' | 'black', engineElo: number, revealEvery: number) => {
     setMoveError('');
+    setIsManualBoardReveal(false);
     startNewGame(playerColor, engineElo, revealEvery);
 
     // If player chose black, engine moves first
@@ -135,6 +138,7 @@ const Index = () => {
     !gameState.isOver &&
     !isEngineThinking
   );
+  const isBoardVisible = Boolean(gameState && (shouldShowBoard() || isManualBoardReveal));
 
   return (
     <div className="min-h-screen bg-background">
@@ -169,10 +173,32 @@ const Index = () => {
               <>
                 <BlindfoldBoard 
                   fen={gameState.fen} 
-                  isVisible={shouldShowBoard()}
+                  isVisible={isBoardVisible}
                   isInteractive={isPlayerTurn}
                   onMove={handleBoardMove}
                 />
+                <Button
+                  type="button"
+                  variant="secondary"
+                  className="w-full max-w-[520px]"
+                  onPointerDown={() => setIsManualBoardReveal(true)}
+                  onPointerUp={() => setIsManualBoardReveal(false)}
+                  onPointerLeave={() => setIsManualBoardReveal(false)}
+                  onPointerCancel={() => setIsManualBoardReveal(false)}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                      setIsManualBoardReveal(true);
+                    }
+                  }}
+                  onKeyUp={(event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                      setIsManualBoardReveal(false);
+                    }
+                  }}
+                  onBlur={() => setIsManualBoardReveal(false)}
+                >
+                  Hold to Show Board
+                </Button>
                 <StatusBar 
                   status={getGameStatus()}
                   result={gameState.result}
