@@ -1,6 +1,7 @@
 import { initializeApp, getApps, getApp, type FirebaseApp } from "firebase/app";
 import { getAnalytics, isSupported, type Analytics } from "firebase/analytics";
 import { getFirestore, type Firestore } from "firebase/firestore";
+import { getAuth, type Auth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -12,7 +13,7 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-const hasFirebaseConfig = Boolean(
+export const hasFirebaseConfig = Boolean(
   firebaseConfig.apiKey &&
     firebaseConfig.authDomain &&
     firebaseConfig.projectId &&
@@ -30,6 +31,7 @@ const getOrInitApp = (): FirebaseApp | undefined => {
 
 let analyticsInstance: Analytics | undefined;
 let firestoreInstance: Firestore | undefined;
+let authInstance: Auth | undefined;
 
 export const initAnalytics = async () => {
   if (typeof window === "undefined") return undefined;
@@ -60,4 +62,15 @@ export const getFirestoreDb = (): Firestore | undefined => {
   firestoreInstance = getFirestore(app);
   console.info("Firestore initialized");
   return firestoreInstance;
+};
+
+export const getFirebaseAuth = (): Auth | undefined => {
+  if (!hasFirebaseConfig) return undefined;
+  if (authInstance) return authInstance;
+
+  const app = getOrInitApp();
+  if (!app) return undefined;
+
+  authInstance = getAuth(app);
+  return authInstance;
 };

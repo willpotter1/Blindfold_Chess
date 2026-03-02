@@ -12,6 +12,7 @@ import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
 import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
@@ -148,15 +149,26 @@ const Index = () => {
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      <div className="container mx-auto px-4 py-8">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <div className="flex flex-row items-center justify-center gap-3 flex-wrap">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-              Blindfold Chess Trainer
+      {/* Header */}
+      <div className="w-full border-b bg-card">
+        <div className="container mx-auto px-4 py-3">
+          <div className="grid grid-cols-[1fr_auto_1fr] items-center">
+            <h1 className="col-start-2 text-center text-3xl md:text-5xl font-bold text-foreground">
+              Blindchess
             </h1>
+            <div className="col-start-3 flex justify-self-end gap-2">
+              <Button asChild type="button" variant="outline">
+                <Link to="/login">Log In</Link>
+              </Button>
+              <Button asChild type="button">
+                <Link to="/signup">Sign Up</Link>
+              </Button>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-8">
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {/* Left Column - Config */}
