@@ -1,6 +1,6 @@
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { applyActionCode, sendEmailVerification, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -14,34 +14,6 @@ const Login = () => {
   const [isLoggingIn, setIsLoggingIn] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const auth = getFirebaseAuth();
-    if (!auth || typeof window === 'undefined') return;
-
-    const params = new URLSearchParams(window.location.search);
-    const mode = params.get('mode');
-    const code = params.get('oobCode');
-    if (mode !== 'verifyEmail' || !code) return;
-
-    void (async () => {
-      try {
-        await applyActionCode(auth, code);
-        toast({
-          title: 'Email verified',
-          description: 'Your account is verified. You can log in now.',
-        });
-        navigate('/login', { replace: true });
-      } catch (error) {
-        console.error('Email verification failed:', error);
-        toast({
-          title: 'Verification failed',
-          description: 'That verification link is invalid or expired.',
-          variant: 'destructive',
-        });
-      }
-    })();
-  }, [navigate, toast]);
 
   const handleLogin = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -58,22 +30,7 @@ const Login = () => {
 
     setIsLoggingIn(true);
     try {
-      const credential = await signInWithEmailAndPassword(auth, email, password);
-      await credential.user.reload();
-
-      if (!credential.user.emailVerified) {
-        await sendEmailVerification(credential.user, {
-          url: `${window.location.origin}/sign-in`,
-          handleCodeInApp: true,
-        });
-        await signOut(auth);
-        toast({
-          title: 'Email not verified',
-          description: 'Verification email sent. Verify your email, then log in again.',
-          variant: 'destructive',
-        });
-        return;
-      }
+      await signInWithEmailAndPassword(auth, email, password);
 
       toast({
         title: 'Signed in',

@@ -1,18 +1,44 @@
 import { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { createUserWithEmailAndPassword, sendEmailVerification, signOut } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signOut } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { getFirebaseAuth, hasFirebaseConfig } from '@/lib/firebase';
+import { sendOtpCode, verifyOtpCode } from '@/lib/otpApi';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [otp, setOtp] = useState('');
+  const [isSendingOtp, setIsSendingOtp] = useState(false);
   const [isSigningUp, setIsSigningUp] = useState(false);
+  const [otpSent, setOtpSent] = useState(false);
   const { toast } = useToast();
+
+  const handleSendOtp = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSendingOtp(true);
+    try {
+      await sendOtpCode(email);
+      setOtpSent(true);
+      toast({
+        title: 'OTP sent',
+        description: 'Check your email for the 6-digit code.',
+      });
+    } catch (error) {
+      console.error('Send OTP failed:', error);
+      toast({
+        title: 'Could not send OTP',
+        description: error instanceof Error ? error.message : 'Please try again.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSendingOtp(false);
+    }
+  };
 
   const handleSignup = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -29,21 +55,20 @@ const Signup = () => {
 
     setIsSigningUp(true);
     try {
+      await verifyOtpCode(email, otp);
       const credential = await createUserWithEmailAndPassword(auth, email, password);
-      await sendEmailVerification(credential.user, {
-        url: `${window.location.origin}/login`,
-        handleCodeInApp: true,
-      });
       await signOut(auth);
       toast({
-        title: 'Check your email',
-        description: 'Your account was created. Verify your email before logging in.',
+        title: 'Account created',
+        description: 'Email verified via OTP. You can log in now.',
       });
+      setOtp('');
+      setOtpSent(false);
     } catch (error) {
       console.error('Signup failed:', error);
       toast({
         title: 'Sign up failed',
-        description: 'Please confirm your details and Firebase auth settings.',
+        description: error instanceof Error ? error.message : 'Please confirm your details and try again.',
         variant: 'destructive',
       });
     } finally {
@@ -74,10 +99,10 @@ const Signup = () => {
         <Card className="mx-auto max-w-xl">
           <CardHeader>
             <CardTitle>Sign Up</CardTitle>
-            <CardDescription>Create your account and verify your email.</CardDescription>
+            <CardDescription>Create your account with password and verify email using OTP.</CardDescription>
           </CardHeader>
           <CardContent>
-            <form className="space-y-4" onSubmit={handleSignup}>
+            <form className="space-y-4" onSubmit={otpSent ? handleSignup : handleSendOtp}>
               <div className="space-y-2">
                 <Label htmlFor="signup-email">Email</Label>
                 <Input
@@ -103,9 +128,31 @@ const Signup = () => {
                   minLength={6}
                 />
               </div>
-              <Button type="submit" className="w-full" disabled={isSigningUp}>
-                {isSigningUp ? 'Creating account...' : 'Sign Up'}
-              </Button>
+              {otpSent && (
+                <div className="space-y-2">
+                  <Label htmlFor="signup-otp">Email OTP</Label>
+                  <Input
+                    id="signup-otp"
+                    type="text"
+                    inputMode="numeric"
+                    placeholder="6-digit code"
+                    value={otp}
+                    onChange={(event) => setOtp(event.target.value)}
+                    required
+                    minLength={6}
+                    maxLength={6}
+                  />
+                </div>
+              )}
+              {otpSent ? (
+                <Button type="submit" className="w-full" disabled={isSigningUp}>
+                  {isSigningUp ? 'Creating account...' : 'Verify OTP and Sign Up'}
+                </Button>
+              ) : (
+                <Button type="submit" className="w-full" disabled={isSendingOtp}>
+                  {isSendingOtp ? 'Sending OTP...' : 'Send OTP'}
+                </Button>
+              )}
             </form>
             <p className="mt-4 text-center text-sm text-muted-foreground">
               Already have an account?{' '}
