@@ -249,9 +249,18 @@ export const useGameState = () => {
     return 'Last computer move: None yet';
   }, [game, gameState]);
 
+  const resetGame = useCallback(() => {
+    gameRef.current = null;
+    gameStateRef.current = null;
+    hasSavedResultRef.current = false;
+    setGame(null);
+    setGameState(null);
+  }, []);
+
   return {
     gameState,
     startNewGame,
+    resetGame,
     makeMove,
     makeMoveUci,
     shouldShowBoard,

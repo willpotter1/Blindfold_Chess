@@ -50,20 +50,28 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="w-full border-b bg-card">
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-between gap-4">
-            <Button asChild type="button" variant="outline" size="sm">
-              <Link to="/">Back</Link>
+    <div className="min-h-screen bg-[#303030] md:flex">
+      <div className="w-full border-b bg-[#000000] p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
+        <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch">
+          <Link to="/" className="md:self-center">
+            <img
+              src="/Blindchess_logo.png"
+              alt="Blindchess logo"
+              className="h-14 w-14 object-contain md:h-20 md:w-20"
+            />
+          </Link>
+          <div className="flex gap-2 md:flex-col">
+            <Button asChild type="button" variant="default" className="md:w-full">
+              <Link to="/login">Log In</Link>
             </Button>
-            <h1 className="text-2xl font-bold text-foreground md:text-3xl">Blindchess</h1>
-            <div className="w-[68px]" aria-hidden />
+            <Button asChild type="button" variant="outline" className="md:w-full">
+              <Link to="/signup">Sign Up</Link>
+            </Button>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-10">
+      <div className="container mx-auto px-4 py-10 md:flex-1">
         {!hasFirebaseConfig && (
           <div className="mx-auto mb-6 max-w-xl rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
             Firebase is not configured. Set your `VITE_FIREBASE_*` env vars to enable authentication.

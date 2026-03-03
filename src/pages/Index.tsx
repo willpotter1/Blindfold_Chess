@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Chess } from 'chess.js';
 import { useGameState } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
-import { GameConfigPanel } from '@/components/GameConfigPanel';
 import { BlindfoldBoard } from '@/components/BlindfoldBoard';
 import { MoveInput } from '@/components/MoveInput';
 import { MoveList } from '@/components/MoveList';
@@ -17,10 +16,10 @@ import { Link } from 'react-router-dom';
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
 const SEO_CANONICAL_URL = 'https://blindchess.org/';
-const SEO_OG_IMAGE = 'https://blindchess.org/circlepawnwb-circle-512.png?v=5';
+const SEO_OG_IMAGE = 'https://blindchess.org/Blindchess_logo.png';
 
 const Index = () => {
-  const { gameState, startNewGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState } = useGameState();
+  const { gameState, startNewGame, resetGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState } = useGameState();
   const [isEngineThinking, setIsEngineThinking] = useState(false);
   const [moveError, setMoveError] = useState<string>('');
   const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
@@ -141,111 +140,107 @@ const Index = () => {
   );
   const isBoardVisible = Boolean(gameState && (shouldShowBoard() || isManualBoardReveal));
 
+  const handleLogoClick = () => {
+    setMoveError('');
+    setIsManualBoardReveal(false);
+    setIsEngineThinking(false);
+    resetGame();
+  };
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[#303030] md:flex">
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      {/* Header */}
-      <div className="w-full border-b bg-card">
-        <div className="container mx-auto px-4 py-3">
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center">
-            <h1 className="col-start-2 text-center text-3xl md:text-5xl font-bold text-foreground">
-              Blindchess
-            </h1>
-            <div className="col-start-3 flex justify-self-end gap-2">
-              <Button asChild type="button" variant="outline">
-                <Link to="/login">Log In</Link>
-              </Button>
-              <Button asChild type="button">
-                <Link to="/signup">Sign Up</Link>
-              </Button>
-            </div>
+      <div className="w-full border-b bg-[#000000] p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
+        <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch">
+          <Link to="/" onClick={handleLogoClick} className="md:self-center">
+            <img
+              src="/Blindchess_logo.png"
+              alt="Blindchess logo"
+              className="h-14 w-14 object-contain md:h-20 md:w-20"
+            />
+          </Link>
+          <div className="flex gap-2 md:flex-col">
+            <Button asChild type="button" variant="outline" className="md:w-full">
+              <Link to="/login">Log In</Link>
+            </Button>
+            <Button asChild type="button" className="md:w-full">
+              <Link to="/signup">Sign Up</Link>
+            </Button>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="mx-auto w-full px-4 py-8 md:flex-1">
+        {gameState ? (
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 max-w-6xl mx-auto">
+            <div className="flex flex-col items-center justify-start space-y-4">
+              <BlindfoldBoard
+                fen={gameState.fen}
+                isVisible={isBoardVisible}
+                isInteractive={isPlayerTurn}
+                onMove={handleBoardMove}
+              />
+              <Button
+                type="button"
+                variant="secondary"
+                className="w-full max-w-[520px]"
+                onPointerDown={() => setIsManualBoardReveal(true)}
+                onPointerUp={() => setIsManualBoardReveal(false)}
+                onPointerLeave={() => setIsManualBoardReveal(false)}
+                onPointerCancel={() => setIsManualBoardReveal(false)}
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    setIsManualBoardReveal(true);
+                  }
+                }}
+                onKeyUp={(event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    setIsManualBoardReveal(false);
+                  }
+                }}
+                onBlur={() => setIsManualBoardReveal(false)}
+              >
+                Hold to Show Board
+              </Button>
+              <StatusBar
+                status={getGameStatus()}
+                result={gameState.result}
+              />
+            </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {/* Left Column - Config */}
-          <div className="space-y-6">
-            <GameConfigPanel 
-              onStartGame={handleStartGame}
-              isGameActive={!!gameState}
-            />
+            <div className="space-y-6">
+              <MoveInput
+                onSubmitMove={handlePlayerMove}
+                disabled={!isPlayerTurn}
+                errorMessage={moveError}
+              />
+              <MoveList moves={gameState.moves} />
+            </div>
           </div>
-
-          {/* Middle Column - Board */}
-          <div className="flex flex-col items-center justify-start space-y-4">
-            {gameState ? (
-              <>
-                <BlindfoldBoard 
-                  fen={gameState.fen} 
-                  isVisible={isBoardVisible}
-                  isInteractive={isPlayerTurn}
-                  onMove={handleBoardMove}
-                />
-                <Button
-                  type="button"
-                  variant="secondary"
-                  className="w-full max-w-[520px]"
-                  onPointerDown={() => setIsManualBoardReveal(true)}
-                  onPointerUp={() => setIsManualBoardReveal(false)}
-                  onPointerLeave={() => setIsManualBoardReveal(false)}
-                  onPointerCancel={() => setIsManualBoardReveal(false)}
-                  onKeyDown={(event) => {
-                    if (event.key === 'Enter' || event.key === ' ') {
-                      setIsManualBoardReveal(true);
-                    }
-                  }}
-                  onKeyUp={(event) => {
-                    if (event.key === 'Enter' || event.key === ' ') {
-                      setIsManualBoardReveal(false);
-                    }
-                  }}
-                  onBlur={() => setIsManualBoardReveal(false)}
-                >
-                  Hold to Show Board
-                </Button>
-                <StatusBar 
-                  status={getGameStatus()}
-                  result={gameState.result}
-                />
-              </>
-            ) : (
-              <div className="flex items-center justify-center bg-card border-2 border-dashed border-border rounded-lg aspect-square max-w-[500px] w-full">
-                <div className="text-center p-8">
-                  <img
-                    src="/PawnWB.png"
-                    alt="Pawn logo"
-                    className="w-40 h-40 mx-auto mb-4 object-contain"
-                  />
-                  <p className="text-muted-foreground">
-                    Configure and start a new game to begin training
-                  </p>
-                </div>
-              </div>
-            )}
+        ) : (
+          <div className="flex min-h-[70vh] flex-col">
+            <div className="flex flex-1 flex-col items-center justify-center text-center">
+              <h1 className="text-5xl md:text-7xl font-bold text-foreground">
+                Learn Blindchess
+              </h1>
+              <Button
+                type="button"
+                className="mt-6"
+                onClick={() => void handleStartGame('white', 1200, 3)}
+              >
+                Start Game
+              </Button>
+            </div>
+            <p className="pb-4 text-center text-sm md:text-base text-[#dff9ba]">
+              “Calculation is visualization.” - Gary Kasparov
+            </p>
           </div>
-
-          {/* Right Column - Moves and Input */}
-          <div className="space-y-6">
-            {gameState && (
-              <>
-                <MoveInput 
-                  onSubmitMove={handlePlayerMove}
-                  disabled={!isPlayerTurn}
-                  errorMessage={moveError}
-                />
-                <MoveList moves={gameState.moves} />
-              </>
-            )}
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );
