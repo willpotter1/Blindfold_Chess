@@ -14,7 +14,6 @@ import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
-import bbPawnTitleImage from '../../Visual/BCtitle.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
@@ -274,11 +273,9 @@ const Index = () => {
         ) : (
           <div className="flex min-h-[calc(100vh-8rem)] flex-col">
             <div className="pb-6 pt-2 text-center">
-              <img
-                src={bbPawnTitleImage}
-                alt="Blindchess title"
-                className="mx-auto w-full max-w-[54rem] object-contain"
-              />
+              <h1 className="text-5xl font-extrabold tracking-tight text-black md:text-7xl">
+                Learn Blindchess
+              </h1>
               <p className="mt-2 text-center text-xs text-black md:text-sm">
                 “Calculation is visualization.” - Gary Kasparov
               </p>
