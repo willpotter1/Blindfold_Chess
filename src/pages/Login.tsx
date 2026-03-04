@@ -1,7 +1,8 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { FirebaseError } from 'firebase/app';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { collection, getDocs, limit, query, where } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, limit, query, where } from 'firebase/firestore';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -15,6 +16,9 @@ const Login = () => {
   const [isLoggingIn, setIsLoggingIn] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
+  const isPermissionDeniedError = (error: unknown) =>
+    error instanceof FirebaseError &&
+    (error.code === 'permission-denied' || error.code === 'firestore/permission-denied');
 
   const resolveEmailFromIdentifier = async (rawIdentifier: string): Promise<string> => {
     const trimmedIdentifier = rawIdentifier.trim();
@@ -28,20 +32,36 @@ const Login = () => {
     }
 
     const normalizedUsername = trimmedIdentifier.toLowerCase();
-    const usersRef = collection(db, 'users');
-    const usernameQuery = query(usersRef, where('username', '==', normalizedUsername), limit(1));
-    const snapshot = await getDocs(usernameQuery);
+    try {
+      const usernameRef = doc(db, 'usernames', normalizedUsername);
+      const usernameDoc = await getDoc(usernameRef);
+      if (usernameDoc.exists()) {
+        const usernameRecord = usernameDoc.data() as { email?: string };
+        if (usernameRecord.email) {
+          return usernameRecord.email;
+        }
+      }
 
-    if (snapshot.empty) {
-      throw new Error('No account found for that username.');
+      const usersRef = collection(db, 'users');
+      const usernameQuery = query(usersRef, where('username', '==', normalizedUsername), limit(1));
+      const snapshot = await getDocs(usernameQuery);
+
+      if (snapshot.empty) {
+        throw new Error('No account found for that username.');
+      }
+
+      const userRecord = snapshot.docs[0].data() as { email?: string };
+      if (!userRecord.email) {
+        throw new Error('Username is missing an email record.');
+      }
+
+      return userRecord.email;
+    } catch (error) {
+      if (isPermissionDeniedError(error)) {
+        throw new Error('Username login is unavailable right now. Please log in with your email address.');
+      }
+      throw error;
     }
-
-    const userRecord = snapshot.docs[0].data() as { email?: string };
-    if (!userRecord.email) {
-      throw new Error('Username is missing an email record.');
-    }
-
-    return userRecord.email;
   };
 
   const handleLogin = async (event: FormEvent<HTMLFormElement>) => {

@@ -106,6 +106,7 @@ const Signup = () => {
         transaction.set(usernameRef, {
           uid: credential.user.uid,
           username: normalizedUsername,
+          email,
           createdAt: serverTimestamp(),
         });
 
