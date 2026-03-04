@@ -6,6 +6,7 @@ import { BlindfoldBoard } from '@/components/BlindfoldBoard';
 import { MoveInput } from '@/components/MoveInput';
 import { MoveList } from '@/components/MoveList';
 import { StatusBar } from '@/components/StatusBar';
+import { GameConfigPanel } from '@/components/GameConfigPanel';
 import { useToast } from '@/hooks/use-toast';
 import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
@@ -13,6 +14,7 @@ import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
+import bbPawnTitleImage from '../../Visual/BCtitle.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
@@ -190,7 +192,7 @@ const Index = () => {
         ogImage={SEO_OG_IMAGE}
       />
       <div className="w-full border-b bg-zinc-600 p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
-        <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch">
+        <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch md:justify-start">
           <Link to="/" onClick={handleLogoClick} className="md:self-center">
             <img
               src="/BBpawn.png"
@@ -198,7 +200,18 @@ const Index = () => {
               className="h-14 w-14 object-contain md:h-20 md:w-20"
             />
           </Link>
-          <div className="flex gap-2 md:flex-col">
+          <div className="flex gap-2 md:mt-4 md:flex-col">
+            <Button asChild type="button" className="md:w-full">
+              <Link to="/account">Account</Link>
+            </Button>
+            <Button asChild type="button" className="md:w-full">
+              <Link to="/games">Games</Link>
+            </Button>
+            <Button asChild type="button" className="md:w-full">
+              <Link to="/about">About</Link>
+            </Button>
+          </div>
+          <div className="flex gap-2 md:mt-auto md:flex-col">
             <Button asChild type="button" className="md:w-full">
               <Link to="/login">Log In</Link>
             </Button>
@@ -259,26 +272,33 @@ const Index = () => {
             </div>
           </div>
         ) : (
-          <div className="flex min-h-[70vh] flex-col">
-            <div className="flex flex-1 flex-col items-center justify-center text-center">
-              <h1 className="text-5xl md:text-7xl font-bold text-foreground">
-                Learn Blindchess
-              </h1>
-              <p className="mt-2 text-center text-xs md:text-sm text-black">
+          <div className="flex min-h-[calc(100vh-8rem)] flex-col">
+            <div className="pb-6 pt-2 text-center">
+              <img
+                src={bbPawnTitleImage}
+                alt="Blindchess title"
+                className="mx-auto w-full max-w-[54rem] object-contain"
+              />
+              <p className="mt-2 text-center text-xs text-black md:text-sm">
                 “Calculation is visualization.” - Gary Kasparov
               </p>
-              <img
-                src={pawnsPlayingImage}
-                alt="Pawns playing chess"
-                className="mt-6 w-full max-w-xl rounded-lg object-contain"
-              />
-              <Button
-                type="button"
-                className="mt-6 border-2 border-black px-10 py-6 text-lg md:text-xl"
-                onClick={() => navigate('/configure')}
-              >
-                Start Game
-              </Button>
+            </div>
+            <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-8 lg:grid-cols-2">
+              <div className="flex justify-center">
+                <img
+                  src={pawnsPlayingImage}
+                  alt="Pawns playing chess"
+                  className="w-full max-w-3xl rounded-lg object-contain"
+                />
+              </div>
+              <div className="mx-auto w-full max-w-lg">
+                <GameConfigPanel
+                  onStartGame={(playerColor, engineElo, revealEvery, allowCheats, hideMoveHistory) => {
+                    void handleStartGame(playerColor, engineElo, revealEvery, allowCheats, hideMoveHistory);
+                  }}
+                  isGameActive={false}
+                />
+              </div>
             </div>
           </div>
         )}

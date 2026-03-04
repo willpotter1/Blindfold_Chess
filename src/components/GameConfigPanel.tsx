@@ -80,30 +80,30 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
   };
 
   return (
-    <Card className="w-full">
-      <CardHeader>
-        <CardTitle>Game Configuration</CardTitle>
-        <CardDescription>
+    <Card className="w-full border-2 border-[#8B4513]">
+      <CardHeader className="space-y-1 pb-2">
+        <CardTitle className="text-xl">Game Configuration</CardTitle>
+        <CardDescription className="text-xs">
           Set up your blindfold chess training session
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-6">
-        <div className="space-y-2">
-          <Label htmlFor="player-color">Play As</Label>
-          <Select value={playerColor} onValueChange={(value) => setPlayerColor(value as 'white' | 'black')}>
-            <SelectTrigger id="player-color">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="white">White</SelectItem>
-              <SelectItem value="black">Black</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
+      <CardContent className="space-y-4 pt-2">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="space-y-2">
+            <Label htmlFor="player-color">Play As</Label>
+            <Select value={playerColor} onValueChange={(value) => setPlayerColor(value as 'white' | 'black')}>
+              <SelectTrigger id="player-color">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="white">White</SelectItem>
+                <SelectItem value="black">Black</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
 
-        <div className="space-y-2">
-          <Label htmlFor="engine-elo">Engine Elo</Label>
-          <div className="flex items-center gap-2">
+          <div className="space-y-2">
+            <Label htmlFor="engine-elo">Engine Elo</Label>
             <Input
               id="engine-elo"
               type="number"
@@ -118,39 +118,35 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
                   e.currentTarget.blur();
                 }
               }}
-              className="w-28"
+              className="w-full"
             />
           </div>
-          <p className="text-xs text-muted-foreground">Min: {MIN_ELO}, Max: {MAX_ELO}</p>
+
+          <div className="space-y-2 sm:col-span-2">
+            <Label htmlFor="reveal-frequency">Board Reveal Frequency</Label>
+            <Input
+              id="reveal-frequency"
+              type="number"
+              min={1}
+              step={1}
+              value={revealEveryInput}
+              onChange={(e) => {
+                setRevealEveryInput(e.target.value);
+                setRevealEveryTouched(true);
+              }}
+              onBlur={commitRevealEveryInput}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.currentTarget.blur();
+                }
+              }}
+              placeholder="Show board every N moves"
+              className={isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}
+            />
+          </div>
         </div>
 
-        <div className="space-y-2">
-          <Label htmlFor="reveal-frequency">Board Reveal Frequency</Label>
-          <Input
-            id="reveal-frequency"
-            type="number"
-            min={1}
-            step={1}
-            value={revealEveryInput}
-            onChange={(e) => {
-              setRevealEveryInput(e.target.value);
-              setRevealEveryTouched(true);
-            }}
-            onBlur={commitRevealEveryInput}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') {
-                e.currentTarget.blur();
-              }
-            }}
-            placeholder="Show board every N moves"
-            className={isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}
-          />
-          <p className="text-xs text-muted-foreground">
-            The board will be revealed every N of your moves
-          </p>
-        </div>
-
-        <div className="space-y-2">
+        <div className="space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
           <div className="flex items-center justify-between rounded-md border border-input bg-white px-3 py-2">
             <Label htmlFor="allow-cheats" className="cursor-pointer">
               Allow Cheats
@@ -161,12 +157,6 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
               onCheckedChange={setAllowCheats}
             />
           </div>
-          <p className="text-xs text-muted-foreground">
-            Controls whether the Hold to Show Board button is available during the game.
-          </p>
-        </div>
-
-        <div className="space-y-2">
           <div className="flex items-center justify-between rounded-md border border-input bg-white px-3 py-2">
             <Label htmlFor="hide-move-history" className="cursor-pointer">
               Hide Move History
@@ -177,9 +167,6 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
               onCheckedChange={setHideMoveHistory}
             />
           </div>
-          <p className="text-xs text-muted-foreground">
-            When enabled, the move list panel is hidden during the game.
-          </p>
         </div>
 
         <Button 

@@ -1,23 +1,8 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { GameConfigPanel } from '@/components/GameConfigPanel';
+import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
 
-type GameConfig = {
-  playerColor: 'white' | 'black';
-  engineElo: number;
-  revealEvery: number;
-  allowCheats: boolean;
-  hideMoveHistory: boolean;
-};
-
-const ConfigureGame = () => {
-  const navigate = useNavigate();
-
-  const handleStartGame = (playerColor: 'white' | 'black', engineElo: number, revealEvery: number, allowCheats: boolean, hideMoveHistory: boolean) => {
-    const config: GameConfig = { playerColor, engineElo, revealEvery, allowCheats, hideMoveHistory };
-    navigate('/', { state: { gameConfig: config } });
-  };
-
+const About = () => {
   return (
     <div className="min-h-screen bg-white md:flex">
       <div className="w-full border-b bg-zinc-600 p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
@@ -52,12 +37,17 @@ const ConfigureGame = () => {
       </div>
 
       <div className="container mx-auto flex items-center px-4 py-10 md:flex-1">
-        <div className="mx-auto w-full max-w-xl">
-          <GameConfigPanel onStartGame={handleStartGame} isGameActive={false} />
+        <div className="mx-auto w-full max-w-4xl p-2 text-center">
+          <h1 className="text-4xl font-bold text-black md:text-5xl">Coming Soon!</h1>
+          <img
+            src={pawnsPlayingImage}
+            alt="Pawns playing chess"
+            className="mx-auto mt-6 w-full max-w-3xl rounded-lg object-contain"
+          />
         </div>
       </div>
     </div>
   );
 };
 
-export default ConfigureGame;
+export default About;
