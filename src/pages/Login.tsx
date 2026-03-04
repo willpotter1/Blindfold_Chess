@@ -1,6 +1,5 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FirebaseError } from 'firebase/app';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { collection, doc, getDoc, getDocs, limit, query, where } from 'firebase/firestore';
 import { Button } from '@/components/ui/button';
@@ -16,9 +15,15 @@ const Login = () => {
   const [isLoggingIn, setIsLoggingIn] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
-  const isPermissionDeniedError = (error: unknown) =>
-    error instanceof FirebaseError &&
-    (error.code === 'permission-denied' || error.code === 'firestore/permission-denied');
+  const isPermissionDeniedError = (error: unknown) => {
+    if (error && typeof error === 'object' && 'code' in error) {
+      const code = (error as { code?: unknown }).code;
+      if (code === 'permission-denied' || code === 'firestore/permission-denied') {
+        return true;
+      }
+    }
+    return error instanceof Error && /insufficient permissions/i.test(error.message);
+  };
 
   const resolveEmailFromIdentifier = async (rawIdentifier: string): Promise<string> => {
     const trimmedIdentifier = rawIdentifier.trim();

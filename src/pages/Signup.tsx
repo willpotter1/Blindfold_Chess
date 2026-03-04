@@ -1,6 +1,5 @@
 import { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FirebaseError } from 'firebase/app';
 import { createUserWithEmailAndPassword, deleteUser, signOut } from 'firebase/auth';
 import { doc, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { Button } from '@/components/ui/button';
@@ -13,9 +12,15 @@ import { sendOtpCode, verifyOtpCode } from '@/lib/otpApi';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
-const isPermissionDeniedError = (error: unknown) =>
-  error instanceof FirebaseError &&
-  (error.code === 'permission-denied' || error.code === 'firestore/permission-denied');
+const isPermissionDeniedError = (error: unknown) => {
+  if (error && typeof error === 'object' && 'code' in error) {
+    const code = (error as { code?: unknown }).code;
+    if (code === 'permission-denied' || code === 'firestore/permission-denied') {
+      return true;
+    }
+  }
+  return error instanceof Error && /insufficient permissions/i.test(error.message);
+};
 
 const Signup = () => {
   const [username, setUsername] = useState('');
