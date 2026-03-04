@@ -36,3 +36,14 @@ curl -X POST http://localhost:8787/auth/verify-otp \
   -H "Content-Type: application/json" \
   -d '{"email":"you@example.com","otp":"123456"}'
 ```
+
+### Production setup checklist
+
+OTP only works in production if both frontend and backend envs are configured:
+
+- Frontend build env:
+  - `VITE_OTP_API_BASE_URL=https://your-otp-api.example.com`
+  - If using GitHub Pages deploy, set this as a repository secret named `VITE_OTP_API_BASE_URL`.
+- OTP server env:
+  - `OTP_ALLOWED_ORIGINS=https://williampotter.github.io,http://localhost:5173` (replace with your real site origin)
+  - `MAILERSEND_API_TOKEN`, `MAILERSEND_FROM_EMAIL`, and `OTP_HASH_SECRET` must be set on the deployed server.

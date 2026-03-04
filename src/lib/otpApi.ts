@@ -1,4 +1,12 @@
-const OTP_API_BASE_URL = import.meta.env.VITE_OTP_API_BASE_URL ?? 'http://localhost:8787';
+const rawOtpApiBaseUrl = import.meta.env.VITE_OTP_API_BASE_URL?.trim();
+const OTP_API_BASE_URL = rawOtpApiBaseUrl || (import.meta.env.DEV ? 'http://localhost:8787' : '');
+
+const buildOtpApiUrl = (path: string) => {
+  if (!OTP_API_BASE_URL && !import.meta.env.DEV) {
+    throw new Error('otp_api_not_configured');
+  }
+  return `${OTP_API_BASE_URL}${path}`;
+};
 
 type OtpErrorPayload = {
   ok?: false;
@@ -7,7 +15,7 @@ type OtpErrorPayload = {
 };
 
 const postJson = async <T>(path: string, payload: unknown): Promise<T> => {
-  const response = await fetch(`${OTP_API_BASE_URL}${path}`, {
+  const response = await fetch(buildOtpApiUrl(path), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),

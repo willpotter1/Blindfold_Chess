@@ -29,19 +29,26 @@ const otpStore = new Map();
 /** @type {Map<string, { verifiedAt: number; expiresAt: number }>} */
 const verificationStore = new Map();
 
-const getAllowedOrigin = (requestOrigin) =>
-  requestOrigin && ALLOWED_ORIGINS.includes(requestOrigin) ? requestOrigin : ALLOWED_ORIGINS[0];
+const ALL_ORIGINS_ALLOWED = ALLOWED_ORIGINS.includes("*");
+const isOriginAllowed = (requestOrigin) =>
+  !requestOrigin || ALL_ORIGINS_ALLOWED || ALLOWED_ORIGINS.includes(requestOrigin);
 
 const json = (req, res, statusCode, payload) => {
   const body = JSON.stringify(payload);
-  const allowOrigin = getAllowedOrigin(req.headers.origin);
-  res.writeHead(statusCode, {
+  const headers = {
     "Content-Type": "application/json; charset=utf-8",
-    "Access-Control-Allow-Origin": allowOrigin,
     "Access-Control-Allow-Methods": "POST,OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     Vary: "Origin",
-  });
+  };
+  if (ALL_ORIGINS_ALLOWED) {
+    headers["Access-Control-Allow-Origin"] = "*";
+  } else if (req.headers.origin && isOriginAllowed(req.headers.origin)) {
+    headers["Access-Control-Allow-Origin"] = req.headers.origin;
+  } else if (!req.headers.origin && ALLOWED_ORIGINS[0]) {
+    headers["Access-Control-Allow-Origin"] = ALLOWED_ORIGINS[0];
+  }
+  res.writeHead(statusCode, headers);
   res.end(body);
 };
 
@@ -186,6 +193,10 @@ setInterval(() => {
 
 const server = http.createServer(async (req, res) => {
   try {
+    if (!isOriginAllowed(req.headers.origin)) {
+      return json(req, res, 403, { ok: false, error: "origin_not_allowed" });
+    }
+
     if (req.method === "OPTIONS") {
       return json(req, res, 204, {});
     }
@@ -217,4 +228,7 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, () => {
   console.log(`OTP server listening on http://localhost:${PORT}`);
+  console.log(
+    `Allowed origins: ${ALL_ORIGINS_ALLOWED ? "*" : ALLOWED_ORIGINS.join(", ") || "(none configured)"}`,
+  );
 });
