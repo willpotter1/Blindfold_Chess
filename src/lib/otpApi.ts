@@ -1,11 +1,12 @@
-const rawOtpApiBaseUrl = import.meta.env.VITE_OTP_API_BASE_URL?.trim();
-const OTP_API_BASE_URL = rawOtpApiBaseUrl || (import.meta.env.DEV ? 'http://localhost:8787' : '');
+const normalizedOtpApiBaseUrl = import.meta.env.VITE_OTP_API_BASE_URL?.trim().replace(/\/+$/, '');
+const OTP_API_BASE_URL = normalizedOtpApiBaseUrl || (import.meta.env.DEV ? 'http://localhost:8787' : '');
 
 const buildOtpApiUrl = (path: string) => {
   if (!OTP_API_BASE_URL && !import.meta.env.DEV) {
     throw new Error('otp_api_not_configured');
   }
-  return `${OTP_API_BASE_URL}${path}`;
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  return `${OTP_API_BASE_URL}${normalizedPath}`;
 };
 
 type OtpErrorPayload = {

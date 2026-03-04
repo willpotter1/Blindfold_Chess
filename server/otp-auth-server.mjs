@@ -29,24 +29,26 @@ const otpStore = new Map();
 /** @type {Map<string, { verifiedAt: number; expiresAt: number }>} */
 const verificationStore = new Map();
 
-const ALL_ORIGINS_ALLOWED = ALLOWED_ORIGINS.includes("*");
-const isOriginAllowed = (requestOrigin) =>
-  !requestOrigin || ALL_ORIGINS_ALLOWED || ALLOWED_ORIGINS.includes(requestOrigin);
+const getOriginHeader = (originHeader) => {
+  if (Array.isArray(originHeader)) {
+    return originHeader[0];
+  }
+  return originHeader;
+};
+
+const isOriginAllowed = (requestOrigin) => Boolean(requestOrigin && ALLOWED_ORIGINS.includes(requestOrigin));
 
 const json = (req, res, statusCode, payload) => {
   const body = JSON.stringify(payload);
+  const requestOrigin = getOriginHeader(req.headers.origin);
   const headers = {
     "Content-Type": "application/json; charset=utf-8",
-    "Access-Control-Allow-Methods": "POST,OPTIONS",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     Vary: "Origin",
   };
-  if (ALL_ORIGINS_ALLOWED) {
-    headers["Access-Control-Allow-Origin"] = "*";
-  } else if (req.headers.origin && isOriginAllowed(req.headers.origin)) {
-    headers["Access-Control-Allow-Origin"] = req.headers.origin;
-  } else if (!req.headers.origin && ALLOWED_ORIGINS[0]) {
-    headers["Access-Control-Allow-Origin"] = ALLOWED_ORIGINS[0];
+  if (isOriginAllowed(requestOrigin)) {
+    headers["Access-Control-Allow-Origin"] = requestOrigin;
   }
   res.writeHead(statusCode, headers);
   res.end(body);
@@ -193,7 +195,8 @@ setInterval(() => {
 
 const server = http.createServer(async (req, res) => {
   try {
-    if (!isOriginAllowed(req.headers.origin)) {
+    const requestOrigin = getOriginHeader(req.headers.origin);
+    if (requestOrigin && !isOriginAllowed(requestOrigin)) {
       return json(req, res, 403, { ok: false, error: "origin_not_allowed" });
     }
 
@@ -228,7 +231,5 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, () => {
   console.log(`OTP server listening on http://localhost:${PORT}`);
-  console.log(
-    `Allowed origins: ${ALL_ORIGINS_ALLOWED ? "*" : ALLOWED_ORIGINS.join(", ") || "(none configured)"}`,
-  );
+  console.log(`Allowed origins: ${ALLOWED_ORIGINS.join(", ") || "(none configured)"}`);
 });
