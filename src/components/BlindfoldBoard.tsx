@@ -77,7 +77,7 @@ export const BlindfoldBoard = ({ fen, isVisible, isInteractive = false, onMove }
   };
 
   return (
-    <div className="inline-block w-full max-w-[520px]" ref={boardRef}>
+    <div className="inline-block w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]" ref={boardRef}>
       <div
         className="rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 w-full aspect-square overflow-hidden"
       >
@@ -97,7 +97,7 @@ export const BlindfoldBoard = ({ fen, isVisible, isInteractive = false, onMove }
                   key={`${rowIndex}-${colIndex}`}
                   className={`
                     relative aspect-square flex items-center justify-center overflow-hidden
-                    ${isLight ? 'bg-amber-200' : 'bg-emerald-700'}
+                    ${isLight ? 'bg-[#844318]' : 'bg-[#2b2b2b]'}
                     transition-colors duration-150
                     ${isSelected ? 'ring-4 ring-sky-400/70 ring-inset' : ''}
                     ${isInteractive ? 'cursor-pointer' : 'cursor-default'}
@@ -117,14 +117,14 @@ export const BlindfoldBoard = ({ fen, isVisible, isInteractive = false, onMove }
                   
                 {/* File labels (a-h) at bottom */}
                 {rowIndex === 7 && (
-                    <span className={`pointer-events-none absolute bottom-0 right-[3px] text-[10px] font-semibold z-20 ${isLight ? 'text-emerald-900' : 'text-amber-100'}`}>
+                    <span className={`pointer-events-none absolute bottom-0 right-[3px] text-[10px] font-semibold z-20 ${isLight ? 'text-zinc-100' : 'text-zinc-300'}`}>
                       {file}
                     </span>
                   )}
                   
                   {/* Rank labels (1-8) on left */}
                   {colIndex === 0 && (
-                    <span className={`pointer-events-none absolute top-[2px] left-[3px] text-[10px] font-semibold z-20 ${isLight ? 'text-emerald-900' : 'text-amber-100'}`}>
+                    <span className={`pointer-events-none absolute top-[2px] left-[3px] text-[10px] font-semibold z-20 ${isLight ? 'text-zinc-100' : 'text-zinc-300'}`}>
                       {rank}
                     </span>
                   )}

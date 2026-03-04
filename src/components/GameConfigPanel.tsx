@@ -4,9 +4,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
+import { Switch } from '@/components/ui/switch';
 
 interface GameConfigPanelProps {
-  onStartGame: (playerColor: 'white' | 'black', engineElo: number, revealEvery: number) => void;
+  onStartGame: (
+    playerColor: 'white' | 'black',
+    engineElo: number,
+    revealEvery: number,
+    allowCheats: boolean,
+    hideMoveHistory: boolean
+  ) => void;
   isGameActive: boolean;
 }
 
@@ -26,6 +33,8 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
   const [revealEvery, setRevealEvery] = useState<number>(DEFAULT_REVEAL_EVERY);
   const [revealEveryInput, setRevealEveryInput] = useState<string>(String(DEFAULT_REVEAL_EVERY));
   const [revealEveryTouched, setRevealEveryTouched] = useState<boolean>(false);
+  const [allowCheats, setAllowCheats] = useState<boolean>(true);
+  const [hideMoveHistory, setHideMoveHistory] = useState<boolean>(false);
 
   const isRevealEveryValid = () => {
     if (!/^\d+$/.test(revealEveryInput)) {
@@ -45,7 +54,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
     if (parsed !== revealEvery) {
       setRevealEvery(parsed);
     }
-    onStartGame(playerColor, engineElo, parsed);
+    onStartGame(playerColor, engineElo, parsed, allowCheats, hideMoveHistory);
   };
 
   const commitEloInput = () => {
@@ -138,6 +147,38 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
           />
           <p className="text-xs text-muted-foreground">
             The board will be revealed every N of your moves
+          </p>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex items-center justify-between rounded-md border border-input bg-white px-3 py-2">
+            <Label htmlFor="allow-cheats" className="cursor-pointer">
+              Allow Cheats
+            </Label>
+            <Switch
+              id="allow-cheats"
+              checked={allowCheats}
+              onCheckedChange={setAllowCheats}
+            />
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Controls whether the Hold to Show Board button is available during the game.
+          </p>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex items-center justify-between rounded-md border border-input bg-white px-3 py-2">
+            <Label htmlFor="hide-move-history" className="cursor-pointer">
+              Hide Move History
+            </Label>
+            <Switch
+              id="hide-move-history"
+              checked={hideMoveHistory}
+              onCheckedChange={setHideMoveHistory}
+            />
+          </div>
+          <p className="text-xs text-muted-foreground">
+            When enabled, the move list panel is hidden during the game.
           </p>
         </div>
 

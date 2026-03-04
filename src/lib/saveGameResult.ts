@@ -1,6 +1,6 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import type { GameState } from "@/hooks/useGameState";
-import { getFirestoreDb } from "@/lib/firebase";
+import { getFirestoreDb, getFirebaseAuth } from "@/lib/firebase";
 
 type SaveResult =
   | { ok: true; id: string }
@@ -13,7 +13,10 @@ export const saveCompletedGame = async (gameState: GameState): Promise<SaveResul
     return { ok: false, reason: "no_firebase" };
   }
 
+  const userId = getFirebaseAuth()?.currentUser?.uid ?? "guest";
+
   const payload = {
+    userId,
     moves: gameState.moves,
     result: gameState.result,
     finalFen: gameState.fen,
@@ -22,6 +25,8 @@ export const saveCompletedGame = async (gameState: GameState): Promise<SaveResul
       playerColor: gameState.playerColor,
       engineElo: gameState.engineElo,
       revealEvery: gameState.revealEvery,
+      allowCheats: gameState.allowCheats,
+      hideMoveHistory: gameState.hideMoveHistory,
     },
     createdAt: serverTimestamp(),
   };

@@ -77,18 +77,18 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#303030] md:flex">
-      <div className="w-full border-b bg-[#000000] p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
+    <div className="min-h-screen bg-white md:flex">
+      <div className="w-full border-b bg-zinc-600 p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
         <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch">
           <Link to="/" className="md:self-center">
             <img
-              src="/Blindchess_logo.png"
-              alt="Blindchess logo"
+              src="/BBpawn.png"
+              alt="BBpawn logo"
               className="h-14 w-14 object-contain md:h-20 md:w-20"
             />
           </Link>
           <div className="flex gap-2 md:flex-col">
-            <Button asChild type="button" variant="outline" className="md:w-full">
+            <Button asChild type="button" className="md:w-full">
               <Link to="/login">Log In</Link>
             </Button>
             <Button asChild type="button" variant="default" className="md:w-full">

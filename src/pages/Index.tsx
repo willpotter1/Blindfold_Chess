@@ -11,12 +11,23 @@ import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
 import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
 const SEO_CANONICAL_URL = 'https://blindchess.org/';
-const SEO_OG_IMAGE = 'https://blindchess.org/Blindchess_logo.png';
+const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
+
+type GameConfigState = {
+  gameConfig?: {
+    playerColor: 'white' | 'black';
+    engineElo: number;
+    revealEvery: number;
+    allowCheats: boolean;
+    hideMoveHistory: boolean;
+  };
+};
 
 const Index = () => {
   const { gameState, startNewGame, resetGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState } = useGameState();
@@ -24,6 +35,8 @@ const Index = () => {
   const [moveError, setMoveError] = useState<string>('');
   const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
   const { toast } = useToast();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     if (import.meta.env.DEV) {
@@ -68,16 +81,37 @@ const Index = () => {
     }
   };
 
-  const handleStartGame = async (playerColor: 'white' | 'black', engineElo: number, revealEvery: number) => {
+  const handleStartGame = async (
+    playerColor: 'white' | 'black',
+    engineElo: number,
+    revealEvery: number,
+    allowCheats: boolean,
+    hideMoveHistory: boolean
+  ) => {
     setMoveError('');
     setIsManualBoardReveal(false);
-    startNewGame(playerColor, engineElo, revealEvery);
+    startNewGame(playerColor, engineElo, revealEvery, allowCheats, hideMoveHistory);
 
     // If player chose black, engine moves first
     if (playerColor === 'black') {
       await handleEngineMove();
     }
   };
+
+  useEffect(() => {
+    const routeState = location.state as GameConfigState | null;
+    const incomingConfig = routeState?.gameConfig;
+    if (!incomingConfig || gameState) return;
+
+    void handleStartGame(
+      incomingConfig.playerColor,
+      incomingConfig.engineElo,
+      incomingConfig.revealEvery,
+      incomingConfig.allowCheats,
+      incomingConfig.hideMoveHistory ?? false
+    );
+    navigate('/', { replace: true, state: null });
+  }, [location.state, gameState, navigate]);
 
   const handlePlayerMove = async (moveStr: string) => {
     if (!gameState || isEngineThinking || gameState.isOver) return;
@@ -148,24 +182,24 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#303030] md:flex">
+    <div className="min-h-screen bg-white md:flex">
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      <div className="w-full border-b bg-[#000000] p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
+      <div className="w-full border-b bg-zinc-600 p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
         <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch">
           <Link to="/" onClick={handleLogoClick} className="md:self-center">
             <img
-              src="/Blindchess_logo.png"
-              alt="Blindchess logo"
+              src="/BBpawn.png"
+              alt="BBpawn logo"
               className="h-14 w-14 object-contain md:h-20 md:w-20"
             />
           </Link>
           <div className="flex gap-2 md:flex-col">
-            <Button asChild type="button" variant="outline" className="md:w-full">
+            <Button asChild type="button" className="md:w-full">
               <Link to="/login">Log In</Link>
             </Button>
             <Button asChild type="button" className="md:w-full">
@@ -177,7 +211,7 @@ const Index = () => {
 
       <div className="mx-auto w-full px-4 py-8 md:flex-1">
         {gameState ? (
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 max-w-6xl mx-auto">
+          <div className="mx-auto grid max-w-[1800px] grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,1fr)_300px]">
             <div className="flex flex-col items-center justify-start space-y-4">
               <BlindfoldBoard
                 fen={gameState.fen}
@@ -185,41 +219,43 @@ const Index = () => {
                 isInteractive={isPlayerTurn}
                 onMove={handleBoardMove}
               />
-              <Button
-                type="button"
-                variant="secondary"
-                className="w-full max-w-[520px]"
-                onPointerDown={() => setIsManualBoardReveal(true)}
-                onPointerUp={() => setIsManualBoardReveal(false)}
-                onPointerLeave={() => setIsManualBoardReveal(false)}
-                onPointerCancel={() => setIsManualBoardReveal(false)}
-                onKeyDown={(event) => {
-                  if (event.key === 'Enter' || event.key === ' ') {
-                    setIsManualBoardReveal(true);
-                  }
-                }}
-                onKeyUp={(event) => {
-                  if (event.key === 'Enter' || event.key === ' ') {
-                    setIsManualBoardReveal(false);
-                  }
-                }}
-                onBlur={() => setIsManualBoardReveal(false)}
-              >
-                Hold to Show Board
-              </Button>
-              <StatusBar
-                status={getGameStatus()}
-                result={gameState.result}
-              />
             </div>
 
-            <div className="space-y-6">
+            <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95]">
               <MoveInput
                 onSubmitMove={handlePlayerMove}
                 disabled={!isPlayerTurn}
                 errorMessage={moveError}
               />
-              <MoveList moves={gameState.moves} />
+              {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
+              {gameState.allowCheats && (
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="w-full bg-card text-card-foreground hover:bg-card"
+                  onPointerDown={() => setIsManualBoardReveal(true)}
+                  onPointerUp={() => setIsManualBoardReveal(false)}
+                  onPointerLeave={() => setIsManualBoardReveal(false)}
+                  onPointerCancel={() => setIsManualBoardReveal(false)}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                      setIsManualBoardReveal(true);
+                    }
+                  }}
+                  onKeyUp={(event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                      setIsManualBoardReveal(false);
+                    }
+                  }}
+                  onBlur={() => setIsManualBoardReveal(false)}
+                >
+                  Hold to Show Board
+                </Button>
+              )}
+              <StatusBar
+                status={getGameStatus()}
+                result={gameState.result}
+              />
             </div>
           </div>
         ) : (
@@ -228,17 +264,22 @@ const Index = () => {
               <h1 className="text-5xl md:text-7xl font-bold text-foreground">
                 Learn Blindchess
               </h1>
+              <p className="mt-2 text-center text-xs md:text-sm text-black">
+                “Calculation is visualization.” - Gary Kasparov
+              </p>
+              <img
+                src={pawnsPlayingImage}
+                alt="Pawns playing chess"
+                className="mt-6 w-full max-w-xl rounded-lg object-contain"
+              />
               <Button
                 type="button"
-                className="mt-6"
-                onClick={() => void handleStartGame('white', 1200, 3)}
+                className="mt-6 border-2 border-black px-10 py-6 text-lg md:text-xl"
+                onClick={() => navigate('/configure')}
               >
                 Start Game
               </Button>
             </div>
-            <p className="pb-4 text-center text-sm md:text-base text-[#dff9ba]">
-              “Calculation is visualization.” - Gary Kasparov
-            </p>
           </div>
         )}
       </div>

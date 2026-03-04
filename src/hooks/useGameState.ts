@@ -10,6 +10,8 @@ export type GameState = {
   playerColor: 'white' | 'black';
   engineElo: number;  // explicit UCI_Elo used for the engine
   revealEvery: number;
+  allowCheats: boolean;
+  hideMoveHistory: boolean;
   isOver: boolean;
   result: '1-0' | '0-1' | '1/2-1/2' | null;
   isCheck: boolean;
@@ -54,7 +56,9 @@ export const useGameState = () => {
   const startNewGame = useCallback((
     playerColor: 'white' | 'black',
     engineElo: number,
-    revealEvery: number
+    revealEvery: number,
+    allowCheats: boolean,
+    hideMoveHistory: boolean
   ) => {
     const newGame = new Chess();
     
@@ -69,6 +73,8 @@ export const useGameState = () => {
       playerColor,
       engineElo,
       revealEvery,
+      allowCheats,
+      hideMoveHistory,
       isOver: false,
       result: null,
       isCheck: newGame.inCheck(),

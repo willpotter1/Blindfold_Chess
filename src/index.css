@@ -8,94 +8,94 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 164 31% 17%;
-    --foreground: 85 84% 85%;
+    --background: 0 0% 19%;
+    --foreground: 0 0% 0%;
 
-    --card: 85 84% 88%;
-    --card-foreground: 164 31% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 85 84% 88%;
-    --popover-foreground: 164 31% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 164 31% 17%;
-    --primary-foreground: 85 84% 85%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 12%;
 
-    --secondary: 164 20% 26%;
-    --secondary-foreground: 85 84% 85%;
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 12%;
 
-    --muted: 85 45% 78%;
-    --muted-foreground: 164 22% 24%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 20%;
 
-    --accent: 164 31% 17%;
-    --accent-foreground: 85 84% 85%;
+    --accent: 0 0% 100%;
+    --accent-foreground: 0 0% 12%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 164 20% 35%;
-    --input: 164 20% 35%;
-    --ring: 164 31% 17%;
+    --border: 0 0% 82%;
+    --input: 0 0% 82%;
+    --ring: 0 0% 100%;
 
     --radius: 0.5rem;
     
-    --chess-light: 85 84% 85%;
-    --chess-dark: 164 31% 17%;
-    --board-border: 164 24% 24%;
-    --success: 164 31% 17%;
-    --warning: 85 84% 85%;
+    --chess-light: 0 0% 100%;
+    --chess-dark: 0 0% 35%;
+    --board-border: 0 0% 65%;
+    --success: 0 0% 100%;
+    --warning: 0 0% 100%;
 
-    --sidebar-background: 164 31% 17%;
-    --sidebar-foreground: 85 84% 85%;
-    --sidebar-primary: 85 84% 85%;
-    --sidebar-primary-foreground: 164 31% 17%;
-    --sidebar-accent: 164 24% 24%;
-    --sidebar-accent-foreground: 85 84% 85%;
-    --sidebar-border: 164 24% 24%;
-    --sidebar-ring: 85 84% 85%;
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 12%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 0 0% 100%;
   }
 
   .dark {
-    --background: 164 31% 17%;
-    --foreground: 85 84% 85%;
+    --background: 0 0% 19%;
+    --foreground: 0 0% 0%;
 
-    --card: 164 30% 20%;
-    --card-foreground: 85 84% 85%;
+    --card: 0 0% 16%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 164 30% 20%;
-    --popover-foreground: 85 84% 85%;
+    --popover: 0 0% 16%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 85 84% 85%;
-    --primary-foreground: 164 31% 17%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 12%;
 
-    --secondary: 164 24% 24%;
-    --secondary-foreground: 85 84% 85%;
+    --secondary: 0 0% 22%;
+    --secondary-foreground: 0 0% 12%;
 
-    --muted: 164 24% 24%;
-    --muted-foreground: 85 44% 72%;
+    --muted: 0 0% 24%;
+    --muted-foreground: 0 0% 20%;
 
-    --accent: 85 84% 85%;
-    --accent-foreground: 164 31% 17%;
+    --accent: 0 0% 100%;
+    --accent-foreground: 0 0% 12%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 164 24% 28%;
-    --input: 164 24% 28%;
-    --ring: 85 84% 85%;
+    --border: 0 0% 32%;
+    --input: 0 0% 32%;
+    --ring: 0 0% 100%;
     
-    --chess-light: 85 64% 72%;
-    --chess-dark: 164 31% 17%;
-    --board-border: 85 84% 85%;
-    --success: 85 84% 85%;
-    --warning: 85 64% 72%;
-    --sidebar-background: 164 31% 17%;
-    --sidebar-foreground: 85 84% 85%;
-    --sidebar-primary: 85 84% 85%;
-    --sidebar-primary-foreground: 164 31% 17%;
-    --sidebar-accent: 164 24% 24%;
-    --sidebar-accent-foreground: 85 84% 85%;
-    --sidebar-border: 164 24% 24%;
-    --sidebar-ring: 85 84% 85%;
+    --chess-light: 0 0% 92%;
+    --chess-dark: 0 0% 35%;
+    --board-border: 0 0% 60%;
+    --success: 0 0% 100%;
+    --warning: 0 0% 92%;
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 12%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 0 0% 100%;
   }
 }
 
