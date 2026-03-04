@@ -12,6 +12,26 @@ import { sendOtpCode, verifyOtpCode } from '@/lib/otpApi';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
+const isOtpResetRequiredError = (message: string) =>
+  message === 'otp_not_found' || message === 'otp_expired' || message === 'max_attempts_exceeded';
+const getSignupErrorDescription = (error: unknown) => {
+  if (!(error instanceof Error)) {
+    return 'Please confirm your details and try again.';
+  }
+  if (error.message === 'invalid_otp') {
+    return 'That code is incorrect. Please check your email and try again.';
+  }
+  if (error.message === 'otp_not_found') {
+    return 'This code is no longer valid. Click Send OTP to get a new code.';
+  }
+  if (error.message === 'otp_expired') {
+    return 'This code has expired. Click Send OTP to request a fresh code.';
+  }
+  if (error.message === 'max_attempts_exceeded') {
+    return 'Too many failed attempts. Click Send OTP to request a new code.';
+  }
+  return error.message;
+};
 const isPermissionDeniedError = (error: unknown) => {
   if (error && typeof error === 'object' && 'code' in error) {
     const code = (error as { code?: unknown }).code;
@@ -54,9 +74,17 @@ const Signup = () => {
       });
     } catch (error) {
       console.error('Send OTP failed:', error);
+      if (error instanceof Error && error.message === 'cooldown_active') {
+        setOtpSent(true);
+      }
       toast({
         title: 'Could not send OTP',
-        description: error instanceof Error ? error.message : 'Please try again.',
+        description:
+          error instanceof Error && error.message === 'cooldown_active'
+            ? 'A code was sent recently. Check your email or wait a minute before resending.'
+            : error instanceof Error
+              ? error.message
+              : 'Please try again.',
         variant: 'destructive',
       });
     } finally {
@@ -160,13 +188,15 @@ const Signup = () => {
 
       console.error('Signup failed:', error);
       const isUsernameTaken = error instanceof Error && error.message === 'USERNAME_TAKEN';
+      if (error instanceof Error && isOtpResetRequiredError(error.message)) {
+        setOtp('');
+        setOtpSent(false);
+      }
       toast({
         title: 'Sign up failed',
         description: isUsernameTaken
           ? 'That username is already taken. Please choose another.'
-          : error instanceof Error
-            ? error.message
-            : 'Please confirm your details and try again.',
+          : getSignupErrorDescription(error),
         variant: 'destructive',
       });
     } finally {
