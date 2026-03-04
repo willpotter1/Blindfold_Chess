@@ -41,13 +41,13 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
       return false;
     }
     const parsed = Number(revealEveryInput);
-    return Number.isFinite(parsed) && parsed >= 1;
+    return Number.isFinite(parsed) && parsed >= 0;
   };
 
   const handleStartGame = () => {
     if (!isRevealEveryValid()) {
       setRevealEveryTouched(true);
-      alert('Reveal frequency must be a whole number of at least 1');
+      alert('Reveal frequency must be a whole number of at least 0');
       return;
     }
     const parsed = Number(revealEveryInput);
@@ -127,7 +127,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
             <Input
               id="reveal-frequency"
               type="number"
-              min={1}
+              min={0}
               step={1}
               value={revealEveryInput}
               onChange={(e) => {
@@ -140,7 +140,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
                   e.currentTarget.blur();
                 }
               }}
-              placeholder="Show board every N moves"
+              placeholder="0 = never auto-reveal"
               className={isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}
             />
           </div>

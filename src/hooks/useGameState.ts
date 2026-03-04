@@ -220,6 +220,9 @@ export const useGameState = () => {
 
   const shouldShowBoard = useCallback((): boolean => {
     if (!gameState) return false;
+    if (gameState.revealEvery <= 0) {
+      return gameState.isOver;
+    }
     // Reveal based on the number of moves the player has made (not total plies)
     return (gameState.playerMoveCount % gameState.revealEvery === 0) || gameState.isOver;
   }, [gameState]);
