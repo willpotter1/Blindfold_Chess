@@ -1,5 +1,6 @@
 import { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FirebaseError } from 'firebase/app';
 import { createUserWithEmailAndPassword, deleteUser, signOut } from 'firebase/auth';
 import { doc, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { Button } from '@/components/ui/button';
@@ -12,6 +13,9 @@ import { sendOtpCode, verifyOtpCode } from '@/lib/otpApi';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
+const isPermissionDeniedError = (error: unknown) =>
+  error instanceof FirebaseError &&
+  (error.code === 'permission-denied' || error.code === 'firestore/permission-denied');
 
 const Signup = () => {
   const [username, setUsername] = useState('');
@@ -59,7 +63,6 @@ const Signup = () => {
     event.preventDefault();
 
     const auth = getFirebaseAuth();
-    const db = getFirestoreDb();
     if (!auth) {
       toast({
         title: 'Firebase not configured',
@@ -68,14 +71,7 @@ const Signup = () => {
       });
       return;
     }
-    if (!db) {
-      toast({
-        title: 'Database unavailable',
-        description: 'Firestore is required to reserve unique usernames.',
-        variant: 'destructive',
-      });
-      return;
-    }
+    const db = getFirestoreDb();
 
     const normalizedUsername = normalizeUsername(username);
     if (!USERNAME_REGEX.test(normalizedUsername)) {
@@ -90,40 +86,58 @@ const Signup = () => {
     setIsSigningUp(true);
     let createdUserUid: string | null = null;
     let didClaimUsername = false;
+    let didSkipUsernameClaim = false;
     try {
       await verifyOtpCode(email, otp);
       const credential = await createUserWithEmailAndPassword(auth, email, password);
       createdUserUid = credential.user.uid;
 
-      await runTransaction(db, async (transaction) => {
-        const usernameRef = doc(db, 'usernames', normalizedUsername);
-        const usernameDoc = await transaction.get(usernameRef);
+      if (!db) {
+        didSkipUsernameClaim = true;
+      } else {
+        try {
+          await runTransaction(db, async (transaction) => {
+            const usernameRef = doc(db, 'usernames', normalizedUsername);
+            const usernameDoc = await transaction.get(usernameRef);
 
-        if (usernameDoc.exists()) {
-          throw new Error('USERNAME_TAKEN');
+            if (usernameDoc.exists()) {
+              throw new Error('USERNAME_TAKEN');
+            }
+
+            transaction.set(usernameRef, {
+              uid: credential.user.uid,
+              username: normalizedUsername,
+              email,
+              createdAt: serverTimestamp(),
+            });
+
+            const userProfileRef = doc(db, 'users', credential.user.uid);
+            transaction.set(userProfileRef, {
+              uid: credential.user.uid,
+              email,
+              username: normalizedUsername,
+              createdAt: serverTimestamp(),
+            });
+          });
+          didClaimUsername = true;
+        } catch (error) {
+          if (error instanceof Error && error.message === 'USERNAME_TAKEN') {
+            throw error;
+          }
+          if (isPermissionDeniedError(error)) {
+            didSkipUsernameClaim = true;
+          } else {
+            throw error;
+          }
         }
-
-        transaction.set(usernameRef, {
-          uid: credential.user.uid,
-          username: normalizedUsername,
-          email,
-          createdAt: serverTimestamp(),
-        });
-
-        const userProfileRef = doc(db, 'users', credential.user.uid);
-        transaction.set(userProfileRef, {
-          uid: credential.user.uid,
-          email,
-          username: normalizedUsername,
-          createdAt: serverTimestamp(),
-        });
-      });
-      didClaimUsername = true;
+      }
 
       await signOut(auth);
       toast({
         title: 'Account created',
-        description: 'Email verified and username reserved. You can log in now.',
+        description: didSkipUsernameClaim
+          ? 'Email verified. Log in with your email address.'
+          : 'Email verified and username reserved. You can log in now.',
       });
       setUsername('');
       setEmail('');
