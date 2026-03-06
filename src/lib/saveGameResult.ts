@@ -18,10 +18,6 @@ export const saveCompletedGame = async (gameState: GameState, pgn: string): Prom
   const payload = {
     userId,
     pgn,
-    moves: gameState.moves,
-    result: gameState.result,
-    finalFen: gameState.fen,
-    moveCount: gameState.playerMoveCount,
     config: {
       playerColor: gameState.playerColor,
       engineElo: gameState.engineElo,
