@@ -84,7 +84,7 @@ export const BlindfoldBoard = ({ fen, isVisible, isInteractive = false, onMove }
         <div className="grid grid-cols-8 grid-rows-8 gap-0 w-full h-full">
           {board.map((row, rowIndex) => (
             row.map((square, colIndex) => {
-              const isLight = (rowIndex + colIndex) % 2 === 0;
+              const isLight = (rowIndex + colIndex) % 2 !== 0;
               const spriteKey = square ? `${square.color}${square.type}` : null;
               const pieceSrc = showPieces && spriteKey ? pieceSprites[spriteKey] : null;
               const file = String.fromCharCode(97 + colIndex); // a-h
