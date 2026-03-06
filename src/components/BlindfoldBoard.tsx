@@ -97,7 +97,7 @@ export const BlindfoldBoard = ({ fen, isVisible, isInteractive = false, onMove }
                   key={`${rowIndex}-${colIndex}`}
                   className={`
                     relative aspect-square flex items-center justify-center overflow-hidden
-                    ${isLight ? 'bg-[#844318]' : 'bg-[#2b2b2b]'}
+                    ${isLight ? 'bg-[#844318]' : 'bg-[#d9b99b]'}
                     transition-colors duration-150
                     ${isSelected ? 'ring-4 ring-sky-400/70 ring-inset' : ''}
                     ${isInteractive ? 'cursor-pointer' : 'cursor-default'}

@@ -1,11 +1,15 @@
+import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import upDownArrowsIcon from '../../Visual/up-down-arrows-icon.png';
 
 interface MoveListProps {
   moves: string[];
 }
 
 export const MoveList = ({ moves }: MoveListProps) => {
+  const [isReversed, setIsReversed] = useState(false);
+
   // Group moves into pairs (White, Black)
   const movePairs: Array<{ number: number; white?: string; black?: string }> = [];
   
@@ -17,20 +21,36 @@ export const MoveList = ({ moves }: MoveListProps) => {
     });
   }
 
+  const displayedMovePairs = isReversed ? [...movePairs].reverse() : movePairs;
+
   return (
     <Card className="w-full">
-      <CardHeader>
+      <CardHeader className="flex-row items-center justify-between space-y-0">
         <CardTitle>Move History</CardTitle>
+        <button
+          type="button"
+          className="inline-flex h-7 w-7 items-center justify-center rounded-sm border border-[#8B4513] bg-white p-1 hover:bg-zinc-50"
+          onClick={() => setIsReversed((prev) => !prev)}
+          aria-label="Reverse move history order"
+          title="Reverse move history order"
+        >
+          <img
+            src={upDownArrowsIcon}
+            alt=""
+            className="h-4 w-4 object-contain"
+            draggable={false}
+          />
+        </button>
       </CardHeader>
       <CardContent>
         <ScrollArea className="h-[300px] w-full pr-4">
-          {movePairs.length === 0 ? (
+          {displayedMovePairs.length === 0 ? (
             <p className="text-sm text-muted-foreground text-center py-8">
               No moves yet
             </p>
           ) : (
             <div className="space-y-1">
-              {movePairs.map((pair) => (
+              {displayedMovePairs.map((pair) => (
                 <div
                   key={pair.number}
                   className="flex items-center gap-3 text-sm font-mono py-1 px-2 hover:bg-muted rounded"

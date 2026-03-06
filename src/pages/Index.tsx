@@ -20,6 +20,7 @@ const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with l
 const SEO_CANONICAL_URL = 'https://blindchess.org/';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
 const CHESS_COM_ANALYSIS_URL = 'https://www.chess.com/analysis';
+const LICHESS_PASTE_URL = 'https://lichess.org/paste';
 const MAX_CHESS_COM_URL_LENGTH = 7000;
 const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-zinc-700 bg-white text-zinc-900 hover:bg-zinc-50';
 
@@ -268,6 +269,29 @@ const Index = () => {
     }
   };
 
+  const handleAnalyzeOnLichess = async () => {
+    const pgn = getValidatedPgn();
+    if (!pgn) return;
+
+    try {
+      const copied = await copyTextToClipboard(pgn);
+      if (!copied) throw new Error('Clipboard copy failed');
+    } catch {
+      toast({
+        title: 'Export failed',
+        description: 'Could not copy PGN to clipboard automatically.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    window.open(LICHESS_PASTE_URL, '_blank', 'noopener,noreferrer');
+    toast({
+      title: 'PGN copied',
+      description: 'PGN copied. Paste it into Lichess and click Import.',
+    });
+  };
+
   const handleDownloadPgn = () => {
     const pgn = getValidatedPgn();
     if (!pgn) return;
@@ -357,7 +381,7 @@ const Index = () => {
             <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95]">
               {gameState.isOver ? (
                 <>
-                  <div className="rounded-md border bg-card p-2">
+                  <div className="rounded-md border-2 border-[#8B4513] bg-card p-2">
                     <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                       <Button
                         type="button"
@@ -376,8 +400,7 @@ const Index = () => {
                       </Button>
                     </div>
                   </div>
-                  <div className="rounded-md border bg-card p-2">
-                    <h3 className="mb-2 text-sm font-semibold text-card-foreground">Export</h3>
+                  <div className="rounded-md border-2 border-[#8B4513] bg-card p-2">
                     <div className="space-y-2">
                       <Button
                         type="button"
@@ -386,6 +409,14 @@ const Index = () => {
                         onClick={() => void handleAnalyzeOnChessCom()}
                       >
                         Analyze on Chess.com
+                      </Button>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        className={EXPORT_BUTTON_CLASSNAME}
+                        onClick={() => void handleAnalyzeOnLichess()}
+                      >
+                        Copy to Clipboard & Open Lichess
                       </Button>
                       <Button
                         type="button"
