@@ -6,7 +6,7 @@ type SaveResult =
   | { ok: true; id: string }
   | { ok: false; reason: "no_firebase" | "error"; error?: unknown };
 
-export const saveCompletedGame = async (gameState: GameState): Promise<SaveResult> => {
+export const saveCompletedGame = async (gameState: GameState, pgn: string): Promise<SaveResult> => {
   const db = getFirestoreDb();
   if (!db) {
     console.info("Firestore not configured; skipping game save.");
@@ -17,6 +17,7 @@ export const saveCompletedGame = async (gameState: GameState): Promise<SaveResul
 
   const payload = {
     userId,
+    pgn,
     moves: gameState.moves,
     result: gameState.result,
     finalFen: gameState.fen,

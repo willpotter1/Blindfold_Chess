@@ -61,6 +61,17 @@ export const useGameState = () => {
     hideMoveHistory: boolean
   ) => {
     const newGame = new Chess();
+    const today = new Date();
+    const pgnDate = `${today.getFullYear()}.${String(today.getMonth() + 1).padStart(2, '0')}.${String(today.getDate()).padStart(2, '0')}`;
+    const computerLabel = `Computer (${engineElo})`;
+
+    newGame.setHeader('Event', 'Blindfold Chess Trainer');
+    newGame.setHeader('Site', 'https://blindchess.org');
+    newGame.setHeader('Date', pgnDate);
+    newGame.setHeader('Round', '?');
+    newGame.setHeader('White', playerColor === 'white' ? 'Player' : computerLabel);
+    newGame.setHeader('Black', playerColor === 'black' ? 'Player' : computerLabel);
+    newGame.setHeader('Result', '*');
     
     gameRef.current = newGame;
     hasSavedResultRef.current = false;
@@ -119,6 +130,8 @@ export const useGameState = () => {
           result = '1/2-1/2';
         }
       }
+      currentGame.setHeader('Result', result ?? '*');
+      const completedPgn = currentGame.pgn({ newline: '\n', maxWidth: 0 });
 
       setGameState((prev) => {
         if (!prev) return prev;
@@ -137,7 +150,7 @@ export const useGameState = () => {
 
         if (isOver && result && !hasSavedResultRef.current) {
           hasSavedResultRef.current = true;
-          void saveCompletedGame(nextState);
+          void saveCompletedGame(nextState, completedPgn);
         }
 
         return nextState;
@@ -187,6 +200,8 @@ export const useGameState = () => {
           result = '1/2-1/2';
         }
       }
+      currentGame.setHeader('Result', result ?? '*');
+      const completedPgn = currentGame.pgn({ newline: '\n', maxWidth: 0 });
 
       setGameState((prev) => {
         if (!prev) return prev;
@@ -205,7 +220,7 @@ export const useGameState = () => {
 
         if (isOver && result && !hasSavedResultRef.current) {
           hasSavedResultRef.current = true;
-          void saveCompletedGame(nextState);
+          void saveCompletedGame(nextState, completedPgn);
         }
 
         return nextState;
@@ -258,6 +273,12 @@ export const useGameState = () => {
     return 'Last computer move: None yet';
   }, [game, gameState]);
 
+  const getPgn = useCallback((): string => {
+    const currentGame = gameRef.current;
+    if (!currentGame) return '';
+    return currentGame.pgn({ newline: '\n', maxWidth: 0 });
+  }, []);
+
   const resetGame = useCallback(() => {
     gameRef.current = null;
     gameStateRef.current = null;
@@ -274,6 +295,7 @@ export const useGameState = () => {
     makeMoveUci,
     shouldShowBoard,
     getGameStatus,
+    getPgn,
     getCurrentState: () => gameStateRef.current,
   };
 };

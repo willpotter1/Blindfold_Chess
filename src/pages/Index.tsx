@@ -19,6 +19,9 @@ const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
 const SEO_CANONICAL_URL = 'https://blindchess.org/';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
+const CHESS_COM_ANALYSIS_URL = 'https://www.chess.com/analysis';
+const MAX_CHESS_COM_URL_LENGTH = 7000;
+const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-zinc-700 bg-white text-zinc-900 hover:bg-zinc-50';
 
 type GameConfigState = {
   gameConfig?: {
@@ -31,7 +34,7 @@ type GameConfigState = {
 };
 
 const Index = () => {
-  const { gameState, startNewGame, resetGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState } = useGameState();
+  const { gameState, startNewGame, resetGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState, getPgn } = useGameState();
   const [isEngineThinking, setIsEngineThinking] = useState(false);
   const [moveError, setMoveError] = useState<string>('');
   const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
@@ -182,6 +185,124 @@ const Index = () => {
     resetGame();
   };
 
+  const getValidatedPgn = (): string | null => {
+    const pgn = getPgn().trim();
+    if (!pgn) {
+      toast({
+        title: 'Export failed',
+        description: 'No PGN is available for the current game.',
+        variant: 'destructive',
+      });
+      return null;
+    }
+    return pgn;
+  };
+
+  const copyTextToClipboard = async (text: string): Promise<boolean> => {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.setAttribute('readonly', '');
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    const copied = document.execCommand('copy');
+    document.body.removeChild(textArea);
+    return copied;
+  };
+
+  const handleAnalyzeOnChessCom = async () => {
+    const pgn = getValidatedPgn();
+    if (!pgn) return;
+
+    const encoded = encodeURIComponent(pgn);
+    const url = `${CHESS_COM_ANALYSIS_URL}?pgn=${encoded}`;
+
+    if (url.length <= MAX_CHESS_COM_URL_LENGTH) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    try {
+      const copied = await copyTextToClipboard(pgn);
+      if (!copied) throw new Error('Clipboard copy failed');
+    } catch {
+      toast({
+        title: 'Export failed',
+        description: 'Could not copy PGN to clipboard automatically.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    window.open(CHESS_COM_ANALYSIS_URL, '_blank', 'noopener,noreferrer');
+    toast({
+      title: 'PGN copied',
+      description: "PGN copied. On Chess.com click 'Load From FEN/PGN(s)' and paste, then Load.",
+    });
+  };
+
+  const handleCopyPgn = async () => {
+    const pgn = getValidatedPgn();
+    if (!pgn) return;
+
+    try {
+      const copied = await copyTextToClipboard(pgn);
+      if (!copied) throw new Error('Clipboard copy failed');
+      toast({
+        title: 'PGN copied',
+        description: 'Game PGN copied to clipboard.',
+      });
+    } catch {
+      toast({
+        title: 'Copy failed',
+        description: 'Could not copy PGN to clipboard.',
+        variant: 'destructive',
+      });
+    }
+  };
+
+  const handleDownloadPgn = () => {
+    const pgn = getValidatedPgn();
+    if (!pgn) return;
+
+    const blob = new Blob([pgn], { type: 'application/x-chess-pgn;charset=utf-8' });
+    const objectUrl = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = objectUrl;
+    anchor.download = 'game.pgn';
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+    URL.revokeObjectURL(objectUrl);
+  };
+
+  const handlePlayAgainWithSameRules = async () => {
+    if (!gameState) return;
+
+    await handleStartGame(
+      gameState.playerColor,
+      gameState.engineElo,
+      gameState.revealEvery,
+      gameState.allowCheats,
+      gameState.hideMoveHistory
+    );
+  };
+
+  const handlePlayWithNewConfig = () => {
+    setMoveError('');
+    setIsManualBoardReveal(false);
+    setIsEngineThinking(false);
+    resetGame();
+    navigate('/configure');
+  };
+
   return (
     <div className="min-h-screen bg-white md:flex">
       <SeoHead
@@ -234,40 +355,100 @@ const Index = () => {
             </div>
 
             <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95]">
-              <MoveInput
-                onSubmitMove={handlePlayerMove}
-                disabled={!isPlayerTurn}
-                errorMessage={moveError}
-              />
-              {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
-              {gameState.allowCheats && (
-                <Button
-                  type="button"
-                  variant="outline"
-                  className="w-full bg-card text-card-foreground hover:bg-card"
-                  onPointerDown={() => setIsManualBoardReveal(true)}
-                  onPointerUp={() => setIsManualBoardReveal(false)}
-                  onPointerLeave={() => setIsManualBoardReveal(false)}
-                  onPointerCancel={() => setIsManualBoardReveal(false)}
-                  onKeyDown={(event) => {
-                    if (event.key === 'Enter' || event.key === ' ') {
-                      setIsManualBoardReveal(true);
-                    }
-                  }}
-                  onKeyUp={(event) => {
-                    if (event.key === 'Enter' || event.key === ' ') {
-                      setIsManualBoardReveal(false);
-                    }
-                  }}
-                  onBlur={() => setIsManualBoardReveal(false)}
-                >
-                  Hold to Show Board
-                </Button>
+              {gameState.isOver ? (
+                <>
+                  <div className="rounded-md border bg-card p-2">
+                    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                      <Button
+                        type="button"
+                        variant="outline"
+                        className="h-10 w-full border-zinc-700 bg-white text-zinc-900 hover:bg-zinc-50"
+                        onClick={handlePlayWithNewConfig}
+                      >
+                        New Config
+                      </Button>
+                      <Button
+                        type="button"
+                        className="h-10 w-full bg-emerald-600 text-white hover:bg-emerald-700"
+                        onClick={() => void handlePlayAgainWithSameRules()}
+                      >
+                        Play Again
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="rounded-md border bg-card p-2">
+                    <h3 className="mb-2 text-sm font-semibold text-card-foreground">Export</h3>
+                    <div className="space-y-2">
+                      <Button
+                        type="button"
+                        variant="outline"
+                        className={EXPORT_BUTTON_CLASSNAME}
+                        onClick={() => void handleAnalyzeOnChessCom()}
+                      >
+                        Analyze on Chess.com
+                      </Button>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        className={EXPORT_BUTTON_CLASSNAME}
+                        onClick={() => void handleCopyPgn()}
+                      >
+                        Copy PGN
+                      </Button>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        className={EXPORT_BUTTON_CLASSNAME}
+                        onClick={handleDownloadPgn}
+                      >
+                        Download PGN
+                      </Button>
+                    </div>
+                  </div>
+                  <MoveList moves={gameState.moves} />
+                  <StatusBar
+                    status={getGameStatus()}
+                    result={gameState.result}
+                  />
+                </>
+              ) : (
+                <>
+                  <MoveInput
+                    onSubmitMove={handlePlayerMove}
+                    disabled={!isPlayerTurn}
+                    errorMessage={moveError}
+                  />
+                  {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
+                  {gameState.allowCheats && (
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="w-full bg-card text-card-foreground hover:bg-card"
+                      onPointerDown={() => setIsManualBoardReveal(true)}
+                      onPointerUp={() => setIsManualBoardReveal(false)}
+                      onPointerLeave={() => setIsManualBoardReveal(false)}
+                      onPointerCancel={() => setIsManualBoardReveal(false)}
+                      onKeyDown={(event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                          setIsManualBoardReveal(true);
+                        }
+                      }}
+                      onKeyUp={(event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                          setIsManualBoardReveal(false);
+                        }
+                      }}
+                      onBlur={() => setIsManualBoardReveal(false)}
+                    >
+                      Hold to Show Board
+                    </Button>
+                  )}
+                  <StatusBar
+                    status={getGameStatus()}
+                    result={gameState.result}
+                  />
+                </>
               )}
-              <StatusBar
-                status={getGameStatus()}
-                result={gameState.result}
-              />
             </div>
           </div>
         ) : (
