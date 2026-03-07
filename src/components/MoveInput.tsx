@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { useEffect, useRef, useState, FormEvent } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -11,12 +11,23 @@ interface MoveInputProps {
 
 export const MoveInput = ({ onSubmitMove, disabled, errorMessage }: MoveInputProps) => {
   const [moveInput, setMoveInput] = useState('');
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (disabled) return;
+
+    const focusInput = () => inputRef.current?.focus();
+    const frameId = requestAnimationFrame(focusInput);
+
+    return () => cancelAnimationFrame(frameId);
+  }, [disabled]);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (moveInput.trim() && !disabled) {
       onSubmitMove(moveInput.trim());
       setMoveInput('');
+      requestAnimationFrame(() => inputRef.current?.focus());
     }
   };
 
@@ -30,6 +41,7 @@ export const MoveInput = ({ onSubmitMove, disabled, errorMessage }: MoveInputPro
             </label>
             <div className="flex gap-2">
               <Input
+                ref={inputRef}
                 id="move-input"
                 type="text"
                 value={moveInput}
