@@ -80,7 +80,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
   };
 
   return (
-    <Card className="w-full border-2 border-[#8B4513]">
+    <Card className="w-full border-2 border-[#d9b99b]">
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Game Configuration</CardTitle>
         <CardDescription className="text-xs">
@@ -147,7 +147,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
         </div>
 
         <div className="space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
-          <div className="flex items-center justify-between rounded-md border border-input bg-white px-3 py-2">
+          <div className="flex items-center justify-between rounded-md border border-[#d9b99b] bg-white px-3 py-2">
             <Label htmlFor="allow-cheats" className="cursor-pointer">
               Allow Cheats
             </Label>
@@ -157,7 +157,7 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
               onCheckedChange={setAllowCheats}
             />
           </div>
-          <div className="flex items-center justify-between rounded-md border border-input bg-white px-3 py-2">
+          <div className="flex items-center justify-between rounded-md border border-[#d9b99b] bg-white px-3 py-2">
             <Label htmlFor="hide-move-history" className="cursor-pointer">
               Hide Move History
             </Label>

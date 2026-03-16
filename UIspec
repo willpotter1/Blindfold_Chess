@@ -1,0 +1,16 @@
+Site UI Colors
+
+Use these colors whenever colors are needed in the UI.
+Use outline width 2 for UI outlines and borders that should match the current input, config, and button styling.
+
+Brown: #8B4513
+Lighter Brown: #d9b99b
+White: #FFFFFF
+Black: #000000
+
+Site UI Images
+
+Use these images whenever an image is needed in the UI.
+
+Whitepawn.png: /Users/williampotter/Documents/GitHub/mywebsite/Blindfold_Chess/Visual/Whitepawn.png
+BBpawnsplaying2.png: /Users/williampotter/Documents/GitHub/mywebsite/Blindfold_Chess/Visual/BBpawnsplaying2.png

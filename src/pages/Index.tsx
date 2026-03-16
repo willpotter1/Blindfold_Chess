@@ -14,6 +14,7 @@ import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
+import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
@@ -335,15 +336,15 @@ const Index = () => {
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      <div className="w-full border-b bg-zinc-600 p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
+      <div className="mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-24 md:shrink-0">
         <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch md:justify-start">
-          <Link to="/" onClick={handleLogoClick} className="md:self-center">
-            <img
-              src="/BBpawn.png"
-              alt="BBpawn logo"
+            <Link to="/" onClick={handleLogoClick} className="md:self-center">
+              <img
+              src={whitePawnLogo}
+              alt="White pawn logo"
               className="h-14 w-14 object-contain md:h-20 md:w-20"
-            />
-          </Link>
+              />
+            </Link>
           <div className="flex gap-2 md:mt-4 md:flex-col">
             <Button asChild type="button" className="md:w-full">
               <Link to="/account">Account</Link>
@@ -454,7 +455,7 @@ const Index = () => {
                     <Button
                       type="button"
                       variant="outline"
-                      className="w-full bg-card text-card-foreground hover:bg-card"
+                      className="w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card"
                       onPointerDown={() => setIsManualBoardReveal(true)}
                       onPointerUp={() => setIsManualBoardReveal(false)}
                       onPointerLeave={() => setIsManualBoardReveal(false)}
@@ -485,10 +486,10 @@ const Index = () => {
         ) : (
           <div className="flex min-h-[calc(100vh-8rem)] flex-col">
             <div className="pb-6 pt-2 text-center">
-              <h1 className="text-5xl font-extrabold tracking-tight text-black md:text-7xl">
+              <h1 className="text-5xl font-extrabold tracking-tight text-[#8B4513] md:text-7xl">
                 Learn Blindchess
               </h1>
-              <p className="mt-2 text-center text-xs text-black md:text-sm">
+              <p className="mt-2 text-center text-xs text-[#d9b99b] md:text-sm">
                 “Calculation is visualization.” - Gary Kasparov
               </p>
             </div>

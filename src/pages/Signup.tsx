@@ -9,6 +9,7 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { getFirebaseAuth, getFirestoreDb, hasFirebaseConfig } from '@/lib/firebase';
 import { sendOtpCode, verifyOtpCode } from '@/lib/otpApi';
+import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
@@ -206,12 +207,12 @@ const Signup = () => {
 
   return (
     <div className="min-h-screen bg-white md:flex">
-      <div className="w-full border-b bg-zinc-600 p-4 md:h-screen md:w-24 md:shrink-0 md:border-b-0 md:border-r">
+      <div className="mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-24 md:shrink-0">
         <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch md:justify-start">
           <Link to="/" className="md:self-center">
             <img
-              src="/BBpawn.png"
-              alt="BBpawn logo"
+              src={whitePawnLogo}
+              alt="White pawn logo"
               className="h-14 w-14 object-contain md:h-20 md:w-20"
             />
           </Link>
