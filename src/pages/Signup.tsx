@@ -12,6 +12,7 @@ import { sendOtpCode, verifyOtpCode } from '@/lib/otpApi';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
+const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
 const isOtpResetRequiredError = (message: string) =>
   message === 'otp_not_found' || message === 'otp_expired' || message === 'max_attempts_exceeded';
@@ -310,8 +311,8 @@ const Signup = () => {
                   {isSigningUp ? 'Creating account...' : 'Verify OTP and Sign Up'}
                 </Button>
               ) : (
-                <Button type="submit" className="w-full" disabled={isSendingOtp}>
-                  {isSendingOtp ? 'Sending OTP...' : 'Send OTP'}
+                <Button type="submit" className={primaryActionButtonClassName} disabled={isSendingOtp}>
+                  {isSendingOtp ? 'Creating account...' : 'Create Account'}
                 </Button>
               )}
             </form>

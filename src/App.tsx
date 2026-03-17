@@ -10,6 +10,10 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ConfigureGame from "./pages/ConfigureGame";
 import About from "./pages/About";
+import Account from "./pages/Account";
+import AccountUsername from "./pages/AccountUsername";
+import AccountEmail from "./pages/AccountEmail";
+import AccountPassword from "./pages/AccountPassword";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,7 +46,10 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/configure" element={<ConfigureGame />} />
-            <Route path="/account" element={<About />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/account/username" element={<AccountUsername />} />
+            <Route path="/account/email" element={<AccountEmail />} />
+            <Route path="/account/password" element={<AccountPassword />} />
             <Route path="/games" element={<About />} />
             <Route path="/about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

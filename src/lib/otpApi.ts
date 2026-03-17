@@ -41,3 +41,15 @@ export const verifyOtpCode = async (email: string, otp: string): Promise<string>
   });
   return body.verificationToken;
 };
+
+export const sendPasswordResetOtp = async (email: string): Promise<void> => {
+  await postJson('/auth/send-reset-otp', { email });
+};
+
+export const resetPasswordWithOtp = async (email: string, otp: string, newPassword: string): Promise<void> => {
+  await postJson('/auth/reset-password', {
+    email,
+    otp,
+    newPassword,
+  });
+};
