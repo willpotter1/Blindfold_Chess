@@ -14,6 +14,7 @@ import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
+import emptyBoardIcon from '../../Visual/emptyboard3.png';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
@@ -24,6 +25,7 @@ const CHESS_COM_ANALYSIS_URL = 'https://www.chess.com/analysis';
 const LICHESS_PASTE_URL = 'https://lichess.org/paste';
 const MAX_CHESS_COM_URL_LENGTH = 7000;
 const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-zinc-700 bg-white text-zinc-900 hover:bg-zinc-50';
+const GAMES_BUTTON_CLASSNAME = 'h-auto border-0 bg-transparent px-0 py-1 text-white shadow-none hover:bg-transparent md:w-full';
 
 type GameConfigState = {
   gameConfig?: {
@@ -336,7 +338,7 @@ const Index = () => {
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      <div className="mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-24 md:shrink-0">
+      <div className="mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-44 md:shrink-0">
         <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch md:justify-start">
             <Link to="/" onClick={handleLogoClick} className="md:self-center">
               <img
@@ -349,8 +351,11 @@ const Index = () => {
             <Button asChild type="button" className="md:w-full">
               <Link to="/account">Account</Link>
             </Button>
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/games">Games</Link>
+            <Button asChild type="button" className={GAMES_BUTTON_CLASSNAME}>
+              <Link to="/games" className="flex items-center justify-start gap-3">
+                <img src={emptyBoardIcon} alt="" aria-hidden="true" className="h-9 w-9 object-contain" />
+                <span className="text-lg font-bold">Games</span>
+              </Link>
             </Button>
             <Button asChild type="button" className="md:w-full">
               <Link to="/about">About</Link>

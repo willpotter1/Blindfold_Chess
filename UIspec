@@ -14,3 +14,24 @@ Use these images whenever an image is needed in the UI.
 
 Whitepawn.png: /Users/williampotter/Documents/GitHub/mywebsite/Blindfold_Chess/Visual/Whitepawn.png
 BBpawnsplaying2.png: /Users/williampotter/Documents/GitHub/mywebsite/Blindfold_Chess/Visual/BBpawnsplaying2.png
+
+Sidebar Styling
+
+Use a rounded lighter brown sidebar box.
+Desktop sidebar width: 11rem.
+Sidebar background: #d9b99b.
+Do not use a border on the sidebar.
+
+Top sidebar logo image:
+Use Whitepawn.png in the top left / top of the sidebar.
+
+Standard sidebar buttons:
+Use white button backgrounds with black text for Account, About, Log In, and Sign Up.
+
+Games sidebar button:
+Use emptyboard3.png as the Games image.
+Place the image on the left and the text on the right on the same line.
+Use white text for Games.
+Make the Games text bold and larger than the standard sidebar button text.
+Do not use a white button background behind the Games row.
+Current Games image display size: 2.25rem by 2.25rem.

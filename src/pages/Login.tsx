@@ -9,9 +9,11 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { getFirebaseAuth, getFirestoreDb, hasFirebaseConfig } from '@/lib/firebase';
 import { resetPasswordWithOtp, sendPasswordResetOtp } from '@/lib/otpApi';
+import emptyBoardIcon from '../../Visual/emptyboard3.png';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 const sidebarLinkButtonClassName = 'md:w-full';
+const gamesButtonClassName = 'h-auto border-0 bg-transparent px-0 py-1 text-white shadow-none hover:bg-transparent md:w-full';
 const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
 const textLinkClassName = 'text-sm font-medium text-[#8B4513] underline underline-offset-4';
 
@@ -255,7 +257,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-white md:flex">
-      <div className="mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-24 md:shrink-0">
+      <div className="mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-44 md:shrink-0">
         <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch md:justify-start">
           <Link to="/" className="md:self-center">
             <img
@@ -268,8 +270,11 @@ const Login = () => {
             <Button asChild type="button" className={sidebarLinkButtonClassName}>
               <Link to="/account">Account</Link>
             </Button>
-            <Button asChild type="button" className={sidebarLinkButtonClassName}>
-              <Link to="/games">Games</Link>
+            <Button asChild type="button" className={gamesButtonClassName}>
+              <Link to="/games" className="flex items-center justify-start gap-3">
+                <img src={emptyBoardIcon} alt="" aria-hidden="true" className="h-9 w-9 object-contain" />
+                <span className="text-lg font-bold">Games</span>
+              </Link>
             </Button>
             <Button asChild type="button" className={sidebarLinkButtonClassName}>
               <Link to="/about">About</Link>
