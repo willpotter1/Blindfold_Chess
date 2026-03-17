@@ -259,18 +259,20 @@ export const useGameState = () => {
       }
     }
 
-    if (gameState.isCheck) {
-      return `${gameState.turnColor === 'white' ? 'White' : 'Black'} is in check`;
-    }
-
     const engineMoveParity = gameState.playerColor === 'white' ? 1 : 0;
+    let lastComputerMoveStatus = 'Last computer move: ';
     for (let i = gameState.moves.length - 1; i >= 0; i -= 1) {
       if (i % 2 === engineMoveParity) {
-        return `Last computer move: ${gameState.moves[i]}`;
+        lastComputerMoveStatus = `Last computer move: ${gameState.moves[i]}`;
+        break;
       }
     }
 
-    return 'Last computer move: None yet';
+    if (gameState.isCheck) {
+      return `${lastComputerMoveStatus}\n${gameState.turnColor === 'white' ? 'White' : 'Black'} is in check`;
+    }
+
+    return lastComputerMoveStatus;
   }, [game, gameState]);
 
   const getPgn = useCallback((): string => {

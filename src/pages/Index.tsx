@@ -382,6 +382,9 @@ const Index = () => {
             <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95]">
               {gameState.isOver ? (
                 <>
+                  <div className="rounded-md border-2 border-[#d9b99b] bg-card p-3 text-center text-lg font-semibold text-[#8B4513]">
+                    <p>{getGameStatus()}</p>
+                  </div>
                   <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                     <Button
                       type="button"
@@ -434,16 +437,11 @@ const Index = () => {
                     </Button>
                   </div>
                   <MoveList moves={gameState.moves} />
-                  <StatusBar
-                    status={getGameStatus()}
-                    result={gameState.result}
-                  />
                 </>
               ) : (
                 <>
                   <StatusBar
                     status={getGameStatus()}
-                    result={gameState.result}
                   />
                   <MoveInput
                     onSubmitMove={handlePlayerMove}

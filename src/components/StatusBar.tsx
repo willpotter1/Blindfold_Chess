@@ -1,15 +1,14 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 
 interface StatusBarProps {
   status: string;
-  result?: string | null;
 }
 
-export const StatusBar = ({ status, result }: StatusBarProps) => {
+export const StatusBar = ({ status }: StatusBarProps) => {
   const lastComputerMovePrefix = 'Last computer move: ';
-  const isLastComputerMoveStatus = status.startsWith(lastComputerMovePrefix);
-  const lastComputerMove = isLastComputerMoveStatus ? status.slice(lastComputerMovePrefix.length) : null;
+  const [primaryStatus, secondaryStatus] = status.split('\n');
+  const isLastComputerMoveStatus = primaryStatus.startsWith(lastComputerMovePrefix);
+  const lastComputerMove = isLastComputerMoveStatus ? primaryStatus.slice(lastComputerMovePrefix.length) : null;
 
   return (
     <Card>
@@ -19,14 +18,10 @@ export const StatusBar = ({ status, result }: StatusBarProps) => {
             <div className="space-y-1">
               <p className="text-sm font-medium">Last move:</p>
               <p className="text-center text-[4.5rem] font-semibold leading-none text-[#8B4513]">{lastComputerMove}</p>
+              {secondaryStatus && <p className="text-center text-sm font-medium text-[#8B4513]">{secondaryStatus}</p>}
             </div>
           ) : (
             <p className="text-sm font-medium">{status}</p>
-          )}
-          {result && (
-            <Badge variant="secondary" className="font-mono">
-              Result: {result}
-            </Badge>
           )}
         </div>
       </CardContent>
