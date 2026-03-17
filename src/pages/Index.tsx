@@ -23,7 +23,7 @@ const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
 const CHESS_COM_ANALYSIS_URL = 'https://www.chess.com/analysis';
 const LICHESS_PASTE_URL = 'https://lichess.org/paste';
 const MAX_CHESS_COM_URL_LENGTH = 7000;
-const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-zinc-700 bg-white text-zinc-900 hover:bg-zinc-50';
+const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50';
 
 type GameConfigState = {
   gameConfig?: {
@@ -382,60 +382,56 @@ const Index = () => {
             <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95]">
               {gameState.isOver ? (
                 <>
-                  <div className="rounded-md border-2 border-[#8B4513] bg-card p-2">
-                    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className="h-10 w-full border-zinc-700 bg-white text-zinc-900 hover:bg-zinc-50"
-                        onClick={handlePlayWithNewConfig}
-                      >
-                        New Config
-                      </Button>
-                      <Button
-                        type="button"
-                        className="h-10 w-full bg-emerald-600 text-white hover:bg-emerald-700"
-                        onClick={() => void handlePlayAgainWithSameRules()}
-                      >
-                        Play Again
-                      </Button>
-                    </div>
+                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+                      onClick={handlePlayWithNewConfig}
+                    >
+                      New Config
+                    </Button>
+                    <Button
+                      type="button"
+                      className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+                      onClick={() => void handlePlayAgainWithSameRules()}
+                    >
+                      Play Again
+                    </Button>
                   </div>
-                  <div className="rounded-md border-2 border-[#8B4513] bg-card p-2">
-                    <div className="space-y-2">
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className={EXPORT_BUTTON_CLASSNAME}
-                        onClick={() => void handleAnalyzeOnChessCom()}
-                      >
-                        Analyze on Chess.com
-                      </Button>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className={EXPORT_BUTTON_CLASSNAME}
-                        onClick={() => void handleAnalyzeOnLichess()}
-                      >
-                        Copy to Clipboard & Open Lichess
-                      </Button>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className={EXPORT_BUTTON_CLASSNAME}
-                        onClick={() => void handleCopyPgn()}
-                      >
-                        Copy PGN
-                      </Button>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className={EXPORT_BUTTON_CLASSNAME}
-                        onClick={handleDownloadPgn}
-                      >
-                        Download PGN
-                      </Button>
-                    </div>
+                  <div className="space-y-2">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className={EXPORT_BUTTON_CLASSNAME}
+                      onClick={() => void handleAnalyzeOnChessCom()}
+                    >
+                      Analyze on Chess.com
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className={EXPORT_BUTTON_CLASSNAME}
+                      onClick={() => void handleAnalyzeOnLichess()}
+                    >
+                      Copy to Clipboard & Open Lichess
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className={EXPORT_BUTTON_CLASSNAME}
+                      onClick={() => void handleCopyPgn()}
+                    >
+                      Copy PGN
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className={EXPORT_BUTTON_CLASSNAME}
+                      onClick={handleDownloadPgn}
+                    >
+                      Download PGN
+                    </Button>
                   </div>
                   <MoveList moves={gameState.moves} />
                   <StatusBar
@@ -445,6 +441,10 @@ const Index = () => {
                 </>
               ) : (
                 <>
+                  <StatusBar
+                    status={getGameStatus()}
+                    result={gameState.result}
+                  />
                   <MoveInput
                     onSubmitMove={handlePlayerMove}
                     disabled={!isPlayerTurn}
@@ -475,10 +475,6 @@ const Index = () => {
                       Hold to Show Board
                     </Button>
                   )}
-                  <StatusBar
-                    status={getGameStatus()}
-                    result={gameState.result}
-                  />
                 </>
               )}
             </div>

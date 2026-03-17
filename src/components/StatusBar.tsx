@@ -14,22 +14,20 @@ export const StatusBar = ({ status, result }: StatusBarProps) => {
   return (
     <Card>
       <CardContent className="py-4">
-        <div className="flex items-center justify-between">
-          <div className="space-y-1">
-            {isLastComputerMoveStatus ? (
-              <div className="space-y-1">
-                <p className="text-sm font-medium">{lastComputerMovePrefix}</p>
-                <p className="text-xl font-semibold text-[#8B4513]">{lastComputerMove}</p>
-              </div>
-            ) : (
-              <p className="text-sm font-medium">{status}</p>
-            )}
-            {result && (
-              <Badge variant="secondary" className="font-mono">
-                Result: {result}
-              </Badge>
-            )}
-          </div>
+        <div className="space-y-1">
+          {isLastComputerMoveStatus ? (
+            <div className="space-y-1">
+              <p className="text-sm font-medium">Last move:</p>
+              <p className="text-center text-[4.5rem] font-semibold leading-none text-[#8B4513]">{lastComputerMove}</p>
+            </div>
+          ) : (
+            <p className="text-sm font-medium">{status}</p>
+          )}
+          {result && (
+            <Badge variant="secondary" className="font-mono">
+              Result: {result}
+            </Badge>
+          )}
         </div>
       </CardContent>
     </Card>

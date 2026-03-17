@@ -37,7 +37,7 @@ export const MoveInput = ({ onSubmitMove, disabled, errorMessage }: MoveInputPro
         <form onSubmit={handleSubmit} className="space-y-3">
           <div className="space-y-2">
             <label htmlFor="move-input" className="text-sm font-medium">
-              Enter Your Move (SAN) or click-to-move
+              Enter Your Move (SAN)
             </label>
             <div className="flex gap-2">
               <Input
@@ -61,10 +61,6 @@ export const MoveInput = ({ onSubmitMove, disabled, errorMessage }: MoveInputPro
               {errorMessage}
             </div>
           )}
-          
-          <p className="text-xs text-muted-foreground">
-            Examples: e4, Nf3, exd5, O-O (castling), e8=Q (promotion), Qxe6+ (capture with check)
-          </p>
         </form>
       </CardContent>
     </Card>
