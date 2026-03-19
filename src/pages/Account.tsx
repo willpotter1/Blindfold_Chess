@@ -66,7 +66,7 @@ const Account = () => {
                     <Link to="/login">Log In</Link>
                   </Button>
                   <Button asChild className="border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90">
-                    <Link to="/signup">Create Account</Link>
+                    <Link to="/login?mode=signup">Create Account</Link>
                   </Button>
                 </div>
               </div>

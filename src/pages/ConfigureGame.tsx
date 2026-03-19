@@ -53,15 +53,18 @@ const ConfigureGame = () => {
               </Link>
             </Button>
             <Button asChild type="button" className="md:w-full">
+              <Link to="/about">Puzzles</Link>
+            </Button>
+            <Button asChild type="button" className="md:w-full">
+              <Link to="/about">Openings</Link>
+            </Button>
+            <Button asChild type="button" className="md:w-full">
               <Link to="/about">About</Link>
             </Button>
           </div>
           <div className="flex gap-2 md:mt-auto md:flex-col">
             <Button asChild type="button" className="md:w-full">
               <Link to="/login">Log In</Link>
-            </Button>
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/signup">Sign Up</Link>
             </Button>
           </div>
         </div>
