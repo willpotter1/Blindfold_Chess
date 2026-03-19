@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { GameConfigPanel } from '@/components/GameConfigPanel';
 import emptyBoardIcon from '../../Visual/emptyboard3.png';
+import profileIcon from '../../Visual/Brownprofile.png';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 type GameConfig = {
@@ -12,7 +13,8 @@ type GameConfig = {
   hideMoveHistory: boolean;
 };
 
-const gamesButtonClassName = 'h-auto border-0 bg-transparent px-0 py-1 text-white shadow-none hover:bg-transparent md:w-full';
+const sidebarIconButtonClassName = 'h-auto justify-start border-0 bg-transparent px-0 py-1 text-white shadow-none hover:bg-transparent md:w-full';
+const sidebarIconSlotClassName = 'flex h-9 w-9 shrink-0 items-center justify-center';
 
 const ConfigureGame = () => {
   const navigate = useNavigate();
@@ -34,12 +36,19 @@ const ConfigureGame = () => {
             />
           </Link>
           <div className="flex gap-2 md:mt-4 md:flex-col">
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/account">Account</Link>
+            <Button asChild type="button" className={sidebarIconButtonClassName}>
+              <Link to="/account" className="flex items-center justify-start gap-3">
+                <span className={sidebarIconSlotClassName}>
+                  <img src={profileIcon} alt="" aria-hidden="true" className="h-9 w-9 object-contain" />
+                </span>
+                <span className="text-lg font-bold">Account</span>
+              </Link>
             </Button>
-            <Button asChild type="button" className={gamesButtonClassName}>
+            <Button asChild type="button" className={sidebarIconButtonClassName}>
               <Link to="/games" className="flex items-center justify-start gap-3">
-                <img src={emptyBoardIcon} alt="" aria-hidden="true" className="h-9 w-9 object-contain" />
+                <span className={sidebarIconSlotClassName}>
+                  <img src={emptyBoardIcon} alt="" aria-hidden="true" className="h-9 w-9 object-contain" />
+                </span>
                 <span className="text-lg font-bold">Games</span>
               </Link>
             </Button>

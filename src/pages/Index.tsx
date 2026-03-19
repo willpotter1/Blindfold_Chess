@@ -15,6 +15,7 @@ import { Button } from '@/components/ui/button';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
 import emptyBoardIcon from '../../Visual/emptyboard3.png';
+import profileIcon from '../../Visual/Brownprofile.png';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
@@ -25,7 +26,8 @@ const CHESS_COM_ANALYSIS_URL = 'https://www.chess.com/analysis';
 const LICHESS_PASTE_URL = 'https://lichess.org/paste';
 const MAX_CHESS_COM_URL_LENGTH = 7000;
 const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-zinc-700 bg-white text-zinc-900 hover:bg-zinc-50';
-const GAMES_BUTTON_CLASSNAME = 'h-auto border-0 bg-transparent px-0 py-1 text-white shadow-none hover:bg-transparent md:w-full';
+const SIDEBAR_ICON_BUTTON_CLASSNAME = 'h-auto justify-start border-0 bg-transparent px-0 py-1 text-white shadow-none hover:bg-transparent md:w-full';
+const SIDEBAR_ICON_SLOT_CLASSNAME = 'flex h-9 w-9 shrink-0 items-center justify-center';
 
 type GameConfigState = {
   gameConfig?: {
@@ -348,12 +350,19 @@ const Index = () => {
               />
             </Link>
           <div className="flex gap-2 md:mt-4 md:flex-col">
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/account">Account</Link>
+            <Button asChild type="button" className={SIDEBAR_ICON_BUTTON_CLASSNAME}>
+              <Link to="/account" className="flex items-center justify-start gap-3">
+                <span className={SIDEBAR_ICON_SLOT_CLASSNAME}>
+                  <img src={profileIcon} alt="" aria-hidden="true" className="h-9 w-9 object-contain" />
+                </span>
+                <span className="text-lg font-bold">Account</span>
+              </Link>
             </Button>
-            <Button asChild type="button" className={GAMES_BUTTON_CLASSNAME}>
+            <Button asChild type="button" className={SIDEBAR_ICON_BUTTON_CLASSNAME}>
               <Link to="/games" className="flex items-center justify-start gap-3">
-                <img src={emptyBoardIcon} alt="" aria-hidden="true" className="h-9 w-9 object-contain" />
+                <span className={SIDEBAR_ICON_SLOT_CLASSNAME}>
+                  <img src={emptyBoardIcon} alt="" aria-hidden="true" className="h-9 w-9 object-contain" />
+                </span>
                 <span className="text-lg font-bold">Games</span>
               </Link>
             </Button>
