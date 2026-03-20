@@ -4,9 +4,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import { Switch } from '@/components/ui/switch';
 import { puzzleRatingBounds, type PuzzleConfig, type PuzzleThemeOption } from '@/lib/puzzles';
+import { cn } from '@/lib/utils';
 
 type PuzzleConfigPanelProps = {
   config: PuzzleConfig;
@@ -15,6 +15,7 @@ type PuzzleConfigPanelProps = {
   errorMessage?: string;
   onConfigChange: (config: PuzzleConfig) => void;
   onStart: () => void;
+  className?: string;
 };
 
 const isWholeNumber = (value: string) => /^\d+$/.test(value);
@@ -30,6 +31,7 @@ export const PuzzleConfigPanel = ({
   errorMessage,
   onConfigChange,
   onStart,
+  className,
 }: PuzzleConfigPanelProps) => {
   const [minRatingInput, setMinRatingInput] = useState(String(config.minRating));
   const [maxRatingInput, setMaxRatingInput] = useState(String(config.maxRating));
@@ -104,14 +106,14 @@ export const PuzzleConfigPanel = ({
     : 'text-sm text-muted-foreground';
 
   return (
-    <Card className="w-full border-2 border-[#d9b99b]">
+    <Card className={cn('flex w-full flex-col border-2 border-[#d9b99b]', className)}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Puzzle Configuration</CardTitle>
         <CardDescription className="text-xs">
           Set up your blindfold puzzle training session
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4 pt-2">
+      <CardContent className="flex min-h-0 flex-1 flex-col gap-4 pt-2">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           <div className="space-y-2">
             <Label htmlFor="puzzle-min-rating">Minimum Rating</Label>
@@ -235,7 +237,7 @@ export const PuzzleConfigPanel = ({
         <div className="space-y-2">
           <Label>Puzzle Themes</Label>
           <div className="rounded-md border border-[#d9b99b] bg-white">
-            <ScrollArea className="h-48 w-full p-3">
+            <div className="p-3">
               <div className="grid grid-cols-1 gap-3 pr-4 sm:grid-cols-2">
                 {themeOptions.map((theme) => (
                   <label
@@ -250,20 +252,22 @@ export const PuzzleConfigPanel = ({
                   </label>
                 ))}
               </div>
-            </ScrollArea>
+            </div>
           </div>
         </div>
 
-        <p className={helperTextClassName}>{helperText}</p>
+        <div className="mt-auto space-y-4">
+          <p className={helperTextClassName}>{helperText}</p>
 
-        <Button
-          onClick={onStart}
-          className="w-full"
-          size="lg"
-          disabled={hasInvalidNumbers || Boolean(errorMessage)}
-        >
-          Start Puzzle
-        </Button>
+          <Button
+            onClick={onStart}
+            className="w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+            size="lg"
+            disabled={hasInvalidNumbers || Boolean(errorMessage)}
+          >
+            Start Puzzle
+          </Button>
+        </div>
       </CardContent>
     </Card>
   );

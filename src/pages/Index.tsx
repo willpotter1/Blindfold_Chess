@@ -1,19 +1,23 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
-import { useGameState } from '@/hooks/useGameState';
+import { useGameState, type GameState } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
 import { BlindfoldBoard } from '@/components/BlindfoldBoard';
 import { MoveInput } from '@/components/MoveInput';
 import { MoveList } from '@/components/MoveList';
 import { StatusBar } from '@/components/StatusBar';
+import { ParticipantSummaryCard, type ParticipantSummaryCardModel } from '@/components/ParticipantSummaryCard';
 import { GameConfigPanel } from '@/components/GameConfigPanel';
 import { useToast } from '@/hooks/use-toast';
 import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
+import { getMaterialCountsFromFen, type MaterialCountByColor } from '@/lib/chess/material';
 import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AppSidebar } from '@/components/AppSidebar';
+import computerIcon from '../../Visual/robohead.png';
+import playerIcon from '../../Visual/BBpawn.png';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
@@ -35,14 +39,62 @@ type GameConfigState = {
   };
 };
 
+type TrainerParticipantRole = 'computer' | 'player';
+
+const getOpposingColor = (color: 'white' | 'black'): 'white' | 'black' => (
+  color === 'white' ? 'black' : 'white'
+);
+
+const getParticipantPieceColor = (
+  gameState: GameState,
+  role: TrainerParticipantRole,
+): 'white' | 'black' => (
+  role === 'player' ? gameState.playerColor : getOpposingColor(gameState.playerColor)
+);
+
+const buildParticipantSummary = (
+  gameState: GameState,
+  role: TrainerParticipantRole,
+  materialCounts: MaterialCountByColor,
+): ParticipantSummaryCardModel => {
+  const pieceColor = getParticipantPieceColor(gameState, role);
+  const opposingColor = getOpposingColor(pieceColor);
+  const material = materialCounts[pieceColor];
+  const opposingMaterial = materialCounts[opposingColor];
+
+  return {
+    label: role === 'computer' ? 'Computer' : 'Player',
+    pieceColor,
+    material,
+    materialAdvantage: Math.max(material - opposingMaterial, 0),
+    isToMove: !gameState.isOver && gameState.turnColor === pieceColor,
+    iconSrc: role === 'computer' ? computerIcon : playerIcon,
+    iconAlt: role === 'computer' ? 'Computer icon' : 'Player icon',
+  };
+};
+
+const getParticipantSummaries = (gameState: GameState) => {
+  const materialCounts = getMaterialCountsFromFen(gameState.fen);
+
+  return {
+    computer: buildParticipantSummary(gameState, 'computer', materialCounts),
+    player: buildParticipantSummary(gameState, 'player', materialCounts),
+  };
+};
+
 const Index = () => {
   const { gameState, startNewGame, resetGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState, getPgn } = useGameState();
   const [isEngineThinking, setIsEngineThinking] = useState(false);
   const [moveError, setMoveError] = useState<string>('');
   const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
+  const [desktopBoardHeight, setDesktopBoardHeight] = useState<number | null>(null);
+  const [desktopLeftSectionHeight, setDesktopLeftSectionHeight] = useState<number | null>(null);
+  const desktopBoardRef = useRef<HTMLDivElement>(null);
+  const desktopLeftSectionRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
   const navigate = useNavigate();
   const location = useLocation();
+  const hasActiveGame = Boolean(gameState);
 
   useEffect(() => {
     if (import.meta.env.DEV) {
@@ -57,6 +109,66 @@ const Index = () => {
       }
     };
   }, []);
+
+  useEffect(() => {
+    if (!hasActiveGame) {
+      setDesktopBoardHeight(null);
+      return;
+    }
+
+    const boardNode = desktopBoardRef.current;
+    if (!boardNode) return;
+
+    const updateBoardHeight = () => {
+      setDesktopBoardHeight(Math.round(boardNode.getBoundingClientRect().height));
+    };
+
+    updateBoardHeight();
+
+    if (typeof ResizeObserver === 'undefined') {
+      return undefined;
+    }
+
+    const resizeObserver = new ResizeObserver(() => {
+      updateBoardHeight();
+    });
+
+    resizeObserver.observe(boardNode);
+
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, [hasActiveGame]);
+
+  useEffect(() => {
+    if (!hasActiveGame) {
+      setDesktopLeftSectionHeight(null);
+      return;
+    }
+
+    const leftSectionNode = desktopLeftSectionRef.current;
+    if (!leftSectionNode) return;
+
+    const updateLeftSectionHeight = () => {
+      setDesktopLeftSectionHeight(Math.round(leftSectionNode.getBoundingClientRect().height));
+    };
+
+    updateLeftSectionHeight();
+
+    if (typeof ResizeObserver === 'undefined') {
+      return undefined;
+    }
+
+    const resizeObserver = new ResizeObserver(() => {
+      updateLeftSectionHeight();
+    });
+
+    resizeObserver.observe(leftSectionNode);
+
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, [hasActiveGame]);
 
   const handleEngineMove = useCallback(async () => {
     const snapshot = getCurrentState();
@@ -328,6 +440,216 @@ const Index = () => {
     navigate('/configure');
   };
 
+  const statusText = gameState ? getGameStatus() : '';
+  const participantSummaries = gameState ? getParticipantSummaries(gameState) : null;
+  const showDesktopMoveHistory = Boolean(gameState && (gameState.isOver || !gameState.hideMoveHistory));
+
+  const renderRevealButton = (className: string) => {
+    if (!gameState || gameState.isOver || !gameState.allowCheats) return null;
+
+    return (
+      <Button
+        type="button"
+        variant="outline"
+        className={className}
+        onPointerDown={() => setIsManualBoardReveal(true)}
+        onPointerUp={() => setIsManualBoardReveal(false)}
+        onPointerLeave={() => setIsManualBoardReveal(false)}
+        onPointerCancel={() => setIsManualBoardReveal(false)}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            setIsManualBoardReveal(true);
+          }
+        }}
+        onKeyUp={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            setIsManualBoardReveal(false);
+          }
+        }}
+        onBlur={() => setIsManualBoardReveal(false)}
+      >
+        Hold to Show Board
+      </Button>
+    );
+  };
+
+  const renderLegacyTrainerPanel = () => {
+    if (!gameState) return null;
+
+    if (gameState.isOver) {
+      return (
+        <>
+          <div className="rounded-md border-2 border-[#d9b99b] bg-card p-3 text-center text-lg font-semibold text-[#8B4513]">
+            <p>{statusText}</p>
+          </div>
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+            <Button
+              type="button"
+              variant="outline"
+              className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+              onClick={handlePlayWithNewConfig}
+            >
+              New Config
+            </Button>
+            <Button
+              type="button"
+              className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+              onClick={() => void handlePlayAgainWithSameRules()}
+            >
+              Play Again
+            </Button>
+          </div>
+          <div className="space-y-2">
+            <Button
+              type="button"
+              variant="outline"
+              className={EXPORT_BUTTON_CLASSNAME}
+              onClick={() => void handleAnalyzeOnChessCom()}
+            >
+              Analyze on Chess.com
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              className={EXPORT_BUTTON_CLASSNAME}
+              onClick={() => void handleAnalyzeOnLichess()}
+            >
+              Copy to Clipboard & Open Lichess
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              className={EXPORT_BUTTON_CLASSNAME}
+              onClick={() => void handleCopyPgn()}
+            >
+              Copy PGN
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              className={EXPORT_BUTTON_CLASSNAME}
+              onClick={handleDownloadPgn}
+            >
+              Download PGN
+            </Button>
+          </div>
+          <MoveList moves={gameState.moves} />
+        </>
+      );
+    }
+
+    return (
+      <>
+        <StatusBar status={statusText} />
+        <MoveInput
+          onSubmitMove={handlePlayerMove}
+          disabled={!isPlayerTurn}
+          errorMessage={moveError}
+        />
+        {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
+        {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
+      </>
+    );
+  };
+
+  const renderDesktopTrainerShell = () => {
+    if (!gameState || !participantSummaries) return null;
+
+    return (
+      <div
+        className="hidden h-full xl:grid xl:grid-rows-[auto_minmax(0,1fr)_auto] xl:gap-3.5"
+        style={desktopBoardHeight ? { height: `${desktopBoardHeight}px` } : undefined}
+      >
+        <ParticipantSummaryCard participant={participantSummaries.computer} />
+
+        <div className={`grid w-full self-center gap-3.5 ${showDesktopMoveHistory ? 'grid-cols-[minmax(0,1fr)_190px] 2xl:grid-cols-[minmax(0,1fr)_210px]' : 'grid-cols-1'}`}>
+          <div ref={desktopLeftSectionRef} className="flex min-h-0 flex-col gap-3.5 self-start">
+            <StatusBar status={statusText} variant="compact" />
+
+            {gameState.isOver ? (
+              <>
+                <div className="grid grid-cols-1 gap-2 2xl:grid-cols-2">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+                    onClick={handlePlayWithNewConfig}
+                  >
+                    New Config
+                  </Button>
+                  <Button
+                    type="button"
+                    className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+                    onClick={() => void handlePlayAgainWithSameRules()}
+                  >
+                    Play Again
+                  </Button>
+                </div>
+
+                <div className="grid grid-cols-1 gap-2">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className={EXPORT_BUTTON_CLASSNAME}
+                    onClick={() => void handleAnalyzeOnChessCom()}
+                  >
+                    Analyze on Chess.com
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className={EXPORT_BUTTON_CLASSNAME}
+                    onClick={() => void handleAnalyzeOnLichess()}
+                  >
+                    Copy to Clipboard & Open Lichess
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className={EXPORT_BUTTON_CLASSNAME}
+                    onClick={() => void handleCopyPgn()}
+                  >
+                    Copy PGN
+                  </Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className={EXPORT_BUTTON_CLASSNAME}
+                    onClick={handleDownloadPgn}
+                  >
+                    Download PGN
+                  </Button>
+                </div>
+              </>
+            ) : (
+              <>
+                <MoveInput
+                  onSubmitMove={handlePlayerMove}
+                  disabled={!isPlayerTurn}
+                  errorMessage={moveError}
+                  variant="compact"
+                />
+
+                {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
+              </>
+            )}
+          </div>
+
+          {showDesktopMoveHistory && (
+            <div
+              className="self-start"
+              style={desktopLeftSectionHeight ? { height: `${desktopLeftSectionHeight}px` } : undefined}
+            >
+              <MoveList moves={gameState.moves} className="h-full min-h-0" />
+            </div>
+          )}
+        </div>
+
+        <ParticipantSummaryCard participant={participantSummaries.player} />
+      </div>
+    );
+  };
+
   return (
     <div className="min-h-screen bg-white md:flex">
       <SeoHead
@@ -340,112 +662,25 @@ const Index = () => {
 
       <div className="mx-auto w-full px-4 py-8 md:flex-1">
         {gameState ? (
-          <div className="mx-auto grid max-w-[1800px] grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,1fr)_300px]">
-            <div className="flex flex-col items-center justify-start space-y-4">
-              <BlindfoldBoard
-                fen={gameState.fen}
-                isVisible={isBoardVisible}
-                isInteractive={isPlayerTurn}
-                onMove={handleBoardMove}
-              />
-            </div>
+          <div className="lg:flex lg:min-h-[calc(100vh-4rem)] lg:items-center">
+            <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-4 lg:items-center lg:grid-cols-[minmax(0,1fr)_280px] xl:gap-8 xl:items-stretch xl:grid-cols-[minmax(0,1fr)_minmax(378px,441px)] 2xl:grid-cols-[minmax(0,1fr)_minmax(396px,468px)]">
+              <div className="flex flex-col items-center justify-start space-y-4 lg:justify-center xl:h-full xl:items-center xl:justify-center">
+                <div ref={desktopBoardRef} className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
+                  <BlindfoldBoard
+                    fen={gameState.fen}
+                    isVisible={isBoardVisible}
+                    isInteractive={isPlayerTurn}
+                    onMove={handleBoardMove}
+                  />
+                </div>
+              </div>
 
-            <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95]">
-              {gameState.isOver ? (
-                <>
-                  <div className="rounded-md border-2 border-[#d9b99b] bg-card p-3 text-center text-lg font-semibold text-[#8B4513]">
-                    <p>{getGameStatus()}</p>
-                  </div>
-                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-                    <Button
-                      type="button"
-                      variant="outline"
-                      className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
-                      onClick={handlePlayWithNewConfig}
-                    >
-                      New Config
-                    </Button>
-                    <Button
-                      type="button"
-                      className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
-                      onClick={() => void handlePlayAgainWithSameRules()}
-                    >
-                      Play Again
-                    </Button>
-                  </div>
-                  <div className="space-y-2">
-                    <Button
-                      type="button"
-                      variant="outline"
-                      className={EXPORT_BUTTON_CLASSNAME}
-                      onClick={() => void handleAnalyzeOnChessCom()}
-                    >
-                      Analyze on Chess.com
-                    </Button>
-                    <Button
-                      type="button"
-                      variant="outline"
-                      className={EXPORT_BUTTON_CLASSNAME}
-                      onClick={() => void handleAnalyzeOnLichess()}
-                    >
-                      Copy to Clipboard & Open Lichess
-                    </Button>
-                    <Button
-                      type="button"
-                      variant="outline"
-                      className={EXPORT_BUTTON_CLASSNAME}
-                      onClick={() => void handleCopyPgn()}
-                    >
-                      Copy PGN
-                    </Button>
-                    <Button
-                      type="button"
-                      variant="outline"
-                      className={EXPORT_BUTTON_CLASSNAME}
-                      onClick={handleDownloadPgn}
-                    >
-                      Download PGN
-                    </Button>
-                  </div>
-                  <MoveList moves={gameState.moves} />
-                </>
-              ) : (
-                <>
-                  <StatusBar
-                    status={getGameStatus()}
-                  />
-                  <MoveInput
-                    onSubmitMove={handlePlayerMove}
-                    disabled={!isPlayerTurn}
-                    errorMessage={moveError}
-                  />
-                  {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
-                  {gameState.allowCheats && (
-                    <Button
-                      type="button"
-                      variant="outline"
-                      className="w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card"
-                      onPointerDown={() => setIsManualBoardReveal(true)}
-                      onPointerUp={() => setIsManualBoardReveal(false)}
-                      onPointerLeave={() => setIsManualBoardReveal(false)}
-                      onPointerCancel={() => setIsManualBoardReveal(false)}
-                      onKeyDown={(event) => {
-                        if (event.key === 'Enter' || event.key === ' ') {
-                          setIsManualBoardReveal(true);
-                        }
-                      }}
-                      onKeyUp={(event) => {
-                        if (event.key === 'Enter' || event.key === ' ') {
-                          setIsManualBoardReveal(false);
-                        }
-                      }}
-                      onBlur={() => setIsManualBoardReveal(false)}
-                    >
-                      Hold to Show Board
-                    </Button>
-                  )}
-                </>
-              )}
+              <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95] xl:h-full xl:max-w-[468px] xl:scale-100 xl:space-y-0">
+                <div className="xl:hidden">
+                  {renderLegacyTrainerPanel()}
+                </div>
+                {renderDesktopTrainerShell()}
+              </div>
             </div>
           </div>
         ) : (

@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { cn } from '@/lib/utils';
 import upDownArrowsIcon from '../../Visual/up-down-arrows-icon.png';
 
 interface MoveListProps {
   moves: string[];
+  className?: string;
 }
 
-export const MoveList = ({ moves }: MoveListProps) => {
+export const MoveList = ({ moves, className }: MoveListProps) => {
   const [isReversed, setIsReversed] = useState(false);
 
   // Group moves into pairs (White, Black)
@@ -24,7 +26,7 @@ export const MoveList = ({ moves }: MoveListProps) => {
   const displayedMovePairs = isReversed ? [...movePairs].reverse() : movePairs;
 
   return (
-    <Card className="flex h-[380px] w-full flex-col">
+    <Card className={cn('flex h-[380px] w-full flex-col', className)}>
       <CardHeader className="flex-row items-center justify-between space-y-0">
         <CardTitle>Move History</CardTitle>
         <button
