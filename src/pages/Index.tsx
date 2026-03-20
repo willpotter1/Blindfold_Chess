@@ -11,7 +11,7 @@ import { GameConfigPanel } from '@/components/GameConfigPanel';
 import { useToast } from '@/hooks/use-toast';
 import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
-import { getMaterialCountsFromFen, type MaterialCountByColor } from '@/lib/chess/material';
+import { getCapturedPiecesByColorFromFen, type CapturedPiecesByColor } from '@/lib/chess/material';
 import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -60,18 +60,14 @@ const getParticipantPieceColor = (
 const buildParticipantSummary = (
   gameState: GameState,
   role: TrainerParticipantRole,
-  materialCounts: MaterialCountByColor,
+  capturedPiecesByColor: CapturedPiecesByColor,
 ): ParticipantSummaryCardModel => {
   const pieceColor = getParticipantPieceColor(gameState, role);
-  const opposingColor = getOpposingColor(pieceColor);
-  const material = materialCounts[pieceColor];
-  const opposingMaterial = materialCounts[opposingColor];
 
   return {
     label: role === 'computer' ? 'Computer' : 'Player',
     pieceColor,
-    material,
-    materialAdvantage: Math.max(material - opposingMaterial, 0),
+    capturedPieces: capturedPiecesByColor[pieceColor],
     isToMove: !gameState.isOver && gameState.turnColor === pieceColor,
     iconSrc: role === 'computer' ? computerIcon : playerIcon,
     iconAlt: role === 'computer' ? 'Computer icon' : 'Player icon',
@@ -79,11 +75,11 @@ const buildParticipantSummary = (
 };
 
 const getParticipantSummaries = (gameState: GameState) => {
-  const materialCounts = getMaterialCountsFromFen(gameState.fen);
+  const capturedPiecesByColor = getCapturedPiecesByColorFromFen(gameState.fen);
 
   return {
-    computer: buildParticipantSummary(gameState, 'computer', materialCounts),
-    player: buildParticipantSummary(gameState, 'player', materialCounts),
+    computer: buildParticipantSummary(gameState, 'computer', capturedPiecesByColor),
+    player: buildParticipantSummary(gameState, 'player', capturedPiecesByColor),
   };
 };
 

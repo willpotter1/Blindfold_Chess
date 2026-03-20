@@ -1,12 +1,14 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
+import type { CapturedPieceDescriptor } from '@/lib/chess/material';
 import { cn } from '@/lib/utils';
+
+const assetBase = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export interface ParticipantSummaryCardModel {
   label: 'Computer' | 'Player';
   pieceColor: 'white' | 'black';
-  material: number;
-  materialAdvantage: number;
+  capturedPieces: CapturedPieceDescriptor[];
   isToMove: boolean;
   iconSrc: string;
   iconAlt: string;
@@ -22,6 +24,21 @@ export const ParticipantSummaryCard = ({
   className,
 }: ParticipantSummaryCardProps) => {
   const pieceColorLabel = participant.pieceColor === 'white' ? 'White' : 'Black';
+  const getCapturedPieceSrc = (piece: CapturedPieceDescriptor) => {
+    const pieceColorKey = piece.color === 'white' ? 'w' : 'b';
+    return `${assetBase}/pieces/${pieceColorKey}${piece.type.toUpperCase()}.svg`;
+  };
+  const getCapturedPieceAlt = (piece: CapturedPieceDescriptor) => (
+    `${piece.color === 'white' ? 'White' : 'Black'} ${piece.type === 'q'
+      ? 'queen'
+      : piece.type === 'r'
+        ? 'rook'
+        : piece.type === 'b'
+          ? 'bishop'
+          : piece.type === 'n'
+            ? 'knight'
+            : 'pawn'}`
+  );
 
   return (
     <Card className={cn('bg-gradient-to-r from-[#fffaf4] via-[#fcf4ea] to-[#fff7ef]', className)}>
@@ -55,18 +72,18 @@ export const ParticipantSummaryCard = ({
             </div>
 
             <div className="mt-2.5">
-              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[#8B4513]/65">
-                Material
-              </p>
-              <div className="mt-1 flex items-baseline gap-2">
-                <p className="text-[1.65rem] font-bold leading-none text-[#8B4513]">
-                  {participant.material}
-                </p>
-                {participant.materialAdvantage > 0 && (
-                  <p className="text-base font-semibold leading-none text-emerald-700">
-                    +{participant.materialAdvantage}
-                  </p>
-                )}
+              <div className="min-h-7">
+                <div className="flex min-h-7 flex-wrap items-center gap-1">
+                  {participant.capturedPieces.map((piece, index) => (
+                    <img
+                      key={`${piece.color}-${piece.type}-${index}`}
+                      src={getCapturedPieceSrc(piece)}
+                      alt={getCapturedPieceAlt(piece)}
+                      className="h-6 w-6 object-contain"
+                      draggable={false}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

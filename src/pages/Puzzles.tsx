@@ -8,7 +8,7 @@ import { PuzzleConfigPanel } from '@/components/PuzzleConfigPanel';
 import { StatusBar } from '@/components/StatusBar';
 import { ParticipantSummaryCard, type ParticipantSummaryCardModel } from '@/components/ParticipantSummaryCard';
 import { Button } from '@/components/ui/button';
-import { getMaterialCountsFromFen, type MaterialCountByColor } from '@/lib/chess/material';
+import { getCapturedPiecesByColorFromFen, type CapturedPiecesByColor } from '@/lib/chess/material';
 import { builtInPuzzles, curatedPuzzleThemeOptions, type PuzzleRecord } from '@/lib/puzzles';
 import { useDesktopFitLayout } from '@/hooks/useDesktopFitLayout';
 import { useDesktopGameLayout } from '@/hooks/useDesktopGameLayout';
@@ -43,17 +43,15 @@ const buildPuzzleParticipantSummary = (
   currentFen: string,
   isSolved: boolean,
   role: PuzzleParticipantRole,
-  materialCounts: MaterialCountByColor,
+  capturedPiecesByColor: CapturedPiecesByColor,
 ): ParticipantSummaryCardModel => {
   const playerColor = getPuzzlePlayerColor(puzzle);
   const pieceColor = role === 'player' ? playerColor : getOpposingColor(playerColor);
-  const opposingColor = getOpposingColor(pieceColor);
 
   return {
     label: role === 'computer' ? 'Computer' : 'Player',
     pieceColor,
-    material: materialCounts[pieceColor],
-    materialAdvantage: Math.max(materialCounts[pieceColor] - materialCounts[opposingColor], 0),
+    capturedPieces: capturedPiecesByColor[pieceColor],
     isToMove: !isSolved && getTurnColorFromFen(currentFen) === pieceColor,
     iconSrc: role === 'computer' ? computerIcon : playerIcon,
     iconAlt: role === 'computer' ? 'Computer icon' : 'Player icon',
@@ -61,11 +59,11 @@ const buildPuzzleParticipantSummary = (
 };
 
 const getPuzzleParticipantSummaries = (puzzle: PuzzleRecord, currentFen: string, isSolved: boolean) => {
-  const materialCounts = getMaterialCountsFromFen(currentFen);
+  const capturedPiecesByColor = getCapturedPiecesByColorFromFen(currentFen);
 
   return {
-    computer: buildPuzzleParticipantSummary(puzzle, currentFen, isSolved, 'computer', materialCounts),
-    player: buildPuzzleParticipantSummary(puzzle, currentFen, isSolved, 'player', materialCounts),
+    computer: buildPuzzleParticipantSummary(puzzle, currentFen, isSolved, 'computer', capturedPiecesByColor),
+    player: buildPuzzleParticipantSummary(puzzle, currentFen, isSolved, 'player', capturedPiecesByColor),
   };
 };
 
