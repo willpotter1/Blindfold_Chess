@@ -1,6 +1,7 @@
 import { useState, useCallback, useRef } from 'react';
 import { Chess } from 'chess.js';
 import { saveCompletedGame } from '@/lib/saveGameResult';
+import { normalizeSan } from '@/lib/chess/normalizeSan';
 
 export type GameState = {
   fen: string;
@@ -16,34 +17,6 @@ export type GameState = {
   result: '1-0' | '0-1' | '1/2-1/2' | null;
   isCheck: boolean;
   turnColor: 'white' | 'black';
-};
-
-const normalizeSan = (input: string): string => {
-  // Remove whitespace and normalize zeros to letter o (common in castling typos).
-  let san = input.trim().replace(/\s+/g, '').replace(/0/g, 'o');
-
-  // Handle castling in any case (e.g., o-o, O-O-O+, 0-0).
-  const castleMatch = san.match(/^o-?o(-?o)?([+#])?$/i);
-  if (castleMatch) {
-    const isLong = Boolean(castleMatch[1]);
-    const suffix = castleMatch[2] ?? '';
-    return isLong ? `O-O-O${suffix}` : `O-O${suffix}`;
-  }
-
-  // Normalize capture indicator to lowercase.
-  san = san.replace(/X/g, 'x');
-
-  // Uppercase piece designators (but not pawn file letters) and promotion piece, lowercase files.
-  const isPawnSan = /^[a-h](x|[1-8])/i.test(san);
-  if (!isPawnSan) {
-    san = san.replace(/^([kqrbn])/i, (m) => m.toUpperCase());
-  }
-  san = san.replace(/=([kqrbn])/i, (_, p) => `=${p.toUpperCase()}`);
-  const head = san.slice(0, 1);
-  const tail = san.slice(1).replace(/([a-h])/gi, (m) => m.toLowerCase());
-  san = `${head}${tail}`;
-
-  return san;
 };
 
 export const useGameState = () => {

@@ -30,3 +30,13 @@ docs/assets/
 *.sw?
 
 node_modules/
+
+# Local puzzle data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc

@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy:docs": "npm run build && node deploy-docs.js",
-    "migrate:remove-difficulty": "node scripts/removeDifficultyFromGames.mjs"
+    "migrate:remove-difficulty": "node scripts/removeDifficultyFromGames.mjs",
+    "puzzles:build-data": "python3 scripts/convert_lichess_puzzles_to_json.py"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

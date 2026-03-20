@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Chess } from 'chess.js';
 import { useGameState } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
@@ -12,9 +12,9 @@ import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
 import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { AppSidebar } from '@/components/AppSidebar';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
-import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
@@ -58,7 +58,7 @@ const Index = () => {
     };
   }, []);
 
-  const handleEngineMove = async () => {
+  const handleEngineMove = useCallback(async () => {
     const snapshot = getCurrentState();
     if (!snapshot || snapshot.isOver) return;
 
@@ -85,9 +85,9 @@ const Index = () => {
     } finally {
       setIsEngineThinking(false);
     }
-  };
+  }, [getCurrentState, makeMoveUci, toast]);
 
-  const handleStartGame = async (
+  const handleStartGame = useCallback(async (
     playerColor: 'white' | 'black',
     engineElo: number,
     revealEvery: number,
@@ -102,7 +102,7 @@ const Index = () => {
     if (playerColor === 'black') {
       await handleEngineMove();
     }
-  };
+  }, [handleEngineMove, startNewGame]);
 
   useEffect(() => {
     const routeState = location.state as GameConfigState | null;
@@ -117,7 +117,7 @@ const Index = () => {
       incomingConfig.hideMoveHistory ?? false
     );
     navigate('/', { replace: true, state: null });
-  }, [location.state, gameState, navigate]);
+  }, [location.state, gameState, navigate, handleStartGame]);
 
   const handlePlayerMove = async (moveStr: string) => {
     if (!gameState || isEngineThinking || gameState.isOver) return;
@@ -336,36 +336,7 @@ const Index = () => {
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      <div className="mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-24 md:shrink-0">
-        <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch md:justify-start">
-            <Link to="/" onClick={handleLogoClick} className="md:self-center">
-              <img
-              src={whitePawnLogo}
-              alt="White pawn logo"
-              className="h-14 w-14 object-contain md:h-20 md:w-20"
-              />
-            </Link>
-          <div className="flex gap-2 md:mt-4 md:flex-col">
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/account">Account</Link>
-            </Button>
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/games">Games</Link>
-            </Button>
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/about">About</Link>
-            </Button>
-          </div>
-          <div className="flex gap-2 md:mt-auto md:flex-col">
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/login">Log In</Link>
-            </Button>
-            <Button asChild type="button" className="md:w-full">
-              <Link to="/signup">Sign Up</Link>
-            </Button>
-          </div>
-        </div>
-      </div>
+      <AppSidebar onHomeClick={handleLogoClick} />
 
       <div className="mx-auto w-full px-4 py-8 md:flex-1">
         {gameState ? (

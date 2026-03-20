@@ -6,12 +6,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { AppSidebar } from '@/components/AppSidebar';
 import { useToast } from '@/hooks/use-toast';
 import { getFirebaseAuth, getFirestoreDb, hasFirebaseConfig } from '@/lib/firebase';
 import { resetPasswordWithOtp, sendPasswordResetOtp } from '@/lib/otpApi';
-import whitePawnLogo from '../../Visual/Whitepawn.png';
 
-const sidebarLinkButtonClassName = 'md:w-full';
 const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
 const textLinkClassName = 'text-sm font-medium text-[#8B4513] underline underline-offset-4';
 
@@ -255,36 +254,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-white md:flex">
-      <div className="mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-24 md:shrink-0">
-        <div className="flex items-center justify-between md:h-full md:flex-col md:items-stretch md:justify-start">
-          <Link to="/" className="md:self-center">
-            <img
-              src={whitePawnLogo}
-              alt="White pawn logo"
-              className="h-14 w-14 object-contain md:h-20 md:w-20"
-            />
-          </Link>
-          <div className="flex gap-2 md:mt-4 md:flex-col">
-            <Button asChild type="button" className={sidebarLinkButtonClassName}>
-              <Link to="/account">Account</Link>
-            </Button>
-            <Button asChild type="button" className={sidebarLinkButtonClassName}>
-              <Link to="/games">Games</Link>
-            </Button>
-            <Button asChild type="button" className={sidebarLinkButtonClassName}>
-              <Link to="/about">About</Link>
-            </Button>
-          </div>
-          <div className="flex gap-2 md:mt-auto md:flex-col">
-            <Button asChild type="button" className={sidebarLinkButtonClassName}>
-              <Link to="/login">Log In</Link>
-            </Button>
-            <Button asChild type="button" className={sidebarLinkButtonClassName}>
-              <Link to="/signup">Sign Up</Link>
-            </Button>
-          </div>
-        </div>
-      </div>
+      <AppSidebar />
 
       <div className="container mx-auto px-4 py-10 md:flex-1">
         {!hasFirebaseConfig && (

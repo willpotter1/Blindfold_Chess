@@ -24,7 +24,7 @@ export const MoveList = ({ moves }: MoveListProps) => {
   const displayedMovePairs = isReversed ? [...movePairs].reverse() : movePairs;
 
   return (
-    <Card className="w-full">
+    <Card className="flex h-[380px] w-full flex-col">
       <CardHeader className="flex-row items-center justify-between space-y-0">
         <CardTitle>Move History</CardTitle>
         <button
@@ -42,8 +42,8 @@ export const MoveList = ({ moves }: MoveListProps) => {
           />
         </button>
       </CardHeader>
-      <CardContent>
-        <ScrollArea className="h-[300px] w-full pr-4">
+      <CardContent className="min-h-0 flex-1">
+        <ScrollArea className="h-full w-full pr-4">
           {displayedMovePairs.length === 0 ? (
             <p className="text-sm text-muted-foreground text-center py-8">
               No moves yet
