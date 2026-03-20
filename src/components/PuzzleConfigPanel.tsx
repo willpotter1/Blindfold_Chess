@@ -106,15 +106,15 @@ export const PuzzleConfigPanel = ({
     : 'text-sm text-muted-foreground';
 
   return (
-    <Card className={cn('flex w-full flex-col border-2 border-[#d9b99b]', className)}>
+    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-[#d9b99b]', className)}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Puzzle Configuration</CardTitle>
         <CardDescription className="text-xs">
           Set up your blindfold puzzle training session
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex min-h-0 flex-1 flex-col gap-4 pt-2">
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      <CardContent className="grid min-h-0 flex-1 grid-rows-[auto_auto_minmax(0,1fr)_auto] gap-4 pt-2">
+        <div className="grid shrink-0 grid-cols-1 gap-3 sm:grid-cols-2">
           <div className="space-y-2">
             <Label htmlFor="puzzle-min-rating">Minimum Rating</Label>
             <Input
@@ -200,7 +200,7 @@ export const PuzzleConfigPanel = ({
           </div>
         </div>
 
-        <div className="space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
+        <div className="shrink-0 space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
           <div className="flex items-center justify-between rounded-md border border-[#d9b99b] bg-white px-3 py-2">
             <Label htmlFor="puzzle-allow-cheats" className="cursor-pointer">
               Allow Cheats
@@ -234,11 +234,11 @@ export const PuzzleConfigPanel = ({
           </div>
         </div>
 
-        <div className="space-y-2">
+        <div className="grid min-h-0 grid-rows-[auto_minmax(0,1fr)] gap-2">
           <Label>Puzzle Themes</Label>
-          <div className="rounded-md border border-[#d9b99b] bg-white">
-            <div className="p-3">
-              <div className="grid grid-cols-1 gap-3 pr-4 sm:grid-cols-2">
+          <div className="min-h-0 overflow-hidden rounded-md border border-[#d9b99b] bg-white">
+            <div className="h-full overflow-y-auto p-3">
+              <div className="grid grid-cols-1 gap-x-6 gap-y-3 pr-1 sm:grid-cols-2">
                 {themeOptions.map((theme) => (
                   <label
                     key={theme.value}
@@ -256,7 +256,7 @@ export const PuzzleConfigPanel = ({
           </div>
         </div>
 
-        <div className="mt-auto space-y-4">
+        <div className="grid shrink-0 gap-3 border-t border-[#ead8c6] pt-3">
           <p className={helperTextClassName}>{helperText}</p>
 
           <Button

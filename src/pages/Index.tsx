@@ -16,6 +16,8 @@ import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AppSidebar } from '@/components/AppSidebar';
+import { useDesktopFitLayout } from '@/hooks/useDesktopFitLayout';
+import { useDesktopGameLayout } from '@/hooks/useDesktopGameLayout';
 import computerIcon from '../../Visual/robohead.png';
 import playerIcon from '../../Visual/BBpawn.png';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
@@ -28,6 +30,9 @@ const CHESS_COM_ANALYSIS_URL = 'https://www.chess.com/analysis';
 const LICHESS_PASTE_URL = 'https://lichess.org/paste';
 const MAX_CHESS_COM_URL_LENGTH = 7000;
 const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50';
+const DESKTOP_BOARD_SIZE = 760;
+const DESKTOP_RIGHT_COLUMN_WIDTH = 441;
+const DESKTOP_LAYOUT_GAP = 32;
 
 type GameConfigState = {
   gameConfig?: {
@@ -87,14 +92,21 @@ const Index = () => {
   const [isEngineThinking, setIsEngineThinking] = useState(false);
   const [moveError, setMoveError] = useState<string>('');
   const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
-  const [desktopBoardHeight, setDesktopBoardHeight] = useState<number | null>(null);
   const [desktopLeftSectionHeight, setDesktopLeftSectionHeight] = useState<number | null>(null);
-  const desktopBoardRef = useRef<HTMLDivElement>(null);
   const desktopLeftSectionRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
   const navigate = useNavigate();
   const location = useLocation();
   const hasActiveGame = Boolean(gameState);
+  const showDesktopGameLayout = useDesktopGameLayout();
+  const { containerRef: desktopFitRef, layout: desktopLayout } = useDesktopFitLayout({
+    enabled: showDesktopGameLayout,
+    baseBoardSize: DESKTOP_BOARD_SIZE,
+    baseRightColumnWidth: DESKTOP_RIGHT_COLUMN_WIDTH,
+    baseGap: DESKTOP_LAYOUT_GAP,
+  });
+  const desktopHistoryWidth = Math.max(170, Math.round(desktopLayout.rightColumnWidth * 0.43));
+  const desktopShellGapClass = desktopLayout.scale < 0.88 ? 'gap-3' : 'gap-3.5';
 
   useEffect(() => {
     if (import.meta.env.DEV) {
@@ -112,36 +124,6 @@ const Index = () => {
 
   useEffect(() => {
     if (!hasActiveGame) {
-      setDesktopBoardHeight(null);
-      return;
-    }
-
-    const boardNode = desktopBoardRef.current;
-    if (!boardNode) return;
-
-    const updateBoardHeight = () => {
-      setDesktopBoardHeight(Math.round(boardNode.getBoundingClientRect().height));
-    };
-
-    updateBoardHeight();
-
-    if (typeof ResizeObserver === 'undefined') {
-      return undefined;
-    }
-
-    const resizeObserver = new ResizeObserver(() => {
-      updateBoardHeight();
-    });
-
-    resizeObserver.observe(boardNode);
-
-    return () => {
-      resizeObserver.disconnect();
-    };
-  }, [hasActiveGame]);
-
-  useEffect(() => {
-    if (!hasActiveGame) {
       setDesktopLeftSectionHeight(null);
       return;
     }
@@ -150,7 +132,7 @@ const Index = () => {
     if (!leftSectionNode) return;
 
     const updateLeftSectionHeight = () => {
-      setDesktopLeftSectionHeight(Math.round(leftSectionNode.getBoundingClientRect().height));
+      setDesktopLeftSectionHeight(leftSectionNode.offsetHeight);
     };
 
     updateLeftSectionHeight();
@@ -557,13 +539,16 @@ const Index = () => {
 
     return (
       <div
-        className="hidden h-full xl:grid xl:grid-rows-[auto_minmax(0,1fr)_auto] xl:gap-3.5"
-        style={desktopBoardHeight ? { height: `${desktopBoardHeight}px` } : undefined}
+        className={`h-full grid grid-rows-[auto_minmax(0,1fr)_auto] ${desktopShellGapClass}`}
+        style={{ height: `${desktopLayout.rightColumnHeight}px` }}
       >
         <ParticipantSummaryCard participant={participantSummaries.computer} />
 
-        <div className={`grid w-full self-center gap-3.5 ${showDesktopMoveHistory ? 'grid-cols-[minmax(0,1fr)_190px] 2xl:grid-cols-[minmax(0,1fr)_210px]' : 'grid-cols-1'}`}>
-          <div ref={desktopLeftSectionRef} className="flex min-h-0 flex-col gap-3.5 self-start">
+        <div
+          className={`grid w-full self-center ${desktopShellGapClass} ${showDesktopMoveHistory ? '' : 'grid-cols-1'}`}
+          style={showDesktopMoveHistory ? { gridTemplateColumns: `minmax(0,1fr) ${desktopHistoryWidth}px` } : undefined}
+        >
+          <div ref={desktopLeftSectionRef} className={`flex min-h-0 flex-col self-start ${desktopShellGapClass}`}>
             <StatusBar status={statusText} variant="compact" />
 
             {gameState.isOver ? (
@@ -636,7 +621,7 @@ const Index = () => {
           </div>
 
           {showDesktopMoveHistory && (
-            <div
+          <div
               className="self-start"
               style={desktopLeftSectionHeight ? { height: `${desktopLeftSectionHeight}px` } : undefined}
             >
@@ -651,37 +636,62 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white md:flex">
+    <div className={`min-h-screen bg-white ${showDesktopGameLayout ? 'md:flex' : ''}`}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      <AppSidebar onHomeClick={handleLogoClick} />
+      <AppSidebar onHomeClick={handleLogoClick} desktopMode={showDesktopGameLayout} />
 
       <div className="mx-auto w-full px-4 py-8 md:flex-1">
         {gameState ? (
-          <div className="lg:flex lg:min-h-[calc(100vh-4rem)] lg:items-center">
-            <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-4 lg:items-center lg:grid-cols-[minmax(0,1fr)_280px] xl:gap-8 xl:items-stretch xl:grid-cols-[minmax(0,1fr)_minmax(378px,441px)] 2xl:grid-cols-[minmax(0,1fr)_minmax(396px,468px)]">
-              <div className="flex flex-col items-center justify-start space-y-4 lg:justify-center xl:h-full xl:items-center xl:justify-center">
-                <div ref={desktopBoardRef} className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
-                  <BlindfoldBoard
-                    fen={gameState.fen}
-                    isVisible={isBoardVisible}
-                    isInteractive={isPlayerTurn}
-                    onMove={handleBoardMove}
-                  />
+          <div className={showDesktopGameLayout ? 'h-[calc(100dvh-4rem)]' : ''}>
+            {showDesktopGameLayout ? (
+              <div ref={desktopFitRef} className="mx-auto flex h-full w-full max-w-[1800px] items-center justify-center">
+                <div
+                  className="grid items-center"
+                  style={{
+                    gridTemplateColumns: `${desktopLayout.boardSize}px ${desktopLayout.rightColumnWidth}px`,
+                    columnGap: `${desktopLayout.gap}px`,
+                  }}
+                >
+                  <div className="flex items-center justify-center">
+                    <div style={{ width: `${desktopLayout.boardSize}px` }}>
+                      <BlindfoldBoard
+                        fen={gameState.fen}
+                        isVisible={isBoardVisible}
+                        isInteractive={isPlayerTurn}
+                        onMove={handleBoardMove}
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+
+                  <div style={{ width: `${desktopLayout.rightColumnWidth}px` }}>
+                    {renderDesktopTrainerShell()}
+                  </div>
                 </div>
               </div>
+            ) : (
+              <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-4">
+                <div className="flex flex-col items-center justify-start space-y-4">
+                  <div className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
+                    <BlindfoldBoard
+                      fen={gameState.fen}
+                      isVisible={isBoardVisible}
+                      isInteractive={isPlayerTurn}
+                      onMove={handleBoardMove}
+                    />
+                  </div>
+                </div>
 
-              <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95] xl:h-full xl:max-w-[468px] xl:scale-100 xl:space-y-0">
-                <div className="xl:hidden">
+                <div className="w-full space-y-4">
                   {renderLegacyTrainerPanel()}
                 </div>
-                {renderDesktopTrainerShell()}
               </div>
-            </div>
+            )}
           </div>
         ) : (
           <div className="flex min-h-[calc(100vh-8rem)] flex-col">

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import SeoHead from '@/components/SeoHead';
 import { AppSidebar } from '@/components/AppSidebar';
 import { BlindfoldBoard } from '@/components/BlindfoldBoard';
@@ -10,6 +10,8 @@ import { ParticipantSummaryCard, type ParticipantSummaryCardModel } from '@/comp
 import { Button } from '@/components/ui/button';
 import { getMaterialCountsFromFen, type MaterialCountByColor } from '@/lib/chess/material';
 import { builtInPuzzles, curatedPuzzleThemeOptions, type PuzzleRecord } from '@/lib/puzzles';
+import { useDesktopFitLayout } from '@/hooks/useDesktopFitLayout';
+import { useDesktopGameLayout } from '@/hooks/useDesktopGameLayout';
 import { usePuzzleState } from '@/hooks/usePuzzleState';
 import computerIcon from '../../Visual/robohead.png';
 import playerIcon from '../../Visual/BBpawn.png';
@@ -18,6 +20,9 @@ const SEO_TITLE = 'Blindfold Chess Trainer - Puzzle Practice';
 const SEO_DESCRIPTION = 'Practice blindfold mate puzzles with the same board experience as the trainer and step through curated Lichess positions.';
 const SEO_CANONICAL_URL = 'https://blindchess.org/puzzles';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
+const DESKTOP_BOARD_SIZE = 760;
+const DESKTOP_RIGHT_COLUMN_WIDTH = 441;
+const DESKTOP_LAYOUT_GAP = 32;
 
 type PuzzleParticipantRole = 'computer' | 'player';
 
@@ -66,10 +71,17 @@ const getPuzzleParticipantSummaries = (puzzle: PuzzleRecord, currentFen: string,
 
 const Puzzles = () => {
   const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
-  const [desktopBoardHeight, setDesktopBoardHeight] = useState<number | null>(null);
   const [desktopLeftSectionHeight, setDesktopLeftSectionHeight] = useState<number | null>(null);
-  const desktopBoardRef = useRef<HTMLDivElement>(null);
   const desktopLeftSectionRef = useRef<HTMLDivElement>(null);
+  const showDesktopGameLayout = useDesktopGameLayout();
+  const { containerRef: desktopFitRef, layout: desktopLayout } = useDesktopFitLayout({
+    enabled: showDesktopGameLayout,
+    baseBoardSize: DESKTOP_BOARD_SIZE,
+    baseRightColumnWidth: DESKTOP_RIGHT_COLUMN_WIDTH,
+    baseGap: DESKTOP_LAYOUT_GAP,
+  });
+  const desktopHistoryWidth = Math.max(170, Math.round(desktopLayout.rightColumnWidth * 0.43));
+  const desktopShellGapClass = desktopLayout.scale < 0.88 ? 'gap-3' : 'gap-3.5';
   const {
     phase,
     config,
@@ -109,37 +121,6 @@ const Puzzles = () => {
   const participantSummaries =
     isSessionActive && currentPuzzle ? getPuzzleParticipantSummaries(currentPuzzle, fen, isSolved) : null;
   const showDesktopMoveHistory = Boolean(isSessionActive && !sessionConfig?.hideMoveHistory);
-  const desktopConfigPanelStyle = desktopBoardHeight
-    ? ({ '--puzzle-config-height': `${desktopBoardHeight}px` } as CSSProperties)
-    : undefined;
-
-  useEffect(() => {
-    const boardNode = desktopBoardRef.current;
-    if (!boardNode) {
-      setDesktopBoardHeight(null);
-      return;
-    }
-
-    const updateBoardHeight = () => {
-      setDesktopBoardHeight(Math.round(boardNode.getBoundingClientRect().height));
-    };
-
-    updateBoardHeight();
-
-    if (typeof ResizeObserver === 'undefined') {
-      return undefined;
-    }
-
-    const resizeObserver = new ResizeObserver(() => {
-      updateBoardHeight();
-    });
-
-    resizeObserver.observe(boardNode);
-
-    return () => {
-      resizeObserver.disconnect();
-    };
-  }, [boardFen, configError, isSessionActive]);
 
   useEffect(() => {
     if (!isSessionActive) {
@@ -151,7 +132,7 @@ const Puzzles = () => {
     if (!leftSectionNode) return;
 
     const updateLeftSectionHeight = () => {
-      setDesktopLeftSectionHeight(Math.round(leftSectionNode.getBoundingClientRect().height));
+      setDesktopLeftSectionHeight(leftSectionNode.offsetHeight);
     };
 
     updateLeftSectionHeight();
@@ -205,13 +186,16 @@ const Puzzles = () => {
 
     return (
       <div
-        className="hidden h-full xl:grid xl:grid-rows-[auto_minmax(0,1fr)_auto] xl:gap-3.5"
-        style={desktopBoardHeight ? { height: `${desktopBoardHeight}px` } : undefined}
+        className={`h-full grid grid-rows-[auto_minmax(0,1fr)_auto] ${desktopShellGapClass}`}
+        style={{ height: `${desktopLayout.rightColumnHeight}px` }}
       >
         <ParticipantSummaryCard participant={participantSummaries.computer} />
 
-        <div className={`grid w-full self-center gap-3.5 ${showDesktopMoveHistory ? 'grid-cols-[minmax(0,1fr)_190px] 2xl:grid-cols-[minmax(0,1fr)_210px]' : 'grid-cols-1'}`}>
-          <div ref={desktopLeftSectionRef} className="flex min-h-0 flex-col gap-3.5 self-start">
+        <div
+          className={`grid w-full self-center ${desktopShellGapClass} ${showDesktopMoveHistory ? '' : 'grid-cols-1'}`}
+          style={showDesktopMoveHistory ? { gridTemplateColumns: `minmax(0,1fr) ${desktopHistoryWidth}px` } : undefined}
+        >
+          <div ref={desktopLeftSectionRef} className={`flex min-h-0 flex-col self-start ${desktopShellGapClass}`}>
             <StatusBar status={status} variant="compact" />
 
             <MoveInput
@@ -278,40 +262,76 @@ const Puzzles = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white md:flex">
+    <div className={`min-h-screen bg-white ${showDesktopGameLayout ? 'md:flex' : ''}`}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      <AppSidebar />
+      <AppSidebar desktopMode={showDesktopGameLayout} />
 
       <div className="mx-auto w-full px-4 py-8 md:flex-1">
         {isSessionActive ? (
-          <div className="lg:flex lg:min-h-[calc(100vh-4rem)] lg:items-center">
-            <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-4 lg:items-center lg:grid-cols-[minmax(0,1fr)_280px] xl:gap-8 xl:items-stretch xl:grid-cols-[minmax(0,1fr)_minmax(378px,441px)] 2xl:grid-cols-[minmax(0,1fr)_minmax(396px,468px)]">
-              <div className="flex flex-col items-center justify-start space-y-4 lg:justify-center xl:h-full xl:items-center xl:justify-center">
-                <div ref={desktopBoardRef} className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
-                  {boardFen ? (
-                    <BlindfoldBoard
-                      fen={boardFen}
-                      isVisible={isBoardVisible}
-                      isInteractive={!isSolved}
-                      onMove={(from, to) => submitBoardMove(from, to).success}
-                      highlightSourceSquare={hintSourceSquare}
-                      highlightTargetSquare={hintTargetSquare}
-                    />
-                  ) : (
-                    <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
-                      {configError || 'Loading puzzle preview...'}
+          <div className={showDesktopGameLayout ? 'h-[calc(100dvh-4rem)]' : ''}>
+            {showDesktopGameLayout ? (
+              <div ref={desktopFitRef} className="mx-auto flex h-full w-full max-w-[1800px] items-center justify-center">
+                <div
+                  className="grid items-center"
+                  style={{
+                    gridTemplateColumns: `${desktopLayout.boardSize}px ${desktopLayout.rightColumnWidth}px`,
+                    columnGap: `${desktopLayout.gap}px`,
+                  }}
+                >
+                  <div className="flex items-center justify-center">
+                    <div style={{ width: `${desktopLayout.boardSize}px` }}>
+                      {boardFen ? (
+                        <BlindfoldBoard
+                          fen={boardFen}
+                          isVisible={isBoardVisible}
+                          isInteractive={!isSolved}
+                          onMove={(from, to) => submitBoardMove(from, to).success}
+                          highlightSourceSquare={hintSourceSquare}
+                          highlightTargetSquare={hintTargetSquare}
+                          className="w-full"
+                        />
+                      ) : (
+                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
+                          {configError || 'Loading puzzle preview...'}
+                        </div>
+                      )}
                     </div>
-                  )}
+                  </div>
+
+                  <div style={{ width: `${desktopLayout.rightColumnWidth}px` }}>
+                    {renderDesktopPuzzleShell()}
+                  </div>
                 </div>
               </div>
+            ) : (
+              <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-4">
+                <div className="flex flex-col items-center justify-start space-y-4">
+                  <div className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
+                    {boardFen ? (
+                      <BlindfoldBoard
+                        fen={boardFen}
+                        isVisible={isBoardVisible}
+                        isInteractive={!isSolved}
+                        onMove={(from, to) => submitBoardMove(from, to).success}
+                        highlightSourceSquare={hintSourceSquare}
+                        highlightTargetSquare={hintTargetSquare}
+                      />
+                    ) : (
+                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
+                        {configError || 'Loading puzzle preview...'}
+                      </div>
+                    )}
+                  </div>
+                </div>
 
-              <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95] xl:h-full xl:max-w-[468px] xl:scale-100 xl:space-y-0">
-                <div className="xl:hidden">
+                <div className="w-full space-y-4">
+                {!showDesktopGameLayout && (
+                  <>
                   <StatusBar status={status} />
 
                   <MoveInput
@@ -361,37 +381,80 @@ const Puzzles = () => {
                   {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
 
                   {!sessionConfig?.hideMoveHistory && <MoveList moves={moves} />}
-                </div>
+                  </>
+                )}
 
-                {renderDesktopPuzzleShell()}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         ) : (
-          <div className="lg:flex lg:min-h-[calc(100vh-4rem)] lg:items-center">
-            <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-4 lg:items-center lg:grid-cols-[minmax(0,1fr)_280px] xl:gap-8 xl:items-stretch xl:grid-cols-[minmax(0,1fr)_minmax(378px,441px)] 2xl:grid-cols-[minmax(0,1fr)_minmax(396px,468px)]">
-              <div className="flex flex-col items-center justify-start space-y-4 lg:justify-center xl:h-full xl:items-center xl:justify-center">
-                <div ref={desktopBoardRef} className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
-                  {boardFen ? (
-                    <BlindfoldBoard
-                      fen={boardFen}
-                      isVisible={isBoardVisible}
-                      isInteractive={false}
-                      onMove={() => false}
-                    />
-                  ) : (
-                    <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
-                      {configError || 'Loading puzzle preview...'}
+          <div className={showDesktopGameLayout ? 'h-[calc(100dvh-4rem)]' : ''}>
+            {showDesktopGameLayout ? (
+              <div ref={desktopFitRef} className="mx-auto flex h-full w-full max-w-[1800px] items-center justify-center">
+                <div
+                  className="grid items-center"
+                  style={{
+                    gridTemplateColumns: `${desktopLayout.boardSize}px ${desktopLayout.rightColumnWidth}px`,
+                    columnGap: `${desktopLayout.gap}px`,
+                  }}
+                >
+                  <div className="flex items-center justify-center">
+                    <div style={{ width: `${desktopLayout.boardSize}px` }}>
+                      {boardFen ? (
+                        <BlindfoldBoard
+                          fen={boardFen}
+                          isVisible={isBoardVisible}
+                          isInteractive={false}
+                          onMove={() => false}
+                          className="w-full"
+                        />
+                      ) : (
+                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
+                          {configError || 'Loading puzzle preview...'}
+                        </div>
+                      )}
                     </div>
-                  )}
+                  </div>
+
+                  <div style={{ width: `${desktopLayout.rightColumnWidth}px` }}>
+                    <div style={{ height: `${desktopLayout.rightColumnHeight}px` }}>
+                      <PuzzleConfigPanel
+                        config={config}
+                        themeOptions={curatedPuzzleThemeOptions}
+                        matchingPuzzleCount={previewPoolSize}
+                        errorMessage={configError}
+                        onConfigChange={updateConfig}
+                        onStart={() => {
+                          setIsManualBoardReveal(false);
+                          startSession();
+                        }}
+                        className="h-full"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
+            ) : (
+              <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-4">
+                <div className="flex flex-col items-center justify-start space-y-4">
+                  <div className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
+                    {boardFen ? (
+                      <BlindfoldBoard
+                        fen={boardFen}
+                        isVisible={isBoardVisible}
+                        isInteractive={false}
+                        onMove={() => false}
+                      />
+                    ) : (
+                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
+                        {configError || 'Loading puzzle preview...'}
+                      </div>
+                    )}
+                  </div>
+                </div>
 
-              <div className="w-full space-y-4 lg:justify-self-end lg:origin-top lg:scale-[0.95] xl:max-w-[468px] xl:scale-100 xl:space-y-0">
-                <div
-                  className="xl:h-[var(--puzzle-config-height)]"
-                  style={desktopConfigPanelStyle}
-                >
+                <div className="w-full space-y-4">
                   <PuzzleConfigPanel
                     config={config}
                     themeOptions={curatedPuzzleThemeOptions}
@@ -406,7 +469,7 @@ const Puzzles = () => {
                   />
                 </div>
               </div>
-            </div>
+            )}
           </div>
         )}
       </div>
