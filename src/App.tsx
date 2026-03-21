@@ -15,6 +15,7 @@ import AccountUsername from "./pages/AccountUsername";
 import AccountEmail from "./pages/AccountEmail";
 import AccountPassword from "./pages/AccountPassword";
 import Puzzles from "./pages/Puzzles";
+import Drills from "./pages/Drills";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,6 +53,7 @@ const App = () => {
             <Route path="/account/email" element={<AccountEmail />} />
             <Route path="/account/password" element={<AccountPassword />} />
             <Route path="/puzzles" element={<Puzzles />} />
+            <Route path="/drills" element={<Drills />} />
             <Route path="/games" element={<About />} />
             <Route path="/about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
