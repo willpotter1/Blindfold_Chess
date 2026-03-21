@@ -1,0 +1,253 @@
+import { useCallback, useEffect, useRef, useState } from 'react';
+import {
+  buildPromptDeck,
+  defaultVisionRoundConfig,
+  emptyVisionRoundStats,
+  resolveMovesPromptClick,
+  type VisionPrompt,
+  type VisionRoundConfig,
+  type VisionRoundStats,
+} from '@/lib/visionTrainer';
+
+type VisionRoundPhase = 'config' | 'playing' | 'results';
+type AttemptResult = 'correct' | 'wrong';
+
+export type VisionBoardFeedback = {
+  square: string;
+  result: AttemptResult;
+} | null;
+
+const TIMER_INTERVAL_MS = 100;
+const FEEDBACK_DURATION_MS = 180;
+
+export const useVisionTrainerState = () => {
+  const [phase, setPhase] = useState<VisionRoundPhase>('config');
+  const [config, setConfig] = useState<VisionRoundConfig>(defaultVisionRoundConfig);
+  const [stats, setStats] = useState<VisionRoundStats>(emptyVisionRoundStats);
+  const [timeRemainingMs, setTimeRemainingMs] = useState(defaultVisionRoundConfig.roundLengthSeconds * 1000);
+  const [currentPrompt, setCurrentPrompt] = useState<VisionPrompt | null>(null);
+  const [feedback, setFeedback] = useState<VisionBoardFeedback>(null);
+  const [selectedMoveSourceSquare, setSelectedMoveSourceSquare] = useState<string | null>(null);
+
+  const deckRef = useRef<VisionPrompt[]>([]);
+  const deckIndexRef = useRef(0);
+  const deadlineRef = useRef<number | null>(null);
+  const lastPromptIdRef = useRef<string | null>(null);
+  const timerIntervalRef = useRef<number | null>(null);
+  const feedbackTimeoutRef = useRef<number | null>(null);
+
+  const clearTimerInterval = useCallback(() => {
+    if (timerIntervalRef.current !== null) {
+      window.clearInterval(timerIntervalRef.current);
+      timerIntervalRef.current = null;
+    }
+  }, []);
+
+  const clearFeedbackTimeout = useCallback(() => {
+    if (feedbackTimeoutRef.current !== null) {
+      window.clearTimeout(feedbackTimeoutRef.current);
+      feedbackTimeoutRef.current = null;
+    }
+  }, []);
+
+  const takeNextPrompt = useCallback((roundConfig: VisionRoundConfig) => {
+    if (deckIndexRef.current >= deckRef.current.length) {
+      deckRef.current = buildPromptDeck(roundConfig, lastPromptIdRef.current);
+      deckIndexRef.current = 0;
+    }
+
+    const nextPrompt = deckRef.current[deckIndexRef.current] ?? null;
+
+    if (nextPrompt) {
+      deckIndexRef.current += 1;
+      lastPromptIdRef.current = nextPrompt.id;
+    }
+
+    return nextPrompt;
+  }, []);
+
+  const finishRound = useCallback(() => {
+    clearTimerInterval();
+    clearFeedbackTimeout();
+    deadlineRef.current = null;
+    setFeedback(null);
+    setSelectedMoveSourceSquare(null);
+    setPhase('results');
+    setCurrentPrompt(null);
+    setTimeRemainingMs(0);
+  }, [clearFeedbackTimeout, clearTimerInterval]);
+
+  const updateConfig = useCallback((nextConfig: VisionRoundConfig) => {
+    setConfig(nextConfig);
+
+    if (phase !== 'playing') {
+      setTimeRemainingMs(nextConfig.roundLengthSeconds * 1000);
+    }
+  }, [phase]);
+
+  const startRound = useCallback(() => {
+    clearTimerInterval();
+    clearFeedbackTimeout();
+
+    deckRef.current = buildPromptDeck(config);
+    deckIndexRef.current = 0;
+    lastPromptIdRef.current = null;
+
+    const firstPrompt = takeNextPrompt(config);
+
+    deadlineRef.current = Date.now() + config.roundLengthSeconds * 1000;
+    setPhase('playing');
+    setStats(emptyVisionRoundStats);
+    setCurrentPrompt(firstPrompt);
+    setFeedback(null);
+    setSelectedMoveSourceSquare(null);
+    setTimeRemainingMs(config.roundLengthSeconds * 1000);
+  }, [clearFeedbackTimeout, clearTimerInterval, config, takeNextPrompt]);
+
+  const restartRound = useCallback(() => {
+    startRound();
+  }, [startRound]);
+
+  const returnToConfig = useCallback(() => {
+    clearTimerInterval();
+    clearFeedbackTimeout();
+    deadlineRef.current = null;
+    setPhase('config');
+    setCurrentPrompt(null);
+    setFeedback(null);
+    setSelectedMoveSourceSquare(null);
+    setTimeRemainingMs(config.roundLengthSeconds * 1000);
+  }, [clearFeedbackTimeout, clearTimerInterval, config.roundLengthSeconds]);
+
+  const handleResolvedAttempt = useCallback((
+    result: AttemptResult,
+    feedbackSquare: string,
+  ) => {
+    clearFeedbackTimeout();
+    setFeedback({ square: feedbackSquare, result });
+    feedbackTimeoutRef.current = window.setTimeout(() => {
+      setFeedback(null);
+      feedbackTimeoutRef.current = null;
+    }, FEEDBACK_DURATION_MS);
+
+    setStats((previousStats) => ({
+      correctCount: previousStats.correctCount + (result === 'correct' ? 1 : 0),
+      wrongCount: previousStats.wrongCount + (result === 'wrong' ? 1 : 0),
+      totalAttempts: previousStats.totalAttempts + 1,
+    }));
+  }, [clearFeedbackTimeout]);
+
+  const handleSquareClick = useCallback((square: string) => {
+    if (phase !== 'playing' || !currentPrompt) {
+      return;
+    }
+
+    const deadline = deadlineRef.current;
+
+    if (!deadline || Date.now() >= deadline) {
+      finishRound();
+      return;
+    }
+
+    if (currentPrompt.mode === 'moves') {
+      const resolution = resolveMovesPromptClick(
+        currentPrompt,
+        selectedMoveSourceSquare,
+        square,
+      );
+
+      if (resolution.kind === 'select-from') {
+        clearFeedbackTimeout();
+        setFeedback(null);
+        setSelectedMoveSourceSquare(resolution.selectedFromSquare);
+        return;
+      }
+
+      setSelectedMoveSourceSquare(null);
+      handleResolvedAttempt(resolution.result, resolution.feedbackSquare);
+
+      const nextPrompt = takeNextPrompt(config);
+
+      if (!nextPrompt) {
+        finishRound();
+        return;
+      }
+
+      setCurrentPrompt(nextPrompt);
+      return;
+    }
+
+    const wasCorrect = square === currentPrompt.answerSquare;
+    const result: AttemptResult = wasCorrect ? 'correct' : 'wrong';
+
+    setSelectedMoveSourceSquare(null);
+    handleResolvedAttempt(result, square);
+
+    const nextPrompt = takeNextPrompt(config);
+
+    if (!nextPrompt) {
+      finishRound();
+      return;
+    }
+
+    setCurrentPrompt(nextPrompt);
+  }, [
+    clearFeedbackTimeout,
+    config,
+    currentPrompt,
+    finishRound,
+    handleResolvedAttempt,
+    phase,
+    selectedMoveSourceSquare,
+    takeNextPrompt,
+  ]);
+
+  useEffect(() => {
+    if (phase !== 'playing') {
+      return undefined;
+    }
+
+    const tick = () => {
+      const deadline = deadlineRef.current;
+
+      if (!deadline) {
+        finishRound();
+        return;
+      }
+
+      const remainingMs = Math.max(0, deadline - Date.now());
+      setTimeRemainingMs(remainingMs);
+
+      if (remainingMs === 0) {
+        finishRound();
+      }
+    };
+
+    tick();
+    timerIntervalRef.current = window.setInterval(tick, TIMER_INTERVAL_MS);
+
+    return () => {
+      clearTimerInterval();
+    };
+  }, [clearTimerInterval, finishRound, phase]);
+
+  useEffect(() => () => {
+    clearTimerInterval();
+    clearFeedbackTimeout();
+  }, [clearFeedbackTimeout, clearTimerInterval]);
+
+  return {
+    phase,
+    config,
+    currentPrompt,
+    feedback,
+    selectedMoveSourceSquare,
+    stats,
+    timeRemainingMs,
+    updateConfig,
+    startRound,
+    restartRound,
+    returnToConfig,
+    handleSquareClick,
+  };
+};
