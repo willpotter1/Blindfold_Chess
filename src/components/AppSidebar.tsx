@@ -1,5 +1,8 @@
+import { useEffect, useState } from 'react';
+import { onAuthStateChanged } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { getFirebaseAuth } from '@/lib/firebase';
 import { cn } from '@/lib/utils';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
@@ -11,7 +14,22 @@ type AppSidebarProps = {
 const navButtonBaseClassName = 'border-2 border-[#d9b99b] bg-white text-black hover:bg-white/90';
 
 export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps) => {
+  const [isAuthenticated, setIsAuthenticated] = useState(() => Boolean(getFirebaseAuth()?.currentUser));
   const buttonClassName = cn(navButtonBaseClassName, desktopMode ? 'md:w-full' : 'min-w-[96px] px-4 flex-1');
+
+  useEffect(() => {
+    const auth = getFirebaseAuth();
+    if (!auth) {
+      setIsAuthenticated(false);
+      return;
+    }
+
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setIsAuthenticated(Boolean(user));
+    });
+
+    return unsubscribe;
+  }, []);
 
   return (
     <div
@@ -48,9 +66,6 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
             <Link to="/puzzles">Puzzles</Link>
           </Button>
           <Button asChild type="button" className={buttonClassName}>
-            <Link to="/account">Account</Link>
-          </Button>
-          <Button asChild type="button" className={buttonClassName}>
             <Link to="/games">Games</Link>
           </Button>
           <Button asChild type="button" className={buttonClassName}>
@@ -60,10 +75,7 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
           {!desktopMode && (
             <>
               <Button asChild type="button" className={buttonClassName}>
-                <Link to="/login">Log In</Link>
-              </Button>
-              <Button asChild type="button" className={buttonClassName}>
-                <Link to="/signup">Sign Up</Link>
+                <Link to={isAuthenticated ? '/account' : '/login'}>{isAuthenticated ? 'Account' : 'Log In'}</Link>
               </Button>
             </>
           )}
@@ -72,10 +84,7 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
         {desktopMode && (
           <div className="flex gap-2 md:mt-auto md:flex-col">
             <Button asChild type="button" className={buttonClassName}>
-              <Link to="/login">Log In</Link>
-            </Button>
-            <Button asChild type="button" className={buttonClassName}>
-              <Link to="/signup">Sign Up</Link>
+              <Link to={isAuthenticated ? '/account' : '/login'}>{isAuthenticated ? 'Account' : 'Log In'}</Link>
             </Button>
           </div>
         )}
