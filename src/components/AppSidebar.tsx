@@ -69,9 +69,6 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
             <Link to="/drills">Drills</Link>
           </Button>
           <Button asChild type="button" className={buttonClassName}>
-            <Link to="/games">Games</Link>
-          </Button>
-          <Button asChild type="button" className={buttonClassName}>
             <Link to="/about">About</Link>
           </Button>
 
