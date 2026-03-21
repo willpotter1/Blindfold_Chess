@@ -11,13 +11,14 @@ export const StatusBar = ({ status, variant = 'default', className }: StatusBarP
   const [primaryStatus, secondaryStatus] = status.split('\n');
   const isLastComputerMoveStatus = primaryStatus.startsWith(lastComputerMovePrefix);
   const checkmateMatch = primaryStatus.match(/^(Checkmate!)\s+(1-0|0-1|1\/2-1\/2)$/);
-  const isCompactDisplayStatus = isLastComputerMoveStatus || Boolean(checkmateMatch);
+  const isSolvedStatus = primaryStatus === 'Solved';
+  const isCompactDisplayStatus = isLastComputerMoveStatus || Boolean(checkmateMatch) || isSolvedStatus;
   const isTurnStatus = /^(White|Black) to move$/.test(primaryStatus);
   const lastComputerMove = isLastComputerMoveStatus ? primaryStatus.slice(lastComputerMovePrefix.length) : null;
-  const largeDisplayText = isLastComputerMoveStatus ? lastComputerMove : isTurnStatus ? primaryStatus : null;
+  const largeDisplayText = isLastComputerMoveStatus ? lastComputerMove : (isTurnStatus || isSolvedStatus) ? primaryStatus : null;
   const compactMoveText = lastComputerMove?.trim();
-  const compactDisplayLabel = isLastComputerMoveStatus ? 'Last computer move' : checkmateMatch?.[1] ?? null;
-  const compactDisplayValue = isLastComputerMoveStatus ? compactMoveText || '—' : checkmateMatch?.[2] ?? null;
+  const compactDisplayLabel = isLastComputerMoveStatus ? 'Last computer move' : isSolvedStatus ? null : checkmateMatch?.[1] ?? null;
+  const compactDisplayValue = isLastComputerMoveStatus ? compactMoveText || '—' : isSolvedStatus ? primaryStatus : checkmateMatch?.[2] ?? null;
 
   if (variant === 'compact') {
     return (
@@ -26,9 +27,11 @@ export const StatusBar = ({ status, variant = 'default', className }: StatusBarP
           <div className={`space-y-1 ${isCompactDisplayStatus ? 'w-full text-center' : ''}`}>
             {isCompactDisplayStatus ? (
               <>
-                <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[#8B4513]/65">
-                  {compactDisplayLabel}
-                </p>
+                {compactDisplayLabel && (
+                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[#8B4513]/65">
+                    {compactDisplayLabel}
+                  </p>
+                )}
                 <p className="text-[2.75rem] font-semibold leading-none text-[#8B4513]">
                   {compactDisplayValue}
                 </p>

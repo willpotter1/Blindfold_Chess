@@ -9,7 +9,7 @@ import { StatusBar } from '@/components/StatusBar';
 import { ParticipantSummaryCard, type ParticipantSummaryCardModel } from '@/components/ParticipantSummaryCard';
 import { Button } from '@/components/ui/button';
 import { getCapturedPiecesByColorFromFen, type CapturedPiecesByColor } from '@/lib/chess/material';
-import { builtInPuzzles, curatedPuzzleThemeOptions, type PuzzleRecord } from '@/lib/puzzles';
+import { builtInPuzzles, curatedPuzzleThemeOptions, preparePuzzle, type PreparedPuzzleRecord } from '@/lib/puzzles';
 import { useDesktopFitLayout } from '@/hooks/useDesktopFitLayout';
 import { useDesktopGameLayout } from '@/hooks/useDesktopGameLayout';
 import { usePuzzleState } from '@/hooks/usePuzzleState';
@@ -34,18 +34,14 @@ const getTurnColorFromFen = (fen: string): 'white' | 'black' => (
   fen.split(' ')[1] === 'b' ? 'black' : 'white'
 );
 
-const getPuzzlePlayerColor = (puzzle: PuzzleRecord): 'white' | 'black' => (
-  getTurnColorFromFen(puzzle.fen)
-);
-
 const buildPuzzleParticipantSummary = (
-  puzzle: PuzzleRecord,
+  puzzle: PreparedPuzzleRecord,
   currentFen: string,
   isSolved: boolean,
   role: PuzzleParticipantRole,
   capturedPiecesByColor: CapturedPiecesByColor,
 ): ParticipantSummaryCardModel => {
-  const playerColor = getPuzzlePlayerColor(puzzle);
+  const playerColor = puzzle.playerColor;
   const pieceColor = role === 'player' ? playerColor : getOpposingColor(playerColor);
 
   return {
@@ -58,7 +54,7 @@ const buildPuzzleParticipantSummary = (
   };
 };
 
-const getPuzzleParticipantSummaries = (puzzle: PuzzleRecord, currentFen: string, isSolved: boolean) => {
+const getPuzzleParticipantSummaries = (puzzle: PreparedPuzzleRecord, currentFen: string, isSolved: boolean) => {
   const capturedPiecesByColor = getCapturedPiecesByColorFromFen(currentFen);
 
   return {
@@ -110,15 +106,18 @@ const Puzzles = () => {
     setIsManualBoardReveal(false);
   }, [currentPuzzle?.id, phase]);
 
+  const previewPreparedPuzzle = previewPuzzle ? preparePuzzle(previewPuzzle) : null;
+  const currentPreparedPuzzle = currentPuzzle ? preparePuzzle(currentPuzzle) : null;
   const isSessionActive = phase === 'session' && Boolean(currentPuzzle);
-  const boardFen = isSessionActive ? fen : previewPuzzle?.fen ?? '';
+  const boardFen = isSessionActive ? fen : previewPreparedPuzzle?.playableFen ?? '';
   const isBoardVisible = isSessionActive
     ? shouldShowBoard() || (sessionConfig?.allowCheats && isManualBoardReveal)
     : true;
   const hintButtonLabel = hintStage === 0 ? 'Hint' : hintStage === 1 ? 'Show Destination' : 'Hint Shown';
   const participantSummaries =
-    isSessionActive && currentPuzzle ? getPuzzleParticipantSummaries(currentPuzzle, fen, isSolved) : null;
+    isSessionActive && currentPreparedPuzzle ? getPuzzleParticipantSummaries(currentPreparedPuzzle, fen, isSolved) : null;
   const showDesktopMoveHistory = Boolean(isSessionActive && !sessionConfig?.hideMoveHistory);
+  const moveHistoryStartingTurnColor = currentPuzzle ? getTurnColorFromFen(currentPuzzle.fen) : 'white';
 
   useEffect(() => {
     if (!isSessionActive) {
@@ -249,7 +248,7 @@ const Puzzles = () => {
               className="self-start"
               style={desktopLeftSectionHeight ? { height: `${desktopLeftSectionHeight}px` } : undefined}
             >
-              <MoveList moves={moves} className="h-full min-h-0" />
+              <MoveList moves={moves} startingTurnColor={moveHistoryStartingTurnColor} className="h-full min-h-0" />
             </div>
           )}
         </div>
@@ -378,7 +377,7 @@ const Puzzles = () => {
 
                   {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
 
-                  {!sessionConfig?.hideMoveHistory && <MoveList moves={moves} />}
+                  {!sessionConfig?.hideMoveHistory && <MoveList moves={moves} startingTurnColor={moveHistoryStartingTurnColor} />}
                   </>
                 )}
 

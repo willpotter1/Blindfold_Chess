@@ -4,6 +4,7 @@ import { normalizeSan } from '@/lib/chess/normalizeSan';
 import {
   defaultPuzzleConfig,
   filterPuzzles,
+  preparePuzzle,
   type PuzzleConfig,
   type PuzzleRecord,
 } from '@/lib/puzzles';
@@ -17,8 +18,6 @@ type PuzzlePhase = 'config' | 'session';
 type HintStage = 0 | 1 | 2;
 
 const toUci = (from: string, to: string, promotion?: string) => `${from}${to}${promotion ?? ''}`;
-
-const getTurnLabel = (chess: Chess) => `${chess.turn() === 'w' ? 'White' : 'Black'} to move`;
 
 const pickRandomPuzzle = (puzzles: PuzzleRecord[], excludedPuzzleId?: string | null): PuzzleRecord | null => {
   if (!puzzles.length) {
@@ -78,9 +77,31 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
   }, []);
 
   const resetSessionState = useCallback((puzzle: PuzzleRecord, nextSessionConfig: PuzzleConfig, nextSessionPool: PuzzleRecord[]) => {
+    const preparedPuzzle = preparePuzzle(puzzle);
+    if (!preparedPuzzle) {
+      setCurrentPuzzle(null);
+      setSessionConfig(null);
+      setError('Puzzle data error');
+      setStatus('Loading puzzle...');
+      return false;
+    }
+
     const chess = new Chess(puzzle.fen);
+    const openingMove = chess.move({
+      from: puzzle.moves[0].slice(0, 2),
+      to: puzzle.moves[0].slice(2, 4),
+      promotion: puzzle.moves[0].slice(4, 5) || undefined,
+    });
+    if (!openingMove) {
+      setCurrentPuzzle(null);
+      setSessionConfig(null);
+      setError('Puzzle data error');
+      setStatus('Loading puzzle...');
+      return false;
+    }
+
     chessRef.current = chess;
-    solutionIndexRef.current = 0;
+    solutionIndexRef.current = preparedPuzzle.playerSolutionStartIndex;
     currentPuzzleIdRef.current = puzzle.id;
     sessionPoolRef.current = nextSessionPool;
 
@@ -90,8 +111,9 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     setIsSolved(false);
     setHintStage(0);
     setError('');
-    setStatus(getTurnLabel(chess));
+    setStatus(getStatusWithLastComputerMove(preparedPuzzle.openingSan, chess));
     updateStateFromChess(chess);
+    return true;
   }, [updateStateFromChess]);
 
   useEffect(() => {
@@ -103,12 +125,20 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       return;
     }
 
-    const nextPreviewPool = filterPuzzles(puzzles, config);
+    const matchingPuzzles = filterPuzzles(puzzles, config);
+    const nextPreviewPool = matchingPuzzles.filter((puzzle) => preparePuzzle(puzzle));
     setPreviewPool(nextPreviewPool);
+
+    if (!matchingPuzzles.length) {
+      setPreviewPuzzle(null);
+      setConfigError('No puzzles match the current filters.');
+      previewPuzzleIdRef.current = null;
+      return;
+    }
 
     if (!nextPreviewPool.length) {
       setPreviewPuzzle(null);
-      setConfigError('No puzzles match the current filters.');
+      setConfigError('Matching puzzles could not be loaded due to puzzle data errors.');
       previewPuzzleIdRef.current = null;
       return;
     }
@@ -132,8 +162,14 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       return false;
     }
 
+    const didReset = resetSessionState(previewPuzzle, config, previewPool);
+    if (!didReset) {
+      setConfigError('Selected puzzle could not be loaded due to puzzle data errors.');
+      setPhase('config');
+      return false;
+    }
+
     setPhase('session');
-    resetSessionState(previewPuzzle, config, previewPool);
     return true;
   }, [config, previewPool, previewPuzzle, resetSessionState]);
 
@@ -167,7 +203,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
 
     if (nextSolutionIndex >= currentPuzzle.moves.length) {
       setIsSolved(true);
-      setStatus('Solved. Puzzle complete.');
+      setStatus('Solved');
       setError('');
       solutionIndexRef.current = nextSolutionIndex;
       return true;

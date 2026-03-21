@@ -6,21 +6,38 @@ import upDownArrowsIcon from '../../Visual/up-down-arrows-icon.png';
 
 interface MoveListProps {
   moves: string[];
+  startingTurnColor?: 'white' | 'black';
   className?: string;
 }
 
-export const MoveList = ({ moves, className }: MoveListProps) => {
+export const MoveList = ({ moves, startingTurnColor = 'white', className }: MoveListProps) => {
   const [isReversed, setIsReversed] = useState(false);
 
-  // Group moves into pairs (White, Black)
   const movePairs: Array<{ number: number; white?: string; black?: string }> = [];
-  
-  for (let i = 0; i < moves.length; i += 2) {
-    movePairs.push({
-      number: Math.floor(i / 2) + 1,
-      white: moves[i],
-      black: moves[i + 1],
-    });
+  let nextMoveNumber = 1;
+  let currentTurnColor = startingTurnColor;
+  let pendingPair: { number: number; white?: string; black?: string } | null = null;
+
+  for (const move of moves) {
+    if (currentTurnColor === 'white') {
+      pendingPair = {
+        number: nextMoveNumber,
+        white: move,
+      };
+      movePairs.push(pendingPair);
+      currentTurnColor = 'black';
+      continue;
+    }
+
+    if (!pendingPair) {
+      pendingPair = { number: nextMoveNumber };
+      movePairs.push(pendingPair);
+    }
+
+    pendingPair.black = move;
+    pendingPair = null;
+    nextMoveNumber += 1;
+    currentTurnColor = 'white';
   }
 
   const displayedMovePairs = isReversed ? [...movePairs].reverse() : movePairs;
