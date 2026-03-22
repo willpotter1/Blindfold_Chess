@@ -285,6 +285,7 @@ const Puzzles = () => {
                       {boardFen ? (
                         <BlindfoldBoard
                           fen={boardFen}
+                          perspective="white"
                           isVisible={isBoardVisible}
                           isInteractive={!isSolved}
                           onMove={(from, to) => submitBoardMove(from, to).success}
@@ -312,6 +313,7 @@ const Puzzles = () => {
                     {boardFen ? (
                       <BlindfoldBoard
                         fen={boardFen}
+                        perspective="white"
                         isVisible={isBoardVisible}
                         isInteractive={!isSolved}
                         onMove={(from, to) => submitBoardMove(from, to).success}
@@ -401,6 +403,7 @@ const Puzzles = () => {
                       {boardFen ? (
                         <BlindfoldBoard
                           fen={boardFen}
+                          perspective="white"
                           isVisible={isBoardVisible}
                           isInteractive={false}
                           onMove={() => false}
@@ -439,6 +442,7 @@ const Puzzles = () => {
                     {boardFen ? (
                       <BlindfoldBoard
                         fen={boardFen}
+                        perspective="white"
                         isVisible={isBoardVisible}
                         isInteractive={false}
                         onMove={() => false}

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
-import { useGameState, type GameState } from '@/hooks/useGameState';
+import { useGameState } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
 import { BlindfoldBoard } from '@/components/BlindfoldBoard';
 import { MoveInput } from '@/components/MoveInput';
@@ -12,6 +12,15 @@ import { useToast } from '@/hooks/use-toast';
 import { runEngineSelfTest } from '@/lib/chessEngine/engineDiagnostics';
 import { runEngineDebug } from '@/lib/chessEngine/engineDebug';
 import { getCapturedPiecesByColorFromFen, type CapturedPiecesByColor } from '@/lib/chess/material';
+import {
+  getBoardPerspective,
+  getGameConfigFromState,
+  shouldComputerAct,
+  type GameConfig,
+  type GameMode,
+  type GameState,
+  type PieceColor,
+} from '@/lib/gameSession';
 import SeoHead from '@/components/SeoHead';
 import { Button } from '@/components/ui/button';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -20,10 +29,12 @@ import { useDesktopFitLayout } from '@/hooks/useDesktopFitLayout';
 import { useDesktopGameLayout } from '@/hooks/useDesktopGameLayout';
 import computerIcon from '../../Visual/robohead.png';
 import playerIcon from '../../Visual/BBpawn.png';
+import whitePlayerIcon from '../../Visual/Whitepawn.png';
+import blackPlayerIcon from '../../Visual/Blackpawn.png';
 import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
-const SEO_DESCRIPTION = 'Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent.';
+const SEO_DESCRIPTION = 'Train your chess visualization skills against the computer or another player locally with limited board visibility.';
 const SEO_CANONICAL_URL = 'https://blindchess.org/';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
 const CHESS_COM_ANALYSIS_URL = 'https://www.chess.com/analysis';
@@ -35,56 +46,91 @@ const DESKTOP_RIGHT_COLUMN_WIDTH = 441;
 const DESKTOP_LAYOUT_GAP = 32;
 
 type GameConfigState = {
-  gameConfig?: {
-    playerColor: 'white' | 'black';
-    engineElo: number;
-    revealEvery: number;
-    allowCheats: boolean;
-    hideMoveHistory: boolean;
-  };
+  gameConfig?: GameConfig;
 };
 
-type TrainerParticipantRole = 'computer' | 'player';
+type ParticipantDescriptor = {
+  label: string;
+  pieceColor: PieceColor;
+  iconSrc: string;
+  iconAlt: string;
+};
 
-const getOpposingColor = (color: 'white' | 'black'): 'white' | 'black' => (
+const getOpposingColor = (color: PieceColor): PieceColor => (
   color === 'white' ? 'black' : 'white'
-);
-
-const getParticipantPieceColor = (
-  gameState: GameState,
-  role: TrainerParticipantRole,
-): 'white' | 'black' => (
-  role === 'player' ? gameState.playerColor : getOpposingColor(gameState.playerColor)
 );
 
 const buildParticipantSummary = (
   gameState: GameState,
-  role: TrainerParticipantRole,
+  participant: ParticipantDescriptor,
   capturedPiecesByColor: CapturedPiecesByColor,
-): ParticipantSummaryCardModel => {
-  const pieceColor = getParticipantPieceColor(gameState, role);
+): ParticipantSummaryCardModel => ({
+  label: participant.label,
+  pieceColor: participant.pieceColor,
+  capturedPieces: capturedPiecesByColor[participant.pieceColor],
+  isToMove: !gameState.isOver && gameState.turnColor === participant.pieceColor,
+  iconSrc: participant.iconSrc,
+  iconAlt: participant.iconAlt,
+});
 
-  return {
-    label: role === 'computer' ? 'Computer' : 'Player',
-    pieceColor,
-    capturedPieces: capturedPiecesByColor[pieceColor],
-    isToMove: !gameState.isOver && gameState.turnColor === pieceColor,
-    iconSrc: role === 'computer' ? computerIcon : playerIcon,
-    iconAlt: role === 'computer' ? 'Computer icon' : 'Player icon',
-  };
-};
+const getPassNPlayIcon = (pieceColor: PieceColor) => (
+  pieceColor === 'white' ? whitePlayerIcon : blackPlayerIcon
+);
 
 const getParticipantSummaries = (gameState: GameState) => {
   const capturedPiecesByColor = getCapturedPiecesByColorFromFen(gameState.fen);
 
+  if (gameState.mode === 'computer') {
+    const computerColor = getOpposingColor(gameState.playerColor);
+
+    return {
+      top: buildParticipantSummary(gameState, {
+        label: 'Computer',
+        pieceColor: computerColor,
+        iconSrc: computerIcon,
+        iconAlt: 'Computer icon',
+      }, capturedPiecesByColor),
+      bottom: buildParticipantSummary(gameState, {
+        label: 'Player',
+        pieceColor: gameState.playerColor,
+        iconSrc: playerIcon,
+        iconAlt: 'Player icon',
+      }, capturedPiecesByColor),
+    };
+  }
+
+  const bottomColor = getBoardPerspective(gameState);
+  const topColor = getOpposingColor(bottomColor);
+
   return {
-    computer: buildParticipantSummary(gameState, 'computer', capturedPiecesByColor),
-    player: buildParticipantSummary(gameState, 'player', capturedPiecesByColor),
+    top: buildParticipantSummary(gameState, {
+      label: topColor === 'white' ? 'White' : 'Black',
+      pieceColor: topColor,
+      iconSrc: getPassNPlayIcon(topColor),
+      iconAlt: `${topColor === 'white' ? 'White' : 'Black'} player icon`,
+    }, capturedPiecesByColor),
+    bottom: buildParticipantSummary(gameState, {
+      label: bottomColor === 'white' ? 'White' : 'Black',
+      pieceColor: bottomColor,
+      iconSrc: getPassNPlayIcon(bottomColor),
+      iconAlt: `${bottomColor === 'white' ? 'White' : 'Black'} player icon`,
+    }, capturedPiecesByColor),
   };
 };
 
 const Index = () => {
-  const { gameState, startNewGame, resetGame, makeMove, makeMoveUci, shouldShowBoard, getGameStatus, getCurrentState, getPgn } = useGameState();
+  const {
+    gameState,
+    startNewGame,
+    resetGame,
+    makeMove,
+    makeMoveUci,
+    shouldShowBoard,
+    getGameStatus,
+    getCurrentState,
+    getPgn,
+  } = useGameState();
+  const [selectedGameMode, setSelectedGameMode] = useState<GameMode>('computer');
   const [isEngineThinking, setIsEngineThinking] = useState(false);
   const [moveError, setMoveError] = useState<string>('');
   const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
@@ -106,10 +152,10 @@ const Index = () => {
 
   useEffect(() => {
     if (import.meta.env.DEV) {
-      // Expose a manual diagnostic helper in the console: await window.runEngineSelfTest()
       window.runEngineSelfTest = runEngineSelfTest;
       window.runEngineDebug = runEngineDebug;
     }
+
     return () => {
       if (import.meta.env.DEV) {
         delete window.runEngineSelfTest;
@@ -125,7 +171,9 @@ const Index = () => {
     }
 
     const leftSectionNode = desktopLeftSectionRef.current;
-    if (!leftSectionNode) return;
+    if (!leftSectionNode) {
+      return;
+    }
 
     const updateLeftSectionHeight = () => {
       setDesktopLeftSectionHeight(leftSectionNode.offsetHeight);
@@ -150,13 +198,17 @@ const Index = () => {
 
   const handleEngineMove = useCallback(async () => {
     const snapshot = getCurrentState();
-    if (!snapshot || snapshot.isOver) return;
+
+    if (!shouldComputerAct(snapshot)) {
+      return;
+    }
 
     setIsEngineThinking(true);
+
     try {
       const engineMoveUci = await getEngineMove(snapshot.fen, snapshot.engineElo);
       const success = makeMoveUci(engineMoveUci);
-      
+
       if (!success) {
         console.error('Failed to make engine move');
         toast({
@@ -177,19 +229,15 @@ const Index = () => {
     }
   }, [getCurrentState, makeMoveUci, toast]);
 
-  const handleStartGame = useCallback(async (
-    playerColor: 'white' | 'black',
-    engineElo: number,
-    revealEvery: number,
-    allowCheats: boolean,
-    hideMoveHistory: boolean
-  ) => {
+  const handleStartGame = useCallback(async (config: GameConfig) => {
     setMoveError('');
     setIsManualBoardReveal(false);
-    startNewGame(playerColor, engineElo, revealEvery, allowCheats, hideMoveHistory);
+    setIsEngineThinking(false);
+    setSelectedGameMode(config.mode);
 
-    // If player chose black, engine moves first
-    if (playerColor === 'black') {
+    const initialState = startNewGame(config);
+
+    if (shouldComputerAct(initialState)) {
       await handleEngineMove();
     }
   }, [handleEngineMove, startNewGame]);
@@ -197,20 +245,29 @@ const Index = () => {
   useEffect(() => {
     const routeState = location.state as GameConfigState | null;
     const incomingConfig = routeState?.gameConfig;
-    if (!incomingConfig || gameState) return;
 
-    void handleStartGame(
-      incomingConfig.playerColor,
-      incomingConfig.engineElo,
-      incomingConfig.revealEvery,
-      incomingConfig.allowCheats,
-      incomingConfig.hideMoveHistory ?? false
-    );
+    if (!incomingConfig || gameState) {
+      return;
+    }
+
+    void handleStartGame(incomingConfig);
     navigate('/', { replace: true, state: null });
   }, [location.state, gameState, navigate, handleStartGame]);
 
+  const queueComputerReply = useCallback(() => {
+    window.setTimeout(async () => {
+      const snapshot = getCurrentState();
+
+      if (shouldComputerAct(snapshot)) {
+        await handleEngineMove();
+      }
+    }, 100);
+  }, [getCurrentState, handleEngineMove]);
+
   const handlePlayerMove = async (moveStr: string) => {
-    if (!gameState || isEngineThinking || gameState.isOver) return;
+    if (!gameState || isEngineThinking || gameState.isOver || shouldComputerAct(gameState)) {
+      return;
+    }
 
     setMoveError('');
     const result = makeMove(moveStr);
@@ -220,20 +277,16 @@ const Index = () => {
       return;
     }
 
-    // After player's move, let engine respond
-    // Use setTimeout to ensure state updates first
-    setTimeout(async () => {
-      const snapshot = getCurrentState();
-      if (!snapshot?.isOver) {
-        await handleEngineMove();
-      }
-    }, 100);
+    queueComputerReply();
   };
 
   const handleBoardMove = async (from: string, to: string): Promise<boolean> => {
-    if (!gameState || isEngineThinking || gameState.isOver) return false;
+    if (!gameState || isEngineThinking || gameState.isOver || shouldComputerAct(gameState)) {
+      return false;
+    }
 
     setMoveError('');
+
     const chess = new Chess(gameState.fen);
     const legalFromMoves = chess.moves({ square: from, verbose: true });
     const matchingMoves = legalFromMoves.filter((move) => move.to === to);
@@ -245,29 +298,26 @@ const Index = () => {
 
     const selectedMove = matchingMoves.find((move) => move.promotion === 'q') || matchingMoves[0];
     const uciMove = `${selectedMove.from}${selectedMove.to}${selectedMove.promotion ?? ''}`;
-    const success = makeMoveUci(uciMove, { countPlayerMove: true });
+    const success = makeMoveUci(uciMove, {
+      countPlayerMove: gameState.mode === 'computer',
+    });
 
     if (!success) {
       setMoveError('Invalid move');
       return false;
     }
 
-    setTimeout(async () => {
-      const snapshot = getCurrentState();
-      if (!snapshot?.isOver) {
-        await handleEngineMove();
-      }
-    }, 100);
-
+    queueComputerReply();
     return true;
   };
 
-  const isPlayerTurn = Boolean(
+  const isHumanTurn = Boolean(
     gameState &&
-    gameState.turnColor === gameState.playerColor &&
     !gameState.isOver &&
-    !isEngineThinking
+    !isEngineThinking &&
+    !shouldComputerAct(gameState)
   );
+  const boardPerspective = gameState ? getBoardPerspective(gameState) : 'white';
   const isBoardVisible = Boolean(gameState && (shouldShowBoard() || isManualBoardReveal));
 
   const handleLogoClick = () => {
@@ -279,6 +329,7 @@ const Index = () => {
 
   const getValidatedPgn = (): string | null => {
     const pgn = getPgn().trim();
+
     if (!pgn) {
       toast({
         title: 'Export failed',
@@ -287,6 +338,7 @@ const Index = () => {
       });
       return null;
     }
+
     return pgn;
   };
 
@@ -306,12 +358,16 @@ const Index = () => {
     textArea.select();
     const copied = document.execCommand('copy');
     document.body.removeChild(textArea);
+
     return copied;
   };
 
   const handleAnalyzeOnChessCom = async () => {
     const pgn = getValidatedPgn();
-    if (!pgn) return;
+
+    if (!pgn) {
+      return;
+    }
 
     const encoded = encodeURIComponent(pgn);
     const url = `${CHESS_COM_ANALYSIS_URL}?pgn=${encoded}`;
@@ -323,7 +379,10 @@ const Index = () => {
 
     try {
       const copied = await copyTextToClipboard(pgn);
-      if (!copied) throw new Error('Clipboard copy failed');
+
+      if (!copied) {
+        throw new Error('Clipboard copy failed');
+      }
     } catch {
       toast({
         title: 'Export failed',
@@ -342,11 +401,18 @@ const Index = () => {
 
   const handleCopyPgn = async () => {
     const pgn = getValidatedPgn();
-    if (!pgn) return;
+
+    if (!pgn) {
+      return;
+    }
 
     try {
       const copied = await copyTextToClipboard(pgn);
-      if (!copied) throw new Error('Clipboard copy failed');
+
+      if (!copied) {
+        throw new Error('Clipboard copy failed');
+      }
+
       toast({
         title: 'PGN copied',
         description: 'Game PGN copied to clipboard.',
@@ -362,11 +428,17 @@ const Index = () => {
 
   const handleAnalyzeOnLichess = async () => {
     const pgn = getValidatedPgn();
-    if (!pgn) return;
+
+    if (!pgn) {
+      return;
+    }
 
     try {
       const copied = await copyTextToClipboard(pgn);
-      if (!copied) throw new Error('Clipboard copy failed');
+
+      if (!copied) {
+        throw new Error('Clipboard copy failed');
+      }
     } catch {
       toast({
         title: 'Export failed',
@@ -385,7 +457,10 @@ const Index = () => {
 
   const handleDownloadPgn = () => {
     const pgn = getValidatedPgn();
-    if (!pgn) return;
+
+    if (!pgn) {
+      return;
+    }
 
     const blob = new Blob([pgn], { type: 'application/x-chess-pgn;charset=utf-8' });
     const objectUrl = URL.createObjectURL(blob);
@@ -399,23 +474,29 @@ const Index = () => {
   };
 
   const handlePlayAgainWithSameRules = async () => {
-    if (!gameState) return;
+    if (!gameState) {
+      return;
+    }
 
-    await handleStartGame(
-      gameState.playerColor,
-      gameState.engineElo,
-      gameState.revealEvery,
-      gameState.allowCheats,
-      gameState.hideMoveHistory
-    );
+    await handleStartGame(getGameConfigFromState(gameState));
   };
 
   const handlePlayWithNewConfig = () => {
+    if (!gameState) {
+      return;
+    }
+
     setMoveError('');
     setIsManualBoardReveal(false);
     setIsEngineThinking(false);
     resetGame();
-    navigate('/configure');
+
+    if (gameState.mode === 'computer') {
+      navigate('/configure');
+      return;
+    }
+
+    navigate('/', { state: null });
   };
 
   const statusText = gameState ? getGameStatus() : '';
@@ -423,7 +504,9 @@ const Index = () => {
   const showDesktopMoveHistory = Boolean(gameState && (gameState.isOver || !gameState.hideMoveHistory));
 
   const renderRevealButton = (className: string) => {
-    if (!gameState || gameState.isOver || !gameState.allowCheats) return null;
+    if (!gameState || gameState.isOver || !gameState.allowCheats) {
+      return null;
+    }
 
     return (
       <Button
@@ -452,7 +535,9 @@ const Index = () => {
   };
 
   const renderLegacyTrainerPanel = () => {
-    if (!gameState) return null;
+    if (!gameState) {
+      return null;
+    }
 
     if (gameState.isOver) {
       return (
@@ -521,7 +606,7 @@ const Index = () => {
         <StatusBar status={statusText} />
         <MoveInput
           onSubmitMove={handlePlayerMove}
-          disabled={!isPlayerTurn}
+          disabled={!isHumanTurn}
           errorMessage={moveError}
         />
         {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
@@ -531,14 +616,16 @@ const Index = () => {
   };
 
   const renderDesktopTrainerShell = () => {
-    if (!gameState || !participantSummaries) return null;
+    if (!gameState || !participantSummaries) {
+      return null;
+    }
 
     return (
       <div
         className={`h-full grid grid-rows-[auto_minmax(0,1fr)_auto] ${desktopShellGapClass}`}
         style={{ height: `${desktopLayout.rightColumnHeight}px` }}
       >
-        <ParticipantSummaryCard participant={participantSummaries.computer} />
+        <ParticipantSummaryCard participant={participantSummaries.top} />
 
         <div
           className={`grid w-full self-center ${desktopShellGapClass} ${showDesktopMoveHistory ? '' : 'grid-cols-1'}`}
@@ -606,7 +693,7 @@ const Index = () => {
               <>
                 <MoveInput
                   onSubmitMove={handlePlayerMove}
-                  disabled={!isPlayerTurn}
+                  disabled={!isHumanTurn}
                   errorMessage={moveError}
                   variant="compact"
                 />
@@ -617,7 +704,7 @@ const Index = () => {
           </div>
 
           {showDesktopMoveHistory && (
-          <div
+            <div
               className="self-start"
               style={desktopLeftSectionHeight ? { height: `${desktopLeftSectionHeight}px` } : undefined}
             >
@@ -626,7 +713,7 @@ const Index = () => {
           )}
         </div>
 
-        <ParticipantSummaryCard participant={participantSummaries.player} />
+        <ParticipantSummaryCard participant={participantSummaries.bottom} />
       </div>
     );
   };
@@ -657,8 +744,9 @@ const Index = () => {
                     <div style={{ width: `${desktopLayout.boardSize}px` }}>
                       <BlindfoldBoard
                         fen={gameState.fen}
+                        perspective={boardPerspective}
                         isVisible={isBoardVisible}
-                        isInteractive={isPlayerTurn}
+                        isInteractive={isHumanTurn}
                         onMove={handleBoardMove}
                         className="w-full"
                       />
@@ -676,8 +764,9 @@ const Index = () => {
                   <div className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
                     <BlindfoldBoard
                       fen={gameState.fen}
+                      perspective={boardPerspective}
                       isVisible={isBoardVisible}
-                      isInteractive={isPlayerTurn}
+                      isInteractive={isHumanTurn}
                       onMove={handleBoardMove}
                     />
                   </div>
@@ -709,8 +798,11 @@ const Index = () => {
               </div>
               <div className="mx-auto w-full max-w-lg">
                 <GameConfigPanel
-                  onStartGame={(playerColor, engineElo, revealEvery, allowCheats, hideMoveHistory) => {
-                    void handleStartGame(playerColor, engineElo, revealEvery, allowCheats, hideMoveHistory);
+                  mode={selectedGameMode}
+                  onModeChange={setSelectedGameMode}
+                  showModeSelector
+                  onStartGame={(config) => {
+                    void handleStartGame(config);
                   }}
                   isGameActive={false}
                 />

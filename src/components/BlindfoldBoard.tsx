@@ -1,8 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
+import {
+  getFileLabelForColumn,
+  getRankLabelForRow,
+  visualPositionToSquare,
+  type BoardPerspective,
+} from '@/lib/visionTrainer';
 
 interface BlindfoldBoardProps {
   fen: string;
+  perspective: BoardPerspective;
   isVisible: boolean;
   isInteractive?: boolean;
   onMove?: (from: string, to: string) => Promise<boolean> | boolean;
@@ -30,6 +37,7 @@ const pieceSprites: Record<string, string> = {
 
 export const BlindfoldBoard = ({
   fen,
+  perspective,
   isVisible,
   isInteractive = false,
   onMove,
@@ -40,8 +48,21 @@ export const BlindfoldBoard = ({
   const [selectedSquare, setSelectedSquare] = useState<string | null>(null);
   const boardRef = useRef<HTMLDivElement>(null);
   const chess = new Chess(fen);
-  const board = chess.board();
   const showPieces = isVisible;
+  const squares = Array.from({ length: 64 }, (_, index) => {
+    const row = Math.floor(index / 8);
+    const col = index % 8;
+    const algebraic = visualPositionToSquare({ row, col }, perspective);
+    const piece = chess.get(algebraic);
+
+    return {
+      row,
+      col,
+      algebraic,
+      piece,
+      isLightSquare: (row + col) % 2 === 0,
+    };
+  });
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
@@ -93,24 +114,19 @@ export const BlindfoldBoard = ({
         className="rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 w-full aspect-square overflow-hidden"
       >
         <div className="grid grid-cols-8 grid-rows-8 gap-0 w-full h-full">
-          {board.map((row, rowIndex) => (
-            row.map((square, colIndex) => {
-              const isLight = (rowIndex + colIndex) % 2 !== 0;
-              const spriteKey = square ? `${square.color}${square.type}` : null;
+          {squares.map(({ row, col, algebraic, piece, isLightSquare }) => {
+              const spriteKey = piece ? `${piece.color}${piece.type}` : null;
               const pieceSrc = showPieces && spriteKey ? pieceSprites[spriteKey] : null;
-              const file = String.fromCharCode(97 + colIndex); // a-h
-              const rank = 8 - rowIndex; // 8-1
-              const algebraic = `${file}${rank}`;
               const isSelected = selectedSquare === algebraic;
               const isHintSource = highlightSourceSquare === algebraic;
               const isHintTarget = highlightTargetSquare === algebraic;
 
               return (
                 <div
-                  key={`${rowIndex}-${colIndex}`}
+                  key={algebraic}
                   className={`
                     relative aspect-square flex items-center justify-center overflow-hidden
-                    ${isLight ? 'bg-[#844318]' : 'bg-[#d9b99b]'}
+                    ${isLightSquare ? 'bg-[#d9b99b]' : 'bg-[#844318]'}
                     transition-colors duration-150
                     ${isSelected ? 'ring-4 ring-sky-400/70 ring-inset' : ''}
                     ${isInteractive ? 'cursor-pointer' : 'cursor-default'}
@@ -135,22 +151,21 @@ export const BlindfoldBoard = ({
                   )}
                   
                 {/* File labels (a-h) at bottom */}
-                {rowIndex === 7 && (
-                    <span className={`pointer-events-none absolute bottom-0 right-[3px] text-[10px] font-semibold z-20 ${isLight ? 'text-zinc-100' : 'text-zinc-300'}`}>
-                      {file}
+                {row === 7 && (
+                    <span className={`pointer-events-none absolute bottom-0 right-[3px] text-[10px] font-semibold z-20 ${isLightSquare ? 'text-zinc-300' : 'text-zinc-100'}`}>
+                      {getFileLabelForColumn(col, perspective)}
                     </span>
                   )}
                   
                   {/* Rank labels (1-8) on left */}
-                  {colIndex === 0 && (
-                    <span className={`pointer-events-none absolute top-[2px] left-[3px] text-[10px] font-semibold z-20 ${isLight ? 'text-zinc-100' : 'text-zinc-300'}`}>
-                      {rank}
+                  {col === 0 && (
+                    <span className={`pointer-events-none absolute top-[2px] left-[3px] text-[10px] font-semibold z-20 ${isLightSquare ? 'text-zinc-300' : 'text-zinc-100'}`}>
+                      {getRankLabelForRow(row, perspective)}
                     </span>
                   )}
                 </div>
               );
-            })
-          ))}
+            })}
         </div>
       </div>
     </div>

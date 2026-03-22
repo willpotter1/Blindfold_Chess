@@ -1,5 +1,5 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import type { GameState } from "@/hooks/useGameState";
+import { buildSavedGameConfig, type GameState } from "@/lib/gameSession";
 import { getFirestoreDb, getFirebaseAuth } from "@/lib/firebase";
 
 type SaveResult =
@@ -18,13 +18,8 @@ export const saveCompletedGame = async (gameState: GameState, pgn: string): Prom
   const payload = {
     userId,
     pgn,
-    config: {
-      playerColor: gameState.playerColor,
-      engineElo: gameState.engineElo,
-      revealEvery: gameState.revealEvery,
-      allowCheats: gameState.allowCheats,
-      hideMoveHistory: gameState.hideMoveHistory,
-    },
+    mode: gameState.mode,
+    config: buildSavedGameConfig(gameState),
     createdAt: serverTimestamp(),
   };
 

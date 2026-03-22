@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 const assetBase = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export interface ParticipantSummaryCardModel {
-  label: 'Computer' | 'Player';
+  label: string;
   pieceColor: 'white' | 'black';
   capturedPieces: CapturedPieceDescriptor[];
   isToMove: boolean;

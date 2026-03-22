@@ -5,15 +5,13 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
 import { Switch } from '@/components/ui/switch';
+import type { GameConfig, GameMode } from '@/lib/gameSession';
 
 interface GameConfigPanelProps {
-  onStartGame: (
-    playerColor: 'white' | 'black',
-    engineElo: number,
-    revealEvery: number,
-    allowCheats: boolean,
-    hideMoveHistory: boolean
-  ) => void;
+  mode: GameMode;
+  onStartGame: (config: GameConfig) => void;
+  onModeChange?: (mode: GameMode) => void;
+  showModeSelector?: boolean;
   isGameActive: boolean;
 }
 
@@ -26,7 +24,19 @@ const clampElo = (elo: number): number => {
   return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, elo)));
 };
 
-export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelProps) => {
+const modeButtonClassName = (selected: boolean) => (
+  selected
+    ? 'border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90'
+    : 'border-[#d9b99b] bg-white text-[#8B4513] hover:bg-[#fffaf4]'
+);
+
+export const GameConfigPanel = ({
+  mode,
+  onStartGame,
+  onModeChange,
+  showModeSelector = false,
+  isGameActive,
+}: GameConfigPanelProps) => {
   const [playerColor, setPlayerColor] = useState<'white' | 'black'>('white');
   const [engineElo, setEngineElo] = useState<number>(DEFAULT_ENGINE_ELO);
   const [engineEloInput, setEngineEloInput] = useState<string>(String(DEFAULT_ENGINE_ELO));
@@ -50,11 +60,29 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
       alert('Reveal frequency must be a whole number of at least 0');
       return;
     }
+
     const parsed = Number(revealEveryInput);
     if (parsed !== revealEvery) {
       setRevealEvery(parsed);
     }
-    onStartGame(playerColor, engineElo, parsed, allowCheats, hideMoveHistory);
+
+    const config: GameConfig = mode === 'computer'
+      ? {
+          mode: 'computer',
+          playerColor,
+          engineElo,
+          revealEvery: parsed,
+          allowCheats,
+          hideMoveHistory,
+        }
+      : {
+          mode: 'pass-n-play',
+          revealEvery: parsed,
+          allowCheats,
+          hideMoveHistory,
+        };
+
+    onStartGame(config);
   };
 
   const commitEloInput = () => {
@@ -79,50 +107,82 @@ export const GameConfigPanel = ({ onStartGame, isGameActive }: GameConfigPanelPr
     setRevealEveryInput(String(parsed));
   };
 
+  const configDescription = mode === 'computer'
+    ? 'Set up your blindfold game against the computer'
+    : 'Set up a local blindfold game for two players';
+
   return (
     <Card className="w-full border-2 border-[#d9b99b]">
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Game Configuration</CardTitle>
         <CardDescription className="text-xs">
-          Set up your blindfold chess training session
+          {configDescription}
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4 pt-2">
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        {showModeSelector && (
           <div className="space-y-2">
-            <Label htmlFor="player-color">Play As</Label>
-            <Select value={playerColor} onValueChange={(value) => setPlayerColor(value as 'white' | 'black')}>
-              <SelectTrigger id="player-color">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="white">White</SelectItem>
-                <SelectItem value="black">Black</SelectItem>
-              </SelectContent>
-            </Select>
+            <Label>Choose Mode</Label>
+            <div className="grid grid-cols-2 gap-2">
+              <Button
+                type="button"
+                variant="outline"
+                className={modeButtonClassName(mode === 'computer')}
+                onClick={() => onModeChange?.('computer')}
+              >
+                Vs Computer
+              </Button>
+              <Button
+                type="button"
+                variant="outline"
+                className={modeButtonClassName(mode === 'pass-n-play')}
+                onClick={() => onModeChange?.('pass-n-play')}
+              >
+                Pass N Play
+              </Button>
+            </div>
           </div>
+        )}
 
-          <div className="space-y-2">
-            <Label htmlFor="engine-elo">Engine Elo</Label>
-            <Input
-              id="engine-elo"
-              type="number"
-              min={MIN_ELO}
-              max={MAX_ELO}
-              step={10}
-              value={engineEloInput}
-              onChange={(e) => setEngineEloInput(e.target.value)}
-              onBlur={commitEloInput}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') {
-                  e.currentTarget.blur();
-                }
-              }}
-              className="w-full"
-            />
-          </div>
+        <div className={`grid grid-cols-1 gap-3 ${mode === 'computer' ? 'sm:grid-cols-2' : ''}`}>
+          {mode === 'computer' && (
+            <div className="space-y-2">
+              <Label htmlFor="player-color">Play As</Label>
+              <Select value={playerColor} onValueChange={(value) => setPlayerColor(value as 'white' | 'black')}>
+                <SelectTrigger id="player-color">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="white">White</SelectItem>
+                  <SelectItem value="black">Black</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          )}
 
-          <div className="space-y-2 sm:col-span-2">
+          {mode === 'computer' && (
+            <div className="space-y-2">
+              <Label htmlFor="engine-elo">Engine Elo</Label>
+              <Input
+                id="engine-elo"
+                type="number"
+                min={MIN_ELO}
+                max={MAX_ELO}
+                step={10}
+                value={engineEloInput}
+                onChange={(e) => setEngineEloInput(e.target.value)}
+                onBlur={commitEloInput}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    e.currentTarget.blur();
+                  }
+                }}
+                className="w-full"
+              />
+            </div>
+          )}
+
+          <div className={`space-y-2 ${mode === 'computer' ? 'sm:col-span-2' : ''}`}>
             <Label htmlFor="reveal-frequency">Board Reveal Frequency</Label>
             <Input
               id="reveal-frequency"
