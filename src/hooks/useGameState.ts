@@ -7,11 +7,12 @@ import {
   getGameStatusText,
   shouldShowBoardForState,
   type GameConfig,
+  type GameStartSeed,
   type GameState,
 } from '@/lib/gameSession';
 import { normalizeSan } from '@/lib/chess/normalizeSan';
 
-export type { GameConfig, GameState } from '@/lib/gameSession';
+export type { GameConfig, GameStartSeed, GameState } from '@/lib/gameSession';
 
 const getPgnPlayerHeaders = (config: GameConfig) => {
   if (config.mode === 'computer') {
@@ -39,7 +40,7 @@ export const useGameState = () => {
     hasTrackedFinished: boolean;
   } | null>(null);
 
-  const startNewGame = useCallback((config: GameConfig) => {
+  const startNewGame = useCallback((config: GameConfig, seed?: GameStartSeed) => {
     const newGame = new Chess();
     const today = new Date();
     const pgnDate = `${today.getFullYear()}.${String(today.getMonth() + 1).padStart(2, '0')}.${String(today.getDate()).padStart(2, '0')}`;
@@ -52,6 +53,23 @@ export const useGameState = () => {
     newGame.setHeader('White', playerHeaders.White);
     newGame.setHeader('Black', playerHeaders.Black);
     newGame.setHeader('Result', '*');
+    if (seed?.opening) {
+      newGame.setHeader('Opening', seed.opening.name);
+      newGame.setHeader('ECO', seed.opening.eco);
+    }
+
+    for (const uciMove of seed?.startingUciMoves ?? []) {
+      const move = newGame.move({
+        from: uciMove.substring(0, 2),
+        to: uciMove.substring(2, 4),
+        promotion: uciMove.length > 4 ? uciMove[4] : undefined,
+      });
+
+      if (!move) {
+        console.error('Skipping invalid seeded opening move:', uciMove);
+        break;
+      }
+    }
 
     const initialState = buildInitialGameState(newGame, config);
 

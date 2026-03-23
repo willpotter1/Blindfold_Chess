@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
-import { useGameState } from '@/hooks/useGameState';
+import { useGameState, type GameStartSeed } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
 import { BlindfoldBoard } from '@/components/BlindfoldBoard';
 import { LandingOperaReplay } from '@/components/LandingOperaReplay';
@@ -45,6 +45,7 @@ const DESKTOP_LAYOUT_GAP = 32;
 
 type GameConfigState = {
   gameConfig?: GameConfig;
+  gameStartSeed?: GameStartSeed;
 };
 
 type ParticipantDescriptor = {
@@ -227,13 +228,13 @@ const Index = () => {
     }
   }, [getCurrentState, makeMoveUci, toast]);
 
-  const handleStartGame = useCallback(async (config: GameConfig) => {
+  const handleStartGame = useCallback(async (config: GameConfig, seed?: GameStartSeed) => {
     setMoveError('');
     setIsManualBoardReveal(false);
     setIsEngineThinking(false);
     setSelectedGameMode(config.mode);
 
-    const initialState = startNewGame(config);
+    const initialState = startNewGame(config, seed);
 
     if (shouldComputerAct(initialState)) {
       await handleEngineMove();
@@ -243,12 +244,13 @@ const Index = () => {
   useEffect(() => {
     const routeState = location.state as GameConfigState | null;
     const incomingConfig = routeState?.gameConfig;
+    const incomingSeed = routeState?.gameStartSeed;
 
     if (!incomingConfig || gameState) {
       return;
     }
 
-    void handleStartGame(incomingConfig);
+    void handleStartGame(incomingConfig, incomingSeed);
     navigate('/', { replace: true, state: null });
   }, [location.state, gameState, navigate, handleStartGame]);
 

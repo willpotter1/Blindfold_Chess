@@ -1,9 +1,15 @@
 import type { Chess } from 'chess.js';
 import type { BoardPerspective } from '@/lib/visionTrainer';
+import type { OpeningInfo } from '@/lib/openings';
 
 export type PieceColor = 'white' | 'black';
 export type GameMode = 'computer' | 'pass-n-play';
 export type GameResult = '1-0' | '0-1' | '1/2-1/2' | null;
+
+export type GameStartSeed = {
+  startingUciMoves?: string[];
+  opening?: OpeningInfo | null;
+};
 
 type BaseGameConfig = {
   mode: GameMode;
@@ -51,6 +57,10 @@ export type PassNPlayGameState = BaseGameState & {
 
 export type GameState = ComputerGameState | PassNPlayGameState;
 
+const getPlayerMoveCountFromHistory = (halfMoveCount: number, playerColor: PieceColor) => (
+  playerColor === 'white' ? Math.ceil(halfMoveCount / 2) : Math.floor(halfMoveCount / 2)
+);
+
 export const isComputerGameConfig = (
   config: GameConfig,
 ): config is ComputerGameConfig => config.mode === 'computer';
@@ -63,15 +73,17 @@ export const buildInitialGameState = (
   game: Chess,
   config: GameConfig,
 ): GameState => {
+  const history = game.history();
+  const halfMoveCount = history.length;
   const baseState: BaseGameState = {
     mode: config.mode,
     fen: game.fen(),
-    moves: [],
-    halfMoveCount: 0,
+    moves: history,
+    halfMoveCount,
     revealEvery: config.revealEvery,
     allowCheats: config.allowCheats,
     hideMoveHistory: config.hideMoveHistory,
-    isOver: false,
+    isOver: game.isGameOver(),
     result: null,
     isCheck: game.inCheck(),
     turnColor: game.turn() === 'w' ? 'white' : 'black',
@@ -83,7 +95,7 @@ export const buildInitialGameState = (
       mode: 'computer',
       playerColor: config.playerColor,
       engineElo: config.engineElo,
-      playerMoveCount: 0,
+      playerMoveCount: getPlayerMoveCountFromHistory(halfMoveCount, config.playerColor),
     };
   }
 
