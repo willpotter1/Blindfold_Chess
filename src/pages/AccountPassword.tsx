@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { EmailAuthProvider, reauthenticateWithCredential, updatePassword } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -8,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { useAccountProfile } from '@/hooks/useAccountProfile';
 import { AccountLayout } from '@/components/AccountLayout';
-import { getFirebaseAuth, hasFirebaseConfig } from '@/lib/firebase';
+import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
 const AccountPassword = () => {
   const { isLoading, profile } = useAccountProfile();
@@ -19,10 +18,9 @@ const AccountPassword = () => {
   const { toast } = useToast();
 
   const handlePasswordChange = async () => {
-    const auth = getFirebaseAuth();
-    const currentUser = auth?.currentUser;
+    const currentUser = supabase ? (await supabase.auth.getUser()).data.user : null;
 
-    if (!auth || !currentUser || !currentUser.email) {
+    if (!supabase || !currentUser || !currentUser.email) {
       toast({
         title: 'Password update unavailable',
         description: 'You need to be signed in with an email/password account.',
@@ -60,9 +58,19 @@ const AccountPassword = () => {
 
     setIsChangingPassword(true);
     try {
-      const credential = EmailAuthProvider.credential(currentUser.email, currentPassword);
-      await reauthenticateWithCredential(currentUser, credential);
-      await updatePassword(currentUser, newPassword);
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email: currentUser.email,
+        password: currentPassword,
+      });
+      if (signInError) {
+        throw signInError;
+      }
+
+      const { error: updateError } = await supabase.auth.updateUser({ password: newPassword });
+      if (updateError) {
+        throw updateError;
+      }
+
       setCurrentPassword('');
       setNewPassword('');
       setConfirmNewPassword('');
@@ -94,9 +102,9 @@ const AccountPassword = () => {
             <CardDescription className="text-black">Enter your current password before setting a new one.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {!hasFirebaseConfig && <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">Firebase is not configured.</div>}
-            {hasFirebaseConfig && isLoading && <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">Loading account details...</div>}
-            {hasFirebaseConfig && !isLoading && profile.uid && (
+            {!hasSupabaseConfig && <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">Supabase is not configured.</div>}
+            {hasSupabaseConfig && isLoading && <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">Loading account details...</div>}
+            {hasSupabaseConfig && !isLoading && profile.uid && (
               <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 space-y-3">
                 <div className="space-y-2">
                   <Label htmlFor="account-current-password" className="text-black">Current Password</Label>

@@ -1,15 +1,13 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { collection, doc, getDoc, getDocs, limit, query, where } from 'firebase/firestore';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { AppSidebar } from '@/components/AppSidebar';
 import { useToast } from '@/hooks/use-toast';
-import { getFirebaseAuth, getFirestoreDb, hasFirebaseConfig } from '@/lib/firebase';
-import { resetPasswordWithOtp, sendPasswordResetOtp } from '@/lib/otpApi';
+import { resetPasswordWithOtp, resolveIdentifierToEmail, sendPasswordResetOtp } from '@/lib/otpApi';
+import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
 const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
 const textLinkClassName = 'text-sm font-medium text-[#8B4513] underline underline-offset-4';
@@ -29,59 +27,6 @@ const Login = () => {
   const [isResettingPassword, setIsResettingPassword] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
-  const isPermissionDeniedError = (error: unknown) => {
-    if (error && typeof error === 'object' && 'code' in error) {
-      const code = (error as { code?: unknown }).code;
-      if (code === 'permission-denied' || code === 'firestore/permission-denied') {
-        return true;
-      }
-    }
-    return error instanceof Error && /insufficient permissions/i.test(error.message);
-  };
-
-  const resolveEmailFromIdentifier = async (rawIdentifier: string): Promise<string> => {
-    const trimmedIdentifier = rawIdentifier.trim();
-    if (trimmedIdentifier.includes('@')) {
-      return trimmedIdentifier;
-    }
-
-    const db = getFirestoreDb();
-    if (!db) {
-      throw new Error('Database unavailable for username lookup.');
-    }
-
-    const normalizedUsername = trimmedIdentifier.toLowerCase();
-    try {
-      const usernameRef = doc(db, 'usernames', normalizedUsername);
-      const usernameDoc = await getDoc(usernameRef);
-      if (usernameDoc.exists()) {
-        const usernameRecord = usernameDoc.data() as { email?: string };
-        if (usernameRecord.email) {
-          return usernameRecord.email;
-        }
-      }
-
-      const usersRef = collection(db, 'users');
-      const usernameQuery = query(usersRef, where('username', '==', normalizedUsername), limit(1));
-      const snapshot = await getDocs(usernameQuery);
-
-      if (snapshot.empty) {
-        throw new Error('No account found for that username.');
-      }
-
-      const userRecord = snapshot.docs[0].data() as { email?: string };
-      if (!userRecord.email) {
-        throw new Error('Username is missing an email record.');
-      }
-
-      return userRecord.email;
-    } catch (error) {
-      if (isPermissionDeniedError(error)) {
-        throw new Error('Username login is unavailable right now. Please log in with your email address.');
-      }
-      throw error;
-    }
-  };
 
   const getResetErrorDescription = (error: unknown) => {
     if (!(error instanceof Error)) {
@@ -105,11 +50,14 @@ const Login = () => {
     if (error.message === 'weak_password') {
       return 'Use a password with at least 6 characters.';
     }
-    if (error.message === 'firebase_admin_not_configured') {
-      return 'The reset server is missing Firebase admin credentials.';
+    if (error.message === 'supabase_admin_not_configured') {
+      return 'The reset server is missing Supabase admin credentials.';
     }
     if (error.message === 'otp_api_not_configured') {
       return 'The OTP API is not configured.';
+    }
+    if (error.message === 'identifier_not_found' || error.message === 'email_not_found') {
+      return 'No account found for that email or username.';
     }
     return error.message;
   };
@@ -117,11 +65,10 @@ const Login = () => {
   const handleLogin = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const auth = getFirebaseAuth();
-    if (!auth) {
+    if (!supabase) {
       toast({
-        title: 'Firebase not configured',
-        description: 'Add Firebase env values before using authentication.',
+        title: 'Supabase not configured',
+        description: 'Add Supabase env values before using authentication.',
         variant: 'destructive',
       });
       return;
@@ -129,8 +76,15 @@ const Login = () => {
 
     setIsLoggingIn(true);
     try {
-      const email = await resolveEmailFromIdentifier(identifier);
-      await signInWithEmailAndPassword(auth, email, password);
+      const email = await resolveIdentifierToEmail(identifier);
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (error) {
+        throw error;
+      }
 
       toast({
         title: 'Signed in',
@@ -141,7 +95,12 @@ const Login = () => {
       console.error('Login failed:', error);
       toast({
         title: 'Login failed',
-        description: error instanceof Error ? error.message : 'Check your credentials and try again.',
+        description:
+          error instanceof Error && /invalid login credentials/i.test(error.message)
+            ? 'Check your credentials and try again.'
+            : error instanceof Error
+              ? error.message
+              : 'Check your credentials and try again.',
         variant: 'destructive',
       });
     } finally {
@@ -172,7 +131,7 @@ const Login = () => {
 
     setIsSendingResetOtp(true);
     try {
-      const resolvedEmail = await resolveEmailFromIdentifier(forgotIdentifier);
+      const resolvedEmail = await resolveIdentifierToEmail(forgotIdentifier);
       await sendPasswordResetOtp(resolvedEmail);
       setForgotResolvedEmail(resolvedEmail);
       setIsResetOtpSent(true);
@@ -257,9 +216,9 @@ const Login = () => {
       <AppSidebar />
 
       <div className="container mx-auto px-4 py-10 md:flex-1">
-        {!hasFirebaseConfig && (
+        {!hasSupabaseConfig && (
           <div className="mx-auto mb-6 max-w-xl rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
-            Firebase is not configured. Set your `VITE_FIREBASE_*` env vars to enable authentication.
+            Supabase is not configured. Set your `VITE_SUPABASE_*` env vars to enable authentication.
           </div>
         )}
         <Card className="mx-auto max-w-xl">

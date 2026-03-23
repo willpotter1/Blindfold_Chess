@@ -1,14 +1,12 @@
 import { FormEvent, useState } from 'react';
-import { createUserWithEmailAndPassword, deleteUser, signOut } from 'firebase/auth';
-import { doc, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { AppSidebar } from '@/components/AppSidebar';
 import { useToast } from '@/hooks/use-toast';
-import { getFirebaseAuth, getFirestoreDb, hasFirebaseConfig } from '@/lib/firebase';
-import { sendOtpCode, verifyOtpCode } from '@/lib/otpApi';
+import { sendOtpCode, signupWithOtp } from '@/lib/otpApi';
+import { hasSupabaseConfig } from '@/lib/supabase';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
@@ -31,16 +29,13 @@ const getSignupErrorDescription = (error: unknown) => {
   if (error.message === 'max_attempts_exceeded') {
     return 'Too many failed attempts. Click Send OTP to request a new code.';
   }
-  return error.message;
-};
-const isPermissionDeniedError = (error: unknown) => {
-  if (error && typeof error === 'object' && 'code' in error) {
-    const code = (error as { code?: unknown }).code;
-    if (code === 'permission-denied' || code === 'firestore/permission-denied') {
-      return true;
-    }
+  if (error.message === 'username_taken') {
+    return 'That username is already taken. Please choose another.';
   }
-  return error instanceof Error && /insufficient permissions/i.test(error.message);
+  if (error.message === 'email_already_exists' || error.message === 'user_already_exists') {
+    return 'An account already exists for that email address.';
+  }
+  return error.message;
 };
 
 const Signup = () => {
@@ -96,16 +91,14 @@ const Signup = () => {
   const handleSignup = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const auth = getFirebaseAuth();
-    if (!auth) {
+    if (!hasSupabaseConfig) {
       toast({
-        title: 'Firebase not configured',
-        description: 'Add Firebase env values before using authentication.',
+        title: 'Supabase not configured',
+        description: 'Add Supabase env values before using authentication.',
         variant: 'destructive',
       });
       return;
     }
-    const db = getFirestoreDb();
 
     const normalizedUsername = normalizeUsername(username);
     if (!USERNAME_REGEX.test(normalizedUsername)) {
@@ -118,60 +111,11 @@ const Signup = () => {
     }
 
     setIsSigningUp(true);
-    let createdUserUid: string | null = null;
-    let didClaimUsername = false;
-    let didSkipUsernameClaim = false;
     try {
-      await verifyOtpCode(email, otp);
-      const credential = await createUserWithEmailAndPassword(auth, email, password);
-      createdUserUid = credential.user.uid;
-
-      if (!db) {
-        didSkipUsernameClaim = true;
-      } else {
-        try {
-          await runTransaction(db, async (transaction) => {
-            const usernameRef = doc(db, 'usernames', normalizedUsername);
-            const usernameDoc = await transaction.get(usernameRef);
-
-            if (usernameDoc.exists()) {
-              throw new Error('USERNAME_TAKEN');
-            }
-
-            transaction.set(usernameRef, {
-              uid: credential.user.uid,
-              username: normalizedUsername,
-              email,
-              createdAt: serverTimestamp(),
-            });
-
-            const userProfileRef = doc(db, 'users', credential.user.uid);
-            transaction.set(userProfileRef, {
-              uid: credential.user.uid,
-              email,
-              username: normalizedUsername,
-              createdAt: serverTimestamp(),
-            });
-          });
-          didClaimUsername = true;
-        } catch (error) {
-          if (error instanceof Error && error.message === 'USERNAME_TAKEN') {
-            throw error;
-          }
-          if (isPermissionDeniedError(error)) {
-            didSkipUsernameClaim = true;
-          } else {
-            throw error;
-          }
-        }
-      }
-
-      await signOut(auth);
+      await signupWithOtp(email, password, normalizedUsername, otp);
       toast({
         title: 'Account created',
-        description: didSkipUsernameClaim
-          ? 'Email verified. Log in with your email address.'
-          : 'Email verified and username reserved. You can log in now.',
+        description: 'Email verified and username reserved. You can log in now.',
       });
       setUsername('');
       setEmail('');
@@ -179,25 +123,14 @@ const Signup = () => {
       setOtp('');
       setOtpSent(false);
     } catch (error) {
-      if (createdUserUid && !didClaimUsername && auth.currentUser && auth.currentUser.uid === createdUserUid) {
-        try {
-          await deleteUser(auth.currentUser);
-        } catch (cleanupError) {
-          console.error('Failed to clean up auth user after signup error:', cleanupError);
-        }
-      }
-
       console.error('Signup failed:', error);
-      const isUsernameTaken = error instanceof Error && error.message === 'USERNAME_TAKEN';
       if (error instanceof Error && isOtpResetRequiredError(error.message)) {
         setOtp('');
         setOtpSent(false);
       }
       toast({
         title: 'Sign up failed',
-        description: isUsernameTaken
-          ? 'That username is already taken. Please choose another.'
-          : getSignupErrorDescription(error),
+        description: getSignupErrorDescription(error),
         variant: 'destructive',
       });
     } finally {
@@ -210,9 +143,9 @@ const Signup = () => {
       <AppSidebar />
 
       <div className="container mx-auto px-4 py-10 md:flex-1">
-        {!hasFirebaseConfig && (
+        {!hasSupabaseConfig && (
           <div className="mx-auto mb-6 max-w-xl rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
-            Firebase is not configured. Set your `VITE_FIREBASE_*` env vars to enable authentication.
+            Supabase is not configured. Set your `VITE_SUPABASE_*` env vars to enable authentication.
           </div>
         )}
         <Card className="mx-auto max-w-xl">

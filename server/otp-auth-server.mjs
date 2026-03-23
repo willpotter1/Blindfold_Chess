@@ -1,5 +1,6 @@
-import { createHash, createSign, randomBytes, randomInt, timingSafeEqual } from "node:crypto";
+import { createHash, randomInt, timingSafeEqual } from "node:crypto";
 import http from "node:http";
+import { createClient } from "@supabase/supabase-js";
 
 const PORT = Number(process.env.OTP_SERVER_PORT ?? 8787);
 const ALLOWED_ORIGINS = String(
@@ -15,59 +16,46 @@ const OTP_CODE_TTL_SECONDS = Number(process.env.OTP_CODE_TTL_SECONDS ?? 600);
 const OTP_SEND_COOLDOWN_SECONDS = Number(process.env.OTP_SEND_COOLDOWN_SECONDS ?? 60);
 const OTP_MAX_VERIFY_ATTEMPTS = Number(process.env.OTP_MAX_VERIFY_ATTEMPTS ?? 5);
 const OTP_HASH_SECRET = process.env.OTP_HASH_SECRET ?? "";
-const FIREBASE_ADMIN_CLIENT_EMAIL = process.env.FIREBASE_ADMIN_CLIENT_EMAIL ?? "";
-const FIREBASE_ADMIN_PROJECT_ID = process.env.FIREBASE_ADMIN_PROJECT_ID ?? process.env.VITE_FIREBASE_PROJECT_ID ?? "";
+const SUPABASE_URL = process.env.SUPABASE_URL ?? process.env.VITE_SUPABASE_URL ?? "";
+const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY ?? "";
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
-
-const normalizeFirebasePrivateKey = (value) => {
-  const trimmed = String(value ?? "").trim();
-  if (!trimmed) {
-    return "";
-  }
-
-  const unquoted =
-    (trimmed.startsWith('"') && trimmed.endsWith('"')) || (trimmed.startsWith("'") && trimmed.endsWith("'"))
-      ? trimmed.slice(1, -1)
-      : trimmed;
-  const normalized = unquoted.replace(/\\n/g, "\n").trim();
-
-  if (/-----BEGIN [A-Z ]+PRIVATE KEY-----/.test(normalized)) {
-    return normalized.endsWith("\n") ? normalized : `${normalized}\n`;
-  }
-
-  const keyBody = normalized.replace(/\s+/g, "");
-  if (!/^[A-Za-z0-9+/=]+$/.test(keyBody)) {
-    return normalized.endsWith("\n") ? normalized : `${normalized}\n`;
-  }
-
-  const wrappedBody = keyBody.match(/.{1,64}/g)?.join("\n") ?? keyBody;
-  return `-----BEGIN PRIVATE KEY-----\n${wrappedBody}\n-----END PRIVATE KEY-----\n`;
-};
-
-const FIREBASE_ADMIN_PRIVATE_KEY = normalizeFirebasePrivateKey(process.env.FIREBASE_ADMIN_PRIVATE_KEY);
+const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 
 if (!MAILERSEND_API_TOKEN || !MAILERSEND_FROM_EMAIL) {
-  console.warn("Missing MAILERSEND_API_TOKEN or MAILERSEND_FROM_EMAIL. /auth/send-otp will fail.");
+  console.warn("Missing MAILERSEND_API_TOKEN or MAILERSEND_FROM_EMAIL. OTP email endpoints will fail.");
 }
 if (!OTP_HASH_SECRET) {
   console.warn("Missing OTP_HASH_SECRET. Set a long random value before production.");
 }
-if (!FIREBASE_ADMIN_CLIENT_EMAIL || !FIREBASE_ADMIN_PRIVATE_KEY || !FIREBASE_ADMIN_PROJECT_ID) {
-  console.warn(
-    "Missing FIREBASE_ADMIN_CLIENT_EMAIL, FIREBASE_ADMIN_PRIVATE_KEY, or FIREBASE_ADMIN_PROJECT_ID. Password reset endpoints will fail.",
-  );
+if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+  console.warn("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY. Auth endpoints will fail.");
 }
 
 /** @type {Map<string, { codeHash: Buffer; expiresAt: number; attemptsLeft: number; lastSentAt: number }>} */
 const otpStore = new Map();
-/** @type {Map<string, { verifiedAt: number; expiresAt: number }>} */
-const verificationStore = new Map();
-let adminAccessTokenCache;
+
+const supabaseAdmin = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
+  ? createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false,
+      },
+    })
+  : null;
+
+const getSupabaseAdmin = () => {
+  if (!supabaseAdmin) {
+    throw new Error("supabase_admin_not_configured");
+  }
+
+  return supabaseAdmin;
+};
 
 const getOriginHeader = (originHeader) => {
   if (Array.isArray(originHeader)) {
     return originHeader[0];
   }
+
   return originHeader;
 };
 
@@ -82,9 +70,11 @@ const json = (req, res, statusCode, payload) => {
     "Access-Control-Allow-Headers": "Content-Type",
     Vary: "Origin",
   };
+
   if (isOriginAllowed(requestOrigin)) {
     headers["Access-Control-Allow-Origin"] = requestOrigin;
   }
+
   res.writeHead(statusCode, headers);
   res.end(body);
 };
@@ -109,6 +99,7 @@ const parseJsonBody = async (req) =>
   });
 
 const normalizeEmail = (email) => String(email ?? "").trim().toLowerCase();
+const normalizeUsername = (username) => String(username ?? "").trim().toLowerCase();
 const otpCode = () => String(randomInt(0, 1_000_000)).padStart(6, "0");
 const otpKey = (purpose, email) => `${purpose}:${normalizeEmail(email)}`;
 
@@ -122,94 +113,63 @@ const safeCompare = (a, b) => {
   return timingSafeEqual(a, b);
 };
 
-const base64UrlEncode = (value) =>
-  Buffer.from(typeof value === "string" ? value : JSON.stringify(value))
-    .toString("base64")
-    .replace(/\+/g, "-")
-    .replace(/\//g, "_")
-    .replace(/=+$/g, "");
-
-const getAdminAccessToken = async () => {
-  if (!FIREBASE_ADMIN_CLIENT_EMAIL || !FIREBASE_ADMIN_PRIVATE_KEY || !FIREBASE_ADMIN_PROJECT_ID) {
-    throw new Error("firebase_admin_not_configured");
+const toAppError = (error) => {
+  if (error instanceof Error) {
+    return error;
   }
 
-  const now = Math.floor(Date.now() / 1000);
-  if (adminAccessTokenCache && adminAccessTokenCache.expiresAt > now + 60) {
-    return adminAccessTokenCache.token;
-  }
-
-  const header = { alg: "RS256", typ: "JWT" };
-  const claimSet = {
-    iss: FIREBASE_ADMIN_CLIENT_EMAIL,
-    sub: FIREBASE_ADMIN_CLIENT_EMAIL,
-    scope: "https://www.googleapis.com/auth/cloud-platform",
-    aud: "https://oauth2.googleapis.com/token",
-    iat: now,
-    exp: now + 3600,
-  };
-
-  const unsignedJwt = `${base64UrlEncode(header)}.${base64UrlEncode(claimSet)}`;
-  const signature = createSign("RSA-SHA256");
-  signature.update(unsignedJwt);
-  signature.end();
-  const signedJwt = `${unsignedJwt}.${signature.sign(FIREBASE_ADMIN_PRIVATE_KEY, "base64url")}`;
-
-  const response = await fetch("https://oauth2.googleapis.com/token", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({
-      grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
-      assertion: signedJwt,
-    }),
-  });
-
-  if (!response.ok) {
-    throw new Error(`google_oauth_token_failed:${response.status}`);
-  }
-
-  const body = await response.json();
-  adminAccessTokenCache = {
-    token: body.access_token,
-    expiresAt: now + Number(body.expires_in ?? 3600),
-  };
-  return body.access_token;
+  return new Error(String(error));
 };
 
-const identityToolkitAdminRequest = async (path, payload) => {
-  const accessToken = await getAdminAccessToken();
-  const response = await fetch(`https://identitytoolkit.googleapis.com/v1/projects/${FIREBASE_ADMIN_PROJECT_ID}${path}`, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(payload),
-  });
+const mapSupabaseError = (error) => {
+  const appError = toAppError(error);
+  const message = appError.message;
+  const code = typeof error === "object" && error && "code" in error ? error.code : undefined;
+  const details = typeof error === "object" && error && "details" in error ? String(error.details ?? "") : "";
+  const hint = typeof error === "object" && error && "hint" in error ? String(error.hint ?? "") : "";
+  const combined = `${message} ${details} ${hint}`;
 
-  const body = await response.json();
-  if (!response.ok) {
-    const message = body?.error?.message || body?.error || `identitytoolkit_request_failed:${response.status}`;
-    throw new Error(message);
+  if (/already been registered|user already registered/i.test(combined)) {
+    return new Error("email_already_exists");
   }
 
-  return body;
+  if (code === "23505" && /username/i.test(combined)) {
+    return new Error("username_taken");
+  }
+
+  if (code === "23505") {
+    return new Error("duplicate_record");
+  }
+
+  return appError;
 };
 
-const lookupUserByEmail = async (email) => {
-  const body = await identityToolkitAdminRequest("/accounts:lookup", {
-    email: [normalizeEmail(email)],
-  });
+const listAllAuthUsers = async () => {
+  const client = getSupabaseAdmin();
+  const users = [];
+  let page = 1;
 
-  return body.users?.[0] ?? null;
-};
+  while (true) {
+    const { data, error } = await client.auth.admin.listUsers({
+      page,
+      perPage: 1000,
+    });
 
-const adminResetPassword = async (localId, password) => {
-  await identityToolkitAdminRequest("/accounts:update", {
-    localId,
-    password,
-    validSince: String(Math.floor(Date.now() / 1000)),
-  });
+    if (error) {
+      throw mapSupabaseError(error);
+    }
+
+    const pageUsers = data?.users ?? [];
+    users.push(...pageUsers);
+
+    if (pageUsers.length < 1000) {
+      break;
+    }
+
+    page += 1;
+  }
+
+  return users;
 };
 
 const sendOtpEmail = async (email, code, options = {}) => {
@@ -227,9 +187,7 @@ const sendOtpEmail = async (email, code, options = {}) => {
       from: { email: MAILERSEND_FROM_EMAIL, name: MAILERSEND_FROM_NAME },
       to: [{ email }],
       subject,
-      text: `${introText} ${code}. It expires in ${Math.floor(
-        OTP_CODE_TTL_SECONDS / 60,
-      )} minutes.`,
+      text: `${introText} ${code}. It expires in ${Math.floor(OTP_CODE_TTL_SECONDS / 60)} minutes.`,
       html: `<p>${introHtml} <strong>${code}</strong>.</p><p>It expires in ${Math.floor(
         OTP_CODE_TTL_SECONDS / 60,
       )} minutes.</p>`,
@@ -296,6 +254,77 @@ const verifyOtpRecord = (purpose, email, code) => {
   return { ok: true };
 };
 
+const lookupAuthUserByEmail = async (email) => {
+  const users = await listAllAuthUsers();
+  const normalizedEmail = normalizeEmail(email);
+  return users.find((user) => normalizeEmail(user.email ?? "") === normalizedEmail) ?? null;
+};
+
+const lookupAuthEmailByUserId = async (userId) => {
+  const users = await listAllAuthUsers();
+  const matchingUser = users.find((user) => user.id === userId);
+  return matchingUser?.email ?? null;
+};
+
+const lookupProfileByUsername = async (username) => {
+  const client = getSupabaseAdmin();
+  const { data, error } = await client
+    .from("profiles")
+    .select("id")
+    .eq("username", normalizeUsername(username))
+    .maybeSingle();
+
+  if (error) {
+    throw mapSupabaseError(error);
+  }
+
+  return data ?? null;
+};
+
+const createAuthUser = async (email, password) => {
+  const client = getSupabaseAdmin();
+  const { data, error } = await client.auth.admin.createUser({
+    email: normalizeEmail(email),
+    password,
+    email_confirm: true,
+  });
+
+  if (error) {
+    throw mapSupabaseError(error);
+  }
+
+  return data.user;
+};
+
+const deleteAuthUser = async (userId) => {
+  const client = getSupabaseAdmin();
+  const { error } = await client.auth.admin.deleteUser(userId);
+  if (error) {
+    throw mapSupabaseError(error);
+  }
+};
+
+const insertProfile = async (userId, username) => {
+  const client = getSupabaseAdmin();
+  const { error } = await client.from("profiles").insert({
+    id: userId,
+    username: normalizeUsername(username),
+  });
+
+  if (error) {
+    throw mapSupabaseError(error);
+  }
+};
+
+const updateAuthPassword = async (userId, password) => {
+  const client = getSupabaseAdmin();
+  const { error } = await client.auth.admin.updateUserById(userId, { password });
+
+  if (error) {
+    throw mapSupabaseError(error);
+  }
+};
+
 const handleSendOtp = async (req, res) => {
   const body = await parseJsonBody(req);
   const email = normalizeEmail(body.email);
@@ -318,16 +347,27 @@ const handleSendOtp = async (req, res) => {
   }
 };
 
-const handleVerifyOtp = async (req, res) => {
+const handleSignup = async (req, res) => {
   const body = await parseJsonBody(req);
   const email = normalizeEmail(body.email);
-  const code = String(body.otp ?? "").trim();
+  const username = normalizeUsername(body.username);
+  const otp = String(body.otp ?? "").trim();
+  const password = String(body.password ?? "");
 
-  if (!email || !code) {
+  if (!email || !email.includes("@")) {
+    return json(req, res, 400, { ok: false, error: "invalid_email" });
+  }
+  if (!USERNAME_REGEX.test(username)) {
+    return json(req, res, 400, { ok: false, error: "invalid_username" });
+  }
+  if (!otp || !password) {
     return json(req, res, 400, { ok: false, error: "missing_fields" });
   }
+  if (password.length < 6) {
+    return json(req, res, 400, { ok: false, error: "weak_password" });
+  }
 
-  const verification = verifyOtpRecord("signup", email, code);
+  const verification = verifyOtpRecord("signup", email, otp);
   if (!verification.ok) {
     return json(req, res, verification.statusCode, {
       ok: false,
@@ -336,13 +376,62 @@ const handleVerifyOtp = async (req, res) => {
     });
   }
 
-  const verificationToken = randomBytes(24).toString("base64url");
-  verificationStore.set(verificationToken, {
-    verifiedAt: Date.now(),
-    expiresAt: Date.now() + 15 * 60 * 1000,
-  });
+  let createdUserId = null;
 
-  return json(req, res, 200, { ok: true, verificationToken });
+  try {
+    const authUser = await createAuthUser(email, password);
+    createdUserId = authUser?.id ?? null;
+    if (!createdUserId) {
+      throw new Error("signup_failed");
+    }
+
+    await insertProfile(createdUserId, username);
+    return json(req, res, 200, { ok: true, userId: createdUserId });
+  } catch (error) {
+    if (createdUserId) {
+      try {
+        await deleteAuthUser(createdUserId);
+      } catch (cleanupError) {
+        console.error("Failed to clean up auth user after signup error:", cleanupError);
+      }
+    }
+
+    const mappedError = mapSupabaseError(error);
+    if (mappedError.message === "supabase_admin_not_configured") {
+      return json(req, res, 500, { ok: false, error: "supabase_admin_not_configured" });
+    }
+
+    return json(req, res, 400, { ok: false, error: mappedError.message });
+  }
+};
+
+const handleResolveIdentifier = async (req, res) => {
+  const body = await parseJsonBody(req);
+  const identifier = String(body.identifier ?? "").trim();
+  if (!identifier) {
+    return json(req, res, 400, { ok: false, error: "identifier_required" });
+  }
+
+  if (identifier.includes("@")) {
+    return json(req, res, 200, { ok: true, email: normalizeEmail(identifier) });
+  }
+
+  const username = normalizeUsername(identifier);
+  if (!USERNAME_REGEX.test(username)) {
+    return json(req, res, 400, { ok: false, error: "invalid_username" });
+  }
+
+  const profile = await lookupProfileByUsername(username);
+  if (!profile?.id) {
+    return json(req, res, 404, { ok: false, error: "identifier_not_found" });
+  }
+
+  const email = await lookupAuthEmailByUserId(profile.id);
+  if (!email) {
+    return json(req, res, 404, { ok: false, error: "identifier_not_found" });
+  }
+
+  return json(req, res, 200, { ok: true, email });
 };
 
 const handleSendResetOtp = async (req, res) => {
@@ -355,16 +444,13 @@ const handleSendResetOtp = async (req, res) => {
   if (!MAILERSEND_API_TOKEN || !MAILERSEND_FROM_EMAIL) {
     return json(req, res, 500, { ok: false, error: "mailer_not_configured" });
   }
-  if (!FIREBASE_ADMIN_CLIENT_EMAIL || !FIREBASE_ADMIN_PRIVATE_KEY || !FIREBASE_ADMIN_PROJECT_ID) {
-    return json(req, res, 500, { ok: false, error: "firebase_admin_not_configured" });
-  }
-
-  const existingUser = await lookupUserByEmail(email);
-  if (!existingUser) {
-    return json(req, res, 200, { ok: true, expiresInSeconds: OTP_CODE_TTL_SECONDS });
-  }
 
   try {
+    const existingUser = await lookupAuthUserByEmail(email);
+    if (!existingUser) {
+      return json(req, res, 200, { ok: true, expiresInSeconds: OTP_CODE_TTL_SECONDS });
+    }
+
     const result = await createOtpRecord("password_reset", email, {
       subject: "Your Blindchess password reset code",
       introText: "Use this password reset code:",
@@ -374,6 +460,9 @@ const handleSendResetOtp = async (req, res) => {
   } catch (error) {
     if (error instanceof Error && error.message === "cooldown_active") {
       return json(req, res, 429, { ok: false, error: "cooldown_active" });
+    }
+    if (error instanceof Error && error.message === "supabase_admin_not_configured") {
+      return json(req, res, 500, { ok: false, error: "supabase_admin_not_configured" });
     }
     throw error;
   }
@@ -391,9 +480,6 @@ const handleResetPassword = async (req, res) => {
   if (newPassword.length < 6) {
     return json(req, res, 400, { ok: false, error: "weak_password" });
   }
-  if (!FIREBASE_ADMIN_CLIENT_EMAIL || !FIREBASE_ADMIN_PRIVATE_KEY || !FIREBASE_ADMIN_PROJECT_ID) {
-    return json(req, res, 500, { ok: false, error: "firebase_admin_not_configured" });
-  }
 
   const verification = verifyOtpRecord("password_reset", email, code);
   if (!verification.ok) {
@@ -404,22 +490,29 @@ const handleResetPassword = async (req, res) => {
     });
   }
 
-  const existingUser = await lookupUserByEmail(email);
-  if (!existingUser?.localId) {
-    return json(req, res, 400, { ok: false, error: "email_not_found" });
-  }
+  try {
+    const existingUser = await lookupAuthUserByEmail(email);
+    if (!existingUser?.id) {
+      return json(req, res, 400, { ok: false, error: "email_not_found" });
+    }
 
-  await adminResetPassword(existingUser.localId, newPassword);
-  return json(req, res, 200, { ok: true });
+    await updateAuthPassword(existingUser.id, newPassword);
+    return json(req, res, 200, { ok: true });
+  } catch (error) {
+    const mappedError = mapSupabaseError(error);
+    if (mappedError.message === "supabase_admin_not_configured") {
+      return json(req, res, 500, { ok: false, error: "supabase_admin_not_configured" });
+    }
+    throw mappedError;
+  }
 };
 
 setInterval(() => {
   const now = Date.now();
-  for (const [email, record] of otpStore.entries()) {
-    if (record.expiresAt < now) otpStore.delete(email);
-  }
-  for (const [token, record] of verificationStore.entries()) {
-    if (record.expiresAt < now) verificationStore.delete(token);
+  for (const [key, record] of otpStore.entries()) {
+    if (record.expiresAt < now) {
+      otpStore.delete(key);
+    }
   }
 }, 60_000).unref();
 
@@ -438,8 +531,12 @@ const server = http.createServer(async (req, res) => {
       return await handleSendOtp(req, res);
     }
 
-    if (req.method === "POST" && req.url === "/auth/verify-otp") {
-      return await handleVerifyOtp(req, res);
+    if (req.method === "POST" && req.url === "/auth/signup") {
+      return await handleSignup(req, res);
+    }
+
+    if (req.method === "POST" && req.url === "/auth/resolve-identifier") {
+      return await handleResolveIdentifier(req, res);
     }
 
     if (req.method === "POST" && req.url === "/auth/send-reset-otp") {
@@ -460,9 +557,7 @@ const server = http.createServer(async (req, res) => {
     return json(req, res, 500, {
       ok: false,
       error: "server_error",
-      ...(IS_PRODUCTION
-        ? {}
-        : { detail: error instanceof Error ? error.message : String(error) }),
+      ...(IS_PRODUCTION ? {} : { detail: error instanceof Error ? error.message : String(error) }),
     });
   }
 });

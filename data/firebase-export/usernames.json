@@ -1,0 +1,33 @@
+{
+  "collection": "usernames",
+  "exportedAt": "2026-03-22T23:53:39.576Z",
+  "documentCount": 2,
+  "documents": [
+    {
+      "id": "kokoronome",
+      "data": {
+        "uid": "rwvBR2LuC9Yp5oDYcpNISz2FFtz1",
+        "username": "kokoronome",
+        "email": "chkm8wrks@gmail.com",
+        "createdAt": {
+          "iso": "2026-03-21T00:02:58.086Z",
+          "seconds": 1774051378,
+          "nanoseconds": 86000000
+        }
+      }
+    },
+    {
+      "id": "yuh",
+      "data": {
+        "uid": "9WpBdb3AdihZUbYy7oY2iULcfb43",
+        "username": "yuh",
+        "email": "willfspot@yahoo.co.uk",
+        "createdAt": {
+          "iso": "2026-03-17T03:10:15.221Z",
+          "seconds": 1773717015,
+          "nanoseconds": 221000000
+        }
+      }
+    }
+  ]
+}

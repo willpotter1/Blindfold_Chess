@@ -1,0 +1,38 @@
+{
+  "collection": "users",
+  "exportedAt": "2026-03-22T23:53:39.380Z",
+  "documentCount": 2,
+  "documents": [
+    {
+      "id": "9WpBdb3AdihZUbYy7oY2iULcfb43",
+      "data": {
+        "uid": "9WpBdb3AdihZUbYy7oY2iULcfb43",
+        "email": "willfspot@yahoo.co.uk",
+        "createdAt": {
+          "iso": "2026-03-17T03:09:59.666Z",
+          "seconds": 1773716999,
+          "nanoseconds": 666000000
+        },
+        "username": "yuh",
+        "updatedAt": {
+          "iso": "2026-03-17T03:10:15.221Z",
+          "seconds": 1773717015,
+          "nanoseconds": 221000000
+        }
+      }
+    },
+    {
+      "id": "rwvBR2LuC9Yp5oDYcpNISz2FFtz1",
+      "data": {
+        "uid": "rwvBR2LuC9Yp5oDYcpNISz2FFtz1",
+        "email": "chkm8wrks@gmail.com",
+        "username": "kokoronome",
+        "createdAt": {
+          "iso": "2026-03-21T00:02:58.086Z",
+          "seconds": 1774051378,
+          "nanoseconds": 86000000
+        }
+      }
+    }
+  ]
+}

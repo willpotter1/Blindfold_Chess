@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-03-22T23:53:41.413Z",
+  "dryRun": true,
+  "usersProcessed": 2,
+  "usersSkipped": 0,
+  "gamesProcessed": 0,
+  "gamesSkipped": 159,
+  "users": [
+    {
+      "firebaseUid": "9WpBdb3AdihZUbYy7oY2iULcfb43",
+      "supabaseUserId": "dry-run-9WpBdb3AdihZUbYy7oY2iULcfb43",
+      "email": "willfspot@yahoo.co.uk",
+      "username": "yuh",
+      "authUserCreated": true,
+      "temporaryPasswordAssigned": true
+    },
+    {
+      "firebaseUid": "rwvBR2LuC9Yp5oDYcpNISz2FFtz1",
+      "supabaseUserId": "dry-run-rwvBR2LuC9Yp5oDYcpNISz2FFtz1",
+      "email": "chkm8wrks@gmail.com",
+      "username": "kokoronome",
+      "authUserCreated": true,
+      "temporaryPasswordAssigned": true
+    }
+  ]
+}

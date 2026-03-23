@@ -34,12 +34,26 @@ export const sendOtpCode = async (email: string): Promise<void> => {
   await postJson('/auth/send-otp', { email });
 };
 
-export const verifyOtpCode = async (email: string, otp: string): Promise<string> => {
-  const body = await postJson<{ ok: true; verificationToken: string }>('/auth/verify-otp', {
+export const signupWithOtp = async (email: string, password: string, username: string, otp: string): Promise<void> => {
+  await postJson('/auth/signup', {
     email,
+    password,
+    username,
     otp,
   });
-  return body.verificationToken;
+};
+
+export const resolveIdentifierToEmail = async (identifier: string): Promise<string> => {
+  const trimmedIdentifier = identifier.trim();
+  if (trimmedIdentifier.includes('@')) {
+    return trimmedIdentifier.toLowerCase();
+  }
+
+  const body = await postJson<{ ok: true; email: string }>('/auth/resolve-identifier', {
+    identifier: trimmedIdentifier,
+  });
+
+  return body.email;
 };
 
 export const sendPasswordResetOtp = async (email: string): Promise<void> => {

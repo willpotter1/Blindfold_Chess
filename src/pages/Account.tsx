@@ -1,11 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { signOut } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { useAccountProfile } from '@/hooks/useAccountProfile';
 import { AccountLayout } from '@/components/AccountLayout';
-import { getFirebaseAuth, hasFirebaseConfig } from '@/lib/firebase';
+import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
 const Account = () => {
   const { isLoading, profile } = useAccountProfile();
@@ -13,11 +12,13 @@ const Account = () => {
   const { toast } = toastState;
 
   const handleSignOut = async () => {
-    const auth = getFirebaseAuth();
-    if (!auth) return;
+    if (!supabase) return;
 
     try {
-      await signOut(auth);
+      const { error } = await supabase.auth.signOut();
+      if (error) {
+        throw error;
+      }
       toast({
         title: 'Signed out',
         description: 'You have been signed out.',
@@ -44,19 +45,19 @@ const Account = () => {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {!hasFirebaseConfig && (
+            {!hasSupabaseConfig && (
               <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">
-                Firebase is not configured. Account features are unavailable until the environment variables are set.
+                Supabase is not configured. Account features are unavailable until the environment variables are set.
               </div>
             )}
 
-            {hasFirebaseConfig && isLoading && (
+            {hasSupabaseConfig && isLoading && (
               <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">
                 Loading account details...
               </div>
             )}
 
-            {hasFirebaseConfig && !isLoading && !profile.uid && (
+            {hasSupabaseConfig && !isLoading && !profile.uid && (
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">
                   You are not signed in.
@@ -72,7 +73,7 @@ const Account = () => {
               </div>
             )}
 
-            {hasFirebaseConfig && !isLoading && profile.uid && (
+            {hasSupabaseConfig && !isLoading && profile.uid && (
               <div className="grid gap-4">
                 <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4">
                   <div className="flex items-center justify-between gap-4">
@@ -105,6 +106,23 @@ const Account = () => {
                     <Button asChild className="border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90">
                       <Link to="/account/password">Change</Link>
                     </Button>
+                  </div>
+                </div>
+                <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4">
+                  <p className="text-sm font-medium text-black">Games completed</p>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-3">
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Total</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.gamesCompleted}</p>
+                    </div>
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Vs computer</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.computerGamesCompleted}</p>
+                    </div>
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Pass n play</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.passNPlayGamesCompleted}</p>
+                    </div>
                   </div>
                 </div>
                 <Button

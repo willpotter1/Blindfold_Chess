@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-import { onAuthStateChanged } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { getFirebaseAuth } from '@/lib/firebase';
 import { cn } from '@/lib/utils';
+import { supabase } from '@/lib/supabase';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 type AppSidebarProps = {
@@ -14,21 +13,33 @@ type AppSidebarProps = {
 const navButtonBaseClassName = 'border-2 border-[#d9b99b] bg-white text-black hover:bg-white/90';
 
 export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(() => Boolean(getFirebaseAuth()?.currentUser));
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const buttonClassName = cn(navButtonBaseClassName, desktopMode ? 'md:w-full' : 'min-w-[96px] px-4 flex-1');
 
   useEffect(() => {
-    const auth = getFirebaseAuth();
-    if (!auth) {
+    if (!supabase) {
       setIsAuthenticated(false);
       return;
     }
 
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setIsAuthenticated(Boolean(user));
+    void supabase.auth.getSession().then(({ data, error }) => {
+      if (error) {
+        console.error('Failed to load current session:', error);
+        return;
+      }
+
+      setIsAuthenticated(Boolean(data.session?.user));
     });
 
-    return unsubscribe;
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setIsAuthenticated(Boolean(session?.user));
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
   }, []);
 
   return (

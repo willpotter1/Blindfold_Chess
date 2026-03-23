@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { doc, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -8,8 +7,8 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { useAccountProfile } from '@/hooks/useAccountProfile';
 import { AccountLayout } from '@/components/AccountLayout';
-import { getFirestoreDb, hasFirebaseConfig } from '@/lib/firebase';
-import { USERNAME_REGEX, isPermissionDeniedError, normalizeUsername } from '@/lib/account';
+import { hasSupabaseConfig, supabase } from '@/lib/supabase';
+import { USERNAME_REGEX, normalizeUsername } from '@/lib/account';
 
 const AccountUsername = () => {
   const { isLoading, profile } = useAccountProfile();
@@ -24,8 +23,7 @@ const AccountUsername = () => {
   const handleUsernameSave = async () => {
     if (!profile.uid || !profile.email) return;
 
-    const db = getFirestoreDb();
-    if (!db) {
+    if (!supabase) {
       toast({
         title: 'Name update unavailable',
         description: 'Database access is not configured right now.',
@@ -54,39 +52,27 @@ const AccountUsername = () => {
 
     setIsSavingUsername(true);
     try {
-      await runTransaction(db, async (transaction) => {
-        const userProfileRef = doc(db, 'users', profile.uid!);
-        const newUsernameRef = doc(db, 'usernames', normalizedUsername);
-        const userProfileDoc = await transaction.get(userProfileRef);
-        const newUsernameDoc = await transaction.get(newUsernameRef);
+      const { data, error } = await supabase
+        .from('profiles')
+        .update({ username: normalizedUsername })
+        .eq('id', profile.uid)
+        .select('username')
+        .maybeSingle();
 
-        if (newUsernameDoc.exists()) {
-          throw new Error('USERNAME_TAKEN');
-        }
+      if (error) {
+        throw error;
+      }
 
-        if (userProfileDoc.exists()) {
-          transaction.set(userProfileRef, { username: normalizedUsername, updatedAt: serverTimestamp() }, { merge: true });
-        } else {
-          transaction.set(userProfileRef, {
-            uid: profile.uid,
-            email: profile.email,
-            username: normalizedUsername,
-            createdAt: serverTimestamp(),
-            updatedAt: serverTimestamp(),
-          });
-        }
-
-        transaction.set(newUsernameRef, {
-          uid: profile.uid,
+      if (!data) {
+        const { error: insertError } = await supabase.from('profiles').insert({
+          id: profile.uid,
           username: normalizedUsername,
-          email: profile.email,
-          createdAt: serverTimestamp(),
         });
 
-        if (profile.username) {
-          transaction.delete(doc(db, 'usernames', profile.username));
+        if (insertError) {
+          throw insertError;
         }
-      });
+      }
 
       setUsernameInput(normalizedUsername);
       toast({
@@ -98,11 +84,9 @@ const AccountUsername = () => {
       toast({
         title: 'Name update failed',
         description:
-          error instanceof Error && error.message === 'USERNAME_TAKEN'
+          error && typeof error === 'object' && 'code' in error && (error as { code?: unknown }).code === '23505'
             ? 'That name is already taken. Please choose another.'
-            : isPermissionDeniedError(error)
-              ? 'Firestore rules are blocking this update.'
-              : 'Please try again.',
+            : 'Please try again.',
         variant: 'destructive',
       });
     } finally {
@@ -119,9 +103,9 @@ const AccountUsername = () => {
             <CardDescription className="text-black">Update the username used for your account.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {!hasFirebaseConfig && <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">Firebase is not configured.</div>}
-            {hasFirebaseConfig && isLoading && <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">Loading account details...</div>}
-            {hasFirebaseConfig && !isLoading && profile.uid && (
+            {!hasSupabaseConfig && <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">Supabase is not configured.</div>}
+            {hasSupabaseConfig && isLoading && <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">Loading account details...</div>}
+            {hasSupabaseConfig && !isLoading && profile.uid && (
               <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 space-y-3">
                 <div>
                   <p className="text-sm font-medium text-black">Current Name</p>

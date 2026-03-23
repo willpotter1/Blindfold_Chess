@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { EmailAuthProvider, reauthenticateWithCredential, updateEmail } from 'firebase/auth';
-import { doc, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -9,8 +7,7 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { useAccountProfile } from '@/hooks/useAccountProfile';
 import { AccountLayout } from '@/components/AccountLayout';
-import { getFirebaseAuth, getFirestoreDb, hasFirebaseConfig } from '@/lib/firebase';
-import { isPermissionDeniedError } from '@/lib/account';
+import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
 const AccountEmail = () => {
   const { isLoading, profile } = useAccountProfile();
@@ -20,11 +17,9 @@ const AccountEmail = () => {
   const { toast } = useToast();
 
   const handleEmailChange = async () => {
-    const auth = getFirebaseAuth();
-    const currentUser = auth?.currentUser;
-    const db = getFirestoreDb();
+    const currentUser = supabase ? (await supabase.auth.getUser()).data.user : null;
 
-    if (!auth || !currentUser || !currentUser.email || !profile.uid) {
+    if (!supabase || !currentUser || !currentUser.email || !profile.uid) {
       toast({
         title: 'Email update unavailable',
         description: 'You need to be signed in with an email/password account.',
@@ -44,55 +39,33 @@ const AccountEmail = () => {
 
     setIsChangingEmail(true);
     try {
-      const credential = EmailAuthProvider.credential(currentUser.email, currentPassword);
-      await reauthenticateWithCredential(currentUser, credential);
-      await updateEmail(currentUser, newEmail.trim());
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email: currentUser.email,
+        password: currentPassword,
+      });
+      if (signInError) {
+        throw signInError;
+      }
 
-      if (db) {
-        await runTransaction(db, async (transaction) => {
-          const userProfileRef = doc(db, 'users', profile.uid!);
-          transaction.set(
-            userProfileRef,
-            {
-              uid: profile.uid,
-              email: newEmail.trim(),
-              username: profile.username,
-              updatedAt: serverTimestamp(),
-            },
-            { merge: true },
-          );
-
-          if (profile.username) {
-            transaction.set(
-              doc(db, 'usernames', profile.username),
-              {
-                uid: profile.uid,
-                username: profile.username,
-                email: newEmail.trim(),
-                updatedAt: serverTimestamp(),
-              },
-              { merge: true },
-            );
-          }
-        });
+      const { error: updateError } = await supabase.auth.updateUser({ email: newEmail.trim() });
+      if (updateError) {
+        throw updateError;
       }
 
       setCurrentPassword('');
       setNewEmail('');
       toast({
         title: 'Email updated',
-        description: `Your email is now ${newEmail.trim()}.`,
+        description: 'If email change confirmations are enabled, confirm the update from your inbox.',
       });
     } catch (error) {
       console.error('Email update failed:', error);
       toast({
         title: 'Email update failed',
         description:
-          isPermissionDeniedError(error)
-            ? 'Firestore rules are blocking this update.'
-            : error instanceof Error && /wrong-password|invalid-credential/i.test(error.message)
-              ? 'Your current password is incorrect.'
-              : 'Please try again.',
+          error instanceof Error && /invalid login credentials|invalid-credential/i.test(error.message)
+            ? 'Your current password is incorrect.'
+            : 'Please try again.',
         variant: 'destructive',
       });
     } finally {
@@ -109,9 +82,9 @@ const AccountEmail = () => {
             <CardDescription className="text-black">Update the email address linked to your account.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {!hasFirebaseConfig && <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">Firebase is not configured.</div>}
-            {hasFirebaseConfig && isLoading && <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">Loading account details...</div>}
-            {hasFirebaseConfig && !isLoading && profile.uid && (
+            {!hasSupabaseConfig && <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">Supabase is not configured.</div>}
+            {hasSupabaseConfig && isLoading && <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">Loading account details...</div>}
+            {hasSupabaseConfig && !isLoading && profile.uid && (
               <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 space-y-3">
                 <div>
                   <p className="text-sm font-medium text-black">Current Email</p>
