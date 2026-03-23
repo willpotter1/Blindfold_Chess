@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -10,6 +11,7 @@ import { hasSupabaseConfig } from '@/lib/supabase';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
+const otpServerUnavailableDescription = 'The OTP server is not running. Start it with npm run auth:dev.';
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
 const isOtpResetRequiredError = (message: string) =>
   message === 'otp_not_found' || message === 'otp_expired' || message === 'max_attempts_exceeded';
@@ -29,11 +31,35 @@ const getSignupErrorDescription = (error: unknown) => {
   if (error.message === 'max_attempts_exceeded') {
     return 'Too many failed attempts. Click Send OTP to request a new code.';
   }
+  if (error.message === 'cooldown_active') {
+    return 'A code was sent recently. Check your email or wait a minute before resending.';
+  }
   if (error.message === 'username_taken') {
     return 'That username is already taken. Please choose another.';
   }
   if (error.message === 'email_already_exists' || error.message === 'user_already_exists') {
     return 'An account already exists for that email address.';
+  }
+  if (error.message === 'invalid_email') {
+    return 'Enter a valid email address.';
+  }
+  if (error.message === 'otp_server_unreachable') {
+    return otpServerUnavailableDescription;
+  }
+  if (error.message === 'otp_response_invalid') {
+    return 'The OTP server returned an invalid response. Check npm run auth:dev and try again.';
+  }
+  if (error.message === 'otp_api_not_configured') {
+    return 'The OTP API is not configured.';
+  }
+  if (error.message === 'mailer_not_configured') {
+    return 'The OTP server is missing mailer configuration.';
+  }
+  if (error.message === 'supabase_admin_not_configured') {
+    return 'The signup server is missing Supabase admin credentials.';
+  }
+  if (error.message === 'otp_request_failed') {
+    return 'The OTP request failed. Check the local auth server and try again.';
   }
   return error.message;
 };
@@ -75,12 +101,7 @@ const Signup = () => {
       }
       toast({
         title: 'Could not send OTP',
-        description:
-          error instanceof Error && error.message === 'cooldown_active'
-            ? 'A code was sent recently. Check your email or wait a minute before resending.'
-            : error instanceof Error
-              ? error.message
-              : 'Please try again.',
+        description: getSignupErrorDescription(error),
         variant: 'destructive',
       });
     } finally {

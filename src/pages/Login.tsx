@@ -11,6 +11,30 @@ import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
 const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
 const textLinkClassName = 'text-sm font-medium text-[#8B4513] underline underline-offset-4';
+const otpServerUnavailableDescription = 'The OTP server is not running. Start it with npm run auth:dev.';
+const otpServerInvalidResponseDescription = 'The OTP server returned an invalid response. Check npm run auth:dev and try again.';
+
+const getOtpRequestErrorDescription = (error: unknown) => {
+  if (!(error instanceof Error)) {
+    return null;
+  }
+  if (error.message === 'otp_server_unreachable') {
+    return otpServerUnavailableDescription;
+  }
+  if (error.message === 'otp_response_invalid') {
+    return otpServerInvalidResponseDescription;
+  }
+  if (error.message === 'otp_api_not_configured') {
+    return 'The OTP API is not configured.';
+  }
+  if (error.message === 'mailer_not_configured') {
+    return 'The OTP server is missing mailer configuration.';
+  }
+  if (error.message === 'otp_request_failed') {
+    return 'The OTP request failed. Check the local auth server and try again.';
+  }
+  return null;
+};
 
 const Login = () => {
   const [identifier, setIdentifier] = useState('');
@@ -29,6 +53,10 @@ const Login = () => {
   const navigate = useNavigate();
 
   const getResetErrorDescription = (error: unknown) => {
+    const otpRequestErrorDescription = getOtpRequestErrorDescription(error);
+    if (otpRequestErrorDescription) {
+      return otpRequestErrorDescription;
+    }
     if (!(error instanceof Error)) {
       return 'Please try again.';
     }
@@ -52,9 +80,6 @@ const Login = () => {
     }
     if (error.message === 'supabase_admin_not_configured') {
       return 'The reset server is missing Supabase admin credentials.';
-    }
-    if (error.message === 'otp_api_not_configured') {
-      return 'The OTP API is not configured.';
     }
     if (error.message === 'identifier_not_found' || error.message === 'email_not_found') {
       return 'No account found for that email or username.';
@@ -93,14 +118,19 @@ const Login = () => {
       navigate('/');
     } catch (error) {
       console.error('Login failed:', error);
+      const otpRequestErrorDescription = getOtpRequestErrorDescription(error);
       toast({
         title: 'Login failed',
         description:
           error instanceof Error && /invalid login credentials/i.test(error.message)
             ? 'Check your credentials and try again.'
-            : error instanceof Error
-              ? error.message
-              : 'Check your credentials and try again.',
+            : otpRequestErrorDescription
+              ? otpRequestErrorDescription
+              : error instanceof Error && error.message === 'identifier_not_found'
+                ? 'No account found for that email or username.'
+                : error instanceof Error
+                  ? error.message
+                  : 'Check your credentials and try again.',
         variant: 'destructive',
       });
     } finally {

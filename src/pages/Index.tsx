@@ -501,6 +501,7 @@ const Index = () => {
 
   const statusText = gameState ? getGameStatus() : '';
   const participantSummaries = gameState ? getParticipantSummaries(gameState) : null;
+  const shouldShowStatusBar = Boolean(gameState && (gameState.mode === 'computer' || gameState.isOver));
   const showDesktopMoveHistory = Boolean(gameState && (gameState.isOver || !gameState.hideMoveHistory));
 
   const renderRevealButton = (className: string) => {
@@ -603,7 +604,7 @@ const Index = () => {
 
     return (
       <>
-        <StatusBar status={statusText} />
+        {shouldShowStatusBar && <StatusBar status={statusText} />}
         <MoveInput
           onSubmitMove={handlePlayerMove}
           disabled={!isHumanTurn}
@@ -632,7 +633,7 @@ const Index = () => {
           style={showDesktopMoveHistory ? { gridTemplateColumns: `minmax(0,1fr) ${desktopHistoryWidth}px` } : undefined}
         >
           <div ref={desktopLeftSectionRef} className={`flex min-h-0 flex-col self-start ${desktopShellGapClass}`}>
-            <StatusBar status={statusText} variant="compact" />
+            {shouldShowStatusBar && <StatusBar status={statusText} variant="compact" />}
 
             {gameState.isOver ? (
               <>
