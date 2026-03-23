@@ -9,4 +9,12 @@ export type AccountProfile = {
   gamesCompleted: number;
   computerGamesCompleted: number;
   passNPlayGamesCompleted: number;
+  puzzleAttempts: number;
+  puzzlesSolved: number;
+  puzzlesFailed: number;
+  drillRoundsPlayed: number;
+  coordinateDrillRoundsPlayed: number;
+  moveDrillRoundsPlayed: number;
+  bestDrillScore: number;
+  bestDrillAccuracy: number;
 };

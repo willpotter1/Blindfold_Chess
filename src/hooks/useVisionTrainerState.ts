@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { saveDrillRound } from '@/lib/trainingResults';
 import {
   buildPromptDeck,
   defaultVisionRoundConfig,
@@ -35,6 +36,10 @@ export const useVisionTrainerState = () => {
   const lastPromptIdRef = useRef<string | null>(null);
   const timerIntervalRef = useRef<number | null>(null);
   const feedbackTimeoutRef = useRef<number | null>(null);
+  const statsRef = useRef<VisionRoundStats>(emptyVisionRoundStats);
+  const activeRoundConfigRef = useRef<VisionRoundConfig | null>(null);
+  const roundActiveRef = useRef(false);
+  const hasSavedRoundRef = useRef(false);
 
   const clearTimerInterval = useCallback(() => {
     if (timerIntervalRef.current !== null) {
@@ -67,9 +72,25 @@ export const useVisionTrainerState = () => {
   }, []);
 
   const finishRound = useCallback(() => {
+    if (!roundActiveRef.current) {
+      return;
+    }
+
+    roundActiveRef.current = false;
     clearTimerInterval();
     clearFeedbackTimeout();
     deadlineRef.current = null;
+    const completedRoundConfig = activeRoundConfigRef.current;
+    const completedRoundStats = statsRef.current;
+
+    if (completedRoundConfig && !hasSavedRoundRef.current) {
+      hasSavedRoundRef.current = true;
+      void saveDrillRound({
+        config: completedRoundConfig,
+        stats: completedRoundStats,
+      });
+    }
+
     setFeedback(null);
     setSelectedMoveSourceSquare(null);
     setPhase('results');
@@ -95,6 +116,10 @@ export const useVisionTrainerState = () => {
 
     const firstPrompt = takeNextPrompt(config);
 
+    activeRoundConfigRef.current = config;
+    statsRef.current = emptyVisionRoundStats;
+    roundActiveRef.current = true;
+    hasSavedRoundRef.current = false;
     deadlineRef.current = Date.now() + config.roundLengthSeconds * 1000;
     setPhase('playing');
     setStats(emptyVisionRoundStats);
@@ -112,10 +137,15 @@ export const useVisionTrainerState = () => {
     clearTimerInterval();
     clearFeedbackTimeout();
     deadlineRef.current = null;
+    activeRoundConfigRef.current = null;
+    statsRef.current = emptyVisionRoundStats;
+    roundActiveRef.current = false;
+    hasSavedRoundRef.current = false;
     setPhase('config');
     setCurrentPrompt(null);
     setFeedback(null);
     setSelectedMoveSourceSquare(null);
+    setStats(emptyVisionRoundStats);
     setTimeRemainingMs(config.roundLengthSeconds * 1000);
   }, [clearFeedbackTimeout, clearTimerInterval, config.roundLengthSeconds]);
 
@@ -130,11 +160,13 @@ export const useVisionTrainerState = () => {
       feedbackTimeoutRef.current = null;
     }, FEEDBACK_DURATION_MS);
 
-    setStats((previousStats) => ({
-      correctCount: previousStats.correctCount + (result === 'correct' ? 1 : 0),
-      wrongCount: previousStats.wrongCount + (result === 'wrong' ? 1 : 0),
-      totalAttempts: previousStats.totalAttempts + 1,
-    }));
+    const nextStats = {
+      correctCount: statsRef.current.correctCount + (result === 'correct' ? 1 : 0),
+      wrongCount: statsRef.current.wrongCount + (result === 'wrong' ? 1 : 0),
+      totalAttempts: statsRef.current.totalAttempts + 1,
+    };
+    statsRef.current = nextStats;
+    setStats(nextStats);
   }, [clearFeedbackTimeout]);
 
   const handleSquareClick = useCallback((square: string) => {

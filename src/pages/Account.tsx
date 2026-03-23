@@ -6,6 +6,11 @@ import { useAccountProfile } from '@/hooks/useAccountProfile';
 import { AccountLayout } from '@/components/AccountLayout';
 import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
+const formatAccuracyPercent = (accuracy: number) => {
+  const percentage = accuracy * 100;
+  return `${Number.isInteger(percentage) ? percentage.toFixed(0) : percentage.toFixed(1)}%`;
+};
+
 const Account = () => {
   const { isLoading, profile } = useAccountProfile();
   const [toastState, navigate] = [useToast(), useNavigate()];
@@ -122,6 +127,50 @@ const Account = () => {
                     <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
                       <p className="text-xs uppercase tracking-wide text-black/70">Pass n play</p>
                       <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.passNPlayGamesCompleted}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4">
+                  <p className="text-sm font-medium text-black">Puzzle training</p>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-3">
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Attempted</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.puzzleAttempts}</p>
+                    </div>
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Solved</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.puzzlesSolved}</p>
+                    </div>
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Failed</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.puzzlesFailed}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4">
+                  <p className="text-sm font-medium text-black">Drill training</p>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Rounds</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.drillRoundsPlayed}</p>
+                    </div>
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Coordinate</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.coordinateDrillRoundsPlayed}</p>
+                    </div>
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Moves</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.moveDrillRoundsPlayed}</p>
+                    </div>
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Best score</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">{profile.bestDrillScore}</p>
+                    </div>
+                    <div className="rounded-lg border border-[#d9b99b] bg-[#fff8f1] p-3">
+                      <p className="text-xs uppercase tracking-wide text-black/70">Best accuracy</p>
+                      <p className="mt-1 text-2xl font-semibold text-[#8B4513]">
+                        {formatAccuracyPercent(profile.bestDrillAccuracy)}
+                      </p>
                     </div>
                   </div>
                 </div>

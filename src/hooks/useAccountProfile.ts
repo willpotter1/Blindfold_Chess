@@ -12,6 +12,14 @@ export const useAccountProfile = () => {
     gamesCompleted: 0,
     computerGamesCompleted: 0,
     passNPlayGamesCompleted: 0,
+    puzzleAttempts: 0,
+    puzzlesSolved: 0,
+    puzzlesFailed: 0,
+    drillRoundsPlayed: 0,
+    coordinateDrillRoundsPlayed: 0,
+    moveDrillRoundsPlayed: 0,
+    bestDrillScore: 0,
+    bestDrillAccuracy: 0,
   });
 
   useEffect(() => {
@@ -33,6 +41,14 @@ export const useAccountProfile = () => {
           gamesCompleted: 0,
           computerGamesCompleted: 0,
           passNPlayGamesCompleted: 0,
+          puzzleAttempts: 0,
+          puzzlesSolved: 0,
+          puzzlesFailed: 0,
+          drillRoundsPlayed: 0,
+          coordinateDrillRoundsPlayed: 0,
+          moveDrillRoundsPlayed: 0,
+          bestDrillScore: 0,
+          bestDrillAccuracy: 0,
         });
         setIsLoading(false);
         return;
@@ -42,12 +58,28 @@ export const useAccountProfile = () => {
       let gamesCompleted = 0;
       let computerGamesCompleted = 0;
       let passNPlayGamesCompleted = 0;
+      let puzzleAttempts = 0;
+      let puzzlesSolved = 0;
+      let puzzlesFailed = 0;
+      let drillRoundsPlayed = 0;
+      let coordinateDrillRoundsPlayed = 0;
+      let moveDrillRoundsPlayed = 0;
+      let bestDrillScore = 0;
+      let bestDrillAccuracy = 0;
       try {
         const [
           profileResult,
           totalGamesResult,
           computerGamesResult,
           passNPlayGamesResult,
+          puzzleAttemptsResult,
+          puzzlesSolvedResult,
+          puzzlesFailedResult,
+          drillRoundsPlayedResult,
+          coordinateDrillRoundsPlayedResult,
+          moveDrillRoundsPlayedResult,
+          bestDrillScoreResult,
+          bestDrillAccuracyResult,
         ] = await Promise.all([
           supabase
             .from('profiles')
@@ -68,6 +100,48 @@ export const useAccountProfile = () => {
             .select('id', { count: 'exact', head: true })
             .eq('user_id', user.id)
             .eq('mode', 'pass-n-play'),
+          supabase
+            .from('puzzle_attempts')
+            .select('id', { count: 'exact', head: true })
+            .eq('user_id', user.id),
+          supabase
+            .from('puzzle_attempts')
+            .select('id', { count: 'exact', head: true })
+            .eq('user_id', user.id)
+            .eq('result', 'solved'),
+          supabase
+            .from('puzzle_attempts')
+            .select('id', { count: 'exact', head: true })
+            .eq('user_id', user.id)
+            .eq('result', 'failed'),
+          supabase
+            .from('drill_rounds')
+            .select('id', { count: 'exact', head: true })
+            .eq('user_id', user.id),
+          supabase
+            .from('drill_rounds')
+            .select('id', { count: 'exact', head: true })
+            .eq('user_id', user.id)
+            .eq('mode', 'coordinates'),
+          supabase
+            .from('drill_rounds')
+            .select('id', { count: 'exact', head: true })
+            .eq('user_id', user.id)
+            .eq('mode', 'moves'),
+          supabase
+            .from('drill_rounds')
+            .select('score')
+            .eq('user_id', user.id)
+            .order('score', { ascending: false })
+            .limit(1)
+            .maybeSingle(),
+          supabase
+            .from('drill_rounds')
+            .select('accuracy')
+            .eq('user_id', user.id)
+            .order('accuracy', { ascending: false })
+            .limit(1)
+            .maybeSingle(),
         ]);
 
         if (profileResult.error) {
@@ -86,10 +160,50 @@ export const useAccountProfile = () => {
           throw passNPlayGamesResult.error;
         }
 
+        if (puzzleAttemptsResult.error) {
+          throw puzzleAttemptsResult.error;
+        }
+
+        if (puzzlesSolvedResult.error) {
+          throw puzzlesSolvedResult.error;
+        }
+
+        if (puzzlesFailedResult.error) {
+          throw puzzlesFailedResult.error;
+        }
+
+        if (drillRoundsPlayedResult.error) {
+          throw drillRoundsPlayedResult.error;
+        }
+
+        if (coordinateDrillRoundsPlayedResult.error) {
+          throw coordinateDrillRoundsPlayedResult.error;
+        }
+
+        if (moveDrillRoundsPlayedResult.error) {
+          throw moveDrillRoundsPlayedResult.error;
+        }
+
+        if (bestDrillScoreResult.error) {
+          throw bestDrillScoreResult.error;
+        }
+
+        if (bestDrillAccuracyResult.error) {
+          throw bestDrillAccuracyResult.error;
+        }
+
         username = profileResult.data?.username ?? null;
         gamesCompleted = totalGamesResult.count ?? 0;
         computerGamesCompleted = computerGamesResult.count ?? 0;
         passNPlayGamesCompleted = passNPlayGamesResult.count ?? 0;
+        puzzleAttempts = puzzleAttemptsResult.count ?? 0;
+        puzzlesSolved = puzzlesSolvedResult.count ?? 0;
+        puzzlesFailed = puzzlesFailedResult.count ?? 0;
+        drillRoundsPlayed = drillRoundsPlayedResult.count ?? 0;
+        coordinateDrillRoundsPlayed = coordinateDrillRoundsPlayedResult.count ?? 0;
+        moveDrillRoundsPlayed = moveDrillRoundsPlayedResult.count ?? 0;
+        bestDrillScore = bestDrillScoreResult.data?.score ?? 0;
+        bestDrillAccuracy = bestDrillAccuracyResult.data?.accuracy ?? 0;
       } catch (error) {
         console.error('Failed to load account profile:', error);
       }
@@ -102,6 +216,14 @@ export const useAccountProfile = () => {
         gamesCompleted,
         computerGamesCompleted,
         passNPlayGamesCompleted,
+        puzzleAttempts,
+        puzzlesSolved,
+        puzzlesFailed,
+        drillRoundsPlayed,
+        coordinateDrillRoundsPlayed,
+        moveDrillRoundsPlayed,
+        bestDrillScore,
+        bestDrillAccuracy,
       });
       setIsLoading(false);
     };

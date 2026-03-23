@@ -8,6 +8,7 @@ import {
   type PuzzleConfig,
   type PuzzleRecord,
 } from '@/lib/puzzles';
+import { savePuzzleAttempt, type PuzzleAttemptResult } from '@/lib/trainingResults';
 
 type SubmitMoveResult = {
   success: boolean;
@@ -16,6 +17,11 @@ type SubmitMoveResult = {
 
 type PuzzlePhase = 'config' | 'session';
 type HintStage = 0 | 1 | 2;
+type PuzzleAttemptTracker = {
+  startedAt: string;
+  playerMoveCount: number;
+  wrongMoveCount: number;
+};
 
 const toUci = (from: string, to: string, promotion?: string) => `${from}${to}${promotion ?? ''}`;
 
@@ -64,13 +70,51 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
   const previewPuzzleIdRef = useRef<string | null>(null);
   const currentPuzzleIdRef = useRef<string | null>(null);
   const sessionPoolRef = useRef<PuzzleRecord[]>([]);
+  const currentPuzzleRef = useRef<PuzzleRecord | null>(null);
+  const sessionConfigRef = useRef<PuzzleConfig | null>(null);
+  const activeAttemptRef = useRef<PuzzleAttemptTracker | null>(null);
+  const hasSavedAttemptRef = useRef(false);
 
   const updateStateFromChess = useCallback((chess: Chess) => {
     setFen(chess.fen());
     setMoves(chess.history());
   }, []);
 
-  const failMove = useCallback((message: string, statusMessage = 'Try again.'): SubmitMoveResult => {
+  const resetTrackedAttempt = useCallback(() => {
+    activeAttemptRef.current = null;
+    hasSavedAttemptRef.current = false;
+  }, []);
+
+  const finalizeTrackedAttempt = useCallback((result: PuzzleAttemptResult) => {
+    const attempt = activeAttemptRef.current;
+    const puzzle = currentPuzzleRef.current;
+    const currentSessionConfig = sessionConfigRef.current;
+
+    if (!attempt || !puzzle || !currentSessionConfig || hasSavedAttemptRef.current) {
+      return;
+    }
+
+    hasSavedAttemptRef.current = true;
+
+    void savePuzzleAttempt({
+      puzzle,
+      config: currentSessionConfig,
+      result,
+      startedAt: attempt.startedAt,
+      playerMoveCount: attempt.playerMoveCount,
+      wrongMoveCount: attempt.wrongMoveCount,
+    });
+  }, []);
+
+  const failMove = useCallback((
+    message: string,
+    statusMessage = 'Try again.',
+    options?: { countWrongMove?: boolean },
+  ): SubmitMoveResult => {
+    if (options?.countWrongMove && activeAttemptRef.current) {
+      activeAttemptRef.current.wrongMoveCount += 1;
+    }
+
     setError(message);
     setStatus(statusMessage);
     return { success: false, error: message };
@@ -81,6 +125,9 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     if (!preparedPuzzle) {
       setCurrentPuzzle(null);
       setSessionConfig(null);
+      currentPuzzleRef.current = null;
+      sessionConfigRef.current = null;
+      resetTrackedAttempt();
       setError('Puzzle data error');
       setStatus('Loading puzzle...');
       return false;
@@ -95,6 +142,9 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     if (!openingMove) {
       setCurrentPuzzle(null);
       setSessionConfig(null);
+      currentPuzzleRef.current = null;
+      sessionConfigRef.current = null;
+      resetTrackedAttempt();
       setError('Puzzle data error');
       setStatus('Loading puzzle...');
       return false;
@@ -104,6 +154,9 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     solutionIndexRef.current = preparedPuzzle.playerSolutionStartIndex;
     currentPuzzleIdRef.current = puzzle.id;
     sessionPoolRef.current = nextSessionPool;
+    currentPuzzleRef.current = puzzle;
+    sessionConfigRef.current = nextSessionConfig;
+    resetTrackedAttempt();
 
     setCurrentPuzzle(puzzle);
     setSessionConfig(nextSessionConfig);
@@ -114,7 +167,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     setStatus(getStatusWithLastComputerMove(preparedPuzzle.openingSan, chess));
     updateStateFromChess(chess);
     return true;
-  }, [updateStateFromChess]);
+  }, [resetTrackedAttempt, updateStateFromChess]);
 
   useEffect(() => {
     if (!puzzles.length) {
@@ -174,6 +227,8 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
   }, [config, previewPool, previewPuzzle, resetSessionState]);
 
   const exitToConfig = useCallback(() => {
+    finalizeTrackedAttempt('failed');
+
     if (currentPuzzle) {
       previewPuzzleIdRef.current = currentPuzzle.id;
       setPreviewPuzzle(currentPuzzle);
@@ -184,8 +239,11 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     setSessionConfig(null);
     sessionPoolRef.current = [];
     chessRef.current = null;
+    currentPuzzleRef.current = null;
+    sessionConfigRef.current = null;
     currentPuzzleIdRef.current = null;
     solutionIndexRef.current = 0;
+    resetTrackedAttempt();
     setFen('');
     setMoves([]);
     setError('');
@@ -193,7 +251,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     setIsSolved(false);
     setPlayerMoveCount(0);
     setHintStage(0);
-  }, [currentPuzzle]);
+  }, [currentPuzzle, finalizeTrackedAttempt, resetTrackedAttempt]);
 
   const finishIfSolved = useCallback((nextSolutionIndex: number) => {
     const chess = chessRef.current;
@@ -206,11 +264,12 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       setStatus('Solved');
       setError('');
       solutionIndexRef.current = nextSolutionIndex;
+      finalizeTrackedAttempt('solved');
       return true;
     }
 
     return false;
-  }, [currentPuzzle]);
+  }, [currentPuzzle, finalizeTrackedAttempt]);
 
   const commitCorrectMove = useCallback((uciMove: string): SubmitMoveResult => {
     const chess = chessRef.current;
@@ -223,7 +282,9 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     const currentIndex = solutionIndexRef.current;
     const expectedMove = puzzle.moves[currentIndex];
     if (uciMove !== expectedMove) {
-      return failMove('That move is legal, but it is not the puzzle solution.');
+      return failMove('That move is legal, but it is not the puzzle solution.', 'Try again.', {
+        countWrongMove: true,
+      });
     }
 
     const playerMove = chess.move({
@@ -233,9 +294,18 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     });
 
     if (!playerMove) {
-      return failMove('Invalid move');
+      return failMove('Invalid move', 'Try again.', { countWrongMove: true });
     }
 
+    if (!activeAttemptRef.current) {
+      activeAttemptRef.current = {
+        startedAt: new Date().toISOString(),
+        playerMoveCount: 0,
+        wrongMoveCount: 0,
+      };
+    }
+
+    activeAttemptRef.current.playerMoveCount += 1;
     let nextSolutionIndex = currentIndex + 1;
     solutionIndexRef.current = nextSolutionIndex;
     setPlayerMoveCount((count) => count + 1);
@@ -284,12 +354,12 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       const attempt = new Chess(chess.fen());
       const move = attempt.move(normalizeSan(san));
       if (!move) {
-        return failMove('Illegal move');
+        return failMove('Illegal move', 'Try again.', { countWrongMove: true });
       }
 
       return commitCorrectMove(toUci(move.from, move.to, move.promotion));
     } catch {
-      return failMove('Invalid move format');
+      return failMove('Invalid move format', 'Try again.', { countWrongMove: true });
     }
   }, [commitCorrectMove, currentPuzzle, failMove, isSolved]);
 
@@ -306,7 +376,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     const legalFromMoves = chess.moves({ square: from, verbose: true });
     const matchingMoves = legalFromMoves.filter((move) => move.to === to);
     if (!matchingMoves.length) {
-      return failMove('Invalid move');
+      return failMove('Invalid move', 'Try again.', { countWrongMove: true });
     }
 
     const selectedMove = matchingMoves.find((move) => move.promotion === 'q') ?? matchingMoves[0];
@@ -318,8 +388,9 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       return;
     }
 
+    finalizeTrackedAttempt('failed');
     resetSessionState(currentPuzzle, sessionConfig, sessionPoolRef.current);
-  }, [currentPuzzle, resetSessionState, sessionConfig]);
+  }, [currentPuzzle, finalizeTrackedAttempt, resetSessionState, sessionConfig]);
 
   const loadNextPuzzle = useCallback(() => {
     if (!sessionConfig || !sessionPoolRef.current.length) {
@@ -331,8 +402,9 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       return;
     }
 
+    finalizeTrackedAttempt('failed');
     resetSessionState(nextPuzzle, sessionConfig, sessionPoolRef.current);
-  }, [resetSessionState, sessionConfig]);
+  }, [finalizeTrackedAttempt, resetSessionState, sessionConfig]);
 
   const shouldShowBoard = useCallback(() => {
     if (phase !== 'session' || !sessionConfig) {
@@ -364,6 +436,10 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       : null;
   const hintSourceSquare = hintStage >= 1 && expectedPlayerMove ? expectedPlayerMove.slice(0, 2) : null;
   const hintTargetSquare = hintStage >= 2 && expectedPlayerMove ? expectedPlayerMove.slice(2, 4) : null;
+
+  useEffect(() => () => {
+    finalizeTrackedAttempt('failed');
+  }, [finalizeTrackedAttempt]);
 
   return {
     phase,
