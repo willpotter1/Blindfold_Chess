@@ -5,8 +5,14 @@ Use outline width 2 for UI outlines and borders that should match the current in
 
 Brown: #8B4513
 Lighter Brown: #d9b99b
+Warm Tint: #fff8f1
+Warm Highlight Tint: #fff2e8
 White: #FFFFFF
 Black: #000000
+
+Use the warm tint colors for the soft tinted boxes that appear on some pages.
+Use Warm Tint for standard inset boxes and stat panels.
+Use Warm Highlight Tint for stronger callouts such as score/result boxes.
 
 Site UI Images
 

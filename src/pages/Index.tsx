@@ -781,19 +781,19 @@ const Index = () => {
           </div>
         ) : (
           <div className="flex min-h-[calc(100vh-8rem)] flex-col">
-            <div className="pb-6 pt-2 text-center">
-              <h1 className="text-5xl font-extrabold tracking-tight text-[#8B4513] md:text-7xl">
+            <div className="w-full rounded-[28px] border-2 border-[#d9b99b] bg-[#fff8f1] px-6 py-5 text-center shadow-sm md:-mt-4 md:px-10 lg:px-16">
+              <h1 className="text-3xl font-extrabold tracking-tight text-[#8B4513] md:text-5xl">
                 Learn Blindchess
               </h1>
-              <p className="mt-2 text-center text-xs text-[#d9b99b] md:text-sm">
+              <p className="mt-3 text-center text-xs text-[#8B4513]/70 md:text-sm">
                 “Calculation is visualization.” - Gary Kasparov
               </p>
             </div>
-            <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-8 lg:grid-cols-2">
+            <div className="mx-auto mt-8 grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-8 lg:grid-cols-2">
               <div className="flex justify-center">
                 <LandingOperaReplay />
               </div>
-              <div className="mx-auto w-full max-w-lg">
+              <div className="mx-auto w-full max-w-lg lg:justify-self-end lg:-translate-y-4 lg:translate-x-4">
                 <GameConfigPanel
                   mode={selectedGameMode}
                   onModeChange={setSelectedGameMode}
