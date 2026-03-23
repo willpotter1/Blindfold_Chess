@@ -1,4 +1,5 @@
 import { buildSavedGameConfig, type GameState } from "@/lib/gameSession";
+import { trackAnalyticsEvent } from "@/lib/firebaseAnalytics";
 import { supabase } from "@/lib/supabase";
 
 type SaveResult =
@@ -46,6 +47,14 @@ export const saveCompletedGame = async (gameState: GameState, pgn: string): Prom
     }
 
     console.info("Saved completed game:", data.id);
+    void trackAnalyticsEvent("completed_game_saved", {
+      mode: gameState.mode,
+      player_color: payload.player_color ?? undefined,
+      engine_elo: payload.engine_elo ?? undefined,
+      reveal_every: payload.reveal_every,
+      allow_cheats: payload.allow_cheats,
+      hide_move_history: payload.hide_move_history,
+    });
     return { ok: true, id: data.id };
   } catch (error) {
     console.error("Failed to save completed game:", error);

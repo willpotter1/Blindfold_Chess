@@ -1,4 +1,5 @@
 import type { PuzzleConfig, PuzzleRecord } from '@/lib/puzzles';
+import { trackAnalyticsEvent } from '@/lib/firebaseAnalytics';
 import { supabase } from '@/lib/supabase';
 import {
   getVisionAccuracy,
@@ -111,6 +112,18 @@ export const savePuzzleAttempt = async (input: SavePuzzleAttemptInput): Promise<
     }
 
     console.info('Saved puzzle attempt:', data.id);
+    void trackAnalyticsEvent('puzzle_attempt_saved', {
+      result: input.result,
+      puzzle_rating: input.puzzle.rating,
+      min_rating: input.config.minRating,
+      max_rating: input.config.maxRating,
+      reveal_every: input.config.revealEvery,
+      allow_cheats: input.config.allowCheats,
+      hide_move_history: input.config.hideMoveHistory,
+      selected_theme_count: input.config.selectedThemes.length,
+      player_move_count: input.playerMoveCount,
+      wrong_move_count: input.wrongMoveCount,
+    });
     return { ok: true, id: data.id };
   } catch (error) {
     console.error('Failed to save puzzle attempt:', error);
@@ -139,6 +152,17 @@ export const saveDrillRound = async (input: SaveDrillRoundInput): Promise<SaveRe
     }
 
     console.info('Saved drill round:', data.id);
+    void trackAnalyticsEvent('drill_round_saved', {
+      mode: input.config.mode,
+      perspective: input.config.perspective,
+      show_coordinates: input.config.showCoordinates,
+      round_length_seconds: input.config.roundLengthSeconds,
+      correct_count: input.stats.correctCount,
+      wrong_count: input.stats.wrongCount,
+      total_attempts: input.stats.totalAttempts,
+      score: getVisionScore(input.stats),
+      accuracy: getVisionAccuracy(input.stats),
+    });
     return { ok: true, id: data.id };
   } catch (error) {
     console.error('Failed to save drill round:', error);

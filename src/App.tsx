@@ -2,7 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -15,6 +16,7 @@ import AccountPassword from "./pages/AccountPassword";
 import Puzzles from "./pages/Puzzles";
 import Drills from "./pages/Drills";
 import NotFound from "./pages/NotFound";
+import { trackPageView } from "@/lib/firebaseAnalytics";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,21 @@ const rawBase = import.meta.env.BASE_URL;
 const basename =
   rawBase === "./" ? "" : rawBase.replace(/\/$/, "");
 
+const FirebaseAnalyticsTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const pagePath = `${location.pathname}${location.search}${location.hash}`;
+    const frame = window.requestAnimationFrame(() => {
+      void trackPageView(pagePath, document.title);
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [location.hash, location.pathname, location.search]);
+
+  return null;
+};
+
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
@@ -35,6 +52,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter basename={basename}>
+          <FirebaseAnalyticsTracker />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/login" element={<Login />} />
