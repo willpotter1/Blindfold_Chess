@@ -1,26 +1,17 @@
 import { useEffect, useState } from 'react';
 import type { User } from '@supabase/supabase-js';
-import type { AccountProfile } from '@/lib/account';
+import {
+  createEmptyAccountProfile,
+  type AccountProfile,
+  type AccountRecentGame,
+} from '@/lib/account';
 import { supabase } from '@/lib/supabase';
+
+const RECENT_GAMES_LIMIT = 20;
 
 export const useAccountProfile = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [profile, setProfile] = useState<AccountProfile>({
-    username: null,
-    email: null,
-    uid: null,
-    gamesCompleted: 0,
-    computerGamesCompleted: 0,
-    passNPlayGamesCompleted: 0,
-    puzzleAttempts: 0,
-    puzzlesSolved: 0,
-    puzzlesFailed: 0,
-    drillRoundsPlayed: 0,
-    coordinateDrillRoundsPlayed: 0,
-    moveDrillRoundsPlayed: 0,
-    bestDrillScore: 0,
-    bestDrillAccuracy: 0,
-  });
+  const [profile, setProfile] = useState<AccountProfile>(createEmptyAccountProfile);
 
   useEffect(() => {
     if (!supabase) {
@@ -34,22 +25,7 @@ export const useAccountProfile = () => {
       if (!isActive) return;
 
       if (!user) {
-        setProfile({
-          username: null,
-          email: null,
-          uid: null,
-          gamesCompleted: 0,
-          computerGamesCompleted: 0,
-          passNPlayGamesCompleted: 0,
-          puzzleAttempts: 0,
-          puzzlesSolved: 0,
-          puzzlesFailed: 0,
-          drillRoundsPlayed: 0,
-          coordinateDrillRoundsPlayed: 0,
-          moveDrillRoundsPlayed: 0,
-          bestDrillScore: 0,
-          bestDrillAccuracy: 0,
-        });
+        setProfile(createEmptyAccountProfile());
         setIsLoading(false);
         return;
       }
@@ -66,6 +42,7 @@ export const useAccountProfile = () => {
       let moveDrillRoundsPlayed = 0;
       let bestDrillScore = 0;
       let bestDrillAccuracy = 0;
+      let recentGames: AccountRecentGame[] = [];
       try {
         const [
           profileResult,
@@ -80,6 +57,7 @@ export const useAccountProfile = () => {
           moveDrillRoundsPlayedResult,
           bestDrillScoreResult,
           bestDrillAccuracyResult,
+          recentGamesResult,
         ] = await Promise.all([
           supabase
             .from('profiles')
@@ -142,6 +120,12 @@ export const useAccountProfile = () => {
             .order('accuracy', { ascending: false })
             .limit(1)
             .maybeSingle(),
+          supabase
+            .from('games')
+            .select('id, pgn, mode, engine_elo, created_at')
+            .eq('user_id', user.id)
+            .order('created_at', { ascending: false })
+            .limit(RECENT_GAMES_LIMIT),
         ]);
 
         if (profileResult.error) {
@@ -192,6 +176,10 @@ export const useAccountProfile = () => {
           throw bestDrillAccuracyResult.error;
         }
 
+        if (recentGamesResult.error) {
+          throw recentGamesResult.error;
+        }
+
         username = profileResult.data?.username ?? null;
         gamesCompleted = totalGamesResult.count ?? 0;
         computerGamesCompleted = computerGamesResult.count ?? 0;
@@ -204,6 +192,13 @@ export const useAccountProfile = () => {
         moveDrillRoundsPlayed = moveDrillRoundsPlayedResult.count ?? 0;
         bestDrillScore = bestDrillScoreResult.data?.score ?? 0;
         bestDrillAccuracy = bestDrillAccuracyResult.data?.accuracy ?? 0;
+        recentGames = (recentGamesResult.data ?? []).map((game) => ({
+          id: game.id,
+          pgn: game.pgn,
+          mode: game.mode,
+          engineElo: game.engine_elo,
+          createdAt: game.created_at,
+        }));
       } catch (error) {
         console.error('Failed to load account profile:', error);
       }
@@ -224,6 +219,7 @@ export const useAccountProfile = () => {
         moveDrillRoundsPlayed,
         bestDrillScore,
         bestDrillAccuracy,
+        recentGames,
       });
       setIsLoading(false);
     };

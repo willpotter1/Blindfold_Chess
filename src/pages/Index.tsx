@@ -28,6 +28,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { AppSidebar } from '@/components/AppSidebar';
 import { useDesktopFitLayout } from '@/hooks/useDesktopFitLayout';
 import { useDesktopGameLayout } from '@/hooks/useDesktopGameLayout';
+import { exportPgnToChessCom, exportPgnToLichess } from '@/lib/pgnExport';
 import computerIcon from '../../Visual/robohead.png';
 import playerIcon from '../../Visual/BBpawn.png';
 import whitePlayerIcon from '../../Visual/Whitepawn.png';
@@ -37,9 +38,6 @@ const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills against the computer or another player locally with limited board visibility.';
 const SEO_CANONICAL_URL = 'https://blindchess.org/';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
-const CHESS_COM_ANALYSIS_URL = 'https://www.chess.com/analysis';
-const LICHESS_PASTE_URL = 'https://lichess.org/paste';
-const MAX_CHESS_COM_URL_LENGTH = 7000;
 const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50';
 const DESKTOP_BOARD_SIZE = 760;
 const DESKTOP_RIGHT_COLUMN_WIDTH = 441;
@@ -363,40 +361,7 @@ const Index = () => {
   };
 
   const handleAnalyzeOnChessCom = async () => {
-    const pgn = getValidatedPgn();
-
-    if (!pgn) {
-      return;
-    }
-
-    const encoded = encodeURIComponent(pgn);
-    const url = `${CHESS_COM_ANALYSIS_URL}?pgn=${encoded}`;
-
-    if (url.length <= MAX_CHESS_COM_URL_LENGTH) {
-      window.open(url, '_blank', 'noopener,noreferrer');
-      return;
-    }
-
-    try {
-      const copied = await copyTextToClipboard(pgn);
-
-      if (!copied) {
-        throw new Error('Clipboard copy failed');
-      }
-    } catch {
-      toast({
-        title: 'Export failed',
-        description: 'Could not copy PGN to clipboard automatically.',
-        variant: 'destructive',
-      });
-      return;
-    }
-
-    window.open(CHESS_COM_ANALYSIS_URL, '_blank', 'noopener,noreferrer');
-    toast({
-      title: 'PGN copied',
-      description: "PGN copied. On Chess.com click 'Load From FEN/PGN(s)' and paste, then Load.",
-    });
+    await exportPgnToChessCom(getPgn(), toast);
   };
 
   const handleCopyPgn = async () => {
@@ -427,32 +392,7 @@ const Index = () => {
   };
 
   const handleAnalyzeOnLichess = async () => {
-    const pgn = getValidatedPgn();
-
-    if (!pgn) {
-      return;
-    }
-
-    try {
-      const copied = await copyTextToClipboard(pgn);
-
-      if (!copied) {
-        throw new Error('Clipboard copy failed');
-      }
-    } catch {
-      toast({
-        title: 'Export failed',
-        description: 'Could not copy PGN to clipboard automatically.',
-        variant: 'destructive',
-      });
-      return;
-    }
-
-    window.open(LICHESS_PASTE_URL, '_blank', 'noopener,noreferrer');
-    toast({
-      title: 'PGN copied',
-      description: 'PGN copied. Paste it into Lichess and click Import.',
-    });
+    await exportPgnToLichess(getPgn(), toast);
   };
 
   const handleDownloadPgn = () => {
