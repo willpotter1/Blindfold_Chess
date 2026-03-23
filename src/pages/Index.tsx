@@ -3,6 +3,7 @@ import { Chess } from 'chess.js';
 import { useGameState } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
 import { BlindfoldBoard } from '@/components/BlindfoldBoard';
+import { LandingOperaReplay } from '@/components/LandingOperaReplay';
 import { MoveInput } from '@/components/MoveInput';
 import { MoveList } from '@/components/MoveList';
 import { StatusBar } from '@/components/StatusBar';
@@ -31,7 +32,6 @@ import computerIcon from '../../Visual/robohead.png';
 import playerIcon from '../../Visual/BBpawn.png';
 import whitePlayerIcon from '../../Visual/Whitepawn.png';
 import blackPlayerIcon from '../../Visual/Blackpawn.png';
-import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
 
 const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills against the computer or another player locally with limited board visibility.';
@@ -791,11 +791,7 @@ const Index = () => {
             </div>
             <div className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-8 lg:grid-cols-2">
               <div className="flex justify-center">
-                <img
-                  src={pawnsPlayingImage}
-                  alt="Pawns playing chess"
-                  className="w-full max-w-3xl rounded-lg object-contain"
-                />
+                <LandingOperaReplay />
               </div>
               <div className="mx-auto w-full max-w-lg">
                 <GameConfigPanel
