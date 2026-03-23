@@ -1,5 +1,4 @@
 import { Chess } from 'chess.js';
-import { visionMovePositions } from '@/data/visionMovePositions';
 
 export type VisionMode = 'coordinates' | 'moves';
 export type BoardPerspective = 'white' | 'black';
@@ -337,8 +336,8 @@ const createCoordinatePrompts = () =>
     mode: 'coordinates',
   }));
 
-const createMovesPrompts = (turnColor: TurnColor) =>
-  visionMovePositions
+const createMovesPrompts = (movePositions: readonly VisionMovePosition[], turnColor: TurnColor) =>
+  movePositions
     .filter((position) => position.turnColor === turnColor)
     .map<VisionMovePrompt>((position) => ({
       ...position,
@@ -346,10 +345,13 @@ const createMovesPrompts = (turnColor: TurnColor) =>
       mode: 'moves',
     }));
 
-const getBasePrompts = (config: VisionRoundConfig) => (
+const getBasePrompts = (
+  config: VisionRoundConfig,
+  movePositions: readonly VisionMovePosition[],
+) => (
   config.mode === 'coordinates'
     ? createCoordinatePrompts()
-    : createMovesPrompts(config.perspective)
+    : createMovesPrompts(movePositions, config.perspective)
 );
 
 export const shufflePrompts = <T,>(prompts: readonly T[], random: () => number = Math.random) => {
@@ -365,10 +367,11 @@ export const shufflePrompts = <T,>(prompts: readonly T[], random: () => number =
 
 export const buildPromptDeck = (
   config: VisionRoundConfig,
+  movePositions: readonly VisionMovePosition[] = [],
   lastPromptId?: string | null,
   random: () => number = Math.random,
 ) => {
-  const deck = shufflePrompts(getBasePrompts(config), random);
+  const deck = shufflePrompts(getBasePrompts(config, movePositions), random);
 
   if (lastPromptId && deck.length > 1 && deck[0].id === lastPromptId) {
     const nextUniqueIndex = deck.findIndex((prompt) => prompt.id !== lastPromptId);

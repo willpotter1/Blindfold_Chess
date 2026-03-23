@@ -44,6 +44,9 @@ const Drills = () => {
     restartRound,
     returnToConfig,
     handleSquareClick,
+    configStatusMessage,
+    configStatusTone,
+    isStartDisabled,
   } = useVisionTrainerState();
   const showDesktopGameLayout = useDesktopGameLayout();
   const isPlaying = phase === 'playing';
@@ -98,6 +101,9 @@ const Drills = () => {
           config={config}
           panelPadding={panelPadding}
           sectionGap={sectionGap}
+          statusMessage={configStatusMessage}
+          statusTone={configStatusTone}
+          isStartDisabled={isStartDisabled}
           onConfigChange={updateConfig}
           onStart={startRound}
           className={className}

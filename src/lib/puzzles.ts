@@ -1,5 +1,4 @@
 import { Chess } from 'chess.js';
-import puzzleDataJson from '@/data/lichess_mate_1200_1800_dev.json?raw';
 
 export type PuzzleRecord = {
   id: string;
@@ -32,10 +31,6 @@ export type PreparedPuzzleRecord = {
   openingSan: string;
   playerSolutionStartIndex: number;
 };
-
-const parsedPuzzleData = JSON.parse(puzzleDataJson) as PuzzleRecord[];
-
-export const builtInPuzzles: PuzzleRecord[] = parsedPuzzleData;
 
 const preparedPuzzleCache = new Map<string, PreparedPuzzleRecord | null>();
 
@@ -133,11 +128,9 @@ export const curatedPuzzleThemeOptions: PuzzleThemeOption[] = Object.entries(CUR
   }),
 );
 
-const puzzleRatings = parsedPuzzleData.map((puzzle) => puzzle.rating);
-
 export const puzzleRatingBounds = {
-  min: Math.min(...puzzleRatings),
-  max: Math.max(...puzzleRatings),
+  min: 1200,
+  max: 1800,
 };
 
 export const defaultPuzzleConfig: PuzzleConfig = {
@@ -151,18 +144,4 @@ export const defaultPuzzleConfig: PuzzleConfig = {
 
 export const getPuzzleMateLabel = (themes: string[]): string | null => {
   return themes.find((theme) => /^mateIn\d+$/i.test(theme)) ?? null;
-};
-
-export const filterPuzzles = (puzzles: PuzzleRecord[], config: PuzzleConfig): PuzzleRecord[] => {
-  if (config.selectedThemes.length === 0) {
-    return [];
-  }
-
-  return puzzles.filter((puzzle) => {
-    if (puzzle.rating < config.minRating || puzzle.rating > config.maxRating) {
-      return false;
-    }
-
-    return config.selectedThemes.some((theme) => puzzle.themes.includes(theme));
-  });
 };

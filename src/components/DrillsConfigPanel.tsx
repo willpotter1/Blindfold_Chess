@@ -17,6 +17,9 @@ type DrillsConfigPanelProps = {
   config: VisionRoundConfig;
   panelPadding: number;
   sectionGap: number;
+  statusMessage?: string;
+  statusTone?: 'default' | 'error';
+  isStartDisabled?: boolean;
   onConfigChange: (config: VisionRoundConfig) => void;
   onStart: () => void;
   className?: string;
@@ -28,6 +31,9 @@ export const DrillsConfigPanel = ({
   config,
   panelPadding,
   sectionGap,
+  statusMessage,
+  statusTone = 'default',
+  isStartDisabled = false,
   onConfigChange,
   onStart,
   className,
@@ -168,7 +174,19 @@ export const DrillsConfigPanel = ({
             />
           </div>
 
-          <Button type="button" size="lg" className={primaryButtonClassName} onClick={onStart}>
+          {statusMessage && (
+            <p className={statusTone === 'error' ? 'text-sm text-destructive' : 'text-sm text-muted-foreground'}>
+              {statusMessage}
+            </p>
+          )}
+
+          <Button
+            type="button"
+            size="lg"
+            className={primaryButtonClassName}
+            onClick={onStart}
+            disabled={isStartDisabled}
+          >
             Start Round
           </Button>
         </div>

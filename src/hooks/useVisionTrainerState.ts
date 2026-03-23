@@ -1,4 +1,7 @@
+import { useQuery } from '@tanstack/react-query';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { hasSupabaseConfig } from '@/lib/supabase';
+import { fetchMoveDrillPositions } from '@/lib/trainingContent';
 import { saveDrillRound } from '@/lib/trainingResults';
 import { incrementUsageMetric } from '@/lib/usageMetrics';
 import {
@@ -7,9 +10,11 @@ import {
   emptyVisionRoundStats,
   resolveMovesPromptClick,
   type VisionPrompt,
+  type VisionMovePosition,
   type VisionRoundConfig,
   type VisionRoundStats,
 } from '@/lib/visionTrainer';
+import { getMoveDrillConfigStatus, shouldPrefetchMoveDrillPositions } from '@/lib/visionTrainerContent';
 
 type VisionRoundPhase = 'config' | 'playing' | 'results';
 type AttemptResult = 'correct' | 'wrong';
@@ -39,12 +44,30 @@ export const useVisionTrainerState = () => {
   const feedbackTimeoutRef = useRef<number | null>(null);
   const statsRef = useRef<VisionRoundStats>(emptyVisionRoundStats);
   const activeRoundConfigRef = useRef<VisionRoundConfig | null>(null);
+  const activeMovePositionsRef = useRef<VisionMovePosition[]>([]);
   const roundActiveRef = useRef(false);
   const hasSavedRoundRef = useRef(false);
   const usageMetricsRoundRef = useRef<{
     mode: VisionRoundConfig['mode'];
     hasTrackedFinished: boolean;
   } | null>(null);
+  const shouldFetchMovePositions = shouldPrefetchMoveDrillPositions(config.mode);
+  const movePositionsQuery = useQuery({
+    queryKey: ['drill-move-positions', config.perspective],
+    queryFn: () => fetchMoveDrillPositions(config.perspective),
+    enabled: shouldFetchMovePositions && hasSupabaseConfig,
+    staleTime: 5 * 60 * 1000,
+  });
+  const isMovePositionsLoading =
+    shouldFetchMovePositions &&
+    (movePositionsQuery.isPending || (!movePositionsQuery.data && movePositionsQuery.isFetching));
+  const moveDrillConfigStatus = getMoveDrillConfigStatus({
+    mode: config.mode,
+    hasSupabaseConfig,
+    isLoading: isMovePositionsLoading,
+    hasError: Boolean(movePositionsQuery.error),
+    movePositionsCount: movePositionsQuery.data?.length ?? 0,
+  });
 
   const clearTimerInterval = useCallback(() => {
     if (timerIntervalRef.current !== null) {
@@ -62,7 +85,7 @@ export const useVisionTrainerState = () => {
 
   const takeNextPrompt = useCallback((roundConfig: VisionRoundConfig) => {
     if (deckIndexRef.current >= deckRef.current.length) {
-      deckRef.current = buildPromptDeck(roundConfig, lastPromptIdRef.current);
+      deckRef.current = buildPromptDeck(roundConfig, activeMovePositionsRef.current, lastPromptIdRef.current);
       deckIndexRef.current = 0;
     }
 
@@ -117,10 +140,15 @@ export const useVisionTrainerState = () => {
   }, [phase]);
 
   const startRound = useCallback(() => {
+    if (moveDrillConfigStatus.isStartDisabled) {
+      return;
+    }
+
     clearTimerInterval();
     clearFeedbackTimeout();
 
-    deckRef.current = buildPromptDeck(config);
+    activeMovePositionsRef.current = config.mode === 'moves' ? (movePositionsQuery.data ?? []) : [];
+    deckRef.current = buildPromptDeck(config, activeMovePositionsRef.current);
     deckIndexRef.current = 0;
     lastPromptIdRef.current = null;
 
@@ -142,7 +170,7 @@ export const useVisionTrainerState = () => {
     setSelectedMoveSourceSquare(null);
     setTimeRemainingMs(config.roundLengthSeconds * 1000);
     void incrementUsageMetric('drills', config.mode, 'started');
-  }, [clearFeedbackTimeout, clearTimerInterval, config, takeNextPrompt]);
+  }, [clearFeedbackTimeout, clearTimerInterval, config, moveDrillConfigStatus.isStartDisabled, movePositionsQuery.data, takeNextPrompt]);
 
   const restartRound = useCallback(() => {
     startRound();
@@ -153,6 +181,7 @@ export const useVisionTrainerState = () => {
     clearFeedbackTimeout();
     deadlineRef.current = null;
     activeRoundConfigRef.current = null;
+    activeMovePositionsRef.current = [];
     statsRef.current = emptyVisionRoundStats;
     roundActiveRef.current = false;
     hasSavedRoundRef.current = false;
@@ -298,5 +327,8 @@ export const useVisionTrainerState = () => {
     restartRound,
     returnToConfig,
     handleSquareClick,
+    configStatusMessage: moveDrillConfigStatus.message,
+    configStatusTone: moveDrillConfigStatus.tone,
+    isStartDisabled: moveDrillConfigStatus.isStartDisabled,
   };
 };

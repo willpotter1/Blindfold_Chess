@@ -12,7 +12,10 @@ type PuzzleConfigPanelProps = {
   config: PuzzleConfig;
   themeOptions: PuzzleThemeOption[];
   matchingPuzzleCount: number;
+  statusMessage?: string;
+  statusTone?: 'default' | 'error';
   errorMessage?: string;
+  isStartDisabled?: boolean;
   onConfigChange: (config: PuzzleConfig) => void;
   onStart: () => void;
   className?: string;
@@ -28,7 +31,10 @@ export const PuzzleConfigPanel = ({
   config,
   themeOptions,
   matchingPuzzleCount,
+  statusMessage,
+  statusTone = 'default',
   errorMessage,
+  isStartDisabled = false,
   onConfigChange,
   onStart,
   className,
@@ -99,9 +105,11 @@ export const PuzzleConfigPanel = ({
     ? 'Rating range and reveal frequency must be whole numbers.'
     : errorMessage
       ? errorMessage
+      : statusMessage
+        ? statusMessage
       : `${matchingPuzzleCount.toLocaleString()} puzzle${matchingPuzzleCount === 1 ? '' : 's'} match the current filters.`;
 
-  const helperTextClassName = hasInvalidNumbers || errorMessage
+  const helperTextClassName = hasInvalidNumbers || errorMessage || statusTone === 'error'
     ? 'text-sm text-destructive'
     : 'text-sm text-muted-foreground';
 
@@ -263,7 +271,7 @@ export const PuzzleConfigPanel = ({
             onClick={onStart}
             className="w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
             size="lg"
-            disabled={hasInvalidNumbers || Boolean(errorMessage)}
+            disabled={hasInvalidNumbers || isStartDisabled}
           >
             Start Puzzle
           </Button>

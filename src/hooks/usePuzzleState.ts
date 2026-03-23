@@ -1,13 +1,29 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
 import { normalizeSan } from '@/lib/chess/normalizeSan';
 import {
+  createPuzzleSessionQueue,
+  mergePuzzleQueueBatch,
+  resetSeenPuzzleIds,
+  shouldResetSeenPuzzleIds,
+  takeNextQueuedPuzzle,
+  type PuzzleQueueState,
+} from '@/lib/puzzleQueue';
+import {
   defaultPuzzleConfig,
-  filterPuzzles,
   preparePuzzle,
   type PuzzleConfig,
   type PuzzleRecord,
 } from '@/lib/puzzles';
+import { hasSupabaseConfig } from '@/lib/supabase';
+import {
+  PUZZLE_BATCH_SIZE,
+  PUZZLE_QUEUE_REFILL_THRESHOLD,
+  fetchPuzzleBatch,
+  fetchPuzzleCount,
+  normalizePuzzleConfigForQuery,
+} from '@/lib/trainingContent';
 import { savePuzzleAttempt, type PuzzleAttemptResult } from '@/lib/trainingResults';
 import { incrementUsageMetric } from '@/lib/usageMetrics';
 
@@ -24,24 +40,12 @@ type PuzzleAttemptTracker = {
   wrongMoveCount: number;
 };
 
-const toUci = (from: string, to: string, promotion?: string) => `${from}${to}${promotion ?? ''}`;
-
-const pickRandomPuzzle = (puzzles: PuzzleRecord[], excludedPuzzleId?: string | null): PuzzleRecord | null => {
-  if (!puzzles.length) {
-    return null;
-  }
-
-  if (puzzles.length === 1) {
-    return puzzles[0];
-  }
-
-  let nextPuzzle = puzzles[Math.floor(Math.random() * puzzles.length)];
-  while (nextPuzzle.id === excludedPuzzleId) {
-    nextPuzzle = puzzles[Math.floor(Math.random() * puzzles.length)];
-  }
-
-  return nextPuzzle;
+const EMPTY_PUZZLE_QUEUE_STATE: PuzzleQueueState = {
+  queuedPuzzles: [],
+  seenPuzzleIds: [],
 };
+
+const toUci = (from: string, to: string, promotion?: string) => `${from}${to}${promotion ?? ''}`;
 
 const getStatusWithLastComputerMove = (lastComputerMoveSan: string, chess: Chess) => {
   if (chess.inCheck()) {
@@ -51,12 +55,47 @@ const getStatusWithLastComputerMove = (lastComputerMoveSan: string, chess: Chess
   return `Last computer move: ${lastComputerMoveSan}`;
 };
 
-export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
+const getValidPuzzleBatch = (puzzles: readonly PuzzleRecord[]) => {
+  const seenPuzzleIds = new Set<string>();
+
+  return puzzles.filter((puzzle) => {
+    if (seenPuzzleIds.has(puzzle.id) || !preparePuzzle(puzzle)) {
+      return false;
+    }
+
+    seenPuzzleIds.add(puzzle.id);
+    return true;
+  });
+};
+
+const useDebouncedValue = <T,>(value: T, delayMs: number) => {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+  const [isPending, setIsPending] = useState(false);
+
+  useEffect(() => {
+    setIsPending(true);
+    const timeoutId = window.setTimeout(() => {
+      setDebouncedValue(value);
+      setIsPending(false);
+    }, delayMs);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+    };
+  }, [delayMs, value]);
+
+  useEffect(() => {
+    if (Object.is(debouncedValue, value)) {
+      setIsPending(false);
+    }
+  }, [debouncedValue, value]);
+
+  return { debouncedValue, isPending };
+};
+
+export const usePuzzleState = () => {
   const [phase, setPhase] = useState<PuzzlePhase>('config');
   const [config, setConfig] = useState<PuzzleConfig>(defaultPuzzleConfig);
-  const [previewPool, setPreviewPool] = useState<PuzzleRecord[]>([]);
-  const [previewPuzzle, setPreviewPuzzle] = useState<PuzzleRecord | null>(null);
-  const [configError, setConfigError] = useState('');
   const [currentPuzzle, setCurrentPuzzle] = useState<PuzzleRecord | null>(null);
   const [sessionConfig, setSessionConfig] = useState<PuzzleConfig | null>(null);
   const [fen, setFen] = useState('');
@@ -66,16 +105,61 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
   const [isSolved, setIsSolved] = useState(false);
   const [playerMoveCount, setPlayerMoveCount] = useState(0);
   const [hintStage, setHintStage] = useState<HintStage>(0);
+
   const chessRef = useRef<Chess | null>(null);
   const solutionIndexRef = useRef(0);
-  const previewPuzzleIdRef = useRef<string | null>(null);
   const currentPuzzleIdRef = useRef<string | null>(null);
-  const sessionPoolRef = useRef<PuzzleRecord[]>([]);
   const currentPuzzleRef = useRef<PuzzleRecord | null>(null);
   const sessionConfigRef = useRef<PuzzleConfig | null>(null);
   const activeAttemptRef = useRef<PuzzleAttemptTracker | null>(null);
   const hasSavedAttemptRef = useRef(false);
   const hasActiveUsageMetricsSessionRef = useRef(false);
+  const sessionQueueRef = useRef<PuzzleQueueState>(EMPTY_PUZZLE_QUEUE_STATE);
+  const sessionMatchingCountRef = useRef(0);
+  const sessionQueueGenerationRef = useRef(0);
+  const refillingQueueGenerationRef = useRef<number | null>(null);
+
+  const normalizedConfig = useMemo(() => normalizePuzzleConfigForQuery(config), [config]);
+  const { debouncedValue: debouncedConfig, isPending: isConfigDebouncing } = useDebouncedValue(normalizedConfig, 250);
+  const shouldQueryPuzzleCatalog = hasSupabaseConfig && debouncedConfig.selectedThemes.length > 0;
+  const puzzleCountQuery = useQuery({
+    queryKey: ['puzzle-count', debouncedConfig],
+    queryFn: () => fetchPuzzleCount(debouncedConfig),
+    enabled: shouldQueryPuzzleCatalog,
+    staleTime: 30 * 1000,
+  });
+  const puzzlePreviewBatchQuery = useQuery({
+    queryKey: ['puzzle-preview-batch', debouncedConfig],
+    queryFn: () => fetchPuzzleBatch(debouncedConfig, [], PUZZLE_BATCH_SIZE),
+    enabled: shouldQueryPuzzleCatalog,
+    staleTime: 30 * 1000,
+  });
+  const matchingPuzzleCount = debouncedConfig.selectedThemes.length === 0 ? 0 : (puzzleCountQuery.data ?? 0);
+  const previewBatch = useMemo(
+    () => getValidPuzzleBatch(puzzlePreviewBatchQuery.data ?? []),
+    [puzzlePreviewBatchQuery.data],
+  );
+  const isCatalogQueryLoading = shouldQueryPuzzleCatalog && (
+    puzzleCountQuery.isPending ||
+    puzzlePreviewBatchQuery.isPending ||
+    (puzzleCountQuery.data === undefined && puzzleCountQuery.isFetching) ||
+    (puzzlePreviewBatchQuery.data === undefined && puzzlePreviewBatchQuery.isFetching)
+  );
+  const isConfigLoading = hasSupabaseConfig ? (isConfigDebouncing || isCatalogQueryLoading) : false;
+  const previewPuzzle = isConfigLoading ? null : (previewBatch[0] ?? null);
+
+  let configError = '';
+  if (!hasSupabaseConfig) {
+    configError = 'Puzzle content requires Supabase configuration.';
+  } else if (config.selectedThemes.length === 0) {
+    configError = 'No puzzles match the current filters.';
+  } else if (puzzleCountQuery.error || puzzlePreviewBatchQuery.error) {
+    configError = 'Puzzles could not be loaded.';
+  } else if (!isConfigLoading && matchingPuzzleCount === 0) {
+    configError = 'No puzzles match the current filters.';
+  } else if (!isConfigLoading && matchingPuzzleCount > 0 && previewBatch.length === 0) {
+    configError = 'Matching puzzles could not be loaded due to puzzle data errors.';
+  }
 
   const updateStateFromChess = useCallback((chess: Chess) => {
     setFen(chess.fen());
@@ -136,7 +220,64 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     return { success: false, error: message };
   }, []);
 
-  const resetSessionState = useCallback((puzzle: PuzzleRecord, nextSessionConfig: PuzzleConfig, nextSessionPool: PuzzleRecord[]) => {
+  const refillSessionQueue = useCallback(async () => {
+    const currentSessionConfig = sessionConfigRef.current;
+    const currentGeneration = sessionQueueGenerationRef.current;
+
+    if (
+      !currentSessionConfig ||
+      !hasSupabaseConfig ||
+      refillingQueueGenerationRef.current === currentGeneration
+    ) {
+      return;
+    }
+
+    refillingQueueGenerationRef.current = currentGeneration;
+
+    try {
+      const loadBatch = async (excludeIds: string[]) => (
+        getValidPuzzleBatch(await fetchPuzzleBatch(currentSessionConfig, excludeIds, PUZZLE_BATCH_SIZE))
+      );
+
+      let nextBatch = await loadBatch(sessionQueueRef.current.seenPuzzleIds);
+      if (sessionQueueGenerationRef.current !== currentGeneration) {
+        return;
+      }
+
+      if (
+        nextBatch.length === 0 &&
+        shouldResetSeenPuzzleIds(sessionMatchingCountRef.current, sessionQueueRef.current.seenPuzzleIds)
+      ) {
+        sessionQueueRef.current = {
+          ...sessionQueueRef.current,
+          seenPuzzleIds: resetSeenPuzzleIds(currentPuzzleIdRef.current),
+        };
+        nextBatch = await loadBatch(sessionQueueRef.current.seenPuzzleIds);
+
+        if (sessionQueueGenerationRef.current !== currentGeneration) {
+          return;
+        }
+      }
+
+      if (nextBatch.length === 0) {
+        return;
+      }
+
+      sessionQueueRef.current = mergePuzzleQueueBatch(
+        sessionQueueRef.current,
+        nextBatch,
+        currentPuzzleIdRef.current,
+      );
+    } catch (queueError) {
+      console.error('Failed to refill puzzle queue:', queueError);
+    } finally {
+      if (refillingQueueGenerationRef.current === currentGeneration) {
+        refillingQueueGenerationRef.current = null;
+      }
+    }
+  }, []);
+
+  const resetSessionState = useCallback((puzzle: PuzzleRecord, nextSessionConfig: PuzzleConfig) => {
     const preparedPuzzle = preparePuzzle(puzzle);
     if (!preparedPuzzle) {
       setCurrentPuzzle(null);
@@ -171,7 +312,6 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     chessRef.current = chess;
     solutionIndexRef.current = preparedPuzzle.playerSolutionStartIndex;
     currentPuzzleIdRef.current = puzzle.id;
-    sessionPoolRef.current = nextSessionPool;
     currentPuzzleRef.current = puzzle;
     sessionConfigRef.current = nextSessionConfig;
     resetTrackedAttempt();
@@ -188,75 +328,41 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     return true;
   }, [resetTrackedAttempt, startTrackedSession, updateStateFromChess]);
 
-  useEffect(() => {
-    if (!puzzles.length) {
-      setPreviewPool([]);
-      setPreviewPuzzle(null);
-      setConfigError('No puzzles are available.');
-      previewPuzzleIdRef.current = null;
-      return;
-    }
-
-    const matchingPuzzles = filterPuzzles(puzzles, config);
-    const nextPreviewPool = matchingPuzzles.filter((puzzle) => preparePuzzle(puzzle));
-    setPreviewPool(nextPreviewPool);
-
-    if (!matchingPuzzles.length) {
-      setPreviewPuzzle(null);
-      setConfigError('No puzzles match the current filters.');
-      previewPuzzleIdRef.current = null;
-      return;
-    }
-
-    if (!nextPreviewPool.length) {
-      setPreviewPuzzle(null);
-      setConfigError('Matching puzzles could not be loaded due to puzzle data errors.');
-      previewPuzzleIdRef.current = null;
-      return;
-    }
-
-    setConfigError('');
-    const persistedPreview =
-      previewPuzzleIdRef.current
-        ? nextPreviewPool.find((puzzle) => puzzle.id === previewPuzzleIdRef.current) ?? null
-        : null;
-    const nextPreviewPuzzle = persistedPreview ?? pickRandomPuzzle(nextPreviewPool, previewPuzzleIdRef.current);
-    previewPuzzleIdRef.current = nextPreviewPuzzle?.id ?? null;
-    setPreviewPuzzle(nextPreviewPuzzle);
-  }, [config, puzzles]);
-
   const updateConfig = useCallback((nextConfig: PuzzleConfig) => {
     setConfig(nextConfig);
   }, []);
 
   const startSession = useCallback(() => {
-    if (!previewPuzzle || !previewPool.length) {
+    if (isConfigLoading || !previewPuzzle || previewBatch.length === 0 || Boolean(configError)) {
       return false;
     }
 
-    const didReset = resetSessionState(previewPuzzle, config, previewPool);
+    sessionQueueGenerationRef.current += 1;
+    refillingQueueGenerationRef.current = null;
+    sessionQueueRef.current = createPuzzleSessionQueue(previewBatch, previewPuzzle.id);
+    sessionMatchingCountRef.current = matchingPuzzleCount;
+
+    const didReset = resetSessionState(previewPuzzle, config);
     if (!didReset) {
-      setConfigError('Selected puzzle could not be loaded due to puzzle data errors.');
       setPhase('config');
+      sessionQueueRef.current = EMPTY_PUZZLE_QUEUE_STATE;
+      sessionMatchingCountRef.current = 0;
       return false;
     }
 
     setPhase('session');
     return true;
-  }, [config, previewPool, previewPuzzle, resetSessionState]);
+  }, [config, configError, isConfigLoading, matchingPuzzleCount, previewBatch, previewPuzzle, resetSessionState]);
 
   const exitToConfig = useCallback(() => {
     finalizeTrackedAttempt('failed');
-
-    if (currentPuzzle) {
-      previewPuzzleIdRef.current = currentPuzzle.id;
-      setPreviewPuzzle(currentPuzzle);
-    }
-
+    sessionQueueGenerationRef.current += 1;
+    refillingQueueGenerationRef.current = null;
+    sessionQueueRef.current = EMPTY_PUZZLE_QUEUE_STATE;
+    sessionMatchingCountRef.current = 0;
     setPhase('config');
     setCurrentPuzzle(null);
     setSessionConfig(null);
-    sessionPoolRef.current = [];
     chessRef.current = null;
     currentPuzzleRef.current = null;
     sessionConfigRef.current = null;
@@ -271,7 +377,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     setIsSolved(false);
     setPlayerMoveCount(0);
     setHintStage(0);
-  }, [currentPuzzle, finalizeTrackedAttempt, resetTrackedAttempt]);
+  }, [finalizeTrackedAttempt, resetTrackedAttempt]);
 
   const finishIfSolved = useCallback((nextSolutionIndex: number) => {
     const chess = chessRef.current;
@@ -404,27 +510,54 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
   }, [commitCorrectMove, currentPuzzle, failMove, isSolved]);
 
   const retryPuzzle = useCallback(() => {
-    if (!currentPuzzle || !sessionConfig || !sessionPoolRef.current.length) {
+    if (!currentPuzzle || !sessionConfig) {
       return;
     }
 
     finalizeTrackedAttempt('failed');
-    resetSessionState(currentPuzzle, sessionConfig, sessionPoolRef.current);
+    resetSessionState(currentPuzzle, sessionConfig);
   }, [currentPuzzle, finalizeTrackedAttempt, resetSessionState, sessionConfig]);
 
+  const getNextSessionPuzzle = useCallback(async () => {
+    let queuedPuzzleResult = takeNextQueuedPuzzle(sessionQueueRef.current);
+
+    if (!queuedPuzzleResult.nextPuzzle) {
+      await refillSessionQueue();
+      queuedPuzzleResult = takeNextQueuedPuzzle(sessionQueueRef.current);
+    }
+
+    if (!queuedPuzzleResult.nextPuzzle) {
+      return null;
+    }
+
+    sessionQueueRef.current = queuedPuzzleResult.queueState;
+
+    if (queuedPuzzleResult.queueState.queuedPuzzles.length < PUZZLE_QUEUE_REFILL_THRESHOLD) {
+      void refillSessionQueue();
+    }
+
+    return queuedPuzzleResult.nextPuzzle;
+  }, [refillSessionQueue]);
+
   const loadNextPuzzle = useCallback(() => {
-    if (!sessionConfig || !sessionPoolRef.current.length) {
-      return;
-    }
+    const advanceToNextPuzzle = async () => {
+      if (!sessionConfig) {
+        return;
+      }
 
-    const nextPuzzle = pickRandomPuzzle(sessionPoolRef.current, currentPuzzleIdRef.current);
-    if (!nextPuzzle) {
-      return;
-    }
+      const nextPuzzle = await getNextSessionPuzzle();
+      if (!nextPuzzle) {
+        setError('Could not load next puzzle.');
+        setStatus('No more puzzles are currently available.');
+        return;
+      }
 
-    finalizeTrackedAttempt('failed');
-    resetSessionState(nextPuzzle, sessionConfig, sessionPoolRef.current);
-  }, [finalizeTrackedAttempt, resetSessionState, sessionConfig]);
+      finalizeTrackedAttempt('failed');
+      resetSessionState(nextPuzzle, sessionConfig);
+    };
+
+    void advanceToNextPuzzle();
+  }, [finalizeTrackedAttempt, getNextSessionPuzzle, resetSessionState, sessionConfig]);
 
   const shouldShowBoard = useCallback(() => {
     if (phase !== 'session' || !sessionConfig) {
@@ -457,6 +590,16 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
   const hintSourceSquare = hintStage >= 1 && expectedPlayerMove ? expectedPlayerMove.slice(0, 2) : null;
   const hintTargetSquare = hintStage >= 2 && expectedPlayerMove ? expectedPlayerMove.slice(2, 4) : null;
 
+  useEffect(() => {
+    if (phase !== 'session') {
+      return;
+    }
+
+    if (sessionQueueRef.current.queuedPuzzles.length < PUZZLE_QUEUE_REFILL_THRESHOLD) {
+      void refillSessionQueue();
+    }
+  }, [currentPuzzle?.id, phase, refillSessionQueue]);
+
   useEffect(() => () => {
     finalizeTrackedAttempt('failed');
   }, [finalizeTrackedAttempt]);
@@ -465,7 +608,8 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     phase,
     config,
     previewPuzzle,
-    previewPoolSize: previewPool.length,
+    previewPoolSize: isConfigLoading ? 0 : matchingPuzzleCount,
+    isConfigLoading,
     configError,
     currentPuzzle,
     sessionConfig,

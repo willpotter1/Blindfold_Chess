@@ -13,6 +13,7 @@
     "preview": "vite preview",
     "deploy:docs": "npm run build && node deploy-docs.js",
     "supabase:import:firebase-users": "node scripts/importFirebaseUsersToSupabase.mjs",
+    "supabase:import:training-content": "node --env-file=.env.local scripts/importTrainingContentToSupabase.mjs",
     "puzzles:build-data": "python3 scripts/convert_lichess_puzzles_to_json.py"
   },
   "dependencies": {

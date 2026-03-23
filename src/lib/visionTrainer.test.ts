@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { visionMovePositions } from '@/data/visionMovePositions';
+import type { VisionMovePosition } from './visionTrainer';
 import {
   buildPromptDeck,
   defaultVisionRoundConfig,
@@ -11,6 +11,41 @@ import {
   validateVisionMovePosition,
   visualPositionToSquare,
 } from './visionTrainer';
+
+const sampleMovePositions: VisionMovePosition[] = [
+  {
+    id: 'moves-white-001',
+    fen: '8/2N4B/8/2p5/8/2q5/4k1K1/8 w - - 0 1',
+    san: 'Nd5',
+    fromSquare: 'c7',
+    toSquare: 'd5',
+    turnColor: 'white',
+  },
+  {
+    id: 'moves-white-002',
+    fen: '7K/4N3/1P2p3/7k/8/8/5q2/8 w - - 0 1',
+    san: 'b7',
+    fromSquare: 'b6',
+    toSquare: 'b7',
+    turnColor: 'white',
+  },
+  {
+    id: 'moves-black-001',
+    fen: '8/8/6K1/p2Q4/2P5/kr6/8/8 b - - 0 1',
+    san: 'a4',
+    fromSquare: 'a5',
+    toSquare: 'a4',
+    turnColor: 'black',
+  },
+  {
+    id: 'moves-black-002',
+    fen: '2N5/8/4p1K1/5B2/8/8/3pk3/8 b - - 0 1',
+    san: 'exf5',
+    fromSquare: 'e6',
+    toSquare: 'f5',
+    turnColor: 'black',
+  },
+];
 
 describe('visionTrainer utilities', () => {
   it('generates all 64 unique squares', () => {
@@ -46,41 +81,34 @@ describe('visionTrainer utilities', () => {
     expect(deck.every((prompt) => prompt.mode === 'coordinates' && /^[a-h][1-8]$/.test(prompt.label))).toBe(true);
   });
 
-  it('builds white moves prompts from the white-to-move half of the legal position deck', () => {
+  it('builds white moves prompts from injected move positions', () => {
     const deck = buildPromptDeck({
       ...defaultVisionRoundConfig,
       mode: 'moves',
       perspective: 'white',
-    });
+    }, sampleMovePositions);
 
-    expect(deck).toHaveLength(50);
+    expect(deck).toHaveLength(2);
     expect(deck.every((prompt) => prompt.mode === 'moves' && prompt.turnColor === 'white')).toBe(true);
     expect(deck.every((prompt) => isSimpleVisionMoveSan(prompt.label))).toBe(true);
   });
 
-  it('builds black moves prompts from the black-to-move half of the legal position deck', () => {
+  it('builds black moves prompts from injected move positions', () => {
     const deck = buildPromptDeck({
       ...defaultVisionRoundConfig,
       mode: 'moves',
       perspective: 'black',
-    });
+    }, sampleMovePositions);
 
-    expect(deck).toHaveLength(50);
+    expect(deck).toHaveLength(2);
     expect(deck.every((prompt) => prompt.mode === 'moves' && prompt.turnColor === 'black')).toBe(true);
     expect(deck.every((prompt) => isSimpleVisionMoveSan(prompt.label))).toBe(true);
   });
 });
 
-describe('vision move positions dataset', () => {
-  it('contains exactly 100 unique positions split evenly by side to move', () => {
-    expect(visionMovePositions).toHaveLength(100);
-    expect(new Set(visionMovePositions.map((position) => position.id)).size).toBe(100);
-    expect(visionMovePositions.filter((position) => position.turnColor === 'white')).toHaveLength(50);
-    expect(visionMovePositions.filter((position) => position.turnColor === 'black')).toHaveLength(50);
-  });
-
-  it('stores simple legal SAN moves over positions with exactly six pieces', () => {
-    for (const position of visionMovePositions) {
+describe('vision move position validation', () => {
+  it('accepts simple legal SAN moves over six-piece positions', () => {
+    for (const position of sampleMovePositions) {
       expect(getPiecePlacementsFromFen(position.fen)).toHaveLength(6);
       expect(isSimpleVisionMoveSan(position.san)).toBe(true);
 
@@ -98,7 +126,7 @@ describe('moves prompt click resolution', () => {
     ...defaultVisionRoundConfig,
     mode: 'moves',
     perspective: 'white',
-  }).find((prompt) => prompt.mode === 'moves');
+  }, sampleMovePositions).find((prompt) => prompt.mode === 'moves');
 
   if (!sampleMovesPrompt || sampleMovesPrompt.mode !== 'moves') {
     throw new Error('Expected a moves prompt for test coverage.');

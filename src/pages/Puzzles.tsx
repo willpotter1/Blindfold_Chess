@@ -9,7 +9,7 @@ import { StatusBar } from '@/components/StatusBar';
 import { ParticipantSummaryCard, type ParticipantSummaryCardModel } from '@/components/ParticipantSummaryCard';
 import { Button } from '@/components/ui/button';
 import { getCapturedPiecesByColorFromFen, type CapturedPiecesByColor } from '@/lib/chess/material';
-import { builtInPuzzles, curatedPuzzleThemeOptions, preparePuzzle, type PreparedPuzzleRecord } from '@/lib/puzzles';
+import { curatedPuzzleThemeOptions, preparePuzzle, type PreparedPuzzleRecord } from '@/lib/puzzles';
 import { useDesktopFitLayout } from '@/hooks/useDesktopFitLayout';
 import { useDesktopGameLayout } from '@/hooks/useDesktopGameLayout';
 import { usePuzzleState } from '@/hooks/usePuzzleState';
@@ -81,6 +81,7 @@ const Puzzles = () => {
     config,
     previewPuzzle,
     previewPoolSize,
+    isConfigLoading,
     configError,
     currentPuzzle,
     sessionConfig,
@@ -100,7 +101,7 @@ const Puzzles = () => {
     loadNextPuzzle,
     shouldShowBoard,
     advanceHint,
-  } = usePuzzleState(builtInPuzzles);
+  } = usePuzzleState();
 
   useEffect(() => {
     setIsManualBoardReveal(false);
@@ -118,6 +119,8 @@ const Puzzles = () => {
     isSessionActive && currentPreparedPuzzle ? getPuzzleParticipantSummaries(currentPreparedPuzzle, fen, isSolved) : null;
   const showDesktopMoveHistory = Boolean(isSessionActive && !sessionConfig?.hideMoveHistory);
   const moveHistoryStartingTurnColor = currentPuzzle ? getTurnColorFromFen(currentPuzzle.fen) : 'white';
+  const puzzleConfigStatusMessage = isConfigLoading ? 'Loading puzzles...' : undefined;
+  const previewPlaceholderMessage = configError || (isConfigLoading ? 'Loading puzzle preview...' : 'No puzzle preview available.');
 
   useEffect(() => {
     if (!isSessionActive) {
@@ -295,7 +298,7 @@ const Puzzles = () => {
                         />
                       ) : (
                         <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
-                          {configError || 'Loading puzzle preview...'}
+                          {previewPlaceholderMessage}
                         </div>
                       )}
                     </div>
@@ -322,7 +325,7 @@ const Puzzles = () => {
                       />
                     ) : (
                       <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
-                        {configError || 'Loading puzzle preview...'}
+                        {previewPlaceholderMessage}
                       </div>
                     )}
                   </div>
@@ -411,7 +414,7 @@ const Puzzles = () => {
                         />
                       ) : (
                         <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
-                          {configError || 'Loading puzzle preview...'}
+                          {previewPlaceholderMessage}
                         </div>
                       )}
                     </div>
@@ -424,6 +427,8 @@ const Puzzles = () => {
                         themeOptions={curatedPuzzleThemeOptions}
                         matchingPuzzleCount={previewPoolSize}
                         errorMessage={configError}
+                        statusMessage={puzzleConfigStatusMessage}
+                        isStartDisabled={isConfigLoading || Boolean(configError) || !previewPuzzle}
                         onConfigChange={updateConfig}
                         onStart={() => {
                           setIsManualBoardReveal(false);
@@ -449,7 +454,7 @@ const Puzzles = () => {
                       />
                     ) : (
                       <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
-                        {configError || 'Loading puzzle preview...'}
+                        {previewPlaceholderMessage}
                       </div>
                     )}
                   </div>
@@ -461,6 +466,8 @@ const Puzzles = () => {
                     themeOptions={curatedPuzzleThemeOptions}
                     matchingPuzzleCount={previewPoolSize}
                     errorMessage={configError}
+                    statusMessage={puzzleConfigStatusMessage}
+                    isStartDisabled={isConfigLoading || Boolean(configError) || !previewPuzzle}
                     onConfigChange={updateConfig}
                     onStart={() => {
                       setIsManualBoardReveal(false);
