@@ -9,6 +9,7 @@ import {
   type PuzzleRecord,
 } from '@/lib/puzzles';
 import { savePuzzleAttempt, type PuzzleAttemptResult } from '@/lib/trainingResults';
+import { incrementUsageMetric } from '@/lib/usageMetrics';
 
 type SubmitMoveResult = {
   success: boolean;
@@ -74,6 +75,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
   const sessionConfigRef = useRef<PuzzleConfig | null>(null);
   const activeAttemptRef = useRef<PuzzleAttemptTracker | null>(null);
   const hasSavedAttemptRef = useRef(false);
+  const hasActiveUsageMetricsSessionRef = useRef(false);
 
   const updateStateFromChess = useCallback((chess: Chess) => {
     setFen(chess.fen());
@@ -85,26 +87,40 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     hasSavedAttemptRef.current = false;
   }, []);
 
+  const startTrackedSession = useCallback(() => {
+    hasActiveUsageMetricsSessionRef.current = true;
+    void incrementUsageMetric('puzzles', 'standard', 'started');
+  }, []);
+
+  const finishTrackedSession = useCallback(() => {
+    if (!hasActiveUsageMetricsSessionRef.current) {
+      return;
+    }
+
+    hasActiveUsageMetricsSessionRef.current = false;
+    void incrementUsageMetric('puzzles', 'standard', 'finished');
+  }, []);
+
   const finalizeTrackedAttempt = useCallback((result: PuzzleAttemptResult) => {
     const attempt = activeAttemptRef.current;
     const puzzle = currentPuzzleRef.current;
     const currentSessionConfig = sessionConfigRef.current;
 
-    if (!attempt || !puzzle || !currentSessionConfig || hasSavedAttemptRef.current) {
-      return;
+    if (attempt && puzzle && currentSessionConfig && !hasSavedAttemptRef.current) {
+      hasSavedAttemptRef.current = true;
+
+      void savePuzzleAttempt({
+        puzzle,
+        config: currentSessionConfig,
+        result,
+        startedAt: attempt.startedAt,
+        playerMoveCount: attempt.playerMoveCount,
+        wrongMoveCount: attempt.wrongMoveCount,
+      });
     }
 
-    hasSavedAttemptRef.current = true;
-
-    void savePuzzleAttempt({
-      puzzle,
-      config: currentSessionConfig,
-      result,
-      startedAt: attempt.startedAt,
-      playerMoveCount: attempt.playerMoveCount,
-      wrongMoveCount: attempt.wrongMoveCount,
-    });
-  }, []);
+    finishTrackedSession();
+  }, [finishTrackedSession]);
 
   const failMove = useCallback((
     message: string,
@@ -128,6 +144,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       currentPuzzleRef.current = null;
       sessionConfigRef.current = null;
       resetTrackedAttempt();
+      hasActiveUsageMetricsSessionRef.current = false;
       setError('Puzzle data error');
       setStatus('Loading puzzle...');
       return false;
@@ -145,6 +162,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
       currentPuzzleRef.current = null;
       sessionConfigRef.current = null;
       resetTrackedAttempt();
+      hasActiveUsageMetricsSessionRef.current = false;
       setError('Puzzle data error');
       setStatus('Loading puzzle...');
       return false;
@@ -166,8 +184,9 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     setError('');
     setStatus(getStatusWithLastComputerMove(preparedPuzzle.openingSan, chess));
     updateStateFromChess(chess);
+    startTrackedSession();
     return true;
-  }, [resetTrackedAttempt, updateStateFromChess]);
+  }, [resetTrackedAttempt, startTrackedSession, updateStateFromChess]);
 
   useEffect(() => {
     if (!puzzles.length) {
@@ -244,6 +263,7 @@ export const usePuzzleState = (puzzles: PuzzleRecord[]) => {
     currentPuzzleIdRef.current = null;
     solutionIndexRef.current = 0;
     resetTrackedAttempt();
+    hasActiveUsageMetricsSessionRef.current = false;
     setFen('');
     setMoves([]);
     setError('');

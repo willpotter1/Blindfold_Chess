@@ -16,19 +16,38 @@ export const hasFirebaseAnalyticsConfig = Object.values(firebaseConfig).every(
 );
 
 let analyticsPromise: Promise<ReturnType<typeof getAnalytics> | null> | null = null;
+let initStatusLogged = false;
+
+const logInitStatus = (message: string, details?: Record<string, unknown>) => {
+  if (!import.meta.env.DEV || initStatusLogged) {
+    return;
+  }
+
+  initStatusLogged = true;
+  console.info("Firebase Analytics:", message, details ?? "");
+};
 
 const getAnalyticsClient = async () => {
   if (typeof window === "undefined" || !hasFirebaseAnalyticsConfig) {
+    logInitStatus("skipped", {
+      reason: typeof window === "undefined" ? "not_in_browser" : "missing_config",
+    });
     return null;
   }
 
   analyticsPromise ??= (async () => {
     if (!(await isSupported())) {
+      logInitStatus("skipped", { reason: "unsupported_browser_environment" });
       return null;
     }
 
     const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
-    return getAnalytics(app);
+    const analytics = getAnalytics(app);
+    logInitStatus("initialized", {
+      projectId: firebaseConfig.projectId,
+      measurementId: firebaseConfig.measurementId,
+    });
+    return analytics;
   })().catch((error) => {
     console.error("Failed to initialize Firebase Analytics:", error);
     analyticsPromise = null;

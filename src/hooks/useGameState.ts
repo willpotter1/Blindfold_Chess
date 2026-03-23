@@ -1,6 +1,7 @@
 import { useState, useCallback, useRef } from 'react';
 import { Chess } from 'chess.js';
 import { saveCompletedGame } from '@/lib/saveGameResult';
+import { incrementUsageMetric } from '@/lib/usageMetrics';
 import {
   buildInitialGameState,
   getGameStatusText,
@@ -33,6 +34,10 @@ export const useGameState = () => {
   const gameRef = useRef<Chess | null>(null);
   const gameStateRef = useRef<GameState | null>(null);
   const hasSavedResultRef = useRef(false);
+  const usageMetricsSessionRef = useRef<{
+    mode: GameConfig['mode'];
+    hasTrackedFinished: boolean;
+  } | null>(null);
 
   const startNewGame = useCallback((config: GameConfig) => {
     const newGame = new Chess();
@@ -53,7 +58,12 @@ export const useGameState = () => {
     gameRef.current = newGame;
     gameStateRef.current = initialState;
     hasSavedResultRef.current = false;
+    usageMetricsSessionRef.current = {
+      mode: config.mode,
+      hasTrackedFinished: false,
+    };
     setGameState(initialState);
+    void incrementUsageMetric('games', config.mode, 'started');
 
     return initialState;
   }, []);
@@ -110,6 +120,11 @@ export const useGameState = () => {
     if (isOver && result && !hasSavedResultRef.current) {
       hasSavedResultRef.current = true;
       void saveCompletedGame(nextState, completedPgn);
+    }
+
+    if (isOver && result && usageMetricsSessionRef.current && !usageMetricsSessionRef.current.hasTrackedFinished) {
+      usageMetricsSessionRef.current.hasTrackedFinished = true;
+      void incrementUsageMetric('games', usageMetricsSessionRef.current.mode, 'finished');
     }
 
     return nextState;
@@ -200,6 +215,7 @@ export const useGameState = () => {
     gameRef.current = null;
     gameStateRef.current = null;
     hasSavedResultRef.current = false;
+    usageMetricsSessionRef.current = null;
     setGameState(null);
   }, []);
 

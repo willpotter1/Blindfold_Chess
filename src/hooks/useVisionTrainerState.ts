@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { saveDrillRound } from '@/lib/trainingResults';
+import { incrementUsageMetric } from '@/lib/usageMetrics';
 import {
   buildPromptDeck,
   defaultVisionRoundConfig,
@@ -40,6 +41,10 @@ export const useVisionTrainerState = () => {
   const activeRoundConfigRef = useRef<VisionRoundConfig | null>(null);
   const roundActiveRef = useRef(false);
   const hasSavedRoundRef = useRef(false);
+  const usageMetricsRoundRef = useRef<{
+    mode: VisionRoundConfig['mode'];
+    hasTrackedFinished: boolean;
+  } | null>(null);
 
   const clearTimerInterval = useCallback(() => {
     if (timerIntervalRef.current !== null) {
@@ -91,6 +96,11 @@ export const useVisionTrainerState = () => {
       });
     }
 
+    if (usageMetricsRoundRef.current && !usageMetricsRoundRef.current.hasTrackedFinished) {
+      usageMetricsRoundRef.current.hasTrackedFinished = true;
+      void incrementUsageMetric('drills', usageMetricsRoundRef.current.mode, 'finished');
+    }
+
     setFeedback(null);
     setSelectedMoveSourceSquare(null);
     setPhase('results');
@@ -120,6 +130,10 @@ export const useVisionTrainerState = () => {
     statsRef.current = emptyVisionRoundStats;
     roundActiveRef.current = true;
     hasSavedRoundRef.current = false;
+    usageMetricsRoundRef.current = {
+      mode: config.mode,
+      hasTrackedFinished: false,
+    };
     deadlineRef.current = Date.now() + config.roundLengthSeconds * 1000;
     setPhase('playing');
     setStats(emptyVisionRoundStats);
@@ -127,6 +141,7 @@ export const useVisionTrainerState = () => {
     setFeedback(null);
     setSelectedMoveSourceSquare(null);
     setTimeRemainingMs(config.roundLengthSeconds * 1000);
+    void incrementUsageMetric('drills', config.mode, 'started');
   }, [clearFeedbackTimeout, clearTimerInterval, config, takeNextPrompt]);
 
   const restartRound = useCallback(() => {
@@ -141,6 +156,7 @@ export const useVisionTrainerState = () => {
     statsRef.current = emptyVisionRoundStats;
     roundActiveRef.current = false;
     hasSavedRoundRef.current = false;
+    usageMetricsRoundRef.current = null;
     setPhase('config');
     setCurrentPrompt(null);
     setFeedback(null);
@@ -266,6 +282,7 @@ export const useVisionTrainerState = () => {
   useEffect(() => () => {
     clearTimerInterval();
     clearFeedbackTimeout();
+    usageMetricsRoundRef.current = null;
   }, [clearFeedbackTimeout, clearTimerInterval]);
 
   return {
