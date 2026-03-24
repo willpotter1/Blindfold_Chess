@@ -77,10 +77,11 @@ const createHookValue = (phase: 'config' | 'session' | 'results') => ({
     allowCheats: true,
     hideMoveHistory: false,
   },
-  lookup: {
+  catalog: {
     families: [],
     lines: [],
   },
+  lookup: null,
   round: phase === 'config' ? null : {
     currentFen: 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1',
     playedUciMoves: [],

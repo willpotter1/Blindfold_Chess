@@ -9,13 +9,13 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
 import { cn } from '@/lib/utils';
-import type { OpeningFamily, OpeningLine } from '@/lib/openings';
+import type { OpeningCatalogLine, OpeningFamily } from '@/lib/openings';
 import type { OpeningTrainerConfig } from '@/lib/openingTrainer';
 
 type OpeningsConfigPanelProps = {
   config: OpeningTrainerConfig;
   families: OpeningFamily[];
-  lines: OpeningLine[];
+  lines: OpeningCatalogLine[];
   statusMessage: string;
   statusTone?: 'default' | 'error';
   isStartDisabled?: boolean;
@@ -40,7 +40,7 @@ const isWholeNumber = (value: string) => /^\d+$/.test(value);
 
 const clampPositiveWholeNumber = (value: number, minimum: number) => Math.max(minimum, Math.round(value));
 
-const buildOpeningTree = (lines: OpeningLine[]) => {
+const buildOpeningTree = (lines: OpeningCatalogLine[]) => {
   const rootMap = new Map<string, OpeningTreeNode>();
 
   for (const line of lines) {
@@ -69,7 +69,7 @@ const buildOpeningTree = (lines: OpeningLine[]) => {
 
     currentNode.lineIds.push(line.id);
     currentNode.lineCount += 1;
-    currentNode.positionCount += line.recordIds.length;
+    currentNode.positionCount += line.recordCount;
 
     let parentNode = currentNode;
 
@@ -94,7 +94,7 @@ const buildOpeningTree = (lines: OpeningLine[]) => {
 
       childNode.lineIds.push(line.id);
       childNode.lineCount += 1;
-      childNode.positionCount += line.recordIds.length;
+      childNode.positionCount += line.recordCount;
       parentNode = childNode;
     });
   }
@@ -514,7 +514,7 @@ export const OpeningsConfigPanel = ({
             type="text"
             value={treeSearch}
             onChange={(event) => setTreeSearch(event.target.value)}
-            placeholder="Search family, branch, or ECO"
+            placeholder="Search family or branch"
           />
 
           <ScrollArea className="min-h-0 rounded-2xl border border-[#d9b99b] bg-white">

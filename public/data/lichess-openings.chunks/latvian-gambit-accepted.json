@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Latvian Gambit Accepted",
+    "chunkKey": "latvian-gambit-accepted",
+    "recordCount": 9,
+    "lineCount": 9
+  },
+  "records": [
+    {
+      "id": "record-2110",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. exf5",
+      "uci": "e2e4 e7e5 g1f3 f7f5 e4f5",
+      "epd": "rnbqkbnr/pppp2pp/8/4pP2/8/5N2/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1852"
+    },
+    {
+      "id": "record-2111",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted: Bilguer Variation",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qf6 4. d4 d6 5. Nc4",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 d2d4 d7d6 e5c4",
+      "epd": "rnb1kbnr/ppp3pp/3p1q2/5p2/2NPP3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1853"
+    },
+    {
+      "id": "record-2112",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted: Bronstein Attack",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qf6 4. d4 d6 5. Nc4 fxe4 6. Be2",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 d2d4 d7d6 e5c4 f5e4 f1e2",
+      "epd": "rnb1kbnr/ppp3pp/3p1q2/8/2NPp3/8/PPP1BPPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1854"
+    },
+    {
+      "id": "record-2113",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted: Bronstein Gambit",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qf6 4. d4 d6 5. Nc4 fxe4 6. Qh5+ g6 7. Qe2",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 d2d4 d7d6 e5c4 f5e4 d1h5 g7g6 h5e2",
+      "epd": "rnb1kbnr/ppp4p/3p1qp1/8/2NPp3/8/PPP1QPPP/RNB1KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1855"
+    },
+    {
+      "id": "record-2114",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted: Foltys Variation",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qf6 4. Nc4 fxe4 5. d3",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 e5c4 f5e4 d2d3",
+      "epd": "rnb1kbnr/pppp2pp/5q2/8/2N1p3/3P4/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1856"
+    },
+    {
+      "id": "record-2115",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted: Foltys-Leonhardt Variation",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qf6 4. Nc4",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 e5c4",
+      "epd": "rnb1kbnr/pppp2pp/5q2/5p2/2N1P3/8/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1857"
+    },
+    {
+      "id": "record-2116",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted: Leonhardt Variation",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qf6 4. Nc4 fxe4 5. Nc3",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 e5c4 f5e4 b1c3",
+      "epd": "rnb1kbnr/pppp2pp/5q2/8/2N1p3/2N5/PPPP1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1858"
+    },
+    {
+      "id": "record-2117",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted: Main Line",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qf6 4. d4",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 d2d4",
+      "epd": "rnb1kbnr/pppp2pp/5q2/4Np2/3PP3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1859"
+    },
+    {
+      "id": "record-2118",
+      "eco": "C40",
+      "name": "Latvian Gambit Accepted: Nimzowitsch Attack",
+      "family": "Latvian Gambit Accepted",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qf6 4. d4 d6 5. Nc4 fxe4 6. Ne3",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 d2d4 d7d6 e5c4 f5e4 c4e3",
+      "epd": "rnb1kbnr/ppp3pp/3p1q2/8/3Pp3/4N3/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1860"
+    }
+  ]
+}

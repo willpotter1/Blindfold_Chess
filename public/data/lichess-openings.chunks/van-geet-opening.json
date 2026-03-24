@@ -1,0 +1,507 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Van Geet Opening",
+    "chunkKey": "van-geet-opening",
+    "recordCount": 33,
+    "lineCount": 33
+  },
+  "records": [
+    {
+      "id": "record-102",
+      "eco": "A00",
+      "name": "Van Geet Opening",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3",
+      "uci": "b1c3",
+      "epd": "rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-98"
+    },
+    {
+      "id": "record-103",
+      "eco": "A00",
+      "name": "Van Geet Opening: Battambang Variation",
+      "family": "Van Geet Opening",
+      "pgn": "1. a3 e5 2. Nc3",
+      "uci": "a2a3 e7e5 b1c3",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/8/P1N5/1PPPPPPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-99"
+    },
+    {
+      "id": "record-104",
+      "eco": "A00",
+      "name": "Van Geet Opening: Billockus-Johansen Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 e5 2. Nf3 Bc5",
+      "uci": "b1c3 e7e5 g1f3 f8c5",
+      "epd": "rnbqk1nr/pppp1ppp/8/2b1p3/8/2N2N2/PPPPPPPP/R1BQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-100"
+    },
+    {
+      "id": "record-105",
+      "eco": "A00",
+      "name": "Van Geet Opening: Damhaug Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. f4 e5",
+      "uci": "b1c3 d7d5 f2f4 e7e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/5P2/2N5/PPPPP1PP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-101"
+    },
+    {
+      "id": "record-106",
+      "eco": "A00",
+      "name": "Van Geet Opening: Dougherty Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. e4 dxe4 3. f3",
+      "uci": "b1c3 d7d5 e2e4 d5e4 f2f3",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/4p3/2N2P2/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-102"
+    },
+    {
+      "id": "record-107",
+      "eco": "A00",
+      "name": "Van Geet Opening: Dunst-Perrenet Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. e4 dxe4 3. d3",
+      "uci": "b1c3 d7d5 e2e4 d5e4 d2d3",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/4p3/2NP4/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-103"
+    },
+    {
+      "id": "record-108",
+      "eco": "A00",
+      "name": "Van Geet Opening: Düsseldorf Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 c5 2. b4",
+      "uci": "b1c3 c7c5 b2b4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/1P6/2N5/P1PPPPPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-104"
+    },
+    {
+      "id": "record-109",
+      "eco": "A00",
+      "name": "Van Geet Opening: Gladbacher Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 e5 2. b3 d5 3. e4 dxe4 4. d3",
+      "uci": "b1c3 e7e5 b2b3 d7d5 e2e4 d5e4 d2d3",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/4p3/1PNP4/P1P2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-105"
+    },
+    {
+      "id": "record-110",
+      "eco": "A00",
+      "name": "Van Geet Opening: Hector Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. e4 dxe4 3. Bc4",
+      "uci": "b1c3 d7d5 e2e4 d5e4 f1c4",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/2B1p3/2N5/PPPP1PPP/R1BQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-106"
+    },
+    {
+      "id": "record-111",
+      "eco": "A00",
+      "name": "Van Geet Opening: Hergert Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d6 2. f4 e5 3. fxe5 Nc6",
+      "uci": "b1c3 d7d6 f2f4 e7e5 f4e5 b8c6",
+      "epd": "r1bqkbnr/ppp2ppp/2np4/4P3/8/2N5/PPPPP1PP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-107"
+    },
+    {
+      "id": "record-112",
+      "eco": "A00",
+      "name": "Van Geet Opening: Hulsemann Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 e5 2. e3 d5 3. Qh5 Be6",
+      "uci": "b1c3 e7e5 e2e3 d7d5 d1h5 c8e6",
+      "epd": "rn1qkbnr/ppp2ppp/4b3/3pp2Q/8/2N1P3/PPPP1PPP/R1B1KBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-108"
+    },
+    {
+      "id": "record-113",
+      "eco": "A00",
+      "name": "Van Geet Opening: Jendrossek Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. f4 d4 3. Ne4 f5 4. Nf2 Nf6 5. Nf3 c5 6. b4",
+      "uci": "b1c3 d7d5 f2f4 d5d4 c3e4 f7f5 e4f2 g8f6 g1f3 c7c5 b2b4",
+      "epd": "rnbqkb1r/pp2p1pp/5n2/2p2p2/1P1p1P2/5N2/P1PPPNPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-109"
+    },
+    {
+      "id": "record-114",
+      "eco": "A00",
+      "name": "Van Geet Opening: Kluever Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 f5 2. e4 fxe4 3. d3",
+      "uci": "b1c3 f7f5 e2e4 f5e4 d2d3",
+      "epd": "rnbqkbnr/ppppp1pp/8/8/4p3/2NP4/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-110"
+    },
+    {
+      "id": "record-115",
+      "eco": "A00",
+      "name": "Van Geet Opening: Laroche Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 b5",
+      "uci": "b1c3 b7b5",
+      "epd": "rnbqkbnr/p1pppppp/8/1p6/8/2N5/PPPPPPPP/R1BQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-111"
+    },
+    {
+      "id": "record-116",
+      "eco": "A00",
+      "name": "Van Geet Opening: Liebig Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 e5 2. e3 d5 3. Qh5 Nf6",
+      "uci": "b1c3 e7e5 e2e3 d7d5 d1h5 g8f6",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3pp2Q/8/2N1P3/PPPP1PPP/R1B1KBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-112"
+    },
+    {
+      "id": "record-117",
+      "eco": "A00",
+      "name": "Van Geet Opening: Melleby Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. f4 d4 3. Ne4 c5",
+      "uci": "b1c3 d7d5 f2f4 d5d4 c3e4 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2p5/3pNP2/8/PPPPP1PP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-113"
+    },
+    {
+      "id": "record-118",
+      "eco": "A00",
+      "name": "Van Geet Opening: Myers Attack",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 g6 2. h4",
+      "uci": "b1c3 g7g6 h2h4",
+      "epd": "rnbqkbnr/pppppp1p/6p1/8/7P/2N5/PPPPPPP1/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-114"
+    },
+    {
+      "id": "record-119",
+      "eco": "A00",
+      "name": "Van Geet Opening: Napoleon Attack",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 e5 2. Nf3 Nc6 3. d4",
+      "uci": "b1c3 e7e5 g1f3 b8c6 d2d4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/3P4/2N2N2/PPP1PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-115"
+    },
+    {
+      "id": "record-120",
+      "eco": "A00",
+      "name": "Van Geet Opening: Novosibirsk Variation",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 c5 2. d4 cxd4 3. Qxd4 Nc6 4. Qh4",
+      "uci": "b1c3 c7c5 d2d4 c5d4 d1d4 b8c6 d4h4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/8/7Q/2N5/PPP1PPPP/R1B1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-116"
+    },
+    {
+      "id": "record-121",
+      "eco": "A00",
+      "name": "Van Geet Opening: Nowokunski Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 e5 2. f4 exf4 3. e4",
+      "uci": "b1c3 e7e5 f2f4 e5f4 e2e4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/2N5/PPPP2PP/R1BQKBNR b KQkq e3",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-117"
+    },
+    {
+      "id": "record-122",
+      "eco": "A00",
+      "name": "Van Geet Opening: Pfeiffer Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. f4 d4 3. Ne4 e5",
+      "uci": "b1c3 d7d5 f2f4 d5d4 c3e4 e7e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/3pNP2/8/PPPPP1PP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-118"
+    },
+    {
+      "id": "record-123",
+      "eco": "A00",
+      "name": "Van Geet Opening: Pfeiffer Gambit, Sleipnir Countergambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. f4 d4 3. Ne4 e5 4. Nf3",
+      "uci": "b1c3 d7d5 f2f4 d5d4 c3e4 e7e5 g1f3",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/3pNP2/5N2/PPPPP1PP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-119"
+    },
+    {
+      "id": "record-124",
+      "eco": "A00",
+      "name": "Van Geet Opening: Reversed Nimzowitsch",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 e5",
+      "uci": "b1c3 e7e5",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/8/2N5/PPPPPPPP/R1BQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-120"
+    },
+    {
+      "id": "record-125",
+      "eco": "A00",
+      "name": "Van Geet Opening: Reversed Scandinavian",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qa4",
+      "uci": "b1c3 e7e5 d2d4 e5d4 d1d4 b8c6 d4a4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/Q7/2N5/PPP1PPPP/R1B1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-121"
+    },
+    {
+      "id": "record-126",
+      "eco": "A00",
+      "name": "Van Geet Opening: Sicilian Two Knights",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4",
+      "uci": "b1c3 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/8/3N4/2N5/PPP1PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-122"
+    },
+    {
+      "id": "record-127",
+      "eco": "A00",
+      "name": "Van Geet Opening: Sleipnir Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. e3 e5 3. d4 Bb4",
+      "uci": "b1c3 d7d5 e2e3 e7e5 d2d4 f8b4",
+      "epd": "rnbqk1nr/ppp2ppp/8/3pp3/1b1P4/2N1P3/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-123"
+    },
+    {
+      "id": "record-128",
+      "eco": "A00",
+      "name": "Van Geet Opening: Twyble Attack",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 c5 2. Rb1",
+      "uci": "b1c3 c7c5 a1b1",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/8/2N5/PPPPPPPP/1RBQKBNR b Kkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-125"
+    },
+    {
+      "id": "record-129",
+      "eco": "A00",
+      "name": "Van Geet Opening: Tübingen Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 Nf6 2. g4",
+      "uci": "b1c3 g8f6 g2g4",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/6P1/2N5/PPPPPP1P/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-124"
+    },
+    {
+      "id": "record-130",
+      "eco": "A00",
+      "name": "Van Geet Opening: Venezolana Variation",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. d3 Nf6 3. g3",
+      "uci": "b1c3 d7d5 d2d3 g8f6 g2g3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/8/2NP2P1/PPP1PP1P/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-126"
+    },
+    {
+      "id": "record-131",
+      "eco": "A00",
+      "name": "Van Geet Opening: Warsteiner Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. Nc3 d5 2. f4 g5",
+      "uci": "b1c3 d7d5 f2f4 g7g5",
+      "epd": "rnbqkbnr/ppp1pp1p/8/3p2p1/5P2/2N5/PPPPP1PP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-127"
+    },
+    {
+      "id": "record-1948",
+      "eco": "C31",
+      "name": "Van Geet Opening: Grünfeld Defense, Steiner Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. e4 e5 2. f4 d5 3. Nc3 dxe4 4. Nxe4",
+      "uci": "e2e4 e7e5 f2f4 d7d5 b1c3 d5e4 c3e4",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/4NP2/8/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1700"
+    },
+    {
+      "id": "record-869",
+      "eco": "B00",
+      "name": "Van Geet Opening: Berlin Gambit",
+      "family": "Van Geet Opening",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3 dxe4 4. d5",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3 d5e4 d4d5",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/3P4/4p3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-745"
+    },
+    {
+      "id": "record-917",
+      "eco": "B01",
+      "name": "Van Geet Opening: Grünfeld Defense",
+      "family": "Van Geet Opening",
+      "pgn": "1. e4 d5 2. Nc3 dxe4 3. Nxe4 e5",
+      "uci": "e2e4 d7d5 b1c3 d5e4 c3e4 e7e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/4N3/8/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-790"
+    }
+  ]
+}

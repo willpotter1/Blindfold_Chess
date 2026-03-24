@@ -1,11 +1,11 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-import { createClient } from "@supabase/supabase-js";
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { createClient } from '@supabase/supabase-js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const PROJECT_ROOT = path.resolve(__dirname, "..");
+const PROJECT_ROOT = path.resolve(__dirname, '..');
 const PUZZLE_CHUNK_SIZE = 500;
 const MOVE_POSITION_CHUNK_SIZE = 100;
 
@@ -14,7 +14,7 @@ const getSupabaseAdminClient = () => {
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
   if (!supabaseUrl || !serviceRoleKey) {
-    throw new Error("Missing SUPABASE_URL/VITE_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY.");
+    throw new Error('Missing SUPABASE_URL/VITE_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY.');
   }
 
   return createClient(supabaseUrl, serviceRoleKey, {
@@ -26,8 +26,8 @@ const getSupabaseAdminClient = () => {
 };
 
 const loadPuzzles = () => {
-  const puzzlePath = path.join(PROJECT_ROOT, "src", "data", "lichess_mate_1200_1800_dev.json");
-  const raw = fs.readFileSync(puzzlePath, "utf8");
+  const puzzlePath = path.join(PROJECT_ROOT, 'src', 'data', 'lichess_mate_1200_1800_dev.json');
+  const raw = fs.readFileSync(puzzlePath, 'utf8');
   const puzzles = JSON.parse(raw);
 
   return puzzles.map((puzzle) => ({
@@ -41,12 +41,12 @@ const loadPuzzles = () => {
 };
 
 const loadMoveDrillPositions = () => {
-  const movePositionsPath = path.join(PROJECT_ROOT, "src", "data", "visionMovePositions.ts");
-  const source = fs.readFileSync(movePositionsPath, "utf8");
+  const movePositionsPath = path.join(PROJECT_ROOT, 'src', 'data', 'visionMovePositions.ts');
+  const source = fs.readFileSync(movePositionsPath, 'utf8');
   const match = source.match(/export const visionMovePositions = (\[[\s\S]*\]) as const;/);
 
   if (!match) {
-    throw new Error("Could not parse src/data/visionMovePositions.ts");
+    throw new Error('Could not parse src/data/visionMovePositions.ts');
   }
 
   const movePositions = Function(`"use strict"; return (${match[1]});`)();
@@ -61,13 +61,13 @@ const loadMoveDrillPositions = () => {
   }));
 };
 
-const upsertInChunks = async (supabase, table, rows, chunkSize) => {
+const upsertInChunks = async (supabase, table, rows, chunkSize, onConflict = 'id') => {
   for (let start = 0; start < rows.length; start += chunkSize) {
     const chunk = rows.slice(start, start + chunkSize);
     const { error } = await supabase
       .from(table)
       .upsert(chunk, {
-        onConflict: "id",
+        onConflict,
       });
 
     if (error) {
@@ -81,8 +81,8 @@ const upsertInChunks = async (supabase, table, rows, chunkSize) => {
 const fetchExactCount = async (supabase, table) => {
   const { count, error } = await supabase
     .from(table)
-    .select("*", {
-      count: "exact",
+    .select('*', {
+      count: 'exact',
       head: true,
     });
 
@@ -101,12 +101,12 @@ const main = async () => {
   console.log(`Loaded ${puzzles.length} puzzles from local source data.`);
   console.log(`Loaded ${movePositions.length} move drill positions from local source data.`);
 
-  await upsertInChunks(supabase, "puzzles", puzzles, PUZZLE_CHUNK_SIZE);
-  await upsertInChunks(supabase, "drill_move_positions", movePositions, MOVE_POSITION_CHUNK_SIZE);
+  await upsertInChunks(supabase, 'puzzles', puzzles, PUZZLE_CHUNK_SIZE, 'id');
+  await upsertInChunks(supabase, 'drill_move_positions', movePositions, MOVE_POSITION_CHUNK_SIZE, 'id');
 
   const [puzzleCount, movePositionCount] = await Promise.all([
-    fetchExactCount(supabase, "puzzles"),
-    fetchExactCount(supabase, "drill_move_positions"),
+    fetchExactCount(supabase, 'puzzles'),
+    fetchExactCount(supabase, 'drill_move_positions'),
   ]);
 
   console.log(`Supabase puzzles count: ${puzzleCount}`);

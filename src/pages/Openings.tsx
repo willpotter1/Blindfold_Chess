@@ -65,7 +65,7 @@ const Openings = () => {
   const {
     phase,
     config,
-    lookup,
+    catalog,
     round,
     configStatus,
     continueEngineElo,
@@ -175,8 +175,8 @@ const Openings = () => {
       return (
         <OpeningsConfigPanel
           config={config}
-          families={lookup?.families ?? []}
-          lines={lookup?.lines ?? []}
+          families={catalog?.families ?? []}
+          lines={catalog?.lines ?? []}
           statusMessage={configStatus.message}
           statusTone={configStatus.tone}
           isStartDisabled={configStatus.isStartDisabled}
@@ -231,8 +231,8 @@ const Openings = () => {
     continueRevealEvery,
     handleContinueGame,
     isPlayerTurn,
-    lookup?.families,
-    lookup?.lines,
+    catalog?.families,
+    catalog?.lines,
     phase,
     restartRound,
     returnToConfig,

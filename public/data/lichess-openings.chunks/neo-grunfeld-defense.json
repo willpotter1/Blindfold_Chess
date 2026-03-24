@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Neo-Grünfeld Defense",
+    "chunkKey": "neo-grunfeld-defense",
+    "recordCount": 13,
+    "lineCount": 10
+  },
+  "records": [
+    {
+      "id": "record-3246",
+      "eco": "D70",
+      "name": "Neo-Grünfeld Defense: Goglidze Attack",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. f3 d5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 f2f3 d7d5",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/5P2/PP2P1PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2827"
+    },
+    {
+      "id": "record-3247",
+      "eco": "D70",
+      "name": "Neo-Grünfeld Defense: with Nf3",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nf3 d5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 g1f3 d7d5",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2829"
+    },
+    {
+      "id": "record-3248",
+      "eco": "D70",
+      "name": "Neo-Grünfeld Defense: with g3",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. g3 d5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 g2g3 d7d5",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2828"
+    },
+    {
+      "id": "record-3249",
+      "eco": "D71",
+      "name": "Neo-Grünfeld Defense: Exchange Variation",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 d5 5. cxd5 Nxd5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 g2g3 f8g7 f1g2 d7d5 c4d5 f6d5",
+      "epd": "rnbqk2r/ppp1ppbp/6p1/3n4/3P4/6P1/PP2PPBP/RNBQK1NR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2830"
+    },
+    {
+      "id": "record-3250",
+      "eco": "D74",
+      "name": "Neo-Grünfeld Defense: Delayed Exchange Variation",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nf3 Bg7 4. g3 O-O 5. Bg2 d5 6. cxd5 Nxd5 7. O-O",
+      "uci": "d2d4 g8f6 c2c4 g7g6 g1f3 f8g7 g2g3 e8g8 f1g2 d7d5 c4d5 f6d5 e1g1",
+      "epd": "rnbq1rk1/ppp1ppbp/6p1/3n4/3P4/5NP1/PP2PPBP/RNBQ1RK1 b - -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2831"
+    },
+    {
+      "id": "record-3251",
+      "eco": "D75",
+      "name": "Neo-Grünfeld Defense: Delayed Exchange Variation",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. g3 d5 6. cxd5 Nxd5 7. Bg2 c5 8. O-O",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 f8g7 g1f3 e8g8 g2g3 d7d5 c4d5 f6d5 f1g2 c7c5 e1g1",
+      "epd": "rnbq1rk1/pp2ppbp/6p1/2pn4/3P4/2N2NP1/PP2PPBP/R1BQ1RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2831"
+    },
+    {
+      "id": "record-3252",
+      "eco": "D75",
+      "name": "Neo-Grünfeld Defense: Delayed Exchange Variation",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. c4 Bg7 4. g3 O-O 5. Bg2 d5 6. cxd5 Nxd5 7. O-O c5 8. dxc5",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c2c4 f8g7 g2g3 e8g8 f1g2 d7d5 c4d5 f6d5 e1g1 c7c5 d4c5",
+      "epd": "rnbq1rk1/pp2ppbp/6p1/2Pn4/8/5NP1/PP2PPBP/RNBQ1RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2831"
+    },
+    {
+      "id": "record-3253",
+      "eco": "D76",
+      "name": "Neo-Grünfeld Defense: Delayed Exchange Variation",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nf3 Bg7 4. g3 O-O 5. Bg2 d5 6. cxd5 Nxd5 7. O-O Nb6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 g1f3 f8g7 g2g3 e8g8 f1g2 d7d5 c4d5 f6d5 e1g1 d5b6",
+      "epd": "rnbq1rk1/ppp1ppbp/1n4p1/8/3P4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2831"
+    },
+    {
+      "id": "record-3254",
+      "eco": "D77",
+      "name": "Neo-Grünfeld Defense: Classical Variation",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. g3 Bg7 4. Bg2 O-O 5. O-O d5 6. c4",
+      "uci": "d2d4 g8f6 g1f3 g7g6 g2g3 f8g7 f1g2 e8g8 e1g1 d7d5 c2c4",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP4/5NP1/PP2PPBP/RNBQ1RK1 b - -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2832"
+    },
+    {
+      "id": "record-3255",
+      "eco": "D77",
+      "name": "Neo-Grünfeld Defense: Classical Variation, Modern Defense",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. g3 Bg7 4. Bg2 O-O 5. O-O d5 6. c4 dxc4",
+      "uci": "d2d4 g8f6 g1f3 g7g6 g2g3 f8g7 f1g2 e8g8 e1g1 d7d5 c2c4 d5c4",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/8/2pP4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2833"
+    },
+    {
+      "id": "record-3256",
+      "eco": "D77",
+      "name": "Neo-Grünfeld Defense: Classical Variation, Polgar Variation",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. g3 Bg7 4. Bg2 O-O 5. O-O d5 6. c4 Nc6",
+      "uci": "d2d4 g8f6 g1f3 g7g6 g2g3 f8g7 f1g2 e8g8 e1g1 d7d5 c2c4 b8c6",
+      "epd": "r1bq1rk1/ppp1ppbp/2n2np1/3p4/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2834"
+    },
+    {
+      "id": "record-3257",
+      "eco": "D78",
+      "name": "Neo-Grünfeld Defense: Classical Variation, Original Defense",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nf3 Bg7 4. g3 O-O 5. Bg2 c6 6. O-O d5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 g1f3 f8g7 g2g3 e8g8 f1g2 c7c6 e1g1 d7d5",
+      "epd": "rnbq1rk1/pp2ppbp/2p2np1/3p4/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2835"
+    },
+    {
+      "id": "record-3258",
+      "eco": "D79",
+      "name": "Neo-Grünfeld Defense: Ultra-Delayed Exchange Variation",
+      "family": "Neo-Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nf3 Bg7 4. g3 O-O 5. Bg2 c6 6. O-O d5 7. cxd5 cxd5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 g1f3 f8g7 g2g3 e8g8 f1g2 c7c6 e1g1 d7d5 c4d5 c6d5",
+      "epd": "rnbq1rk1/pp2ppbp/5np1/3p4/3P4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2836"
+    }
+  ]
+}

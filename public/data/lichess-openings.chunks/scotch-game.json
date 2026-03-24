@@ -1,0 +1,807 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Scotch Game",
+    "chunkKey": "scotch-game",
+    "recordCount": 53,
+    "lineCount": 48
+  },
+  "records": [
+    {
+      "id": "record-2256",
+      "eco": "C44",
+      "name": "Scotch Game",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1982"
+    },
+    {
+      "id": "record-2257",
+      "eco": "C44",
+      "name": "Scotch Game",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1982"
+    },
+    {
+      "id": "record-2258",
+      "eco": "C44",
+      "name": "Scotch Game: Benima Defense",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8e7 d2d4 e5d4",
+      "epd": "r1bqk1nr/ppppbppp/2n5/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1983"
+    },
+    {
+      "id": "record-2259",
+      "eco": "C44",
+      "name": "Scotch Game: Cochrane Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bb4+ 5. c3 dxc3 6. bxc3 Ba5 7. e5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8b4 c2c3 d4c3 b2c3 b4a5 e4e5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/b3P3/2B5/2P2N2/P4PPP/RNBQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1984"
+    },
+    {
+      "id": "record-2260",
+      "eco": "C44",
+      "name": "Scotch Game: Cochrane-Shumov Defense",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. Ng5 Nh6 6. Nxf7 Nxf7 7. Bxf7+ Kxf7 8. Qh5+ g6 9. Qxc5 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8c5 f3g5 g8h6 g5f7 h6f7 c4f7 e8f7 d1h5 g7g6 h5c5 d7d5",
+      "epd": "r1bq3r/ppp2k1p/2n3p1/2Qp4/3pP3/8/PPP2PPP/RNB1K2R w KQ -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1985"
+    },
+    {
+      "id": "record-2261",
+      "eco": "C44",
+      "name": "Scotch Game: Göring Gambit",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 c2c3",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1986"
+    },
+    {
+      "id": "record-2262",
+      "eco": "C44",
+      "name": "Scotch Game: Göring Gambit, Bardeleben Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Bc4 Nf6 6. Nxc3 Bb4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 c2c3 d4c3 f1c4 g8f6 b1c3 f8b4",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/8/1bB1P3/2N2N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1987"
+    },
+    {
+      "id": "record-2263",
+      "eco": "C44",
+      "name": "Scotch Game: Göring Gambit, Double Pawn Sacrifice",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Bc4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 c2c3 d4c3 f1c4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/2B1P3/2p2N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1988"
+    },
+    {
+      "id": "record-2264",
+      "eco": "C44",
+      "name": "Scotch Game: Göring Gambit, Main Line",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Nxc3 Bb4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 c2c3 d4c3 b1c3 f8b4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/8/1b2P3/2N2N2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1989"
+    },
+    {
+      "id": "record-2265",
+      "eco": "C44",
+      "name": "Scotch Game: Hanneken Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bb4+ 5. c3 dxc3 6. O-O cxb2 7. Bxb2 Nf6 8. Ng5 O-O 9. e5 Nxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8b4 c2c3 d4c3 e1g1 c3b2 c1b2 g8f6 f3g5 e8g8 e4e5 c6e5",
+      "epd": "r1bq1rk1/pppp1ppp/5n2/4n1N1/1bB5/8/PB3PPP/RN1Q1RK1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1990"
+    },
+    {
+      "id": "record-2266",
+      "eco": "C44",
+      "name": "Scotch Game: Haxo Gambit",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8c5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b5/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1991"
+    },
+    {
+      "id": "record-2267",
+      "eco": "C44",
+      "name": "Scotch Game: Lolli Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 Nxd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 c6d4",
+      "epd": "r1bqkbnr/pppp1ppp/8/4p3/3nP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1992"
+    },
+    {
+      "id": "record-2268",
+      "eco": "C44",
+      "name": "Scotch Game: Lolli Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 Nxd4 4. Nxd4 exd4 5. Qxd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 c6d4 f3d4 e5d4 d1d4",
+      "epd": "r1bqkbnr/pppp1ppp/8/8/3QP3/8/PPP2PPP/RNB1KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1992"
+    },
+    {
+      "id": "record-2269",
+      "eco": "C44",
+      "name": "Scotch Game: Napoleon Gambit",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 Nxd4 4. Nxd4 exd4 5. Bc4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 c6d4 f3d4 e5d4 f1c4",
+      "epd": "r1bqkbnr/pppp1ppp/8/8/2BpP3/8/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1993"
+    },
+    {
+      "id": "record-2270",
+      "eco": "C44",
+      "name": "Scotch Game: Relfsson Gambit",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bb5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1b5",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/1B6/3pP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1994"
+    },
+    {
+      "id": "record-2271",
+      "eco": "C44",
+      "name": "Scotch Game: Scotch Gambit",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/2BpP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1995"
+    },
+    {
+      "id": "record-2272",
+      "eco": "C44",
+      "name": "Scotch Game: Scotch Gambit, Advance Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. e5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e4e5",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4P3/2Bp4/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1996"
+    },
+    {
+      "id": "record-2273",
+      "eco": "C44",
+      "name": "Scotch Game: Scotch Gambit, Cochrane-Anderssen Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. O-O d6 6. c3 Bg4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8c5 e1g1 d7d6 c2c3 c8g4",
+      "epd": "r2qk1nr/ppp2ppp/2np4/2b5/2BpP1b1/2P2N2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1997"
+    },
+    {
+      "id": "record-2274",
+      "eco": "C44",
+      "name": "Scotch Game: Scotch Gambit, Dubois Réti Defense",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1998"
+    },
+    {
+      "id": "record-2275",
+      "eco": "C44",
+      "name": "Scotch Game: Scotch Gambit, Göring Gambit Declined",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 c2c3 d7d5",
+      "epd": "r1bqkbnr/ppp2ppp/2n5/3p4/3pP3/2P2N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1999"
+    },
+    {
+      "id": "record-2276",
+      "eco": "C44",
+      "name": "Scotch Game: Scotch Gambit, Kingside Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. e5 Ng4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e4e5 f6g4",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/4P3/2Bp2n1/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2000"
+    },
+    {
+      "id": "record-2277",
+      "eco": "C44",
+      "name": "Scotch Game: Scotch Gambit, London Defense",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bb4+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8b4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/8/1bBpP3/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2001"
+    },
+    {
+      "id": "record-2278",
+      "eco": "C44",
+      "name": "Scotch Game: Scotch Gambit, Sarratt Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. Ng5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8c5 f3g5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b3N1/2BpP3/8/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2002"
+    },
+    {
+      "id": "record-2279",
+      "eco": "C44",
+      "name": "Scotch Game: Sea-Cadet Mate",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Nxc3 d6 6. Bc4 Bg4 7. O-O Ne5 8. Nxe5 Bxd1 9. Bxf7+ Ke7 10. Nd5#",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 c2c3 d4c3 b1c3 d7d6 f1c4 c8g4 e1g1 c6e5 f3e5 g4d1 c4f7 e8e7 c3d5",
+      "epd": "r2q1bnr/ppp1kBpp/3p4/3NN3/4P3/8/PP3PPP/R1Bb1RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2003"
+    },
+    {
+      "id": "record-2280",
+      "eco": "C44",
+      "name": "Scotch Game: Vitzthum Attack",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. Ng5 Nh6 6. Qh5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8c5 f3g5 g8h6 d1h5",
+      "epd": "r1bqk2r/pppp1ppp/2n4n/2b3NQ/2BpP3/8/PPP2PPP/RNB1K2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2004"
+    },
+    {
+      "id": "record-2281",
+      "eco": "C45",
+      "name": "Scotch Game",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1982"
+    },
+    {
+      "id": "record-2282",
+      "eco": "C45",
+      "name": "Scotch Game",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Nb5 Bb4+ 6. Bd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 d4b5 f8b4 c1d2",
+      "epd": "r1b1k1nr/pppp1ppp/2n5/1N6/1b2P2q/8/PPPB1PPP/RN1QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1982"
+    },
+    {
+      "id": "record-2283",
+      "eco": "C45",
+      "name": "Scotch Game: Alekhine Gambit",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. e5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 e4e5",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4P3/3N4/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2005"
+    },
+    {
+      "id": "record-2284",
+      "eco": "C45",
+      "name": "Scotch Game: Blumenfeld Attack",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. Nb5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 c1e3 d8f6 d4b5",
+      "epd": "r1b1k1nr/pppp1ppp/2n2q2/1Nb5/4P3/4B3/PPP2PPP/RN1QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2006"
+    },
+    {
+      "id": "record-2285",
+      "eco": "C45",
+      "name": "Scotch Game: Braune Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Be3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 c1e3",
+      "epd": "r1b1kbnr/pppp1ppp/2n5/8/3NP2q/4B3/PPP2PPP/RN1QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2007"
+    },
+    {
+      "id": "record-2286",
+      "eco": "C45",
+      "name": "Scotch Game: Classical Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b5/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2008"
+    },
+    {
+      "id": "record-2287",
+      "eco": "C45",
+      "name": "Scotch Game: Classical Variation, Blackburne Attack",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. Qd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 c1e3 d8f6 c2c3 g8e7 d1d2",
+      "epd": "r1b1k2r/ppppnppp/2n2q2/2b5/3NP3/2P1B3/PP1Q1PPP/RN2KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2009"
+    },
+    {
+      "id": "record-2288",
+      "eco": "C45",
+      "name": "Scotch Game: Classical Variation, Intermezzo Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Nxc6 Qf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 d4c6 d8f6",
+      "epd": "r1b1k1nr/pppp1ppp/2N2q2/2b5/4P3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2010"
+    },
+    {
+      "id": "record-2289",
+      "eco": "C45",
+      "name": "Scotch Game: Classical Variation, Millennium Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Qg6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 c1e3 d8f6 c2c3 f6g6",
+      "epd": "r1b1k1nr/pppp1ppp/2n3q1/2b5/3NP3/2P1B3/PP3PPP/RN1QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2011"
+    },
+    {
+      "id": "record-2290",
+      "eco": "C45",
+      "name": "Scotch Game: Fraser Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Nf3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 d4f3",
+      "epd": "r1b1kbnr/pppp1ppp/2n5/8/4P2q/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2012"
+    },
+    {
+      "id": "record-2291",
+      "eco": "C45",
+      "name": "Scotch Game: Ghulam-Kassim Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 d6 6. Bd3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 c6d4 d1d4 d7d6 f1d3",
+      "epd": "r1bqkbnr/ppp2ppp/3p4/8/3QP3/3B4/PPP2PPP/RNB1K2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2013"
+    },
+    {
+      "id": "record-2292",
+      "eco": "C45",
+      "name": "Scotch Game: Gottschall Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. Qd2 d5 8. Nb5 Bxe3 9. Qxe3 O-O 10. Nxc7 Rb8 11. Nxd5 Nxd5 12. exd5 Nb4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 c1e3 d8f6 c2c3 g8e7 d1d2 d7d5 d4b5 c5e3 d2e3 e8g8 b5c7 a8b8 c7d5 e7d5 e4d5 c6b4",
+      "epd": "1rb2rk1/pp3ppp/5q2/3P4/1n6/2P1Q3/PP3PPP/RN2KB1R w KQ -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-2014"
+    },
+    {
+      "id": "record-2293",
+      "eco": "C45",
+      "name": "Scotch Game: Horwitz Attack",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Nb5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 d4b5",
+      "epd": "r1b1kbnr/pppp1ppp/2n5/1N6/4P2q/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2015"
+    },
+    {
+      "id": "record-2294",
+      "eco": "C45",
+      "name": "Scotch Game: Horwitz Attack, Blackburne Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Nb5 Bb4+ 6. Bd2 Qxe4+ 7. Be2 Kd8 8. O-O Bxd2 9. Qxd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 d4b5 f8b4 c1d2 h4e4 f1e2 e8d8 e1g1 b4d2 d1d2",
+      "epd": "r1bk2nr/pppp1ppp/2n5/1N6/4q3/8/PPPQBPPP/RN3RK1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2016"
+    },
+    {
+      "id": "record-2295",
+      "eco": "C45",
+      "name": "Scotch Game: Malaniuk Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bb4+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8b4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/8/1b1NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2017"
+    },
+    {
+      "id": "record-2296",
+      "eco": "C45",
+      "name": "Scotch Game: Meitner Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. Nc2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 c1e3 d8f6 c2c3 g8e7 d4c2",
+      "epd": "r1b1k2r/ppppnppp/2n2q2/2b5/4P3/2P1B3/PPN2PPP/RN1QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2018"
+    },
+    {
+      "id": "record-2297",
+      "eco": "C45",
+      "name": "Scotch Game: Mieses Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 d4c6 b7c6 e4e5",
+      "epd": "r1bqkb1r/p1pp1ppp/2p2n2/4P3/8/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2019"
+    },
+    {
+      "id": "record-2298",
+      "eco": "C45",
+      "name": "Scotch Game: Modern Defense",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Nc3 Bb4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 b1c3 f8b4",
+      "epd": "r1b1k1nr/pppp1ppp/2n5/8/1b1NP2q/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2020"
+    },
+    {
+      "id": "record-2299",
+      "eco": "C45",
+      "name": "Scotch Game: Paulsen Attack",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. Bb5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 c1e3 d8f6 c2c3 g8e7 f1b5",
+      "epd": "r1b1k2r/ppppnppp/2n2q2/1Bb5/3NP3/2P1B3/PP3PPP/RN1QK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2021"
+    },
+    {
+      "id": "record-2300",
+      "eco": "C45",
+      "name": "Scotch Game: Paulsen Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Nf5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 d4f5",
+      "epd": "r1b1kbnr/pppp1ppp/2n5/5N2/4P2q/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2022"
+    },
+    {
+      "id": "record-2301",
+      "eco": "C45",
+      "name": "Scotch Game: Paulsen, Gunsberg Defense",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. Bb5 Nd8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 c1e3 d8f6 c2c3 g8e7 f1b5 c6d8",
+      "epd": "r1bnk2r/ppppnppp/5q2/1Bb5/3NP3/2P1B3/PP3PPP/RN1QK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2023"
+    },
+    {
+      "id": "record-2302",
+      "eco": "C45",
+      "name": "Scotch Game: Potter Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Nb3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 d4b3",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b5/4P3/1N6/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2024"
+    },
+    {
+      "id": "record-2303",
+      "eco": "C45",
+      "name": "Scotch Game: Romanishin Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Nb3 Bb4+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 f8c5 d4b3 c5b4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/8/1b2P3/1N6/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2025"
+    },
+    {
+      "id": "record-2304",
+      "eco": "C45",
+      "name": "Scotch Game: Rosenthal Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Nb5 Bb4+ 6. Bd2 Qxe4+ 7. Be2 Kd8 8. O-O Bxd2 9. Nxd2 Qg6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 d4b5 f8b4 c1d2 h4e4 f1e2 e8d8 e1g1 b4d2 b1d2 e4g6",
+      "epd": "r1bk2nr/pppp1ppp/2n3q1/1N6/8/8/PPPNBPPP/R2Q1RK1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2026"
+    },
+    {
+      "id": "record-2305",
+      "eco": "C45",
+      "name": "Scotch Game: Schmidt Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2027"
+    },
+    {
+      "id": "record-2306",
+      "eco": "C45",
+      "name": "Scotch Game: Steinitz Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4",
+      "epd": "r1b1kbnr/pppp1ppp/2n5/8/3NP2q/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2028"
+    },
+    {
+      "id": "record-2307",
+      "eco": "C45",
+      "name": "Scotch Game: Steinitz Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4 5. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 d8h4 b1c3",
+      "epd": "r1b1kbnr/pppp1ppp/2n5/8/3NP2q/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2028"
+    },
+    {
+      "id": "record-2308",
+      "eco": "C45",
+      "name": "Scotch Game: Tartakower Variation",
+      "family": "Scotch Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. Nd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 d4c6 b7c6 b1d2",
+      "epd": "r1bqkb1r/p1pp1ppp/2p2n2/8/4P3/8/PPPN1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2029"
+    }
+  ]
+}

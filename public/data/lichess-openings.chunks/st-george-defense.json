@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "St. George Defense",
+    "chunkKey": "st-george-defense",
+    "recordCount": 4,
+    "lineCount": 4
+  },
+  "records": [
+    {
+      "id": "record-865",
+      "eco": "B00",
+      "name": "St. George Defense",
+      "family": "St. George Defense",
+      "pgn": "1. e4 a6",
+      "uci": "e2e4 a7a6",
+      "epd": "rnbqkbnr/1ppppppp/p7/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-741"
+    },
+    {
+      "id": "record-866",
+      "eco": "B00",
+      "name": "St. George Defense: Polish Variation",
+      "family": "St. George Defense",
+      "pgn": "1. e4 a6 2. d4 b5 3. Nf3 Bb7 4. Bd3 e6",
+      "uci": "e2e4 a7a6 d2d4 b7b5 g1f3 c8b7 f1d3 e7e6",
+      "epd": "rn1qkbnr/1bpp1ppp/p3p3/1p6/3PP3/3B1N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-742"
+    },
+    {
+      "id": "record-867",
+      "eco": "B00",
+      "name": "St. George Defense: San Jorge Variation",
+      "family": "St. George Defense",
+      "pgn": "1. e4 a6 2. d4 b5 3. Nf3 Bb7 4. Bd3 d6 5. O-O g6 6. c3 Bg7",
+      "uci": "e2e4 a7a6 d2d4 b7b5 g1f3 c8b7 f1d3 d7d6 e1g1 g7g6 c2c3 f8g7",
+      "epd": "rn1qk1nr/1bp1ppbp/p2p2p1/1p6/3PP3/2PB1N2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-743"
+    },
+    {
+      "id": "record-868",
+      "eco": "B00",
+      "name": "St. George Defense: Zilbermints Gambit",
+      "family": "St. George Defense",
+      "pgn": "1. e4 a6 2. d4 e5",
+      "uci": "e2e4 a7a6 d2d4 e7e5",
+      "epd": "rnbqkbnr/1ppp1ppp/p7/4p3/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-744"
+    }
+  ]
+}

@@ -2,11 +2,12 @@ import { Chess } from 'chess.js';
 import { describe, expect, it } from 'vitest';
 import {
   defaultOpeningTrainerConfig,
+  getOpeningTrainerConfigStatus,
   startOpeningTrainerRound,
   submitOpeningTrainerSanMove,
   type OpeningTrainerConfig,
 } from './openingTrainer';
-import { createOpeningLookup, type OpeningLookupData, type OpeningLookupRecord } from './openings';
+import { createOpeningLookup, type OpeningCatalog, type OpeningLookupRecord } from './openings';
 
 const createRecord = ({
   id,
@@ -36,6 +37,7 @@ const createRecord = ({
 
   return {
     id,
+    lineId: '',
     eco,
     name,
     family,
@@ -50,8 +52,41 @@ const createRecord = ({
   };
 };
 
+const buildEligibleRecordCounts = (records: OpeningLookupRecord[]) => {
+  const whiteExactCounts = new Map<number, number>();
+  const blackExactCounts = new Map<number, number>();
+  let maxWhiteMoves = 0;
+  let maxBlackMoves = 0;
+
+  records.forEach((record) => {
+    const whiteMoves = record.playerMoveCounts.white;
+    const blackMoves = record.playerMoveCounts.black;
+
+    whiteExactCounts.set(whiteMoves, (whiteExactCounts.get(whiteMoves) ?? 0) + 1);
+    blackExactCounts.set(blackMoves, (blackExactCounts.get(blackMoves) ?? 0) + 1);
+    maxWhiteMoves = Math.max(maxWhiteMoves, whiteMoves);
+    maxBlackMoves = Math.max(maxBlackMoves, blackMoves);
+  });
+
+  const white = Array.from({ length: maxWhiteMoves + 1 }, () => 0);
+  const black = Array.from({ length: maxBlackMoves + 1 }, () => 0);
+
+  for (let depth = maxWhiteMoves; depth >= 0; depth -= 1) {
+    white[depth] = (whiteExactCounts.get(depth) ?? 0) + (white[depth + 1] ?? 0);
+  }
+
+  for (let depth = maxBlackMoves; depth >= 0; depth -= 1) {
+    black[depth] = (blackExactCounts.get(depth) ?? 0) + (black[depth + 1] ?? 0);
+  }
+
+  return {
+    white,
+    black,
+  };
+};
+
 const buildLookup = () => {
-  const records = [
+  const baseRecords = [
     createRecord({
       id: 'record-1',
       eco: 'C00',
@@ -82,26 +117,92 @@ const buildLookup = () => {
     }),
   ];
 
-  const data: OpeningLookupData = {
+  const groupedRecords = new Map<string, OpeningLookupRecord[]>();
+  const chunkKeyByFamily = new Map([
+    ['French Defense', 'french-defense'],
+    ['Sicilian Defense', 'sicilian-defense'],
+    ['Caro-Kann Defense', 'caro-kann-defense'],
+  ]);
+
+  baseRecords.forEach((record) => {
+    const entries = groupedRecords.get(record.name) ?? [];
+    entries.push(record);
+    groupedRecords.set(record.name, entries);
+  });
+
+  const canonicalGroups = Array.from(groupedRecords.entries())
+    .map(([name, records]) => ({
+      name,
+      records,
+      canonicalRecord: [...records].sort((left, right) => (
+        left.plyCount - right.plyCount ||
+        left.eco.localeCompare(right.eco) ||
+        left.uci.localeCompare(right.uci)
+      ))[0],
+    }))
+    .sort((left, right) => (
+      left.canonicalRecord.eco.localeCompare(right.canonicalRecord.eco) ||
+      left.canonicalRecord.name.localeCompare(right.canonicalRecord.name)
+    ));
+
+  const lineIdByName = new Map<string, string>();
+  const lines = canonicalGroups.map(({ name, records, canonicalRecord }, index) => {
+    const lineId = `line-${index + 1}`;
+    lineIdByName.set(name, lineId);
+
+    return {
+      id: lineId,
+      name: canonicalRecord.name,
+      family: canonicalRecord.family,
+      chunkKey: chunkKeyByFamily.get(canonicalRecord.family) ?? canonicalRecord.family,
+      recordCount: records.length,
+      eligibleRecordCounts: buildEligibleRecordCounts(records),
+    };
+  });
+
+  const records = baseRecords.map((record) => ({
+    ...record,
+    lineId: lineIdByName.get(record.name) ?? record.lineId,
+  }));
+
+  const familiesMap = new Map<string, { name: string; chunkKey: string; recordCount: number; positionCount: number; lineCount: number; lineIds: string[] }>();
+  lines.forEach((line) => {
+    const family = familiesMap.get(line.family) ?? {
+      name: line.family,
+      chunkKey: line.chunkKey,
+      recordCount: 0,
+      positionCount: 0,
+      lineCount: 0,
+      lineIds: [],
+    };
+    family.recordCount += line.recordCount;
+    family.positionCount += line.recordCount;
+    family.lineCount += 1;
+    family.lineIds.push(line.id);
+    familiesMap.set(line.family, family);
+  });
+
+  const catalog: OpeningCatalog = {
     meta: {
       generatedAt: '2026-03-23T00:00:00.000Z',
       sourceRepo: 'https://example.test',
       sourceRef: 'fixture',
       distFile: 'dist/all.tsv',
       recordCount: records.length,
-      familyCount: 3,
+      familyCount: familiesMap.size,
+      lineCount: lines.length,
     },
-    families: [],
-    records,
-    lookupByEpd: records.reduce<Record<string, string[]>>((accumulator, record) => {
-      const ids = accumulator[record.epd] ?? [];
-      ids.push(record.id);
-      accumulator[record.epd] = ids;
-      return accumulator;
-    }, {}),
+    families: Array.from(familiesMap.values()),
+    lines,
   };
 
-  return createOpeningLookup(data);
+  return {
+    catalog,
+    lookup: createOpeningLookup({
+      catalog,
+      records,
+    }),
+  };
 };
 
 const buildConfig = (lookupLineIds: string[], overrides: Partial<OpeningTrainerConfig> = {}): OpeningTrainerConfig => ({
@@ -113,8 +214,23 @@ const buildConfig = (lookupLineIds: string[], overrides: Partial<OpeningTrainerC
 });
 
 describe('opening trainer core', () => {
+  it('computes matching counts from the catalog without loading record data', () => {
+    const { catalog } = buildLookup();
+    const frenchConfig = buildConfig([], {
+      selectedFamilyNames: ['French Defense'],
+      depthPlayerMoves: 2,
+      playerColor: 'white',
+    });
+
+    expect(getOpeningTrainerConfigStatus(catalog, frenchConfig)).toMatchObject({
+      matchingLineCount: 1,
+      matchingRecordCount: 1,
+      isStartDisabled: false,
+    });
+  });
+
   it('auto-plays white first when the trainee is black', () => {
-    const lookup = buildLookup();
+    const { lookup } = buildLookup();
     const frenchLineId = lookup.lines.find((line) => line.name === 'French Defense')?.id;
 
     if (!frenchLineId) {
@@ -129,7 +245,7 @@ describe('opening trainer core', () => {
   });
 
   it('rejects a move that does not stay inside the selected opening pool', () => {
-    const lookup = buildLookup();
+    const { lookup } = buildLookup();
     const frenchLineId = lookup.lines.find((line) => line.name === 'French Defense')?.id;
 
     if (!frenchLineId) {
@@ -145,7 +261,7 @@ describe('opening trainer core', () => {
   });
 
   it('narrows the active pool and randomizes over unique opponent replies', () => {
-    const lookup = buildLookup();
+    const { lookup } = buildLookup();
     const frenchLineId = lookup.lines.find((line) => line.name === 'French Defense')?.id;
     const caroLineId = lookup.lines.find((line) => line.name === 'Caro-Kann Defense')?.id;
 
@@ -162,7 +278,7 @@ describe('opening trainer core', () => {
   });
 
   it('falls back to the deepest remaining active line when the final board has no direct lookup match', () => {
-    const lookup = buildLookup();
+    const { lookup } = buildLookup();
     const frenchLineId = lookup.lines.find((line) => line.name === 'French Defense')?.id;
 
     if (!frenchLineId) {

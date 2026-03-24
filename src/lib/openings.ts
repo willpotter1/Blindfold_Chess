@@ -7,8 +7,19 @@ export type OpeningInfo = {
   uci: string;
 };
 
+export type OpeningLookupMeta = {
+  generatedAt: string;
+  sourceRepo: string;
+  sourceRef: string;
+  distFile: string;
+  recordCount: number;
+  familyCount: number;
+  lineCount: number;
+};
+
 export type OpeningLookupRecord = OpeningInfo & {
   id: string;
+  lineId: string;
   family: string;
   epd: string;
   plyCount: number;
@@ -18,44 +29,67 @@ export type OpeningLookupRecord = OpeningInfo & {
   };
 };
 
-export type OpeningFamilySummary = {
-  name: string;
-  recordCount: number;
-  lineCount: number;
+export type OpeningTrainingSelection = {
+  selectedFamilyNames: string[];
+  selectedLineIds: string[];
+  playerColor: 'white' | 'black';
+  depthPlayerMoves: number;
 };
 
-export type OpeningLookupData = {
-  meta: {
-    generatedAt: string;
-    sourceRepo: string;
-    sourceRef: string;
-    distFile: string;
-    recordCount: number;
-    familyCount: number;
-  };
-  families: OpeningFamilySummary[];
-  records: OpeningLookupRecord[];
-  lookupByEpd: Record<string, string[]>;
+export type OpeningEligibleRecordCounts = {
+  white: number[];
+  black: number[];
 };
 
-export type OpeningLine = OpeningInfo & {
+export type OpeningCatalogLine = {
   id: string;
+  name: string;
   family: string;
+  chunkKey: string;
+  recordCount: number;
+  eligibleRecordCounts: OpeningEligibleRecordCounts;
+};
+
+export type OpeningLine = OpeningInfo & OpeningCatalogLine & {
   plyCount: number;
   playerMoveCounts: {
     white: number;
     black: number;
   };
-  recordIds: string[];
-  uciMoves: string[];
+};
+
+export type OpeningFamilySummary = {
+  name: string;
+  chunkKey: string;
+  recordCount: number;
+  positionCount: number;
+  lineCount: number;
 };
 
 export type OpeningFamily = OpeningFamilySummary & {
   lineIds: string[];
 };
 
+export type OpeningCatalog = {
+  meta: OpeningLookupMeta;
+  families: OpeningFamily[];
+  lines: OpeningCatalogLine[];
+};
+
+type OpeningChunkData = {
+  meta: {
+    generatedAt: string;
+    sourceRef: string;
+    familyName: string;
+    chunkKey: string;
+    recordCount: number;
+    lineCount: number;
+  };
+  records: OpeningLookupRecord[];
+};
+
 export type OpeningLookup = {
-  meta: OpeningLookupData['meta'];
+  meta: OpeningLookupMeta;
   families: OpeningFamily[];
   lines: OpeningLine[];
   records: OpeningLookupRecord[];
@@ -66,13 +100,13 @@ export type OpeningLookup = {
   getRecordsForLine: (lineId: string) => OpeningLookupRecord[];
 };
 
-type CanonicalOpeningLine = OpeningLine & {
-  canonicalRecord: OpeningLookupRecord;
-};
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const OPENINGS_CATALOG_URL = `${baseUrl}/data/lichess-openings.lookup.json`;
+const OPENINGS_CHUNK_BASE_URL = `${baseUrl}/data/lichess-openings.chunks`;
 
-const OPENINGS_DATA_URL = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/lichess-openings.lookup.json`;
-
-const splitUciMoves = (uci: string) => uci.trim().split(/\s+/).filter(Boolean);
+const sortAndDedupeTextValues = (values: string[]) => (
+  Array.from(new Set(values.filter(Boolean))).sort((left, right) => left.localeCompare(right))
+);
 
 const compareSpecificity = (left: OpeningLookupRecord, right: OpeningLookupRecord) => {
   if (right.plyCount !== left.plyCount) {
@@ -105,137 +139,189 @@ const compareCanonicalPriority = (left: OpeningLookupRecord, right: OpeningLooku
   return left.uci.localeCompare(right.uci);
 };
 
+const getOpeningChunkUrl = (chunkKey: string) => `${OPENINGS_CHUNK_BASE_URL}/${chunkKey}.json`;
+
 export const normalizeFenToOpeningEpd = (fen: string) => {
   const chess = new Chess(fen);
   return chess.fen().split(' ').slice(0, 4).join(' ');
 };
 
-const groupRecordsByName = (records: OpeningLookupRecord[]) => {
-  const recordsByName = new Map<string, OpeningLookupRecord[]>();
+let openingCatalogPromise: Promise<OpeningCatalog> | null = null;
+const openingChunkPromises = new Map<string, Promise<OpeningLookupRecord[]>>();
 
-  for (const record of records) {
-    const currentRecords = recordsByName.get(record.name) ?? [];
-    currentRecords.push(record);
-    recordsByName.set(record.name, currentRecords);
-  }
-
-  return recordsByName;
+export const resetOpeningAssetCachesForTests = () => {
+  openingCatalogPromise = null;
+  openingChunkPromises.clear();
 };
 
-const buildCanonicalLines = (records: OpeningLookupRecord[]) => {
-  const recordsByName = groupRecordsByName(records);
-  const canonicalLines = new Map<string, CanonicalOpeningLine>();
-  const lineIdByName = new Map<string, string>();
-
-  const canonicalRecords = Array.from(recordsByName.entries())
-    .map(([name, groupedRecords]) => ({
-      name,
-      records: groupedRecords,
-      canonicalRecord: [...groupedRecords].sort(compareCanonicalPriority)[0],
-    }))
-    .sort((left, right) => {
-      const ecoComparison = left.canonicalRecord.eco.localeCompare(right.canonicalRecord.eco);
-      if (ecoComparison !== 0) {
-        return ecoComparison;
+export const getOpeningCatalog = async () => {
+  if (!openingCatalogPromise) {
+    openingCatalogPromise = fetch(OPENINGS_CATALOG_URL).then(async (response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to load openings catalog: ${response.status}`);
       }
 
-      return left.canonicalRecord.name.localeCompare(right.canonicalRecord.name);
+      return response.json() as Promise<OpeningCatalog>;
     });
-
-  canonicalRecords.forEach(({ name, records: groupedRecords, canonicalRecord }, index) => {
-    const lineId = `line-${index + 1}`;
-    lineIdByName.set(name, lineId);
-    canonicalLines.set(lineId, {
-      id: lineId,
-      eco: canonicalRecord.eco,
-      name: canonicalRecord.name,
-      family: canonicalRecord.family,
-      pgn: canonicalRecord.pgn,
-      uci: canonicalRecord.uci,
-      plyCount: canonicalRecord.plyCount,
-      playerMoveCounts: canonicalRecord.playerMoveCounts,
-      recordIds: groupedRecords.map((record) => record.id).sort(),
-      uciMoves: splitUciMoves(canonicalRecord.uci),
-      canonicalRecord,
-    });
-  });
-
-  return {
-    canonicalLines,
-    lineIdByName,
-  };
-};
-
-const createFamilies = (canonicalLines: CanonicalOpeningLine[]) => {
-  const families = new Map<string, OpeningFamily>();
-
-  for (const line of canonicalLines) {
-    const family = families.get(line.family) ?? {
-      name: line.family,
-      recordCount: 0,
-      lineCount: 0,
-      lineIds: [],
-    };
-    family.lineIds.push(line.id);
-    family.lineCount += 1;
-    family.recordCount += line.recordIds.length;
-    families.set(line.family, family);
   }
 
-  return Array.from(families.values()).sort((left, right) => left.name.localeCompare(right.name));
+  return openingCatalogPromise;
 };
 
-export const createOpeningLookup = (data: OpeningLookupData): OpeningLookup => {
-  const recordsById = new Map(data.records.map((record) => [record.id, record]));
-  const { canonicalLines, lineIdByName } = buildCanonicalLines(data.records);
-  const canonicalLineByName = new Map(
-    Array.from(canonicalLines.values()).map((line) => [line.name, line]),
+const loadOpeningChunkRecords = async (chunkKey: string) => {
+  const existingPromise = openingChunkPromises.get(chunkKey);
+
+  if (existingPromise) {
+    return existingPromise;
+  }
+
+  const nextPromise = fetch(getOpeningChunkUrl(chunkKey))
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to load opening chunk ${chunkKey}: ${response.status}`);
+      }
+
+      return response.json() as Promise<OpeningChunkData>;
+    })
+    .then((payload) => payload.records);
+
+  openingChunkPromises.set(chunkKey, nextPromise);
+  return nextPromise;
+};
+
+const resolveOpeningChunkKeys = (
+  catalog: OpeningCatalog,
+  selection: OpeningTrainingSelection,
+) => {
+  const chunkKeys = new Set<string>();
+  const familiesByName = new Map(catalog.families.map((family) => [family.name, family]));
+  const linesById = new Map(catalog.lines.map((line) => [line.id, line]));
+
+  selection.selectedFamilyNames.forEach((familyName) => {
+    const family = familiesByName.get(familyName);
+
+    if (family) {
+      chunkKeys.add(family.chunkKey);
+    }
+  });
+
+  selection.selectedLineIds.forEach((lineId) => {
+    const line = linesById.get(lineId);
+
+    if (line) {
+      chunkKeys.add(line.chunkKey);
+    }
+  });
+
+  return Array.from(chunkKeys).sort((left, right) => left.localeCompare(right));
+};
+
+export const loadOpeningTrainingRecords = async (
+  selection: OpeningTrainingSelection,
+  catalogOverride?: OpeningCatalog,
+) => {
+  const catalog = catalogOverride ?? await getOpeningCatalog();
+  const chunkKeys = resolveOpeningChunkKeys(catalog, selection);
+
+  if (chunkKeys.length === 0) {
+    return [] as OpeningLookupRecord[];
+  }
+
+  const selectedFamilies = new Set(sortAndDedupeTextValues(selection.selectedFamilyNames));
+  const selectedLineIds = new Set(sortAndDedupeTextValues(selection.selectedLineIds));
+  const loadedChunks = await Promise.all(chunkKeys.map((chunkKey) => loadOpeningChunkRecords(chunkKey)));
+  const dedupedRecords = new Map<string, OpeningLookupRecord>();
+
+  loadedChunks.flat().forEach((record) => {
+    if (!selectedFamilies.has(record.family) && !selectedLineIds.has(record.lineId)) {
+      return;
+    }
+
+    if (record.playerMoveCounts[selection.playerColor] < selection.depthPlayerMoves) {
+      return;
+    }
+
+    dedupedRecords.set(record.id, record);
+  });
+
+  return Array.from(dedupedRecords.values()).sort((left, right) => left.id.localeCompare(right.id));
+};
+
+export const createOpeningLookup = ({
+  catalog,
+  records,
+}: {
+  catalog: OpeningCatalog;
+  records: OpeningLookupRecord[];
+}): OpeningLookup => {
+  const families = [...catalog.families].sort((left, right) => left.name.localeCompare(right.name));
+  const recordsById = new Map(records.map((record) => [record.id, record]));
+  const recordIdsByLineId = new Map<string, string[]>();
+  const recordIdsByEpd = new Map<string, string[]>();
+
+  for (const record of records) {
+    const recordIdsForLine = recordIdsByLineId.get(record.lineId) ?? [];
+    recordIdsForLine.push(record.id);
+    recordIdsByLineId.set(record.lineId, recordIdsForLine);
+
+    const recordIdsForEpd = recordIdsByEpd.get(record.epd) ?? [];
+    recordIdsForEpd.push(record.id);
+    recordIdsByEpd.set(record.epd, recordIdsForEpd);
+  }
+
+  for (const recordIds of recordIdsByEpd.values()) {
+    recordIds.sort((leftId, rightId) => (
+      compareSpecificity(recordsById.get(leftId)!, recordsById.get(rightId)!)
+    ));
+  }
+
+  const lineById = new Map(
+    catalog.lines
+      .map((catalogLine) => {
+        const lineRecords = (recordIdsByLineId.get(catalogLine.id) ?? [])
+          .map((recordId) => recordsById.get(recordId))
+          .filter((record): record is OpeningLookupRecord => Boolean(record));
+
+        if (lineRecords.length === 0) {
+          return null;
+        }
+
+        const canonicalRecord = [...lineRecords].sort(compareCanonicalPriority)[0];
+
+        return [catalogLine.id, {
+          ...catalogLine,
+          eco: canonicalRecord.eco,
+          name: canonicalRecord.name,
+          pgn: canonicalRecord.pgn,
+          uci: canonicalRecord.uci,
+          plyCount: canonicalRecord.plyCount,
+          playerMoveCounts: canonicalRecord.playerMoveCounts,
+        } satisfies OpeningLine] as const;
+      })
+      .filter((entry): entry is readonly [string, OpeningLine] => Boolean(entry)),
   );
-  const lines = Array.from(canonicalLines.values()).map((line) => ({
-    id: line.id,
-    eco: line.eco,
-    name: line.name,
-    family: line.family,
-    pgn: line.pgn,
-    uci: line.uci,
-    plyCount: line.plyCount,
-    playerMoveCounts: line.playerMoveCounts,
-    recordIds: line.recordIds,
-    uciMoves: line.uciMoves,
-  }));
-  const lineById = new Map(lines.map((line) => [line.id, line]));
-  const families = createFamilies(Array.from(canonicalLines.values()));
+  const lines = Array.from(lineById.values());
 
   const getCanonicalInfoForRecord = (record: OpeningLookupRecord): OpeningInfo | null => {
-    const canonicalLine = canonicalLineByName.get(record.name);
+    const line = lineById.get(record.lineId);
 
-    if (!canonicalLine) {
+    if (!line) {
       return null;
     }
 
-    return {
-      eco: canonicalLine.eco,
-      name: canonicalLine.name,
-      pgn: canonicalLine.pgn,
-      uci: canonicalLine.uci,
-    };
+    return getOpeningCanonicalInfoFromLine(line);
   };
 
   const getOpeningFromFen = (fen: string): OpeningInfo | null => {
     try {
       const epd = normalizeFenToOpeningEpd(fen);
-      const matchingIds = data.lookupByEpd[epd] ?? [];
+      const matchingIds = recordIdsByEpd.get(epd) ?? [];
 
       if (matchingIds.length === 0) {
         return null;
       }
 
-      const matchingRecords = matchingIds
-        .map((id) => recordsById.get(id))
-        .filter(Boolean)
-        .sort(compareSpecificity);
-      const bestMatch = matchingRecords[0];
-
+      const bestMatch = recordsById.get(matchingIds[0]);
       return bestMatch ? getCanonicalInfoForRecord(bestMatch) : null;
     } catch {
       return null;
@@ -255,10 +341,10 @@ export const createOpeningLookup = (data: OpeningLookupData): OpeningLookup => {
   };
 
   return {
-    meta: data.meta,
+    meta: catalog.meta,
     families,
     lines,
-    records: data.records,
+    records,
     getOpeningFromFen,
     classifyOpeningFromHistory,
     getLine: (id) => lineById.get(id) ?? null,
@@ -269,43 +355,26 @@ export const createOpeningLookup = (data: OpeningLookupData): OpeningLookup => {
         return [];
       }
 
-      return family.lineIds.map((lineId) => lineById.get(lineId)).filter(Boolean);
+      return family.lineIds
+        .map((lineId) => lineById.get(lineId))
+        .filter((line): line is OpeningLine => Boolean(line));
     },
-    getRecordsForLine: (lineId) => {
-      const line = lineById.get(lineId);
-
-      if (!line) {
-        return [];
-      }
-
-      return line.recordIds.map((recordId) => recordsById.get(recordId)).filter(Boolean);
-    },
+    getRecordsForLine: (lineId) => (
+      (recordIdsByLineId.get(lineId) ?? [])
+        .map((recordId) => recordsById.get(recordId))
+        .filter((record): record is OpeningLookupRecord => Boolean(record))
+    ),
   };
 };
 
-let openingLookupPromise: Promise<OpeningLookup> | null = null;
-
-export const getOpeningLookup = async () => {
-  if (!openingLookupPromise) {
-    openingLookupPromise = fetch(OPENINGS_DATA_URL)
-      .then(async (response) => {
-        if (!response.ok) {
-          throw new Error(`Failed to load openings data: ${response.status}`);
-        }
-
-        return response.json() as Promise<OpeningLookupData>;
-      })
-      .then((data) => createOpeningLookup(data));
-  }
-
-  return openingLookupPromise;
-};
-
-export const getOpeningLineIdByName = (lookup: OpeningLookup, openingName: string) => (
+export const getOpeningLineIdByName = (lookup: Pick<OpeningLookup, 'lines'>, openingName: string) => (
   lookup.lines.find((line) => line.name === openingName)?.id ?? null
 );
 
-export const getOpeningLineIdsByFamilyNames = (lookup: OpeningLookup, familyNames: string[]) => {
+export const getOpeningLineIdsByFamilyNames = (
+  lookup: Pick<OpeningLookup, 'families'>,
+  familyNames: string[],
+) => {
   const selectedFamilies = new Set(familyNames);
 
   return lookup.families
@@ -313,7 +382,10 @@ export const getOpeningLineIdsByFamilyNames = (lookup: OpeningLookup, familyName
     .flatMap((family) => family.lineIds);
 };
 
-export const getOpeningLineIdSet = (lookup: OpeningLookup, lineIds: string[]) => {
+export const getOpeningLineIdSet = (
+  lookup: Pick<OpeningLookup, 'getLine'>,
+  lineIds: string[],
+) => {
   const uniqueLineIds = new Set<string>();
 
   lineIds.forEach((lineId) => {
@@ -332,14 +404,18 @@ export const getOpeningCanonicalInfoFromLine = (line: OpeningLine): OpeningInfo 
   uci: line.uci,
 });
 
-export const getOpeningLineNameIdMap = (lookup: OpeningLookup) => (
+export const getOpeningLineNameIdMap = (lookup: Pick<OpeningLookup, 'lines'>) => (
   new Map(lookup.lines.map((line) => [line.name, line.id]))
 );
 
 export const getCanonicalLineIdForRecord = (
-  lookup: OpeningLookup,
+  lookup: Pick<OpeningLookup, 'getLine' | 'lines'>,
   record: OpeningLookupRecord,
 ) => {
+  if (lookup.getLine(record.lineId)) {
+    return record.lineId;
+  }
+
   const lineIdMap = getOpeningLineNameIdMap(lookup);
   return lineIdMap.get(record.name) ?? null;
 };

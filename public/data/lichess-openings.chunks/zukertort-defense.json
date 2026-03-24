@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Zukertort Defense",
+    "chunkKey": "zukertort-defense",
+    "recordCount": 2,
+    "lineCount": 2
+  },
+  "records": [
+    {
+      "id": "record-190",
+      "eco": "A04",
+      "name": "Zukertort Defense: Kingside Variation",
+      "family": "Zukertort Defense",
+      "pgn": "1. Nf3 Nh6 2. d4 g6",
+      "uci": "g1f3 g8h6 d2d4 g7g6",
+      "epd": "rnbqkb1r/pppppp1p/6pn/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-182"
+    },
+    {
+      "id": "record-191",
+      "eco": "A04",
+      "name": "Zukertort Defense: Sicilian Knight Variation",
+      "family": "Zukertort Defense",
+      "pgn": "1. Nf3 Na6 2. e4 c5",
+      "uci": "g1f3 b8a6 e2e4 c7c5",
+      "epd": "r1bqkbnr/pp1ppppp/n7/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-183"
+    }
+  ]
+}

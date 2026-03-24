@@ -1,0 +1,2487 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Queen's Gambit Declined",
+    "chunkKey": "queen-s-gambit-declined",
+    "recordCount": 165,
+    "lineCount": 137
+  },
+  "records": [
+    {
+      "id": "record-2858",
+      "eco": "D02",
+      "name": "Queen's Gambit Declined: Baltic Defense, Pseudo-Slav",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. Nf3 Bf5 3. c4 e6 4. Nc3 c6",
+      "uci": "d2d4 d7d5 g1f3 c8f5 c2c4 e7e6 b1c3 c7c6",
+      "epd": "rn1qkbnr/pp3ppp/2p1p3/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2504"
+    },
+    {
+      "id": "record-2888",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Austrian Attack, Salvio Countergambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c5 3. dxc5 d4",
+      "uci": "d2d4 d7d5 c2c4 c7c5 d4c5 d5d4",
+      "epd": "rnbqkbnr/pp2pppp/8/2P5/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2528"
+    },
+    {
+      "id": "record-2889",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Austrian Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c5",
+      "uci": "d2d4 d7d5 c2c4 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2529"
+    },
+    {
+      "id": "record-2890",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Austrian Defense, Gusev Countergambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c5 3. cxd5 Nf6",
+      "uci": "d2d4 d7d5 c2c4 c7c5 c4d5 g8f6",
+      "epd": "rnbqkb1r/pp2pppp/5n2/2pP4/3P4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2530"
+    },
+    {
+      "id": "record-2891",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Austrian Defense, Haberditz Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c5 3. cxd5 Nf6 4. e4 Nxe4 5. dxc5 Qa5+",
+      "uci": "d2d4 d7d5 c2c4 c7c5 c4d5 g8f6 e2e4 f6e4 d4c5 d8a5",
+      "epd": "rnb1kb1r/pp2pppp/8/q1PP4/4n3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2531"
+    },
+    {
+      "id": "record-2892",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Baltic Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Bf5",
+      "uci": "d2d4 d7d5 c2c4 c8f5",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p1b2/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2532"
+    },
+    {
+      "id": "record-2893",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Baltic Defense, Argentinian Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Bf5 3. cxd5 Bxb1 4. Qa4+ c6 5. dxc6 Nxc6",
+      "uci": "d2d4 d7d5 c2c4 c8f5 c4d5 f5b1 d1a4 c7c6 d5c6 b8c6",
+      "epd": "r2qkbnr/pp2pppp/2n5/8/Q2P4/8/PP2PPPP/RbB1KBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2533"
+    },
+    {
+      "id": "record-2894",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Baltic Defense, Pseudo-Chigorin",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Bf5 3. Nc3 e6 4. Nf3 Nc6",
+      "uci": "d2d4 d7d5 c2c4 c8f5 b1c3 e7e6 g1f3 b8c6",
+      "epd": "r2qkbnr/ppp2ppp/2n1p3/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2534"
+    },
+    {
+      "id": "record-2895",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Baltic Defense, Queen Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Bf5 3. Qb3",
+      "uci": "d2d4 d7d5 c2c4 c8f5 d1b3",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p1b2/2PP4/1Q6/PP2PPPP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2535"
+    },
+    {
+      "id": "record-2896",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Baltic Defense, Queen Attack Deferred",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Bf5 3. Nc3 e6 4. Qb3",
+      "uci": "d2d4 d7d5 c2c4 c8f5 b1c3 e7e6 d1b3",
+      "epd": "rn1qkbnr/ppp2ppp/4p3/3p1b2/2PP4/1QN5/PP2PPPP/R1B1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2536"
+    },
+    {
+      "id": "record-2897",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Marshall Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nf6",
+      "uci": "d2d4 d7d5 c2c4 g8f6",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2537"
+    },
+    {
+      "id": "record-2898",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Marshall Defense, Tan Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nf6 3. cxd5 c6",
+      "uci": "d2d4 d7d5 c2c4 g8f6 c4d5 c7c6",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/3P4/3P4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2538"
+    },
+    {
+      "id": "record-2899",
+      "eco": "D06",
+      "name": "Queen's Gambit Declined: Zilbermints Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 b5",
+      "uci": "d2d4 d7d5 c2c4 b7b5",
+      "epd": "rnbqkbnr/p1p1pppp/8/1p1p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2539"
+    },
+    {
+      "id": "record-2900",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6",
+      "uci": "d2d4 d7d5 c2c4 b8c6",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2540"
+    },
+    {
+      "id": "record-2901",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. Nc3",
+      "uci": "d2d4 d7d5 c2c4 b8c6 b1c3",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2540"
+    },
+    {
+      "id": "record-2902",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. Nc3 dxc4",
+      "uci": "d2d4 d7d5 c2c4 b8c6 b1c3 d5c4",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/8/2pP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2540"
+    },
+    {
+      "id": "record-2903",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense, Exchange Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. cxd5 Qxd5",
+      "uci": "d2d4 d7d5 c2c4 b8c6 c4d5 d8d5",
+      "epd": "r1b1kbnr/ppp1pppp/2n5/3q4/3P4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2541"
+    },
+    {
+      "id": "record-2904",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense, Exchange Variation, Costa's Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. cxd5 Qxd5 4. e3 e5 5. Nc3 Bb4 6. Bd2 Bxc3 7. Bxc3 exd4 8. Ne2",
+      "uci": "d2d4 d7d5 c2c4 b8c6 c4d5 d8d5 e2e3 e7e5 b1c3 f8b4 c1d2 b4c3 d2c3 e5d4 g1e2",
+      "epd": "r1b1k1nr/ppp2ppp/2n5/3q4/3p4/2B1P3/PP2NPPP/R2QKB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2542"
+    },
+    {
+      "id": "record-2905",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense, Janowski Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. Nc3 dxc4 4. Nf3",
+      "uci": "d2d4 d7d5 c2c4 b8c6 b1c3 d5c4 g1f3",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2543"
+    },
+    {
+      "id": "record-2906",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense, Lazard Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. Nf3 e5",
+      "uci": "d2d4 d7d5 c2c4 b8c6 g1f3 e7e5",
+      "epd": "r1bqkbnr/ppp2ppp/2n5/3pp3/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2544"
+    },
+    {
+      "id": "record-2907",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense, Main Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. Nf3 Bg4",
+      "uci": "d2d4 d7d5 c2c4 b8c6 g1f3 c8g4",
+      "epd": "r2qkbnr/ppp1pppp/2n5/3p4/2PP2b1/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2545"
+    },
+    {
+      "id": "record-2908",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense, Main Line, Alekhine Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. Nf3 Bg4 4. Qa4",
+      "uci": "d2d4 d7d5 c2c4 b8c6 g1f3 c8g4 d1a4",
+      "epd": "r2qkbnr/ppp1pppp/2n5/3p4/Q1PP2b1/5N2/PP2PPPP/RNB1KB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2546"
+    },
+    {
+      "id": "record-2909",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense, Modern Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. Nc3 dxc4 4. Nf3 Nf6",
+      "uci": "d2d4 d7d5 c2c4 b8c6 b1c3 d5c4 g1f3 g8f6",
+      "epd": "r1bqkb1r/ppp1pppp/2n2n2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2547"
+    },
+    {
+      "id": "record-2910",
+      "eco": "D07",
+      "name": "Queen's Gambit Declined: Chigorin Defense, Tartakower Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 Nc6 3. Nc3 e5",
+      "uci": "d2d4 d7d5 c2c4 b8c6 b1c3 e7e5",
+      "epd": "r1bqkbnr/ppp2ppp/2n5/3pp3/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2548"
+    },
+    {
+      "id": "record-2911",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5",
+      "uci": "d2d4 d7d5 c2c4 e7e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2549"
+    },
+    {
+      "id": "record-2912",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Balogh Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. Nbd2 Qe7",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6 b1d2 d8e7",
+      "epd": "r1b1kbnr/ppp1qppp/2n5/4P3/2Pp4/5N2/PP1NPPPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2550"
+    },
+    {
+      "id": "record-2913",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Janowski Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. Nbd2 f6",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6 b1d2 f7f6",
+      "epd": "r1bqkbnr/ppp3pp/2n2p2/4P3/2Pp4/5N2/PP1NPPPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2551"
+    },
+    {
+      "id": "record-2914",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Krenosz Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. Nbd2 Bg4 6. h3 Bxf3 7. Nxf3 Bb4+ 8. Bd2 Qe7",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6 b1d2 c8g4 h2h3 g4f3 d2f3 f8b4 c1d2 d8e7",
+      "epd": "r3k1nr/ppp1qppp/2n5/4P3/1bPp4/5N1P/PP1BPPP1/R2QKB1R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2552"
+    },
+    {
+      "id": "record-2915",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Lasker Trap",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. e3 Bb4+ 5. Bd2 dxe3",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 e2e3 f8b4 c1d2 d4e3",
+      "epd": "rnbqk1nr/ppp2ppp/8/4P3/1bP5/4p3/PP1B1PPP/RN1QKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2553"
+    },
+    {
+      "id": "record-2916",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Modern Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. Nbd2",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6 b1d2",
+      "epd": "r1bqkbnr/ppp2ppp/2n5/4P3/2Pp4/5N2/PP1NPPPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2554"
+    },
+    {
+      "id": "record-2917",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Normal Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3",
+      "epd": "rnbqkbnr/ppp2ppp/8/4P3/2Pp4/5N2/PP2PPPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2555"
+    },
+    {
+      "id": "record-2918",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Spassky Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. e4",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 e2e4",
+      "epd": "rnbqkbnr/ppp2ppp/8/4P3/2PpP3/8/PP3PPP/RNBQKBNR b KQkq e3",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2556"
+    },
+    {
+      "id": "record-2919",
+      "eco": "D08",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Tartakower Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 c5",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 c7c5",
+      "epd": "rnbqkbnr/pp3ppp/8/2p1P3/2Pp4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2557"
+    },
+    {
+      "id": "record-2920",
+      "eco": "D09",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. g3",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6 g2g3",
+      "epd": "r1bqkbnr/ppp2ppp/2n5/4P3/2Pp4/5NP1/PP2PP1P/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2558"
+    },
+    {
+      "id": "record-2921",
+      "eco": "D09",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Be6 Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. g3 Be6",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6 g2g3 c8e6",
+      "epd": "r2qkbnr/ppp2ppp/2n1b3/4P3/2Pp4/5NP1/PP2PP1P/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2559"
+    },
+    {
+      "id": "record-2922",
+      "eco": "D09",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Bf5 Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. g3 Bf5",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6 g2g3 c8f5",
+      "epd": "r2qkbnr/ppp2ppp/2n5/4Pb2/2Pp4/5NP1/PP2PP1P/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2560"
+    },
+    {
+      "id": "record-2923",
+      "eco": "D09",
+      "name": "Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Bg4 Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. g3 Bg4",
+      "uci": "d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6 g2g3 c8g4",
+      "epd": "r2qkbnr/ppp2ppp/2n5/4P3/2Pp2b1/5NP1/PP2PP1P/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2561"
+    },
+    {
+      "id": "record-3025",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6",
+      "uci": "d2d4 d7d5 c2c4 e7e6",
+      "epd": "rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2652"
+    },
+    {
+      "id": "record-3026",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Capablanca Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Bg5 h6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 c1g5 h7h6",
+      "epd": "rnbqkb1r/ppp2pp1/4pn1p/3p2B1/2PP4/5N2/PP2PPPP/RN1QKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2653"
+    },
+    {
+      "id": "record-3027",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Capablanca Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. Nf3 e6 3. c4 d5 4. Bg5 c6 5. Nbd2 Nbd7 6. e3",
+      "uci": "d2d4 g8f6 g1f3 e7e6 c2c4 d7d5 c1g5 c7c6 b1d2 b8d7 e2e3",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p2B1/2PP4/4PN2/PP1N1PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2653"
+    },
+    {
+      "id": "record-3028",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Semmering Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 e6 5. Nbd2 Nbd7 6. Bd3 c5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 e7e6 b1d2 b8d7 f1d3 c6c5",
+      "epd": "r1bqkb1r/pp1n1ppp/4pn2/2pp4/2PP4/3BPN2/PP1N1PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2654"
+    },
+    {
+      "id": "record-3029",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Spielmann Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. e3 c6 5. Nbd2 g6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 g1f3 g8f6 e2e3 c7c6 b1d2 g7g6",
+      "epd": "rnbqkb1r/pp3p1p/2p1pnp1/3p4/2PP4/4PN2/PP1N1PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2655"
+    },
+    {
+      "id": "record-3030",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Stonewall Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 e6 5. Nbd2 Ne4 6. Bd3 f5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 e7e6 b1d2 f6e4 f1d3 f7f5",
+      "epd": "rnbqkb1r/pp4pp/2p1p3/3p1p2/2PPn3/3BPN2/PP1N1PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2656"
+    },
+    {
+      "id": "record-3031",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nf3 c5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 g1f3 c7c5",
+      "epd": "rnbqkbnr/pp3ppp/4p3/2pp4/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2657"
+    },
+    {
+      "id": "record-3032",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch Bishop Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nf3 c5 4. cxd5 exd5 5. Bg5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 g1f3 c7c5 c4d5 e6d5 c1g5",
+      "epd": "rnbqkbnr/pp3ppp/8/2pp2B1/3P4/5N2/PP2PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2658"
+    },
+    {
+      "id": "record-3033",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Traditional Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Bg5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 c1g5",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p2B1/2PP4/5N2/PP2PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2659"
+    },
+    {
+      "id": "record-3034",
+      "eco": "D30",
+      "name": "Queen's Gambit Declined: Vienna Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Bg5 Bb4+",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 c1g5 f8b4",
+      "epd": "rnbqk2r/ppp2ppp/4pn2/3p2B1/1bPP4/5N2/PP2PPPP/RN1QKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2660"
+    },
+    {
+      "id": "record-3037",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Alapin Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 e6 2. c4 b6 3. Nc3 d5",
+      "uci": "d2d4 e7e6 c2c4 b7b6 b1c3 d7d5",
+      "epd": "rnbqkbnr/p1p2ppp/1p2p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2662"
+    },
+    {
+      "id": "record-3038",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Charousek Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7",
+      "epd": "rnbqk1nr/ppp1bppp/4p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2663"
+    },
+    {
+      "id": "record-3039",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Charousek Variation, Miladinovic Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. e4 dxe4 5. f3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7 e2e4 d5e4 f2f3",
+      "epd": "rnbqk1nr/ppp1bppp/4p3/8/2PPp3/2N2P2/PP4PP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2664"
+    },
+    {
+      "id": "record-3040",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Janowski Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 a6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 a7a6",
+      "epd": "rnbqkbnr/1pp2ppp/p3p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2665"
+    },
+    {
+      "id": "record-3041",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Queen's Knight Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3",
+      "epd": "rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2666"
+    },
+    {
+      "id": "record-3042",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Semi-Slav, Abrahams Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. a4 Bb4 6. e3 b5 7. Bd2 a5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 d5c4 a2a4 f8b4 e2e3 b7b5 c1d2 a7a5",
+      "epd": "rnbqk1nr/5ppp/2p1p3/pp6/PbpP4/2N1PN2/1P1B1PPP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2667"
+    },
+    {
+      "id": "record-3043",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Semi-Slav, Junge Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nf3 c6 4. Nc3 dxc4 5. a4 Bb4 6. e3 b5 7. Bd2 Qb6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 g1f3 c7c6 b1c3 d5c4 a2a4 f8b4 e2e3 b7b5 c1d2 d8b6",
+      "epd": "rnb1k1nr/p4ppp/1qp1p3/1p6/PbpP4/2N1PN2/1P1B1PPP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2668"
+    },
+    {
+      "id": "record-3044",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Semi-Slav, Koomen Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. e3 b5 6. a4 Bb4 7. Bd2 Qe7",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 d5c4 e2e3 b7b5 a2a4 f8b4 c1d2 d8e7",
+      "epd": "rnb1k1nr/p3qppp/2p1p3/1p6/PbpP4/2N1PN2/1P1B1PPP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2669"
+    },
+    {
+      "id": "record-3045",
+      "eco": "D31",
+      "name": "Queen's Gambit Declined: Uhlmann Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. Rc1 dxc4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7 g1f3 g8f6 c1g5 h7h6 g5h4 e8g8 a1c1 d5c4",
+      "epd": "rnbq1rk1/ppp1bpp1/4pn1p/8/2pP3B/2N2N2/PP2PPPP/2RQKB1R w K -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2670"
+    },
+    {
+      "id": "record-3058",
+      "eco": "D32",
+      "name": "Queen's Gambit Declined: Tarrasch Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c5 c4d5 e6d5",
+      "epd": "rnbqkbnr/pp3ppp/8/2pp4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2683"
+    },
+    {
+      "id": "record-3073",
+      "eco": "D34",
+      "name": "Queen's Gambit Declined: Tarrasch Defense, Stoltz Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nf3 c5 4. cxd5 exd5 5. g3 Nc6 6. Bg2 Nf6 7. O-O Be7 8. Nc3 O-O 9. Bg5 Be6 10. Rc1 b6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 g1f3 c7c5 c4d5 e6d5 g2g3 b8c6 f1g2 g8f6 e1g1 f8e7 b1c3 e8g8 c1g5 c8e6 a1c1 b7b6",
+      "epd": "r2q1rk1/p3bppp/1pn1bn2/2pp2B1/3P4/2N2NP1/PP2PPBP/2RQ1RK1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2698"
+    },
+    {
+      "id": "record-3086",
+      "eco": "D35",
+      "name": "Queen's Gambit Declined: Exchange Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. cxd5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c4d5",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3P4/3P4/2N5/PP2PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2711"
+    },
+    {
+      "id": "record-3087",
+      "eco": "D35",
+      "name": "Queen's Gambit Declined: Exchange Variation, Chameleon Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. cxd5 exd5 5. Bg5 Be7 6. e3 O-O 7. Bd3 Nbd7 8. Qc2 Re8 9. Nge2 Nf8 10. O-O-O",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c4d5 e6d5 c1g5 f8e7 e2e3 e8g8 f1d3 b8d7 d1c2 f8e8 g1e2 d7f8 e1c1",
+      "epd": "r1bqrnk1/ppp1bppp/5n2/3p2B1/3P4/2NBP3/PPQ1NPPP/2KR3R b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2712"
+    },
+    {
+      "id": "record-3088",
+      "eco": "D35",
+      "name": "Queen's Gambit Declined: Exchange Variation, Positional Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. cxd5 exd5 5. Bg5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c4d5 e6d5 c1g5",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3p2B1/3P4/2N5/PP2PPPP/R2QKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2713"
+    },
+    {
+      "id": "record-3089",
+      "eco": "D35",
+      "name": "Queen's Gambit Declined: Exchange Variation, Positional Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. cxd5 exd5 5. Bg5 c6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c4d5 e6d5 c1g5 c7c6",
+      "epd": "rnbqkb1r/pp3ppp/2p2n2/3p2B1/3P4/2N5/PP2PPPP/R2QKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2713"
+    },
+    {
+      "id": "record-3090",
+      "eco": "D35",
+      "name": "Queen's Gambit Declined: Exchange Variation, Sämisch Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Nbd7 5. cxd5 exd5 6. Bf4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 b8d7 c4d5 e6d5 c1f4",
+      "epd": "r1bqkb1r/pppn1ppp/5n2/3p4/3P1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2714"
+    },
+    {
+      "id": "record-3091",
+      "eco": "D35",
+      "name": "Queen's Gambit Declined: Harrwitz Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bf4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1f4",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP1B2/2N5/PP2PPPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2715"
+    },
+    {
+      "id": "record-3092",
+      "eco": "D35",
+      "name": "Queen's Gambit Declined: Normal Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2716"
+    },
+    {
+      "id": "record-3093",
+      "eco": "D36",
+      "name": "Queen's Gambit Declined: Exchange Variation, Reshevsky Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. cxd5 exd5 5. Bg5 c6 6. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c4d5 e6d5 c1g5 c7c6 d1c2",
+      "epd": "rnbqkb1r/pp3ppp/2p2n2/3p2B1/3P4/2N5/PPQ1PPPP/R3KBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2717"
+    },
+    {
+      "id": "record-3094",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Barmen Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Nbd7",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 b8d7",
+      "epd": "r1bqkb1r/pppn1ppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2718"
+    },
+    {
+      "id": "record-3095",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Harrwitz Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bf4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1f4",
+      "epd": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2715"
+    },
+    {
+      "id": "record-3096",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Harrwitz Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bf4 O-O 6. e3 c5 7. dxc5 Bxc5 8. Qc2 Nc6 9. Rd1 Qa5 10. a3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1f4 e8g8 e2e3 c7c5 d4c5 e7c5 d1c2 b8c6 a1d1 d8a5 a2a3",
+      "epd": "r1b2rk1/pp3ppp/2n1pn2/q1bp4/2P2B2/P1N1PN2/1PQ2PPP/3RKB1R b K -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2715"
+    },
+    {
+      "id": "record-3097",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Harrwitz Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bf4 O-O 6. e3 c5 7. dxc5 Bxc5 8. Qc2 Nc6 9. a3 Qa5 10. O-O-O",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1f4 e8g8 e2e3 c7c5 d4c5 e7c5 d1c2 b8c6 a2a3 d8a5 e1c1",
+      "epd": "r1b2rk1/pp3ppp/2n1pn2/q1bp4/2P2B2/P1N1PN2/1PQ2PPP/2KR1B1R b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2715"
+    },
+    {
+      "id": "record-3098",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Harrwitz Attack, Fianchetto Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bf4 O-O 6. e3 b6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7 g1f3 g8f6 c1f4 e8g8 e2e3 b7b6",
+      "epd": "rnbq1rk1/p1p1bppp/1p2pn2/3p4/2PP1B2/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2719"
+    },
+    {
+      "id": "record-3099",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Harrwitz Attack, Main Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bf4 O-O 6. e3 c5 7. dxc5 Bxc5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1f4 e8g8 e2e3 c7c5 d4c5 e7c5",
+      "epd": "rnbq1rk1/pp3ppp/4pn2/2bp4/2P2B2/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2720"
+    },
+    {
+      "id": "record-3100",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Harrwitz Attack, Orthodox Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bf4 O-O 6. e3 c6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 g1f3 f8e7 c1f4 e8g8 e2e3 c7c6",
+      "epd": "rnbq1rk1/pp2bppp/2p1pn2/3p4/2PP1B2/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2721"
+    },
+    {
+      "id": "record-3101",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Harrwitz Attack, Two Knights Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bf4 O-O 6. e3 Nbd7",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1f4 e8g8 e2e3 b8d7",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/3p4/2PP1B2/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2722"
+    },
+    {
+      "id": "record-3102",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Harrwitz Attack, Two Knights Defense, Blockade Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. Nf3 Be7 5. Bf4 O-O 6. e3 Nbd7 7. c5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 g1f3 f8e7 c1f4 e8g8 e2e3 b8d7 c4c5",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/2Pp4/3P1B2/2N1PN2/PP3PPP/R2QKB1R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2723"
+    },
+    {
+      "id": "record-3103",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Knight Defense, Alekhine Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Nbd7 5. Bg5 h6 6. Bh4 dxc4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 b8d7 c1g5 h7h6 g5h4 d5c4",
+      "epd": "r1bqkb1r/pppn1pp1/4pn1p/8/2pP3B/2N2N2/PP2PPPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2724"
+    },
+    {
+      "id": "record-3104",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Miles Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 d1c2",
+      "epd": "rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PPQ1PPPP/R3KB1R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2725"
+    },
+    {
+      "id": "record-3105",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Three Knights Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2726"
+    },
+    {
+      "id": "record-3106",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Three Knights, Vienna Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 dxc4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 d5c4",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2727"
+    },
+    {
+      "id": "record-3107",
+      "eco": "D37",
+      "name": "Queen's Gambit Declined: Vienna Variation, Quiet Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 dxc4 5. e3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 d5c4 e2e3",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/8/2pP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2728"
+    },
+    {
+      "id": "record-3108",
+      "eco": "D38",
+      "name": "Queen's Gambit Declined: Ragozin Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Bb4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8b4",
+      "epd": "rnbqk2r/ppp2ppp/4pn2/3p4/1bPP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2729"
+    },
+    {
+      "id": "record-3109",
+      "eco": "D38",
+      "name": "Queen's Gambit Declined: Ragozin Defense, Alekhine Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Bb4 5. Qa4+",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8b4 d1a4",
+      "epd": "rnbqk2r/ppp2ppp/4pn2/3p4/QbPP4/2N2N2/PP2PPPP/R1B1KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2730"
+    },
+    {
+      "id": "record-3110",
+      "eco": "D38",
+      "name": "Queen's Gambit Declined: Westphalian Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Bb4 5. Bg5 Nbd7 6. e3 c5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8b4 c1g5 b8d7 e2e3 c7c5",
+      "epd": "r1bqk2r/pp1n1ppp/4pn2/2pp2B1/1bPP4/2N1PN2/PP3PPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2731"
+    },
+    {
+      "id": "record-3111",
+      "eco": "D39",
+      "name": "Queen's Gambit Declined: Ragozin Defense, Vienna Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Bb4 5. Bg5 dxc4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8b4 c1g5 d5c4",
+      "epd": "rnbqk2r/ppp2ppp/4pn2/6B1/1bpP4/2N2N2/PP2PPPP/R2QKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2732"
+    },
+    {
+      "id": "record-3112",
+      "eco": "D40",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 c7c5",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2pp4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2733"
+    },
+    {
+      "id": "record-3113",
+      "eco": "D40",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Levenfish Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 c5 5. e3 Nc6 6. Bd3 Bd6 7. O-O O-O 8. Qe2 Qe7 9. dxc5 Bxc5 10. e4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 g1f3 c7c5 e2e3 b8c6 f1d3 f8d6 e1g1 e8g8 d1e2 d8e7 d4c5 d6c5 e3e4",
+      "epd": "r1b2rk1/pp2qppp/2n1pn2/2bp4/2P1P3/2NB1N2/PP2QPPP/R1B2RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2734"
+    },
+    {
+      "id": "record-3114",
+      "eco": "D40",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Pillsbury Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 c5 5. Bg5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 g1f3 c7c5 c1g5",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2pp2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2735"
+    },
+    {
+      "id": "record-3115",
+      "eco": "D40",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Symmetrical Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 c5 5. e3 Nc6 6. Bd3 Bd6 7. O-O O-O",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 g1f3 c7c5 e2e3 b8c6 f1d3 f8d6 e1g1 e8g8",
+      "epd": "r1bq1rk1/pp3ppp/2nbpn2/2pp4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2736"
+    },
+    {
+      "id": "record-3116",
+      "eco": "D41",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. c4 c5 2. Nf3 Nf6 3. Nc3 Nc6 4. g3 d5 5. d4 e6",
+      "uci": "c2c4 c7c5 g1f3 g8f6 b1c3 b8c6 g2g3 d7d5 d2d4 e7e6",
+      "epd": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/2PP4/2N2NP1/PP2PP1P/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2733"
+    },
+    {
+      "id": "record-3117",
+      "eco": "D41",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c5 5. cxd5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 c7c5 c4d5",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2pP4/3P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2733"
+    },
+    {
+      "id": "record-3118",
+      "eco": "D41",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Endgame Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c5 5. cxd5 cxd4 6. Qxd4 exd5 7. e4 dxe4 8. Qxd8+",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 c7c5 c4d5 c5d4 d1d4 e6d5 e2e4 d5e4 d4d8",
+      "epd": "rnbQkb1r/pp3ppp/5n2/8/4p3/2N2N2/PP3PPP/R1B1KB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2737"
+    },
+    {
+      "id": "record-3119",
+      "eco": "D41",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Exchange Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c5 5. cxd5 Nxd5 6. e4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 c7c5 c4d5 f6d5 e2e4",
+      "epd": "rnbqkb1r/pp3ppp/4p3/2pn4/3PP3/2N2N2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2738"
+    },
+    {
+      "id": "record-3120",
+      "eco": "D41",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Kmoch Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 c5 5. cxd5 Nxd5 6. e4 Nxc3 7. bxc3 cxd4 8. cxd4 Bb4+ 9. Bd2 Bxd2+ 10. Qxd2 O-O 11. Bb5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 g1f3 c7c5 c4d5 f6d5 e2e4 d5c3 b2c3 c5d4 c3d4 f8b4 c1d2 b4d2 d1d2 e8g8 f1b5",
+      "epd": "rnbq1rk1/pp3ppp/4p3/1B6/3PP3/5N2/P2Q1PPP/R3K2R b KQ -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2739"
+    },
+    {
+      "id": "record-3121",
+      "eco": "D41",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Pillsbury Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c5 5. cxd5 Nxd5 6. e3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 c7c5 c4d5 f6d5 e2e3",
+      "epd": "rnbqkb1r/pp3ppp/4p3/2pn4/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2735"
+    },
+    {
+      "id": "record-3122",
+      "eco": "D41",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, San Sebastian Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 c5 7. Nf3 cxd4 8. cxd4 Bb4+ 9. Bd2 Qa5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c4d5 f6d5 e2e4 d5c3 b2c3 c7c5 g1f3 c5d4 c3d4 f8b4 c1d2 d8a5",
+      "epd": "rnb1k2r/pp3ppp/4p3/q7/1b1PP3/5N2/P2B1PPP/R2QKB1R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2740"
+    },
+    {
+      "id": "record-3123",
+      "eco": "D42",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Main Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c5 5. cxd5 Nxd5 6. e3 Nc6 7. Bd3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 c7c5 c4d5 f6d5 e2e3 b8c6 f1d3",
+      "epd": "r1bqkb1r/pp3ppp/2n1p3/2pn4/3P4/2NBPN2/PP3PPP/R1BQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2741"
+    },
+    {
+      "id": "record-3124",
+      "eco": "D43",
+      "name": "Queen's Gambit Declined: Hastings Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 h6 6. Bxf6 Qxf6 7. Qb3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 h7h6 g5f6 d8f6 d1b3",
+      "epd": "rnb1kb1r/pp3pp1/2p1pq1p/3p4/2PP4/1QN2N2/PP2PPPP/R3KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2742"
+    },
+    {
+      "id": "record-3178",
+      "eco": "D50",
+      "name": "Queen's Gambit Declined: Been-Koomen Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 c5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 c7c5",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2pp2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2777"
+    },
+    {
+      "id": "record-3179",
+      "eco": "D50",
+      "name": "Queen's Gambit Declined: Modern Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2778"
+    },
+    {
+      "id": "record-3180",
+      "eco": "D50",
+      "name": "Queen's Gambit Declined: Pseudo-Tarrasch Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 c5 5. cxd5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 c7c5 c4d5",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2pP2B1/3P4/2N5/PP2PPPP/R2QKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2779"
+    },
+    {
+      "id": "record-3181",
+      "eco": "D50",
+      "name": "Queen's Gambit Declined: Pseudo-Tarrasch Variation, Canal Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 c5 5. cxd5 Qb6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 c7c5 c4d5 d8b6",
+      "epd": "rnb1kb1r/pp3ppp/1q2pn2/2pP2B1/3P4/2N5/PP2PPPP/R2QKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2780"
+    },
+    {
+      "id": "record-3182",
+      "eco": "D50",
+      "name": "Queen's Gambit Declined: Pseudo-Tarrasch Variation, Primitive Pillsbury Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 c5 5. Nf3 cxd4 6. Qxd4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 c7c5 g1f3 c5d4 d1d4",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/3p2B1/2PQ4/2N2N2/PP2PPPP/R3KB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2781"
+    },
+    {
+      "id": "record-3183",
+      "eco": "D50",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense, Krause Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 c5 5. Nf3 cxd4 6. Nxd4 e5 7. Ndb5 a6 8. Qa4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 c7c5 g1f3 c5d4 f3d4 e6e5 d4b5 a7a6 d1a4",
+      "epd": "rnbqkb1r/1p3ppp/p4n2/1N1pp1B1/Q1P5/2N5/PP2PPPP/R3KB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2782"
+    },
+    {
+      "id": "record-3184",
+      "eco": "D51",
+      "name": "Queen's Gambit Declined: Alekhine Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. Nf3 c6 6. e4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7 g1f3 c7c6 e2e4",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p2B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2783"
+    },
+    {
+      "id": "record-3185",
+      "eco": "D51",
+      "name": "Queen's Gambit Declined: Capablanca Variation, Anti-Cambridge Springs Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. e3 c6 6. a3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7 e2e3 c7c6 a2a3",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p2B1/2PP4/P1N1P3/1P3PPP/R2QKBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2784"
+    },
+    {
+      "id": "record-3186",
+      "eco": "D51",
+      "name": "Queen's Gambit Declined: Manhattan Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. e3 Bb4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7 e2e3 f8b4",
+      "epd": "r1bqk2r/pppn1ppp/4pn2/3p2B1/1bPP4/2N1P3/PP3PPP/R2QKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2785"
+    },
+    {
+      "id": "record-3187",
+      "eco": "D51",
+      "name": "Queen's Gambit Declined: Modern Variation, Knight Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7",
+      "epd": "r1bqkb1r/pppn1ppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2786"
+    },
+    {
+      "id": "record-3188",
+      "eco": "D51",
+      "name": "Queen's Gambit Declined: Modern Variation, Knight Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. e3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7 e2e3",
+      "epd": "r1bqkb1r/pppn1ppp/4pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2786"
+    },
+    {
+      "id": "record-3189",
+      "eco": "D51",
+      "name": "Queen's Gambit Declined: Modern Variation, Knight Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. e3 c6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7 e2e3 c7c6",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2786"
+    },
+    {
+      "id": "record-3190",
+      "eco": "D51",
+      "name": "Queen's Gambit Declined: Rochlin Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. Nf3 c6 6. Rc1 Qa5 7. Bd2",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7 g1f3 c7c6 a1c1 d8a5 g5d2",
+      "epd": "r1b1kb1r/pp1n1ppp/2p1pn2/q2p4/2PP4/2N2N2/PP1BPPPP/2RQKB1R b Kkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2787"
+    },
+    {
+      "id": "record-3191",
+      "eco": "D52",
+      "name": "Queen's Gambit Declined",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 b8d7 e2e3",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2652"
+    },
+    {
+      "id": "record-3192",
+      "eco": "D52",
+      "name": "Queen's Gambit Declined: Cambridge Springs Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 b8d7 e2e3 d8a5",
+      "epd": "r1b1kb1r/pp1n1ppp/2p1pn2/q2p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2788"
+    },
+    {
+      "id": "record-3193",
+      "eco": "D52",
+      "name": "Queen's Gambit Declined: Cambridge Springs Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5 7. cxd5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 b8d7 e2e3 d8a5 c4d5",
+      "epd": "r1b1kb1r/pp1n1ppp/2p1pn2/q2P2B1/3P4/2N1PN2/PP3PPP/R2QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2788"
+    },
+    {
+      "id": "record-3194",
+      "eco": "D52",
+      "name": "Queen's Gambit Declined: Cambridge Springs Defense, Argentine Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. e3 c6 6. Nf3 Qa5 7. Nd2 Bb4 8. Qc2 O-O 9. Bh4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7 e2e3 c7c6 g1f3 d8a5 f3d2 f8b4 d1c2 e8g8 g5h4",
+      "epd": "r1b2rk1/pp1n1ppp/2p1pn2/q2p4/1bPP3B/2N1P3/PPQN1PPP/R3KB1R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2789"
+    },
+    {
+      "id": "record-3195",
+      "eco": "D52",
+      "name": "Queen's Gambit Declined: Cambridge Springs Defense, Bogoljubow Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5 7. Nd2 Bb4 8. Qc2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 b8d7 e2e3 d8a5 f3d2 f8b4 d1c2",
+      "epd": "r1b1k2r/pp1n1ppp/2p1pn2/q2p2B1/1bPP4/2N1P3/PPQN1PPP/R3KB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2790"
+    },
+    {
+      "id": "record-3196",
+      "eco": "D52",
+      "name": "Queen's Gambit Declined: Cambridge Springs Defense, Capablanca Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. e3 c6 6. Nf3 Qa5 7. Bxf6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 b8d7 e2e3 c7c6 g1f3 d8a5 g5f6",
+      "epd": "r1b1kb1r/pp1n1ppp/2p1pB2/q2p4/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2791"
+    },
+    {
+      "id": "record-3197",
+      "eco": "D52",
+      "name": "Queen's Gambit Declined: Cambridge Springs Defense, Rubinstein Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5 7. Nd2 dxc4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 b8d7 e2e3 d8a5 f3d2 d5c4",
+      "epd": "r1b1kb1r/pp1n1ppp/2p1pn2/q5B1/2pP4/2N1P3/PP1N1PPP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2792"
+    },
+    {
+      "id": "record-3198",
+      "eco": "D52",
+      "name": "Queen's Gambit Declined: Cambridge Springs Defense, Yugoslav Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 Nbd7 6. e3 Qa5 7. cxd5 Nxd5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 b8d7 e2e3 d8a5 c4d5 f6d5",
+      "epd": "r1b1kb1r/pp1n1ppp/2p1p3/q2n2B1/3P4/2N1PN2/PP3PPP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2793"
+    },
+    {
+      "id": "record-3199",
+      "eco": "D53",
+      "name": "Queen's Gambit Declined",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7",
+      "epd": "rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2652"
+    },
+    {
+      "id": "record-3200",
+      "eco": "D53",
+      "name": "Queen's Gambit Declined: Lasker Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. Bg5 Be7 5. e3 Ne4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c1g5 f8e7 e2e3 f6e4",
+      "epd": "rnbqk2r/ppp1bppp/4p3/3p2B1/2PPn3/2N1P3/PP3PPP/R2QKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2794"
+    },
+    {
+      "id": "record-3201",
+      "eco": "D53",
+      "name": "Queen's Gambit Declined: Modern Variation, Heral Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 g5f6",
+      "epd": "rnbqk2r/ppp1bppp/4pB2/3p4/2PP4/2N5/PP2PPPP/R2QKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2795"
+    },
+    {
+      "id": "record-3202",
+      "eco": "D54",
+      "name": "Queen's Gambit Declined: Neo-Orthodox Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. Bg5 Be7 5. e3 O-O 6. Rc1",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c1g5 f8e7 e2e3 e8g8 a1c1",
+      "epd": "rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2N1P3/PP3PPP/2RQKBNR b K -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2796"
+    },
+    {
+      "id": "record-3203",
+      "eco": "D55",
+      "name": "Queen's Gambit Declined: Anti-Tartakower Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 h6 7. Bxf6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 h7h6 g5f6",
+      "epd": "rnbq1rk1/ppp1bpp1/4pB1p/3p4/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2797"
+    },
+    {
+      "id": "record-3204",
+      "eco": "D55",
+      "name": "Queen's Gambit Declined: Anti-Tartakower Variation, Petrosian Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 h6 6. Bxf6 Bxf6 7. e3 O-O 8. Rc1 c6 9. Bd3 Nd7 10. O-O dxc4 11. Bxc4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 h7h6 g5f6 e7f6 e2e3 e8g8 a1c1 c7c6 f1d3 b8d7 e1g1 d5c4 d3c4",
+      "epd": "r1bq1rk1/pp1n1pp1/2p1pb1p/8/2BP4/2N1PN2/PP3PPP/2RQ1RK1 b - -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2798"
+    },
+    {
+      "id": "record-3205",
+      "eco": "D55",
+      "name": "Queen's Gambit Declined: Modern Variation, Normal Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3",
+      "epd": "rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2799"
+    },
+    {
+      "id": "record-3206",
+      "eco": "D55",
+      "name": "Queen's Gambit Declined: Neo-Orthodox Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 h6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 h7h6",
+      "epd": "rnbq1rk1/ppp1bpp1/4pn1p/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2796"
+    },
+    {
+      "id": "record-3207",
+      "eco": "D55",
+      "name": "Queen's Gambit Declined: Neo-Orthodox Variation, Main Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 h6 6. Bh4 O-O 7. e3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 h7h6 g5h4 e8g8 e2e3",
+      "epd": "rnbq1rk1/ppp1bpp1/4pn1p/3p4/2PP3B/2N1PN2/PP3PPP/R2QKB1R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2800"
+    },
+    {
+      "id": "record-3208",
+      "eco": "D55",
+      "name": "Queen's Gambit Declined: Pillsbury Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Nc3 d5 5. cxd5 exd5 6. Bg5 Be7 7. e3 O-O 8. Bd3 Bb7 9. Ne5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 b7b6 b1c3 d7d5 c4d5 e6d5 c1g5 f8e7 e2e3 e8g8 f1d3 c8b7 f3e5",
+      "epd": "rn1q1rk1/pbp1bppp/1p3n2/3pN1B1/3P4/2NBP3/PP3PPP/R2QK2R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2801"
+    },
+    {
+      "id": "record-3209",
+      "eco": "D56",
+      "name": "Queen's Gambit Declined: Lasker Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. e3 Ne4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7 g1f3 g8f6 c1g5 h7h6 g5h4 e8g8 e2e3 f6e4",
+      "epd": "rnbq1rk1/ppp1bpp1/4p2p/3p4/2PPn2B/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2794"
+    },
+    {
+      "id": "record-3210",
+      "eco": "D56",
+      "name": "Queen's Gambit Declined: Lasker Defense, Russian Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 Ne4 8. Bxe7 Qxe7 9. Qc2 Nf6 10. Bd3 dxc4 11. Bxc4 c5 12. O-O Nc6 13. Rfd1 Bd7",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 h7h6 g5h4 f6e4 h4e7 d8e7 d1c2 e4f6 f1d3 d5c4 d3c4 c7c5 e1g1 b8c6 f1d1 c8d7",
+      "epd": "r4rk1/pp1bqpp1/2n1pn1p/2p5/2BP4/2N1PN2/PPQ2PPP/R2R2K1 w - -",
+      "plyCount": 26,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 13
+      },
+      "lineId": "line-2802"
+    },
+    {
+      "id": "record-3211",
+      "eco": "D56",
+      "name": "Queen's Gambit Declined: Lasker Defense, Teichmann Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 h6 6. Bh4 O-O 7. e3 Ne4 8. Bxe7 Qxe7 9. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 h7h6 g5h4 e8g8 e2e3 f6e4 h4e7 d8e7 d1c2",
+      "epd": "rnb2rk1/ppp1qpp1/4p2p/3p4/2PPn3/2N1PN2/PPQ2PPP/R3KB1R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2803"
+    },
+    {
+      "id": "record-3212",
+      "eco": "D57",
+      "name": "Queen's Gambit Declined: Lasker Defense, Bernstein Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. Bg5 Be7 5. e3 h6 6. Bh4 O-O 7. Nf3 Ne4 8. Bxe7 Qxe7 9. cxd5 Nxc3 10. bxc3 exd5 11. Qb3 Qd6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c1g5 f8e7 e2e3 h7h6 g5h4 e8g8 g1f3 f6e4 h4e7 d8e7 c4d5 e4c3 b2c3 e6d5 d1b3 e7d6",
+      "epd": "rnb2rk1/ppp2pp1/3q3p/3p4/3P4/1QP1PN2/P4PPP/R3KB1R w KQ -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2804"
+    },
+    {
+      "id": "record-3213",
+      "eco": "D57",
+      "name": "Queen's Gambit Declined: Lasker Defense, Bernstein Variation, Mar del Plata Gambit",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 Ne4 8. Bxe7 Qxe7 9. cxd5 Nxc3 10. bxc3 exd5 11. Qb3 Rd8 12. c4 Be6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 h7h6 g5h4 f6e4 h4e7 d8e7 c4d5 e4c3 b2c3 e6d5 d1b3 f8d8 c3c4 c8e6",
+      "epd": "rn1r2k1/ppp1qpp1/4b2p/3p4/2PP4/1Q2PN2/P4PPP/R3KB1R w KQ -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-2805"
+    },
+    {
+      "id": "record-3214",
+      "eco": "D57",
+      "name": "Queen's Gambit Declined: Lasker Defense, Main Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. e3 Ne4 8. Bxe7 Qxe7 9. cxd5 Nxc3 10. bxc3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7 g1f3 g8f6 c1g5 h7h6 g5h4 e8g8 e2e3 f6e4 h4e7 d8e7 c4d5 e4c3 b2c3",
+      "epd": "rnb2rk1/ppp1qpp1/4p2p/3P4/3P4/2P1PN2/P4PPP/R2QKB1R b KQ -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2806"
+    },
+    {
+      "id": "record-3215",
+      "eco": "D58",
+      "name": "Queen's Gambit Declined: Tartakower Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 h6 6. Bh4 O-O 7. e3 b6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 h7h6 g5h4 e8g8 e2e3 b7b6",
+      "epd": "rnbq1rk1/p1p1bpp1/1p2pn1p/3p4/2PP3B/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2807"
+    },
+    {
+      "id": "record-3216",
+      "eco": "D58",
+      "name": "Queen's Gambit Declined: Tartakower Defense, Exchange Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. e3 b6 8. cxd5 exd5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7 g1f3 g8f6 c1g5 h7h6 g5h4 e8g8 e2e3 b7b6 c4d5 e6d5",
+      "epd": "rnbq1rk1/p1p1bpp1/1p3n1p/3p4/3P3B/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2808"
+    },
+    {
+      "id": "record-3217",
+      "eco": "D59",
+      "name": "Queen's Gambit Declined: Tartakower Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. e3 b6 8. cxd5 Nxd5 9. Bxe7 Qxe7 10. Nxd5 exd5 11. Rc1 Be6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7 g1f3 g8f6 c1g5 h7h6 g5h4 e8g8 e2e3 b7b6 c4d5 f6d5 h4e7 d8e7 c3d5 e6d5 a1c1 c8e6",
+      "epd": "rn3rk1/p1p1qpp1/1p2b2p/3p4/3P4/4PN2/PP3PPP/2RQKB1R w K -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2807"
+    },
+    {
+      "id": "record-3218",
+      "eco": "D59",
+      "name": "Queen's Gambit Declined: Tartakower Defense, Makogonov Exchange Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. e3 b6 8. cxd5 Nxd5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 f8e7 g1f3 g8f6 c1g5 h7h6 g5h4 e8g8 e2e3 b7b6 c4d5 f6d5",
+      "epd": "rnbq1rk1/p1p1bpp1/1p2p2p/3n4/3P3B/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2809"
+    },
+    {
+      "id": "record-3219",
+      "eco": "D60",
+      "name": "Queen's Gambit Declined: Orthodox Defense",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2810"
+    },
+    {
+      "id": "record-3220",
+      "eco": "D60",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Botvinnik Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Bd3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 f1d3",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/3p2B1/2PP4/2NBPN2/PP3PPP/R2QK2R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2811"
+    },
+    {
+      "id": "record-3221",
+      "eco": "D60",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Rauzer Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Qb3",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c2c4 e7e6 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 d1b3",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/3p2B1/2PP4/1QN1PN2/PP3PPP/R3KB1R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2812"
+    },
+    {
+      "id": "record-3222",
+      "eco": "D61",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 d1c2",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/3p2B1/2PP4/2N1PN2/PPQ2PPP/R3KB1R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2813"
+    },
+    {
+      "id": "record-3223",
+      "eco": "D62",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation, Flohr Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Qc2 c5 8. cxd5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 d1c2 c7c5 c4d5",
+      "epd": "r1bq1rk1/pp1nbppp/4pn2/2pP2B1/3P4/2N1PN2/PPQ2PPP/R3KB1R b KQ -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2814"
+    },
+    {
+      "id": "record-3224",
+      "eco": "D63",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Capablanca Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. Nf3 d5 2. d4 Nf6 3. c4 e6 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 b6 8. cxd5 exd5 9. Bb5",
+      "uci": "g1f3 d7d5 d2d4 g8f6 c2c4 e7e6 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 b7b6 c4d5 e6d5 f1b5",
+      "epd": "r1bq1rk1/p1pnbppp/1p3n2/1B1p2B1/3P4/2N1PN2/PP3PPP/2RQK2R b K -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2815"
+    },
+    {
+      "id": "record-3225",
+      "eco": "D63",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Henneberger Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 a6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 a7a6",
+      "epd": "r1bq1rk1/1ppnbppp/p3pn2/3p2B1/2PP4/2N1PN2/PP3PPP/2RQKB1R w K -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2816"
+    },
+    {
+      "id": "record-3226",
+      "eco": "D63",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Main Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/3p2B1/2PP4/2N1PN2/PP3PPP/2RQKB1R b K -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2817"
+    },
+    {
+      "id": "record-3227",
+      "eco": "D63",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Main Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6",
+      "epd": "r1bq1rk1/pp1nbppp/2p1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/2RQKB1R w K -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2817"
+    },
+    {
+      "id": "record-3228",
+      "eco": "D63",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Pillsbury Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. Bg5 Be7 5. e3 O-O 6. Nf3 Nbd7 7. Rc1 b6 8. cxd5 exd5 9. Bd3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 c1g5 f8e7 e2e3 e8g8 g1f3 b8d7 a1c1 b7b6 c4d5 e6d5 f1d3",
+      "epd": "r1bq1rk1/p1pnbppp/1p3n2/3p2B1/3P4/2NBPN2/PP3PPP/2RQK2R b K -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2818"
+    },
+    {
+      "id": "record-3229",
+      "eco": "D63",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Swiss, Carlsbad Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 a6 8. cxd5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 a7a6 c4d5",
+      "epd": "r1bq1rk1/1ppnbppp/p3pn2/3P2B1/3P4/2N1PN2/PP3PPP/2RQKB1R b K -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2819"
+    },
+    {
+      "id": "record-3230",
+      "eco": "D64",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 d5 4. Nf3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. a3 a6 9. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 b1c3 d7d5 g1f3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 a2a3 a7a6 d1c2",
+      "epd": "r1bq1rk1/1p1nbppp/p1p1pn2/3p2B1/2PP4/P1N1PN2/1PQ2PPP/2R1KB1R b K -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2820"
+    },
+    {
+      "id": "record-3231",
+      "eco": "D64",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 d1c2",
+      "epd": "r1bq1rk1/pp1nbppp/2p1pn2/3p2B1/2PP4/2N1PN2/PPQ2PPP/2R1KB1R b K -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2820"
+    },
+    {
+      "id": "record-3232",
+      "eco": "D64",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. Qc2 a6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 d1c2 a7a6",
+      "epd": "r1bq1rk1/1p1nbppp/p1p1pn2/3p2B1/2PP4/2N1PN2/PPQ2PPP/2R1KB1R w K -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2820"
+    },
+    {
+      "id": "record-3233",
+      "eco": "D64",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. Nf3 d5 2. d4 Nf6 3. c4 e6 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. Qc2 Ne4",
+      "uci": "g1f3 d7d5 d2d4 g8f6 c2c4 e7e6 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 d1c2 f6e4",
+      "epd": "r1bq1rk1/pp1nbppp/2p1p3/3p2B1/2PPn3/2N1PN2/PPQ2PPP/2R1KB1R w K -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2820"
+    },
+    {
+      "id": "record-3234",
+      "eco": "D65",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. Qc2 a6 9. cxd5",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c2c4 e7e6 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 d1c2 a7a6 c4d5",
+      "epd": "r1bq1rk1/1p1nbppp/p1p1pn2/3P2B1/3P4/2N1PN2/PPQ2PPP/2R1KB1R b K -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2820"
+    },
+    {
+      "id": "record-3235",
+      "eco": "D66",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Bd3 Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 Nbd7 7. Rc1 c6 8. Bd3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 b8d7 a1c1 c7c6 f1d3",
+      "epd": "r1bq1rk1/pp1nbppp/2p1pn2/3p2B1/2PP4/2NBPN2/PP3PPP/2RQK2R b K -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2821"
+    },
+    {
+      "id": "record-3236",
+      "eco": "D66",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Fianchetto Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 c6 5. Nf3 Be7 6. e3 Nbd7 7. Rc1 O-O 8. Bd3 dxc4 9. Bxc4 b5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 c7c6 g1f3 f8e7 e2e3 b8d7 a1c1 e8g8 f1d3 d5c4 d3c4 b7b5",
+      "epd": "r1bq1rk1/p2nbppp/2p1pn2/1p4B1/2BP4/2N1PN2/PP3PPP/2RQK2R w K -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2822"
+    },
+    {
+      "id": "record-3237",
+      "eco": "D67",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Alekhine Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5 10. Bxe7 Qxe7 11. Ne4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5 g5e7 d8e7 c3e4",
+      "epd": "r1b2rk1/pp1nqppp/2p1p3/3n4/2BPN3/4PN2/PP3PPP/2RQK2R b K -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2823"
+    },
+    {
+      "id": "record-3238",
+      "eco": "D67",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Bd3 Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5 10. Bxe7 Qxe7",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5 g5e7 d8e7",
+      "epd": "r1b2rk1/pp1nqppp/2p1p3/3n4/2BP4/2N1PN2/PP3PPP/2RQK2R w K -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2821"
+    },
+    {
+      "id": "record-3239",
+      "eco": "D67",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Capablanca System",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5",
+      "epd": "r1bq1rk1/pp1nbppp/2p1p3/3n2B1/2BP4/2N1PN2/PP3PPP/2RQK2R w K -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2824"
+    },
+    {
+      "id": "record-3240",
+      "eco": "D67",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Janowski Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5 10. h4",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c2c4 e7e6 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5 h2h4",
+      "epd": "r1bq1rk1/pp1nbppp/2p1p3/3n2B1/2BP3P/2N1PN2/PP3PP1/2RQK2R b K -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2825"
+    },
+    {
+      "id": "record-3241",
+      "eco": "D67",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Main Line",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5 10. Bxe7 Qxe7 11. O-O",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5 g5e7 d8e7 e1g1",
+      "epd": "r1b2rk1/pp1nqppp/2p1p3/3n4/2BP4/2N1PN2/PP3PPP/2RQ1RK1 b - -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2817"
+    },
+    {
+      "id": "record-3242",
+      "eco": "D68",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Classical Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5 10. Bxe7 Qxe7 11. O-O Nxc3 12. Rxc3 e5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5 g5e7 d8e7 e1g1 d5c3 c1c3 e6e5",
+      "epd": "r1b2rk1/pp1nqppp/2p5/4p3/2BP4/2R1PN2/PP3PPP/3Q1RK1 w - -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-2826"
+    },
+    {
+      "id": "record-3243",
+      "eco": "D68",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Classical Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5 10. Bxe7 Qxe7 11. O-O Nxc3 12. Rxc3 e5 13. Qb1",
+      "uci": "d2d4 d7d5 c2c4 e7e6 g1f3 g8f6 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5 g5e7 d8e7 e1g1 d5c3 c1c3 e6e5 d1b1",
+      "epd": "r1b2rk1/pp1nqppp/2p5/4p3/2BP4/2R1PN2/PP3PPP/1Q3RK1 b - -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2826"
+    },
+    {
+      "id": "record-3244",
+      "eco": "D68",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Classical Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5 10. Bxe7 Qxe7 11. O-O Nxc3 12. Rxc3 e5 13. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5 g5e7 d8e7 e1g1 d5c3 c1c3 e6e5 d1c2",
+      "epd": "r1b2rk1/pp1nqppp/2p5/4p3/2BP4/2R1PN2/PPQ2PPP/5RK1 b - -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2826"
+    },
+    {
+      "id": "record-3245",
+      "eco": "D69",
+      "name": "Queen's Gambit Declined: Orthodox Defense, Classical Variation",
+      "family": "Queen's Gambit Declined",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 Nbd7 7. Rc1 c6 8. Bd3 dxc4 9. Bxc4 Nd5 10. Bxe7 Qxe7 11. O-O Nxc3 12. Rxc3 e5 13. dxe5 Nxe5 14. Nxe5 Qxe5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7 e2e3 e8g8 g1f3 b8d7 a1c1 c7c6 f1d3 d5c4 d3c4 f6d5 g5e7 d8e7 e1g1 d5c3 c1c3 e6e5 d4e5 d7e5 f3e5 e7e5",
+      "epd": "r1b2rk1/pp3ppp/2p5/4q3/2B5/2R1P3/PP3PPP/3Q1RK1 w - -",
+      "plyCount": 28,
+      "playerMoveCounts": {
+        "white": 14,
+        "black": 14
+      },
+      "lineId": "line-2826"
+    }
+  ]
+}

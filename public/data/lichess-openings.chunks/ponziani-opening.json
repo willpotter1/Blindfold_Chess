@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Ponziani Opening",
+    "chunkKey": "ponziani-opening",
+    "recordCount": 16,
+    "lineCount": 13
+  },
+  "records": [
+    {
+      "id": "record-2240",
+      "eco": "C44",
+      "name": "Ponziani Opening",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1969"
+    },
+    {
+      "id": "record-2241",
+      "eco": "C44",
+      "name": "Ponziani Opening: Caro Gambit",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Qa4 Bd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 d7d5 d1a4 c8d7",
+      "epd": "r2qkbnr/pppb1ppp/2n5/3pp3/Q3P3/2P2N2/PP1P1PPP/RNB1KB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1970"
+    },
+    {
+      "id": "record-2242",
+      "eco": "C44",
+      "name": "Ponziani Opening: Jaenisch Counterattack",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 g8f6",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1971"
+    },
+    {
+      "id": "record-2243",
+      "eco": "C44",
+      "name": "Ponziani Opening: Jaenisch Counterattack",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 Nf6 4. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 g8f6 d2d3",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2PP1N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1971"
+    },
+    {
+      "id": "record-2244",
+      "eco": "C44",
+      "name": "Ponziani Opening: Jaenisch Counterattack",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 Nf6 4. d3 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 g8f6 d2d3 d7d5",
+      "epd": "r1bqkb1r/ppp2ppp/2n2n2/3pp3/4P3/2PP1N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1971"
+    },
+    {
+      "id": "record-2245",
+      "eco": "C44",
+      "name": "Ponziani Opening: Jaenisch Counterattack",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 Nf6 4. d3 d5 5. Nbd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 g8f6 d2d3 d7d5 b1d2",
+      "epd": "r1bqkb1r/ppp2ppp/2n2n2/3pp3/4P3/2PP1N2/PP1N1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1971"
+    },
+    {
+      "id": "record-2246",
+      "eco": "C44",
+      "name": "Ponziani Opening: Leonhardt Variation",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Qa4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 d7d5 d1a4 g8f6",
+      "epd": "r1bqkb1r/ppp2ppp/2n2n2/3pp3/Q3P3/2P2N2/PP1P1PPP/RNB1KB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1972"
+    },
+    {
+      "id": "record-2247",
+      "eco": "C44",
+      "name": "Ponziani Opening: Neumann Gambit",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 Nf6 4. Bc4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 g8f6 f1c4",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1973"
+    },
+    {
+      "id": "record-2248",
+      "eco": "C44",
+      "name": "Ponziani Opening: Ponziani Countergambit",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 f5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 f7f5",
+      "epd": "r1bqkbnr/pppp2pp/2n5/4pp2/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1974"
+    },
+    {
+      "id": "record-2249",
+      "eco": "C44",
+      "name": "Ponziani Opening: Ponziani Countergambit, Schmidt Attack",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 f5 4. d4 d6 5. d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 f7f5 d2d4 d7d6 d4d5",
+      "epd": "r1bqkbnr/ppp3pp/2np4/3Ppp2/4P3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1975"
+    },
+    {
+      "id": "record-2250",
+      "eco": "C44",
+      "name": "Ponziani Opening: Romanishin Variation",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 f8e7",
+      "epd": "r1bqk1nr/ppppbppp/2n5/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1977"
+    },
+    {
+      "id": "record-2251",
+      "eco": "C44",
+      "name": "Ponziani Opening: Réti Variation",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 Nge7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 g8e7",
+      "epd": "r1bqkb1r/ppppnppp/2n5/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1976"
+    },
+    {
+      "id": "record-2252",
+      "eco": "C44",
+      "name": "Ponziani Opening: Spanish Variation",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Bb5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 d7d5 f1b5",
+      "epd": "r1bqkbnr/ppp2ppp/2n5/1B1pp3/4P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1978"
+    },
+    {
+      "id": "record-2253",
+      "eco": "C44",
+      "name": "Ponziani Opening: Spanish Variation, Harrwitz Attack, Nikitin Gambit",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Bb5 dxe4 5. Nxe5 Qd5 6. Qa4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 d7d5 f1b5 d5e4 f3e5 d8d5 d1a4",
+      "epd": "r1b1kbnr/ppp2ppp/2n5/1B1qN3/Q3p3/2P5/PP1P1PPP/RNB1K2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1979"
+    },
+    {
+      "id": "record-2254",
+      "eco": "C44",
+      "name": "Ponziani Opening: Steinitz Variation",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Qa4 f6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 d7d5 d1a4 f7f6",
+      "epd": "r1bqkbnr/ppp3pp/2n2p2/3pp3/Q3P3/2P2N2/PP1P1PPP/RNB1KB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1980"
+    },
+    {
+      "id": "record-2255",
+      "eco": "C44",
+      "name": "Ponziani Opening: Vukovic Gambit",
+      "family": "Ponziani Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c3 Nf6 4. d4 Nxe4 5. d5 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c3 g8f6 d2d4 f6e4 d4d5 f8c5",
+      "epd": "r1bqk2r/pppp1ppp/2n5/2bPp3/4n3/2P2N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1981"
+    }
+  ]
+}

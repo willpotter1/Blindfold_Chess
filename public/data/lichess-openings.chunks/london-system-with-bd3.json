@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "London System, with Bd3",
+    "chunkKey": "london-system-with-bd3",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-611",
+      "eco": "A48",
+      "name": "London System, with Bd3",
+      "family": "London System, with Bd3",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Bf4 Bg7 4. e3 d6 5. Bd3",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c1f4 f8g7 e2e3 d7d6 f1d3",
+      "epd": "rnbqk2r/ppp1ppbp/3p1np1/8/3P1B2/3BPN2/PPP2PPP/RN1QK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-521"
+    }
+  ]
+}

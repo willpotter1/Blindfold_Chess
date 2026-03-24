@@ -3,6 +3,7 @@ import { normalizeSan } from '@/lib/chess/normalizeSan';
 import {
   getCanonicalLineIdForRecord,
   getOpeningCanonicalInfoFromLine,
+  type OpeningCatalog,
   type OpeningInfo,
   type OpeningLine,
   type OpeningLookup,
@@ -69,6 +70,12 @@ const toUci = (move: Pick<Move, 'from' | 'to' | 'promotion'>) => (
 const getTurnColorFromFen = (fen: string): 'white' | 'black' => (
   fen.split(' ')[1] === 'b' ? 'black' : 'white'
 );
+
+const getEligibleRecordCountForLine = (
+  line: Pick<OpeningLine, 'eligibleRecordCounts'>,
+  playerColor: OpeningTrainerConfig['playerColor'],
+  depthPlayerMoves: number,
+) => line.eligibleRecordCounts[playerColor][depthPlayerMoves] ?? 0;
 
 const getExpectedNextMoves = (
   lookup: OpeningLookup,
@@ -172,7 +179,7 @@ export const resolveOpeningTrainerPool = (
       return false;
     }
 
-    return line.playerMoveCounts[config.playerColor] >= config.depthPlayerMoves;
+    return getEligibleRecordCountForLine(line, config.playerColor, config.depthPlayerMoves) > 0;
   });
 
   const filteredRecordIds = new Set<string>();
@@ -192,10 +199,10 @@ export const resolveOpeningTrainerPool = (
 };
 
 export const getOpeningTrainerConfigStatus = (
-  lookup: OpeningLookup | null,
+  catalog: OpeningCatalog | null,
   config: OpeningTrainerConfig,
 ): OpeningTrainerConfigStatus => {
-  if (!lookup) {
+  if (!catalog) {
     return {
       matchingLineCount: 0,
       matchingRecordCount: 0,
@@ -204,8 +211,6 @@ export const getOpeningTrainerConfigStatus = (
       tone: 'default',
     };
   }
-
-  const resolvedPool = resolveOpeningTrainerPool(lookup, config);
 
   if (config.selectedFamilyNames.length === 0 && config.selectedLineIds.length === 0) {
     return {
@@ -217,7 +222,34 @@ export const getOpeningTrainerConfigStatus = (
     };
   }
 
-  if (resolvedPool.recordIds.length === 0) {
+  const lineById = new Map(catalog.lines.map((line) => [line.id, line]));
+  const requestedLineIds = new Set<string>();
+
+  config.selectedLineIds.forEach((lineId) => {
+    if (lineById.has(lineId)) {
+      requestedLineIds.add(lineId);
+    }
+  });
+
+  for (const familyName of config.selectedFamilyNames) {
+    const family = catalog.families.find((entry) => entry.name === familyName);
+
+    family?.lineIds.forEach((lineId) => {
+      if (lineById.has(lineId)) {
+        requestedLineIds.add(lineId);
+      }
+    });
+  }
+
+  const matchingLines = Array.from(requestedLineIds)
+    .map((lineId) => lineById.get(lineId))
+    .filter((line): line is OpeningLine => Boolean(line))
+    .filter((line) => getEligibleRecordCountForLine(line, config.playerColor, config.depthPlayerMoves) > 0);
+  const matchingRecordCount = matchingLines.reduce((count, line) => (
+    count + getEligibleRecordCountForLine(line, config.playerColor, config.depthPlayerMoves)
+  ), 0);
+
+  if (matchingRecordCount === 0) {
     return {
       matchingLineCount: 0,
       matchingRecordCount: 0,
@@ -228,10 +260,10 @@ export const getOpeningTrainerConfigStatus = (
   }
 
   return {
-    matchingLineCount: resolvedPool.lineIds.length,
-    matchingRecordCount: resolvedPool.recordIds.length,
+    matchingLineCount: matchingLines.length,
+    matchingRecordCount,
     isStartDisabled: false,
-    message: `${resolvedPool.lineIds.length.toLocaleString()} variations and ${resolvedPool.recordIds.length.toLocaleString()} matching positions are available.`,
+    message: `${matchingLines.length.toLocaleString()} variations and ${matchingRecordCount.toLocaleString()} matching positions are available.`,
     tone: 'default',
   };
 };

@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "English Defense",
+    "chunkKey": "english-defense",
+    "recordCount": 7,
+    "lineCount": 6
+  },
+  "records": [
+    {
+      "id": "record-471",
+      "eco": "A40",
+      "name": "English Defense",
+      "family": "English Defense",
+      "pgn": "1. d4 b6",
+      "uci": "d2d4 b7b6",
+      "epd": "rnbqkbnr/p1pppppp/1p6/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-392"
+    },
+    {
+      "id": "record-472",
+      "eco": "A40",
+      "name": "English Defense",
+      "family": "English Defense",
+      "pgn": "1. d4 e6 2. c4 b6",
+      "uci": "d2d4 e7e6 c2c4 b7b6",
+      "epd": "rnbqkbnr/p1pp1ppp/1p2p3/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-392"
+    },
+    {
+      "id": "record-473",
+      "eco": "A40",
+      "name": "English Defense: Eastbourne Gambit",
+      "family": "English Defense",
+      "pgn": "1. d4 b6 2. c4 Bb7 3. Nc3 e5",
+      "uci": "d2d4 b7b6 c2c4 c8b7 b1c3 e7e5",
+      "epd": "rn1qkbnr/pbpp1ppp/1p6/4p3/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-393"
+    },
+    {
+      "id": "record-474",
+      "eco": "A40",
+      "name": "English Defense: Hartlaub Gambit Accepted",
+      "family": "English Defense",
+      "pgn": "1. c4 e6 2. d4 b6 3. Nc3 Bb7 4. e4 f5 5. exf5 Nf6",
+      "uci": "c2c4 e7e6 d2d4 b7b6 b1c3 c8b7 e2e4 f7f5 e4f5 g8f6",
+      "epd": "rn1qkb1r/pbpp2pp/1p2pn2/5P2/2PP4/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-394"
+    },
+    {
+      "id": "record-475",
+      "eco": "A40",
+      "name": "English Defense: Hartlaub Gambit Declined",
+      "family": "English Defense",
+      "pgn": "1. c4 e6 2. d4 b6 3. Nc3 Bb7 4. e4 f5 5. d5",
+      "uci": "c2c4 e7e6 d2d4 b7b6 b1c3 c8b7 e2e4 f7f5 d4d5",
+      "epd": "rn1qkbnr/pbpp2pp/1p2p3/3P1p2/2P1P3/2N5/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-395"
+    },
+    {
+      "id": "record-476",
+      "eco": "A40",
+      "name": "English Defense: Perrin Variation",
+      "family": "English Defense",
+      "pgn": "1. d4 e6 2. c4 b6 3. e4 Bb7 4. Bd3 Nc6",
+      "uci": "d2d4 e7e6 c2c4 b7b6 e2e4 c8b7 f1d3 b8c6",
+      "epd": "r2qkbnr/pbpp1ppp/1pn1p3/8/2PPP3/3B4/PP3PPP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-396"
+    },
+    {
+      "id": "record-477",
+      "eco": "A40",
+      "name": "English Defense: Poli Gambit",
+      "family": "English Defense",
+      "pgn": "1. d4 e6 2. c4 b6 3. e4 Bb7 4. f3 f5 5. exf5 Nh6",
+      "uci": "d2d4 e7e6 c2c4 b7b6 e2e4 c8b7 f2f3 f7f5 e4f5 g8h6",
+      "epd": "rn1qkb1r/pbpp2pp/1p2p2n/5P2/2PP4/5P2/PP4PP/RNBQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-397"
+    }
+  ]
+}

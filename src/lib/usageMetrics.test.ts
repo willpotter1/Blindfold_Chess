@@ -54,4 +54,17 @@ describe('usageMetrics', () => {
     expect(result).toEqual({ ok: false, reason: 'error', error: rpcError });
     expect(errorSpy).toHaveBeenCalledWith('Failed to increment usage metric:', rpcError);
   });
+
+  it('supports openings trainer usage metrics', async () => {
+    mockState.supabase!.rpc.mockResolvedValue({ error: null });
+
+    const result = await incrementUsageMetric('openings', 'trainer', 'finished');
+
+    expect(result).toEqual({ ok: true });
+    expect(mockState.supabase!.rpc).toHaveBeenCalledWith('increment_usage_metric', {
+      p_activity_type: 'openings',
+      p_mode: 'trainer',
+      p_stage: 'finished',
+    });
+  });
 });
