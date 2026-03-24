@@ -3,13 +3,20 @@ import { createClient } from "@supabase/supabase-js";
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL?.trim();
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY?.trim();
 
-export const hasSupabaseConfig = Boolean(supabaseUrl && supabaseAnonKey);
+let supabaseClient = null;
 
-export const supabase = hasSupabaseConfig
-  ? createClient(supabaseUrl!, supabaseAnonKey!, {
+if (supabaseUrl && supabaseAnonKey) {
+  try {
+    supabaseClient = createClient(supabaseUrl, supabaseAnonKey, {
       auth: {
         autoRefreshToken: true,
         persistSession: true,
       },
-    })
-  : null;
+    });
+  } catch (error) {
+    console.error("Invalid Supabase configuration:", error);
+  }
+}
+
+export const supabase = supabaseClient;
+export const hasSupabaseConfig = Boolean(supabase);
