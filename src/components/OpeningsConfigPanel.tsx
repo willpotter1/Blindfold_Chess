@@ -365,15 +365,14 @@ export const OpeningsConfigPanel = ({
     <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-[#d9b99b]', className)}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Opening Setup</CardTitle>
-        <CardDescription className="text-sm">
-          Browse opening families as a tree, include an entire family, or drill into a specific branch.
-        </CardDescription>
       </CardHeader>
 
-      <CardContent className="grid min-h-0 flex-1 grid-rows-[auto_auto_auto_minmax(0,1fr)_auto] gap-4 pt-2">
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      <CardContent className="grid min-h-0 flex-1 grid-rows-[auto_auto_auto_minmax(0,1fr)_auto] gap-3 pt-2">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           <div className="space-y-2">
-            <Label htmlFor="opening-player-color">Play As</Label>
+            <Label htmlFor="opening-player-color" className="text-[11px] font-semibold text-[#8B4513]">
+              Play As
+            </Label>
             <Select
               value={config.playerColor}
               onValueChange={(value) =>
@@ -383,7 +382,7 @@ export const OpeningsConfigPanel = ({
                 })
               }
             >
-              <SelectTrigger id="opening-player-color">
+              <SelectTrigger id="opening-player-color" className="h-11 rounded-xl text-[15px]">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -394,12 +393,15 @@ export const OpeningsConfigPanel = ({
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="opening-depth">Depth (Your Moves)</Label>
+            <Label htmlFor="opening-depth" className="text-[11px] font-semibold text-[#8B4513]">
+              Depth
+            </Label>
             <Input
               id="opening-depth"
               type="number"
               min={1}
               step={1}
+              className="h-11 rounded-xl text-[15px]"
               value={depthInput}
               onChange={(event) => setDepthInput(event.target.value)}
               onBlur={commitDepthInput}
@@ -410,16 +412,20 @@ export const OpeningsConfigPanel = ({
               }}
             />
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_160px]">
           <div className="space-y-2">
-            <Label htmlFor="opening-reveal-frequency">Board Reveal Frequency</Label>
+            <Label
+              htmlFor="opening-reveal-frequency"
+              className="text-[11px] font-semibold text-[#8B4513]"
+            >
+              Reveal Freq.
+            </Label>
             <Input
               id="opening-reveal-frequency"
               type="number"
               min={0}
               step={1}
+              className="h-11 rounded-xl text-[15px]"
               value={revealEveryInput}
               onChange={(event) => setRevealEveryInput(event.target.value)}
               onBlur={commitRevealEveryInput}
@@ -431,18 +437,16 @@ export const OpeningsConfigPanel = ({
               placeholder="0 = never auto-reveal"
             />
           </div>
+        </div>
 
-          <div className="flex items-center justify-between rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
-            <div className="pr-4">
-              <Label htmlFor="opening-allow-cheats" className="cursor-pointer">
-                Allow Cheats
-              </Label>
-              <p className="mt-1 text-xs text-zinc-600">
-                Hold-to-show board during the round.
-              </p>
-            </div>
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:items-stretch">
+          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
+            <Label htmlFor="opening-allow-cheats" className="min-w-0 cursor-pointer text-sm font-semibold text-zinc-900">
+              Allow Cheats
+            </Label>
             <Switch
               id="opening-allow-cheats"
+              className="shrink-0"
               checked={config.allowCheats}
               onCheckedChange={(checked) =>
                 onConfigChange({
@@ -453,17 +457,13 @@ export const OpeningsConfigPanel = ({
             />
           </div>
 
-          <div className="flex items-center justify-between rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
-            <div className="pr-4">
-              <Label htmlFor="opening-hide-history" className="cursor-pointer">
-                Hide History
-              </Label>
-              <p className="mt-1 text-xs text-zinc-600">
-                Keep moves hidden.
-              </p>
-            </div>
+          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
+            <Label htmlFor="opening-hide-history" className="min-w-0 cursor-pointer text-sm font-semibold text-zinc-900">
+              Hide History
+            </Label>
             <Switch
               id="opening-hide-history"
+              className="shrink-0"
               checked={config.hideMoveHistory}
               onCheckedChange={(checked) =>
                 onConfigChange({
@@ -475,39 +475,23 @@ export const OpeningsConfigPanel = ({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 rounded-2xl border border-[#e7cfb7] bg-[#fffaf5] px-4 py-4 sm:grid-cols-3">
-          <div>
-            <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#8B4513]">Whole Families</div>
-            <div className="mt-2 text-2xl font-semibold text-black">{config.selectedFamilyNames.length}</div>
+        <div className="grid grid-cols-1 gap-3 rounded-2xl border border-[#e7cfb7] bg-[#fffaf5] px-4 py-3 sm:grid-cols-3">
+          <div className="min-w-0">
+            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#8B4513]">Whole Families</div>
+            <div className="mt-1 text-2xl font-semibold leading-none text-black">{config.selectedFamilyNames.length}</div>
           </div>
-          <div>
-            <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#8B4513]">Branch Variations</div>
-            <div className="mt-2 text-2xl font-semibold text-black">{config.selectedLineIds.length}</div>
+          <div className="min-w-0">
+            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#8B4513]">Branch Variations</div>
+            <div className="mt-1 text-2xl font-semibold leading-none text-black">{config.selectedLineIds.length}</div>
           </div>
-          <div>
-            <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#8B4513]">Family Positions</div>
-            <div className="mt-2 text-2xl font-semibold text-black">{totalFamilyPositionCount.toLocaleString()}</div>
+          <div className="min-w-0">
+            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#8B4513]">Family Positions</div>
+            <div className="mt-1 text-2xl font-semibold leading-none text-black">{totalFamilyPositionCount.toLocaleString()}</div>
           </div>
         </div>
 
         <div className="grid min-h-0 gap-3">
-          <div className="flex items-center justify-between gap-3">
-            <div className="space-y-1">
-              <Label htmlFor="opening-tree-search">Opening Browser</Label>
-              <p className="text-xs text-zinc-600">
-                Select a family to include everything under it, or expand into branches and select only those descendants.
-              </p>
-            </div>
-
-            <Button
-              type="button"
-              variant="outline"
-              className="shrink-0 border border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
-              onClick={() => setExpandedNodeIds(new Set(openingTree.map((node) => node.id)))}
-            >
-              Expand Families
-            </Button>
-          </div>
+          <Label htmlFor="opening-tree-search">Opening Browser</Label>
 
           <Input
             id="opening-tree-search"
