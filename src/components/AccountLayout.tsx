@@ -6,9 +6,9 @@ type AccountLayoutProps = {
 
 export const AccountLayout = ({ children }: AccountLayoutProps) => {
   return (
-    <div className="min-h-screen bg-white md:flex">
+    <div className="bg-stage-glow min-h-screen md:flex">
       <AppSidebar />
-      <div className="container mx-auto px-4 py-10 md:flex-1">{children}</div>
+      <div className="container mx-auto px-4 py-8 md:flex-1 md:py-10">{children}</div>
     </div>
   );
 };

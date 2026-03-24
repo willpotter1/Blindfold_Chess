@@ -662,7 +662,7 @@ const Index = () => {
   };
 
   return (
-    <div className={`min-h-screen bg-white ${showDesktopGameLayout ? 'md:flex' : ''}`}>
+    <div className={`bg-stage-glow min-h-screen ${showDesktopGameLayout ? 'md:flex' : ''}`}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
@@ -671,7 +671,7 @@ const Index = () => {
       />
       <AppSidebar onHomeClick={handleLogoClick} desktopMode={showDesktopGameLayout} />
 
-      <div className="mx-auto w-full px-4 py-8 md:flex-1">
+      <div className="mx-auto w-full px-4 py-6 md:flex-1 md:py-8">
         {gameState ? (
           <div className={showDesktopGameLayout ? 'h-[calc(100dvh-4rem)]' : ''}>
             {showDesktopGameLayout ? (
@@ -722,29 +722,41 @@ const Index = () => {
             )}
           </div>
         ) : (
-          <div className="flex min-h-[calc(100vh-8rem)] flex-col">
-            <div className="w-full rounded-[28px] border-2 border-[#d9b99b] bg-[#fff8f1] px-6 py-5 text-center shadow-sm md:-mt-4 md:px-10 lg:px-16">
-              <h1 className="text-3xl font-extrabold tracking-tight text-[#8B4513] md:text-5xl">
-                Learn Blindchess
-              </h1>
-              <p className="mt-3 text-center text-xs text-[#8B4513]/70 md:text-sm">
-                “Calculation is visualization.” - Gary Kasparov
-              </p>
-            </div>
-            <div className="mx-auto mt-8 grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-8 lg:grid-cols-2">
-              <div className="flex justify-center">
-                <LandingOperaReplay />
+          <div className="relative flex min-h-[calc(100vh-6rem)] items-center overflow-hidden rounded-[36px] border border-white/50 px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,251,245,0.96),transparent_30%),radial-gradient(circle_at_78%_22%,rgba(165,103,65,0.15),transparent_18%),linear-gradient(135deg,rgba(252,248,242,0.92),rgba(236,224,209,0.84))]" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[55%] bg-[radial-gradient(circle_at_center,rgba(70,44,29,0.08),transparent_58%)] lg:block" />
+
+            <div className="relative z-10 grid w-full items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-8">
+              <div className="relative">
+                <div id="landing-visual" className="animate-drift-in relative mx-auto w-full max-w-4xl">
+                  <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-[radial-gradient(circle,rgba(255,244,226,0.72),transparent_66%)] blur-3xl" />
+                  <div className="relative rounded-[34px] border border-white/60 bg-[linear-gradient(180deg,rgba(58,39,26,0.08),rgba(255,255,255,0.02))] p-3 shadow-[0_30px_80px_rgba(53,33,19,0.18)] sm:p-5">
+                    <LandingOperaReplay />
+                  </div>
+                </div>
               </div>
-              <div className="mx-auto w-full max-w-lg lg:justify-self-end lg:-translate-y-4 lg:translate-x-4">
-                <GameConfigPanel
-                  mode={selectedGameMode}
-                  onModeChange={setSelectedGameMode}
-                  showModeSelector
-                  onStartGame={(config) => {
-                    void handleStartGame(config);
-                  }}
-                  isGameActive={false}
-                />
+
+              <div className="max-w-xl">
+                <div className="animate-rise-fade">
+                  <h1 className="text-display-balance text-4xl font-semibold leading-[0.92] text-[#3d2413] sm:text-5xl lg:text-6xl">
+                    Blindfold Chess Trainer
+                  </h1>
+                  <p className="mt-4 text-sm italic text-[#6a5545]">
+                    “Calculation is visualization.”
+                  </p>
+                </div>
+
+                <div id="game-config-panel" className="animate-rise-fade animation-delay-150 mt-8 w-full">
+                  <GameConfigPanel
+                    mode={selectedGameMode}
+                    onModeChange={setSelectedGameMode}
+                    showModeSelector
+                    onStartGame={(config) => {
+                      void handleStartGame(config);
+                    }}
+                    isGameActive={false}
+                  />
+                </div>
               </div>
             </div>
           </div>

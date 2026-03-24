@@ -26,8 +26,8 @@ const clampElo = (elo: number): number => {
 
 const modeButtonClassName = (selected: boolean) => (
   selected
-    ? 'border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90'
-    : 'border-[#d9b99b] bg-white text-[#8B4513] hover:bg-[#fffaf4]'
+    ? 'border-[#6d3c1c] bg-[#6d3c1c] text-[#f8f2eb] hover:bg-[#5e3318]'
+    : 'border-[#b99779]/60 bg-white/70 text-[#6d3c1c] hover:bg-[#fff8f1]'
 );
 
 export const GameConfigPanel = ({
@@ -112,10 +112,10 @@ export const GameConfigPanel = ({
     : 'Set up a local blindfold game for two players';
 
   return (
-    <Card className="w-full border-2 border-[#d9b99b]">
+    <Card className="bg-paper-grain w-full overflow-hidden rounded-[30px] border border-white/60 text-[#2f241b]">
       <CardHeader className="space-y-1 pb-2">
-        <CardTitle className="text-xl">Game Configuration</CardTitle>
-        <CardDescription className="text-xs">
+        <CardTitle className="text-[2rem] leading-none text-[#4c2c13]">Game Configuration</CardTitle>
+        <CardDescription className="text-xs uppercase tracking-[0.24em] text-[#6d5848]">
           {configDescription}
         </CardDescription>
       </CardHeader>
@@ -149,9 +149,9 @@ export const GameConfigPanel = ({
             <div className="space-y-2">
               <Label htmlFor="player-color">Play As</Label>
               <Select value={playerColor} onValueChange={(value) => setPlayerColor(value as 'white' | 'black')}>
-                <SelectTrigger id="player-color">
-                  <SelectValue />
-                </SelectTrigger>
+              <SelectTrigger id="player-color" className="border-[#b99779]/60 bg-white/70">
+                <SelectValue />
+              </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="white">White</SelectItem>
                   <SelectItem value="black">Black</SelectItem>
@@ -177,7 +177,7 @@ export const GameConfigPanel = ({
                     e.currentTarget.blur();
                   }
                 }}
-                className="w-full"
+                className="w-full border-[#b99779]/60 bg-white/70"
               />
             </div>
           )}
@@ -201,13 +201,13 @@ export const GameConfigPanel = ({
                 }
               }}
               placeholder="0 = never auto-reveal"
-              className={isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}
+              className={`border-[#b99779]/60 bg-white/70 ${isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}`}
             />
           </div>
         </div>
 
         <div className="space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
-          <div className="flex items-center justify-between rounded-md border border-[#d9b99b] bg-white px-3 py-2">
+          <div className="flex items-center justify-between rounded-2xl border border-[#b99779]/60 bg-white/65 px-4 py-3">
             <Label htmlFor="allow-cheats" className="cursor-pointer">
               Allow Cheats
             </Label>
@@ -217,7 +217,7 @@ export const GameConfigPanel = ({
               onCheckedChange={setAllowCheats}
             />
           </div>
-          <div className="flex items-center justify-between rounded-md border border-[#d9b99b] bg-white px-3 py-2">
+          <div className="flex items-center justify-between rounded-2xl border border-[#b99779]/60 bg-white/65 px-4 py-3">
             <Label htmlFor="hide-move-history" className="cursor-pointer">
               Hide Move History
             </Label>
@@ -229,9 +229,9 @@ export const GameConfigPanel = ({
           </div>
         </div>
 
-        <Button 
-          onClick={handleStartGame} 
-          className="w-full"
+        <Button
+          onClick={handleStartGame}
+          className="h-12 w-full rounded-full bg-[#6d3c1c] text-[#f8f2eb] shadow-[0_14px_32px_rgba(92,52,25,0.22)] hover:bg-[#5e3318]"
           size="lg"
         >
           {isGameActive ? 'New Game' : 'Start Game'}
