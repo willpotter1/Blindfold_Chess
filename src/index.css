@@ -44,17 +44,41 @@
 @layer utilities {
   .bg-paper-grain {
     background-image:
-      linear-gradient(135deg, rgb(var(--surface-white) / 0.98), rgb(var(--background) / 0.96)),
-      radial-gradient(circle at 20% 20%, rgb(var(--surface-white) / 0.24), transparent 28%),
+      linear-gradient(135deg, rgb(var(--surface-white) / 0.92), rgb(var(--background) / 0.96)),
+      radial-gradient(circle at 20% 20%, rgb(var(--surface-highlight) / 0.12), transparent 28%),
       radial-gradient(circle at 80% 0%, rgb(var(--surface-strong) / 0.22), transparent 24%);
     box-shadow: inset 0 1px 0 rgb(var(--surface-white) / 0.6), var(--shadow-soft);
   }
 
+  .bg-paper-grain-reverse {
+    background-image:
+      linear-gradient(315deg, rgb(var(--surface-white) / 0.92), rgb(var(--background) / 0.96)),
+      radial-gradient(circle at 80% 20%, rgb(var(--surface-highlight) / 0.12), transparent 28%),
+      radial-gradient(circle at 0% 0%, rgb(var(--surface-strong) / 0.22), transparent 24%);
+    box-shadow: inset 0 1px 0 rgb(var(--surface-white) / 0.6), var(--shadow-soft);
+  }
+
+  .bg-paper-grain-top {
+    background-image:
+      linear-gradient(180deg, rgb(var(--background) / 0.96), rgb(var(--surface-white) / 0.92)),
+      radial-gradient(circle at 20% 20%, rgb(var(--surface-highlight) / 0.1), transparent 28%),
+      radial-gradient(circle at 80% 0%, rgb(var(--surface-strong) / 0.26), transparent 24%);
+    box-shadow: inset 0 1px 0 rgb(var(--surface-white) / 0.55), var(--shadow-soft);
+  }
+
+  .bg-paper-grain-top-soft {
+    background-image:
+      linear-gradient(180deg, rgb(var(--background) / 0.96), rgb(var(--surface-white) / 0.92)),
+      radial-gradient(circle at 20% 20%, rgb(var(--surface-highlight) / 0.1), transparent 28%),
+      radial-gradient(circle at 80% 0%, rgb(var(--surface-strong) / 0.26), transparent 24%);
+    box-shadow: var(--shadow-soft);
+  }
+
   .bg-stage-glow {
     background:
-      radial-gradient(circle at top, rgb(var(--surface-white) / 0.65), transparent 32%),
+      radial-gradient(circle at top, rgb(var(--surface-highlight) / 0.2), transparent 32%),
       radial-gradient(circle at bottom left, rgb(var(--surface-strong) / 0.22), transparent 26%),
-      linear-gradient(180deg, rgb(var(--surface-white) / 0.94), rgb(var(--background) / 0.94));
+      linear-gradient(180deg, rgb(var(--surface-white) / 0.9), rgb(var(--background) / 0.94));
   }
 
   .bg-theme-board-frame {

@@ -103,9 +103,6 @@ export const GameConfigPanel = ({
     setRevealEveryInput(String(parsed));
   };
 
-  const configDescription = mode === 'computer'
-    ? 'Set up your blindfold game against the computer'
-    : 'Set up a local blindfold game for two players';
   const modeButtonClassName = (selected: boolean) => (
     selected
       ? `${borderless ? 'border-transparent' : 'border-primary'} bg-primary text-primary-foreground hover:bg-primary/90`
@@ -116,9 +113,6 @@ export const GameConfigPanel = ({
     <Card className={`bg-paper-grain w-full overflow-hidden rounded-[30px] text-foreground ${borderless ? 'border-0 shadow-none' : 'border-2 border-border'}`}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-[2rem] leading-none text-primary">Game Configuration</CardTitle>
-        <CardDescription className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
-          {configDescription}
-        </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4 pt-2">
         {showModeSelector && (

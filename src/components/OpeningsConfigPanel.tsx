@@ -291,13 +291,6 @@ export const OpeningsConfigPanel = ({
     return nextExpandedNodeIds;
   }, [expandedNodeIds, forcedExpandedNodeIds]);
 
-  const totalFamilyPositionCount = useMemo(() => (
-    config.selectedFamilyNames.reduce((count, familyName) => {
-      const family = families.find((entry) => entry.name === familyName);
-      return count + (family?.positionCount ?? 0);
-    }, 0)
-  ), [config.selectedFamilyNames, families]);
-
   const toggleFamily = (familyName: string) => {
     const nextFamilyNames = selectedFamilies.has(familyName)
       ? config.selectedFamilyNames.filter((name) => name !== familyName)
@@ -362,12 +355,12 @@ export const OpeningsConfigPanel = ({
   };
 
   return (
-    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
-      <CardHeader className="space-y-1 pb-2">
+    <Card className={cn('bg-paper-grain-top-soft flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
+      <CardHeader className="shrink-0 space-y-1 pb-2">
         <CardTitle className="text-xl">Opening Setup</CardTitle>
       </CardHeader>
 
-      <CardContent className="grid min-h-0 flex-1 grid-rows-[auto_auto_auto_minmax(0,1fr)_auto] gap-3 pt-2">
+      <CardContent className="grid min-h-0 flex-1 grid-rows-[auto_auto_minmax(0,1fr)_auto] gap-3 overflow-hidden pt-2">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           <div className="space-y-2">
             <Label htmlFor="opening-player-color" className="text-[11px] font-semibold text-primary">
@@ -475,24 +468,7 @@ export const OpeningsConfigPanel = ({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 rounded-2xl border-2 border-border bg-surface-base px-4 py-3 sm:grid-cols-3">
-          <div className="min-w-0">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">Whole Families</div>
-            <div className="mt-1 text-2xl font-semibold leading-none text-foreground">{config.selectedFamilyNames.length}</div>
-          </div>
-          <div className="min-w-0">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">Branch Variations</div>
-            <div className="mt-1 text-2xl font-semibold leading-none text-foreground">{config.selectedLineIds.length}</div>
-          </div>
-          <div className="min-w-0">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">Family Positions</div>
-            <div className="mt-1 text-2xl font-semibold leading-none text-foreground">{totalFamilyPositionCount.toLocaleString()}</div>
-          </div>
-        </div>
-
-        <div className="grid min-h-0 gap-3">
-          <Label htmlFor="opening-tree-search">Opening Browser</Label>
-
+        <div className="grid min-h-0 overflow-hidden grid-rows-[auto_minmax(0,1fr)] gap-3">
           <Input
             id="opening-tree-search"
             type="text"
@@ -532,7 +508,7 @@ export const OpeningsConfigPanel = ({
           </ScrollArea>
         </div>
 
-        <div className="grid gap-3">
+        <div className="grid shrink-0 gap-3">
           <p className={statusTone === 'error' ? 'text-sm text-destructive' : 'text-sm text-muted-foreground'}>
             {statusMessage}
           </p>

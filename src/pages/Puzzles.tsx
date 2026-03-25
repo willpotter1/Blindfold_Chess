@@ -189,14 +189,14 @@ const Puzzles = () => {
         className={`h-full grid grid-rows-[auto_minmax(0,1fr)_auto] ${desktopShellGapClass}`}
         style={{ height: `${desktopLayout.rightColumnHeight}px` }}
       >
-        <ParticipantSummaryCard participant={participantSummaries.computer} />
+        <ParticipantSummaryCard participant={participantSummaries.computer} className="bg-surface-strong" />
 
         <div
           className={`grid w-full self-center ${desktopShellGapClass} ${showDesktopMoveHistory ? '' : 'grid-cols-1'}`}
           style={showDesktopMoveHistory ? { gridTemplateColumns: `minmax(0,1fr) ${desktopHistoryWidth}px` } : undefined}
         >
           <div ref={desktopLeftSectionRef} className={`flex min-h-0 flex-col self-start ${desktopShellGapClass}`}>
-            <StatusBar status={status} variant="compact" />
+            <StatusBar status={status} variant="compact" className="bg-surface-strong" />
 
             <MoveInput
               onSubmitMove={(move) => {
@@ -205,6 +205,7 @@ const Puzzles = () => {
               disabled={isSolved}
               errorMessage={error}
               variant="compact"
+              className="bg-surface-strong"
             />
 
             {isSolved && (
@@ -236,14 +237,14 @@ const Puzzles = () => {
             <Button
               type="button"
               variant="outline"
-              className="w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
+              className="w-full border-2 border-border bg-surface-strong text-foreground hover:bg-accent"
               onClick={advanceHint}
               disabled={isSolved || hintStage === 2}
             >
               {hintButtonLabel}
             </Button>
 
-            {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
+            {renderRevealButton('w-full border-2 border-border bg-surface-strong text-foreground hover:bg-accent')}
           </div>
 
           {showDesktopMoveHistory && (
@@ -251,18 +252,22 @@ const Puzzles = () => {
               className="self-start"
               style={desktopLeftSectionHeight ? { height: `${desktopLeftSectionHeight}px` } : undefined}
             >
-              <MoveList moves={moves} startingTurnColor={moveHistoryStartingTurnColor} className="h-full min-h-0" />
+              <MoveList
+                moves={moves}
+                startingTurnColor={moveHistoryStartingTurnColor}
+                className="h-full min-h-0 bg-surface-strong"
+              />
             </div>
           )}
         </div>
 
-        <ParticipantSummaryCard participant={participantSummaries.player} />
+        <ParticipantSummaryCard participant={participantSummaries.player} className="bg-surface-strong" />
       </div>
     );
   };
 
   return (
-    <div className={`min-h-screen bg-background ${showDesktopGameLayout ? 'md:flex' : ''}`}>
+    <div className={`bg-stage-glow min-h-screen ${showDesktopGameLayout ? 'md:flex' : ''}`}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}

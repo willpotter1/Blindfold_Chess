@@ -182,6 +182,7 @@ const Openings = () => {
           isStartDisabled={configStatus.isStartDisabled}
           onConfigChange={updateConfig}
           onStart={startRound}
+          className="h-full"
         />
       );
     }
@@ -272,7 +273,14 @@ const Openings = () => {
               </div>
             </div>
 
-            <div className="grid gap-3" style={{ width: `${desktopLayout.rightColumnWidth}px` }}>
+            <div
+              className="grid min-h-0 gap-3"
+              style={{
+                width: `${desktopLayout.rightColumnWidth}px`,
+                height: phase === 'config' ? `${desktopLayout.boardSize}px` : undefined,
+                gridTemplateRows: phase === 'config' ? 'minmax(0, 1fr)' : undefined,
+              }}
+            >
               {sidePanel}
               {showMoveHistory && round && (
                 <MoveList moves={round.movesSan} startingTurnColor="white" />
@@ -315,7 +323,7 @@ const Openings = () => {
   );
 
   return (
-    <div className={cn('flex min-h-screen flex-col bg-background', showDesktopGameLayout && 'md:flex-row')}>
+    <div className={cn('bg-stage-glow flex min-h-screen flex-col', showDesktopGameLayout && 'md:flex-row')}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}

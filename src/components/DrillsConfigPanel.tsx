@@ -41,7 +41,7 @@ export const DrillsConfigPanel = ({
   const fieldGap = Math.max(10, Math.round(sectionGap * 0.72));
 
   return (
-    <Card className={cn('flex flex-col overflow-hidden', className)}>
+    <Card className={cn('bg-paper-grain-top-soft flex flex-col overflow-hidden', className)}>
       <CardHeader className="shrink-0 pb-0" style={{ padding: `${panelPadding}px` }}>
         <CardTitle className="text-xl">Round Setup</CardTitle>
         <CardDescription className="text-sm">

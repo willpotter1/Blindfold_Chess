@@ -63,30 +63,6 @@ const Account = () => {
     <AccountLayout>
       <div className="mx-auto max-w-6xl">
         <div className="space-y-8">
-          <div className="bg-paper-grain overflow-hidden rounded-[32px] border-2 border-border px-6 py-8 sm:px-8 lg:px-10">
-            <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-              <div className="max-w-2xl">
-                <p className="text-xs uppercase tracking-[0.34em] text-primary/70">Account</p>
-                <h1 className="mt-3 text-5xl font-semibold leading-[0.9] text-primary sm:text-6xl">
-                  Your training archive.
-                </h1>
-                <p className="mt-4 max-w-xl text-sm leading-7 text-muted-foreground sm:text-base">
-                  Keep your identity clean, review your recent sessions, and track how consistently you are converting calculation into results.
-                </p>
-              </div>
-
-              {hasSupabaseConfig && !isLoading && profile.uid && (
-                <Button
-                  type="button"
-                  onClick={() => void handleSignOut()}
-                  className="h-12 rounded-full border-2 border-primary bg-primary px-7 text-primary-foreground hover:bg-primary/90 lg:shrink-0"
-                >
-                  Sign Out
-                </Button>
-              )}
-            </div>
-          </div>
-
           {!hasSupabaseConfig && (
             <div className="rounded-[28px] border-2 border-border bg-surface-strong p-5 text-foreground">
               Supabase is not configured. Account features are unavailable until the environment variables are set.
@@ -117,7 +93,7 @@ const Account = () => {
 
           {hasSupabaseConfig && !isLoading && profile.uid && (
             <div className="space-y-6">
-              <div className="grid gap-4 lg:grid-cols-3">
+              <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)_auto]">
                 <div className="rounded-[28px] border-2 border-border bg-surface-white p-5 backdrop-blur-sm">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between md:flex-col md:items-stretch lg:flex-row lg:items-start">
                     <div className="min-w-0">
@@ -154,6 +130,18 @@ const Account = () => {
                     </div>
                     <Button asChild className={`${PRIMARY_BUTTON_CLASSNAME} sm:shrink-0`}>
                       <Link to="/account/password">Change</Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="rounded-[24px] border-2 border-border bg-surface-white p-3 backdrop-blur-sm lg:min-w-[132px]">
+                  <div className="flex h-full items-center">
+                    <Button
+                      type="button"
+                      onClick={() => void handleSignOut()}
+                      className="h-10 rounded-full border-2 border-primary bg-primary px-4 text-sm text-primary-foreground hover:bg-primary/90"
+                    >
+                      Sign Out
                     </Button>
                   </div>
                 </div>

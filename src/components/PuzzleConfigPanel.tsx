@@ -114,7 +114,7 @@ export const PuzzleConfigPanel = ({
     : 'text-sm text-muted-foreground';
 
   return (
-    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
+    <Card className={cn('bg-paper-grain-top-soft flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Puzzle Configuration</CardTitle>
         <CardDescription className="text-xs">

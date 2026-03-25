@@ -722,8 +722,8 @@ const Index = () => {
             )}
           </div>
         ) : (
-          <div className="bg-paper-grain relative flex min-h-[calc(100vh-6rem)] items-center overflow-hidden rounded-[36px] px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
-            <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[55%] bg-gradient-to-l from-surface-strong/15 to-transparent lg:block" />
+          <div className="bg-paper-grain-reverse relative flex min-h-[calc(100vh-6rem)] items-center overflow-hidden rounded-[36px] px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
+            <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-[55%] bg-gradient-to-r from-surface-strong/15 to-transparent lg:block" />
 
             <div className="relative z-10 grid w-full items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-8">
               <div className="relative">

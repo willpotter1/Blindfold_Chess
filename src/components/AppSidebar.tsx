@@ -45,7 +45,7 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
   return (
     <div
       className={cn(
-        'mx-4 mt-4 w-auto rounded-[28px] bg-paper-grain p-4 shadow-theme-strong',
+        'mx-4 mt-4 w-auto rounded-[28px] bg-paper-grain-top p-4 shadow-theme-strong',
         desktopMode && 'md:sticky md:top-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-28 md:shrink-0 md:self-start',
       )}
     >

@@ -242,7 +242,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background md:flex">
+    <div className="bg-stage-glow min-h-screen md:flex">
       <AppSidebar />
 
       <div className="container mx-auto px-4 py-10 md:flex-1">
