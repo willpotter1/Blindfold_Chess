@@ -1,0 +1,2067 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "King's Gambit Accepted",
+    "chunkKey": "king-s-gambit-accepted",
+    "recordCount": 137,
+    "lineCount": 128
+  },
+  "records": [
+    {
+      "id": "record-1957",
+      "eco": "C33",
+      "name": "King's Gambit Accepted",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4",
+      "uci": "e2e4 e7e5 f2f4 e5f4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1708"
+    },
+    {
+      "id": "record-1958",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Basman Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Qe2",
+      "uci": "e2e4 e7e5 f2f4 e5f4 d1e2",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/8/PPPPQ1PP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1709"
+    },
+    {
+      "id": "record-1959",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/2B1Pp2/8/PPPP2PP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1710"
+    },
+    {
+      "id": "record-1960",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Anderssen Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 g5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 g7g5",
+      "epd": "rnbqkbnr/pppp1p1p/8/6p1/2B1Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1711"
+    },
+    {
+      "id": "record-1961",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Anderssen Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 d5 4. Bxd5 c6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d7d5 c4d5 c7c6",
+      "epd": "rnbqkbnr/pp3ppp/2p5/3B4/4Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1712"
+    },
+    {
+      "id": "record-1962",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Bledow Countergambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 d5 4. Bxd5 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d7d5 c4d5 g8f6",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3B4/4Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1713"
+    },
+    {
+      "id": "record-1963",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Bledow Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 d5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d7d5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3p4/2B1Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1714"
+    },
+    {
+      "id": "record-1964",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Boden Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 Nc6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 b8c6",
+      "epd": "r1b1kbnr/pppp1ppp/2n5/8/2B1Pp1q/8/PPPP2PP/RNBQ1KNR w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1715"
+    },
+    {
+      "id": "record-1965",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Nf6 4. Nc3 c6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 g8f6 b1c3 c7c6",
+      "epd": "rnbqkb1r/pp1p1ppp/2p2n2/8/2B1Pp2/2N5/PPPP2PP/R1BQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1716"
+    },
+    {
+      "id": "record-1966",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Bogoljubow Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Nf6 4. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 g8f6 b1c3",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/8/2B1Pp2/2N5/PPPP2PP/R1BQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1717"
+    },
+    {
+      "id": "record-1967",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Boren-Svenonius Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 d5 4. Bxd5 Qh4+ 5. Kf1 Bd6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d7d5 c4d5 d8h4 e1f1 f8d6",
+      "epd": "rnb1k1nr/ppp2ppp/3b4/3B4/4Pp1q/8/PPPP2PP/RNBQ1KNR w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1718"
+    },
+    {
+      "id": "record-1968",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Bryan Countergambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 b5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 b7b5",
+      "epd": "rnb1kbnr/p1pp1ppp/8/1p6/2B1Pp1q/8/PPPP2PP/RNBQ1KNR w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1719"
+    },
+    {
+      "id": "record-1969",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Chigorin's Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 d5 5. Bxd5 g5 6. g3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 d7d5 c4d5 g7g5 g2g3",
+      "epd": "rnb1kbnr/ppp2p1p/8/3B2p1/4Pp1q/6P1/PPPP3P/RNBQ1KNR b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1720"
+    },
+    {
+      "id": "record-1970",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Classical Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 Ne7 5. Nc3 g5 6. d4 Bg7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 g8e7 b1c3 g7g5 d2d4 f8g7",
+      "epd": "rnb1k2r/ppppnpbp/8/6p1/2BPPp1q/2N5/PPP3PP/R1BQ1KNR w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1721"
+    },
+    {
+      "id": "record-1971",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Classical Defense, Cozio Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 g5 5. Qf3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 g7g5 d1f3",
+      "epd": "rnb1kbnr/pppp1p1p/8/6p1/2B1Pp1q/5Q2/PPPP2PP/RNB2KNR b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1722"
+    },
+    {
+      "id": "record-1972",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Cozio Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 g8f6",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/8/2B1Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1723"
+    },
+    {
+      "id": "record-1973",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Cozio Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 d6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 d7d6",
+      "epd": "rnb1kbnr/ppp2ppp/3p4/8/2B1Pp1q/8/PPPP2PP/RNBQ1KNR w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1724"
+    },
+    {
+      "id": "record-1974",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, First Jaenisch Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 g8f6",
+      "epd": "rnb1kb1r/pppp1ppp/5n2/8/2B1Pp1q/8/PPPP2PP/RNBQ1KNR w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1725"
+    },
+    {
+      "id": "record-1975",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Fraser Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 g5 5. Nc3 Bg7 6. g3 fxg3 7. Qf3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 g7g5 b1c3 f8g7 g2g3 f4g3 d1f3",
+      "epd": "rnb1k1nr/pppp1pbp/8/6p1/2B1P2q/2N2Qp1/PPPP3P/R1B2KNR b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1726"
+    },
+    {
+      "id": "record-1976",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Gianutio Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 f5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 f7f5",
+      "epd": "rnbqkbnr/pppp2pp/8/5p2/2B1Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1727"
+    },
+    {
+      "id": "record-1977",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Greco Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 Bc5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 f8c5",
+      "epd": "rnb1k1nr/pppp1ppp/8/2b5/2B1Pp1q/8/PPPP2PP/RNBQ1KNR w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1728"
+    },
+    {
+      "id": "record-1978",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Grimm Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 g5 5. Nc3 Bg7 6. d4 d6 7. e5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 g7g5 b1c3 f8g7 d2d4 d7d6 e4e5",
+      "epd": "rnb1k1nr/ppp2pbp/3p4/4P1p1/2BP1p1q/2N5/PPP3PP/R1BQ1KNR b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1729"
+    },
+    {
+      "id": "record-1979",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Kieseritzky Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 b5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 b7b5",
+      "epd": "rnbqkbnr/p1pp1ppp/8/1p6/2B1Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1730"
+    },
+    {
+      "id": "record-1980",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Lopez Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 c6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 c7c6",
+      "epd": "rnbqkbnr/pp1p1ppp/2p5/8/2B1Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1731"
+    },
+    {
+      "id": "record-1981",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Lopez Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 g5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 g7g5",
+      "epd": "rnb1kbnr/pppp1p1p/8/6p1/2B1Pp1q/8/PPPP2PP/RNBQ1KNR w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1732"
+    },
+    {
+      "id": "record-1982",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Maurian Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Nc6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 b8c6",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/2B1Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1733"
+    },
+    {
+      "id": "record-1983",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 g5 5. Nc3 Bg7 6. d4 Ne7 7. g3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 g7g5 b1c3 f8g7 d2d4 g8e7 g2g3",
+      "epd": "rnb1k2r/ppppnpbp/8/6p1/2BPPp1q/2N3P1/PPP4P/R1BQ1KNR b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1734"
+    },
+    {
+      "id": "record-1984",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, McDonnell Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 g5 5. Nc3 Bg7 6. g3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 d8h4 e1f1 g7g5 b1c3 f8g7 g2g3",
+      "epd": "rnb1k1nr/pppp1pbp/8/6p1/2B1Pp1q/2N3P1/PPPP3P/R1BQ1KNR b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1734"
+    },
+    {
+      "id": "record-1985",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Paulsen Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Nf6 4. Nc3 Bb4 5. e5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 g8f6 b1c3 f8b4 e4e5",
+      "epd": "rnbqk2r/pppp1ppp/5n2/4P3/1bB2p2/2N5/PPPP2PP/R1BQK1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1735"
+    },
+    {
+      "id": "record-1986",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Bishop's Gambit, Steinitz Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 Ne7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 g8e7",
+      "epd": "rnbqkb1r/ppppnppp/8/8/2B1Pp2/8/PPPP2PP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1736"
+    },
+    {
+      "id": "record-1987",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Breyer Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Qf3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 d1f3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/5Q2/PPPP2PP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1737"
+    },
+    {
+      "id": "record-1988",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Carrera Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Qh5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 d1h5",
+      "epd": "rnbqkbnr/pppp1ppp/8/7Q/4Pp2/8/PPPP2PP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1738"
+    },
+    {
+      "id": "record-1989",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Dodo Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Qg4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 d1g4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4PpQ1/8/PPPP2PP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1739"
+    },
+    {
+      "id": "record-1990",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Eisenberg Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nh3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1h3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/7N/PPPP2PP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1740"
+    },
+    {
+      "id": "record-1991",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Gaga Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. g3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g2g3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/6P1/PPPP3P/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1741"
+    },
+    {
+      "id": "record-1992",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Lopez-Gianutio Countergambit, Hein Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bc4 f5 4. Qe2 Qh4+ 5. Kd1 fxe4 6. Nc3 Kd8",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1c4 f7f5 d1e2 d8h4 e1d1 f5e4 b1c3 e8d8",
+      "epd": "rnbk1bnr/pppp2pp/8/8/2B1pp1q/2N5/PPPPQ1PP/R1BK2NR w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1742"
+    },
+    {
+      "id": "record-1993",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Mason-Keres Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 b1c3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/2N5/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1743"
+    },
+    {
+      "id": "record-1994",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Orsini Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. b3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 b2b3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/1P6/P1PP2PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1744"
+    },
+    {
+      "id": "record-1995",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Paris Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Ne2",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1e2",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/8/PPPPN1PP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1745"
+    },
+    {
+      "id": "record-1996",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Schurig Gambit, with Bb5",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bb5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1b5",
+      "epd": "rnbqkbnr/pppp1ppp/8/1B6/4Pp2/8/PPPP2PP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1746"
+    },
+    {
+      "id": "record-1997",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Schurig Gambit, with Bd3",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Bd3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1d3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/3B4/PPPP2PP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1747"
+    },
+    {
+      "id": "record-1998",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Stamma Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. h4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 h2h4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp1P/8/PPPP2P1/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1748"
+    },
+    {
+      "id": "record-1999",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Tartakower Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Be2",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1e2",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/8/PPPPB1PP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1749"
+    },
+    {
+      "id": "record-2000",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Tartakower Gambit, Weiss Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Be2 f5 4. exf5 d6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 f1e2 f7f5 e4f5 d7d6",
+      "epd": "rnbqkbnr/ppp3pp/3p4/5P2/5p2/8/PPPPB1PP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1750"
+    },
+    {
+      "id": "record-2001",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Tumbleweed",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Kf2",
+      "uci": "e2e4 e7e5 f2f4 e5f4 e1f2",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/8/PPPP1KPP/RNBQ1BNR b kq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1751"
+    },
+    {
+      "id": "record-2002",
+      "eco": "C33",
+      "name": "King's Gambit Accepted: Villemson Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. d4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 d2d4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/3PPp2/8/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1752"
+    },
+    {
+      "id": "record-2003",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Becker Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 h6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 h7h6",
+      "epd": "rnbqkbnr/pppp1pp1/7p/8/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1753"
+    },
+    {
+      "id": "record-2004",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Bonsch-Osmolovsky Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Ne7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g8e7",
+      "epd": "rnbqkb1r/ppppnppp/8/8/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1754"
+    },
+    {
+      "id": "record-2005",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Fischer Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 d6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 d7d6",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/8/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1755"
+    },
+    {
+      "id": "record-2006",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Fischer Defense, Schulder Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 d6 4. b4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 d7d6 b2b4",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/8/1P2Pp2/5N2/P1PP2PP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1756"
+    },
+    {
+      "id": "record-2007",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Fischer Defense, Spanish Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 d6 4. d4 Nf6 5. Bd3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 d7d6 d2d4 g8f6 f1d3",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/8/3PPp2/3B1N2/PPP3PP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1757"
+    },
+    {
+      "id": "record-2008",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Gianutio Countergambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 f5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 f7f5",
+      "epd": "rnbqkbnr/pppp2pp/8/5p2/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1758"
+    },
+    {
+      "id": "record-2009",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Greco Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 d6 4. Bc4 h6 5. d4 g5 6. h4 Bg7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 d7d6 f1c4 h7h6 d2d4 g7g5 h2h4 f8g7",
+      "epd": "rnbqk1nr/ppp2pb1/3p3p/6p1/2BPPp1P/5N2/PPP3P1/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1759"
+    },
+    {
+      "id": "record-2010",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: King's Knight's Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5",
+      "epd": "rnbqkbnr/pppp1p1p/8/6p1/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1760"
+    },
+    {
+      "id": "record-2011",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: King's Knight's Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4Pp2/5N2/PPPP2PP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1760"
+    },
+    {
+      "id": "record-2012",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: MacLeod Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Nc6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 b8c6",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1761"
+    },
+    {
+      "id": "record-2013",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Schallopp Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g8f6",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/8/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1762"
+    },
+    {
+      "id": "record-2014",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Schallopp Defense, Tashkent Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Nf6 4. e5 Nh5 5. g4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g8f6 e4e5 f6h5 g2g4",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P2n/5pP1/5N2/PPPP3P/RNBQKB1R b KQkq g3",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1763"
+    },
+    {
+      "id": "record-2015",
+      "eco": "C34",
+      "name": "King's Gambit Accepted: Wagenbach Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 h5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 h7h5",
+      "epd": "rnbqkbnr/pppp1pp1/8/7p/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1764"
+    },
+    {
+      "id": "record-2016",
+      "eco": "C35",
+      "name": "King's Gambit Accepted: Cunningham Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Be7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 f8e7",
+      "epd": "rnbqk1nr/ppppbppp/8/8/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1765"
+    },
+    {
+      "id": "record-2017",
+      "eco": "C35",
+      "name": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Be7 4. Bc4 Bh4+ 5. g3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 f8e7 f1c4 e7h4 g2g3",
+      "epd": "rnbqk1nr/pppp1ppp/8/8/2B1Pp1b/5NP1/PPPP3P/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1766"
+    },
+    {
+      "id": "record-2018",
+      "eco": "C35",
+      "name": "King's Gambit Accepted: Cunningham Defense, Bertin Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Be7 4. Bc4 Bh4+ 5. g3 fxg3 6. O-O gxh2+ 7. Kh1",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 f8e7 f1c4 e7h4 g2g3 f4g3 e1g1 g3h2 g1h1",
+      "epd": "rnbqk1nr/pppp1ppp/8/8/2B1P2b/5N2/PPPP3p/RNBQ1R1K b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1766"
+    },
+    {
+      "id": "record-2019",
+      "eco": "C35",
+      "name": "King's Gambit Accepted: Cunningham Defense, McCormick Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Be7 4. Bc4 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 f8e7 f1c4 g8f6",
+      "epd": "rnbqk2r/ppppbppp/5n2/8/2B1Pp2/5N2/PPPP2PP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1767"
+    },
+    {
+      "id": "record-2020",
+      "eco": "C36",
+      "name": "King's Gambit Accepted: Abbazia Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 d5 4. exd5 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 d7d5 e4d5 g8f6",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3P4/5p2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1768"
+    },
+    {
+      "id": "record-2021",
+      "eco": "C36",
+      "name": "King's Gambit Accepted: Abbazia Defense, Main Line",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 d5 4. exd5 Nf6 5. Bb5+ c6 6. dxc6 bxc6 7. Bc4 Nd5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 d7d5 e4d5 g8f6 f1b5 c7c6 d5c6 b7c6 b5c4 f6d5",
+      "epd": "rnbqkb1r/p4ppp/2p5/3n4/2B2p2/5N2/PPPP2PP/RNBQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1769"
+    },
+    {
+      "id": "record-2022",
+      "eco": "C36",
+      "name": "King's Gambit Accepted: Modern Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 d5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 d7d5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3p4/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1770"
+    },
+    {
+      "id": "record-2023",
+      "eco": "C36",
+      "name": "King's Gambit Accepted: Modern Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 d5 4. exd5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 d7d5 e4d5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3P4/5p2/5N2/PPPP2PP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1770"
+    },
+    {
+      "id": "record-2024",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Australian Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. h4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 h2h4",
+      "epd": "rnbqkbnr/pppp1p1p/8/8/2B1PppP/5N2/PPPP2P1/RNBQK2R b KQkq h3",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1771"
+    },
+    {
+      "id": "record-2025",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Blachly Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Nc6 4. Bc4 g5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 b8c6 f1c4 g7g5",
+      "epd": "r1bqkbnr/pppp1p1p/2n5/6p1/2B1Pp2/5N2/PPPP2PP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1772"
+    },
+    {
+      "id": "record-2026",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Double Muzio Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. e5 Qxe5 8. Bxf7+",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 d8f6 e4e5 f6e5 c4f7",
+      "epd": "rnb1kbnr/pppp1B1p/8/4q3/5p2/5Q2/PPPP2PP/RNB2RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1773"
+    },
+    {
+      "id": "record-2027",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Double Muzio Gambit, Baldwin Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. Nc3 Qd4+ 8. Kh1 Qxc4 9. Nd5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 d8f6 b1c3 f6d4 g1h1 d4c4 c3d5",
+      "epd": "rnb1kbnr/pppp1p1p/8/3N4/2q1Pp2/5Q2/PPPP2PP/R1B2R1K b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1774"
+    },
+    {
+      "id": "record-2028",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Double Muzio Gambit, Bello Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 d8f6 b1c3",
+      "epd": "rnb1kbnr/pppp1p1p/5q2/8/2B1Pp2/2N2Q2/PPPP2PP/R1B2RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1775"
+    },
+    {
+      "id": "record-2029",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Double Muzio Gambit, Paulsen Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. e5 Qxe5 8. d3 Bh6 9. Nc3 Ne7 10. Bd2 Nbc6 11. Rae1",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 d8f6 e4e5 f6e5 d2d3 f8h6 b1c3 g8e7 c1d2 b8c6 a1e1",
+      "epd": "r1b1k2r/ppppnp1p/2n4b/4q3/2B2p2/2NP1Q2/PPPB2PP/4RRK1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-1776"
+    },
+    {
+      "id": "record-2030",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Double Muzio Gambit, Young Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. Bxf7+ Kxf7 8. d4 Qxd4+ 9. Be3 Qf6 10. Nc3 fxe3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 d8f6 c4f7 e8f7 d2d4 f6d4 c1e3 d4f6 b1c3 f4e3",
+      "epd": "rnb2bnr/pppp1k1p/5q2/8/4P3/2N1pQ2/PPP3PP/R4RK1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1777"
+    },
+    {
+      "id": "record-2031",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Ghulam-Kassim Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. d4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 d2d4",
+      "epd": "rnbqkbnr/pppp1p1p/8/8/2BPPpp1/5N2/PPP3PP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1778"
+    },
+    {
+      "id": "record-2032",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Ghulam-Kassim Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. d4 gxf3 6. Qxf3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 d2d4 g4f3 d1f3",
+      "epd": "rnbqkbnr/pppp1p1p/8/8/2BPPp2/5Q2/PPP3PP/RNB1K2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1778"
+    },
+    {
+      "id": "record-2033",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: King's Knight's Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4",
+      "epd": "rnbqkbnr/pppp1p1p/8/6p1/2B1Pp2/5N2/PPPP2PP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1760"
+    },
+    {
+      "id": "record-2034",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Kotov Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. d4 gxf3 6. Bxf4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 d2d4 g4f3 c1f4",
+      "epd": "rnbqkbnr/pppp1p1p/8/8/2BPPB2/5p2/PPP3PP/RN1QK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1779"
+    },
+    {
+      "id": "record-2035",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Lolli Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Bxf7+",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 c4f7",
+      "epd": "rnbqkbnr/pppp1B1p/8/8/4Ppp1/5N2/PPPP2PP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1780"
+    },
+    {
+      "id": "record-2036",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Lolli Gambit, Young Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Bxf7+ Kxf7 6. O-O gxf3 7. Qxf3 Qf6 8. d4 Qxd4+ 9. Be3 Qf6 10. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 c4f7 e8f7 e1g1 g4f3 d1f3 d8f6 d2d4 f6d4 c1e3 d4f6 b1c3",
+      "epd": "rnb2bnr/pppp1k1p/5q2/8/4Pp2/2N1BQ2/PPP3PP/R4RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1781"
+    },
+    {
+      "id": "record-2037",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: McDonnell Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 b1c3",
+      "epd": "rnbqkbnr/pppp1p1p/8/8/2B1Ppp1/2N2N2/PPPP2PP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1782"
+    },
+    {
+      "id": "record-2038",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Middleton Countergambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 d6 5. O-O Bg4 6. h3 h5 7. hxg4 hxg4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 d7d6 e1g1 c8g4 h2h3 h7h5 h3g4 h5g4",
+      "epd": "rn1qkbnr/ppp2p2/3p4/6p1/2B1Ppp1/5N2/PPPP2P1/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1783"
+    },
+    {
+      "id": "record-2039",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Muzio Gambit Accepted, From's Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qe7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 d8e7",
+      "epd": "rnb1kbnr/ppppqp1p/8/8/2B1Pp2/5Q2/PPPP2PP/RNB2RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1784"
+    },
+    {
+      "id": "record-2040",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Muzio Gambit, Brentano Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O d5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 d7d5",
+      "epd": "rnbqkbnr/ppp2p1p/8/3p4/2B1Ppp1/5N2/PPPP2PP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1785"
+    },
+    {
+      "id": "record-2041",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Muzio Gambit, Holloway Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Nc6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 b8c6",
+      "epd": "r1bqkbnr/pppp1p1p/2n5/8/2B1Pp2/5Q2/PPPP2PP/RNB2RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1786"
+    },
+    {
+      "id": "record-2042",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Muzio Gambit, Kling and Horwitz Counterattack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O Qe7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 d8e7",
+      "epd": "rnb1kbnr/ppppqp1p/8/8/2B1Ppp1/5N2/PPPP2PP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1787"
+    },
+    {
+      "id": "record-2043",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Muzio Gambit, Sarratt Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 d8f6",
+      "epd": "rnb1kbnr/pppp1p1p/5q2/8/2B1Pp2/5Q2/PPPP2PP/RNB2RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1788"
+    },
+    {
+      "id": "record-2044",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Muzio Gambit, Wild Muzio Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1",
+      "epd": "rnbqkbnr/pppp1p1p/8/8/2B1Ppp1/5N2/PPPP2PP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1789"
+    },
+    {
+      "id": "record-2045",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Quaade Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 b1c3",
+      "epd": "rnbqkbnr/pppp1p1p/8/6p1/4Pp2/2N2N2/PPPP2PP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1790"
+    },
+    {
+      "id": "record-2046",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Rosentreter Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 d2d4",
+      "epd": "rnbqkbnr/pppp1p1p/8/6p1/3PPp2/5N2/PPP3PP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1791"
+    },
+    {
+      "id": "record-2047",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Rosentreter Gambit, Bird Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 Qh4+ 6. g3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 d2d4 g5g4 f3e5 d8h4 g2g3",
+      "epd": "rnb1kbnr/pppp1p1p/8/4N3/3PPppq/6P1/PPP4P/RNBQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1792"
+    },
+    {
+      "id": "record-2048",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Rosentreter Gambit, Sörensen Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 d2d4 g5g4 b1c3",
+      "epd": "rnbqkbnr/pppp1p1p/8/8/3PPpp1/2N2N2/PPP3PP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1793"
+    },
+    {
+      "id": "record-2049",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Rosentreter Gambit, Testa Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Bxf4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 d2d4 g5g4 c1f4",
+      "epd": "rnbqkbnr/pppp1p1p/8/8/3PPBp1/5N2/PPP3PP/RN1QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1794"
+    },
+    {
+      "id": "record-2050",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Salvio Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 f3e5",
+      "epd": "rnbqkbnr/pppp1p1p/8/4N3/2B1Ppp1/8/PPPP2PP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1795"
+    },
+    {
+      "id": "record-2051",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Salvio Gambit, Anderssen Counterattack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d4 d6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 f3e5 d8h4 e1f1 g8h6 d2d4 d7d6",
+      "epd": "rnb1kb1r/ppp2p1p/3p3n/4N3/2BPPppq/8/PPP3PP/RNBQ1K1R w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1796"
+    },
+    {
+      "id": "record-2052",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Salvio Gambit, Cochrane Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 f3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 f3e5 d8h4 e1f1 f4f3",
+      "epd": "rnb1kbnr/pppp1p1p/8/4N3/2B1P1pq/5p2/PPPP2PP/RNBQ1K1R w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1797"
+    },
+    {
+      "id": "record-2053",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Salvio Gambit, Santa Maria Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 f3e5 d8h4 e1f1 g8f6",
+      "epd": "rnb1kb1r/pppp1p1p/5n2/4N3/2B1Pppq/8/PPPP2PP/RNBQ1K1R w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1798"
+    },
+    {
+      "id": "record-2054",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Salvio Gambit, Silberschmidt Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 f3e5 d8h4 e1f1 g8h6",
+      "epd": "rnb1kb1r/pppp1p1p/7n/4N3/2B1Pppq/8/PPPP2PP/RNBQ1K1R w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1799"
+    },
+    {
+      "id": "record-2055",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Salvio Gambit, Viennese Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nc6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 f3e5 d8h4 e1f1 b8c6",
+      "epd": "r1b1kbnr/pppp1p1p/2n5/4N3/2B1Pppq/8/PPPP2PP/RNBQ1K1R w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1800"
+    },
+    {
+      "id": "record-2056",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Silberschmidt Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d4 f3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 f3e5 d8h4 e1f1 g8h6 d2d4 f4f3",
+      "epd": "rnb1kb1r/pppp1p1p/7n/4N3/2BPP1pq/5p2/PPP3PP/RNBQ1K1R w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1801"
+    },
+    {
+      "id": "record-2057",
+      "eco": "C37",
+      "name": "King's Gambit Accepted: Sörensen Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 d2d4 g5g4 f3e5",
+      "epd": "rnbqkbnr/pppp1p1p/8/4N3/3PPpp1/8/PPP3PP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1802"
+    },
+    {
+      "id": "record-2058",
+      "eco": "C38",
+      "name": "King's Gambit Accepted: Greco Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 Bg7 5. h4 h6 6. d4 d6 7. Nc3 c6 8. hxg5 hxg5 9. Rxh8 Bxh8 10. Ne5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 f8g7 h2h4 h7h6 d2d4 d7d6 b1c3 c7c6 h4g5 h6g5 h1h8 g7h8 f3e5",
+      "epd": "rnbqk1nb/pp3p2/2pp4/4N1p1/2BPPp2/2N5/PPP3P1/R1BQK3 b Qq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1759"
+    },
+    {
+      "id": "record-2059",
+      "eco": "C38",
+      "name": "King's Gambit Accepted: Hanstein Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 Bg7 5. O-O",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 f8g7 e1g1",
+      "epd": "rnbqk1nr/pppp1pbp/8/6p1/2B1Pp2/5N2/PPPP2PP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1803"
+    },
+    {
+      "id": "record-2060",
+      "eco": "C38",
+      "name": "King's Gambit Accepted: Mayet Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 Bg7 5. d4 d6 6. c3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 f8g7 d2d4 d7d6 c2c3",
+      "epd": "rnbqk1nr/ppp2pbp/3p4/6p1/2BPPp2/2P2N2/PP4PP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1804"
+    },
+    {
+      "id": "record-2061",
+      "eco": "C38",
+      "name": "King's Gambit Accepted: Philidor Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 Bg7 5. h4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 f8g7 h2h4",
+      "epd": "rnbqk1nr/pppp1pbp/8/6p1/2B1Pp1P/5N2/PPPP2P1/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1805"
+    },
+    {
+      "id": "record-2062",
+      "eco": "C38",
+      "name": "King's Gambit Accepted: Philidor Gambit, Schultz Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 h6 4. Bc4 d6 5. d4 g5 6. h4 Bg7 7. Qd3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 h7h6 f1c4 d7d6 d2d4 g7g5 h2h4 f8g7 d1d3",
+      "epd": "rnbqk1nr/ppp2pb1/3p3p/6p1/2BPPp1P/3Q1N2/PPP3P1/RNB1K2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1806"
+    },
+    {
+      "id": "record-2063",
+      "eco": "C38",
+      "name": "King's Gambit Accepted: Traditional Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 Bg7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 f1c4 f8g7",
+      "epd": "rnbqk1nr/pppp1pbp/8/6p1/2B1Pp2/5N2/PPPP2PP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1807"
+    },
+    {
+      "id": "record-2064",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Allgaier Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5",
+      "epd": "rnbqkbnr/pppp1p1p/8/6N1/4PppP/8/PPPP2P1/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1808"
+    },
+    {
+      "id": "record-2065",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Allgaier Gambit, Thorold Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. d4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5 h7h6 g5f7 e8f7 d2d4",
+      "epd": "rnbq1bnr/pppp1k2/7p/8/3PPppP/8/PPP3P1/RNBQKB1R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1809"
+    },
+    {
+      "id": "record-2066",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Allgaier Gambit, Urusov Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. Bc4+",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5 h7h6 g5f7 e8f7 f1c4",
+      "epd": "rnbq1bnr/pppp1k2/7p/8/2B1PppP/8/PPPP2P1/RNBQK2R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1810"
+    },
+    {
+      "id": "record-2067",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Allgaier, Blackburne Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5 h7h6 g5f7 e8f7 b1c3",
+      "epd": "rnbq1bnr/pppp1k2/7p/8/4PppP/2N5/PPPP2P1/R1BQKB1R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1811"
+    },
+    {
+      "id": "record-2068",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Allgaier, Cook Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. d4 d5 8. Bxf4 dxe4 9. Bc4+ Kg7 10. Be5+",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5 h7h6 g5f7 e8f7 d2d4 d7d5 c1f4 d5e4 f1c4 f7g7 f4e5",
+      "epd": "rnbq1bnr/ppp3k1/7p/4B3/2BPp1pP/8/PPP3P1/RN1QK2R b KQ -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1812"
+    },
+    {
+      "id": "record-2069",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Allgaier, Horny Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. Qxg4 Nf6 8. Qxf4 Bd6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5 h7h6 g5f7 e8f7 d1g4 g8f6 g4f4 f8d6",
+      "epd": "rnbq3r/pppp1k2/3b1n1p/8/4PQ1P/8/PPPP2P1/RNB1KB1R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1813"
+    },
+    {
+      "id": "record-2070",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Allgaier, Schlechter Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5 g8f6",
+      "epd": "rnbqkb1r/pppp1p1p/5n2/6N1/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1814"
+    },
+    {
+      "id": "record-2071",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Allgaier, Urusov Attack",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. Bc4+ d5 8. Bxd5+ Kg7 9. d4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5 h7h6 g5f7 e8f7 f1c4 d7d5 c4d5 f7g7 d2d4",
+      "epd": "rnbq1bnr/ppp3k1/7p/3B4/3PPppP/8/PPP3P1/RNBQK2R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1815"
+    },
+    {
+      "id": "record-2072",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5",
+      "epd": "rnbqkbnr/pppp1p1p/8/4N3/4PppP/8/PPPP2P1/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1816"
+    },
+    {
+      "id": "record-2073",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nf6 6. Bc4 d5 7. exd5 Bd6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 g8f6 f1c4 d7d5 e4d5 f8d6",
+      "epd": "rnbqk2r/ppp2p1p/3b1n2/3PN3/2B2ppP/8/PPPP2P1/RNBQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1817"
+    },
+    {
+      "id": "record-2074",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nf6 6. Bc4 d5 7. exd5 Bd6 8. d4 Nh5 9. Bxf4 Nxf4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 g8f6 f1c4 d7d5 e4d5 f8d6 d2d4 f6h5 c1f4 h5f4",
+      "epd": "rnbqk2r/ppp2p1p/3b4/3PN3/2BP1npP/8/PPP3P1/RN1QK2R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1818"
+    },
+    {
+      "id": "record-2075",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nf6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 g8f6",
+      "epd": "rnbqkb1r/pppp1p1p/5n2/4N3/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1819"
+    },
+    {
+      "id": "record-2076",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nf6 6. d4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 g8f6 d2d4",
+      "epd": "rnbqkb1r/pppp1p1p/5n2/4N3/3PPppP/8/PPP3P1/RNBQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1821"
+    },
+    {
+      "id": "record-2077",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nf6 6. Nxg4 d5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 g8f6 e5g4 d7d5",
+      "epd": "rnbqkb1r/ppp2p1p/5n2/3p4/4PpNP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1820"
+    },
+    {
+      "id": "record-2078",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 d5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 d7d5",
+      "epd": "rnbqkbnr/ppp2p1p/8/3pN3/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1822"
+    },
+    {
+      "id": "record-2079",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 d5 6. d4 Nf6 7. Bxf4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 d7d5 d2d4 g8f6 c1f4",
+      "epd": "rnbqkb1r/ppp2p1p/5n2/3pN3/3PPBpP/8/PPP3P1/RN1QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1822"
+    },
+    {
+      "id": "record-2080",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 d5 6. d4 Nf6 7. Bxf4 Nxe4 8. Nd2",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 d7d5 d2d4 g8f6 c1f4 f6e4 b1d2",
+      "epd": "rnbqkb1r/ppp2p1p/8/3pN3/3PnBpP/8/PPPN2P1/R2QKB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1823"
+    },
+    {
+      "id": "record-2081",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Cotter Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3g5 h7h6 g5f7",
+      "epd": "rnbqkbnr/pppp1N2/7p/8/4PppP/8/PPPP2P1/RNBQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1824"
+    },
+    {
+      "id": "record-2082",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Kolisch Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 d6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 d7d6",
+      "epd": "rnbqkbnr/ppp2p1p/3p4/4N3/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1825"
+    },
+    {
+      "id": "record-2083",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Long Whip",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 h5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 h7h5",
+      "epd": "rnbqkbnr/pppp1p2/8/4N2p/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1826"
+    },
+    {
+      "id": "record-2084",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Neumann Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nc6",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 b8c6",
+      "epd": "r1bqkbnr/pppp1p1p/2n5/4N3/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1827"
+    },
+    {
+      "id": "record-2085",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Bg7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 f8g7",
+      "epd": "rnbqk1nr/pppp1pbp/8/4N3/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1828"
+    },
+    {
+      "id": "record-2086",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense Deferred",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nf6 6. Bc4 d5 7. exd5 Bg7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 g8f6 f1c4 d7d5 e4d5 f8g7",
+      "epd": "rnbqk2r/ppp2pbp/5n2/3PN3/2B2ppP/8/PPPP2P1/RNBQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1829"
+    },
+    {
+      "id": "record-2087",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Rice Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nf6 6. Bc4 d5 7. exd5 Bd6 8. O-O Bxe5",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 g8f6 f1c4 d7d5 e4d5 f8d6 e1g1 d6e5",
+      "epd": "rnbqk2r/ppp2p1p/5n2/3Pb3/2B2ppP/8/PPPP2P1/RNBQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1830"
+    },
+    {
+      "id": "record-2088",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit, Rosenthal Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Qe7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 d8e7",
+      "epd": "rnb1kbnr/ppppqp1p/8/4N3/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1831"
+    },
+    {
+      "id": "record-2089",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 h5 6. Bc4 Rh7 7. d4 Bh6 8. Nc3",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 h7h5 f1c4 h8h7 d2d4 f8h6 b1c3",
+      "epd": "rnbqk1n1/pppp1p1r/7b/4N2p/2BPPppP/2N5/PPP3P1/R1BQK2R b KQq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1832"
+    },
+    {
+      "id": "record-2090",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky, Polerio Defense",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Be7",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 f8e7",
+      "epd": "rnbqk1nr/ppppbp1p/8/4N3/4PppP/8/PPPP2P1/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1833"
+    },
+    {
+      "id": "record-2091",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky, Rice Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Nf6 6. Bc4 d5 7. exd5 Bd6 8. O-O",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 g8f6 f1c4 d7d5 e4d5 f8d6 e1g1",
+      "epd": "rnbqk2r/ppp2p1p/3b1n2/3PN3/2B2ppP/8/PPPP2P1/RNBQ1RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1834"
+    },
+    {
+      "id": "record-2092",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: Kieseritzky, Salvio Defense, Cozio Variation",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 Qe7 6. d4 f5 7. Bc4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4 f3e5 d8e7 d2d4 f7f5 f1c4",
+      "epd": "rnb1kbnr/ppppq2p/8/4Np2/2BPPppP/8/PPP3P1/RNBQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1835"
+    },
+    {
+      "id": "record-2093",
+      "eco": "C39",
+      "name": "King's Gambit Accepted: King's Knight's Gambit",
+      "family": "King's Gambit Accepted",
+      "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4",
+      "uci": "e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4",
+      "epd": "rnbqkbnr/pppp1p1p/8/6p1/4Pp1P/5N2/PPPP2P1/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1760"
+    }
+  ]
+}

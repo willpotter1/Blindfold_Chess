@@ -10,7 +10,7 @@ import { sendOtpCode, signupWithOtp } from '@/lib/otpApi';
 import { hasSupabaseConfig } from '@/lib/supabase';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
-const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
+const primaryActionButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
 const otpServerUnavailableDescription = 'The OTP server is not running. Start it with npm run auth:dev.';
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
 const isOtpResetRequiredError = (message: string) =>
@@ -160,7 +160,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white md:flex">
+    <div className="bg-stage-glow min-h-screen md:flex">
       <AppSidebar />
 
       <div className="container mx-auto px-4 py-10 md:flex-1">

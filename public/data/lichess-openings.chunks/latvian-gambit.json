@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Latvian Gambit",
+    "chunkKey": "latvian-gambit",
+    "recordCount": 17,
+    "lineCount": 17
+  },
+  "records": [
+    {
+      "id": "record-2109",
+      "eco": "C40",
+      "name": "Latvian Gambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5",
+      "uci": "e2e4 e7e5 g1f3 f7f5",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1851"
+    },
+    {
+      "id": "record-2119",
+      "eco": "C40",
+      "name": "Latvian Gambit: Behting Variation",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Bc4 fxe4 4. Nxe5 Qg5 5. Nf7 Qxg2 6. Rf1 d5 7. Nxh8 Nf6",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f1c4 f5e4 f3e5 d8g5 e5f7 g5g2 h1f1 d7d5 f7h8 g8f6",
+      "epd": "rnb1kb1N/ppp3pp/5n2/3p4/2B1p3/8/PPPP1PqP/RNBQKR2 w Qq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1861"
+    },
+    {
+      "id": "record-2120",
+      "eco": "C40",
+      "name": "Latvian Gambit: Corkscrew Countergambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Bc4 fxe4 4. Nxe5 Nf6",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f1c4 f5e4 f3e5 g8f6",
+      "epd": "rnbqkb1r/pppp2pp/5n2/4N3/2B1p3/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1862"
+    },
+    {
+      "id": "record-2121",
+      "eco": "C40",
+      "name": "Latvian Gambit: Corkscrew Gambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Nf6 4. Bc4 fxe4 5. Nf7 Qe7 6. Nxh8 d5",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 g8f6 f1c4 f5e4 e5f7 d8e7 f7h8 d7d5",
+      "epd": "rnb1kb1N/ppp1q1pp/5n2/3p4/2B1p3/8/PPPP1PPP/RNBQK2R w KQq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1863"
+    },
+    {
+      "id": "record-2122",
+      "eco": "C40",
+      "name": "Latvian Gambit: Diepstraten Countergambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. c4",
+      "uci": "e2e4 e7e5 g1f3 f7f5 c2c4",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/2P1P3/5N2/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1864"
+    },
+    {
+      "id": "record-2123",
+      "eco": "C40",
+      "name": "Latvian Gambit: Fraser Defense",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Nc6",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 b8c6",
+      "epd": "r1bqkbnr/pppp2pp/2n5/4Np2/4P3/8/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1865"
+    },
+    {
+      "id": "record-2124",
+      "eco": "C40",
+      "name": "Latvian Gambit: Greco Variation",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nxe5 Qe7",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f3e5 d8e7",
+      "epd": "rnb1kbnr/ppppq1pp/8/4Np2/4P3/8/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1866"
+    },
+    {
+      "id": "record-2125",
+      "eco": "C40",
+      "name": "Latvian Gambit: Lobster Gambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. g4",
+      "uci": "e2e4 e7e5 g1f3 f7f5 g2g4",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/4P1P1/5N2/PPPP1P1P/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1867"
+    },
+    {
+      "id": "record-2126",
+      "eco": "C40",
+      "name": "Latvian Gambit: Mason Countergambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. d4",
+      "uci": "e2e4 e7e5 g1f3 f7f5 d2d4",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1868"
+    },
+    {
+      "id": "record-2127",
+      "eco": "C40",
+      "name": "Latvian Gambit: Mayet Attack",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Bc4",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f1c4",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1869"
+    },
+    {
+      "id": "record-2128",
+      "eco": "C40",
+      "name": "Latvian Gambit: Mayet Attack, Morgado Defense",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Bc4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f1c4 g8f6",
+      "epd": "rnbqkb1r/pppp2pp/5n2/4pp2/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1870"
+    },
+    {
+      "id": "record-2129",
+      "eco": "C40",
+      "name": "Latvian Gambit: Mayet Attack, Poisoned Pawn Variation",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Bc4 fxe4 4. Nxe5 Qg5 5. d4 Qxg2",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f1c4 f5e4 f3e5 d8g5 d2d4 g5g2",
+      "epd": "rnb1kbnr/pppp2pp/8/4N3/2BPp3/8/PPP2PqP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1871"
+    },
+    {
+      "id": "record-2130",
+      "eco": "C40",
+      "name": "Latvian Gambit: Mayet Attack, Polerio-Svedenborg Variation",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Bc4 fxe4 4. Nxe5 d5",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f1c4 f5e4 f3e5 d7d5",
+      "epd": "rnbqkbnr/ppp3pp/8/3pN3/2B1p3/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1872"
+    },
+    {
+      "id": "record-2131",
+      "eco": "C40",
+      "name": "Latvian Gambit: Mayet Attack, Strautins Gambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Bc4 b5",
+      "uci": "e2e4 e7e5 g1f3 f7f5 f1c4 b7b5",
+      "epd": "rnbqkbnr/p1pp2pp/8/1p2pp2/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1873"
+    },
+    {
+      "id": "record-2132",
+      "eco": "C40",
+      "name": "Latvian Gambit: Mlotkowski Variation",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. Nc3",
+      "uci": "e2e4 e7e5 g1f3 f7f5 b1c3",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1874"
+    },
+    {
+      "id": "record-2133",
+      "eco": "C40",
+      "name": "Latvian Gambit: Senechaud Gambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 f5 3. b4",
+      "uci": "e2e4 e7e5 g1f3 f7f5 b2b4",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/1P2P3/5N2/P1PP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1875"
+    },
+    {
+      "id": "record-2239",
+      "eco": "C44",
+      "name": "Latvian Gambit: Clam Gambit",
+      "family": "Latvian Gambit",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d3 f5 4. exf5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d3 f7f5 e4f5",
+      "epd": "r1bqkbnr/pppp2pp/2n5/4pP2/8/3P1N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1968"
+    }
+  ]
+}

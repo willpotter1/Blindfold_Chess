@@ -59,9 +59,9 @@ export const VisionBoard = ({
     const piece = piecesBySquare.get(square);
     const feedbackClassName =
       feedback?.result === 'correct'
-        ? 'bg-emerald-400/70'
+        ? 'bg-board-correct/70'
         : feedback?.result === 'wrong'
-          ? 'bg-rose-500/70'
+          ? 'bg-board-wrong/70'
           : '';
 
     return {
@@ -77,7 +77,7 @@ export const VisionBoard = ({
   });
 
   return (
-    <div className={cn('grid aspect-square grid-cols-8 overflow-hidden rounded-xl border-2 border-[#d9b99b]', className)}>
+    <div className={cn('grid aspect-square grid-cols-8 overflow-hidden rounded-xl border-2 border-board-border', className)}>
       {squares.map(({
         row,
         col,
@@ -93,10 +93,10 @@ export const VisionBoard = ({
           type="button"
           aria-label={`Square ${square}`}
           className={cn(
-            'relative flex aspect-square items-center justify-center overflow-hidden p-0 transition-transform duration-100 focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/90 focus-visible:ring-offset-0',
-            isLightSquare ? 'bg-[#d9b99b]' : 'bg-[#8B4513]',
+            'relative flex aspect-square items-center justify-center overflow-hidden p-0 transition-transform duration-100 focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-board-select/90 focus-visible:ring-offset-0',
+            isLightSquare ? 'bg-board-light' : 'bg-board-dark',
             disabled ? 'cursor-default' : 'cursor-pointer active:scale-[0.985]',
-            isSelectedSquare && 'ring-4 ring-inset ring-amber-300/90',
+            isSelectedSquare && 'ring-4 ring-inset ring-board-highlight/90',
           )}
           disabled={disabled}
           onClick={() => onSquareClick?.(square)}
@@ -110,7 +110,7 @@ export const VisionBoard = ({
               <img
                 src={pieceSprites[piece.spriteKey]}
                 alt={`${piece.color} ${piece.displayName}`}
-                className="h-full w-full object-contain drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]"
+                className="shadow-theme-piece h-full w-full object-contain"
                 draggable={false}
               />
             </span>
@@ -120,7 +120,7 @@ export const VisionBoard = ({
             <span
               className={cn(
                 'pointer-events-none absolute bottom-1 right-1 z-[4] text-[11px] font-semibold sm:text-xs',
-                isLightSquare ? 'text-[#8B4513]' : 'text-[#fff7ef]',
+                isLightSquare ? 'text-board-label-light' : 'text-board-label-dark',
               )}
             >
               {getFileLabelForColumn(col, perspective)}
@@ -131,7 +131,7 @@ export const VisionBoard = ({
             <span
               className={cn(
                 'pointer-events-none absolute left-1 top-1 z-[4] text-[11px] font-semibold sm:text-xs',
-                isLightSquare ? 'text-[#8B4513]' : 'text-[#fff7ef]',
+                isLightSquare ? 'text-board-label-light' : 'text-board-label-dark',
               )}
             >
               {getRankLabelForRow(row, perspective)}

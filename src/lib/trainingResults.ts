@@ -1,3 +1,5 @@
+import type { OpeningInfo } from '@/lib/openings';
+import type { OpeningTrainerConfig } from '@/lib/openingTrainer';
 import type { PuzzleConfig, PuzzleRecord } from '@/lib/puzzles';
 import { trackAnalyticsEvent } from '@/lib/firebaseAnalytics';
 import { supabase } from '@/lib/supabase';
@@ -27,6 +29,17 @@ export type SavePuzzleAttemptInput = {
 export type SaveDrillRoundInput = {
   config: VisionRoundConfig;
   stats: VisionRoundStats;
+  completedAt?: string;
+};
+
+export type SaveOpeningRoundInput = {
+  opening: OpeningInfo;
+  openingLineId: string;
+  config: OpeningTrainerConfig;
+  selectedFamilyNames: string[];
+  selectedLineIds: string[];
+  playedUciMoves: string[];
+  startedAt: string;
   completedAt?: string;
 };
 
@@ -70,6 +83,34 @@ export const buildDrillRoundPayload = ({
   total_attempts: stats.totalAttempts,
   score: getVisionScore(stats),
   accuracy: getVisionAccuracy(stats),
+  completed_at: completedAt,
+});
+
+export const buildOpeningRoundPayload = ({
+  opening,
+  openingLineId,
+  config,
+  selectedFamilyNames,
+  selectedLineIds,
+  playedUciMoves,
+  startedAt,
+  completedAt = new Date().toISOString(),
+}: SaveOpeningRoundInput) => ({
+  opening_line_id: openingLineId,
+  opening_eco: opening.eco,
+  opening_name: opening.name,
+  opening_family: opening.name.split(':')[0].trim(),
+  opening_pgn: opening.pgn,
+  opening_uci: opening.uci,
+  player_color: config.playerColor,
+  depth_player_moves: config.depthPlayerMoves,
+  reveal_every: config.revealEvery,
+  allow_cheats: config.allowCheats,
+  hide_move_history: config.hideMoveHistory,
+  selected_family_names: selectedFamilyNames,
+  selected_line_ids: selectedLineIds,
+  played_uci_moves: playedUciMoves,
+  started_at: startedAt,
   completed_at: completedAt,
 });
 
@@ -166,6 +207,47 @@ export const saveDrillRound = async (input: SaveDrillRoundInput): Promise<SaveRe
     return { ok: true, id: data.id };
   } catch (error) {
     console.error('Failed to save drill round:', error);
+    return { ok: false, reason: 'error', error };
+  }
+};
+
+export const saveOpeningRound = async (input: SaveOpeningRoundInput): Promise<SaveResult> => {
+  const authResult = await getSignedInUserId();
+  if (!authResult.ok) {
+    return authResult;
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('opening_rounds')
+      .insert({
+        user_id: authResult.userId,
+        ...buildOpeningRoundPayload(input),
+      })
+      .select('id')
+      .single();
+
+    if (error) {
+      throw error;
+    }
+
+    console.info('Saved opening round:', data.id);
+    void trackAnalyticsEvent('opening_round_saved', {
+      opening_line_id: input.openingLineId,
+      opening_eco: input.opening.eco,
+      opening_name: input.opening.name,
+      player_color: input.config.playerColor,
+      depth_player_moves: input.config.depthPlayerMoves,
+      reveal_every: input.config.revealEvery,
+      allow_cheats: input.config.allowCheats,
+      hide_move_history: input.config.hideMoveHistory,
+      selected_family_count: input.selectedFamilyNames.length,
+      selected_line_count: input.selectedLineIds.length,
+      played_move_count: input.playedUciMoves.length,
+    });
+    return { ok: true, id: data.id };
+  } catch (error) {
+    console.error('Failed to save opening round:', error);
     return { ok: false, reason: 'error', error };
   }
 };

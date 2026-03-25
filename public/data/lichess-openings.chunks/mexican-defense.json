@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Mexican Defense",
+    "chunkKey": "mexican-defense",
+    "recordCount": 2,
+    "lineCount": 2
+  },
+  "records": [
+    {
+      "id": "record-626",
+      "eco": "A50",
+      "name": "Mexican Defense",
+      "family": "Mexican Defense",
+      "pgn": "1. d4 Nf6 2. c4 Nc6",
+      "uci": "d2d4 g8f6 c2c4 b8c6",
+      "epd": "r1bqkb1r/pppppppp/2n2n2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-533"
+    },
+    {
+      "id": "record-627",
+      "eco": "A50",
+      "name": "Mexican Defense: Horsefly Gambit",
+      "family": "Mexican Defense",
+      "pgn": "1. d4 Nf6 2. c4 Nc6 3. d5 Ne5 4. f4",
+      "uci": "d2d4 g8f6 c2c4 b8c6 d4d5 c6e5 f2f4",
+      "epd": "r1bqkb1r/pppppppp/5n2/3Pn3/2P2P2/8/PP2P1PP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-534"
+    }
+  ]
+}

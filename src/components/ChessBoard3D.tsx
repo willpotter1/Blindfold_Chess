@@ -214,19 +214,19 @@ export const ChessBoard3D = forwardRef<ChessBoard3DHandle, ChessBoard3DProps>(({
       />
 
       {!isReady && !loadError && (
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/15 px-6 text-center text-sm font-medium text-white/90">
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-foreground/15 px-6 text-center text-sm font-medium text-primary-foreground/90">
           Loading 3D chessboard…
         </div>
       )}
 
       {loadError && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black/70 px-6 text-center text-sm text-white">
+        <div className="absolute inset-0 flex items-center justify-center bg-foreground/70 px-6 text-center text-sm text-primary-foreground">
           <p>3D board failed to load: {loadError}</p>
         </div>
       )}
 
       {selectedSquare && !loadError && (
-        <div className="pointer-events-none absolute left-3 top-3 rounded-full bg-black/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+        <div className="pointer-events-none absolute left-3 top-3 rounded-full bg-foreground/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary-foreground">
           {selectedSquare}
         </div>
       )}

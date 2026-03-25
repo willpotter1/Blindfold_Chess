@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Chess } from 'chess.js';
-import { useGameState } from '@/hooks/useGameState';
+import { useGameState, type GameStartSeed } from '@/hooks/useGameState';
 import { getEngineMove } from '@/lib/chessEngine/getEngineMove';
 import { BlindfoldBoard } from '@/components/BlindfoldBoard';
 import { LandingOperaReplay } from '@/components/LandingOperaReplay';
@@ -38,13 +38,14 @@ const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills against the computer or another player locally with limited board visibility.';
 const SEO_CANONICAL_URL = 'https://blindchess.org/';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
-const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50';
+const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent';
 const DESKTOP_BOARD_SIZE = 760;
 const DESKTOP_RIGHT_COLUMN_WIDTH = 441;
 const DESKTOP_LAYOUT_GAP = 32;
 
 type GameConfigState = {
   gameConfig?: GameConfig;
+  gameStartSeed?: GameStartSeed;
 };
 
 type ParticipantDescriptor = {
@@ -227,13 +228,13 @@ const Index = () => {
     }
   }, [getCurrentState, makeMoveUci, toast]);
 
-  const handleStartGame = useCallback(async (config: GameConfig) => {
+  const handleStartGame = useCallback(async (config: GameConfig, seed?: GameStartSeed) => {
     setMoveError('');
     setIsManualBoardReveal(false);
     setIsEngineThinking(false);
     setSelectedGameMode(config.mode);
 
-    const initialState = startNewGame(config);
+    const initialState = startNewGame(config, seed);
 
     if (shouldComputerAct(initialState)) {
       await handleEngineMove();
@@ -243,12 +244,13 @@ const Index = () => {
   useEffect(() => {
     const routeState = location.state as GameConfigState | null;
     const incomingConfig = routeState?.gameConfig;
+    const incomingSeed = routeState?.gameStartSeed;
 
     if (!incomingConfig || gameState) {
       return;
     }
 
-    void handleStartGame(incomingConfig);
+    void handleStartGame(incomingConfig, incomingSeed);
     navigate('/', { replace: true, state: null });
   }, [location.state, gameState, navigate, handleStartGame]);
 
@@ -483,21 +485,21 @@ const Index = () => {
     if (gameState.isOver) {
       return (
         <>
-          <div className="rounded-md border-2 border-[#d9b99b] bg-card p-3 text-center text-lg font-semibold text-[#8B4513]">
+          <div className="rounded-md border-2 border-border bg-card p-3 text-center text-lg font-semibold text-primary">
             <p>{statusText}</p>
           </div>
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             <Button
               type="button"
               variant="outline"
-              className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+              className="h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
               onClick={handlePlayWithNewConfig}
             >
               New Config
             </Button>
             <Button
               type="button"
-              className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+              className="h-10 w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
               onClick={() => void handlePlayAgainWithSameRules()}
             >
               Play Again
@@ -551,7 +553,7 @@ const Index = () => {
           errorMessage={moveError}
         />
         {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
-        {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
+        {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
       </>
     );
   };
@@ -581,14 +583,14 @@ const Index = () => {
                   <Button
                     type="button"
                     variant="outline"
-                    className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+                    className="h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
                     onClick={handlePlayWithNewConfig}
                   >
                     New Config
                   </Button>
                   <Button
                     type="button"
-                    className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+                    className="h-10 w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
                     onClick={() => void handlePlayAgainWithSameRules()}
                   >
                     Play Again
@@ -639,7 +641,7 @@ const Index = () => {
                   variant="compact"
                 />
 
-                {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
+                {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
               </>
             )}
           </div>
@@ -660,7 +662,7 @@ const Index = () => {
   };
 
   return (
-    <div className={`min-h-screen bg-white ${showDesktopGameLayout ? 'md:flex' : ''}`}>
+    <div className={`bg-stage-glow min-h-screen ${showDesktopGameLayout ? 'md:flex' : ''}`}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
@@ -669,7 +671,7 @@ const Index = () => {
       />
       <AppSidebar onHomeClick={handleLogoClick} desktopMode={showDesktopGameLayout} />
 
-      <div className="mx-auto w-full px-4 py-8 md:flex-1">
+      <div className="mx-auto w-full px-4 py-6 md:flex-1 md:py-8">
         {gameState ? (
           <div className={showDesktopGameLayout ? 'h-[calc(100dvh-4rem)]' : ''}>
             {showDesktopGameLayout ? (
@@ -720,29 +722,41 @@ const Index = () => {
             )}
           </div>
         ) : (
-          <div className="flex min-h-[calc(100vh-8rem)] flex-col">
-            <div className="w-full rounded-[28px] border-2 border-[#d9b99b] bg-[#fff8f1] px-6 py-5 text-center shadow-sm md:-mt-4 md:px-10 lg:px-16">
-              <h1 className="text-3xl font-extrabold tracking-tight text-[#8B4513] md:text-5xl">
-                Learn Blindchess
-              </h1>
-              <p className="mt-3 text-center text-xs text-[#8B4513]/70 md:text-sm">
-                “Calculation is visualization.” - Gary Kasparov
-              </p>
-            </div>
-            <div className="mx-auto mt-8 grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-8 lg:grid-cols-2">
-              <div className="flex justify-center">
-                <LandingOperaReplay />
+          <div className="bg-paper-grain-reverse relative flex min-h-[calc(100vh-6rem)] items-center overflow-hidden rounded-[36px] px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
+            <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-[55%] bg-gradient-to-r from-surface-strong/15 to-transparent lg:block" />
+
+            <div className="relative z-10 grid w-full items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-8">
+              <div className="relative">
+                <div id="landing-visual" className="animate-drift-in relative mx-auto w-full max-w-4xl">
+                  <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-surface-white/60 blur-3xl" />
+                  <div className="shadow-theme-strong relative rounded-[34px] bg-surface-white/30 p-3 sm:p-5">
+                    <LandingOperaReplay />
+                  </div>
+                </div>
               </div>
-              <div className="mx-auto w-full max-w-lg lg:justify-self-end lg:-translate-y-4 lg:translate-x-4">
-                <GameConfigPanel
-                  mode={selectedGameMode}
-                  onModeChange={setSelectedGameMode}
-                  showModeSelector
-                  onStartGame={(config) => {
-                    void handleStartGame(config);
-                  }}
-                  isGameActive={false}
-                />
+
+              <div className="max-w-xl">
+                <div className="animate-rise-fade">
+                  <h1 className="text-display-balance text-4xl font-semibold leading-[0.92] text-primary sm:text-5xl lg:text-6xl">
+                    Blindfold Chess Trainer
+                  </h1>
+                  <p className="mt-4 text-sm italic text-muted-foreground">
+                    “Calculation is visualization.”
+                  </p>
+                </div>
+
+                <div id="game-config-panel" className="animate-rise-fade animation-delay-150 mt-8 w-full">
+                  <GameConfigPanel
+                    mode={selectedGameMode}
+                    onModeChange={setSelectedGameMode}
+                    showModeSelector
+                    borderless
+                    onStartGame={(config) => {
+                      void handleStartGame(config);
+                    }}
+                    isGameActive={false}
+                  />
+                </div>
               </div>
             </div>
           </div>

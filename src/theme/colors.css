@@ -1,0 +1,70 @@
+:root {
+  --color-warm-tint: 232 212 193;
+  --color-warm-highlight: 214 178 150;
+  --color-light-brown: 217 185 155;
+  --color-brown: 139 69 19;
+  --color-white: 255 255 255;
+  --color-black: 0 0 0;
+
+  --background: var(--color-warm-tint);
+  --foreground: var(--color-black);
+
+  --card: var(--color-warm-tint);
+  --card-foreground: var(--color-black);
+
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-black);
+
+  --primary: var(--color-brown);
+  --primary-foreground: var(--color-white);
+
+  --secondary: var(--color-light-brown);
+  --secondary-foreground: var(--color-black);
+
+  --muted: var(--color-warm-tint);
+  --muted-foreground: var(--color-brown);
+
+  --accent: var(--color-warm-highlight);
+  --accent-foreground: var(--color-black);
+
+  --destructive: var(--color-brown);
+  --destructive-foreground: var(--color-white);
+
+  --border: var(--color-light-brown);
+  --input: var(--color-light-brown);
+  --ring: var(--color-brown);
+
+  --surface-base: var(--color-warm-tint);
+  --surface-highlight: var(--color-warm-highlight);
+  --surface-strong: var(--color-light-brown);
+  --surface-white: var(--color-white);
+  --surface-dark: var(--color-brown);
+  --surface-ink: var(--color-black);
+
+  --sidebar-background: var(--surface-base);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--surface-white);
+  --sidebar-accent-foreground: var(--foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+
+  --board-light: var(--color-light-brown);
+  --board-dark: var(--color-brown);
+  --board-border: var(--color-light-brown);
+  --board-label-light: var(--color-brown);
+  --board-label-dark: var(--color-white);
+  --board-select: var(--color-white);
+  --board-highlight: var(--color-warm-highlight);
+  --board-feedback-correct: var(--color-warm-highlight);
+  --board-feedback-wrong: var(--color-black);
+
+  --shadow-soft: 0 18px 40px rgb(var(--color-brown) / 0.16);
+  --shadow-strong: 0 24px 56px rgb(var(--color-brown) / 0.18);
+  --shadow-piece: 0 1px 2px rgb(var(--color-black) / 0.35);
+}
+
+.dark {
+  color-scheme: light;
+}

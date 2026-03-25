@@ -3,6 +3,7 @@ import { defaultPuzzleConfig } from '@/lib/puzzles';
 import { defaultVisionRoundConfig } from '@/lib/visionTrainer';
 import {
   buildDrillRoundPayload,
+  buildOpeningRoundPayload,
   buildPuzzleAttemptPayload,
 } from './trainingResults';
 
@@ -97,5 +98,50 @@ describe('trainingResults payload builders', () => {
     expect(payload.moves_piece_display).toBeNull();
     expect(payload.accuracy).toBe(0);
     expect(payload.score).toBe(0);
+  });
+
+  it('builds opening round payloads from the resolved opening and trainer config', () => {
+    const payload = buildOpeningRoundPayload({
+      opening: {
+        eco: 'C00',
+        name: 'French Defense',
+        pgn: '1. e4 e6',
+        uci: 'e2e4 e7e6',
+      },
+      openingLineId: 'line-42',
+      config: {
+        selectedFamilyNames: ['French Defense'],
+        selectedLineIds: ['line-42'],
+        playerColor: 'black',
+        depthPlayerMoves: 2,
+        revealEvery: 3,
+        allowCheats: false,
+        hideMoveHistory: true,
+      },
+      selectedFamilyNames: ['French Defense'],
+      selectedLineIds: ['line-42'],
+      playedUciMoves: ['e2e4', 'e7e6'],
+      startedAt: '2026-03-24T14:00:00.000Z',
+      completedAt: '2026-03-24T14:00:25.000Z',
+    });
+
+    expect(payload).toEqual({
+      opening_line_id: 'line-42',
+      opening_eco: 'C00',
+      opening_name: 'French Defense',
+      opening_family: 'French Defense',
+      opening_pgn: '1. e4 e6',
+      opening_uci: 'e2e4 e7e6',
+      player_color: 'black',
+      depth_player_moves: 2,
+      reveal_every: 3,
+      allow_cheats: false,
+      hide_move_history: true,
+      selected_family_names: ['French Defense'],
+      selected_line_ids: ['line-42'],
+      played_uci_moves: ['e2e4', 'e7e6'],
+      started_at: '2026-03-24T14:00:00.000Z',
+      completed_at: '2026-03-24T14:00:25.000Z',
+    });
   });
 });

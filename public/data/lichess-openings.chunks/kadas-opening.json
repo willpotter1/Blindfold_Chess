@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Kádas Opening",
+    "chunkKey": "kadas-opening",
+    "recordCount": 9,
+    "lineCount": 7
+  },
+  "records": [
+    {
+      "id": "record-57",
+      "eco": "A00",
+      "name": "Kádas Opening",
+      "family": "Kádas Opening",
+      "pgn": "1. h4",
+      "uci": "h2h4",
+      "epd": "rnbqkbnr/pppppppp/8/8/7P/8/PPPPPPP1/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-56"
+    },
+    {
+      "id": "record-58",
+      "eco": "A00",
+      "name": "Kádas Opening: Beginner's Trap",
+      "family": "Kádas Opening",
+      "pgn": "1. h4 d5 2. Rh3",
+      "uci": "h2h4 d7d5 h1h3",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/7P/7R/PPPPPPP1/RNBQKBN1 b Qkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-57"
+    },
+    {
+      "id": "record-59",
+      "eco": "A00",
+      "name": "Kádas Opening: Koola-Koola Variation",
+      "family": "Kádas Opening",
+      "pgn": "1. h4 a5",
+      "uci": "h2h4 a7a5",
+      "epd": "rnbqkbnr/1ppppppp/8/p7/7P/8/PPPPPPP1/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-59"
+    },
+    {
+      "id": "record-60",
+      "eco": "A00",
+      "name": "Kádas Opening: Kádas Gambit",
+      "family": "Kádas Opening",
+      "pgn": "1. h4 c5 2. b4",
+      "uci": "h2h4 c7c5 b2b4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/1P5P/8/P1PPPPP1/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-58"
+    },
+    {
+      "id": "record-61",
+      "eco": "A00",
+      "name": "Kádas Opening: Kádas Gambit",
+      "family": "Kádas Opening",
+      "pgn": "1. h4 d5 2. d4 c5 3. Nf3 cxd4 4. c3",
+      "uci": "h2h4 d7d5 d2d4 c7c5 g1f3 c5d4 c2c3",
+      "epd": "rnbqkbnr/pp2pppp/8/3p4/3p3P/2P2N2/PP2PPP1/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-58"
+    },
+    {
+      "id": "record-62",
+      "eco": "A00",
+      "name": "Kádas Opening: Kádas Gambit",
+      "family": "Kádas Opening",
+      "pgn": "1. h4 e5 2. d4 exd4 3. c3",
+      "uci": "h2h4 e7e5 d2d4 e5d4 c2c3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/3p3P/2P5/PP2PPP1/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-58"
+    },
+    {
+      "id": "record-63",
+      "eco": "A00",
+      "name": "Kádas Opening: Myers Variation",
+      "family": "Kádas Opening",
+      "pgn": "1. h4 d5 2. d4 c5 3. e4",
+      "uci": "h2h4 d7d5 d2d4 c7c5 e2e4",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/3PP2P/8/PPP2PP1/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-60"
+    },
+    {
+      "id": "record-64",
+      "eco": "A00",
+      "name": "Kádas Opening: Schneider Gambit",
+      "family": "Kádas Opening",
+      "pgn": "1. h4 g5",
+      "uci": "h2h4 g7g5",
+      "epd": "rnbqkbnr/pppppp1p/8/6p1/7P/8/PPPPPPP1/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-61"
+    },
+    {
+      "id": "record-65",
+      "eco": "A00",
+      "name": "Kádas Opening: Steinbok Gambit",
+      "family": "Kádas Opening",
+      "pgn": "1. h4 f5 2. e4 fxe4 3. d3",
+      "uci": "h2h4 f7f5 e2e4 f5e4 d2d3",
+      "epd": "rnbqkbnr/ppppp1pp/8/8/4p2P/3P4/PPP2PP1/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-62"
+    }
+  ]
+}

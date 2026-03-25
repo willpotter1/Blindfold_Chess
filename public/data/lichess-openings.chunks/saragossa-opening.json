@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Saragossa Opening",
+    "chunkKey": "saragossa-opening",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-96",
+      "eco": "A00",
+      "name": "Saragossa Opening",
+      "family": "Saragossa Opening",
+      "pgn": "1. c3",
+      "uci": "c2c3",
+      "epd": "rnbqkbnr/pppppppp/8/8/8/2P5/PP1PPPPP/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-92"
+    }
+  ]
+}

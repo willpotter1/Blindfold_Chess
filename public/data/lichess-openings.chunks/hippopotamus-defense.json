@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Hippopotamus Defense",
+    "chunkKey": "hippopotamus-defense",
+    "recordCount": 2,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-800",
+      "eco": "B00",
+      "name": "Hippopotamus Defense",
+      "family": "Hippopotamus Defense",
+      "pgn": "1. e4 Nh6",
+      "uci": "e2e4 g8h6",
+      "epd": "rnbqkb1r/pppppppp/7n/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-681"
+    },
+    {
+      "id": "record-801",
+      "eco": "B00",
+      "name": "Hippopotamus Defense",
+      "family": "Hippopotamus Defense",
+      "pgn": "1. e4 Nh6 2. d4 g6 3. c4 f6",
+      "uci": "e2e4 g8h6 d2d4 g7g6 c2c4 f7f6",
+      "epd": "rnbqkb1r/ppppp2p/5ppn/8/2PPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-681"
+    }
+  ]
+}

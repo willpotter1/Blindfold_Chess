@@ -15,6 +15,7 @@ import AccountEmail from "./pages/AccountEmail";
 import AccountPassword from "./pages/AccountPassword";
 import Puzzles from "./pages/Puzzles";
 import Drills from "./pages/Drills";
+import Openings from "./pages/Openings";
 import NotFound from "./pages/NotFound";
 import { trackPageView } from "@/lib/firebaseAnalytics";
 
@@ -64,6 +65,7 @@ const App = () => {
             <Route path="/account/password" element={<AccountPassword />} />
             <Route path="/puzzles" element={<Puzzles />} />
             <Route path="/drills" element={<Drills />} />
+            <Route path="/openings" element={<Openings />} />
             <Route path="/games" element={<About />} />
             <Route path="/about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

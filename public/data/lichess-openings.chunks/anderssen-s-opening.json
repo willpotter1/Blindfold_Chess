@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Anderssen's Opening",
+    "chunkKey": "anderssen-s-opening",
+    "recordCount": 2,
+    "lineCount": 2
+  },
+  "records": [
+    {
+      "id": "record-5",
+      "eco": "A00",
+      "name": "Anderssen's Opening",
+      "family": "Anderssen's Opening",
+      "pgn": "1. a3",
+      "uci": "a2a3",
+      "epd": "rnbqkbnr/pppppppp/8/8/8/P7/1PPPPPPP/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-5"
+    },
+    {
+      "id": "record-6",
+      "eco": "A00",
+      "name": "Anderssen's Opening: Polish Gambit",
+      "family": "Anderssen's Opening",
+      "pgn": "1. a3 a5 2. b4",
+      "uci": "a2a3 a7a5 b2b4",
+      "epd": "rnbqkbnr/1ppppppp/8/p7/1P6/P7/2PPPPPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-6"
+    }
+  ]
+}

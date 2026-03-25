@@ -1,0 +1,522 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Pterodactyl Defense",
+    "chunkKey": "pterodactyl-defense",
+    "recordCount": 34,
+    "lineCount": 34
+  },
+  "records": [
+    {
+      "id": "record-1000",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Austrian, Austriadactylus Western",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. f4 c5 4. Nf3 Qa5+",
+      "uci": "e2e4 g7g6 d2d4 f8g7 f2f4 c7c5 g1f3 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PPP2/5N2/PPP3PP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-869"
+    },
+    {
+      "id": "record-1001",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Austrian, Grand Prix Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. Nc3 Bg7 3. f4 c5 4. Nf3 Qa5",
+      "uci": "e2e4 g7g6 b1c3 f8g7 f2f4 c7c5 g1f3 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/4PP2/2N2N2/PPPP2PP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-870"
+    },
+    {
+      "id": "record-1002",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Austrian, Pteranodon",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. f4 c5 4. c3 Qa5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 f2f4 c7c5 c2c3 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PPP2/2P5/PP4PP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-871"
+    },
+    {
+      "id": "record-1003",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Central, Anhanguera",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. Nc3 d6 5. Be3 Qa5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 c2c4 c7c5 b1c3 d7d6 c1e3 d8a5",
+      "epd": "rnb1k1nr/pp2ppbp/3p2p1/q1p5/2PPP3/2N1B3/PP3PPP/R2QKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-872"
+    },
+    {
+      "id": "record-1004",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Central, Benoni Quetzalcoatlus",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Qa5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 c2c4 c7c5 d4d5 d7d6 b1c3 d8a5",
+      "epd": "rnb1k1nr/pp2ppbp/3p2p1/q1pP4/2P1P3/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-873"
+    },
+    {
+      "id": "record-1005",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Central, Quetzalcoatlus Gambit",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. Nc3 d6 5. dxc5 Qa5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 c2c4 c7c5 b1c3 d7d6 d4c5 d8a5",
+      "epd": "rnb1k1nr/pp2ppbp/3p2p1/q1P5/2P1P3/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-874"
+    },
+    {
+      "id": "record-1006",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Eastern, Anhanguera",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. Be3",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c5 c1e3",
+      "epd": "rnbqk1nr/pp1pppbp/6p1/2p5/3PP3/2N1B3/PPP2PPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-875"
+    },
+    {
+      "id": "record-1007",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Eastern, Benoni",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. e4 Bg7 3. Nc3 c5 4. d5",
+      "uci": "d2d4 g7g6 e2e4 f8g7 b1c3 c7c5 d4d5",
+      "epd": "rnbqk1nr/pp1pppbp/6p1/2pP4/4P3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-876"
+    },
+    {
+      "id": "record-1008",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Eastern, Benoni Pteranodon",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. d5 Bxc3+ 5. bxc3 Qa5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c5 d4d5 g7c3 b2c3 d8a5",
+      "epd": "rnb1k1nr/pp1ppp1p/6p1/q1pP4/4P3/2P5/P1P2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-877"
+    },
+    {
+      "id": "record-1009",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Eastern, Benoni Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. Nc3 Bg7 3. e4 c5 4. d5 Qa5",
+      "uci": "d2d4 g7g6 b1c3 f8g7 e2e4 c7c5 d4d5 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1pP4/4P3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-878"
+    },
+    {
+      "id": "record-1010",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Eastern, Pteranodon",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. dxc5 Bxc3+ 5. bxc3 Qa5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c5 d4c5 g7c3 b2c3 d8a5",
+      "epd": "rnb1k1nr/pp1ppp1p/6p1/q1P5/4P3/2P5/P1P2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-879"
+    },
+    {
+      "id": "record-1011",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Eastern, Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. dxc5 Qa5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c5 d4c5 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1P5/4P3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-880"
+    },
+    {
+      "id": "record-1012",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Eastern, Rhamphorhynchus",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. dxc5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c5 d4c5",
+      "epd": "rnbqk1nr/pp1pppbp/6p1/2P5/4P3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-881"
+    },
+    {
+      "id": "record-1013",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Fianchetto, King Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. g3 c5 4. Nf3 Qa5+",
+      "uci": "e2e4 g7g6 d2d4 f8g7 g2g3 c7c5 g1f3 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PP3/5NP1/PPP2P1P/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-882"
+    },
+    {
+      "id": "record-1014",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Fianchetto, Rhamphorhynchus",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. g3 c5 4. dxc5 Qa5+",
+      "uci": "e2e4 g7g6 d2d4 f8g7 g2g3 c7c5 d4c5 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1P5/4P3/6P1/PPP2P1P/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-883"
+    },
+    {
+      "id": "record-1015",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Sicilian, Quetzalcoatlus",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. Nf3 Qa5 5. Be2 d6",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c5 g1f3 d8a5 f1e2 d7d6",
+      "epd": "rnb1k1nr/pp2ppbp/3p2p1/q1p5/3PP3/2N2N2/PPP1BPPP/R1BQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-884"
+    },
+    {
+      "id": "record-1016",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Sicilian, Siroccopteryx",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. Nf3 Qa5 5. Bc4",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c5 g1f3 d8a5 f1c4",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/2BPP3/2N2N2/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-885"
+    },
+    {
+      "id": "record-1017",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Western, Anhanguera",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nf3 c5 4. Be3 Qa5+",
+      "uci": "e2e4 g7g6 d2d4 f8g7 g1f3 c7c5 c1e3 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PP3/4BN2/PPP2PPP/RN1QKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-886"
+    },
+    {
+      "id": "record-1018",
+      "eco": "B06",
+      "name": "Pterodactyl Defense: Western, Siroccopteryx",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 g6 2. Nf3 Bg7 3. d4 c5 4. Bc4 cxd4 5. Nxd4 Qa5+",
+      "uci": "e2e4 g7g6 g1f3 f8g7 d2d4 c7c5 f1c4 c5d4 f3d4 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q7/2BNP3/8/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-887"
+    },
+    {
+      "id": "record-1249",
+      "eco": "B27",
+      "name": "Pterodactyl Defense: Sicilian, Anhanguera",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7 4. Nc3 Qa5 5. Be3",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7 b1c3 d8a5 c1e3",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PP3/2N1BN2/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1093"
+    },
+    {
+      "id": "record-1250",
+      "eco": "B27",
+      "name": "Pterodactyl Defense: Sicilian, Benoni Gambit",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7 4. Nc3 Qa5 5. d5",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7 b1c3 d8a5 d4d5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1pP4/4P3/2N2N2/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1094"
+    },
+    {
+      "id": "record-1251",
+      "eco": "B27",
+      "name": "Pterodactyl Defense: Sicilian, Pteranodon",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7 4. dxc5 Qa5+ 5. Nc3 Bxc3+ 6. bxc3",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7 d4c5 d8a5 b1c3 g7c3 b2c3",
+      "epd": "rnb1k1nr/pp1ppp1p/6p1/q1P5/4P3/2P2N2/P1P2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1095"
+    },
+    {
+      "id": "record-1252",
+      "eco": "B27",
+      "name": "Pterodactyl Defense: Sicilian, Rhamphorhynchus",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7 4. dxc5 Qa5+ 5. Nc3",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7 d4c5 d8a5 b1c3",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1P5/4P3/2N2N2/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1096"
+    },
+    {
+      "id": "record-1253",
+      "eco": "B27",
+      "name": "Pterodactyl Defense: Sicilian, Unpin",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7 4. Nc3 Qa5 5. Bd2",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7 b1c3 d8a5 c1d2",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PP3/2N2N2/PPPB1PPP/R2QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1097"
+    },
+    {
+      "id": "record-1254",
+      "eco": "B27",
+      "name": "Pterodactyl Defense: Western, Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. c3 Bg7 4. d4 Qa5",
+      "uci": "e2e4 c7c5 g1f3 g7g6 c2c3 f8g7 d2d4 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PP3/2P2N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1098"
+    },
+    {
+      "id": "record-1255",
+      "eco": "B27",
+      "name": "Pterodactyl Defense: Western, Rhamphorhynchus",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7 4. dxc5 Qa5+",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7 d4c5 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1P5/4P3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1099"
+    },
+    {
+      "id": "record-507",
+      "eco": "A40",
+      "name": "Pterodactyl Defense: Central, Benoni Beefeater Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 c5 4. d5 d6 5. e4 Bxc3+ 6. bxc3 Qa5",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 c7c5 d4d5 d7d6 e2e4 g7c3 b2c3 d8a5",
+      "epd": "rnb1k1nr/pp2pp1p/3p2p1/q1pP4/2P1P3/2P5/P4PPP/R1BQKBNR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-427"
+    },
+    {
+      "id": "record-508",
+      "eco": "A40",
+      "name": "Pterodactyl Defense: Central, Benoni Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. e4 c5 4. d5 Qa5+",
+      "uci": "d2d4 g7g6 c2c4 f8g7 e2e4 c7c5 d4d5 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1pP4/2P1P3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-428"
+    },
+    {
+      "id": "record-509",
+      "eco": "A40",
+      "name": "Pterodactyl Defense: Fianchetto, Queen Benoni Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 c5 4. d5 Qa5",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 c7c5 d4d5 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1pP4/2P5/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-429"
+    },
+    {
+      "id": "record-510",
+      "eco": "A40",
+      "name": "Pterodactyl Defense: Fianchetto, Queen Pteranodon",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 c5 4. d5 Bxc3+ 5. bxc3 Qa5",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 c7c5 d4d5 g7c3 b2c3 d8a5",
+      "epd": "rnb1k1nr/pp1ppp1p/6p1/q1pP4/2P5/2P5/P3PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-430"
+    },
+    {
+      "id": "record-511",
+      "eco": "A40",
+      "name": "Pterodactyl Defense: Fianchetto, Queen Pterodactyl",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. Nf3 Bg7 3. g3 c5 4. Bg2 Qa5+",
+      "uci": "d2d4 g7g6 g1f3 f8g7 g2g3 c7c5 f1g2 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3P4/5NP1/PPP1PPBP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-431"
+    },
+    {
+      "id": "record-512",
+      "eco": "A40",
+      "name": "Pterodactyl Defense: Queen Pterodactyl, Quiet Line",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 c5 4. e3",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 c7c5 e2e3",
+      "epd": "rnbqk1nr/pp1pppbp/6p1/2p5/2PP4/2N1P3/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-432"
+    },
+    {
+      "id": "record-532",
+      "eco": "A42",
+      "name": "Pterodactyl Defense",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. Nf3 c5 2. c4 g6 3. d4 Bg7 4. e4 Qa5+ 5. Nc3 d6",
+      "uci": "g1f3 c7c5 c2c4 g7g6 d2d4 f8g7 e2e4 d8a5 b1c3 d7d6",
+      "epd": "rnb1k1nr/pp2ppbp/3p2p1/q1p5/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-450"
+    },
+    {
+      "id": "record-533",
+      "eco": "A42",
+      "name": "Pterodactyl Defense: Central, Bogolubovia",
+      "family": "Pterodactyl Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. e4 d6 4. Nc3 c5 5. Nge2 Qa5",
+      "uci": "d2d4 g7g6 c2c4 f8g7 e2e4 d7d6 b1c3 c7c5 g1e2 d8a5",
+      "epd": "rnb1k1nr/pp2ppbp/3p2p1/q1p5/2PPP3/2N5/PP2NPPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-451"
+    }
+  ]
+}

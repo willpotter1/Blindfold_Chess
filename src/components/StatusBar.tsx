@@ -28,19 +28,19 @@ export const StatusBar = ({ status, variant = 'default', className }: StatusBarP
             {isCompactDisplayStatus ? (
               <>
                 {compactDisplayLabel && (
-                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[#8B4513]/65">
+                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-primary/65">
                     {compactDisplayLabel}
                   </p>
                 )}
-                <p className="text-[2.75rem] font-semibold leading-none text-[#8B4513]">
+                <p className="text-[2.75rem] font-semibold leading-none text-primary">
                   {compactDisplayValue}
                 </p>
               </>
             ) : (
-              <p className="text-sm font-semibold leading-snug text-[#8B4513]">{primaryStatus}</p>
+              <p className="text-sm font-semibold leading-snug text-primary">{primaryStatus}</p>
             )}
             {secondaryStatus && (
-              <p className="text-xs font-medium leading-snug text-[#8B4513]/80">{secondaryStatus}</p>
+              <p className="text-xs font-medium leading-snug text-primary/80">{secondaryStatus}</p>
             )}
           </div>
         </CardContent>
@@ -54,10 +54,10 @@ export const StatusBar = ({ status, variant = 'default', className }: StatusBarP
         <div className="space-y-1">
           {largeDisplayText ? (
             <div className="space-y-1">
-              <p className={`text-center font-semibold leading-none text-[#8B4513] ${isTurnStatus ? 'text-[2.25rem]' : 'text-[4.5rem]'}`}>
+              <p className={`text-center font-semibold leading-none text-primary ${isTurnStatus ? 'text-[2.25rem]' : 'text-[4.5rem]'}`}>
                 {largeDisplayText}
               </p>
-              {secondaryStatus && <p className="text-center text-sm font-medium text-[#8B4513]">{secondaryStatus}</p>}
+              {secondaryStatus && <p className="text-center text-sm font-medium text-primary">{secondaryStatus}</p>}
             </div>
           ) : (
             <p className="text-sm font-medium">{status}</p>

@@ -48,7 +48,7 @@ export const MoveList = ({ moves, startingTurnColor = 'white', className }: Move
         <CardTitle>Move History</CardTitle>
         <button
           type="button"
-          className="inline-flex h-7 w-7 items-center justify-center rounded-sm border border-[#8B4513] bg-white p-1 hover:bg-zinc-50"
+          className="inline-flex h-7 w-7 items-center justify-center rounded-sm border-2 border-primary bg-surface-white p-1 hover:bg-accent"
           onClick={() => setIsReversed((prev) => !prev)}
           aria-label="Reverse move history order"
           title="Reverse move history order"

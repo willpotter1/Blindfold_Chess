@@ -2,6 +2,8 @@ Site UI Colors
 
 Use these colors whenever colors are needed in the UI.
 Use outline width 2 for UI outlines and borders that should match the current input, config, and button styling.
+Use the site-wide gradient stage background on every page, not just the landing page.
+The shared page background should keep the warm top glow, the stronger lower-left wash, and the soft vertical blend already used on the landing page.
 
 Brown: #8B4513
 Lighter Brown: #d9b99b
@@ -20,3 +22,8 @@ Use these images whenever an image is needed in the UI.
 
 Whitepawn.png: /Users/williampotter/Documents/GitHub/mywebsite/Blindfold_Chess/Visual/Whitepawn.png
 BBpawnsplaying2.png: /Users/williampotter/Documents/GitHub/mywebsite/Blindfold_Chess/Visual/BBpawnsplaying2.png
+
+new colors toH try:
+F5F5DC
+A07856
+30211A

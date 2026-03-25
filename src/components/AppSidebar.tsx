@@ -10,7 +10,7 @@ type AppSidebarProps = {
   desktopMode?: boolean;
 };
 
-const navButtonBaseClassName = 'border-2 border-[#d9b99b] bg-white text-black hover:bg-white/90';
+const navButtonBaseClassName = 'border-transparent bg-transparent text-primary hover:bg-surface-white/85 hover:text-primary';
 
 export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -45,8 +45,8 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
   return (
     <div
       className={cn(
-        'mx-4 mt-4 w-auto rounded-2xl bg-[#d9b99b] p-4',
-        desktopMode && 'md:sticky md:top-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-24 md:shrink-0 md:self-start',
+        'mx-4 mt-4 w-auto rounded-[28px] bg-paper-grain-top p-4 shadow-theme-strong',
+        desktopMode && 'md:sticky md:top-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-28 md:shrink-0 md:self-start',
       )}
     >
       <div
@@ -70,7 +70,7 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
         <div
           className={cn(
             'flex gap-2',
-            desktopMode ? 'md:mt-4 md:flex-col' : 'min-w-0 flex-1 flex-wrap items-center content-center justify-center',
+            desktopMode ? 'md:mt-6 md:flex-col' : 'min-w-0 flex-1 flex-wrap items-center content-center justify-center',
           )}
         >
           <Button asChild type="button" className={buttonClassName}>
@@ -78,6 +78,9 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
           </Button>
           <Button asChild type="button" className={buttonClassName}>
             <Link to="/drills">Drills</Link>
+          </Button>
+          <Button asChild type="button" className={buttonClassName}>
+            <Link to="/openings">Openings</Link>
           </Button>
           <Button asChild type="button" className={buttonClassName}>
             <Link to="/about">About</Link>

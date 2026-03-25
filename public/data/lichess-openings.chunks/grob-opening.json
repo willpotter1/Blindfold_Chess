@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Grob Opening",
+    "chunkKey": "grob-opening",
+    "recordCount": 20,
+    "lineCount": 20
+  },
+  "records": [
+    {
+      "id": "record-18",
+      "eco": "A00",
+      "name": "Grob Opening",
+      "family": "Grob Opening",
+      "pgn": "1. g4",
+      "uci": "g2g4",
+      "epd": "rnbqkbnr/pppppppp/8/8/6P1/8/PPPPPP1P/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-17"
+    },
+    {
+      "id": "record-19",
+      "eco": "A00",
+      "name": "Grob Opening: Alessi Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 f5",
+      "uci": "g2g4 f7f5",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/6P1/8/PPPPPP1P/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-18"
+    },
+    {
+      "id": "record-20",
+      "eco": "A00",
+      "name": "Grob Opening: Double Grob",
+      "family": "Grob Opening",
+      "pgn": "1. g4 g5",
+      "uci": "g2g4 g7g5",
+      "epd": "rnbqkbnr/pppppp1p/8/6p1/6P1/8/PPPPPP1P/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-19"
+    },
+    {
+      "id": "record-21",
+      "eco": "A00",
+      "name": "Grob Opening: Double Grob, Coca-Cola Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 g5 2. f4",
+      "uci": "g2g4 g7g5 f2f4",
+      "epd": "rnbqkbnr/pppppp1p/8/6p1/5PP1/8/PPPPP2P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-20"
+    },
+    {
+      "id": "record-22",
+      "eco": "A00",
+      "name": "Grob Opening: Grob Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2",
+      "uci": "g2g4 d7d5 f1g2",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/6P1/8/PPPPPPBP/RNBQK1NR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-21"
+    },
+    {
+      "id": "record-23",
+      "eco": "A00",
+      "name": "Grob Opening: Grob Gambit Declined",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2 c6",
+      "uci": "g2g4 d7d5 f1g2 c7c6",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/6P1/8/PPPPPPBP/RNBQK1NR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-22"
+    },
+    {
+      "id": "record-24",
+      "eco": "A00",
+      "name": "Grob Opening: Grob Gambit, Basman Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2 h5 3. gxh5",
+      "uci": "g2g4 d7d5 f1g2 h7h5 g4h5",
+      "epd": "rnbqkbnr/ppp1ppp1/8/3p3P/8/8/PPPPPPBP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-23"
+    },
+    {
+      "id": "record-25",
+      "eco": "A00",
+      "name": "Grob Opening: Grob Gambit, Fritz Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2 Bxg4 3. c4",
+      "uci": "g2g4 d7d5 f1g2 c8g4 c2c4",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p4/2P3b1/8/PP1PPPBP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-24"
+    },
+    {
+      "id": "record-26",
+      "eco": "A00",
+      "name": "Grob Opening: Grob Gambit, Fritz Gambit, Romford Countergambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2 Bxg4 3. c4 d4 4. Bxb7 Nd7 5. Bxa8 Qxa8",
+      "uci": "g2g4 d7d5 f1g2 c8g4 c2c4 d5d4 g2b7 b8d7 b7a8 d8a8",
+      "epd": "q3kbnr/p1pnpppp/8/8/2Pp2b1/8/PP1PPP1P/RNBQK1NR w KQk -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-25"
+    },
+    {
+      "id": "record-27",
+      "eco": "A00",
+      "name": "Grob Opening: Grob Gambit, Keres Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2 e5 3. d4 exd4 4. c3",
+      "uci": "g2g4 d7d5 f1g2 e7e5 d2d4 e5d4 c2c3",
+      "epd": "rnbqkbnr/ppp2ppp/8/3p4/3p2P1/2P5/PP2PPBP/RNBQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-26"
+    },
+    {
+      "id": "record-28",
+      "eco": "A00",
+      "name": "Grob Opening: Grob Gambit, Richter-Grob Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2 c6 3. c4 dxc4 4. b3",
+      "uci": "g2g4 d7d5 f1g2 c7c6 c2c4 d5c4 b2b3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/8/2p3P1/1P6/P2PPPBP/RNBQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-27"
+    },
+    {
+      "id": "record-29",
+      "eco": "A00",
+      "name": "Grob Opening: Keene Defense",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. h3 e5 3. Bg2 c6",
+      "uci": "g2g4 d7d5 h2h3 e7e5 f1g2 c7c6",
+      "epd": "rnbqkbnr/pp3ppp/2p5/3pp3/6P1/7P/PPPPPPB1/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-28"
+    },
+    {
+      "id": "record-30",
+      "eco": "A00",
+      "name": "Grob Opening: Keene Defense, Main Line",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. h3 e5 3. Bg2 c6 4. d4 e4 5. c4 Bd6 6. Nc3 Ne7",
+      "uci": "g2g4 d7d5 h2h3 e7e5 f1g2 c7c6 d2d4 e5e4 c2c4 f8d6 b1c3 g8e7",
+      "epd": "rnbqk2r/pp2nppp/2pb4/3p4/2PPp1P1/2N4P/PP2PPB1/R1BQK1NR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-29"
+    },
+    {
+      "id": "record-31",
+      "eco": "A00",
+      "name": "Grob Opening: London Defense",
+      "family": "Grob Opening",
+      "pgn": "1. g4 e5 2. h3 Nc6",
+      "uci": "g2g4 e7e5 h2h3 b8c6",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/6P1/7P/PPPPPP2/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-30"
+    },
+    {
+      "id": "record-32",
+      "eco": "A00",
+      "name": "Grob Opening: Romford Countergambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2 Bxg4 3. c4 d4",
+      "uci": "g2g4 d7d5 f1g2 c8g4 c2c4 d5d4",
+      "epd": "rn1qkbnr/ppp1pppp/8/8/2Pp2b1/8/PP1PPPBP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-31"
+    },
+    {
+      "id": "record-33",
+      "eco": "A00",
+      "name": "Grob Opening: Spike Attack",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. Bg2 c6 3. g5",
+      "uci": "g2g4 d7d5 f1g2 c7c6 g4g5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p2P1/8/8/PPPPPPBP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-32"
+    },
+    {
+      "id": "record-34",
+      "eco": "A00",
+      "name": "Grob Opening: Spike, Hurst Attack",
+      "family": "Grob Opening",
+      "pgn": "1. g4 e5 2. Bg2 d5 3. c4",
+      "uci": "g2g4 e7e5 f1g2 d7d5 c2c4",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/2P3P1/8/PP1PPPBP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-33"
+    },
+    {
+      "id": "record-35",
+      "eco": "A00",
+      "name": "Grob Opening: Zilbermints Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. e4 dxe4 3. Nc3",
+      "uci": "g2g4 d7d5 e2e4 d5e4 b1c3",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/4p1P1/2N5/PPPP1P1P/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-34"
+    },
+    {
+      "id": "record-36",
+      "eco": "A00",
+      "name": "Grob Opening: Zilbermints Gambit, Schiller Defense",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. e4 dxe4 3. Nc3 h5",
+      "uci": "g2g4 d7d5 e2e4 d5e4 b1c3 h7h5",
+      "epd": "rnbqkbnr/ppp1ppp1/8/7p/4p1P1/2N5/PPPP1P1P/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-35"
+    },
+    {
+      "id": "record-37",
+      "eco": "A00",
+      "name": "Grob Opening: Zilbermints Gambit, Zilbermints-Hartlaub Gambit",
+      "family": "Grob Opening",
+      "pgn": "1. g4 d5 2. e4 dxe4 3. Nc3 e5 4. d3",
+      "uci": "g2g4 d7d5 e2e4 d5e4 b1c3 e7e5 d2d3",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/4p1P1/2NP4/PPP2P1P/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-36"
+    }
+  ]
+}

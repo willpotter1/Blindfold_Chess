@@ -1,0 +1,372 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-24T15:42:09.520Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Polish Opening",
+    "chunkKey": "polish-opening",
+    "recordCount": 24,
+    "lineCount": 24
+  },
+  "records": [
+    {
+      "id": "record-222",
+      "eco": "A05",
+      "name": "Polish Opening: Zukertort System",
+      "family": "Polish Opening",
+      "pgn": "1. Nf3 Nf6 2. b4 g6 3. Bb2",
+      "uci": "g1f3 g8f6 b2b4 g7g6 c1b2",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/1P6/5N2/PBPPPPPP/RN1QKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-213"
+    },
+    {
+      "id": "record-71",
+      "eco": "A00",
+      "name": "Polish Opening",
+      "family": "Polish Opening",
+      "pgn": "1. b4",
+      "uci": "b2b4",
+      "epd": "rnbqkbnr/pppppppp/8/8/1P6/8/P1PPPPPP/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-68"
+    },
+    {
+      "id": "record-74",
+      "eco": "A00",
+      "name": "Polish Opening: Baltic Defense",
+      "family": "Polish Opening",
+      "pgn": "1. b4 d5 2. Bb2 Bf5",
+      "uci": "b2b4 d7d5 c1b2 c8f5",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p1b2/1P6/8/PBPPPPPP/RN1QKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-70"
+    },
+    {
+      "id": "record-75",
+      "eco": "A00",
+      "name": "Polish Opening: Birmingham Gambit",
+      "family": "Polish Opening",
+      "pgn": "1. b4 c5",
+      "uci": "b2b4 c7c5",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/1P6/8/P1PPPPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-71"
+    },
+    {
+      "id": "record-76",
+      "eco": "A00",
+      "name": "Polish Opening: Bugayev Advance Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e5 2. Bb2 f6 3. b5",
+      "uci": "b2b4 e7e5 c1b2 f7f6 b4b5",
+      "epd": "rnbqkbnr/pppp2pp/5p2/1P2p3/8/8/PBPPPPPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-72"
+    },
+    {
+      "id": "record-77",
+      "eco": "A00",
+      "name": "Polish Opening: Bugayev Attack",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e5 2. a3",
+      "uci": "b2b4 e7e5 a2a3",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/1P6/P7/2PPPPPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-73"
+    },
+    {
+      "id": "record-78",
+      "eco": "A00",
+      "name": "Polish Opening: Czech Defense",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e5 2. Bb2 d6",
+      "uci": "b2b4 e7e5 c1b2 d7d6",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/4p3/1P6/8/PBPPPPPP/RN1QKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-74"
+    },
+    {
+      "id": "record-79",
+      "eco": "A00",
+      "name": "Polish Opening: Dutch Defense",
+      "family": "Polish Opening",
+      "pgn": "1. b4 f5",
+      "uci": "b2b4 f7f5",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/1P6/8/P1PPPPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-75"
+    },
+    {
+      "id": "record-80",
+      "eco": "A00",
+      "name": "Polish Opening: German Defense",
+      "family": "Polish Opening",
+      "pgn": "1. b4 d5 2. Bb2 Qd6",
+      "uci": "b2b4 d7d5 c1b2 d8d6",
+      "epd": "rnb1kbnr/ppp1pppp/3q4/3p4/1P6/8/PBPPPPPP/RN1QKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-76"
+    },
+    {
+      "id": "record-81",
+      "eco": "A00",
+      "name": "Polish Opening: Grigorian Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 Nc6",
+      "uci": "b2b4 b8c6",
+      "epd": "r1bqkbnr/pppppppp/2n5/8/1P6/8/P1PPPPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-77"
+    },
+    {
+      "id": "record-82",
+      "eco": "A00",
+      "name": "Polish Opening: Karniewski Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 Nh6",
+      "uci": "b2b4 g8h6",
+      "epd": "rnbqkb1r/pppppppp/7n/8/1P6/8/P1PPPPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-78"
+    },
+    {
+      "id": "record-83",
+      "eco": "A00",
+      "name": "Polish Opening: King's Indian Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 Nf6 2. Bb2 g6",
+      "uci": "b2b4 g8f6 c1b2 g7g6",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/1P6/8/PBPPPPPP/RN1QKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-79"
+    },
+    {
+      "id": "record-84",
+      "eco": "A00",
+      "name": "Polish Opening: King's Indian Variation, Schiffler Attack",
+      "family": "Polish Opening",
+      "pgn": "1. b4 Nf6 2. Bb2 g6 3. e4",
+      "uci": "b2b4 g8f6 c1b2 g7g6 e2e4",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/1P2P3/8/PBPP1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-80"
+    },
+    {
+      "id": "record-85",
+      "eco": "A00",
+      "name": "Polish Opening: King's Indian Variation, Sokolsky Attack",
+      "family": "Polish Opening",
+      "pgn": "1. b4 Nf6 2. Bb2 g6 3. c4 Bg7 4. e3 d6 5. Nf3 O-O 6. d4",
+      "uci": "b2b4 g8f6 c1b2 g7g6 c2c4 f8g7 e2e3 d7d6 g1f3 e8g8 d2d4",
+      "epd": "rnbq1rk1/ppp1ppbp/3p1np1/8/1PPP4/4PN2/PB3PPP/RN1QKB1R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-81"
+    },
+    {
+      "id": "record-86",
+      "eco": "A00",
+      "name": "Polish Opening: Myers Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 d5 2. Bb2 c6 3. a4",
+      "uci": "b2b4 d7d5 c1b2 c7c6 a2a4",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/PP6/8/1BPPPPPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-82"
+    },
+    {
+      "id": "record-87",
+      "eco": "A00",
+      "name": "Polish Opening: Outflank Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 c6",
+      "uci": "b2b4 c7c6",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/1P6/8/P1PPPPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-83"
+    },
+    {
+      "id": "record-88",
+      "eco": "A00",
+      "name": "Polish Opening: Queen's Indian Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e6 2. Bb2 Nf6 3. b5 b6",
+      "uci": "b2b4 e7e6 c1b2 g8f6 b4b5 b7b6",
+      "epd": "rnbqkb1r/p1pp1ppp/1p2pn2/1P6/8/8/PBPPPPPP/RN1QKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-84"
+    },
+    {
+      "id": "record-89",
+      "eco": "A00",
+      "name": "Polish Opening: Queenside Defense",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e6 2. Bb2 Nf6 3. b5 a6",
+      "uci": "b2b4 e7e6 c1b2 g8f6 b4b5 a7a6",
+      "epd": "rnbqkb1r/1ppp1ppp/p3pn2/1P6/8/8/PBPPPPPP/RN1QKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-85"
+    },
+    {
+      "id": "record-90",
+      "eco": "A00",
+      "name": "Polish Opening: Rooks Swap Line",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e6 2. Bb2 Nf6 3. b5 a6 4. a4 axb5 5. axb5 Rxa1 6. Bxa1",
+      "uci": "b2b4 e7e6 c1b2 g8f6 b4b5 a7a6 a2a4 a6b5 a4b5 a8a1 b2a1",
+      "epd": "1nbqkb1r/1ppp1ppp/4pn2/1P6/8/8/2PPPPPP/BN1QKBNR b Kk -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-86"
+    },
+    {
+      "id": "record-91",
+      "eco": "A00",
+      "name": "Polish Opening: Schiffler-Sokolsky Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e6 2. Bb2 Nf6 3. b5 d5 4. e3",
+      "uci": "b2b4 e7e6 c1b2 g8f6 b4b5 d7d5 e2e3",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/1P1p4/8/4P3/PBPP1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-87"
+    },
+    {
+      "id": "record-92",
+      "eco": "A00",
+      "name": "Polish Opening: Schuehler Gambit",
+      "family": "Polish Opening",
+      "pgn": "1. b4 c6 2. Bb2 a5 3. b5 cxb5 4. e4",
+      "uci": "b2b4 c7c6 c1b2 a7a5 b4b5 c6b5 e2e4",
+      "epd": "rnbqkbnr/1p1ppppp/8/pp6/4P3/8/PBPP1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-88"
+    },
+    {
+      "id": "record-93",
+      "eco": "A00",
+      "name": "Polish Opening: Symmetrical Variation",
+      "family": "Polish Opening",
+      "pgn": "1. b4 b5",
+      "uci": "b2b4 b7b5",
+      "epd": "rnbqkbnr/p1pppppp/8/1p6/1P6/8/P1PPPPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-89"
+    },
+    {
+      "id": "record-94",
+      "eco": "A00",
+      "name": "Polish Opening: Tartakower Gambit",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e5 2. Bb2 f6 3. e4",
+      "uci": "b2b4 e7e5 c1b2 f7f6 e2e4",
+      "epd": "rnbqkbnr/pppp2pp/5p2/4p3/1P2P3/8/PBPP1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-90"
+    },
+    {
+      "id": "record-95",
+      "eco": "A00",
+      "name": "Polish Opening: Wolferts Gambit",
+      "family": "Polish Opening",
+      "pgn": "1. b4 e5 2. Bb2 c5",
+      "uci": "b2b4 e7e5 c1b2 c7c5",
+      "epd": "rnbqkbnr/pp1p1ppp/8/2p1p3/1P6/8/PBPPPPPP/RN1QKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-91"
+    }
+  ]
+}

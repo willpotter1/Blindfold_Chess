@@ -1,12 +1,13 @@
 import { supabase } from '@/lib/supabase';
 
-export type UsageActivity = 'games' | 'puzzles' | 'drills';
+export type UsageActivity = 'games' | 'puzzles' | 'drills' | 'openings';
 export type UsageStage = 'started' | 'finished';
 
 export type UsageModeByActivity = {
   games: 'computer' | 'pass-n-play';
   puzzles: 'standard';
   drills: 'coordinates' | 'moves';
+  openings: 'trainer';
 };
 
 export type UsageMode = UsageModeByActivity[UsageActivity];
