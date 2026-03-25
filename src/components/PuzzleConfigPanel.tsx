@@ -114,7 +114,7 @@ export const PuzzleConfigPanel = ({
     : 'text-sm text-muted-foreground';
 
   return (
-    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-[#d9b99b]', className)}>
+    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Puzzle Configuration</CardTitle>
         <CardDescription className="text-xs">
@@ -209,7 +209,7 @@ export const PuzzleConfigPanel = ({
         </div>
 
         <div className="shrink-0 space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
-          <div className="flex items-center justify-between rounded-md border border-[#d9b99b] bg-white px-3 py-2">
+          <div className="flex items-center justify-between rounded-md border-2 border-border bg-surface-white px-3 py-2">
             <Label htmlFor="puzzle-allow-cheats" className="cursor-pointer">
               Allow Cheats
             </Label>
@@ -225,7 +225,7 @@ export const PuzzleConfigPanel = ({
             />
           </div>
 
-          <div className="flex items-center justify-between rounded-md border border-[#d9b99b] bg-white px-3 py-2">
+          <div className="flex items-center justify-between rounded-md border-2 border-border bg-surface-white px-3 py-2">
             <Label htmlFor="puzzle-hide-move-history" className="cursor-pointer">
               Hide Move History
             </Label>
@@ -244,7 +244,7 @@ export const PuzzleConfigPanel = ({
 
         <div className="grid min-h-0 grid-rows-[auto_minmax(0,1fr)] gap-2">
           <Label>Puzzle Themes</Label>
-          <div className="min-h-0 overflow-hidden rounded-md border border-[#d9b99b] bg-white">
+          <div className="min-h-0 overflow-hidden rounded-md border-2 border-border bg-surface-white">
             <div className="h-full overflow-y-auto p-3">
               <div className="grid grid-cols-1 gap-x-6 gap-y-3 pr-1 sm:grid-cols-2">
                 {themeOptions.map((theme) => (
@@ -264,12 +264,12 @@ export const PuzzleConfigPanel = ({
           </div>
         </div>
 
-        <div className="grid shrink-0 gap-3 border-t border-[#ead8c6] pt-3">
+        <div className="grid shrink-0 gap-3 border-t-2 border-border pt-3">
           <p className={helperTextClassName}>{helperText}</p>
 
           <Button
             onClick={onStart}
-            className="w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+            className="w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
             size="lg"
             disabled={hasInvalidNumbers || isStartDisabled}
           >

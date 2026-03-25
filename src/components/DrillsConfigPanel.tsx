@@ -25,7 +25,7 @@ type DrillsConfigPanelProps = {
   className?: string;
 };
 
-const primaryButtonClassName = 'w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
+const primaryButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
 
 export const DrillsConfigPanel = ({
   config,
@@ -121,7 +121,7 @@ export const DrillsConfigPanel = ({
                     <SelectItem value="panel">List on right</SelectItem>
                   </SelectContent>
                 </Select>
-                <p className="text-sm text-zinc-600">
+                <p className="text-sm text-muted-foreground">
                   In moves mode, either show the 6-piece position on the board or keep the board empty and list the placements on the right.
                 </p>
               </div>
@@ -152,12 +152,12 @@ export const DrillsConfigPanel = ({
             </div>
           </div>
 
-          <div className="flex items-center justify-between rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
+          <div className="flex items-center justify-between rounded-xl border-2 border-border bg-surface-white px-4 py-3">
             <div className="pr-4">
               <Label htmlFor="drills-show-coordinates" className="cursor-pointer">
                 Show Board Coordinates
               </Label>
-              <p className="mt-1 text-sm text-zinc-600">
+              <p className="mt-1 text-sm text-muted-foreground">
                 Display rank and file labels that flip with the board perspective.
               </p>
             </div>

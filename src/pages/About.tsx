@@ -3,11 +3,11 @@ import pawnsPlayingImage from '../../Visual/BBpawnsplaying2.png';
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-white md:flex">
+    <div className="min-h-screen bg-background md:flex">
       <AppSidebar />
       <div className="container mx-auto flex items-center px-4 py-10 md:flex-1">
         <div className="mx-auto w-full max-w-4xl p-2 text-center">
-          <h1 className="text-4xl font-bold text-black md:text-5xl">Coming Soon!</h1>
+          <h1 className="text-4xl font-bold text-foreground md:text-5xl">Coming Soon!</h1>
           <img
             src={pawnsPlayingImage}
             alt="Pawns playing chess"

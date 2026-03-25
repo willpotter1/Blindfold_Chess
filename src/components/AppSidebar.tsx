@@ -10,7 +10,7 @@ type AppSidebarProps = {
   desktopMode?: boolean;
 };
 
-const navButtonBaseClassName = 'border-transparent bg-transparent text-[#8B4513] hover:bg-white/85 hover:text-[#8B4513]';
+const navButtonBaseClassName = 'border-transparent bg-transparent text-primary hover:bg-surface-white/85 hover:text-primary';
 
 export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -45,7 +45,7 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
   return (
     <div
       className={cn(
-        'mx-4 mt-4 w-auto rounded-[28px] border-2 border-[#d9b99b] bg-[linear-gradient(180deg,#fffaf4_0%,#fcf4ea_46%,#fff7ef_100%)] p-4 shadow-[0_24px_56px_rgba(36,22,14,0.18)]',
+        'mx-4 mt-4 w-auto rounded-[28px] bg-paper-grain p-4 shadow-theme-strong',
         desktopMode && 'md:sticky md:top-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-28 md:shrink-0 md:self-start',
       )}
     >
@@ -63,7 +63,7 @@ export const AppSidebar = ({ onHomeClick, desktopMode = true }: AppSidebarProps)
           <img
             src={whitePawnLogo}
             alt="White pawn logo"
-            className={cn('h-14 w-14 object-contain drop-shadow-[0_12px_24px_rgba(74,44,19,0.22)]', desktopMode ? 'md:h-20 md:w-20' : 'h-12 w-12')}
+            className={cn('h-14 w-14 object-contain', desktopMode ? 'md:h-20 md:w-20' : 'h-12 w-12')}
           />
         </Link>
 

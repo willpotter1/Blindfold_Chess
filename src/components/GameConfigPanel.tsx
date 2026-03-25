@@ -13,6 +13,7 @@ interface GameConfigPanelProps {
   onModeChange?: (mode: GameMode) => void;
   showModeSelector?: boolean;
   isGameActive: boolean;
+  borderless?: boolean;
 }
 
 const MIN_ELO = 1300;
@@ -24,18 +25,13 @@ const clampElo = (elo: number): number => {
   return Math.round(Math.max(MIN_ELO, Math.min(MAX_ELO, elo)));
 };
 
-const modeButtonClassName = (selected: boolean) => (
-  selected
-    ? 'border-[#6d3c1c] bg-[#6d3c1c] text-[#f8f2eb] hover:bg-[#5e3318]'
-    : 'border-[#b99779]/60 bg-white/70 text-[#6d3c1c] hover:bg-[#fff8f1]'
-);
-
 export const GameConfigPanel = ({
   mode,
   onStartGame,
   onModeChange,
   showModeSelector = false,
   isGameActive,
+  borderless = false,
 }: GameConfigPanelProps) => {
   const [playerColor, setPlayerColor] = useState<'white' | 'black'>('white');
   const [engineElo, setEngineElo] = useState<number>(DEFAULT_ENGINE_ELO);
@@ -110,12 +106,17 @@ export const GameConfigPanel = ({
   const configDescription = mode === 'computer'
     ? 'Set up your blindfold game against the computer'
     : 'Set up a local blindfold game for two players';
+  const modeButtonClassName = (selected: boolean) => (
+    selected
+      ? `${borderless ? 'border-transparent' : 'border-primary'} bg-primary text-primary-foreground hover:bg-primary/90`
+      : `${borderless ? 'border-transparent' : 'border-border'} bg-surface-white/80 text-primary hover:bg-background`
+  );
 
   return (
-    <Card className="bg-paper-grain w-full overflow-hidden rounded-[30px] border border-white/60 text-[#2f241b]">
+    <Card className={`bg-paper-grain w-full overflow-hidden rounded-[30px] text-foreground ${borderless ? 'border-0 shadow-none' : 'border-2 border-border'}`}>
       <CardHeader className="space-y-1 pb-2">
-        <CardTitle className="text-[2rem] leading-none text-[#4c2c13]">Game Configuration</CardTitle>
-        <CardDescription className="text-xs uppercase tracking-[0.24em] text-[#6d5848]">
+        <CardTitle className="text-[2rem] leading-none text-primary">Game Configuration</CardTitle>
+        <CardDescription className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
           {configDescription}
         </CardDescription>
       </CardHeader>
@@ -149,7 +150,7 @@ export const GameConfigPanel = ({
             <div className="space-y-2">
               <Label htmlFor="player-color">Play As</Label>
               <Select value={playerColor} onValueChange={(value) => setPlayerColor(value as 'white' | 'black')}>
-              <SelectTrigger id="player-color" className="border-[#b99779]/60 bg-white/70">
+              <SelectTrigger id="player-color" className="bg-surface-white/80">
                 <SelectValue />
               </SelectTrigger>
                 <SelectContent>
@@ -177,7 +178,7 @@ export const GameConfigPanel = ({
                     e.currentTarget.blur();
                   }
                 }}
-                className="w-full border-[#b99779]/60 bg-white/70"
+                className="w-full bg-surface-white/80"
               />
             </div>
           )}
@@ -201,13 +202,13 @@ export const GameConfigPanel = ({
                 }
               }}
               placeholder="0 = never auto-reveal"
-              className={`border-[#b99779]/60 bg-white/70 ${isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}`}
+              className={`bg-surface-white/80 ${isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}`}
             />
           </div>
         </div>
 
         <div className="space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
-          <div className="flex items-center justify-between rounded-2xl border border-[#b99779]/60 bg-white/65 px-4 py-3">
+          <div className={`flex items-center justify-between rounded-2xl bg-surface-white/70 px-4 py-3 ${borderless ? '' : 'border-2 border-border'}`}>
             <Label htmlFor="allow-cheats" className="cursor-pointer">
               Allow Cheats
             </Label>
@@ -217,7 +218,7 @@ export const GameConfigPanel = ({
               onCheckedChange={setAllowCheats}
             />
           </div>
-          <div className="flex items-center justify-between rounded-2xl border border-[#b99779]/60 bg-white/65 px-4 py-3">
+          <div className={`flex items-center justify-between rounded-2xl bg-surface-white/70 px-4 py-3 ${borderless ? '' : 'border-2 border-border'}`}>
             <Label htmlFor="hide-move-history" className="cursor-pointer">
               Hide Move History
             </Label>
@@ -231,7 +232,7 @@ export const GameConfigPanel = ({
 
         <Button
           onClick={handleStartGame}
-          className="h-12 w-full rounded-full bg-[#6d3c1c] text-[#f8f2eb] shadow-[0_14px_32px_rgba(92,52,25,0.22)] hover:bg-[#5e3318]"
+          className={`shadow-theme-soft h-12 w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 ${borderless ? 'border-0' : 'border-2 border-primary'}`}
           size="lg"
         >
           {isGameActive ? 'New Game' : 'Start Game'}

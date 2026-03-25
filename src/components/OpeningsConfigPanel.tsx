@@ -195,7 +195,7 @@ const OpeningTreeRow = ({
     <div className="grid gap-1">
       <div
         className={cn(
-          'rounded-xl border border-[#ead4bf] bg-white px-3 py-2.5',
+          'rounded-xl border-2 border-border bg-surface-white px-3 py-2.5',
           !isRoot && 'ml-4',
           isFamilySelected && !isRoot && 'opacity-60',
         )}
@@ -204,7 +204,7 @@ const OpeningTreeRow = ({
           {hasChildren ? (
             <button
               type="button"
-              className="mt-0.5 rounded p-0.5 text-zinc-500 hover:bg-[#fff5eb] hover:text-[#8B4513]"
+              className="mt-0.5 rounded p-0.5 text-muted-foreground hover:bg-accent hover:text-primary"
               onClick={() => onToggleExpand(node.id)}
               aria-label={isExpanded ? `Collapse ${node.label}` : `Expand ${node.label}`}
             >
@@ -228,8 +228,8 @@ const OpeningTreeRow = ({
           />
 
           <div className="min-w-0 flex-1">
-            <div className="text-sm font-semibold text-black">{node.label}</div>
-            <div className="mt-1 text-xs text-zinc-600">
+            <div className="text-sm font-semibold text-foreground">{node.label}</div>
+            <div className="mt-1 text-xs text-muted-foreground">
               {node.lineCount} variation{node.lineCount === 1 ? '' : 's'}, {node.positionCount} position{node.positionCount === 1 ? '' : 's'}
               {isRoot ? ' • include whole family' : ' • include this branch'}
             </div>
@@ -362,7 +362,7 @@ export const OpeningsConfigPanel = ({
   };
 
   return (
-    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-[#d9b99b]', className)}>
+    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Opening Setup</CardTitle>
       </CardHeader>
@@ -370,7 +370,7 @@ export const OpeningsConfigPanel = ({
       <CardContent className="grid min-h-0 flex-1 grid-rows-[auto_auto_auto_minmax(0,1fr)_auto] gap-3 pt-2">
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           <div className="space-y-2">
-            <Label htmlFor="opening-player-color" className="text-[11px] font-semibold text-[#8B4513]">
+            <Label htmlFor="opening-player-color" className="text-[11px] font-semibold text-primary">
               Play As
             </Label>
             <Select
@@ -393,7 +393,7 @@ export const OpeningsConfigPanel = ({
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="opening-depth" className="text-[11px] font-semibold text-[#8B4513]">
+            <Label htmlFor="opening-depth" className="text-[11px] font-semibold text-primary">
               Depth
             </Label>
             <Input
@@ -416,7 +416,7 @@ export const OpeningsConfigPanel = ({
           <div className="space-y-2">
             <Label
               htmlFor="opening-reveal-frequency"
-              className="text-[11px] font-semibold text-[#8B4513]"
+              className="text-[11px] font-semibold text-primary"
             >
               Reveal Freq.
             </Label>
@@ -440,8 +440,8 @@ export const OpeningsConfigPanel = ({
         </div>
 
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:items-stretch">
-          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
-            <Label htmlFor="opening-allow-cheats" className="min-w-0 cursor-pointer text-sm font-semibold text-zinc-900">
+          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+            <Label htmlFor="opening-allow-cheats" className="min-w-0 cursor-pointer text-sm font-semibold text-foreground">
               Allow Cheats
             </Label>
             <Switch
@@ -457,8 +457,8 @@ export const OpeningsConfigPanel = ({
             />
           </div>
 
-          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
-            <Label htmlFor="opening-hide-history" className="min-w-0 cursor-pointer text-sm font-semibold text-zinc-900">
+          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+            <Label htmlFor="opening-hide-history" className="min-w-0 cursor-pointer text-sm font-semibold text-foreground">
               Hide History
             </Label>
             <Switch
@@ -475,18 +475,18 @@ export const OpeningsConfigPanel = ({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 rounded-2xl border border-[#e7cfb7] bg-[#fffaf5] px-4 py-3 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 rounded-2xl border-2 border-border bg-surface-base px-4 py-3 sm:grid-cols-3">
           <div className="min-w-0">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#8B4513]">Whole Families</div>
-            <div className="mt-1 text-2xl font-semibold leading-none text-black">{config.selectedFamilyNames.length}</div>
+            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">Whole Families</div>
+            <div className="mt-1 text-2xl font-semibold leading-none text-foreground">{config.selectedFamilyNames.length}</div>
           </div>
           <div className="min-w-0">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#8B4513]">Branch Variations</div>
-            <div className="mt-1 text-2xl font-semibold leading-none text-black">{config.selectedLineIds.length}</div>
+            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">Branch Variations</div>
+            <div className="mt-1 text-2xl font-semibold leading-none text-foreground">{config.selectedLineIds.length}</div>
           </div>
           <div className="min-w-0">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#8B4513]">Family Positions</div>
-            <div className="mt-1 text-2xl font-semibold leading-none text-black">{totalFamilyPositionCount.toLocaleString()}</div>
+            <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">Family Positions</div>
+            <div className="mt-1 text-2xl font-semibold leading-none text-foreground">{totalFamilyPositionCount.toLocaleString()}</div>
           </div>
         </div>
 
@@ -501,7 +501,7 @@ export const OpeningsConfigPanel = ({
             placeholder="Search family or branch"
           />
 
-          <ScrollArea className="min-h-0 rounded-2xl border border-[#d9b99b] bg-white">
+          <ScrollArea className="min-h-0 rounded-2xl border-2 border-border bg-surface-white">
             <div className="grid gap-2 p-3">
               {visibleTree.map((node) => (
                 <OpeningTreeRow
@@ -526,14 +526,14 @@ export const OpeningsConfigPanel = ({
                 />
               ))}
               {visibleTree.length === 0 && (
-                <p className="text-sm text-zinc-600">No opening branches match the current search.</p>
+                <p className="text-sm text-muted-foreground">No opening branches match the current search.</p>
               )}
             </div>
           </ScrollArea>
         </div>
 
         <div className="grid gap-3">
-          <p className={statusTone === 'error' ? 'text-sm text-destructive' : 'text-sm text-zinc-600'}>
+          <p className={statusTone === 'error' ? 'text-sm text-destructive' : 'text-sm text-muted-foreground'}>
             {statusMessage}
           </p>
 

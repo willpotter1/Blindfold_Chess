@@ -212,7 +212,7 @@ const Puzzles = () => {
                 <Button
                   type="button"
                   variant="outline"
-                  className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+                  className="h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
                   onClick={() => {
                     setIsManualBoardReveal(false);
                     exitToConfig();
@@ -222,7 +222,7 @@ const Puzzles = () => {
                 </Button>
                 <Button
                   type="button"
-                  className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+                  className="h-10 w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
                   onClick={() => {
                     setIsManualBoardReveal(false);
                     loadNextPuzzle();
@@ -236,14 +236,14 @@ const Puzzles = () => {
             <Button
               type="button"
               variant="outline"
-              className="w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+              className="w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
               onClick={advanceHint}
               disabled={isSolved || hintStage === 2}
             >
               {hintButtonLabel}
             </Button>
 
-            {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
+            {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
           </div>
 
           {showDesktopMoveHistory && (
@@ -262,7 +262,7 @@ const Puzzles = () => {
   };
 
   return (
-    <div className={`min-h-screen bg-white ${showDesktopGameLayout ? 'md:flex' : ''}`}>
+    <div className={`min-h-screen bg-background ${showDesktopGameLayout ? 'md:flex' : ''}`}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
@@ -297,7 +297,7 @@ const Puzzles = () => {
                           className="w-full"
                         />
                       ) : (
-                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
+                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-card p-6 text-center text-sm text-muted-foreground">
                           {previewPlaceholderMessage}
                         </div>
                       )}
@@ -324,7 +324,7 @@ const Puzzles = () => {
                         highlightTargetSquare={hintTargetSquare}
                       />
                     ) : (
-                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
+                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-card p-6 text-center text-sm text-muted-foreground">
                         {previewPlaceholderMessage}
                       </div>
                     )}
@@ -349,7 +349,7 @@ const Puzzles = () => {
                       <Button
                         type="button"
                         variant="outline"
-                        className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+                        className="h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
                         onClick={() => {
                           setIsManualBoardReveal(false);
                           exitToConfig();
@@ -359,7 +359,7 @@ const Puzzles = () => {
                       </Button>
                       <Button
                         type="button"
-                        className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+                        className="h-10 w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
                         onClick={() => {
                           setIsManualBoardReveal(false);
                           loadNextPuzzle();
@@ -373,14 +373,14 @@ const Puzzles = () => {
                   <Button
                     type="button"
                     variant="outline"
-                    className="w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+                    className="w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
                     onClick={advanceHint}
                     disabled={isSolved || hintStage === 2}
                   >
                     {hintButtonLabel}
                   </Button>
 
-                  {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
+                  {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
 
                   {!sessionConfig?.hideMoveHistory && <MoveList moves={moves} startingTurnColor={moveHistoryStartingTurnColor} />}
                   </>
@@ -413,7 +413,7 @@ const Puzzles = () => {
                           className="w-full"
                         />
                       ) : (
-                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
+                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-card p-6 text-center text-sm text-muted-foreground">
                           {previewPlaceholderMessage}
                         </div>
                       )}
@@ -453,7 +453,7 @@ const Puzzles = () => {
                         onMove={() => false}
                       />
                     ) : (
-                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-[#d9b99b] bg-card p-6 text-center text-sm text-muted-foreground">
+                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-card p-6 text-center text-sm text-muted-foreground">
                         {previewPlaceholderMessage}
                       </div>
                     )}

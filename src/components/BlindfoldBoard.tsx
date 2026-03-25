@@ -111,7 +111,7 @@ export const BlindfoldBoard = ({
   return (
     <div className={className ?? "inline-block w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]"} ref={boardRef}>
       <div
-        className="rounded-xl shadow-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700 w-full aspect-square overflow-hidden"
+        className="bg-theme-board-frame shadow-theme-strong rounded-xl w-full aspect-square overflow-hidden"
       >
         <div className="grid grid-cols-8 grid-rows-8 gap-0 w-full h-full">
           {squares.map(({ row, col, algebraic, piece, isLightSquare }) => {
@@ -126,25 +126,25 @@ export const BlindfoldBoard = ({
                   key={algebraic}
                   className={`
                     relative aspect-square flex items-center justify-center overflow-hidden
-                    ${isLightSquare ? 'bg-[#d9b99b]' : 'bg-[#844318]'}
+                    ${isLightSquare ? 'bg-board-light' : 'bg-board-dark'}
                     transition-colors duration-150
-                    ${isSelected ? 'ring-4 ring-sky-400/70 ring-inset' : ''}
+                    ${isSelected ? 'ring-4 ring-board-select/80 ring-inset' : ''}
                     ${isInteractive ? 'cursor-pointer' : 'cursor-default'}
                   `}
                   onClick={() => handleSquareClick(algebraic)}
                 >
                   {isHintSource && (
-                    <div className="pointer-events-none absolute inset-[5px] z-20 rounded-[0.45rem] border-4 border-amber-300/90 shadow-[inset_0_0_0_1px_rgba(120,53,15,0.35)]" />
+                    <div className="pointer-events-none absolute inset-[5px] z-20 rounded-[0.45rem] border-4 border-board-highlight/90" />
                   )}
                   {isHintTarget && (
-                    <div className="pointer-events-none absolute inset-[10px] z-20 rounded-[0.3rem] border-4 border-emerald-400/90 shadow-[0_0_0_1px_rgba(6,78,59,0.28)]" />
+                    <div className="pointer-events-none absolute inset-[10px] z-20 rounded-[0.3rem] border-4 border-board-select/90" />
                   )}
                   {pieceSrc && (
                     <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[76%] h-[76%] grid place-items-center">
                       <img
                         src={pieceSrc}
                         alt={spriteKey || 'piece'}
-                        className="h-full w-full object-contain select-none drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]"
+                        className="shadow-theme-piece h-full w-full object-contain select-none"
                         draggable={false}
                       />
                     </div>
@@ -152,14 +152,14 @@ export const BlindfoldBoard = ({
                   
                 {/* File labels (a-h) at bottom */}
                 {row === 7 && (
-                    <span className={`pointer-events-none absolute bottom-0 right-[3px] text-[10px] font-semibold z-20 ${isLightSquare ? 'text-zinc-300' : 'text-zinc-100'}`}>
+                    <span className={`pointer-events-none absolute bottom-0 right-[3px] text-[10px] font-semibold z-20 ${isLightSquare ? 'text-board-label-light' : 'text-board-label-dark'}`}>
                       {getFileLabelForColumn(col, perspective)}
                     </span>
                   )}
                   
                   {/* Rank labels (1-8) on left */}
                   {col === 0 && (
-                    <span className={`pointer-events-none absolute top-[2px] left-[3px] text-[10px] font-semibold z-20 ${isLightSquare ? 'text-zinc-300' : 'text-zinc-100'}`}>
+                    <span className={`pointer-events-none absolute top-[2px] left-[3px] text-[10px] font-semibold z-20 ${isLightSquare ? 'text-board-label-light' : 'text-board-label-dark'}`}>
                       {getRankLabelForRow(row, perspective)}
                     </span>
                   )}

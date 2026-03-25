@@ -17,8 +17,8 @@ type OpeningsResultsPanelProps = {
   className?: string;
 };
 
-const primaryButtonClassName = 'w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
-const secondaryButtonClassName = 'w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50';
+const primaryButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
+const secondaryButtonClassName = 'w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent';
 
 export const OpeningsResultsPanel = ({
   opening,
@@ -32,7 +32,7 @@ export const OpeningsResultsPanel = ({
   className,
 }: OpeningsResultsPanelProps) => {
   return (
-    <Card className={cn('flex flex-col overflow-hidden border-2 border-[#d9b99b]', className)}>
+    <Card className={cn('flex flex-col overflow-hidden border-2 border-border', className)}>
       <CardHeader className="pb-2">
         <CardTitle className="text-xl">Opening Solved</CardTitle>
         <CardDescription className="text-sm">
@@ -41,13 +41,13 @@ export const OpeningsResultsPanel = ({
       </CardHeader>
 
       <CardContent className="grid gap-4 pt-2">
-        <div className="rounded-2xl border-2 border-[#8B4513] bg-[#fff2e8] px-5 py-6 text-center">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#8B4513]">Resolved Opening</div>
-          <div className="mt-3 text-2xl font-semibold leading-tight text-black">
+        <div className="rounded-2xl border-2 border-primary bg-surface-white px-5 py-6 text-center">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary">Resolved Opening</div>
+          <div className="mt-3 text-2xl font-semibold leading-tight text-foreground">
             {opening?.name ?? 'Opening not found'}
           </div>
           {opening && (
-            <div className="mt-2 text-sm text-zinc-700">
+            <div className="mt-2 text-sm text-muted-foreground">
               {opening.eco}
             </div>
           )}
@@ -55,14 +55,14 @@ export const OpeningsResultsPanel = ({
 
         {opening && (
           <div className="grid gap-3">
-            <div className="rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#8B4513]">Canonical PGN</div>
-              <div className="mt-2 text-sm leading-6 text-black">{opening.pgn}</div>
+            <div className="rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary">Canonical PGN</div>
+              <div className="mt-2 text-sm leading-6 text-foreground">{opening.pgn}</div>
             </div>
 
-            <div className="rounded-xl border border-[#d9b99b] bg-white px-4 py-3">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#8B4513]">Canonical UCI</div>
-              <div className="mt-2 break-all font-mono text-xs leading-6 text-black">{opening.uci}</div>
+            <div className="rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary">Canonical UCI</div>
+              <div className="mt-2 break-all font-mono text-xs leading-6 text-foreground">{opening.uci}</div>
             </div>
           </div>
         )}

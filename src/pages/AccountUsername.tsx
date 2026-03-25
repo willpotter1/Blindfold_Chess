@@ -97,22 +97,22 @@ const AccountUsername = () => {
   return (
     <AccountLayout>
       <div className="mx-auto max-w-4xl">
-        <Card className="bg-white">
+        <Card className="bg-surface-white">
           <CardHeader>
-            <CardTitle className="text-[#8B4513]">Change Name</CardTitle>
-            <CardDescription className="text-black">Update the username used for your account.</CardDescription>
+            <CardTitle className="text-primary">Change Name</CardTitle>
+            <CardDescription className="text-foreground">Update the username used for your account.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {!hasSupabaseConfig && <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">Supabase is not configured.</div>}
-            {hasSupabaseConfig && isLoading && <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">Loading account details...</div>}
+            {!hasSupabaseConfig && <div className="rounded-lg border-2 border-border bg-surface-strong p-4 text-foreground">Supabase is not configured.</div>}
+            {hasSupabaseConfig && isLoading && <div className="rounded-lg border-2 border-border bg-surface-white p-4 text-foreground">Loading account details...</div>}
             {hasSupabaseConfig && !isLoading && profile.uid && (
-              <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 space-y-3">
+              <div className="rounded-lg border-2 border-border bg-surface-white p-4 space-y-3">
                 <div>
-                  <p className="text-sm font-medium text-black">Current Name</p>
-                  <p className="mt-1 text-xl font-semibold text-[#8B4513]">{profile.username ?? 'Not set'}</p>
+                  <p className="text-sm font-medium text-foreground">Current Name</p>
+                  <p className="mt-1 text-xl font-semibold text-primary">{profile.username ?? 'Not set'}</p>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="account-username" className="text-black">New Name</Label>
+                  <Label htmlFor="account-username" className="text-foreground">New Name</Label>
                   <Input
                     id="account-username"
                     type="text"
@@ -120,14 +120,14 @@ const AccountUsername = () => {
                     onChange={(event) => setUsernameInput(event.target.value)}
                     placeholder="new_username"
                     autoComplete="username"
-                    className="text-black"
+                    className="text-foreground"
                   />
                 </div>
                 <div className="flex gap-3">
-                  <Button type="button" onClick={() => void handleUsernameSave()} disabled={isSavingUsername} className="border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90">
+                  <Button type="button" onClick={() => void handleUsernameSave()} disabled={isSavingUsername} className="border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90">
                     {isSavingUsername ? 'Saving...' : 'Save Name'}
                   </Button>
-                  <Button asChild type="button" className="border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90">
+                  <Button asChild type="button" className="border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90">
                     <Link to="/account">Back</Link>
                   </Button>
                 </div>

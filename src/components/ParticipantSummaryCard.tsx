@@ -41,10 +41,10 @@ export const ParticipantSummaryCard = ({
   );
 
   return (
-    <Card className={cn('bg-gradient-to-r from-[#fffaf4] via-[#fcf4ea] to-[#fff7ef]', className)}>
+    <Card className={cn('bg-paper-grain', className)}>
       <CardContent className="p-3.5 pt-3.5">
         <div className="flex items-center gap-3">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#d9b99b] bg-white/90 shadow-sm">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border-2 border-border bg-surface-white shadow-theme-soft">
             <img
               src={participant.iconSrc}
               alt={participant.iconAlt}
@@ -56,16 +56,16 @@ export const ParticipantSummaryCard = ({
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
-                <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[#8B4513]/65">
+                <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-primary/65">
                   {participant.label}
                 </p>
-                <p className="truncate text-base font-semibold text-[#8B4513]">
+                <p className="truncate text-base font-semibold text-primary">
                   {pieceColorLabel} pieces
                 </p>
               </div>
 
               {participant.isToMove && (
-                <Badge className="shrink-0 border-[#8B4513]/15 bg-[#8B4513] text-white hover:bg-[#8B4513]">
+                <Badge className="shrink-0 border-border bg-primary text-primary-foreground hover:bg-primary">
                   To move
                 </Badge>
               )}

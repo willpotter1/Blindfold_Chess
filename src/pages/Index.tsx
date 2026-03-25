@@ -38,7 +38,7 @@ const SEO_TITLE = 'Blindfold Chess Trainer - Practice Chess Visualization';
 const SEO_DESCRIPTION = 'Train your chess visualization skills against the computer or another player locally with limited board visibility.';
 const SEO_CANONICAL_URL = 'https://blindchess.org/';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
-const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50';
+const EXPORT_BUTTON_CLASSNAME = 'h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent';
 const DESKTOP_BOARD_SIZE = 760;
 const DESKTOP_RIGHT_COLUMN_WIDTH = 441;
 const DESKTOP_LAYOUT_GAP = 32;
@@ -485,21 +485,21 @@ const Index = () => {
     if (gameState.isOver) {
       return (
         <>
-          <div className="rounded-md border-2 border-[#d9b99b] bg-card p-3 text-center text-lg font-semibold text-[#8B4513]">
+          <div className="rounded-md border-2 border-border bg-card p-3 text-center text-lg font-semibold text-primary">
             <p>{statusText}</p>
           </div>
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             <Button
               type="button"
               variant="outline"
-              className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+              className="h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
               onClick={handlePlayWithNewConfig}
             >
               New Config
             </Button>
             <Button
               type="button"
-              className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+              className="h-10 w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
               onClick={() => void handlePlayAgainWithSameRules()}
             >
               Play Again
@@ -553,7 +553,7 @@ const Index = () => {
           errorMessage={moveError}
         />
         {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
-        {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
+        {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
       </>
     );
   };
@@ -583,14 +583,14 @@ const Index = () => {
                   <Button
                     type="button"
                     variant="outline"
-                    className="h-10 w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+                    className="h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
                     onClick={handlePlayWithNewConfig}
                   >
                     New Config
                   </Button>
                   <Button
                     type="button"
-                    className="h-10 w-full bg-[#8B4513] text-white hover:bg-[#8B4513]/90"
+                    className="h-10 w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
                     onClick={() => void handlePlayAgainWithSameRules()}
                   >
                     Play Again
@@ -641,7 +641,7 @@ const Index = () => {
                   variant="compact"
                 />
 
-                {renderRevealButton('w-full border-2 border-[#d9b99b] bg-card text-card-foreground hover:bg-card')}
+                {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
               </>
             )}
           </div>
@@ -722,15 +722,14 @@ const Index = () => {
             )}
           </div>
         ) : (
-          <div className="relative flex min-h-[calc(100vh-6rem)] items-center overflow-hidden rounded-[36px] border border-white/50 px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,251,245,0.96),transparent_30%),radial-gradient(circle_at_78%_22%,rgba(165,103,65,0.15),transparent_18%),linear-gradient(135deg,rgba(252,248,242,0.92),rgba(236,224,209,0.84))]" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[55%] bg-[radial-gradient(circle_at_center,rgba(70,44,29,0.08),transparent_58%)] lg:block" />
+          <div className="bg-paper-grain relative flex min-h-[calc(100vh-6rem)] items-center overflow-hidden rounded-[36px] px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
+            <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[55%] bg-gradient-to-l from-surface-strong/15 to-transparent lg:block" />
 
             <div className="relative z-10 grid w-full items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-8">
               <div className="relative">
                 <div id="landing-visual" className="animate-drift-in relative mx-auto w-full max-w-4xl">
-                  <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-[radial-gradient(circle,rgba(255,244,226,0.72),transparent_66%)] blur-3xl" />
-                  <div className="relative rounded-[34px] border border-white/60 bg-[linear-gradient(180deg,rgba(58,39,26,0.08),rgba(255,255,255,0.02))] p-3 shadow-[0_30px_80px_rgba(53,33,19,0.18)] sm:p-5">
+                  <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-surface-white/60 blur-3xl" />
+                  <div className="shadow-theme-strong relative rounded-[34px] bg-surface-white/30 p-3 sm:p-5">
                     <LandingOperaReplay />
                   </div>
                 </div>
@@ -738,10 +737,10 @@ const Index = () => {
 
               <div className="max-w-xl">
                 <div className="animate-rise-fade">
-                  <h1 className="text-display-balance text-4xl font-semibold leading-[0.92] text-[#3d2413] sm:text-5xl lg:text-6xl">
+                  <h1 className="text-display-balance text-4xl font-semibold leading-[0.92] text-primary sm:text-5xl lg:text-6xl">
                     Blindfold Chess Trainer
                   </h1>
-                  <p className="mt-4 text-sm italic text-[#6a5545]">
+                  <p className="mt-4 text-sm italic text-muted-foreground">
                     “Calculation is visualization.”
                   </p>
                 </div>
@@ -751,6 +750,7 @@ const Index = () => {
                     mode={selectedGameMode}
                     onModeChange={setSelectedGameMode}
                     showModeSelector
+                    borderless
                     onStartGame={(config) => {
                       void handleStartGame(config);
                     }}

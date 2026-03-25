@@ -149,7 +149,7 @@ const Openings = () => {
     <Button
       type="button"
       variant="outline"
-      className="w-full border-2 border-[#d9b99b] bg-white text-zinc-900 hover:bg-zinc-50"
+      className="w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
       onPointerDown={() => setIsManualBoardReveal(true)}
       onPointerUp={() => setIsManualBoardReveal(false)}
       onPointerLeave={() => setIsManualBoardReveal(false)}
@@ -315,7 +315,7 @@ const Openings = () => {
   );
 
   return (
-    <div className={cn('flex min-h-screen flex-col bg-white', showDesktopGameLayout && 'md:flex-row')}>
+    <div className={cn('flex min-h-screen flex-col bg-background', showDesktopGameLayout && 'md:flex-row')}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}

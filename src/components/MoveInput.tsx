@@ -46,7 +46,7 @@ export const MoveInput = ({
           <div className={cn(isCompact ? 'space-y-1.5' : 'space-y-2')}>
             <label
               htmlFor="move-input"
-              className={cn('font-medium', isCompact ? 'text-xs uppercase tracking-[0.16em] text-[#8B4513]/75' : 'text-sm')}
+              className={cn('font-medium', isCompact ? 'text-xs uppercase tracking-[0.16em] text-primary/75' : 'text-sm')}
             >
               Enter Your Move (SAN)
             </label>

@@ -142,7 +142,7 @@ const Drills = () => {
   };
 
   return (
-    <div className={cn('flex min-h-screen flex-col bg-white', showDesktopGameLayout && 'md:flex-row')}>
+    <div className={cn('flex min-h-screen flex-col bg-background', showDesktopGameLayout && 'md:flex-row')}>
       <SeoHead
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}

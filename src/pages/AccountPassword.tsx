@@ -96,33 +96,33 @@ const AccountPassword = () => {
   return (
     <AccountLayout>
       <div className="mx-auto max-w-4xl">
-        <Card className="bg-white">
+        <Card className="bg-surface-white">
           <CardHeader>
-            <CardTitle className="text-[#8B4513]">Change Password</CardTitle>
-            <CardDescription className="text-black">Enter your current password before setting a new one.</CardDescription>
+            <CardTitle className="text-primary">Change Password</CardTitle>
+            <CardDescription className="text-foreground">Enter your current password before setting a new one.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {!hasSupabaseConfig && <div className="rounded-lg border-2 border-[#d9b99b] bg-[#d9b99b] p-4 text-black">Supabase is not configured.</div>}
-            {hasSupabaseConfig && isLoading && <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 text-black">Loading account details...</div>}
+            {!hasSupabaseConfig && <div className="rounded-lg border-2 border-border bg-surface-strong p-4 text-foreground">Supabase is not configured.</div>}
+            {hasSupabaseConfig && isLoading && <div className="rounded-lg border-2 border-border bg-surface-white p-4 text-foreground">Loading account details...</div>}
             {hasSupabaseConfig && !isLoading && profile.uid && (
-              <div className="rounded-lg border-2 border-[#d9b99b] bg-white p-4 space-y-3">
+              <div className="rounded-lg border-2 border-border bg-surface-white p-4 space-y-3">
                 <div className="space-y-2">
-                  <Label htmlFor="account-current-password" className="text-black">Current Password</Label>
-                  <Input id="account-current-password" type="password" value={currentPassword} onChange={(event) => setCurrentPassword(event.target.value)} autoComplete="current-password" className="text-black" />
+                  <Label htmlFor="account-current-password" className="text-foreground">Current Password</Label>
+                  <Input id="account-current-password" type="password" value={currentPassword} onChange={(event) => setCurrentPassword(event.target.value)} autoComplete="current-password" className="text-foreground" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="account-new-password" className="text-black">New Password</Label>
-                  <Input id="account-new-password" type="password" value={newPassword} onChange={(event) => setNewPassword(event.target.value)} autoComplete="new-password" className="text-black" />
+                  <Label htmlFor="account-new-password" className="text-foreground">New Password</Label>
+                  <Input id="account-new-password" type="password" value={newPassword} onChange={(event) => setNewPassword(event.target.value)} autoComplete="new-password" className="text-foreground" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="account-confirm-password" className="text-black">Confirm New Password</Label>
-                  <Input id="account-confirm-password" type="password" value={confirmNewPassword} onChange={(event) => setConfirmNewPassword(event.target.value)} autoComplete="new-password" className="text-black" />
+                  <Label htmlFor="account-confirm-password" className="text-foreground">Confirm New Password</Label>
+                  <Input id="account-confirm-password" type="password" value={confirmNewPassword} onChange={(event) => setConfirmNewPassword(event.target.value)} autoComplete="new-password" className="text-foreground" />
                 </div>
                 <div className="flex gap-3">
-                  <Button type="button" onClick={() => void handlePasswordChange()} disabled={isChangingPassword} className="border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90">
+                  <Button type="button" onClick={() => void handlePasswordChange()} disabled={isChangingPassword} className="border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90">
                     {isChangingPassword ? 'Saving...' : 'Save Password'}
                   </Button>
-                  <Button asChild type="button" className="border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90">
+                  <Button asChild type="button" className="border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90">
                     <Link to="/account">Back</Link>
                   </Button>
                 </div>

@@ -1,109 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import './theme/colors.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 37 42% 95%;
-    --foreground: 25 29% 16%;
-
-    --card: 35 37% 97%;
-    --card-foreground: 25 29% 16%;
-
-    --popover: 35 37% 97%;
-    --popover-foreground: 25 29% 16%;
-
-    --primary: 24 60% 27%;
-    --primary-foreground: 37 42% 95%;
-
-    --secondary: 33 42% 88%;
-    --secondary-foreground: 25 29% 16%;
-
-    --muted: 34 27% 90%;
-    --muted-foreground: 25 15% 32%;
-
-    --accent: 39 48% 84%;
-    --accent-foreground: 25 29% 16%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 31 29% 75%;
-    --input: 31 29% 75%;
-    --ring: 24 60% 27%;
-
     --radius: 1rem;
-
-    --chess-light: 0 0% 100%;
-    --chess-dark: 0 0% 35%;
-    --board-border: 0 0% 65%;
-    --success: 0 0% 100%;
-    --warning: 0 0% 100%;
-
-    --sidebar-background: 35 33% 91%;
-    --sidebar-foreground: 25 29% 16%;
-    --sidebar-primary: 24 60% 27%;
-    --sidebar-primary-foreground: 37 42% 95%;
-    --sidebar-accent: 34 31% 85%;
-    --sidebar-accent-foreground: 25 29% 16%;
-    --sidebar-border: 31 29% 75%;
-    --sidebar-ring: 24 60% 27%;
-  }
-
-  .dark {
-    --background: 27 22% 13%;
-    --foreground: 37 27% 92%;
-
-    --card: 27 19% 16%;
-    --card-foreground: 37 27% 92%;
-
-    --popover: 27 19% 16%;
-    --popover-foreground: 37 27% 92%;
-
-    --primary: 38 41% 82%;
-    --primary-foreground: 25 29% 16%;
-
-    --secondary: 26 15% 22%;
-    --secondary-foreground: 37 27% 92%;
-
-    --muted: 25 12% 24%;
-    --muted-foreground: 35 10% 70%;
-
-    --accent: 25 16% 28%;
-    --accent-foreground: 37 27% 92%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 24 10% 28%;
-    --input: 24 10% 28%;
-    --ring: 38 41% 82%;
-
-    --chess-light: 0 0% 92%;
-    --chess-dark: 0 0% 35%;
-    --board-border: 0 0% 60%;
-    --success: 0 0% 100%;
-    --warning: 0 0% 92%;
-    --sidebar-background: 25 16% 17%;
-    --sidebar-foreground: 37 27% 92%;
-    --sidebar-primary: 38 41% 82%;
-    --sidebar-primary-foreground: 25 29% 16%;
-    --sidebar-accent: 25 16% 25%;
-    --sidebar-accent-foreground: 37 27% 92%;
-    --sidebar-border: 24 10% 28%;
-    --sidebar-ring: 38 41% 82%;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: transparent !important;
   }
 
   html {
@@ -114,9 +24,9 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     font-family: 'Manrope', sans-serif;
     background-image:
-      radial-gradient(circle at top, hsl(37 60% 89% / 0.85), transparent 34%),
-      radial-gradient(circle at 82% 18%, hsl(26 63% 76% / 0.35), transparent 24%),
-      linear-gradient(180deg, hsl(39 28% 97%), hsl(36 33% 92%));
+      radial-gradient(circle at top, rgb(var(--surface-white) / 0.9), transparent 36%),
+      radial-gradient(circle at 82% 18%, rgb(var(--surface-strong) / 0.28), transparent 24%),
+      linear-gradient(180deg, rgb(var(--surface-white)), rgb(var(--background)));
     background-attachment: fixed;
   }
 
@@ -134,19 +44,33 @@ All colors MUST be HSL.
 @layer utilities {
   .bg-paper-grain {
     background-image:
-      linear-gradient(135deg, hsl(34 49% 97% / 0.96), hsl(38 31% 89% / 0.94)),
-      radial-gradient(circle at 20% 20%, hsl(42 49% 84% / 0.16), transparent 28%),
-      radial-gradient(circle at 80% 0%, hsl(18 58% 67% / 0.16), transparent 24%);
-    box-shadow:
-      inset 0 1px 0 hsl(0 0% 100% / 0.6),
-      0 22px 60px hsl(27 39% 24% / 0.12);
+      linear-gradient(135deg, rgb(var(--surface-white) / 0.98), rgb(var(--background) / 0.96)),
+      radial-gradient(circle at 20% 20%, rgb(var(--surface-white) / 0.24), transparent 28%),
+      radial-gradient(circle at 80% 0%, rgb(var(--surface-strong) / 0.22), transparent 24%);
+    box-shadow: inset 0 1px 0 rgb(var(--surface-white) / 0.6), var(--shadow-soft);
   }
 
   .bg-stage-glow {
     background:
-      radial-gradient(circle at top, hsl(38 70% 82% / 0.6), transparent 32%),
-      radial-gradient(circle at bottom left, hsl(22 59% 62% / 0.18), transparent 26%),
-      linear-gradient(180deg, hsl(35 39% 96% / 0.92), hsl(35 28% 90% / 0.92));
+      radial-gradient(circle at top, rgb(var(--surface-white) / 0.65), transparent 32%),
+      radial-gradient(circle at bottom left, rgb(var(--surface-strong) / 0.22), transparent 26%),
+      linear-gradient(180deg, rgb(var(--surface-white) / 0.94), rgb(var(--background) / 0.94));
+  }
+
+  .bg-theme-board-frame {
+    background: linear-gradient(135deg, rgb(var(--surface-dark)), rgb(var(--surface-ink)));
+  }
+
+  .shadow-theme-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .shadow-theme-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-theme-piece {
+    filter: drop-shadow(var(--shadow-piece));
   }
 
   .text-display-balance {

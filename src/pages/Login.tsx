@@ -9,8 +9,8 @@ import { useToast } from '@/hooks/use-toast';
 import { resetPasswordWithOtp, resolveIdentifierToEmail, sendPasswordResetOtp } from '@/lib/otpApi';
 import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
-const primaryActionButtonClassName = 'w-full border-2 border-[#8B4513] bg-[#8B4513] text-white hover:bg-[#8B4513]/90';
-const textLinkClassName = 'text-sm font-medium text-[#8B4513] underline underline-offset-4';
+const primaryActionButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
+const textLinkClassName = 'text-sm font-medium text-primary underline underline-offset-4';
 const otpServerUnavailableDescription = 'The OTP server is not running. Start it with npm run auth:dev.';
 const otpServerInvalidResponseDescription = 'The OTP server returned an invalid response. Check npm run auth:dev and try again.';
 
@@ -242,7 +242,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white md:flex">
+    <div className="min-h-screen bg-background md:flex">
       <AppSidebar />
 
       <div className="container mx-auto px-4 py-10 md:flex-1">
