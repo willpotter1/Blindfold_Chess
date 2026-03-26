@@ -741,7 +741,7 @@ const Index = () => {
                     Blindfold Chess Trainer
                   </h1>
                   <p className="mt-4 text-sm italic text-muted-foreground">
-                    “Calculation is visualization.”
+                    “Calculation is visualization” - Gary Kasparov
                   </p>
                 </div>
 
