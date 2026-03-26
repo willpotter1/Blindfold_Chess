@@ -149,7 +149,7 @@ const Openings = () => {
     <Button
       type="button"
       variant="outline"
-      className="w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
+      className="w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent"
       onPointerDown={() => setIsManualBoardReveal(true)}
       onPointerUp={() => setIsManualBoardReveal(false)}
       onPointerLeave={() => setIsManualBoardReveal(false)}

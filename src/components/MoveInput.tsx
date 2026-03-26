@@ -40,7 +40,7 @@ export const MoveInput = ({
   };
 
   return (
-    <Card>
+    <Card className="bg-surface-white/75">
       <CardContent className={cn(isCompact ? 'p-4 pt-4' : 'pt-6')}>
         <form onSubmit={handleSubmit} className={cn(isCompact ? 'space-y-2.5' : 'space-y-3')}>
           <div className={cn(isCompact ? 'space-y-1.5' : 'space-y-2')}>

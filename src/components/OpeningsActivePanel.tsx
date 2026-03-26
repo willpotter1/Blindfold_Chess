@@ -16,7 +16,7 @@ const ActiveMetric = ({
   label: string;
   value: string | number;
 }) => (
-  <div className="rounded-xl border-2 border-border bg-surface-white p-4 text-center">
+  <div className="rounded-xl border-2 border-border bg-surface-white/75 p-4 text-center">
     <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary">{label}</div>
     <div className="mt-2 text-3xl font-semibold text-foreground">{value}</div>
   </div>
@@ -44,7 +44,7 @@ export const OpeningsActivePanel = ({
           <ActiveMetric label="Active Lines" value={activeRecordCount} />
         </div>
 
-        <div className="rounded-2xl border-2 border-border bg-surface-base px-5 py-5">
+        <div className="rounded-2xl border-2 border-border bg-surface-white/75 px-5 py-5">
           <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary">Status</div>
           <div className="mt-3 whitespace-pre-line text-sm leading-6 text-foreground">{status}</div>
         </div>

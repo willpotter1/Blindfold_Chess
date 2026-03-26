@@ -41,7 +41,7 @@ export const ParticipantSummaryCard = ({
   );
 
   return (
-    <Card className={cn('bg-paper-grain', className)}>
+    <Card className={cn('bg-surface-white/75', className)}>
       <CardContent className="p-3.5 pt-3.5">
         <div className="flex items-center gap-3">
           <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border-2 border-border bg-surface-white shadow-theme-soft">

@@ -18,7 +18,7 @@ type OpeningsResultsPanelProps = {
 };
 
 const primaryButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
-const secondaryButtonClassName = 'w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent';
+const secondaryButtonClassName = 'w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent';
 
 export const OpeningsResultsPanel = ({
   opening,
@@ -41,7 +41,7 @@ export const OpeningsResultsPanel = ({
       </CardHeader>
 
       <CardContent className="grid gap-4 pt-2">
-        <div className="rounded-2xl border-2 border-primary bg-surface-white px-5 py-6 text-center">
+        <div className="rounded-2xl border-2 border-primary bg-surface-white/75 px-5 py-6 text-center">
           <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary">Resolved Opening</div>
           <div className="mt-3 text-2xl font-semibold leading-tight text-foreground">
             {opening?.name ?? 'Opening not found'}
@@ -55,12 +55,12 @@ export const OpeningsResultsPanel = ({
 
         {opening && (
           <div className="grid gap-3">
-            <div className="rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+            <div className="rounded-xl border-2 border-border bg-surface-white/75 px-4 py-3">
               <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary">Canonical PGN</div>
               <div className="mt-2 text-sm leading-6 text-foreground">{opening.pgn}</div>
             </div>
 
-            <div className="rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+            <div className="rounded-xl border-2 border-border bg-surface-white/75 px-4 py-3">
               <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary">Canonical UCI</div>
               <div className="mt-2 break-all font-mono text-xs leading-6 text-foreground">{opening.uci}</div>
             </div>

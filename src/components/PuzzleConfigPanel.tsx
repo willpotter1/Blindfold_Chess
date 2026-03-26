@@ -114,7 +114,7 @@ export const PuzzleConfigPanel = ({
     : 'text-sm text-muted-foreground';
 
   return (
-    <Card className={cn('bg-paper-grain-top-soft flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
+    <Card className={cn('bg-surface-white/75 flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-xl">Puzzle Configuration</CardTitle>
         <CardDescription className="text-xs">
@@ -131,6 +131,7 @@ export const PuzzleConfigPanel = ({
               min={puzzleRatingBounds.min}
               max={puzzleRatingBounds.max}
               step={1}
+              className="bg-surface-strong/55"
               value={minRatingInput}
               onChange={(event) => handleMinRatingChange(event.target.value)}
               onBlur={() => {
@@ -159,6 +160,7 @@ export const PuzzleConfigPanel = ({
               min={puzzleRatingBounds.min}
               max={puzzleRatingBounds.max}
               step={1}
+              className="bg-surface-strong/55"
               value={maxRatingInput}
               onChange={(event) => handleMaxRatingChange(event.target.value)}
               onBlur={() => {
@@ -186,6 +188,7 @@ export const PuzzleConfigPanel = ({
               type="number"
               min={0}
               step={1}
+              className="bg-surface-strong/55"
               value={revealEveryInput}
               onChange={(event) => handleRevealEveryChange(event.target.value)}
               onBlur={() => {
@@ -209,7 +212,7 @@ export const PuzzleConfigPanel = ({
         </div>
 
         <div className="shrink-0 space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0">
-          <div className="flex items-center justify-between rounded-md border-2 border-border bg-surface-white px-3 py-2">
+          <div className="flex items-center justify-between rounded-md border-2 border-border bg-surface-white/75 px-3 py-2">
             <Label htmlFor="puzzle-allow-cheats" className="cursor-pointer">
               Allow Cheats
             </Label>
@@ -225,7 +228,7 @@ export const PuzzleConfigPanel = ({
             />
           </div>
 
-          <div className="flex items-center justify-between rounded-md border-2 border-border bg-surface-white px-3 py-2">
+          <div className="flex items-center justify-between rounded-md border-2 border-border bg-surface-white/75 px-3 py-2">
             <Label htmlFor="puzzle-hide-move-history" className="cursor-pointer">
               Hide Move History
             </Label>
@@ -244,7 +247,7 @@ export const PuzzleConfigPanel = ({
 
         <div className="grid min-h-0 grid-rows-[auto_minmax(0,1fr)] gap-2">
           <Label>Puzzle Themes</Label>
-          <div className="min-h-0 overflow-hidden rounded-md border-2 border-border bg-surface-white">
+          <div className="min-h-0 overflow-hidden rounded-md border-2 border-border bg-surface-white/75">
             <div className="h-full overflow-y-auto p-3">
               <div className="grid grid-cols-1 gap-x-6 gap-y-3 pr-1 sm:grid-cols-2">
                 {themeOptions.map((theme) => (

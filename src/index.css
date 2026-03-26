@@ -75,10 +75,12 @@
   }
 
   .bg-stage-glow {
-    background:
-      radial-gradient(circle at top, rgb(var(--surface-highlight) / 0.2), transparent 32%),
-      radial-gradient(circle at bottom left, rgb(var(--surface-strong) / 0.22), transparent 26%),
-      linear-gradient(180deg, rgb(var(--surface-white) / 0.9), rgb(var(--background) / 0.94));
+    background-color: rgb(var(--background));
+    background-image:
+      linear-gradient(to left, rgb(var(--surface-strong) / 0.46) 0%, rgb(var(--surface-strong) / 0.3) 30%, transparent 64%),
+      linear-gradient(to top, rgb(var(--surface-strong) / 0.4) 0%, rgb(var(--surface-strong) / 0.24) 28%, transparent 58%),
+      linear-gradient(135deg, rgb(var(--surface-white) / 0.1) 0%, transparent 42%),
+      linear-gradient(180deg, rgb(var(--surface-white) / 0.88), rgb(var(--background) / 0.96));
   }
 
   .bg-theme-board-frame {

@@ -553,7 +553,7 @@ const Index = () => {
           errorMessage={moveError}
         />
         {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
-        {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
+        {renderRevealButton('w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
       </>
     );
   };
@@ -641,7 +641,7 @@ const Index = () => {
                   variant="compact"
                 />
 
-                {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
+                {renderRevealButton('w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
               </>
             )}
           </div>
@@ -723,7 +723,6 @@ const Index = () => {
           </div>
         ) : (
           <div className="bg-paper-grain-reverse relative flex min-h-[calc(100vh-6rem)] items-center overflow-hidden rounded-[36px] px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
-            <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-[55%] bg-gradient-to-r from-surface-strong/15 to-transparent lg:block" />
 
             <div className="relative z-10 grid w-full items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-8">
               <div className="relative">

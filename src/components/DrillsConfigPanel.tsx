@@ -41,7 +41,7 @@ export const DrillsConfigPanel = ({
   const fieldGap = Math.max(10, Math.round(sectionGap * 0.72));
 
   return (
-    <Card className={cn('bg-paper-grain-top-soft flex flex-col overflow-hidden', className)}>
+    <Card className={cn('bg-surface-white/75 flex flex-col overflow-hidden', className)}>
       <CardHeader className="shrink-0 pb-0" style={{ padding: `${panelPadding}px` }}>
         <CardTitle className="text-xl">Round Setup</CardTitle>
         <CardDescription className="text-sm">
@@ -70,7 +70,7 @@ export const DrillsConfigPanel = ({
                   })
                 }
               >
-                <SelectTrigger id="drills-mode">
+                <SelectTrigger id="drills-mode" className="bg-surface-strong/55">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -91,7 +91,7 @@ export const DrillsConfigPanel = ({
                   })
                 }
               >
-                <SelectTrigger id="drills-perspective">
+                <SelectTrigger id="drills-perspective" className="bg-surface-strong/55">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -113,7 +113,7 @@ export const DrillsConfigPanel = ({
                     })
                   }
                 >
-                  <SelectTrigger id="drills-moves-piece-display">
+                  <SelectTrigger id="drills-moves-piece-display" className="bg-surface-strong/55">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
@@ -138,7 +138,7 @@ export const DrillsConfigPanel = ({
                   })
                 }
               >
-                <SelectTrigger id="drills-round-length">
+                <SelectTrigger id="drills-round-length" className="bg-surface-strong/55">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -152,7 +152,7 @@ export const DrillsConfigPanel = ({
             </div>
           </div>
 
-          <div className="flex items-center justify-between rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+          <div className="flex items-center justify-between rounded-xl border-2 border-border bg-surface-white/75 px-4 py-3">
             <div className="pr-4">
               <Label htmlFor="drills-show-coordinates" className="cursor-pointer">
                 Show Board Coordinates

@@ -43,7 +43,7 @@ export const MoveList = ({ moves, startingTurnColor = 'white', className }: Move
   const displayedMovePairs = isReversed ? [...movePairs].reverse() : movePairs;
 
   return (
-    <Card className={cn('flex h-[380px] w-full flex-col', className)}>
+    <Card className={cn('flex h-[380px] w-full flex-col bg-surface-white/75', className)}>
       <CardHeader className="flex-row items-center justify-between space-y-0">
         <CardTitle>Move History</CardTitle>
         <button

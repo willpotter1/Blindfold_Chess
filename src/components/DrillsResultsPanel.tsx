@@ -16,7 +16,7 @@ type DrillsResultsPanelProps = {
 };
 
 const primaryButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
-const secondaryButtonClassName = 'w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent';
+const secondaryButtonClassName = 'w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent';
 
 const ResultsMetric = ({
   label,
@@ -25,7 +25,7 @@ const ResultsMetric = ({
   label: string;
   value: string | number;
 }) => (
-  <div className="rounded-xl border-2 border-border bg-surface-white p-4">
+  <div className="rounded-xl border-2 border-border bg-surface-white/75 p-4">
     <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary">{label}</div>
     <div className="mt-2 text-2xl font-semibold text-foreground">{value}</div>
   </div>
@@ -66,7 +66,7 @@ export const DrillsResultsPanel = ({
             gap: `${sectionGap}px`,
           }}
         >
-          <div className="rounded-2xl border-2 border-primary bg-surface-highlight px-5 py-6 text-center">
+          <div className="rounded-2xl border-2 border-primary bg-surface-white/75 px-5 py-6 text-center">
             <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary">Final Score</div>
             <div className="mt-3 text-5xl font-semibold leading-none text-foreground">{score}</div>
           </div>

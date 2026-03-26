@@ -189,14 +189,14 @@ const Puzzles = () => {
         className={`h-full grid grid-rows-[auto_minmax(0,1fr)_auto] ${desktopShellGapClass}`}
         style={{ height: `${desktopLayout.rightColumnHeight}px` }}
       >
-        <ParticipantSummaryCard participant={participantSummaries.computer} className="bg-surface-strong" />
+        <ParticipantSummaryCard participant={participantSummaries.computer} className="bg-surface-white/75" />
 
         <div
           className={`grid w-full self-center ${desktopShellGapClass} ${showDesktopMoveHistory ? '' : 'grid-cols-1'}`}
           style={showDesktopMoveHistory ? { gridTemplateColumns: `minmax(0,1fr) ${desktopHistoryWidth}px` } : undefined}
         >
           <div ref={desktopLeftSectionRef} className={`flex min-h-0 flex-col self-start ${desktopShellGapClass}`}>
-            <StatusBar status={status} variant="compact" className="bg-surface-strong" />
+            <StatusBar status={status} variant="compact" className="bg-surface-white/75" />
 
             <MoveInput
               onSubmitMove={(move) => {
@@ -205,7 +205,7 @@ const Puzzles = () => {
               disabled={isSolved}
               errorMessage={error}
               variant="compact"
-              className="bg-surface-strong"
+              className="bg-surface-white/75"
             />
 
             {isSolved && (
@@ -237,14 +237,14 @@ const Puzzles = () => {
             <Button
               type="button"
               variant="outline"
-              className="w-full border-2 border-border bg-surface-strong text-foreground hover:bg-accent"
+              className="w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent"
               onClick={advanceHint}
               disabled={isSolved || hintStage === 2}
             >
               {hintButtonLabel}
             </Button>
 
-            {renderRevealButton('w-full border-2 border-border bg-surface-strong text-foreground hover:bg-accent')}
+            {renderRevealButton('w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
           </div>
 
           {showDesktopMoveHistory && (
@@ -255,13 +255,13 @@ const Puzzles = () => {
               <MoveList
                 moves={moves}
                 startingTurnColor={moveHistoryStartingTurnColor}
-                className="h-full min-h-0 bg-surface-strong"
+                className="h-full min-h-0 bg-surface-white/75"
               />
             </div>
           )}
         </div>
 
-        <ParticipantSummaryCard participant={participantSummaries.player} className="bg-surface-strong" />
+        <ParticipantSummaryCard participant={participantSummaries.player} className="bg-surface-white/75" />
       </div>
     );
   };
@@ -302,7 +302,7 @@ const Puzzles = () => {
                           className="w-full"
                         />
                       ) : (
-                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-card p-6 text-center text-sm text-muted-foreground">
+                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface-white/75 p-6 text-center text-sm text-muted-foreground">
                           {previewPlaceholderMessage}
                         </div>
                       )}
@@ -329,7 +329,7 @@ const Puzzles = () => {
                         highlightTargetSquare={hintTargetSquare}
                       />
                     ) : (
-                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-card p-6 text-center text-sm text-muted-foreground">
+                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface-white/75 p-6 text-center text-sm text-muted-foreground">
                         {previewPlaceholderMessage}
                       </div>
                     )}
@@ -385,7 +385,7 @@ const Puzzles = () => {
                     {hintButtonLabel}
                   </Button>
 
-                  {renderRevealButton('w-full border-2 border-border bg-card text-card-foreground hover:bg-accent')}
+                  {renderRevealButton('w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
 
                   {!sessionConfig?.hideMoveHistory && <MoveList moves={moves} startingTurnColor={moveHistoryStartingTurnColor} />}
                   </>
@@ -418,7 +418,7 @@ const Puzzles = () => {
                           className="w-full"
                         />
                       ) : (
-                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-card p-6 text-center text-sm text-muted-foreground">
+                        <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface-white/75 p-6 text-center text-sm text-muted-foreground">
                           {previewPlaceholderMessage}
                         </div>
                       )}
@@ -458,7 +458,7 @@ const Puzzles = () => {
                         onMove={() => false}
                       />
                     ) : (
-                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-card p-6 text-center text-sm text-muted-foreground">
+                      <div className="flex aspect-square w-full items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface-white/75 p-6 text-center text-sm text-muted-foreground">
                         {previewPlaceholderMessage}
                       </div>
                     )}

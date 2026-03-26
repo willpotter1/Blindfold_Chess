@@ -18,7 +18,7 @@ const ActiveMetric = ({
   label: string;
   value: string | number;
 }) => (
-  <div className="rounded-xl border-2 border-border bg-surface-white p-4 text-center">
+  <div className="rounded-xl border-2 border-border bg-surface-white/75 p-4 text-center">
     <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary">{label}</div>
     <div className="mt-2 text-3xl font-semibold text-foreground">{value}</div>
   </div>
@@ -46,7 +46,7 @@ export const DrillsActivePanel = ({
         gap: `${sectionGap}px`,
       }}
     >
-      <div className="rounded-[1.4rem] border-2 border-border bg-background px-4 py-6 text-center">
+      <div className="rounded-[1.4rem] border-2 border-border bg-surface-white/75 px-4 py-6 text-center">
         <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary">Move</div>
         <div className="mt-3 font-semibold leading-none text-foreground" style={{ fontSize: `${moveFontSize}px` }}>
           {moveLabel}
@@ -68,7 +68,7 @@ export const DrillsActivePanel = ({
             {piecePlacements.map((piece) => (
               <div
                 key={`${piece.color}-${piece.type}-${piece.square}`}
-                className="flex items-center justify-between rounded-xl border-2 border-border bg-surface-white px-4 py-3"
+                className="flex items-center justify-between rounded-xl border-2 border-border bg-surface-white/75 px-4 py-3"
               >
                 <div className="text-sm font-medium text-foreground">
                   {colorLabel(piece.color)} {piece.displayName}

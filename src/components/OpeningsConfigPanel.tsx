@@ -195,7 +195,7 @@ const OpeningTreeRow = ({
     <div className="grid gap-1">
       <div
         className={cn(
-          'rounded-xl border-2 border-border bg-surface-white px-3 py-2.5',
+          'rounded-xl border-2 border-border bg-surface-white/75 px-3 py-2.5',
           !isRoot && 'ml-4',
           isFamilySelected && !isRoot && 'opacity-60',
         )}
@@ -355,7 +355,7 @@ export const OpeningsConfigPanel = ({
   };
 
   return (
-    <Card className={cn('bg-paper-grain-top-soft flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
+    <Card className={cn('bg-surface-white/75 flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border', className)}>
       <CardHeader className="shrink-0 space-y-1 pb-2">
         <CardTitle className="text-xl">Opening Setup</CardTitle>
       </CardHeader>
@@ -375,7 +375,7 @@ export const OpeningsConfigPanel = ({
                 })
               }
             >
-              <SelectTrigger id="opening-player-color" className="h-11 rounded-xl text-[15px]">
+              <SelectTrigger id="opening-player-color" className="h-11 rounded-xl bg-surface-strong/55 text-[15px]">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -394,7 +394,7 @@ export const OpeningsConfigPanel = ({
               type="number"
               min={1}
               step={1}
-              className="h-11 rounded-xl text-[15px]"
+              className="h-11 rounded-xl bg-surface-strong/55 text-[15px]"
               value={depthInput}
               onChange={(event) => setDepthInput(event.target.value)}
               onBlur={commitDepthInput}
@@ -418,7 +418,7 @@ export const OpeningsConfigPanel = ({
               type="number"
               min={0}
               step={1}
-              className="h-11 rounded-xl text-[15px]"
+              className="h-11 rounded-xl bg-surface-strong/55 text-[15px]"
               value={revealEveryInput}
               onChange={(event) => setRevealEveryInput(event.target.value)}
               onBlur={commitRevealEveryInput}
@@ -433,7 +433,7 @@ export const OpeningsConfigPanel = ({
         </div>
 
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:items-stretch">
-          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border-2 border-border bg-surface-white/75 px-4 py-3">
             <Label htmlFor="opening-allow-cheats" className="min-w-0 cursor-pointer text-sm font-semibold text-foreground">
               Allow Cheats
             </Label>
@@ -450,7 +450,7 @@ export const OpeningsConfigPanel = ({
             />
           </div>
 
-          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border-2 border-border bg-surface-white px-4 py-3">
+          <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border-2 border-border bg-surface-white/75 px-4 py-3">
             <Label htmlFor="opening-hide-history" className="min-w-0 cursor-pointer text-sm font-semibold text-foreground">
               Hide History
             </Label>
@@ -472,12 +472,13 @@ export const OpeningsConfigPanel = ({
           <Input
             id="opening-tree-search"
             type="text"
+            className="bg-surface-strong/55"
             value={treeSearch}
             onChange={(event) => setTreeSearch(event.target.value)}
             placeholder="Search family or branch"
           />
 
-          <ScrollArea className="min-h-0 rounded-2xl border-2 border-border bg-surface-white">
+          <ScrollArea className="min-h-0 rounded-2xl border-2 border-border bg-surface-white/75">
             <div className="grid gap-2 p-3">
               {visibleTree.map((node) => (
                 <OpeningTreeRow
