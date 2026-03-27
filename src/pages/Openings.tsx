@@ -22,6 +22,7 @@ const SEO_CANONICAL_URL = 'https://blindchess.org/openings';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
 const DESKTOP_BOARD_SIZE = 760;
 const DESKTOP_RIGHT_COLUMN_WIDTH = 420;
+const DESKTOP_CONFIG_PANEL_WIDTH = 1240;
 const DESKTOP_LAYOUT_GAP = 24;
 const MOBILE_STATIC_BOARD_MAX_WIDTH = 640;
 const STARTING_FEN = new Chess().fen();
@@ -65,7 +66,7 @@ const Openings = () => {
   const {
     phase,
     config,
-    catalog,
+    explorer,
     round,
     configStatus,
     continueEngineElo,
@@ -95,7 +96,9 @@ const Openings = () => {
 
   const boardFen = round?.currentFen ?? STARTING_FEN;
   const boardPerspective = config.playerColor;
-  const showMoveHistory = Boolean(round && (phase === 'results' || !config.hideMoveHistory));
+  const showBoard = phase !== 'config';
+  const showDesktopMoveHistory = Boolean(round && phase === 'results');
+  const showMobileMoveHistory = Boolean(round && (phase === 'results' || !config.hideMoveHistory));
   const isBoardVisible = !round
     ? true
     : shouldShowBoardForRound(round.playerMoveCount, round.config.revealEvery, phase === 'results' ? 'results' : 'session') ||
@@ -175,8 +178,7 @@ const Openings = () => {
       return (
         <OpeningsConfigPanel
           config={config}
-          families={catalog?.families ?? []}
-          lines={catalog?.lines ?? []}
+          explorer={explorer}
           statusMessage={configStatus.message}
           statusTone={configStatus.tone}
           isStartDisabled={configStatus.isStartDisabled}
@@ -206,21 +208,45 @@ const Openings = () => {
       );
     }
 
+    const showSessionMoveHistory = !config.hideMoveHistory;
+
     return (
-      <div className="grid gap-3">
+      <div
+        className="grid min-h-0 gap-3"
+        style={{
+          height: `${desktopLayout.rightColumnHeight}px`,
+          gridTemplateRows: showSessionMoveHistory ? 'auto auto minmax(0,1fr)' : 'auto auto',
+        }}
+      >
         <OpeningsActivePanel
           playerMoveCount={round.playerMoveCount}
           depthPlayerMoves={round.config.depthPlayerMoves}
           activeRecordCount={round.activeRecordIds.length}
           status={round.status}
         />
-        <MoveInput
-          onSubmitMove={submitSanMove}
-          disabled={!isPlayerTurn}
-          errorMessage={round.error}
-          variant="compact"
-        />
-        {revealButton}
+
+        <div className={cn('grid gap-2.5', revealButton ? 'grid-cols-[minmax(0,1fr)_auto]' : 'grid-cols-1')}>
+          <MoveInput
+            onSubmitMove={submitSanMove}
+            disabled={!isPlayerTurn}
+            errorMessage={round.error}
+            variant="compact"
+            className="min-h-0"
+          />
+          {revealButton && (
+            <div className="flex items-stretch">
+              {revealButton}
+            </div>
+          )}
+        </div>
+
+        {showSessionMoveHistory && (
+          <MoveList
+            moves={round.movesSan}
+            startingTurnColor="white"
+            className="h-full min-h-0"
+          />
+        )}
       </div>
     );
   }, [
@@ -232,8 +258,8 @@ const Openings = () => {
     continueRevealEvery,
     handleContinueGame,
     isPlayerTurn,
-    catalog?.families,
-    catalog?.lines,
+    desktopLayout.rightColumnHeight,
+    explorer,
     phase,
     restartRound,
     returnToConfig,
@@ -246,6 +272,10 @@ const Openings = () => {
     updateConfig,
   ]);
 
+  const desktopPanelWidth = phase === 'config'
+    ? Math.max(desktopLayout.rightColumnWidth, DESKTOP_CONFIG_PANEL_WIDTH)
+    : desktopLayout.rightColumnWidth;
+
   const renderDesktopLayout = () => (
     <div className="px-4 py-8">
       <div className="h-[calc(100dvh-4rem)]">
@@ -256,33 +286,37 @@ const Openings = () => {
           <div
             className="grid items-start"
             style={{
-              gridTemplateColumns: `${desktopLayout.boardSize}px ${desktopLayout.rightColumnWidth}px`,
+              gridTemplateColumns: showBoard
+                ? `${desktopLayout.boardSize}px ${desktopPanelWidth}px`
+                : `${desktopPanelWidth}px`,
               columnGap: `${desktopLayout.gap}px`,
             }}
           >
-            <div className="flex items-center justify-center">
-              <div style={{ width: `${desktopLayout.boardSize}px` }}>
-                <BlindfoldBoard
-                  fen={boardFen}
-                  perspective={boardPerspective}
-                  isVisible={isBoardVisible}
-                  isInteractive={isPlayerTurn}
-                  onMove={handleBoardMove}
-                  className="w-full"
-                />
+            {showBoard && (
+              <div className="flex items-center justify-center">
+                <div style={{ width: `${desktopLayout.boardSize}px` }}>
+                  <BlindfoldBoard
+                    fen={boardFen}
+                    perspective={boardPerspective}
+                    isVisible={isBoardVisible}
+                    isInteractive={isPlayerTurn}
+                    onMove={handleBoardMove}
+                    className="w-full"
+                  />
+                </div>
               </div>
-            </div>
+            )}
 
             <div
               className="grid min-h-0 gap-3"
               style={{
-                width: `${desktopLayout.rightColumnWidth}px`,
+                width: `${desktopPanelWidth}px`,
                 height: phase === 'config' ? `${desktopLayout.boardSize}px` : undefined,
                 gridTemplateRows: phase === 'config' ? 'minmax(0, 1fr)' : undefined,
               }}
             >
               {sidePanel}
-              {showMoveHistory && round && (
+              {showDesktopMoveHistory && round && (
                 <MoveList moves={round.movesSan} startingTurnColor="white" />
               )}
             </div>
@@ -300,22 +334,24 @@ const Openings = () => {
       )}
     >
       <div className="mx-auto grid w-full max-w-[760px] grid-cols-1 gap-4">
-        <div className="flex justify-center">
-          <div className="w-full" style={{ maxWidth: `${MOBILE_STATIC_BOARD_MAX_WIDTH}px` }}>
-            <BlindfoldBoard
-              fen={boardFen}
-              perspective={boardPerspective}
-              isVisible={isBoardVisible}
-              isInteractive={isPlayerTurn}
-              onMove={handleBoardMove}
-              className="w-full"
-            />
+        {showBoard && (
+          <div className="flex justify-center">
+            <div className="w-full" style={{ maxWidth: `${MOBILE_STATIC_BOARD_MAX_WIDTH}px` }}>
+              <BlindfoldBoard
+                fen={boardFen}
+                perspective={boardPerspective}
+                isVisible={isBoardVisible}
+                isInteractive={isPlayerTurn}
+                onMove={handleBoardMove}
+                className="w-full"
+              />
+            </div>
           </div>
-        </div>
+        )}
 
         {sidePanel}
 
-        {showMoveHistory && round && (
+        {showMobileMoveHistory && round && (
           <MoveList moves={round.movesSan} startingTurnColor="white" />
         )}
       </div>

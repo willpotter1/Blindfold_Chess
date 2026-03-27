@@ -69,6 +69,7 @@ const useDesktopGameLayoutMock = vi.mocked(useDesktopGameLayout);
 const createHookValue = (phase: 'config' | 'session' | 'results') => ({
   phase,
   config: {
+    selections: [],
     selectedFamilyNames: [],
     selectedLineIds: [],
     playerColor: 'white' as const,
@@ -77,10 +78,7 @@ const createHookValue = (phase: 'config' | 'session' | 'results') => ({
     allowCheats: true,
     hideMoveHistory: false,
   },
-  catalog: {
-    families: [],
-    lines: [],
-  },
+  explorer: null,
   lookup: null,
   round: phase === 'config' ? null : {
     currentFen: 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1',
@@ -132,7 +130,7 @@ describe('Openings page', () => {
     const markup = renderOpenings();
 
     expect(markup).toContain('data-testid="openings-config-panel"');
-    expect(markup).toContain('data-testid="blindfold-board"');
+    expect(markup).not.toContain('data-testid="blindfold-board"');
   });
 
   it('renders the openings results panel when a round is complete', () => {

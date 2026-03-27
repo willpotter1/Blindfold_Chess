@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { getOpeningExplorerData } from '@/lib/openingExplorerCore.js';
 import {
   buildOpeningTrainerStartSeed,
   defaultOpeningTrainerConfig,
   getOpeningTrainerConfigStatus,
+  resolveOpeningTrainerRecordSelection,
   startOpeningTrainerRound,
   submitOpeningTrainerSanMove,
   submitOpeningTrainerUciMove,
@@ -11,9 +13,6 @@ import {
 } from '@/lib/openingTrainer';
 import {
   createOpeningLookup,
-  getOpeningCatalog,
-  loadOpeningTrainingRecords,
-  type OpeningCatalog,
   type OpeningLookup,
 } from '@/lib/openings';
 import { saveOpeningRound } from '@/lib/trainingResults';
@@ -26,7 +25,7 @@ const DEFAULT_CONTINUE_ENGINE_ELO = 1500;
 export const useOpeningTrainerState = () => {
   const [phase, setPhase] = useState<OpeningTrainerPhase>('config');
   const [config, setConfig] = useState<OpeningTrainerConfig>(defaultOpeningTrainerConfig);
-  const [catalog, setCatalog] = useState<OpeningCatalog | null>(null);
+  const [explorer, setExplorer] = useState<Awaited<ReturnType<typeof getOpeningExplorerData>> | null>(null);
   const [lookup, setLookup] = useState<OpeningLookup | null>(null);
   const [catalogError, setCatalogError] = useState('');
   const [startError, setStartError] = useState('');
@@ -41,13 +40,13 @@ export const useOpeningTrainerState = () => {
   useEffect(() => {
     let isMounted = true;
 
-    void getOpeningCatalog()
-      .then((nextCatalog) => {
+    void getOpeningExplorerData()
+      .then((nextExplorer) => {
         if (!isMounted) {
           return;
         }
 
-        setCatalog(nextCatalog);
+        setExplorer(nextExplorer);
         setCatalogError('');
       })
       .catch((error) => {
@@ -88,8 +87,8 @@ export const useOpeningTrainerState = () => {
               message: startError,
               tone: 'error' as const,
             }
-          : getOpeningTrainerConfigStatus(catalog, config)
-  ), [catalog, catalogError, config, isStartingRound, startError]);
+          : getOpeningTrainerConfigStatus(explorer, config)
+  ), [catalogError, config, explorer, isStartingRound, startError]);
 
   const updateConfig = useCallback((nextConfig: OpeningTrainerConfig) => {
     setConfig(nextConfig);
@@ -101,7 +100,7 @@ export const useOpeningTrainerState = () => {
   }, [phase]);
 
   const startRound = useCallback(async () => {
-    if (!catalog || configStatus.isStartDisabled || isStartingRound) {
+    if (!explorer || configStatus.isStartDisabled || isStartingRound) {
       return;
     }
 
@@ -109,17 +108,22 @@ export const useOpeningTrainerState = () => {
     setStartError('');
 
     try {
-      const records = await loadOpeningTrainingRecords({
-        selectedFamilyNames: config.selectedFamilyNames,
-        selectedLineIds: config.selectedLineIds,
-        playerColor: config.playerColor,
-        depthPlayerMoves: config.depthPlayerMoves,
-      }, catalog);
+      const resolvedSelection = resolveOpeningTrainerRecordSelection(explorer, config);
+
+      if (resolvedSelection.records.length === 0) {
+        throw new Error('No openings match the current opening trainer configuration.');
+      }
+
+      const effectiveConfig: OpeningTrainerConfig = {
+        ...config,
+        selectedFamilyNames: resolvedSelection.selectedFamilyNames,
+        selectedLineIds: resolvedSelection.selectedLineIds,
+      };
       const nextLookup = createOpeningLookup({
-        catalog,
-        records,
+        catalog: explorer.catalog,
+        records: resolvedSelection.records,
       });
-      const nextRound = startOpeningTrainerRound(nextLookup, config);
+      const nextRound = startOpeningTrainerRound(nextLookup, effectiveConfig);
 
       activeRoundStartedAtRef.current = new Date().toISOString();
       hasSavedRoundRef.current = false;
@@ -128,13 +132,13 @@ export const useOpeningTrainerState = () => {
       setLookup(nextLookup);
       setRound(nextRound);
       setPhase(nextRound.phase === 'completed' ? 'results' : 'session');
-      setContinueRevealEvery(config.revealEvery);
+      setContinueRevealEvery(effectiveConfig.revealEvery);
     } catch (error) {
       setStartError(error instanceof Error ? error.message : 'Failed to load the selected openings.');
     } finally {
       setIsStartingRound(false);
     }
-  }, [catalog, config, configStatus.isStartDisabled, isStartingRound]);
+  }, [config, configStatus.isStartDisabled, explorer, isStartingRound]);
 
   const restartRound = useCallback(() => {
     void startRound();
@@ -207,7 +211,7 @@ export const useOpeningTrainerState = () => {
   return {
     phase,
     config,
-    catalog,
+    explorer,
     lookup,
     lookupError: catalogError || startError,
     round: currentRound,

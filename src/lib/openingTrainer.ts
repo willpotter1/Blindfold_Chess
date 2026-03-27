@@ -1,6 +1,10 @@
 import { Chess, type Move } from 'chess.js';
 import { normalizeSan } from '@/lib/chess/normalizeSan';
 import {
+  deriveOpeningExplorerLegacySelectionsFromRecordIds,
+  resolveOpeningExplorerRecordIds,
+} from '@/lib/openingExplorerCore.js';
+import {
   getCanonicalLineIdForRecord,
   getOpeningCanonicalInfoFromLine,
   type OpeningCatalog,
@@ -10,7 +14,17 @@ import {
   type OpeningLookupRecord,
 } from '@/lib/openings';
 
+export type OpeningSelection = {
+  id: string;
+  kind: 'branch' | 'opening';
+  nodeId: string;
+  anchorRefId: string;
+  openingName?: string | null;
+  eco?: string | null;
+};
+
 export type OpeningTrainerConfig = {
+  selections: OpeningSelection[];
   selectedFamilyNames: string[];
   selectedLineIds: string[];
   playerColor: 'white' | 'black';
@@ -54,6 +68,7 @@ const DEFAULT_DEPTH_PLAYER_MOVES = 3;
 const START_FEN = new Chess().fen();
 
 export const defaultOpeningTrainerConfig: OpeningTrainerConfig = {
+  selections: [],
   selectedFamilyNames: [],
   selectedLineIds: [],
   playerColor: 'white',
@@ -155,6 +170,73 @@ const buildStatusText = (round: Pick<OpeningTrainerRound, 'config' | 'playerMove
   return `Your moves: ${moveLabel}\n${lineLabel}`;
 };
 
+const isOpeningExplorerData = (value: OpeningCatalog | null) => (
+  Boolean(
+    value &&
+    Array.isArray((value as OpeningCatalog & { nodes?: unknown[] }).nodes) &&
+    Array.isArray((value as OpeningCatalog & { records?: unknown[] }).records) &&
+    Array.isArray((value as OpeningCatalog & { treeRefs?: unknown[] }).treeRefs) &&
+    (value as OpeningCatalog & { catalog?: OpeningCatalog }).catalog,
+  )
+);
+
+const getRequestedLineIdsFromCatalog = (
+  catalog: OpeningCatalog,
+  config: OpeningTrainerConfig,
+) => {
+  const lineById = new Map(catalog.lines.map((line) => [line.id, line]));
+  const requestedLineIds = new Set<string>();
+
+  config.selectedLineIds.forEach((lineId) => {
+    if (lineById.has(lineId)) {
+      requestedLineIds.add(lineId);
+    }
+  });
+
+  for (const familyName of config.selectedFamilyNames) {
+    const family = catalog.families.find((entry) => entry.name === familyName);
+
+    family?.lineIds.forEach((lineId) => {
+      if (lineById.has(lineId)) {
+        requestedLineIds.add(lineId);
+      }
+    });
+  }
+
+  return requestedLineIds;
+};
+
+export const resolveOpeningTrainerRecordSelection = (
+  explorer: OpeningCatalog & {
+    catalog: OpeningCatalog;
+    records: OpeningLookupRecord[];
+  },
+  config: OpeningTrainerConfig,
+) => {
+  const recordsById = new Map(explorer.records.map((record) => [record.id, record]));
+  const requestedLineIds = config.selections.length === 0
+    ? getRequestedLineIdsFromCatalog(explorer.catalog, config)
+    : null;
+  const requestedRecordIds = config.selections.length > 0
+    ? resolveOpeningExplorerRecordIds(explorer, config.selections)
+    : explorer.records
+      .filter((record) => requestedLineIds?.has(record.lineId))
+      .map((record) => record.id);
+  const filteredRecords = requestedRecordIds
+    .map((recordId) => recordsById.get(recordId))
+    .filter((record): record is OpeningLookupRecord => Boolean(record))
+    .filter((record) => record.playerMoveCounts[config.playerColor] >= config.depthPlayerMoves);
+  const filteredRecordIds = filteredRecords.map((record) => record.id);
+  const compatibilitySelections = deriveOpeningExplorerLegacySelectionsFromRecordIds(explorer, filteredRecordIds);
+
+  return {
+    records: filteredRecords,
+    recordIds: filteredRecordIds,
+    selectedFamilyNames: compatibilitySelections.selectedFamilyNames,
+    selectedLineIds: compatibilitySelections.selectedLineIds,
+  };
+};
+
 export const resolveOpeningTrainerPool = (
   lookup: OpeningLookup,
   config: OpeningTrainerConfig,
@@ -199,7 +281,12 @@ export const resolveOpeningTrainerPool = (
 };
 
 export const getOpeningTrainerConfigStatus = (
-  catalog: OpeningCatalog | null,
+  catalog: OpeningCatalog | (OpeningCatalog & {
+    catalog: OpeningCatalog;
+    records: OpeningLookupRecord[];
+    nodes: unknown[];
+    treeRefs: unknown[];
+  }) | null,
   config: OpeningTrainerConfig,
 ): OpeningTrainerConfigStatus => {
   if (!catalog) {
@@ -212,36 +299,40 @@ export const getOpeningTrainerConfigStatus = (
     };
   }
 
-  if (config.selectedFamilyNames.length === 0 && config.selectedLineIds.length === 0) {
+  if (config.selections.length === 0 && config.selectedFamilyNames.length === 0 && config.selectedLineIds.length === 0) {
     return {
       matchingLineCount: 0,
       matchingRecordCount: 0,
       isStartDisabled: true,
-      message: 'Select at least one family or variation.',
+      message: 'Select at least one branch or opening.',
       tone: 'error',
     };
   }
 
-  const lineById = new Map(catalog.lines.map((line) => [line.id, line]));
-  const requestedLineIds = new Set<string>();
+  if (isOpeningExplorerData(catalog)) {
+    const resolvedSelection = resolveOpeningTrainerRecordSelection(catalog, config);
 
-  config.selectedLineIds.forEach((lineId) => {
-    if (lineById.has(lineId)) {
-      requestedLineIds.add(lineId);
+    if (resolvedSelection.recordIds.length === 0) {
+      return {
+        matchingLineCount: 0,
+        matchingRecordCount: 0,
+        isStartDisabled: true,
+        message: 'No openings match the current color and depth.',
+        tone: 'error',
+      };
     }
-  });
 
-  for (const familyName of config.selectedFamilyNames) {
-    const family = catalog.families.find((entry) => entry.name === familyName);
-
-    family?.lineIds.forEach((lineId) => {
-      if (lineById.has(lineId)) {
-        requestedLineIds.add(lineId);
-      }
-    });
+    return {
+      matchingLineCount: resolvedSelection.selectedLineIds.length,
+      matchingRecordCount: resolvedSelection.recordIds.length,
+      isStartDisabled: false,
+      message: `${resolvedSelection.selectedLineIds.length.toLocaleString()} variations and ${resolvedSelection.recordIds.length.toLocaleString()} matching positions are available.`,
+      tone: 'default',
+    };
   }
 
-  const matchingLines = Array.from(requestedLineIds)
+  const lineById = new Map(catalog.lines.map((line) => [line.id, line]));
+  const matchingLines = Array.from(getRequestedLineIdsFromCatalog(catalog, config))
     .map((lineId) => lineById.get(lineId))
     .filter((line): line is OpeningLine => Boolean(line))
     .filter((line) => getEligibleRecordCountForLine(line, config.playerColor, config.depthPlayerMoves) > 0);

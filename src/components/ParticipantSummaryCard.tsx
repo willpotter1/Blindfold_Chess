@@ -42,13 +42,13 @@ export const ParticipantSummaryCard = ({
 
   return (
     <Card className={cn('bg-surface-white/75', className)}>
-      <CardContent className="p-3.5 pt-3.5">
-        <div className="flex items-center gap-3">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border-2 border-border bg-surface-white shadow-theme-soft">
+      <CardContent className="p-3 pt-3">
+        <div className="flex items-center gap-2.5">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border-2 border-border bg-surface-white shadow-theme-soft">
             <img
               src={participant.iconSrc}
               alt={participant.iconAlt}
-              className="h-8 w-8 object-contain"
+              className="h-7 w-7 object-contain"
               draggable={false}
             />
           </div>
@@ -59,7 +59,7 @@ export const ParticipantSummaryCard = ({
                 <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-primary/65">
                   {participant.label}
                 </p>
-                <p className="truncate text-base font-semibold text-primary">
+                <p className="truncate text-sm font-semibold text-primary">
                   {pieceColorLabel} pieces
                 </p>
               </div>
@@ -71,15 +71,15 @@ export const ParticipantSummaryCard = ({
               )}
             </div>
 
-            <div className="mt-2.5">
-              <div className="min-h-7">
-                <div className="flex min-h-7 flex-wrap items-center gap-1">
+            <div className="mt-2">
+              <div className="min-h-6">
+                <div className="flex min-h-6 flex-wrap items-center gap-1">
                   {participant.capturedPieces.map((piece, index) => (
                     <img
                       key={`${piece.color}-${piece.type}-${index}`}
                       src={getCapturedPieceSrc(piece)}
                       alt={getCapturedPieceAlt(piece)}
-                      className="h-6 w-6 object-contain"
+                      className="h-5 w-5 object-contain"
                       draggable={false}
                     />
                   ))}

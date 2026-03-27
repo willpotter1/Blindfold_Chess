@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import SeoHead from '@/components/SeoHead';
 import { AppSidebar } from '@/components/AppSidebar';
 import { BlindfoldBoard } from '@/components/BlindfoldBoard';
@@ -65,8 +65,6 @@ const getPuzzleParticipantSummaries = (puzzle: PreparedPuzzleRecord, currentFen:
 
 const Puzzles = () => {
   const [isManualBoardReveal, setIsManualBoardReveal] = useState(false);
-  const [desktopLeftSectionHeight, setDesktopLeftSectionHeight] = useState<number | null>(null);
-  const desktopLeftSectionRef = useRef<HTMLDivElement>(null);
   const showDesktopGameLayout = useDesktopGameLayout();
   const { containerRef: desktopFitRef, layout: desktopLayout } = useDesktopFitLayout({
     enabled: showDesktopGameLayout,
@@ -122,36 +120,6 @@ const Puzzles = () => {
   const puzzleConfigStatusMessage = isConfigLoading ? 'Loading puzzles...' : undefined;
   const previewPlaceholderMessage = configError || (isConfigLoading ? 'Loading puzzle preview...' : 'No puzzle preview available.');
 
-  useEffect(() => {
-    if (!isSessionActive) {
-      setDesktopLeftSectionHeight(null);
-      return;
-    }
-
-    const leftSectionNode = desktopLeftSectionRef.current;
-    if (!leftSectionNode) return;
-
-    const updateLeftSectionHeight = () => {
-      setDesktopLeftSectionHeight(leftSectionNode.offsetHeight);
-    };
-
-    updateLeftSectionHeight();
-
-    if (typeof ResizeObserver === 'undefined') {
-      return undefined;
-    }
-
-    const resizeObserver = new ResizeObserver(() => {
-      updateLeftSectionHeight();
-    });
-
-    resizeObserver.observe(leftSectionNode);
-
-    return () => {
-      resizeObserver.disconnect();
-    };
-  }, [isSessionActive]);
-
   const renderRevealButton = (className: string) => {
     if (!sessionConfig?.allowCheats) return null;
 
@@ -184,74 +152,83 @@ const Puzzles = () => {
   const renderDesktopPuzzleShell = () => {
     if (!isSessionActive || !participantSummaries) return null;
 
+    const desktopActionColumnWidth = Math.max(136, Math.round(desktopLayout.rightColumnWidth * 0.34));
+
     return (
       <div
-        className={`h-full grid grid-rows-[auto_minmax(0,1fr)_auto] ${desktopShellGapClass}`}
+        className={`grid h-full min-h-0 grid-rows-[auto_auto_minmax(0,1fr)] ${desktopShellGapClass}`}
         style={{ height: `${desktopLayout.rightColumnHeight}px` }}
       >
-        <ParticipantSummaryCard participant={participantSummaries.computer} className="bg-surface-white/75" />
+        <div className={`grid grid-cols-2 ${desktopShellGapClass}`}>
+          <ParticipantSummaryCard participant={participantSummaries.computer} className="bg-surface-white/75" />
+          <ParticipantSummaryCard participant={participantSummaries.player} className="bg-surface-white/75" />
+        </div>
 
         <div
-          className={`grid w-full self-center ${desktopShellGapClass} ${showDesktopMoveHistory ? '' : 'grid-cols-1'}`}
+          className={`grid min-h-0 w-full ${desktopShellGapClass} ${showDesktopMoveHistory ? '' : 'grid-cols-1'}`}
           style={showDesktopMoveHistory ? { gridTemplateColumns: `minmax(0,1fr) ${desktopHistoryWidth}px` } : undefined}
         >
-          <div ref={desktopLeftSectionRef} className={`flex min-h-0 flex-col self-start ${desktopShellGapClass}`}>
+          <div className={`grid min-h-0 ${desktopShellGapClass}`} style={{ gridTemplateRows: 'auto auto' }}>
             <StatusBar status={status} variant="compact" className="bg-surface-white/75" />
 
-            <MoveInput
-              onSubmitMove={(move) => {
-                submitSanMove(move);
-              }}
-              disabled={isSolved}
-              errorMessage={error}
-              variant="compact"
-              className="bg-surface-white/75"
-            />
+            <div
+              className={`grid min-h-0 ${desktopShellGapClass}`}
+              style={{ gridTemplateColumns: `minmax(0,1fr) ${desktopActionColumnWidth}px` }}
+            >
+              <MoveInput
+                onSubmitMove={(move) => {
+                  submitSanMove(move);
+                }}
+                disabled={isSolved}
+                errorMessage={error}
+                variant="compact"
+                className="bg-surface-white/75 min-h-0"
+              />
 
-            {isSolved && (
-              <div className="grid grid-cols-1 gap-2 2xl:grid-cols-2">
+              <div className={`grid auto-rows-fr ${desktopShellGapClass}`}>
+                {isSolved && (
+                  <>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="h-full min-h-0 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
+                      onClick={() => {
+                        setIsManualBoardReveal(false);
+                        exitToConfig();
+                      }}
+                    >
+                      New Config
+                    </Button>
+                    <Button
+                      type="button"
+                      className="h-full min-h-0 w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
+                      onClick={() => {
+                        setIsManualBoardReveal(false);
+                        loadNextPuzzle();
+                      }}
+                    >
+                      Next
+                    </Button>
+                  </>
+                )}
+
                 <Button
                   type="button"
                   variant="outline"
-                  className="h-10 w-full border-2 border-border bg-surface-white text-foreground hover:bg-accent"
-                  onClick={() => {
-                    setIsManualBoardReveal(false);
-                    exitToConfig();
-                  }}
+                  className="h-full min-h-0 w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent"
+                  onClick={advanceHint}
+                  disabled={isSolved || hintStage === 2}
                 >
-                  New Config
+                  {hintButtonLabel}
                 </Button>
-                <Button
-                  type="button"
-                  className="h-10 w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90"
-                  onClick={() => {
-                    setIsManualBoardReveal(false);
-                    loadNextPuzzle();
-                  }}
-                >
-                  Next Puzzle
-                </Button>
+
+                {renderRevealButton('h-full min-h-0 w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
               </div>
-            )}
-
-            <Button
-              type="button"
-              variant="outline"
-              className="w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent"
-              onClick={advanceHint}
-              disabled={isSolved || hintStage === 2}
-            >
-              {hintButtonLabel}
-            </Button>
-
-            {renderRevealButton('w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
+            </div>
           </div>
 
           {showDesktopMoveHistory && (
-            <div
-              className="self-start"
-              style={desktopLeftSectionHeight ? { height: `${desktopLeftSectionHeight}px` } : undefined}
-            >
+            <div className="min-h-0">
               <MoveList
                 moves={moves}
                 startingTurnColor={moveHistoryStartingTurnColor}
@@ -261,7 +238,6 @@ const Puzzles = () => {
           )}
         </div>
 
-        <ParticipantSummaryCard participant={participantSummaries.player} className="bg-surface-white/75" />
       </div>
     );
   };

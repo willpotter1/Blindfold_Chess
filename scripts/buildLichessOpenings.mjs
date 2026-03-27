@@ -12,14 +12,17 @@ import {
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildOpeningExplorerData } from '../src/lib/openingExplorerCore.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const SOURCE_MANIFEST_PATH = path.join(ROOT_DIR, 'data', 'lichess-openings-source.json');
 const OUTPUT_PUBLIC_CATALOG_PATH = path.join(ROOT_DIR, 'public', 'data', 'lichess-openings.lookup.json');
+const OUTPUT_PUBLIC_EXPLORER_PATH = path.join(ROOT_DIR, 'public', 'data', 'lichess-openings.explorer.json');
 const OUTPUT_PUBLIC_CHUNKS_DIR = path.join(ROOT_DIR, 'public', 'data', 'lichess-openings.chunks');
 const OUTPUT_PROCESSED_CATALOG_PATH = path.join(ROOT_DIR, 'data', 'processed', 'lichess-openings.lookup.json');
+const OUTPUT_PROCESSED_EXPLORER_PATH = path.join(ROOT_DIR, 'data', 'processed', 'lichess-openings.explorer.json');
 const OUTPUT_PROCESSED_RECORDS_PATH = path.join(ROOT_DIR, 'data', 'processed', 'lichess-openings.records.json');
 const OUTPUT_PROCESSED_CHUNKS_DIR = path.join(ROOT_DIR, 'data', 'processed', 'lichess-openings.chunks');
 
@@ -413,9 +416,15 @@ try {
   }
 
   const payload = buildCatalogAndRecords(baseRecords, metadata);
+  const explorer = buildOpeningExplorerData({
+    catalog: payload.catalog,
+    records: payload.records.records,
+  });
 
   writeJsonFile(OUTPUT_PUBLIC_CATALOG_PATH, payload.catalog);
+  writeJsonFile(OUTPUT_PUBLIC_EXPLORER_PATH, explorer);
   writeJsonFile(OUTPUT_PROCESSED_CATALOG_PATH, payload.catalog);
+  writeJsonFile(OUTPUT_PROCESSED_EXPLORER_PATH, explorer);
   writeJsonFile(OUTPUT_PROCESSED_RECORDS_PATH, payload.records);
 
   resetDirectory(OUTPUT_PUBLIC_CHUNKS_DIR);
@@ -427,7 +436,9 @@ try {
   });
 
   console.log(`Wrote openings catalog to ${OUTPUT_PUBLIC_CATALOG_PATH}`);
+  console.log(`Wrote openings explorer data to ${OUTPUT_PUBLIC_EXPLORER_PATH}`);
   console.log(`Wrote openings catalog copy to ${OUTPUT_PROCESSED_CATALOG_PATH}`);
+  console.log(`Wrote openings explorer copy to ${OUTPUT_PROCESSED_EXPLORER_PATH}`);
   console.log(`Wrote openings records to ${OUTPUT_PROCESSED_RECORDS_PATH}`);
   console.log(`Wrote ${payload.chunks.length} opening chunks to ${OUTPUT_PUBLIC_CHUNKS_DIR}`);
 } catch (error) {

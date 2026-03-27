@@ -9,6 +9,7 @@ interface MoveInputProps {
   disabled: boolean;
   errorMessage?: string;
   variant?: 'default' | 'compact';
+  className?: string;
 }
 
 export const MoveInput = ({
@@ -16,6 +17,7 @@ export const MoveInput = ({
   disabled,
   errorMessage,
   variant = 'default',
+  className,
 }: MoveInputProps) => {
   const [moveInput, setMoveInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -40,8 +42,8 @@ export const MoveInput = ({
   };
 
   return (
-    <Card className="bg-surface-white/75">
-      <CardContent className={cn(isCompact ? 'p-4 pt-4' : 'pt-6')}>
+    <Card className={cn('bg-surface-white/75', className)}>
+      <CardContent className={cn(isCompact ? 'p-3.5 pt-3.5' : 'pt-6')}>
         <form onSubmit={handleSubmit} className={cn(isCompact ? 'space-y-2.5' : 'space-y-3')}>
           <div className={cn(isCompact ? 'space-y-1.5' : 'space-y-2')}>
             <label
@@ -50,7 +52,7 @@ export const MoveInput = ({
             >
               Enter Your Move (SAN)
             </label>
-            <div className={cn('gap-2', isCompact ? 'flex flex-col' : 'flex')}>
+            <div className={cn('gap-2', isCompact ? 'grid grid-cols-[minmax(0,1fr)_auto] items-center' : 'flex')}>
               <Input
                 ref={inputRef}
                 id="move-input"
@@ -64,7 +66,7 @@ export const MoveInput = ({
               <Button
                 type="submit"
                 disabled={disabled || !moveInput.trim()}
-                className={cn(isCompact && 'w-full')}
+                className={cn(isCompact && 'min-w-[96px] px-5')}
               >
                 Play
               </Button>

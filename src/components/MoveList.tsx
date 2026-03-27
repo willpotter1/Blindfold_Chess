@@ -43,9 +43,9 @@ export const MoveList = ({ moves, startingTurnColor = 'white', className }: Move
   const displayedMovePairs = isReversed ? [...movePairs].reverse() : movePairs;
 
   return (
-    <Card className={cn('flex h-[380px] w-full flex-col bg-surface-white/75', className)}>
-      <CardHeader className="flex-row items-center justify-between space-y-0">
-        <CardTitle>Move History</CardTitle>
+    <Card className={cn('flex h-[min(380px,42vh)] w-full min-h-0 flex-col bg-surface-white/75', className)}>
+      <CardHeader className="flex-row items-center justify-between space-y-0 px-5 py-4">
+        <CardTitle className="text-[clamp(1.15rem,1.6vw,1.85rem)]">Move History</CardTitle>
         <button
           type="button"
           className="inline-flex h-7 w-7 items-center justify-center rounded-sm border-2 border-primary bg-surface-white p-1 hover:bg-accent"
@@ -61,7 +61,7 @@ export const MoveList = ({ moves, startingTurnColor = 'white', className }: Move
           />
         </button>
       </CardHeader>
-      <CardContent className="min-h-0 flex-1">
+      <CardContent className="min-h-0 flex-1 px-5 pb-5 pt-0">
         <ScrollArea className="h-full w-full pr-4">
           {displayedMovePairs.length === 0 ? (
             <p className="text-sm text-muted-foreground text-center py-8">

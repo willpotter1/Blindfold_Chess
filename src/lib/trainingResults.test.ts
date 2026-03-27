@@ -110,6 +110,14 @@ describe('trainingResults payload builders', () => {
       },
       openingLineId: 'line-42',
       config: {
+        selections: [{
+          id: 'branch:epd-1',
+          kind: 'branch',
+          nodeId: 'epd-1',
+          anchorRefId: 'ref-1',
+          openingName: 'French Defense',
+          eco: 'C00',
+        }],
         selectedFamilyNames: ['French Defense'],
         selectedLineIds: ['line-42'],
         playerColor: 'black',

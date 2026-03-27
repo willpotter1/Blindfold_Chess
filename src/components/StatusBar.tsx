@@ -23,7 +23,7 @@ export const StatusBar = ({ status, variant = 'default', className }: StatusBarP
   if (variant === 'compact') {
     return (
       <Card className={className ? `bg-surface-white/75 ${className}` : 'bg-surface-white/75'}>
-        <CardContent className={`px-4 py-3 pt-3 ${isCompactDisplayStatus ? 'flex min-h-[128px] items-center justify-center' : ''}`}>
+        <CardContent className={`px-4 py-3 pt-3 ${isCompactDisplayStatus ? 'flex min-h-[clamp(90px,12vh,120px)] items-center justify-center' : ''}`}>
           <div className={`space-y-1 ${isCompactDisplayStatus ? 'w-full text-center' : ''}`}>
             {isCompactDisplayStatus ? (
               <>
@@ -32,7 +32,7 @@ export const StatusBar = ({ status, variant = 'default', className }: StatusBarP
                     {compactDisplayLabel}
                   </p>
                 )}
-                <p className="text-[2.75rem] font-semibold leading-none text-primary">
+                <p className="text-[clamp(2rem,3vw,2.75rem)] font-semibold leading-none text-primary">
                   {compactDisplayValue}
                 </p>
               </>
