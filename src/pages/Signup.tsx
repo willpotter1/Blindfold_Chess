@@ -12,6 +12,10 @@ import { hasSupabaseConfig } from '@/lib/supabase';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 const primaryActionButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
+const authCardClassName = 'mx-auto max-w-xl rounded-[32px] border-2 border-border bg-surface-white shadow-theme-soft backdrop-blur-sm';
+const authPanelClassName = 'space-y-4 rounded-[24px] border-2 border-border bg-surface-white/80 p-5 sm:p-6';
+const authFieldClassName = 'space-y-2 rounded-2xl border-2 border-border bg-surface-white/75 p-4';
+const authInputClassName = 'border-border bg-surface-strong/55 text-foreground placeholder:text-foreground/65';
 const otpServerUnavailableDescription = 'The OTP server is not running. Start it with npm run auth:dev.';
 const signupUnavailableDescription = 'Account creation is temporarily unavailable. Please try again later.';
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
@@ -216,16 +220,17 @@ const Signup = () => {
 
       <div className="container mx-auto px-4 py-10 md:flex-1">
         {!hasSupabaseConfig && (
-          <div className="mx-auto mb-6 max-w-xl rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
+          <div className="mx-auto mb-6 max-w-xl rounded-[24px] border-2 border-destructive/40 bg-surface-white p-4 text-sm text-destructive shadow-theme-soft">
             Supabase is not configured. Set your `VITE_SUPABASE_*` env vars to enable authentication.
           </div>
         )}
-        <Card className="mx-auto max-w-xl">
-          <CardHeader>
+        <Card className={authCardClassName}>
+          <CardHeader className="space-y-2 pb-4 sm:pb-5">
             <CardTitle>Sign Up</CardTitle>
             <CardDescription>Create your account with a unique username, password, and email OTP.</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="pb-6">
+            <div className={authPanelClassName}>
             {isSignupAvailable === false && (
               <Alert variant="destructive">
                 <AlertTitle>Account creation unavailable</AlertTitle>
@@ -233,7 +238,7 @@ const Signup = () => {
               </Alert>
             )}
             <form className="space-y-4" onSubmit={otpSent ? handleSignup : handleSendOtp}>
-              <div className="space-y-2">
+              <div className={authFieldClassName}>
                 <Label htmlFor="signup-username">Username</Label>
                 <Input
                   id="signup-username"
@@ -244,9 +249,10 @@ const Signup = () => {
                   required
                   minLength={3}
                   maxLength={20}
+                  className={authInputClassName}
                 />
               </div>
-              <div className="space-y-2">
+              <div className={authFieldClassName}>
                 <Label htmlFor="signup-email">Email</Label>
                 <Input
                   id="signup-email"
@@ -256,9 +262,10 @@ const Signup = () => {
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
                   required
+                  className={authInputClassName}
                 />
               </div>
-              <div className="space-y-2">
+              <div className={authFieldClassName}>
                 <Label htmlFor="signup-password">Password</Label>
                 <Input
                   id="signup-password"
@@ -269,10 +276,11 @@ const Signup = () => {
                   onChange={(event) => setPassword(event.target.value)}
                   required
                   minLength={6}
+                  className={authInputClassName}
                 />
               </div>
               {otpSent && (
-                <div className="space-y-2">
+                <div className={authFieldClassName}>
                   <Label htmlFor="signup-otp">Email OTP</Label>
                   <Input
                     id="signup-otp"
@@ -284,6 +292,7 @@ const Signup = () => {
                     required
                     minLength={6}
                     maxLength={6}
+                    className={authInputClassName}
                   />
                 </div>
               )}
@@ -301,12 +310,13 @@ const Signup = () => {
                 </Button>
               )}
             </form>
-            <p className="mt-4 text-center text-sm text-muted-foreground">
-              Already have an account?{' '}
-              <Link to="/login" className="underline underline-offset-4">
-                Log in
-              </Link>
-            </p>
+              <p className="mt-4 text-center text-sm text-muted-foreground">
+                Already have an account?{' '}
+                <Link to="/login" className="underline underline-offset-4">
+                  Log in
+                </Link>
+              </p>
+            </div>
           </CardContent>
         </Card>
       </div>

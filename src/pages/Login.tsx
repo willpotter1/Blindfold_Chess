@@ -12,6 +12,10 @@ import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
 const primaryActionButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
 const textLinkClassName = 'text-sm font-medium text-primary underline underline-offset-4';
+const authCardClassName = 'mx-auto max-w-xl rounded-[32px] border-2 border-border bg-surface-white shadow-theme-soft backdrop-blur-sm';
+const authPanelClassName = 'space-y-6 rounded-[24px] border-2 border-border bg-surface-white/80 p-5 sm:p-6';
+const authFieldClassName = 'space-y-2 rounded-2xl border-2 border-border bg-surface-white/75 p-4';
+const authInputClassName = 'border-border bg-surface-strong/55 text-foreground placeholder:text-foreground/65';
 const otpServerUnavailableDescription = 'The OTP server is not running. Start it with npm run auth:dev.';
 const otpServerInvalidResponseDescription = 'The OTP server returned an invalid response. Check npm run auth:dev and try again.';
 const resetUnavailableDescription = 'Password reset is temporarily unavailable. Please try again later.';
@@ -297,11 +301,11 @@ const Login = () => {
 
       <div className="container mx-auto px-4 py-10 md:flex-1">
         {!hasSupabaseConfig && (
-          <div className="mx-auto mb-6 max-w-xl rounded-md border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
+          <div className="mx-auto mb-6 max-w-xl rounded-[24px] border-2 border-destructive/40 bg-surface-white p-4 text-sm text-destructive shadow-theme-soft">
             Supabase is not configured. Set your `VITE_SUPABASE_*` env vars to enable authentication.
           </div>
         )}
-        <Card className="mx-auto max-w-xl">
+        <Card className={authCardClassName}>
           <CardHeader className="space-y-2 pb-6">
             <CardTitle>{isForgotPasswordMode ? 'Forgot Password' : 'Login'}</CardTitle>
             <CardDescription>
@@ -310,7 +314,8 @@ const Login = () => {
                 : 'Sign in with your email or username and password.'}
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-6">
+          <CardContent className="pb-6">
+            <div className={authPanelClassName}>
             {isForgotPasswordMode ? (
               <form className="space-y-6" onSubmit={isResetOtpSent ? handleResetPassword : handleSendResetOtp}>
                 {isResetAvailable === false && (
@@ -319,7 +324,7 @@ const Login = () => {
                     <AlertDescription>{resetUnavailableDescription}</AlertDescription>
                   </Alert>
                 )}
-                <div className="space-y-2">
+                <div className={authFieldClassName}>
                   <Label htmlFor="forgot-identifier">Email or Username</Label>
                   <Input
                     id="forgot-identifier"
@@ -338,11 +343,12 @@ const Login = () => {
                       }
                     }}
                     required
+                    className={authInputClassName}
                   />
                 </div>
                 {isResetOtpSent && (
                   <>
-                    <div className="space-y-2">
+                    <div className={authFieldClassName}>
                       <Label htmlFor="forgot-otp">Reset OTP</Label>
                       <Input
                         id="forgot-otp"
@@ -352,9 +358,10 @@ const Login = () => {
                         value={resetOtp}
                         onChange={(event) => setResetOtp(event.target.value)}
                         required
+                        className={authInputClassName}
                       />
                     </div>
-                    <div className="space-y-2">
+                    <div className={authFieldClassName}>
                       <Label htmlFor="forgot-new-password">New Password</Label>
                       <Input
                         id="forgot-new-password"
@@ -363,9 +370,10 @@ const Login = () => {
                         value={resetNewPassword}
                         onChange={(event) => setResetNewPassword(event.target.value)}
                         required
+                        className={authInputClassName}
                       />
                     </div>
-                    <div className="space-y-2">
+                    <div className={authFieldClassName}>
                       <Label htmlFor="forgot-confirm-password">Confirm New Password</Label>
                       <Input
                         id="forgot-confirm-password"
@@ -374,6 +382,7 @@ const Login = () => {
                         value={confirmResetNewPassword}
                         onChange={(event) => setConfirmResetNewPassword(event.target.value)}
                         required
+                        className={authInputClassName}
                       />
                     </div>
                   </>
@@ -401,7 +410,7 @@ const Login = () => {
             ) : (
               <>
                 <form className="space-y-6" onSubmit={handleLogin}>
-                  <div className="space-y-2">
+                  <div className={authFieldClassName}>
                     <Label htmlFor="login-identifier">Email or Username</Label>
                     <Input
                       id="login-identifier"
@@ -411,9 +420,10 @@ const Login = () => {
                       value={identifier}
                       onChange={(event) => setIdentifier(event.target.value)}
                       required
+                      className={authInputClassName}
                     />
                   </div>
-                  <div className="space-y-2">
+                  <div className={authFieldClassName}>
                     <Label htmlFor="login-password">Password</Label>
                     <Input
                       id="login-password"
@@ -423,6 +433,7 @@ const Login = () => {
                       value={password}
                       onChange={(event) => setPassword(event.target.value)}
                       required
+                      className={authInputClassName}
                     />
                   </div>
                   <Button type="submit" className={primaryActionButtonClassName} disabled={isLoggingIn}>
@@ -450,6 +461,7 @@ const Login = () => {
                 </div>
               </>
             )}
+            </div>
           </CardContent>
         </Card>
       </div>
