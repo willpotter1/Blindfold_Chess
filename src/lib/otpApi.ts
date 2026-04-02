@@ -1,5 +1,14 @@
 const LOCAL_OTP_SERVER_PORT = '8787';
 const normalizedOtpApiBaseUrl = import.meta.env.VITE_OTP_API_BASE_URL?.trim().replace(/\/+$/, '');
+const AUTH_STATUS_REASONS = ['missing_mailer_config', 'missing_supabase_admin', 'missing_otp_hash_secret'] as const;
+
+export type AuthStatusReason = (typeof AUTH_STATUS_REASONS)[number];
+export type AuthStatus = {
+  ok: true;
+  signupReady: boolean;
+  resetReady: boolean;
+  reasons: AuthStatusReason[];
+};
 
 const isLocalOtpServerUrl = (value: string) => {
   try {
@@ -33,6 +42,29 @@ type OtpErrorPayload = {
   detail?: string;
 };
 
+const isAuthStatusReason = (value: unknown): value is AuthStatusReason =>
+  typeof value === 'string' && AUTH_STATUS_REASONS.includes(value as AuthStatusReason);
+
+const parseAuthStatus = (payload: unknown): AuthStatus => {
+  if (
+    payload &&
+    typeof payload === 'object' &&
+    'ok' in payload &&
+    payload.ok === true &&
+    'signupReady' in payload &&
+    typeof payload.signupReady === 'boolean' &&
+    'resetReady' in payload &&
+    typeof payload.resetReady === 'boolean' &&
+    'reasons' in payload &&
+    Array.isArray(payload.reasons) &&
+    payload.reasons.every((reason) => isAuthStatusReason(reason))
+  ) {
+    return payload as AuthStatus;
+  }
+
+  throw new Error('otp_response_invalid');
+};
+
 const getProxyFailureErrorCode = (response: Response, responseText: string) => {
   if (!isDevProxyOtpRequest || response.ok || response.status < 500) {
     return null;
@@ -53,14 +85,10 @@ const getProxyFailureErrorCode = (response: Response, responseText: string) => {
   return null;
 };
 
-const postJson = async <T>(path: string, payload: unknown): Promise<T> => {
+const requestJson = async <T>(path: string, init?: RequestInit): Promise<T> => {
   let response: Response;
   try {
-    response = await fetch(buildOtpApiUrl(path), {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
+    response = await fetch(buildOtpApiUrl(path), init);
   } catch (error) {
     if (error instanceof TypeError) {
       throw new Error('otp_server_unreachable');
@@ -81,13 +109,24 @@ const postJson = async <T>(path: string, payload: unknown): Promise<T> => {
   }
 
   if (!response.ok || body?.ok === false) {
-    throw new Error(proxyFailureErrorCode || body?.detail || body?.error || 'otp_request_failed');
+    throw new Error(proxyFailureErrorCode || body?.error || 'otp_request_failed');
   }
   if (!body) {
     throw new Error('otp_response_invalid');
   }
 
   return body;
+};
+
+const postJson = async <T>(path: string, payload: unknown): Promise<T> => requestJson<T>(path, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(payload),
+});
+
+export const getAuthStatus = async (): Promise<AuthStatus> => {
+  const body = await requestJson<unknown>('/auth/status', { method: 'GET' });
+  return parseAuthStatus(body);
 };
 
 export const sendOtpCode = async (email: string): Promise<void> => {

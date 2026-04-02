@@ -1,17 +1,19 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { AppSidebar } from '@/components/AppSidebar';
 import { useToast } from '@/hooks/use-toast';
-import { sendOtpCode, signupWithOtp } from '@/lib/otpApi';
+import { getAuthStatus, sendOtpCode, signupWithOtp } from '@/lib/otpApi';
 import { hasSupabaseConfig } from '@/lib/supabase';
 
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 const primaryActionButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
 const otpServerUnavailableDescription = 'The OTP server is not running. Start it with npm run auth:dev.';
+const signupUnavailableDescription = 'Account creation is temporarily unavailable. Please try again later.';
 const normalizeUsername = (value: string) => value.trim().toLowerCase();
 const isOtpResetRequiredError = (message: string) =>
   message === 'otp_not_found' || message === 'otp_expired' || message === 'max_attempts_exceeded';
@@ -52,11 +54,12 @@ const getSignupErrorDescription = (error: unknown) => {
   if (error.message === 'otp_api_not_configured') {
     return 'The OTP API is not configured.';
   }
-  if (error.message === 'mailer_not_configured') {
-    return 'The OTP server is missing mailer configuration.';
-  }
-  if (error.message === 'supabase_admin_not_configured') {
-    return 'The signup server is missing Supabase admin credentials.';
+  if (
+    error.message === 'mailer_not_configured' ||
+    error.message === 'supabase_admin_not_configured' ||
+    error.message === 'signup_unavailable'
+  ) {
+    return signupUnavailableDescription;
   }
   if (error.message === 'otp_request_failed') {
     return 'The OTP request failed. Check the local auth server and try again.';
@@ -72,7 +75,38 @@ const Signup = () => {
   const [isSendingOtp, setIsSendingOtp] = useState(false);
   const [isSigningUp, setIsSigningUp] = useState(false);
   const [otpSent, setOtpSent] = useState(false);
+  const [isCheckingSignupStatus, setIsCheckingSignupStatus] = useState(true);
+  const [isSignupAvailable, setIsSignupAvailable] = useState<boolean | null>(null);
   const { toast } = useToast();
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadSignupStatus = async () => {
+      setIsCheckingSignupStatus(true);
+      try {
+        const status = await getAuthStatus();
+        if (!cancelled) {
+          setIsSignupAvailable(status.signupReady);
+        }
+      } catch (error) {
+        if (!cancelled) {
+          console.error('Signup status check failed:', error);
+          setIsSignupAvailable(null);
+        }
+      } finally {
+        if (!cancelled) {
+          setIsCheckingSignupStatus(false);
+        }
+      }
+    };
+
+    void loadSignupStatus();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const handleSendOtp = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -88,6 +122,17 @@ const Signup = () => {
 
     setIsSendingOtp(true);
     try {
+      const status = await getAuthStatus();
+      setIsSignupAvailable(status.signupReady);
+      if (!status.signupReady) {
+        toast({
+          title: 'Account creation unavailable',
+          description: signupUnavailableDescription,
+          variant: 'destructive',
+        });
+        return;
+      }
+
       await sendOtpCode(email);
       setOtpSent(true);
       toast({
@@ -96,6 +141,9 @@ const Signup = () => {
       });
     } catch (error) {
       console.error('Send OTP failed:', error);
+      if (error instanceof Error && error.message === 'signup_unavailable') {
+        setIsSignupAvailable(false);
+      }
       if (error instanceof Error && error.message === 'cooldown_active') {
         setOtpSent(true);
       }
@@ -145,6 +193,9 @@ const Signup = () => {
       setOtpSent(false);
     } catch (error) {
       console.error('Signup failed:', error);
+      if (error instanceof Error && error.message === 'signup_unavailable') {
+        setIsSignupAvailable(false);
+      }
       if (error instanceof Error && isOtpResetRequiredError(error.message)) {
         setOtp('');
         setOtpSent(false);
@@ -174,7 +225,13 @@ const Signup = () => {
             <CardTitle>Sign Up</CardTitle>
             <CardDescription>Create your account with a unique username, password, and email OTP.</CardDescription>
           </CardHeader>
-          <CardContent>
+          <CardContent className="space-y-4">
+            {isSignupAvailable === false && (
+              <Alert variant="destructive">
+                <AlertTitle>Account creation unavailable</AlertTitle>
+                <AlertDescription>{signupUnavailableDescription}</AlertDescription>
+              </Alert>
+            )}
             <form className="space-y-4" onSubmit={otpSent ? handleSignup : handleSendOtp}>
               <div className="space-y-2">
                 <Label htmlFor="signup-username">Username</Label>
@@ -235,7 +292,11 @@ const Signup = () => {
                   {isSigningUp ? 'Creating account...' : 'Verify OTP and Sign Up'}
                 </Button>
               ) : (
-                <Button type="submit" className={primaryActionButtonClassName} disabled={isSendingOtp}>
+                <Button
+                  type="submit"
+                  className={primaryActionButtonClassName}
+                  disabled={isSendingOtp || isCheckingSignupStatus || isSignupAvailable === false}
+                >
                   {isSendingOtp ? 'Creating account...' : 'Create Account'}
                 </Button>
               )}

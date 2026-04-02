@@ -1,6 +1,7 @@
 import { createHash, randomInt, timingSafeEqual } from "node:crypto";
 import http from "node:http";
 import { createClient } from "@supabase/supabase-js";
+import { getOtpAuthReadiness, getOtpAvailabilityError } from "./otp-auth-readiness.mjs";
 
 const PORT = Number(process.env.OTP_SERVER_PORT ?? 8787);
 const ALLOWED_ORIGINS = String(
@@ -20,6 +21,7 @@ const SUPABASE_URL = process.env.SUPABASE_URL ?? process.env.VITE_SUPABASE_URL ?
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY ?? "";
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
 const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
+const getAuthReadiness = () => getOtpAuthReadiness(process.env);
 
 if (!MAILERSEND_API_TOKEN || !MAILERSEND_FROM_EMAIL) {
   console.warn("Missing MAILERSEND_API_TOKEN or MAILERSEND_FROM_EMAIL. OTP email endpoints will fail.");
@@ -328,12 +330,13 @@ const updateAuthPassword = async (userId, password) => {
 const handleSendOtp = async (req, res) => {
   const body = await parseJsonBody(req);
   const email = normalizeEmail(body.email);
+  const readiness = getAuthReadiness();
 
   if (!email || !email.includes("@")) {
     return json(req, res, 400, { ok: false, error: "invalid_email" });
   }
-  if (!MAILERSEND_API_TOKEN || !MAILERSEND_FROM_EMAIL) {
-    return json(req, res, 500, { ok: false, error: "mailer_not_configured" });
+  if (!readiness.signupReady) {
+    return json(req, res, 503, { ok: false, error: getOtpAvailabilityError("signup") });
   }
 
   try {
@@ -353,6 +356,7 @@ const handleSignup = async (req, res) => {
   const username = normalizeUsername(body.username);
   const otp = String(body.otp ?? "").trim();
   const password = String(body.password ?? "");
+  const readiness = getAuthReadiness();
 
   if (!email || !email.includes("@")) {
     return json(req, res, 400, { ok: false, error: "invalid_email" });
@@ -365,6 +369,9 @@ const handleSignup = async (req, res) => {
   }
   if (password.length < 6) {
     return json(req, res, 400, { ok: false, error: "weak_password" });
+  }
+  if (!readiness.signupReady) {
+    return json(req, res, 503, { ok: false, error: getOtpAvailabilityError("signup") });
   }
 
   const verification = verifyOtpRecord("signup", email, otp);
@@ -398,7 +405,7 @@ const handleSignup = async (req, res) => {
 
     const mappedError = mapSupabaseError(error);
     if (mappedError.message === "supabase_admin_not_configured") {
-      return json(req, res, 500, { ok: false, error: "supabase_admin_not_configured" });
+      return json(req, res, 503, { ok: false, error: getOtpAvailabilityError("signup") });
     }
 
     return json(req, res, 400, { ok: false, error: mappedError.message });
@@ -437,12 +444,13 @@ const handleResolveIdentifier = async (req, res) => {
 const handleSendResetOtp = async (req, res) => {
   const body = await parseJsonBody(req);
   const email = normalizeEmail(body.email);
+  const readiness = getAuthReadiness();
 
   if (!email || !email.includes("@")) {
     return json(req, res, 400, { ok: false, error: "invalid_email" });
   }
-  if (!MAILERSEND_API_TOKEN || !MAILERSEND_FROM_EMAIL) {
-    return json(req, res, 500, { ok: false, error: "mailer_not_configured" });
+  if (!readiness.resetReady) {
+    return json(req, res, 503, { ok: false, error: getOtpAvailabilityError("reset") });
   }
 
   try {
@@ -462,7 +470,7 @@ const handleSendResetOtp = async (req, res) => {
       return json(req, res, 429, { ok: false, error: "cooldown_active" });
     }
     if (error instanceof Error && error.message === "supabase_admin_not_configured") {
-      return json(req, res, 500, { ok: false, error: "supabase_admin_not_configured" });
+      return json(req, res, 503, { ok: false, error: getOtpAvailabilityError("reset") });
     }
     throw error;
   }
@@ -473,12 +481,16 @@ const handleResetPassword = async (req, res) => {
   const email = normalizeEmail(body.email);
   const code = String(body.otp ?? "").trim();
   const newPassword = String(body.newPassword ?? "");
+  const readiness = getAuthReadiness();
 
   if (!email || !code || !newPassword) {
     return json(req, res, 400, { ok: false, error: "missing_fields" });
   }
   if (newPassword.length < 6) {
     return json(req, res, 400, { ok: false, error: "weak_password" });
+  }
+  if (!readiness.resetReady) {
+    return json(req, res, 503, { ok: false, error: getOtpAvailabilityError("reset") });
   }
 
   const verification = verifyOtpRecord("password_reset", email, code);
@@ -501,7 +513,7 @@ const handleResetPassword = async (req, res) => {
   } catch (error) {
     const mappedError = mapSupabaseError(error);
     if (mappedError.message === "supabase_admin_not_configured") {
-      return json(req, res, 500, { ok: false, error: "supabase_admin_not_configured" });
+      return json(req, res, 503, { ok: false, error: getOtpAvailabilityError("reset") });
     }
     throw mappedError;
   }
@@ -549,6 +561,11 @@ const server = http.createServer(async (req, res) => {
 
     if (req.method === "GET" && req.url === "/healthz") {
       return json(req, res, 200, { ok: true });
+    }
+
+    if (req.method === "GET" && req.url === "/auth/status") {
+      const { signupReady, resetReady, reasons } = getAuthReadiness();
+      return json(req, res, 200, { ok: true, signupReady, resetReady, reasons });
     }
 
     return json(req, res, 404, { ok: false, error: "not_found" });

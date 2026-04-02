@@ -1,18 +1,20 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { AppSidebar } from '@/components/AppSidebar';
 import { useToast } from '@/hooks/use-toast';
-import { resetPasswordWithOtp, resolveIdentifierToEmail, sendPasswordResetOtp } from '@/lib/otpApi';
+import { getAuthStatus, resetPasswordWithOtp, resolveIdentifierToEmail, sendPasswordResetOtp } from '@/lib/otpApi';
 import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
 const primaryActionButtonClassName = 'w-full border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90';
 const textLinkClassName = 'text-sm font-medium text-primary underline underline-offset-4';
 const otpServerUnavailableDescription = 'The OTP server is not running. Start it with npm run auth:dev.';
 const otpServerInvalidResponseDescription = 'The OTP server returned an invalid response. Check npm run auth:dev and try again.';
+const resetUnavailableDescription = 'Password reset is temporarily unavailable. Please try again later.';
 
 const getOtpRequestErrorDescription = (error: unknown) => {
   if (!(error instanceof Error)) {
@@ -27,8 +29,8 @@ const getOtpRequestErrorDescription = (error: unknown) => {
   if (error.message === 'otp_api_not_configured') {
     return 'The OTP API is not configured.';
   }
-  if (error.message === 'mailer_not_configured') {
-    return 'The OTP server is missing mailer configuration.';
+  if (error.message === 'mailer_not_configured' || error.message === 'reset_unavailable') {
+    return resetUnavailableDescription;
   }
   if (error.message === 'otp_request_failed') {
     return 'The OTP request failed. Check the local auth server and try again.';
@@ -49,8 +51,39 @@ const Login = () => {
   const [isResetOtpSent, setIsResetOtpSent] = useState(false);
   const [isSendingResetOtp, setIsSendingResetOtp] = useState(false);
   const [isResettingPassword, setIsResettingPassword] = useState(false);
+  const [isCheckingResetStatus, setIsCheckingResetStatus] = useState(true);
+  const [isResetAvailable, setIsResetAvailable] = useState<boolean | null>(null);
   const { toast } = useToast();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadResetStatus = async () => {
+      setIsCheckingResetStatus(true);
+      try {
+        const status = await getAuthStatus();
+        if (!cancelled) {
+          setIsResetAvailable(status.resetReady);
+        }
+      } catch (error) {
+        if (!cancelled) {
+          console.error('Reset status check failed:', error);
+          setIsResetAvailable(null);
+        }
+      } finally {
+        if (!cancelled) {
+          setIsCheckingResetStatus(false);
+        }
+      }
+    };
+
+    void loadResetStatus();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const getResetErrorDescription = (error: unknown) => {
     const otpRequestErrorDescription = getOtpRequestErrorDescription(error);
@@ -79,7 +112,7 @@ const Login = () => {
       return 'Use a password with at least 6 characters.';
     }
     if (error.message === 'supabase_admin_not_configured') {
-      return 'The reset server is missing Supabase admin credentials.';
+      return resetUnavailableDescription;
     }
     if (error.message === 'identifier_not_found' || error.message === 'email_not_found') {
       return 'No account found for that email or username.';
@@ -161,6 +194,17 @@ const Login = () => {
 
     setIsSendingResetOtp(true);
     try {
+      const status = await getAuthStatus();
+      setIsResetAvailable(status.resetReady);
+      if (!status.resetReady) {
+        toast({
+          title: 'Password reset unavailable',
+          description: resetUnavailableDescription,
+          variant: 'destructive',
+        });
+        return;
+      }
+
       const resolvedEmail = await resolveIdentifierToEmail(forgotIdentifier);
       await sendPasswordResetOtp(resolvedEmail);
       setForgotResolvedEmail(resolvedEmail);
@@ -171,6 +215,9 @@ const Login = () => {
       });
     } catch (error) {
       console.error('Send reset OTP failed:', error);
+      if (error instanceof Error && error.message === 'reset_unavailable') {
+        setIsResetAvailable(false);
+      }
       toast({
         title: 'Could not send reset OTP',
         description: getResetErrorDescription(error),
@@ -231,6 +278,9 @@ const Login = () => {
       setIsForgotPasswordMode(false);
     } catch (error) {
       console.error('Password reset failed:', error);
+      if (error instanceof Error && error.message === 'reset_unavailable') {
+        setIsResetAvailable(false);
+      }
       toast({
         title: 'Password reset failed',
         description: getResetErrorDescription(error),
@@ -263,6 +313,12 @@ const Login = () => {
           <CardContent className="space-y-6">
             {isForgotPasswordMode ? (
               <form className="space-y-6" onSubmit={isResetOtpSent ? handleResetPassword : handleSendResetOtp}>
+                {isResetAvailable === false && (
+                  <Alert variant="destructive">
+                    <AlertTitle>Password reset unavailable</AlertTitle>
+                    <AlertDescription>{resetUnavailableDescription}</AlertDescription>
+                  </Alert>
+                )}
                 <div className="space-y-2">
                   <Label htmlFor="forgot-identifier">Email or Username</Label>
                   <Input
@@ -323,7 +379,15 @@ const Login = () => {
                   </>
                 )}
                 <div className="pt-1">
-                  <Button type="submit" className={primaryActionButtonClassName} disabled={isSendingResetOtp || isResettingPassword}>
+                  <Button
+                    type="submit"
+                    className={primaryActionButtonClassName}
+                    disabled={
+                      isSendingResetOtp ||
+                      isResettingPassword ||
+                      (!isResetOtpSent && (isCheckingResetStatus || isResetAvailable === false))
+                    }
+                  >
                     {isResetOtpSent
                       ? isResettingPassword
                         ? 'Resetting Password...'
