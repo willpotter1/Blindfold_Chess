@@ -10,6 +10,7 @@ interface MoveInputProps {
   errorMessage?: string;
   variant?: 'default' | 'compact';
   className?: string;
+  fillHeight?: boolean;
 }
 
 export const MoveInput = ({
@@ -18,6 +19,7 @@ export const MoveInput = ({
   errorMessage,
   variant = 'default',
   className,
+  fillHeight = false,
 }: MoveInputProps) => {
   const [moveInput, setMoveInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -42,9 +44,9 @@ export const MoveInput = ({
   };
 
   return (
-    <Card className={cn('bg-surface-white/75', className)}>
-      <CardContent className={cn(isCompact ? 'p-3.5 pt-3.5' : 'pt-6')}>
-        <form onSubmit={handleSubmit} className={cn(isCompact ? 'space-y-2.5' : 'space-y-3')}>
+    <Card className={cn('bg-surface-white/75', fillHeight && 'h-full', className)}>
+      <CardContent className={cn(isCompact ? 'p-3.5 pt-3.5' : 'pt-6', fillHeight && 'flex h-full flex-col')}>
+        <form onSubmit={handleSubmit} className={cn(isCompact ? 'space-y-2.5' : 'space-y-3', fillHeight && 'flex h-full flex-col')}>
           <div className={cn(isCompact ? 'space-y-1.5' : 'space-y-2')}>
             <label
               htmlFor="move-input"
@@ -72,7 +74,7 @@ export const MoveInput = ({
               </Button>
             </div>
           </div>
-          
+
           {errorMessage && (
             <div className={cn('rounded bg-destructive/10 p-2 text-destructive', isCompact ? 'text-xs' : 'text-sm')}>
               {errorMessage}

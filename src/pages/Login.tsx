@@ -299,7 +299,7 @@ const Login = () => {
     <div className="bg-stage-glow min-h-screen md:flex">
       <AppSidebar />
 
-      <div className="container mx-auto px-4 py-10 md:flex-1">
+      <div className="container mx-auto px-4 py-10 [@media(max-width:639px)_and_(orientation:portrait)]:pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:flex-1">
         {!hasSupabaseConfig && (
           <div className="mx-auto mb-6 max-w-xl rounded-[24px] border-2 border-destructive/40 bg-surface-white p-4 text-sm text-destructive shadow-theme-soft">
             Supabase is not configured. Set your `VITE_SUPABASE_*` env vars to enable authentication.

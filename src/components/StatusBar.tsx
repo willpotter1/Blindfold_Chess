@@ -4,9 +4,10 @@ interface StatusBarProps {
   status: string;
   variant?: 'default' | 'compact';
   className?: string;
+  condensed?: boolean;
 }
 
-export const StatusBar = ({ status, variant = 'default', className }: StatusBarProps) => {
+export const StatusBar = ({ status, variant = 'default', className, condensed = false }: StatusBarProps) => {
   const lastComputerMovePrefix = 'Last computer move: ';
   const [primaryStatus, secondaryStatus] = status.split('\n');
   const isLastComputerMoveStatus = primaryStatus.startsWith(lastComputerMovePrefix);
@@ -17,13 +18,13 @@ export const StatusBar = ({ status, variant = 'default', className }: StatusBarP
   const lastComputerMove = isLastComputerMoveStatus ? primaryStatus.slice(lastComputerMovePrefix.length) : null;
   const largeDisplayText = isLastComputerMoveStatus ? lastComputerMove : (isTurnStatus || isSolvedStatus) ? primaryStatus : null;
   const compactMoveText = lastComputerMove?.trim();
-  const compactDisplayLabel = isLastComputerMoveStatus ? 'Last computer move' : isSolvedStatus ? null : checkmateMatch?.[1] ?? null;
+  const compactDisplayLabel = isLastComputerMoveStatus ? 'Last move' : isSolvedStatus ? null : checkmateMatch?.[1] ?? null;
   const compactDisplayValue = isLastComputerMoveStatus ? compactMoveText || '—' : isSolvedStatus ? primaryStatus : checkmateMatch?.[2] ?? null;
 
   if (variant === 'compact') {
     return (
       <Card className={className ? `bg-surface-white/75 ${className}` : 'bg-surface-white/75'}>
-        <CardContent className={`px-4 py-3 pt-3 ${isCompactDisplayStatus ? 'flex min-h-[clamp(90px,12vh,120px)] items-center justify-center' : ''}`}>
+        <CardContent className={`px-4 py-3 pt-3 ${isCompactDisplayStatus ? `flex items-center justify-center ${condensed ? 'min-h-[64px]' : 'min-h-[clamp(90px,12vh,120px)]'}` : ''}`}>
           <div className={`space-y-1 ${isCompactDisplayStatus ? 'w-full text-center' : ''}`}>
             {isCompactDisplayStatus ? (
               <>
@@ -32,7 +33,7 @@ export const StatusBar = ({ status, variant = 'default', className }: StatusBarP
                     {compactDisplayLabel}
                   </p>
                 )}
-                <p className="text-[clamp(2rem,3vw,2.75rem)] font-semibold leading-none text-primary">
+                <p className={condensed ? 'text-[1.5rem] font-semibold leading-none text-primary' : 'text-[clamp(2rem,3vw,2.75rem)] font-semibold leading-none text-primary'}>
                   {compactDisplayValue}
                 </p>
               </>

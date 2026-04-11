@@ -12,18 +12,23 @@ export interface ParticipantSummaryCardModel {
   isToMove: boolean;
   iconSrc: string;
   iconAlt: string;
+  materialAdvantage?: number;
 }
 
 interface ParticipantSummaryCardProps {
   participant: ParticipantSummaryCardModel;
   className?: string;
+  compact?: boolean;
 }
 
 export const ParticipantSummaryCard = ({
   participant,
   className,
+  compact = false,
 }: ParticipantSummaryCardProps) => {
   const pieceColorLabel = participant.pieceColor === 'white' ? 'White' : 'Black';
+  const compactPawnSrc = `${assetBase}/pieces/${participant.pieceColor === 'white' ? 'w' : 'b'}P.svg`;
+  const compactPawnAlt = `${pieceColorLabel} pawn`;
   const getCapturedPieceSrc = (piece: CapturedPieceDescriptor) => {
     const pieceColorKey = piece.color === 'white' ? 'w' : 'b';
     return `${assetBase}/pieces/${pieceColorKey}${piece.type.toUpperCase()}.svg`;
@@ -42,13 +47,13 @@ export const ParticipantSummaryCard = ({
 
   return (
     <Card className={cn('bg-surface-white/75', className)}>
-      <CardContent className="p-3 pt-3">
-        <div className="flex items-center gap-2.5">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border-2 border-border bg-surface-white shadow-theme-soft">
+      <CardContent className={cn('p-3 pt-3', compact && 'px-2.5 py-2')}>
+        <div className={cn('flex items-center gap-2.5', compact && 'gap-2')}>
+          <div className={cn('flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border-2 border-border bg-surface-white shadow-theme-soft', compact && 'h-8 w-8 rounded-xl')}>
             <img
-              src={participant.iconSrc}
-              alt={participant.iconAlt}
-              className="h-7 w-7 object-contain"
+              src={compact ? compactPawnSrc : participant.iconSrc}
+              alt={compact ? compactPawnAlt : participant.iconAlt}
+              className={cn('h-7 w-7 object-contain', compact && 'h-5 w-5')}
               draggable={false}
             />
           </div>
@@ -56,33 +61,43 @@ export const ParticipantSummaryCard = ({
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
-                <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-primary/65">
+                <p className={cn('text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-primary/65', compact && 'text-[0.58rem] tracking-[0.14em]')}>
                   {participant.label}
                 </p>
-                <p className="truncate text-sm font-semibold text-primary">
-                  {pieceColorLabel} pieces
-                </p>
+                {!compact && (
+                  <p className="truncate text-sm font-semibold text-primary">
+                    {pieceColorLabel} pieces
+                  </p>
+                )}
               </div>
 
               {participant.isToMove && (
-                <Badge className="shrink-0 border-border bg-primary text-primary-foreground hover:bg-primary">
+                <Badge className={cn('shrink-0 border-border bg-primary text-primary-foreground hover:bg-primary', compact && 'px-1.5 py-0 text-[0.6rem]')}>
                   To move
                 </Badge>
               )}
             </div>
 
-            <div className="mt-2">
-              <div className="min-h-6">
-                <div className="flex min-h-6 flex-wrap items-center gap-1">
+            <div className={cn('mt-2', compact && 'mt-1')}>
+              <div className={cn('min-h-6', compact && 'min-h-5')}>
+                <div className={cn('flex min-h-6 flex-wrap items-center gap-1', compact && 'min-h-5 gap-0.5')}>
                   {participant.capturedPieces.map((piece, index) => (
                     <img
                       key={`${piece.color}-${piece.type}-${index}`}
                       src={getCapturedPieceSrc(piece)}
                       alt={getCapturedPieceAlt(piece)}
-                      className="h-5 w-5 object-contain"
+                      className={cn('h-5 w-5 object-contain', compact && 'h-4 w-4')}
                       draggable={false}
                     />
                   ))}
+                  {compact && typeof participant.materialAdvantage === 'number' && participant.materialAdvantage > 0 && (
+                    <span className="ml-1 text-xs font-semibold text-primary">
+                      +{participant.materialAdvantage}
+                    </span>
+                  )}
+                  {compact && participant.capturedPieces.length === 0 && participant.materialAdvantage === 0 && (
+                    <span className="sr-only">No captured material</span>
+                  )}
                 </div>
               </div>
             </div>

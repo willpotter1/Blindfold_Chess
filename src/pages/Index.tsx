@@ -53,10 +53,23 @@ type ParticipantDescriptor = {
   pieceColor: PieceColor;
   iconSrc: string;
   iconAlt: string;
+  materialAdvantage: number;
 };
 
 const getOpposingColor = (color: PieceColor): PieceColor => (
   color === 'white' ? 'black' : 'white'
+);
+
+const PIECE_VALUES = {
+  q: 9,
+  r: 5,
+  b: 3,
+  n: 3,
+  p: 1,
+} as const;
+
+const getCapturedMaterialValue = (capturedPieces: CapturedPiecesByColor[PieceColor]) => (
+  capturedPieces.reduce((total, piece) => total + PIECE_VALUES[piece.type], 0)
 );
 
 const buildParticipantSummary = (
@@ -70,6 +83,7 @@ const buildParticipantSummary = (
   isToMove: !gameState.isOver && gameState.turnColor === participant.pieceColor,
   iconSrc: participant.iconSrc,
   iconAlt: participant.iconAlt,
+  materialAdvantage: participant.materialAdvantage,
 });
 
 const getPassNPlayIcon = (pieceColor: PieceColor) => (
@@ -78,6 +92,10 @@ const getPassNPlayIcon = (pieceColor: PieceColor) => (
 
 const getParticipantSummaries = (gameState: GameState) => {
   const capturedPiecesByColor = getCapturedPiecesByColorFromFen(gameState.fen);
+  const whiteCapturedValue = getCapturedMaterialValue(capturedPiecesByColor.white);
+  const blackCapturedValue = getCapturedMaterialValue(capturedPiecesByColor.black);
+  const whiteMaterialAdvantage = whiteCapturedValue - blackCapturedValue;
+  const blackMaterialAdvantage = blackCapturedValue - whiteCapturedValue;
 
   if (gameState.mode === 'computer') {
     const computerColor = getOpposingColor(gameState.playerColor);
@@ -88,12 +106,14 @@ const getParticipantSummaries = (gameState: GameState) => {
         pieceColor: computerColor,
         iconSrc: computerIcon,
         iconAlt: 'Computer icon',
+        materialAdvantage: computerColor === 'white' ? whiteMaterialAdvantage : blackMaterialAdvantage,
       }, capturedPiecesByColor),
       bottom: buildParticipantSummary(gameState, {
         label: 'Player',
         pieceColor: gameState.playerColor,
         iconSrc: playerIcon,
         iconAlt: 'Player icon',
+        materialAdvantage: gameState.playerColor === 'white' ? whiteMaterialAdvantage : blackMaterialAdvantage,
       }, capturedPiecesByColor),
     };
   }
@@ -107,12 +127,14 @@ const getParticipantSummaries = (gameState: GameState) => {
       pieceColor: topColor,
       iconSrc: getPassNPlayIcon(topColor),
       iconAlt: `${topColor === 'white' ? 'White' : 'Black'} player icon`,
+      materialAdvantage: topColor === 'white' ? whiteMaterialAdvantage : blackMaterialAdvantage,
     }, capturedPiecesByColor),
     bottom: buildParticipantSummary(gameState, {
       label: bottomColor === 'white' ? 'White' : 'Black',
       pieceColor: bottomColor,
       iconSrc: getPassNPlayIcon(bottomColor),
       iconAlt: `${bottomColor === 'white' ? 'White' : 'Black'} player icon`,
+      materialAdvantage: bottomColor === 'white' ? whiteMaterialAdvantage : blackMaterialAdvantage,
     }, capturedPiecesByColor),
   };
 };
@@ -544,17 +566,46 @@ const Index = () => {
       );
     }
 
+    const revealButton = renderRevealButton('w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent');
+
     return (
-      <>
-        {shouldShowStatusBar && <StatusBar status={statusText} />}
-        <MoveInput
-          onSubmitMove={handlePlayerMove}
-          disabled={!isHumanTurn}
-          errorMessage={moveError}
-        />
-        {!gameState.hideMoveHistory && <MoveList moves={gameState.moves} />}
-        {renderRevealButton('w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
-      </>
+      <div className="space-y-4 [@media(max-width:639px)_and_(orientation:portrait)]:space-y-3">
+        {(shouldShowStatusBar || revealButton) && (
+          <div className="space-y-4 [@media(max-width:639px)_and_(orientation:portrait)]:grid [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-2 [@media(max-width:639px)_and_(orientation:portrait)]:gap-3 [@media(max-width:639px)_and_(orientation:portrait)]:space-y-0">
+            {shouldShowStatusBar && (
+              <StatusBar
+                status={statusText}
+                variant="compact"
+                condensed
+                className="[@media(max-width:639px)_and_(orientation:portrait)]:h-full"
+              />
+            )}
+            {revealButton && (
+              <div className="[@media(max-width:639px)_and_(orientation:portrait)]:flex [@media(max-width:639px)_and_(orientation:portrait)]:items-stretch">
+                {renderRevealButton('w-full h-full min-h-[64px] border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="space-y-4 [@media(max-width:639px)_and_(orientation:portrait)]:grid [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-2 [@media(max-width:639px)_and_(orientation:portrait)]:items-stretch [@media(max-width:639px)_and_(orientation:portrait)]:gap-3 [@media(max-width:639px)_and_(orientation:portrait)]:space-y-0">
+          <MoveInput
+            onSubmitMove={handlePlayerMove}
+            disabled={!isHumanTurn}
+            errorMessage={moveError}
+            variant="compact"
+            fillHeight
+            className="[@media(max-width:639px)_and_(orientation:portrait)]:h-full"
+          />
+          {!gameState.hideMoveHistory && (
+            <MoveList
+              moves={gameState.moves}
+              compact
+              className="[@media(max-width:639px)_and_(orientation:portrait)]:h-full [@media(max-width:639px)_and_(orientation:portrait)]:min-h-[160px]"
+            />
+          )}
+        </div>
+      </div>
     );
   };
 
@@ -669,9 +720,12 @@ const Index = () => {
         canonicalUrl={SEO_CANONICAL_URL}
         ogImage={SEO_OG_IMAGE}
       />
-      <AppSidebar onHomeClick={handleLogoClick} desktopMode={showDesktopGameLayout} />
+      <AppSidebar
+        onHomeClick={handleLogoClick}
+        desktopMode={showDesktopGameLayout}
+      />
 
-      <div className={`mx-auto w-full px-4 ${showDesktopGameLayout ? 'md:my-4 md:h-[calc(100vh-2rem)] md:flex-1 md:py-0' : gameState ? 'py-6 md:flex-1 md:py-8' : 'py-4 md:flex-1 md:py-4 lg:py-3'}`}>
+      <div className={`mx-auto w-full px-4 ${showDesktopGameLayout ? 'md:my-4 md:h-[calc(100vh-2rem)] md:flex-1 md:py-0' : gameState ? 'py-6 [@media(max-width:639px)_and_(orientation:portrait)]:pt-2 [@media(max-width:639px)_and_(orientation:portrait)]:pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:flex-1 md:py-8' : 'py-4 [@media(max-width:639px)_and_(orientation:portrait)]:pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:flex-1 md:py-4 lg:py-3'}`}>
         {gameState ? (
           <div className={showDesktopGameLayout ? 'h-full' : ''}>
             {showDesktopGameLayout ? (
@@ -702,8 +756,14 @@ const Index = () => {
                 </div>
               </div>
             ) : (
-              <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-4">
-                <div className="flex flex-col items-center justify-start space-y-4">
+              <div className="mx-auto grid w-full max-w-[1800px] grid-cols-1 gap-3">
+                <div className="flex flex-col items-center justify-start space-y-2.5">
+                  {participantSummaries && (
+                    <div className="grid w-full max-w-[560px] grid-cols-2 gap-2 md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
+                      <ParticipantSummaryCard participant={participantSummaries.top} compact />
+                      <ParticipantSummaryCard participant={participantSummaries.bottom} compact />
+                    </div>
+                  )}
                   <div className="mx-auto w-full max-w-[560px] md:max-w-[600px] lg:max-w-[min(52vw,760px)]">
                     <BlindfoldBoard
                       fen={gameState.fen}
@@ -722,37 +782,38 @@ const Index = () => {
             )}
           </div>
         ) : (
-          <div className={`bg-paper-grain-reverse relative flex items-center overflow-hidden rounded-[36px] px-5 py-6 sm:px-7 sm:py-7 ${showDesktopGameLayout ? 'md:h-full md:px-10 md:py-8' : 'min-h-[calc(100dvh-9rem)] lg:min-h-[calc(100dvh-7rem)] lg:px-10 lg:py-8'}`}>
+          <div className={`bg-paper-grain-reverse relative flex items-center overflow-hidden rounded-[36px] px-5 py-6 sm:px-7 sm:py-7 ${showDesktopGameLayout ? 'md:h-full md:px-10 md:py-8' : 'min-h-[calc(100dvh-9rem)] lg:min-h-[calc(100dvh-7rem)] lg:px-10 lg:py-8'} [@media(max-width:639px)_and_(orientation:portrait)]:px-4 [@media(max-width:639px)_and_(orientation:portrait)]:py-5`}>
 
-            <div className="relative z-10 grid w-full items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-6">
-              <div className="relative">
+            <div className="relative z-10 grid w-full items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-6 [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] [@media(max-width:639px)_and_(orientation:portrait)]:items-start [@media(max-width:639px)_and_(orientation:portrait)]:gap-x-3 [@media(max-width:639px)_and_(orientation:portrait)]:gap-y-4">
+              <div className="relative [@media(max-width:639px)_and_(orientation:portrait)]:col-start-2 [@media(max-width:639px)_and_(orientation:portrait)]:row-start-1 [@media(max-width:639px)_and_(orientation:portrait)]:self-center">
                 <div
                   id="landing-visual"
-                  className="animate-drift-in relative mx-auto w-full max-w-4xl"
+                  className="animate-drift-in relative mx-auto w-full max-w-4xl [@media(max-width:639px)_and_(orientation:portrait)]:max-w-[12.5rem]"
                 >
-                  <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-surface-white/60 blur-3xl" />
-                  <div className="shadow-theme-strong relative rounded-[34px] bg-surface-white/30 p-3 sm:p-5">
+                  <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-surface-white/60 blur-3xl [@media(max-width:639px)_and_(orientation:portrait)]:inset-x-[12%] [@media(max-width:639px)_and_(orientation:portrait)]:top-[10%] [@media(max-width:639px)_and_(orientation:portrait)]:h-[72%] [@media(max-width:639px)_and_(orientation:portrait)]:blur-2xl" />
+                  <div className="shadow-theme-strong relative rounded-[34px] bg-surface-white/30 p-3 sm:p-5 [@media(max-width:639px)_and_(orientation:portrait)]:rounded-[24px] [@media(max-width:639px)_and_(orientation:portrait)]:p-2">
                     <LandingOperaReplay />
                   </div>
                 </div>
               </div>
 
-              <div className="max-w-xl">
-                <div className="animate-rise-fade">
-                  <h1 className="text-display-balance text-[clamp(2.5rem,4.5vw,4.5rem)] font-semibold leading-[0.9] text-primary">
+              <div className="max-w-xl [@media(max-width:639px)_and_(orientation:portrait)]:contents">
+                <div className="animate-rise-fade [@media(max-width:639px)_and_(orientation:portrait)]:col-start-1 [@media(max-width:639px)_and_(orientation:portrait)]:row-start-1 [@media(max-width:639px)_and_(orientation:portrait)]:self-center">
+                  <h1 className="text-display-balance text-[clamp(2.5rem,4.5vw,4.5rem)] font-semibold leading-[0.9] text-primary [@media(max-width:639px)_and_(orientation:portrait)]:text-[clamp(3rem,8.8vw,3.95rem)]">
                     Blindchess
                   </h1>
-                  <p className="mt-4 text-sm italic text-muted-foreground">
+                  <p className="mt-4 text-sm italic text-muted-foreground [@media(max-width:639px)_and_(orientation:portrait)]:mt-2 [@media(max-width:639px)_and_(orientation:portrait)]:pr-1">
                     “Calculation is visualization” - Garry Kasparov
                   </p>
                 </div>
 
-                <div id="game-config-panel" className="animate-rise-fade animation-delay-150 mt-6 w-full">
+                <div id="game-config-panel" className="animate-rise-fade animation-delay-150 mt-6 w-full [@media(max-width:639px)_and_(orientation:portrait)]:col-span-2 [@media(max-width:639px)_and_(orientation:portrait)]:mt-0 [@media(max-width:639px)_and_(orientation:portrait)]:row-start-2">
                   <GameConfigPanel
                     mode={selectedGameMode}
                     onModeChange={setSelectedGameMode}
                     showModeSelector
                     borderless
+                    compactPortraitLayout
                     onStartGame={(config) => {
                       void handleStartGame(config);
                     }}
