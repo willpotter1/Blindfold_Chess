@@ -252,9 +252,9 @@ const Puzzles = () => {
       />
       <AppSidebar desktopMode={showDesktopGameLayout} />
 
-      <div className="mx-auto w-full px-4 py-8 md:flex-1">
+      <div className={`mx-auto w-full px-4 ${showDesktopGameLayout ? 'md:my-4 md:h-[calc(100vh-2rem)] md:flex-1 md:py-0' : 'py-8 md:flex-1'}`}>
         {isSessionActive ? (
-          <div className={showDesktopGameLayout ? 'h-[calc(100dvh-4rem)]' : ''}>
+          <div className={showDesktopGameLayout ? 'h-full' : ''}>
             {showDesktopGameLayout ? (
               <div ref={desktopFitRef} className="mx-auto flex h-full w-full max-w-[1800px] items-center justify-center">
                 <div
@@ -372,7 +372,7 @@ const Puzzles = () => {
             )}
           </div>
         ) : (
-          <div className={showDesktopGameLayout ? 'h-[calc(100dvh-4rem)]' : ''}>
+          <div className={showDesktopGameLayout ? 'h-full' : ''}>
             {showDesktopGameLayout ? (
               <div ref={desktopFitRef} className="mx-auto flex h-full w-full max-w-[1800px] items-center justify-center">
                 <div

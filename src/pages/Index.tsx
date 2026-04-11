@@ -671,9 +671,9 @@ const Index = () => {
       />
       <AppSidebar onHomeClick={handleLogoClick} desktopMode={showDesktopGameLayout} />
 
-      <div className="mx-auto w-full px-4 py-6 md:flex-1 md:py-8">
+      <div className={`mx-auto w-full px-4 ${showDesktopGameLayout ? 'md:my-4 md:h-[calc(100vh-2rem)] md:flex-1 md:py-0' : gameState ? 'py-6 md:flex-1 md:py-8' : 'py-4 md:flex-1 md:py-4 lg:py-3'}`}>
         {gameState ? (
-          <div className={showDesktopGameLayout ? 'h-[calc(100dvh-4rem)]' : ''}>
+          <div className={showDesktopGameLayout ? 'h-full' : ''}>
             {showDesktopGameLayout ? (
               <div ref={desktopFitRef} className="mx-auto flex h-full w-full max-w-[1800px] items-center justify-center">
                 <div
@@ -722,11 +722,14 @@ const Index = () => {
             )}
           </div>
         ) : (
-          <div className="bg-paper-grain-reverse relative flex min-h-[calc(100vh-6rem)] items-center overflow-hidden rounded-[36px] px-5 py-8 sm:px-8 lg:px-12 lg:py-10">
+          <div className={`bg-paper-grain-reverse relative flex items-center overflow-hidden rounded-[36px] px-5 py-6 sm:px-7 sm:py-7 ${showDesktopGameLayout ? 'md:h-full md:px-10 md:py-8' : 'min-h-[calc(100dvh-9rem)] lg:min-h-[calc(100dvh-7rem)] lg:px-10 lg:py-8'}`}>
 
-            <div className="relative z-10 grid w-full items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-8">
+            <div className="relative z-10 grid w-full items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-6">
               <div className="relative">
-                <div id="landing-visual" className="animate-drift-in relative mx-auto w-full max-w-4xl">
+                <div
+                  id="landing-visual"
+                  className="animate-drift-in relative mx-auto w-full max-w-4xl"
+                >
                   <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-surface-white/60 blur-3xl" />
                   <div className="shadow-theme-strong relative rounded-[34px] bg-surface-white/30 p-3 sm:p-5">
                     <LandingOperaReplay />
@@ -736,15 +739,15 @@ const Index = () => {
 
               <div className="max-w-xl">
                 <div className="animate-rise-fade">
-                  <h1 className="text-display-balance text-4xl font-semibold leading-[0.92] text-primary sm:text-5xl lg:text-6xl">
-                    Blindfold Chess Trainer
+                  <h1 className="text-display-balance text-[clamp(2.5rem,4.5vw,4.5rem)] font-semibold leading-[0.9] text-primary">
+                    Blindchess
                   </h1>
                   <p className="mt-4 text-sm italic text-muted-foreground">
                     “Calculation is visualization” - Garry Kasparov
                   </p>
                 </div>
 
-                <div id="game-config-panel" className="animate-rise-fade animation-delay-150 mt-8 w-full">
+                <div id="game-config-panel" className="animate-rise-fade animation-delay-150 mt-6 w-full">
                   <GameConfigPanel
                     mode={selectedGameMode}
                     onModeChange={setSelectedGameMode}

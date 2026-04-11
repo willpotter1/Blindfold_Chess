@@ -44,12 +44,9 @@ export const DrillsResultsPanel = ({
   className,
 }: DrillsResultsPanelProps) => {
   return (
-    <Card className={cn('flex flex-col overflow-hidden', className)}>
+    <Card className={cn('bg-surface-white/75 flex flex-col overflow-hidden', className)}>
       <CardHeader className="shrink-0 pb-0" style={{ padding: `${panelPadding}px` }}>
         <CardTitle className="text-xl">Results</CardTitle>
-        <CardDescription className="text-sm">
-          Review the round, then run it again or return to configuration.
-        </CardDescription>
       </CardHeader>
 
       <CardContent

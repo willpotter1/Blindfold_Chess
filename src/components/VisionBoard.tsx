@@ -106,7 +106,7 @@ export const VisionBoard = ({
           )}
 
           {piece && (
-            <span className="pointer-events-none absolute inset-[10%] z-[3] grid place-items-center">
+            <span className="pointer-events-none absolute inset-[2%] z-[3] grid place-items-center">
               <img
                 src={pieceSprites[piece.spriteKey]}
                 alt={`${piece.color} ${piece.displayName}`}

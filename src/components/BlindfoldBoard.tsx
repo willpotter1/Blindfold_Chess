@@ -140,7 +140,7 @@ export const BlindfoldBoard = ({
                     <div className="pointer-events-none absolute inset-[10px] z-20 rounded-[0.3rem] border-4 border-board-select/90" />
                   )}
                   {pieceSrc && (
-                    <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[76%] h-[76%] grid place-items-center">
+                    <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 grid h-[92%] w-[92%] place-items-center">
                       <img
                         src={pieceSrc}
                         alt={spriteKey || 'piece'}

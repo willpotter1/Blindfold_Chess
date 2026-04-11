@@ -277,8 +277,8 @@ const Openings = () => {
     : desktopLayout.rightColumnWidth;
 
   const renderDesktopLayout = () => (
-    <div className="px-4 py-8">
-      <div className="h-[calc(100dvh-4rem)]">
+    <div className="px-4 md:my-4 md:h-[calc(100vh-2rem)] md:py-0">
+      <div className="h-full">
         <div
           ref={desktopFitRef}
           className="mx-auto flex h-full w-full max-w-[1680px] items-start justify-center pt-2"

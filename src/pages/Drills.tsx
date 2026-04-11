@@ -19,8 +19,8 @@ const SEO_DESCRIPTION = 'Train board vision with timed coordinate drills and leg
 const SEO_CANONICAL_URL = 'https://blindchess.org/drills';
 const SEO_OG_IMAGE = 'https://blindchess.org/BBpawn.png';
 
-const DESKTOP_BOARD_SIZE = 760;
-const DESKTOP_PANEL_WIDTH = 360;
+const DESKTOP_BOARD_SIZE = 860;
+const DESKTOP_PANEL_WIDTH = 320;
 const DESKTOP_LAYOUT_GAP = 32;
 const MOBILE_STATIC_BOARD_MAX_WIDTH = 640;
 
@@ -83,6 +83,7 @@ const Drills = () => {
     baseBoardSize: DESKTOP_BOARD_SIZE,
     basePanelWidth: DESKTOP_PANEL_WIDTH,
     baseGap: DESKTOP_LAYOUT_GAP,
+    rightWidthDamping: 0.5,
     mobilePanelHeightEstimate: currentPrompt?.mode === 'moves' && config.movesPieceDisplay === 'panel' ? 376 : 168,
   });
 
@@ -153,8 +154,8 @@ const Drills = () => {
 
       <div className="flex-1 min-h-0">
         {showDesktopGameLayout ? (
-          <div className="px-4 py-8">
-            <div className="h-[calc(100dvh-4rem)]">
+          <div className="px-4 md:my-4 md:h-[calc(100vh-2rem)] md:py-0">
+            <div className="h-full">
               <div
                 ref={desktopContainerRef}
                 className="mx-auto flex h-full w-full max-w-[1800px] items-center justify-center"
