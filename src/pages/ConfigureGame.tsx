@@ -13,7 +13,7 @@ const ConfigureGame = () => {
   return (
     <div className="bg-stage-glow min-h-screen md:flex">
       <AppSidebar />
-      <div className="container mx-auto flex items-center px-4 py-10 md:flex-1">
+      <div className="container mx-auto flex items-center px-4 py-10 pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:flex-1 md:pb-10">
         <div className="mx-auto w-full max-w-xl">
           <GameConfigPanel mode="computer" onStartGame={handleStartGame} isGameActive={false} />
         </div>

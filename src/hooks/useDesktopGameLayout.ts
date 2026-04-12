@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const MIN_DESKTOP_VIEWPORT_WIDTH = 1200;
+const MIN_DESKTOP_VIEWPORT_WIDTH = 768;
 
 export const useDesktopGameLayout = () => {
   const [matches, setMatches] = useState(false);

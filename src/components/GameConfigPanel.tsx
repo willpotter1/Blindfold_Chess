@@ -145,7 +145,7 @@ export const GameConfigPanel = ({
           className={`
             grid grid-cols-1 gap-3
             ${mode === 'computer' ? 'sm:grid-cols-2' : ''}
-            ${compactPortraitLayout && mode === 'computer' ? '[@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-2 [@media(max-width:639px)_and_(orientation:portrait)]:gap-x-3 [@media(max-width:639px)_and_(orientation:portrait)]:gap-y-3' : ''}
+            ${compactPortraitLayout && mode === 'computer' ? '[@media(max-width:767px)]:grid-cols-2 [@media(max-width:767px)]:gap-x-3 [@media(max-width:767px)]:gap-y-3' : ''}
           `}
         >
           {mode === 'computer' && (
@@ -189,7 +189,7 @@ export const GameConfigPanel = ({
             className={`
               space-y-2
               ${mode === 'computer' ? 'sm:col-span-2' : ''}
-              ${compactPortraitLayout && mode === 'computer' ? '[@media(max-width:639px)_and_(orientation:portrait)]:col-span-2' : ''}
+              ${compactPortraitLayout && mode === 'computer' ? '[@media(max-width:767px)]:col-span-2' : ''}
             `}
           >
             <Label htmlFor="reveal-frequency">Board Reveal Frequency</Label>
@@ -218,14 +218,14 @@ export const GameConfigPanel = ({
         <div
           className={`
             space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0
-            ${compactPortraitLayout ? '[@media(max-width:639px)_and_(orientation:portrait)]:grid [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-2 [@media(max-width:639px)_and_(orientation:portrait)]:gap-3 [@media(max-width:639px)_and_(orientation:portrait)]:space-y-0' : ''}
+            ${compactPortraitLayout ? '[@media(max-width:767px)]:grid [@media(max-width:767px)]:grid-cols-2 [@media(max-width:767px)]:gap-3 [@media(max-width:767px)]:space-y-0' : ''}
           `}
         >
           <div
             className={`
               flex items-center justify-between rounded-2xl bg-surface-white/70 px-4 py-3
               ${borderless ? '' : 'border-2 border-border'}
-              ${compactPortraitLayout ? '[@media(max-width:639px)_and_(orientation:portrait)]:min-h-[3.75rem] [@media(max-width:639px)_and_(orientation:portrait)]:px-3' : ''}
+              ${compactPortraitLayout ? '[@media(max-width:767px)]:min-h-[3.75rem] [@media(max-width:767px)]:px-3' : ''}
             `}
           >
             <Label htmlFor="allow-cheats" className="cursor-pointer">
@@ -241,7 +241,7 @@ export const GameConfigPanel = ({
             className={`
               flex items-center justify-between rounded-2xl bg-surface-white/70 px-4 py-3
               ${borderless ? '' : 'border-2 border-border'}
-              ${compactPortraitLayout ? '[@media(max-width:639px)_and_(orientation:portrait)]:min-h-[3.75rem] [@media(max-width:639px)_and_(orientation:portrait)]:px-3' : ''}
+              ${compactPortraitLayout ? '[@media(max-width:767px)]:min-h-[3.75rem] [@media(max-width:767px)]:px-3' : ''}
             `}
           >
             <Label htmlFor="hide-move-history" className="cursor-pointer">

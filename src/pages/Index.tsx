@@ -569,39 +569,39 @@ const Index = () => {
     const revealButton = renderRevealButton('w-full border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent');
 
     return (
-      <div className="space-y-4 [@media(max-width:639px)_and_(orientation:portrait)]:space-y-3">
+      <div className="space-y-4 [@media(max-width:767px)]:space-y-3">
         {(shouldShowStatusBar || revealButton) && (
-          <div className="space-y-4 [@media(max-width:639px)_and_(orientation:portrait)]:grid [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-2 [@media(max-width:639px)_and_(orientation:portrait)]:gap-3 [@media(max-width:639px)_and_(orientation:portrait)]:space-y-0">
+          <div className="space-y-4 [@media(max-width:767px)]:grid [@media(max-width:767px)]:grid-cols-2 [@media(max-width:767px)]:gap-3 [@media(max-width:767px)]:space-y-0">
             {shouldShowStatusBar && (
               <StatusBar
                 status={statusText}
                 variant="compact"
                 condensed
-                className="[@media(max-width:639px)_and_(orientation:portrait)]:h-full"
+                className="[@media(max-width:767px)]:h-full"
               />
             )}
             {revealButton && (
-              <div className="[@media(max-width:639px)_and_(orientation:portrait)]:flex [@media(max-width:639px)_and_(orientation:portrait)]:items-stretch">
+              <div className="[@media(max-width:767px)]:flex [@media(max-width:767px)]:items-stretch">
                 {renderRevealButton('w-full h-full min-h-[64px] border-2 border-border bg-surface-white/75 text-foreground hover:bg-accent')}
               </div>
             )}
           </div>
         )}
 
-        <div className="space-y-4 [@media(max-width:639px)_and_(orientation:portrait)]:grid [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-2 [@media(max-width:639px)_and_(orientation:portrait)]:items-stretch [@media(max-width:639px)_and_(orientation:portrait)]:gap-3 [@media(max-width:639px)_and_(orientation:portrait)]:space-y-0">
+        <div className="space-y-4 [@media(max-width:767px)]:grid [@media(max-width:767px)]:grid-cols-2 [@media(max-width:767px)]:items-stretch [@media(max-width:767px)]:gap-3 [@media(max-width:767px)]:space-y-0">
           <MoveInput
             onSubmitMove={handlePlayerMove}
             disabled={!isHumanTurn}
             errorMessage={moveError}
             variant="compact"
             fillHeight
-            className="[@media(max-width:639px)_and_(orientation:portrait)]:h-full"
+            className="[@media(max-width:767px)]:h-full"
           />
           {!gameState.hideMoveHistory && (
             <MoveList
               moves={gameState.moves}
               compact
-              className="[@media(max-width:639px)_and_(orientation:portrait)]:h-full [@media(max-width:639px)_and_(orientation:portrait)]:min-h-[160px]"
+              className="[@media(max-width:767px)]:h-full [@media(max-width:767px)]:min-h-[160px]"
             />
           )}
         </div>
@@ -725,7 +725,7 @@ const Index = () => {
         desktopMode={showDesktopGameLayout}
       />
 
-      <div className={`mx-auto w-full px-4 ${showDesktopGameLayout ? 'md:my-4 md:h-[calc(100vh-2rem)] md:flex-1 md:py-0' : gameState ? 'py-6 [@media(max-width:639px)_and_(orientation:portrait)]:pt-2 [@media(max-width:639px)_and_(orientation:portrait)]:pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:flex-1 md:py-8' : 'py-4 [@media(max-width:639px)_and_(orientation:portrait)]:pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:flex-1 md:py-4 lg:py-3'}`}>
+      <div className={`mx-auto w-full px-4 ${showDesktopGameLayout ? 'md:my-4 md:h-[calc(100vh-2rem)] md:flex-1 md:py-0' : gameState ? 'py-6 pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:flex-1 md:py-8 md:pb-8' : 'py-4 pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:flex-1 md:py-4 md:pb-4 lg:py-3'}`}>
         {gameState ? (
           <div className={showDesktopGameLayout ? 'h-full' : ''}>
             {showDesktopGameLayout ? (
@@ -782,32 +782,32 @@ const Index = () => {
             )}
           </div>
         ) : (
-          <div className={`bg-paper-grain-reverse relative flex items-center overflow-hidden rounded-[36px] px-5 py-6 sm:px-7 sm:py-7 ${showDesktopGameLayout ? 'md:h-full md:px-10 md:py-8' : 'min-h-[calc(100dvh-9rem)] lg:min-h-[calc(100dvh-7rem)] lg:px-10 lg:py-8'} [@media(max-width:639px)_and_(orientation:portrait)]:px-4 [@media(max-width:639px)_and_(orientation:portrait)]:py-5`}>
+          <div className={`bg-paper-grain-reverse relative flex items-center overflow-hidden rounded-[36px] px-5 py-6 sm:px-7 sm:py-7 ${showDesktopGameLayout ? 'md:h-full md:px-10 md:py-8' : 'min-h-[calc(100dvh-9rem)] lg:min-h-[calc(100dvh-7rem)] lg:px-10 lg:py-8'} [@media(max-width:767px)]:px-4 [@media(max-width:767px)]:py-5`}>
 
-            <div className="relative z-10 grid w-full items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-6 [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] [@media(max-width:639px)_and_(orientation:portrait)]:items-start [@media(max-width:639px)_and_(orientation:portrait)]:gap-x-3 [@media(max-width:639px)_and_(orientation:portrait)]:gap-y-4">
-              <div className="relative [@media(max-width:639px)_and_(orientation:portrait)]:col-start-2 [@media(max-width:639px)_and_(orientation:portrait)]:row-start-1 [@media(max-width:639px)_and_(orientation:portrait)]:self-center">
+            <div className="relative z-10 grid w-full items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.82fr)] lg:gap-6 [@media(max-width:767px)]:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] [@media(max-width:767px)]:items-start [@media(max-width:767px)]:gap-x-3 [@media(max-width:767px)]:gap-y-4">
+              <div className="relative [@media(max-width:767px)]:col-start-2 [@media(max-width:767px)]:row-start-1 [@media(max-width:767px)]:self-center">
                 <div
                   id="landing-visual"
-                  className="animate-drift-in relative mx-auto w-full max-w-4xl [@media(max-width:639px)_and_(orientation:portrait)]:max-w-[12.5rem]"
+                  className="animate-drift-in relative mx-auto w-full max-w-4xl [@media(max-width:767px)]:max-w-[12.5rem]"
                 >
-                  <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-surface-white/60 blur-3xl [@media(max-width:639px)_and_(orientation:portrait)]:inset-x-[12%] [@media(max-width:639px)_and_(orientation:portrait)]:top-[10%] [@media(max-width:639px)_and_(orientation:portrait)]:h-[72%] [@media(max-width:639px)_and_(orientation:portrait)]:blur-2xl" />
-                  <div className="shadow-theme-strong relative rounded-[34px] bg-surface-white/30 p-3 sm:p-5 [@media(max-width:639px)_and_(orientation:portrait)]:rounded-[24px] [@media(max-width:639px)_and_(orientation:portrait)]:p-2">
+                  <div className="pointer-events-none absolute inset-x-[8%] top-[6%] h-[78%] rounded-full bg-surface-white/60 blur-3xl [@media(max-width:767px)]:inset-x-[12%] [@media(max-width:767px)]:top-[10%] [@media(max-width:767px)]:h-[72%] [@media(max-width:767px)]:blur-2xl" />
+                  <div className="shadow-theme-strong relative rounded-[34px] bg-surface-white/30 p-3 sm:p-5 [@media(max-width:767px)]:rounded-[24px] [@media(max-width:767px)]:p-2">
                     <LandingOperaReplay />
                   </div>
                 </div>
               </div>
 
-              <div className="max-w-xl [@media(max-width:639px)_and_(orientation:portrait)]:contents">
-                <div className="animate-rise-fade [@media(max-width:639px)_and_(orientation:portrait)]:col-start-1 [@media(max-width:639px)_and_(orientation:portrait)]:row-start-1 [@media(max-width:639px)_and_(orientation:portrait)]:self-center">
-                  <h1 className="text-display-balance text-[clamp(2.5rem,4.5vw,4.5rem)] font-semibold leading-[0.9] text-primary [@media(max-width:639px)_and_(orientation:portrait)]:text-[clamp(3rem,8.8vw,3.95rem)]">
+              <div className="max-w-xl [@media(max-width:767px)]:contents">
+                <div className="animate-rise-fade [@media(max-width:767px)]:col-start-1 [@media(max-width:767px)]:row-start-1 [@media(max-width:767px)]:self-center">
+                  <h1 className="text-display-balance text-[clamp(2.5rem,4.5vw,4.5rem)] font-semibold leading-[0.9] text-primary [@media(max-width:767px)]:text-[clamp(3rem,8.8vw,3.95rem)]">
                     Blindchess
                   </h1>
-                  <p className="mt-4 text-sm italic text-muted-foreground [@media(max-width:639px)_and_(orientation:portrait)]:mt-2 [@media(max-width:639px)_and_(orientation:portrait)]:pr-1">
+                  <p className="mt-4 text-sm italic text-muted-foreground [@media(max-width:767px)]:mt-2 [@media(max-width:767px)]:pr-1">
                     “Calculation is visualization” - Garry Kasparov
                   </p>
                 </div>
 
-                <div id="game-config-panel" className="animate-rise-fade animation-delay-150 mt-6 w-full [@media(max-width:639px)_and_(orientation:portrait)]:col-span-2 [@media(max-width:639px)_and_(orientation:portrait)]:mt-0 [@media(max-width:639px)_and_(orientation:portrait)]:row-start-2">
+                <div id="game-config-panel" className="animate-rise-fade animation-delay-150 mt-6 w-full [@media(max-width:767px)]:col-span-2 [@media(max-width:767px)]:mt-0 [@media(max-width:767px)]:row-start-2">
                   <GameConfigPanel
                     mode={selectedGameMode}
                     onModeChange={setSelectedGameMode}

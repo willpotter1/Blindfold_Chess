@@ -368,7 +368,7 @@ const Openings = () => {
       />
       <AppSidebar desktopMode={showDesktopGameLayout} />
 
-      <div className="flex-1 min-h-0">
+      <div className={cn('flex-1 min-h-0', !showDesktopGameLayout && 'pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:pb-0')}>
         {showDesktopGameLayout ? renderDesktopLayout() : renderMobileLayout()}
       </div>
     </div>

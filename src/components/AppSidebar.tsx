@@ -21,9 +21,9 @@ export const AppSidebar = ({
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const buttonClassName = cn(
     navButtonBaseClassName,
-    'min-w-[96px] px-4 flex-1',
-    desktopMode && 'md:w-full md:min-w-0',
-    mobilePortraitBottomBar && '[@media(max-width:639px)_and_(orientation:portrait)]:min-w-0 [@media(max-width:639px)_and_(orientation:portrait)]:px-2 [@media(max-width:639px)_and_(orientation:portrait)]:text-[0.72rem]',
+    desktopMode
+      ? 'md:w-full [@media(max-width:767px)]:w-full [@media(max-width:767px)]:min-w-0 [@media(max-width:767px)]:px-2 [@media(max-width:767px)]:text-[0.72rem]'
+      : 'w-full min-w-0 px-2 text-[0.72rem]',
   );
 
   useEffect(() => {
@@ -55,43 +55,45 @@ export const AppSidebar = ({
   return (
     <div
       className={cn(
-        'mx-4 mt-4 w-auto rounded-[28px] bg-background p-4 shadow-theme-strong',
-        desktopMode && 'md:sticky md:top-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-28 md:shrink-0 md:self-start',
-        mobilePortraitBottomBar && '[@media(max-width:639px)_and_(orientation:portrait)]:fixed [@media(max-width:639px)_and_(orientation:portrait)]:inset-x-0 [@media(max-width:639px)_and_(orientation:portrait)]:bottom-0 [@media(max-width:639px)_and_(orientation:portrait)]:z-40 [@media(max-width:639px)_and_(orientation:portrait)]:m-0 [@media(max-width:639px)_and_(orientation:portrait)]:w-screen [@media(max-width:639px)_and_(orientation:portrait)]:rounded-none [@media(max-width:639px)_and_(orientation:portrait)]:border-t-2 [@media(max-width:639px)_and_(orientation:portrait)]:border-border [@media(max-width:639px)_and_(orientation:portrait)]:px-3 [@media(max-width:639px)_and_(orientation:portrait)]:pt-3 [@media(max-width:639px)_and_(orientation:portrait)]:pb-[calc(0.75rem+env(safe-area-inset-bottom))] [@media(max-width:639px)_and_(orientation:portrait)]:shadow-[0_-10px_28px_rgba(0,0,0,0.16)]',
+        'mx-4 mt-4 w-auto rounded-[28px] bg-paper-grain-top p-4 shadow-theme-strong',
+        desktopMode
+          ? 'md:sticky md:top-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-28 md:shrink-0 md:self-start [@media(max-width:767px)]:fixed [@media(max-width:767px)]:inset-x-0 [@media(max-width:767px)]:bottom-0 [@media(max-width:767px)]:z-40 [@media(max-width:767px)]:m-0 [@media(max-width:767px)]:w-screen [@media(max-width:767px)]:rounded-none [@media(max-width:767px)]:border-t-2 [@media(max-width:767px)]:border-border [@media(max-width:767px)]:bg-background [@media(max-width:767px)]:px-3 [@media(max-width:767px)]:pt-3 [@media(max-width:767px)]:pb-[calc(0.75rem+env(safe-area-inset-bottom))] [@media(max-width:767px)]:shadow-[0_-10px_28px_rgba(0,0,0,0.16)]'
+          : mobilePortraitBottomBar && 'fixed inset-x-0 bottom-0 z-40 m-0 w-screen rounded-none border-t-2 border-border bg-background px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-10px_28px_rgba(0,0,0,0.16)]',
       )}
     >
       <div
         className={cn(
-          'flex items-center gap-4',
-          desktopMode && 'md:h-full md:flex-col md:items-stretch md:justify-start',
-          mobilePortraitBottomBar && '[@media(max-width:639px)_and_(orientation:portrait)]:grid [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-[auto_minmax(0,1fr)] [@media(max-width:639px)_and_(orientation:portrait)]:gap-3',
+          'flex items-center',
+          desktopMode
+            ? 'md:h-full md:flex-col md:items-stretch md:justify-start [@media(max-width:767px)]:grid [@media(max-width:767px)]:grid-cols-[auto_minmax(0,1fr)] [@media(max-width:767px)]:gap-3'
+            : 'grid w-full grid-cols-[auto_minmax(0,1fr)] gap-3',
         )}
       >
         <Link
           to="/"
           onClick={onHomeClick}
           className={cn(
-            'flex h-full min-h-[72px] shrink-0 items-center self-stretch',
-            desktopMode && 'md:self-center',
-            mobilePortraitBottomBar && '[@media(max-width:639px)_and_(orientation:portrait)]:min-h-0 [@media(max-width:639px)_and_(orientation:portrait)]:self-center',
+            desktopMode
+              ? 'md:self-center [@media(max-width:767px)]:flex [@media(max-width:767px)]:min-h-0 [@media(max-width:767px)]:shrink-0 [@media(max-width:767px)]:items-center [@media(max-width:767px)]:self-center'
+              : 'flex min-h-0 shrink-0 items-center self-center',
           )}
         >
           <img
             src={whitePawnLogo}
             alt="White pawn logo"
             className={cn(
-              'h-14 w-14 object-contain',
-              desktopMode ? 'md:h-20 md:w-20' : 'h-12 w-12',
-              mobilePortraitBottomBar && '[@media(max-width:639px)_and_(orientation:portrait)]:h-10 [@media(max-width:639px)_and_(orientation:portrait)]:w-10',
+              'object-contain',
+              desktopMode ? 'md:h-20 md:w-20 [@media(max-width:767px)]:h-10 [@media(max-width:767px)]:w-10' : 'h-10 w-10',
             )}
           />
         </Link>
 
         <div
           className={cn(
-            'min-w-0 flex-1 flex-wrap items-center content-center justify-center gap-2',
-            desktopMode && 'md:mt-6 md:flex-col',
-            mobilePortraitBottomBar && '[@media(max-width:639px)_and_(orientation:portrait)]:grid [@media(max-width:639px)_and_(orientation:portrait)]:grid-cols-4 [@media(max-width:639px)_and_(orientation:portrait)]:gap-2 [@media(max-width:639px)_and_(orientation:portrait)]:items-stretch [@media(max-width:639px)_and_(orientation:portrait)]:justify-stretch',
+            'flex gap-2',
+            desktopMode
+              ? 'md:mt-6 md:flex-col [@media(max-width:767px)]:min-w-0 [@media(max-width:767px)]:flex-1 [@media(max-width:767px)]:grid [@media(max-width:767px)]:grid-cols-4 [@media(max-width:767px)]:gap-2 [@media(max-width:767px)]:items-stretch [@media(max-width:767px)]:justify-stretch'
+              : 'min-w-0 flex-1 grid grid-cols-4 items-stretch justify-stretch gap-2',
           )}
         >
           <Button asChild type="button" className={buttonClassName}>
@@ -104,9 +106,17 @@ export const AppSidebar = ({
             <Link to="/openings">Openings</Link>
           </Button>
 
-          <Button asChild type="button" className={cn(buttonClassName, desktopMode && 'md:hidden')}>
-            <Link to={isAuthenticated ? '/account' : '/login'}>{isAuthenticated ? 'Account' : 'Log In'}</Link>
-          </Button>
+          {!desktopMode && (
+            <Button asChild type="button" className={buttonClassName}>
+              <Link to={isAuthenticated ? '/account' : '/login'}>{isAuthenticated ? 'Account' : 'Log In'}</Link>
+            </Button>
+          )}
+
+          {desktopMode && (
+            <Button asChild type="button" className={cn(buttonClassName, 'md:hidden')}>
+              <Link to={isAuthenticated ? '/account' : '/login'}>{isAuthenticated ? 'Account' : 'Log In'}</Link>
+            </Button>
+          )}
         </div>
 
         {desktopMode && (
