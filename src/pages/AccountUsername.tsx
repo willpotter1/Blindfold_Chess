@@ -8,7 +8,7 @@ import { useToast } from '@/hooks/use-toast';
 import { useAccountProfile } from '@/hooks/useAccountProfile';
 import { AccountLayout } from '@/components/AccountLayout';
 import { hasSupabaseConfig, supabase } from '@/lib/supabase';
-import { USERNAME_REGEX, normalizeUsername } from '@/lib/account';
+import { USERNAME_REGEX, normalizeEmail, normalizeUsername } from '@/lib/account';
 
 const AccountUsername = () => {
   const { isLoading, profile } = useAccountProfile();
@@ -66,6 +66,7 @@ const AccountUsername = () => {
       if (!data) {
         const { error: insertError } = await supabase.from('profiles').insert({
           id: profile.uid,
+          email: normalizeEmail(profile.email),
           username: normalizedUsername,
         });
 

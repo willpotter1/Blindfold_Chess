@@ -4,6 +4,7 @@ import {
   createEmptyAccountProfile,
   type AccountProfile,
   type AccountRecentGame,
+  normalizeEmail,
 } from '@/lib/account';
 import { supabase } from '@/lib/supabase';
 
@@ -61,7 +62,7 @@ export const useAccountProfile = () => {
         ] = await Promise.all([
           supabase
             .from('profiles')
-            .select('username')
+            .select('username, email')
             .eq('id', user.id)
             .maybeSingle(),
           supabase
@@ -206,7 +207,7 @@ export const useAccountProfile = () => {
       if (!isActive) return;
       setProfile({
         username,
-        email: user.email,
+        email: profileResult.data?.email ? normalizeEmail(profileResult.data.email) : (user.email ? normalizeEmail(user.email) : null),
         uid: user.id,
         gamesCompleted,
         computerGamesCompleted,

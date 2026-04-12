@@ -306,10 +306,11 @@ const deleteAuthUser = async (userId) => {
   }
 };
 
-const insertProfile = async (userId, username) => {
+const insertProfile = async (userId, username, email) => {
   const client = getSupabaseAdmin();
   const { error } = await client.from("profiles").insert({
     id: userId,
+    email: normalizeEmail(email),
     username: normalizeUsername(username),
   });
 
@@ -392,7 +393,7 @@ const handleSignup = async (req, res) => {
       throw new Error("signup_failed");
     }
 
-    await insertProfile(createdUserId, username);
+    await insertProfile(createdUserId, username, email);
     return json(req, res, 200, { ok: true, userId: createdUserId });
   } catch (error) {
     if (createdUserId) {

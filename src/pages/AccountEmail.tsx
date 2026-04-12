@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { useAccountProfile } from '@/hooks/useAccountProfile';
+import { normalizeEmail } from '@/lib/account';
 import { AccountLayout } from '@/components/AccountLayout';
 import { hasSupabaseConfig, supabase } from '@/lib/supabase';
 
@@ -47,9 +48,19 @@ const AccountEmail = () => {
         throw signInError;
       }
 
-      const { error: updateError } = await supabase.auth.updateUser({ email: newEmail.trim() });
+      const normalizedNewEmail = normalizeEmail(newEmail);
+
+      const { error: updateError } = await supabase.auth.updateUser({ email: normalizedNewEmail });
       if (updateError) {
         throw updateError;
+      }
+
+      const { error: profileUpdateError } = await supabase
+        .from('profiles')
+        .update({ email: normalizedNewEmail })
+        .eq('id', profile.uid);
+      if (profileUpdateError) {
+        throw profileUpdateError;
       }
 
       setCurrentPassword('');

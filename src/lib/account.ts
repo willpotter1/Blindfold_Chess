@@ -1,5 +1,6 @@
 export const USERNAME_REGEX = /^[a-z0-9_]{3,20}$/;
 
+export const normalizeEmail = (value: string) => value.trim().toLowerCase();
 export const normalizeUsername = (value: string) => value.trim().toLowerCase();
 
 export type AccountRecentGame = {
