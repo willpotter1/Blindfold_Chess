@@ -145,14 +145,15 @@ describe('OpeningMoveTreeExplorer', () => {
     const firstTreeItem = container.querySelector('[role="treeitem"][tabindex="0"]') as HTMLDivElement;
     await dispatchKeyboardEvent(firstTreeItem, ' ');
 
-    expect(container.textContent).toContain('1 selected');
-    expect(container.textContent).toContain('Branch selected');
+    expect(container.textContent).toContain('Selected');
+    expect(container.textContent).toContain('1');
+    expect(container.textContent).toContain('Branch');
     expect(container.textContent).toContain('1. e4');
 
     await dispatchClick(firstTreeItem.querySelector('button'));
 
     const coveredChild = findTreeItem(container, '... e5 2. Nf3');
-    expect(coveredChild.textContent).toContain('Covered by ancestor');
+    expect(coveredChild.textContent).toContain('Covered');
     expect(coveredChild.textContent).toContain('Covered');
 
     await cleanup();
@@ -169,7 +170,7 @@ describe('OpeningMoveTreeExplorer', () => {
 
     await dispatchClick(addOpeningButton ?? null);
 
-    expect(container.textContent).toContain('Named opening');
+    // Basket shows the opening name as a chip
     expect(container.textContent).toContain('French Defense');
 
     const updatedFrenchRow = findTreeItem(container, '... e6 2. d4');
@@ -177,7 +178,7 @@ describe('OpeningMoveTreeExplorer', () => {
 
     await dispatchClick(removeOpeningButton ?? null);
 
-    expect(container.textContent).toContain('No branches selected yet.');
+    expect(container.textContent).toContain('No branches selected.');
 
     await cleanup();
   });

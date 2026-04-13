@@ -120,7 +120,11 @@ const toAppError = (error) => {
     return error;
   }
 
-  return new Error(String(error));
+  if (error && typeof error === "object" && typeof error.message === "string") {
+    return new Error(error.message);
+  }
+
+  return new Error(typeof error === "string" ? error : "unknown_error");
 };
 
 const mapSupabaseError = (error) => {
@@ -308,11 +312,22 @@ const deleteAuthUser = async (userId) => {
 
 const insertProfile = async (userId, username, email) => {
   const client = getSupabaseAdmin();
-  const { error } = await client.from("profiles").insert({
+  const row = {
     id: userId,
-    email: normalizeEmail(email),
     username: normalizeUsername(username),
-  });
+  };
+
+  // The email column was added in a later migration and may not exist yet.
+  try {
+    const { error: testError } = await client.from("profiles").select("email").limit(0);
+    if (!testError) {
+      row.email = normalizeEmail(email);
+    }
+  } catch {
+    // Column doesn't exist — skip it.
+  }
+
+  const { error } = await client.from("profiles").insert(row);
 
   if (error) {
     throw mapSupabaseError(error);

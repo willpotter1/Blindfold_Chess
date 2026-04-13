@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -v)",
+      "Bash(npm -v)",
+      "Bash(npm outdated:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm update:*)",
+      "Bash(npm run:*)",
+      "Bash(npm test:*)",
+      "Bash(xargs grep:*)",
+      "Bash(mv Index.tsx home/HomePage.tsx)",
+      "Bash(mv Index.test.tsx home/HomePage.test.tsx)",
+      "Bash(mv Account.tsx account/AccountPage.tsx)",
+      "Bash(mv AccountUsername.tsx account/AccountUsernamePage.tsx)",
+      "Bash(mv AccountEmail.tsx account/AccountEmailPage.tsx)",
+      "Bash(npx tsc:*)",
+      "Bash(npx kill-port:*)",
+      "Bash(taskkill //F //FI \"WINDOWTITLE eq *8787*\")",
+      "Bash(lsof -ti:8787)",
+      "Bash(xargs kill:*)",
+      "Bash(fuser -k 8787/tcp)",
+      "Bash(npx skills:*)"
+    ]
+  }
+}

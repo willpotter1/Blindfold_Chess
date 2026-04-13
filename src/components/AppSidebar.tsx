@@ -1,30 +1,35 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { supabase } from '@/lib/supabase';
+import { Puzzle, Target, BookOpen, LogIn, UserPlus, User, Menu, X } from 'lucide-react';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 type AppSidebarProps = {
   onHomeClick?: () => void;
   desktopMode?: boolean;
-  mobilePortraitBottomBar?: boolean;
 };
 
-const navButtonBaseClassName = 'border-transparent bg-transparent text-primary hover:bg-surface-white/85 hover:text-primary';
+const NAV_ITEMS = [
+  { path: '/puzzles', label: 'Puzzles', icon: Puzzle },
+  { path: '/drills', label: 'Drills', icon: Target },
+  { path: '/openings', label: 'Openings', icon: BookOpen },
+] as const;
 
 export const AppSidebar = ({
   onHomeClick,
   desktopMode = true,
-  mobilePortraitBottomBar = true,
 }: AppSidebarProps) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const buttonClassName = cn(
-    navButtonBaseClassName,
-    desktopMode
-      ? 'md:w-full [@media(max-width:767px)]:w-full [@media(max-width:767px)]:min-w-0 [@media(max-width:767px)]:px-2 [@media(max-width:767px)]:text-[0.72rem]'
-      : 'w-full min-w-0 px-2 text-[0.72rem]',
-  );
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
 
   useEffect(() => {
     if (!supabase) {
@@ -37,7 +42,6 @@ export const AppSidebar = ({
         console.error('Failed to load current session:', error);
         return;
       }
-
       setIsAuthenticated(Boolean(data.session?.user));
     });
 
@@ -52,81 +56,262 @@ export const AppSidebar = ({
     };
   }, []);
 
+  const openMenu = useCallback(() => {
+    setIsMobileMenuOpen(true);
+    setIsAnimating(true);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => setIsAnimating(false));
+    });
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    setIsAnimating(true);
+    const timeout = setTimeout(() => {
+      setIsMobileMenuOpen(false);
+      setIsAnimating(false);
+    }, 300);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  const toggleMenu = useCallback(() => {
+    if (isMobileMenuOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }, [isMobileMenuOpen, closeMenu, openMenu]);
+
+  const isMenuVisible = isMobileMenuOpen;
+  const isMenuRevealed = isMobileMenuOpen && !isAnimating;
+
+  const isActive = (path: string) => location.pathname === path || location.pathname.startsWith(path + '/');
+
   return (
-    <div
-      className={cn(
-        'mx-4 mt-4 w-auto rounded-[28px] bg-paper-grain-top p-4 shadow-theme-strong',
-        desktopMode
-          ? 'md:sticky md:top-4 md:mb-4 md:mr-0 md:h-[calc(100vh-2rem)] md:w-28 md:shrink-0 md:self-start [@media(max-width:767px)]:fixed [@media(max-width:767px)]:inset-x-0 [@media(max-width:767px)]:bottom-0 [@media(max-width:767px)]:z-40 [@media(max-width:767px)]:m-0 [@media(max-width:767px)]:w-screen [@media(max-width:767px)]:rounded-none [@media(max-width:767px)]:border-t-2 [@media(max-width:767px)]:border-border [@media(max-width:767px)]:bg-background [@media(max-width:767px)]:px-3 [@media(max-width:767px)]:pt-3 [@media(max-width:767px)]:pb-[calc(0.75rem+env(safe-area-inset-bottom))] [@media(max-width:767px)]:shadow-[0_-10px_28px_rgba(0,0,0,0.16)]'
-          : mobilePortraitBottomBar && 'fixed inset-x-0 bottom-0 z-40 m-0 w-screen rounded-none border-t-2 border-border bg-background px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-10px_28px_rgba(0,0,0,0.16)]',
-      )}
-    >
+    <>
+      {/* ── Desktop: vertical sidebar ── */}
       <div
         className={cn(
-          'flex items-center',
-          desktopMode
-            ? 'md:h-full md:flex-col md:items-stretch md:justify-start [@media(max-width:767px)]:grid [@media(max-width:767px)]:grid-cols-[auto_minmax(0,1fr)] [@media(max-width:767px)]:gap-3'
-            : 'grid w-full grid-cols-[auto_minmax(0,1fr)] gap-3',
+          'mx-4 mt-4 hidden w-auto rounded-2xl border border-border/50 bg-card p-2.5 shadow-theme-soft',
+          'md:sticky md:top-4 md:mb-4 md:mr-0 md:block md:h-[calc(100vh-2rem)] md:w-20 md:shrink-0 md:self-start',
         )}
       >
-        <Link
-          to="/"
-          onClick={onHomeClick}
-          className={cn(
-            desktopMode
-              ? 'md:self-center [@media(max-width:767px)]:flex [@media(max-width:767px)]:min-h-0 [@media(max-width:767px)]:shrink-0 [@media(max-width:767px)]:items-center [@media(max-width:767px)]:self-center'
-              : 'flex min-h-0 shrink-0 items-center self-center',
-          )}
-        >
-          <img
-            src={whitePawnLogo}
-            alt="White pawn logo"
-            className={cn(
-              'object-contain',
-              desktopMode ? 'md:h-20 md:w-20 [@media(max-width:767px)]:h-10 [@media(max-width:767px)]:w-10' : 'h-10 w-10',
+        <div className="flex h-full flex-col items-center">
+          {/* Logo */}
+          <Link to="/" onClick={onHomeClick} className="mb-5 mt-2">
+            <img src={whitePawnLogo} alt="Blindchess logo" className="h-9 w-9 object-contain" />
+          </Link>
+
+          {/* Nav items */}
+          <nav className="flex w-full flex-col items-center gap-1.5 px-0.5">
+            {NAV_ITEMS.map(({ path, label, icon: Icon }) => (
+              <Link
+                key={path}
+                to={path}
+                className={cn(
+                  'flex w-full flex-col items-center gap-1 rounded-xl py-2.5 transition-colors',
+                  isActive(path)
+                    ? 'bg-secondary text-foreground'
+                    : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                )}
+                title={label}
+              >
+                <Icon size={20} strokeWidth={1.75} />
+                <span className="text-[0.6rem] font-medium leading-none">{label}</span>
+              </Link>
+            ))}
+          </nav>
+
+          {/* Bottom: auth */}
+          <div className="mt-auto flex w-full flex-col items-center gap-1.5 px-0.5">
+            {isAuthenticated ? (
+              <Link
+                to="/account"
+                className={cn(
+                  'flex w-full flex-col items-center gap-1 rounded-xl py-2.5 transition-colors',
+                  isActive('/account')
+                    ? 'bg-secondary text-foreground'
+                    : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                )}
+                title="Account"
+              >
+                <User size={20} strokeWidth={1.75} />
+                <span className="text-[0.6rem] font-medium leading-none">Account</span>
+              </Link>
+            ) : (
+              <>
+                <Link
+                  to="/login"
+                  className={cn(
+                    'flex w-full flex-col items-center gap-1 rounded-xl py-2.5 transition-colors',
+                    isActive('/login')
+                      ? 'bg-secondary text-foreground'
+                      : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                  )}
+                  title="Log In"
+                >
+                  <LogIn size={20} strokeWidth={1.75} />
+                  <span className="text-[0.6rem] font-medium leading-none">Log In</span>
+                </Link>
+                <Link
+                  to="/signup"
+                  className={cn(
+                    'flex w-full flex-col items-center gap-1 rounded-xl border py-2.5 transition-colors',
+                    isActive('/signup')
+                      ? 'border-foreground/25 bg-secondary text-foreground'
+                      : 'border-border/50 text-muted-foreground hover:border-foreground/20 hover:text-foreground',
+                  )}
+                  title="Sign Up"
+                >
+                  <UserPlus size={20} strokeWidth={1.75} />
+                  <span className="text-[0.6rem] font-medium leading-none">Sign Up</span>
+                </Link>
+              </>
             )}
-          />
-        </Link>
-
-        <div
-          className={cn(
-            'flex gap-2',
-            desktopMode
-              ? 'md:mt-6 md:flex-col [@media(max-width:767px)]:min-w-0 [@media(max-width:767px)]:flex-1 [@media(max-width:767px)]:grid [@media(max-width:767px)]:grid-cols-4 [@media(max-width:767px)]:gap-2 [@media(max-width:767px)]:items-stretch [@media(max-width:767px)]:justify-stretch'
-              : 'min-w-0 flex-1 grid grid-cols-4 items-stretch justify-stretch gap-2',
-          )}
-        >
-          <Button asChild type="button" className={buttonClassName}>
-            <Link to="/puzzles">Puzzles</Link>
-          </Button>
-          <Button asChild type="button" className={buttonClassName}>
-            <Link to="/drills">Drills</Link>
-          </Button>
-          <Button asChild type="button" className={buttonClassName}>
-            <Link to="/openings">Openings</Link>
-          </Button>
-
-          {!desktopMode && (
-            <Button asChild type="button" className={buttonClassName}>
-              <Link to={isAuthenticated ? '/account' : '/login'}>{isAuthenticated ? 'Account' : 'Log In'}</Link>
-            </Button>
-          )}
-
-          {desktopMode && (
-            <Button asChild type="button" className={cn(buttonClassName, 'md:hidden')}>
-              <Link to={isAuthenticated ? '/account' : '/login'}>{isAuthenticated ? 'Account' : 'Log In'}</Link>
-            </Button>
-          )}
-        </div>
-
-        {desktopMode && (
-          <div className="hidden gap-2 md:mt-auto md:flex md:flex-col">
-            <Button asChild type="button" className={buttonClassName}>
-              <Link to={isAuthenticated ? '/account' : '/login'}>{isAuthenticated ? 'Account' : 'Log In'}</Link>
-            </Button>
           </div>
-        )}
+        </div>
       </div>
-    </div>
+
+      {/* ── Mobile: top navbar ── */}
+      <div className="sticky top-0 z-40 w-full border-b border-border/50 bg-background md:hidden">
+        <div className="flex h-14 items-center px-4">
+          {/* Left: hamburger + logo */}
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              className="flex h-9 w-9 items-center justify-center rounded-lg text-foreground hover:bg-secondary"
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
+            </button>
+            <Link to="/" onClick={onHomeClick} className="flex items-center">
+              <img src={whitePawnLogo} alt="Blindchess logo" className="h-7 w-7 object-contain" />
+            </Link>
+          </div>
+
+          {/* Right: auth buttons */}
+          <div className="ml-auto flex items-center gap-1.5">
+            {isAuthenticated ? (
+              <Button asChild type="button" size="sm" className="h-8 rounded-lg bg-transparent px-3 text-xs text-foreground hover:bg-secondary">
+                <Link to="/account">Account</Link>
+              </Button>
+            ) : (
+              <>
+                <Button asChild type="button" size="sm" className="h-7 rounded-md bg-transparent px-2.5 text-[0.7rem] text-muted-foreground hover:bg-secondary hover:text-foreground">
+                  <Link to="/login">Log In</Link>
+                </Button>
+                <Button asChild type="button" size="sm" className="h-7 rounded-md border border-foreground/20 bg-transparent px-2.5 text-[0.7rem] text-foreground hover:bg-secondary">
+                  <Link to="/signup">Sign Up</Link>
+                </Button>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* ── Mobile: animated side panel + backdrop ── */}
+      {isMenuVisible && (
+        <div className="fixed inset-0 z-30 md:hidden">
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-background/50 transition-all duration-300 ease-out"
+            style={{
+              opacity: isMenuRevealed ? 1 : 0,
+              backdropFilter: isMenuRevealed ? 'blur(6px)' : 'blur(0px)',
+              WebkitBackdropFilter: isMenuRevealed ? 'blur(6px)' : 'blur(0px)',
+            }}
+            onClick={closeMenu}
+          />
+
+          {/* Panel */}
+          <div
+            ref={panelRef}
+            className="absolute left-0 top-14 flex flex-col border-r border-border/50 bg-card shadow-theme-strong transition-transform duration-300 ease-out"
+            style={{
+              width: '16.5rem',
+              height: 'calc(100vh - 3.5rem)',
+              transform: isMenuRevealed ? 'translateX(0)' : 'translateX(-100%)',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Nav links */}
+            <nav className="flex flex-col gap-0.5 p-3 pt-4">
+              <p className="mb-2 px-3 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/60">
+                Training
+              </p>
+              {NAV_ITEMS.map(({ path, label, icon: Icon }) => (
+                <Link
+                  key={path}
+                  to={path}
+                  className={cn(
+                    'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
+                    isActive(path)
+                      ? 'bg-secondary text-foreground'
+                      : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                  )}
+                  onClick={closeMenu}
+                >
+                  <Icon size={16} strokeWidth={1.75} />
+                  {label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="mx-3 my-2 h-px bg-border/50" />
+
+            {/* Account section */}
+            <div className="flex flex-col gap-0.5 p-3">
+              <p className="mb-2 px-3 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/60">
+                Account
+              </p>
+              {isAuthenticated ? (
+                <Link
+                  to="/account"
+                  className={cn(
+                    'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
+                    isActive('/account')
+                      ? 'bg-secondary text-foreground'
+                      : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                  )}
+                  onClick={closeMenu}
+                >
+                  <User size={16} strokeWidth={1.75} />
+                  Account
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    to="/login"
+                    className={cn(
+                      'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
+                      isActive('/login')
+                        ? 'bg-secondary text-foreground'
+                        : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                    )}
+                    onClick={closeMenu}
+                  >
+                    <LogIn size={16} strokeWidth={1.75} />
+                    Log In
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className={cn(
+                      'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
+                      isActive('/signup')
+                        ? 'bg-secondary text-foreground'
+                        : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                    )}
+                    onClick={closeMenu}
+                  >
+                    <UserPlus size={16} strokeWidth={1.75} />
+                    Sign Up
+                  </Link>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 };

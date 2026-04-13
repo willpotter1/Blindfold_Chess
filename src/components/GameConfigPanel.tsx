@@ -107,12 +107,12 @@ export const GameConfigPanel = ({
 
   const modeButtonClassName = (selected: boolean) => (
     selected
-      ? `${borderless ? 'border-transparent' : 'border-primary'} bg-primary text-primary-foreground hover:bg-primary/90`
-      : `${borderless ? 'border-transparent' : 'border-border'} bg-surface-white/80 text-primary hover:bg-background`
+      ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+      : 'border border-border/50 bg-card text-foreground hover:bg-secondary'
   );
 
   return (
-    <Card className={`bg-paper-grain w-full overflow-hidden rounded-[30px] text-foreground ${borderless ? 'border-0 shadow-none' : 'border-2 border-border'}`}>
+    <Card className={`w-full overflow-hidden rounded-2xl bg-card text-foreground ${borderless ? 'border-0 shadow-none' : 'border border-border/50'}`}>
       <CardHeader className="space-y-1 pb-2">
         <CardTitle className="text-[2rem] leading-none text-primary">Game Configuration</CardTitle>
       </CardHeader>
@@ -145,14 +145,14 @@ export const GameConfigPanel = ({
           className={`
             grid grid-cols-1 gap-3
             ${mode === 'computer' ? 'sm:grid-cols-2' : ''}
-            ${compactPortraitLayout && mode === 'computer' ? '[@media(max-width:767px)]:grid-cols-2 [@media(max-width:767px)]:gap-x-3 [@media(max-width:767px)]:gap-y-3' : ''}
+            ${compactPortraitLayout && mode === 'computer' ? 'max-md:grid-cols-2 max-md:gap-x-3 max-md:gap-y-3' : ''}
           `}
         >
           {mode === 'computer' && (
             <div className="space-y-2">
               <Label htmlFor="player-color">Play As</Label>
               <Select value={playerColor} onValueChange={(value) => setPlayerColor(value as 'white' | 'black')}>
-              <SelectTrigger id="player-color" className="bg-surface-white/80">
+              <SelectTrigger id="player-color" className="bg-card">
                 <SelectValue />
               </SelectTrigger>
                 <SelectContent>
@@ -180,7 +180,7 @@ export const GameConfigPanel = ({
                     e.currentTarget.blur();
                   }
                 }}
-                className="w-full bg-surface-white/80"
+                className="w-full bg-card"
               />
             </div>
           )}
@@ -189,7 +189,7 @@ export const GameConfigPanel = ({
             className={`
               space-y-2
               ${mode === 'computer' ? 'sm:col-span-2' : ''}
-              ${compactPortraitLayout && mode === 'computer' ? '[@media(max-width:767px)]:col-span-2' : ''}
+              ${compactPortraitLayout && mode === 'computer' ? 'max-md:col-span-2' : ''}
             `}
           >
             <Label htmlFor="reveal-frequency">Board Reveal Frequency</Label>
@@ -210,7 +210,7 @@ export const GameConfigPanel = ({
                 }
               }}
               placeholder="0 = never auto-reveal"
-              className={`bg-surface-white/80 ${isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}`}
+              className={`bg-card ${isRevealEveryValid() || !revealEveryTouched ? '' : 'border-destructive focus-visible:ring-destructive'}`}
             />
           </div>
         </div>
@@ -218,14 +218,14 @@ export const GameConfigPanel = ({
         <div
           className={`
             space-y-2 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-0
-            ${compactPortraitLayout ? '[@media(max-width:767px)]:grid [@media(max-width:767px)]:grid-cols-2 [@media(max-width:767px)]:gap-3 [@media(max-width:767px)]:space-y-0' : ''}
+            ${compactPortraitLayout ? 'max-md:grid max-md:grid-cols-2 max-md:gap-3 max-md:space-y-0' : ''}
           `}
         >
           <div
             className={`
-              flex items-center justify-between rounded-2xl bg-surface-white/70 px-4 py-3
-              ${borderless ? '' : 'border-2 border-border'}
-              ${compactPortraitLayout ? '[@media(max-width:767px)]:min-h-[3.75rem] [@media(max-width:767px)]:px-3' : ''}
+              flex items-center justify-between rounded-2xl bg-secondary/40 px-4 py-3
+              ${borderless ? '' : 'border border-border/50'}
+              ${compactPortraitLayout ? 'max-md:min-h-[3.75rem] max-md:px-3' : ''}
             `}
           >
             <Label htmlFor="allow-cheats" className="cursor-pointer">
@@ -239,9 +239,9 @@ export const GameConfigPanel = ({
           </div>
           <div
             className={`
-              flex items-center justify-between rounded-2xl bg-surface-white/70 px-4 py-3
-              ${borderless ? '' : 'border-2 border-border'}
-              ${compactPortraitLayout ? '[@media(max-width:767px)]:min-h-[3.75rem] [@media(max-width:767px)]:px-3' : ''}
+              flex items-center justify-between rounded-2xl bg-secondary/40 px-4 py-3
+              ${borderless ? '' : 'border border-border/50'}
+              ${compactPortraitLayout ? 'max-md:min-h-[3.75rem] max-md:px-3' : ''}
             `}
           >
             <Label htmlFor="hide-move-history" className="cursor-pointer">
@@ -257,7 +257,7 @@ export const GameConfigPanel = ({
 
         <Button
           onClick={handleStartGame}
-          className={`shadow-theme-soft h-12 w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 ${borderless ? 'border-0' : 'border-2 border-primary'}`}
+          className="h-12 w-full rounded-lg bg-primary text-primary-foreground shadow-theme-soft hover:bg-primary/90"
           size="lg"
         >
           {isGameActive ? 'New Game' : 'Start Game'}

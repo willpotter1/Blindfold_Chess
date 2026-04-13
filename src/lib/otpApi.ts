@@ -109,7 +109,16 @@ const requestJson = async <T>(path: string, init?: RequestInit): Promise<T> => {
   }
 
   if (!response.ok || body?.ok === false) {
-    throw new Error(proxyFailureErrorCode || body?.error || 'otp_request_failed');
+    const errorValue = body?.error;
+    let errorMessage = 'otp_request_failed';
+    if (typeof errorValue === 'string') {
+      errorMessage = errorValue;
+    } else if (errorValue && typeof errorValue === 'object') {
+      errorMessage = (errorValue as Record<string, unknown>).message as string
+        ?? (errorValue as Record<string, unknown>).code as string
+        ?? JSON.stringify(errorValue);
+    }
+    throw new Error(proxyFailureErrorCode || errorMessage);
   }
   if (!body) {
     throw new Error('otp_response_invalid');

@@ -95,99 +95,91 @@ const TreeNodeRow = ({
       aria-selected={branchSelected || openingSelected}
       tabIndex={isFocused ? 0 : -1}
       className={cn(
-        'rounded-xl border border-border bg-surface-white/70 px-3 py-2 outline-none transition-colors',
-        isFocused && 'border-primary bg-accent/50 ring-2 ring-primary/25',
-        coveredBySelection && !branchSelected && !openingSelected && 'opacity-65',
+        'rounded-xl border border-border/50 bg-card px-3 py-2.5 outline-none transition-colors',
+        isFocused && 'border-foreground/20 ring-2 ring-foreground/10',
+        coveredBySelection && !branchSelected && !openingSelected && 'opacity-50',
       )}
-      style={{ marginLeft: `${Math.max(0, displayRef.depth - 1) * 14}px` }}
+      style={{ marginLeft: `${Math.max(0, displayRef.depth - 1) * 12}px` }}
       onClick={() => onFocus(displayRefId)}
       onFocus={() => onFocus(displayRefId)}
       onKeyDown={(event) => onKeyDown(event, displayRefId)}
     >
-      <div className="flex items-start gap-3">
+      {/* Move label row */}
+      <div className="flex items-center gap-2">
         {hasChildren ? (
           <button
             type="button"
-            className="mt-0.5 rounded p-0.5 text-muted-foreground hover:bg-accent hover:text-primary"
+            className="shrink-0 rounded p-0.5 text-muted-foreground hover:bg-secondary hover:text-foreground"
             onClick={(event) => {
               event.stopPropagation();
               onToggleExpand(displayRefId);
             }}
             aria-label={isExpanded ? `Collapse ${displayRef.label}` : `Expand ${displayRef.label}`}
           >
-            {isExpanded ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+            {isExpanded ? <ChevronDown className="h-3.5 w-3.5" /> : <ChevronRight className="h-3.5 w-3.5" />}
           </button>
         ) : (
-          <span className="mt-0.5 h-4 w-4 shrink-0" />
+          <span className="h-3.5 w-3.5 shrink-0" />
         )}
 
-        <div className="min-w-0 flex-1">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-sm font-semibold text-foreground">
-              {formatOpeningExplorerMoveLabel(explorer, displayRefId, playerColor)}
-            </span>
-            {openingDisplayName && (
-              <span className="rounded-full border border-border bg-surface-strong/70 px-2 py-0.5 text-xs font-medium text-primary">
-                {openingDisplayName}
-              </span>
-            )}
-            {displayEco && (
-              <span className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-                {displayEco}
-              </span>
-            )}
-          </div>
+        <span className="text-sm font-semibold text-foreground">
+          {formatOpeningExplorerMoveLabel(explorer, displayRefId, playerColor)}
+        </span>
 
-          <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-            {branchSelected && (
-              <span className="rounded-full bg-primary/10 px-2 py-0.5 font-semibold text-primary">
-                Branch selected
-              </span>
-            )}
-            {openingSelected && (
-              <span className="rounded-full bg-primary/10 px-2 py-0.5 font-semibold text-primary">
-                Opening selected
-              </span>
-            )}
-            {coveredBySelection && !branchSelected && !openingSelected && (
-              <span className="rounded-full bg-muted px-2 py-0.5 font-semibold text-muted-foreground">
-                Covered by ancestor
-              </span>
-            )}
-          </div>
-        </div>
+        {displayEco && (
+          <span className="text-[0.6rem] font-semibold uppercase tracking-wider text-muted-foreground/60">
+            {displayEco}
+          </span>
+        )}
 
-        <div className="flex shrink-0 flex-col gap-2">
+        {/* Status badges */}
+        {branchSelected && (
+          <span className="rounded-full bg-primary/15 px-1.5 py-0.5 text-[0.6rem] font-semibold text-primary">Branch</span>
+        )}
+        {openingSelected && (
+          <span className="rounded-full bg-primary/15 px-1.5 py-0.5 text-[0.6rem] font-semibold text-primary">Opening</span>
+        )}
+        {coveredBySelection && !branchSelected && !openingSelected && (
+          <span className="rounded-full bg-secondary px-1.5 py-0.5 text-[0.6rem] font-semibold text-muted-foreground">Covered</span>
+        )}
+      </div>
+
+      {/* Opening name (if any) */}
+      {openingDisplayName && (
+        <p className="mt-1 ml-6 text-xs text-muted-foreground">{openingDisplayName}</p>
+      )}
+
+      {/* Action buttons */}
+      <div className="mt-2 ml-6 flex flex-wrap gap-1.5">
+        <Button
+          type="button"
+          size="sm"
+          variant={branchSelected ? 'default' : 'outline'}
+          className="h-7 px-2.5 text-[0.65rem]"
+          disabled={branchControlDisabled}
+          onClick={(event) => {
+            event.stopPropagation();
+            onToggleBranch(displayRefId);
+          }}
+        >
+          {branchSelected ? 'Remove branch' : branchControlDisabled ? 'Covered' : 'Add branch'}
+        </Button>
+
+        {displayRef.openingName && displayRef.openingNodeId && (
           <Button
             type="button"
             size="sm"
-            variant={branchSelected ? 'default' : 'outline'}
-            className="min-w-[116px]"
-            disabled={branchControlDisabled}
+            variant={openingSelected ? 'default' : 'outline'}
+            className="h-7 px-2.5 text-[0.65rem]"
+            disabled={openingControlDisabled}
             onClick={(event) => {
               event.stopPropagation();
-              onToggleBranch(displayRefId);
+              onToggleOpening(displayRefId);
             }}
           >
-            {branchSelected ? 'Remove branch' : branchControlDisabled ? 'Covered' : 'Add branch'}
+            {openingSelected ? 'Remove opening' : openingControlDisabled ? 'Covered' : 'Add opening'}
           </Button>
-
-          {displayRef.openingName && displayRef.openingNodeId && (
-            <Button
-              type="button"
-              size="sm"
-              variant={openingSelected ? 'default' : 'outline'}
-              className="min-w-[116px]"
-              disabled={openingControlDisabled}
-              onClick={(event) => {
-                event.stopPropagation();
-                onToggleOpening(displayRefId);
-              }}
-            >
-              {openingSelected ? 'Remove opening' : openingControlDisabled ? 'Covered' : 'Add opening'}
-            </Button>
-          )}
-        </div>
+        )}
       </div>
     </div>
   );
@@ -225,13 +217,20 @@ export const OpeningMoveTreeExplorer = ({
     setExpandedRefIds(new Set());
   }, [playerColor]);
 
+  const hasUserInteractedRef = useRef(false);
+
   useEffect(() => {
     if (!focusedRefId) {
       return;
     }
 
+    if (!hasUserInteractedRef.current) {
+      hasUserInteractedRef.current = true;
+      return;
+    }
+
     const element = rowElementsRef.current.get(focusedRefId);
-    element?.focus();
+    element?.focus({ preventScroll: true });
     element?.scrollIntoView({ block: 'nearest' });
   }, [focusedRefId]);
 
@@ -425,7 +424,7 @@ export const OpeningMoveTreeExplorer = ({
     : '';
 
   return (
-    <div className={cn('grid min-h-0 grid-rows-[auto_auto_minmax(0,1fr)] gap-3', className)}>
+    <div className={cn('grid gap-3 grid-rows-[auto_auto_auto] lg:min-h-0 lg:grid-rows-[auto_auto_minmax(0,1fr)]', className)}>
       <div className="grid gap-2">
         <div className="flex items-center gap-2">
           <div className="relative flex-1">
@@ -436,7 +435,7 @@ export const OpeningMoveTreeExplorer = ({
               className="pl-9"
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
-              placeholder="Search opening, ECO, SAN, or move sequence"
+              placeholder="Search openings..."
             />
           </div>
 
@@ -454,7 +453,7 @@ export const OpeningMoveTreeExplorer = ({
         </div>
 
         {searchQuery.trim().length > 0 && (
-          <div className="rounded-2xl border border-border bg-surface-white/70 p-2">
+          <div className="rounded-2xl border border-border/50 bg-card p-2">
             {searchResults.length > 0 ? (
               <ScrollArea className="max-h-40">
                 <div className="grid gap-1 pr-3">
@@ -465,7 +464,7 @@ export const OpeningMoveTreeExplorer = ({
                       <button
                         key={result.refId}
                         type="button"
-                        className="rounded-xl px-3 py-2 text-left hover:bg-accent"
+                        className="rounded-xl px-3 py-2 text-left hover:bg-secondary"
                         onClick={() => jumpToRef(result.refId)}
                       >
                         <div className="text-sm font-semibold text-foreground">
@@ -488,16 +487,16 @@ export const OpeningMoveTreeExplorer = ({
         )}
       </div>
 
-      <div className="rounded-2xl border border-border bg-surface-white/70 px-3 py-2">
+      <div className="rounded-2xl border border-border/50 bg-card px-3 py-2">
         <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Breadcrumb</div>
         <div className="mt-1 text-sm text-foreground">
           {breadcrumbText || 'Browse opening moves, then add a subtree or named opening.'}
         </div>
       </div>
 
-      <div className="min-h-0 rounded-2xl border-2 border-border bg-surface-white/75">
+      <div className="rounded-2xl border border-border/50 bg-card lg:min-h-0">
         {explorer ? (
-          <ScrollArea className="h-full">
+          <ScrollArea className="lg:h-full">
             <div role="tree" aria-label="Opening move tree" aria-multiselectable="true" className="grid gap-2 p-3">
               {visibleRefIds.map((treeRefId) => {
                 const displayRef = getOpeningExplorerDisplayRef(explorer, playerColor, treeRefId);

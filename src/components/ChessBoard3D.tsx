@@ -147,6 +147,10 @@ export const ChessBoard3D = forwardRef<ChessBoard3DHandle, ChessBoard3DProps>(({
       runtime.dispose();
       runtimeRef.current = null;
       initPromiseRef.current = null;
+      // Clear any stale canvas left if dispose ran before init finished appending
+      while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
     };
   }, [enableControls, glbUrl, hdriUrl, initialFen]);
 
@@ -200,7 +204,7 @@ export const ChessBoard3D = forwardRef<ChessBoard3DHandle, ChessBoard3DProps>(({
 
   return (
     <div className={cn(
-      "relative w-full overflow-hidden rounded-xl bg-transparent",
+      "relative w-full overflow-hidden rounded-xl bg-card",
       isInteractive && isReady && !loadError ? "cursor-pointer" : undefined,
       className,
     )}
@@ -214,13 +218,13 @@ export const ChessBoard3D = forwardRef<ChessBoard3DHandle, ChessBoard3DProps>(({
       />
 
       {!isReady && !loadError && (
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-foreground/15 px-6 text-center text-sm font-medium text-primary-foreground/90">
-          Loading 3D chessboard…
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6 text-center text-sm font-medium text-muted-foreground">
+          Loading board…
         </div>
       )}
 
       {loadError && (
-        <div className="absolute inset-0 flex items-center justify-center bg-foreground/70 px-6 text-center text-sm text-primary-foreground">
+        <div className="absolute inset-0 flex items-center justify-center bg-card px-6 text-center text-sm text-muted-foreground">
           <p>3D board failed to load: {loadError}</p>
         </div>
       )}
