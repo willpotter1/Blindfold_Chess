@@ -207,7 +207,7 @@ export const useAccountProfile = () => {
       if (!isActive) return;
       setProfile({
         username,
-        email: profileResult.data?.email ? normalizeEmail(profileResult.data.email) : (user.email ? normalizeEmail(user.email) : null),
+        email: user.email ? normalizeEmail(user.email) : null,
         uid: user.id,
         gamesCompleted,
         computerGamesCompleted,

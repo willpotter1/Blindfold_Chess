@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { supabase } from '@/lib/supabase';
+import { useAuth } from '@/lib/authContext';
 import { Puzzle, Target, BookOpen, LogIn, UserPlus, User, Menu, X } from 'lucide-react';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
@@ -21,7 +21,7 @@ export const AppSidebar = ({
   onHomeClick,
   desktopMode = true,
 }: AppSidebarProps) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const { isAuthenticated, isLoaded: isAuthLoaded } = useAuth();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
@@ -30,31 +30,6 @@ export const AppSidebar = ({
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
-
-  useEffect(() => {
-    if (!supabase) {
-      setIsAuthenticated(false);
-      return;
-    }
-
-    void supabase.auth.getSession().then(({ data, error }) => {
-      if (error) {
-        console.error('Failed to load current session:', error);
-        return;
-      }
-      setIsAuthenticated(Boolean(data.session?.user));
-    });
-
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setIsAuthenticated(Boolean(session?.user));
-    });
-
-    return () => {
-      subscription.unsubscribe();
-    };
-  }, []);
 
   const openMenu = useCallback(() => {
     setIsMobileMenuOpen(true);
@@ -122,8 +97,11 @@ export const AppSidebar = ({
           </nav>
 
           {/* Bottom: auth */}
-          <div className="mt-auto flex w-full flex-col items-center gap-1.5 px-0.5">
-            {isAuthenticated ? (
+          <div
+            className="mt-auto flex w-full flex-col items-center gap-1.5 px-0.5 transition-opacity duration-300"
+            style={{ opacity: isAuthLoaded ? 1 : 0 }}
+          >
+            {!isAuthLoaded ? null : isAuthenticated ? (
               <Link
                 to="/account"
                 className={cn(
@@ -190,8 +168,11 @@ export const AppSidebar = ({
           </div>
 
           {/* Right: auth buttons */}
-          <div className="ml-auto flex items-center gap-1.5">
-            {isAuthenticated ? (
+          <div
+            className="ml-auto flex items-center gap-1.5 transition-opacity duration-300"
+            style={{ opacity: isAuthLoaded ? 1 : 0 }}
+          >
+            {!isAuthLoaded ? null : isAuthenticated ? (
               <Button asChild type="button" size="sm" className="h-8 rounded-lg bg-transparent px-3 text-xs text-foreground hover:bg-secondary">
                 <Link to="/account">Account</Link>
               </Button>
@@ -264,7 +245,7 @@ export const AppSidebar = ({
               <p className="mb-2 px-3 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/60">
                 Account
               </p>
-              {isAuthenticated ? (
+              {!isAuthLoaded ? null : isAuthenticated ? (
                 <Link
                   to="/account"
                   className={cn(
