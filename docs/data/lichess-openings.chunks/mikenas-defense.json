@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Mikenas Defense",
+    "chunkKey": "mikenas-defense",
+    "recordCount": 4,
+    "lineCount": 4
+  },
+  "records": [
+    {
+      "id": "record-498",
+      "eco": "A40",
+      "name": "Mikenas Defense",
+      "family": "Mikenas Defense",
+      "pgn": "1. d4 Nc6",
+      "uci": "d2d4 b8c6",
+      "epd": "r1bqkbnr/pppppppp/2n5/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-418"
+    },
+    {
+      "id": "record-499",
+      "eco": "A40",
+      "name": "Mikenas Defense: Cannstatter Variation",
+      "family": "Mikenas Defense",
+      "pgn": "1. d4 Nc6 2. c4 e5 3. d5 Nd4",
+      "uci": "d2d4 b8c6 c2c4 e7e5 d4d5 c6d4",
+      "epd": "r1bqkbnr/pppp1ppp/8/3Pp3/2Pn4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-419"
+    },
+    {
+      "id": "record-500",
+      "eco": "A40",
+      "name": "Mikenas Defense: Lithuanian Variation",
+      "family": "Mikenas Defense",
+      "pgn": "1. d4 Nc6 2. c4 e5 3. d5 Nce7",
+      "uci": "d2d4 b8c6 c2c4 e7e5 d4d5 c6e7",
+      "epd": "r1bqkbnr/ppppnppp/8/3Pp3/2P5/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-420"
+    },
+    {
+      "id": "record-501",
+      "eco": "A40",
+      "name": "Mikenas Defense: Pozarek Gambit",
+      "family": "Mikenas Defense",
+      "pgn": "1. d4 Nc6 2. c4 e5 3. dxe5 Nxe5 4. Nc3 Nxc4",
+      "uci": "d2d4 b8c6 c2c4 e7e5 d4e5 c6e5 b1c3 e5c4",
+      "epd": "r1bqkbnr/pppp1ppp/8/8/2n5/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-421"
+    }
+  ]
+}

@@ -1,0 +1,897 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Queen's Pawn Game",
+    "chunkKey": "queen-s-pawn-game",
+    "recordCount": 59,
+    "lineCount": 48
+  },
+  "records": [
+    {
+      "id": "record-2823",
+      "eco": "D00",
+      "name": "Queen's Pawn Game",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5",
+      "uci": "d2d4 d7d5",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-433"
+    },
+    {
+      "id": "record-2824",
+      "eco": "D00",
+      "name": "Queen's Pawn Game",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. e3",
+      "uci": "d2d4 d7d5 e2e3",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/3P4/4P3/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-433"
+    },
+    {
+      "id": "record-2825",
+      "eco": "D00",
+      "name": "Queen's Pawn Game",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. e3 Nf6",
+      "uci": "d2d4 d7d5 e2e3 g8f6",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/4P3/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-433"
+    },
+    {
+      "id": "record-2826",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Accelerated London System",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Bf4",
+      "uci": "d2d4 d7d5 c1f4",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-2476"
+    },
+    {
+      "id": "record-2827",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Bf4 c5",
+      "uci": "d2d4 d7d5 c1f4 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2477"
+    },
+    {
+      "id": "record-2828",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit Accepted",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Bf4 c5 3. dxc5",
+      "uci": "d2d4 d7d5 c1f4 c7c5 d4c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2Pp4/5B2/8/PPP1PPPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2478"
+    },
+    {
+      "id": "record-2829",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit, Morris Countergambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Bf4 c5 3. e4",
+      "uci": "d2d4 d7d5 c1f4 c7c5 e2e4",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/3PPB2/8/PPP2PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2479"
+    },
+    {
+      "id": "record-2830",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit, Morris Countergambit Accepted",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Bf4 c5 3. e4 dxe4",
+      "uci": "d2d4 d7d5 c1f4 c7c5 e2e4 d5e4",
+      "epd": "rnbqkbnr/pp2pppp/8/2p5/3PpB2/8/PPP2PPP/RN1QKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2480"
+    },
+    {
+      "id": "record-2831",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Chigorin Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nc3",
+      "uci": "d2d4 d7d5 b1c3",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-2481"
+    },
+    {
+      "id": "record-2832",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Chigorin Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nc3 e6",
+      "uci": "d2d4 d7d5 b1c3 e7e6",
+      "epd": "rnbqkbnr/ppp2ppp/4p3/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2481"
+    },
+    {
+      "id": "record-2833",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Chigorin Variation, Alburt Defense",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nc3 Bf5",
+      "uci": "d2d4 d7d5 b1c3 c8f5",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p1b2/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2482"
+    },
+    {
+      "id": "record-2834",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Chigorin Variation, Anti-Veresov",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nc3 Bg4",
+      "uci": "d2d4 d7d5 b1c3 c8g4",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p4/3P2b1/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2483"
+    },
+    {
+      "id": "record-2835",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Chigorin Variation, Fianchetto Defense",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 g6 2. Nf3 Bg7 3. Nc3 d5",
+      "uci": "d2d4 g7g6 g1f3 f8g7 b1c3 d7d5",
+      "epd": "rnbqk1nr/ppp1ppbp/6p1/3p4/3P4/2N2N2/PPP1PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2484"
+    },
+    {
+      "id": "record-2836",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Chigorin Variation, Irish Gambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nc3 c5",
+      "uci": "d2d4 d7d5 b1c3 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2485"
+    },
+    {
+      "id": "record-2837",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Chigorin Variation, Shaviliuk Gambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nc3 e5",
+      "uci": "d2d4 d7d5 b1c3 e7e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2486"
+    },
+    {
+      "id": "record-2838",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Chigorin Variation, Shropshire Defense",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nc3 h5",
+      "uci": "d2d4 d7d5 b1c3 h7h5",
+      "epd": "rnbqkbnr/ppp1ppp1/8/3p3p/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2487"
+    },
+    {
+      "id": "record-2839",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Hübsch Gambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nc3 d5 3. e4",
+      "uci": "d2d4 g8f6 b1c3 d7d5 e2e4",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2488"
+    },
+    {
+      "id": "record-2840",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Levitsky Attack",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Bg5",
+      "uci": "d2d4 d7d5 c1g5",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p2B1/3P4/8/PPP1PPPP/RN1QKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-2489"
+    },
+    {
+      "id": "record-2841",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Levitsky Attack, Welling Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Bg5 Bg4",
+      "uci": "d2d4 d7d5 c1g5 c8g4",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p2B1/3P2b1/8/PPP1PPPP/RN1QKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2490"
+    },
+    {
+      "id": "record-2842",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Mason Attack",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. f4",
+      "uci": "d2d4 d7d5 f2f4",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/3P1P2/8/PPP1P1PP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-2491"
+    },
+    {
+      "id": "record-2843",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Stonewall Attack",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. e3 Nf6 3. Bd3",
+      "uci": "d2d4 d7d5 e2e3 g8f6 f1d3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/3BP3/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2492"
+    },
+    {
+      "id": "record-2844",
+      "eco": "D00",
+      "name": "Queen's Pawn Game: Zurich Gambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. g4",
+      "uci": "d2d4 d7d5 g2g4",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/3P2P1/8/PPP1PP1P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-2493"
+    },
+    {
+      "id": "record-2859",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Anti-Torre",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. Nf3 d5 2. d4 Bg4",
+      "uci": "g1f3 d7d5 d2d4 c8g4",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p4/3P2b1/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2505"
+    },
+    {
+      "id": "record-2860",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Chandler Gambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 c5 3. g3 cxd4 4. Bg2",
+      "uci": "d2d4 d7d5 g1f3 c7c5 g2g3 c5d4 f1g2",
+      "epd": "rnbqkbnr/pp2pppp/8/3p4/3p4/5NP1/PPP1PPBP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2506"
+    },
+    {
+      "id": "record-2861",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Chigorin Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nc6",
+      "uci": "d2d4 d7d5 g1f3 b8c6",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2481"
+    },
+    {
+      "id": "record-2862",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Krause Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 c5",
+      "uci": "d2d4 d7d5 g1f3 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2507"
+    },
+    {
+      "id": "record-2863",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Levitsky Attack, Euwe Variation, Modern Line",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 c6 3. Bg5 h6 4. Bh4 Qb6",
+      "uci": "d2d4 d7d5 g1f3 c7c6 c1g5 h7h6 g5h4 d8b6",
+      "epd": "rnb1kbnr/pp2ppp1/1qp4p/3p4/3P3B/5N2/PPP1PPPP/RN1QKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2508"
+    },
+    {
+      "id": "record-2864",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: London System",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. Bf4",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c1f4",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2509"
+    },
+    {
+      "id": "record-2865",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: London System, Pterodactyl Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 g6 2. Nf3 Bg7 3. Bf4 c5 4. c3 cxd4 5. cxd4 Qa5+",
+      "uci": "d2d4 g7g6 g1f3 f8g7 c1f4 c7c5 c2c3 c5d4 c3d4 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q7/3P1B2/5N2/PP2PPPP/RN1QKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2510"
+    },
+    {
+      "id": "record-2866",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: London System, with e6",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 e6 3. Bf4",
+      "uci": "d2d4 d7d5 g1f3 e7e6 c1f4",
+      "epd": "rnbqkbnr/ppp2ppp/4p3/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2511"
+    },
+    {
+      "id": "record-2867",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Symmetrical Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6",
+      "uci": "d2d4 d7d5 g1f3 g8f6",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2512"
+    },
+    {
+      "id": "record-2868",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. g3",
+      "uci": "d2d4 d7d5 g1f3 g8f6 g2g3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5NP1/PPP1PP1P/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2513"
+    },
+    {
+      "id": "record-2869",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Zilbermints Countergambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 b5",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c2c4 b7b5",
+      "epd": "rnbqkb1r/p1p1pppp/5n2/1p1p4/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2514"
+    },
+    {
+      "id": "record-2870",
+      "eco": "D02",
+      "name": "Queen's Pawn Game: Zukertort Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3",
+      "uci": "d2d4 d7d5 g1f3",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-2515"
+    },
+    {
+      "id": "record-2871",
+      "eco": "D03",
+      "name": "Queen's Pawn Game: Torre Attack",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. Bg5",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c1g5",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p2B1/3P4/5N2/PPP1PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2516"
+    },
+    {
+      "id": "record-2872",
+      "eco": "D03",
+      "name": "Queen's Pawn Game: Torre Attack, Gossip Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. Bg5 Ne4",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c1g5 f6e4",
+      "epd": "rnbqkb1r/ppp1pppp/8/3p2B1/3Pn3/5N2/PPP1PPPP/RN1QKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2517"
+    },
+    {
+      "id": "record-2873",
+      "eco": "D03",
+      "name": "Queen's Pawn Game: Torre Attack, Grünfeld Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. Bg5 g6",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c1g5 g7g6",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p2B1/3P4/5N2/PPP1PPPP/RN1QKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2518"
+    },
+    {
+      "id": "record-2874",
+      "eco": "D04",
+      "name": "Queen's Pawn Game: Colle System",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. e3",
+      "uci": "d2d4 d7d5 g1f3 g8f6 e2e3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/4PN2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2519"
+    },
+    {
+      "id": "record-2875",
+      "eco": "D04",
+      "name": "Queen's Pawn Game: Colle System, Anti-Colle",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. e3 Bf5",
+      "uci": "d2d4 d7d5 g1f3 g8f6 e2e3 c8f5",
+      "epd": "rn1qkb1r/ppp1pppp/5n2/3p1b2/3P4/4PN2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2520"
+    },
+    {
+      "id": "record-2876",
+      "eco": "D04",
+      "name": "Queen's Pawn Game: Colle System, Grünfeld Formation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. e3 g6 4. Bd3 Bg7",
+      "uci": "d2d4 d7d5 g1f3 g8f6 e2e3 g7g6 f1d3 f8g7",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/3P4/3BPN2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2521"
+    },
+    {
+      "id": "record-2877",
+      "eco": "D05",
+      "name": "Queen's Pawn Game: Colle System",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. e3 e6",
+      "uci": "d2d4 d7d5 g1f3 g8f6 e2e3 e7e6",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p4/3P4/4PN2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2519"
+    },
+    {
+      "id": "record-2878",
+      "eco": "D05",
+      "name": "Queen's Pawn Game: Colle System",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. e3 e6 4. Bd3",
+      "uci": "d2d4 d7d5 g1f3 g8f6 e2e3 e7e6 f1d3",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p4/3P4/3BPN2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2519"
+    },
+    {
+      "id": "record-2879",
+      "eco": "D05",
+      "name": "Queen's Pawn Game: Colle System, Traditional Colle",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nf3 e6 3. e3 c5 4. Bd3 d5 5. c3",
+      "uci": "d2d4 g8f6 g1f3 e7e6 e2e3 c7c5 f1d3 d7d5 c2c3",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2pp4/3P4/2PBPN2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2522"
+    },
+    {
+      "id": "record-2880",
+      "eco": "D05",
+      "name": "Queen's Pawn Game: Zukertort Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d5 2. Nf3 c5 3. e3 Nf6 4. Nbd2 e6 5. b3",
+      "uci": "d2d4 d7d5 g1f3 c7c5 e2e3 g8f6 b1d2 e7e6 b2b3",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2pp4/3P4/1P2PN2/P1PN1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2515"
+    },
+    {
+      "id": "record-513",
+      "eco": "A40",
+      "name": "Queen's Pawn Game",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4",
+      "uci": "d2d4",
+      "epd": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-433"
+    },
+    {
+      "id": "record-514",
+      "eco": "A40",
+      "name": "Queen's Pawn Game: Anglo-Slav Opening",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 c6 2. c4 d6",
+      "uci": "d2d4 c7c6 c2c4 d7d6",
+      "epd": "rnbqkbnr/pp2pppp/2pp4/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-434"
+    },
+    {
+      "id": "record-515",
+      "eco": "A40",
+      "name": "Queen's Pawn Game: Modern Defense",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 g6",
+      "uci": "d2d4 g7g6",
+      "epd": "rnbqkbnr/pppppp1p/6p1/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-435"
+    },
+    {
+      "id": "record-521",
+      "eco": "A41",
+      "name": "Queen's Pawn Game",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 d6",
+      "uci": "d2d4 d7d6",
+      "epd": "rnbqkbnr/ppp1pppp/3p4/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-433"
+    },
+    {
+      "id": "record-553",
+      "eco": "A43",
+      "name": "Queen's Pawn Game: Liedmann Gambit",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 c5 2. c4 cxd4 3. e3",
+      "uci": "d2d4 c7c5 c2c4 c5d4 e2e3",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/2Pp4/4P3/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-468"
+    },
+    {
+      "id": "record-575",
+      "eco": "A45",
+      "name": "Queen's Pawn Game: Chigorin Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nc3 d5",
+      "uci": "d2d4 g8f6 b1c3 d7d5",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2481"
+    },
+    {
+      "id": "record-576",
+      "eco": "A45",
+      "name": "Queen's Pawn Game: Veresov, Richter Attack",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. f3 d5 3. Nc3",
+      "uci": "d2d4 g8f6 f2f3 d7d5 b1c3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/2N2P2/PPP1P1PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-489"
+    },
+    {
+      "id": "record-595",
+      "eco": "A46",
+      "name": "Queen's Pawn Game: Torre Attack, Breyer Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nf3 e6 3. Bg5 d5 4. e3 c5 5. c3 Qb6",
+      "uci": "d2d4 g8f6 g1f3 e7e6 c1g5 d7d5 e2e3 c7c5 c2c3 d8b6",
+      "epd": "rnb1kb1r/pp3ppp/1q2pn2/2pp2B1/3P4/2P1PN2/PP3PPP/RN1QKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-507"
+    },
+    {
+      "id": "record-596",
+      "eco": "A46",
+      "name": "Queen's Pawn Game: Veresov Attack, Classical Defense",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nf3 e6 3. Nc3 d5 4. Bg5",
+      "uci": "d2d4 g8f6 g1f3 e7e6 b1c3 d7d5 c1g5",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p2B1/3P4/2N2N2/PPP1PPPP/R2QKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-508"
+    },
+    {
+      "id": "record-615",
+      "eco": "A48",
+      "name": "Queen's Pawn Game: Barry Attack",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Nc3 d5 4. Bf4",
+      "uci": "d2d4 g8f6 g1f3 g7g6 b1c3 d7d5 c1f4",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/3P1B2/2N2N2/PPP1PPPP/R2QKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-523"
+    },
+    {
+      "id": "record-616",
+      "eco": "A48",
+      "name": "Queen's Pawn Game: Barry Attack",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Nc3 d5 4. Bf4 Bg7",
+      "uci": "d2d4 g8f6 g1f3 g7g6 b1c3 d7d5 c1f4 f8g7",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/3P1B2/2N2N2/PPP1PPPP/R2QKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-523"
+    },
+    {
+      "id": "record-617",
+      "eco": "A48",
+      "name": "Queen's Pawn Game: Barry Attack, Grünfeld Variation",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 O-O 6. Be2",
+      "uci": "d2d4 g8f6 g1f3 g7g6 b1c3 d7d5 c1f4 f8g7 e2e3 e8g8 f1e2",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/3P1B2/2N1PN2/PPP1BPPP/R2QK2R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-524"
+    },
+    {
+      "id": "record-618",
+      "eco": "A48",
+      "name": "Queen's Pawn Game: Barry Attack, Tarzan Attack",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Nc3 d5 4. Bf4 Bg7 5. Qd2",
+      "uci": "d2d4 g8f6 g1f3 g7g6 b1c3 d7d5 c1f4 f8g7 d1d2",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/3P1B2/2N2N2/PPPQPPPP/R3KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-525"
+    },
+    {
+      "id": "record-619",
+      "eco": "A48",
+      "name": "Queen's Pawn Game: Torre Attack, Grünfeld Variation, Main Line",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Bg5 Bg7 4. Nbd2 d5 5. e3 O-O",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c1g5 f8g7 b1d2 d7d5 e2e3 e8g8",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p2B1/3P4/4PN2/PPPN1PPP/R2QKB1R w KQ -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-526"
+    },
+    {
+      "id": "record-736",
+      "eco": "A80",
+      "name": "Queen's Pawn Game: Veresov Attack, Dutch System",
+      "family": "Queen's Pawn Game",
+      "pgn": "1. d4 f5 2. Nc3 d5",
+      "uci": "d2d4 f7f5 b1c3 d7d5",
+      "epd": "rnbqkbnr/ppp1p1pp/8/3p1p2/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-629"
+    }
+  ]
+}

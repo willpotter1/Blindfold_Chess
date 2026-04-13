@@ -1,0 +1,792 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Indian Defense",
+    "chunkKey": "indian-defense",
+    "recordCount": 52,
+    "lineCount": 50
+  },
+  "records": [
+    {
+      "id": "record-3319",
+      "eco": "E00",
+      "name": "Indian Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Qb3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 d1b3",
+      "epd": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/1Q6/PP2PPPP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-472"
+    },
+    {
+      "id": "record-3320",
+      "eco": "E00",
+      "name": "Indian Defense: Devin Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g4",
+      "epd": "rnbqkb1r/pppp1ppp/4pn2/8/2PP2P1/8/PP2PP1P/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2888"
+    },
+    {
+      "id": "record-3321",
+      "eco": "E00",
+      "name": "Indian Defense: Seirawan Attack",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Bg5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 c1g5",
+      "epd": "rnbqkb1r/pppp1ppp/4pn2/6B1/2PP4/8/PP2PPPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2889"
+    },
+    {
+      "id": "record-3353",
+      "eco": "E10",
+      "name": "Indian Defense: Anti-Nimzo-Indian",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3",
+      "epd": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2906"
+    },
+    {
+      "id": "record-3354",
+      "eco": "E10",
+      "name": "Indian Defense: Dzindzi-Indian Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 a6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 a7a6",
+      "epd": "rnbqkb1r/1ppp1ppp/p3pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2908"
+    },
+    {
+      "id": "record-3355",
+      "eco": "E10",
+      "name": "Indian Defense: Döry Indian",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 Ne4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 f6e4",
+      "epd": "rnbqkb1r/pppp1ppp/4p3/8/2PPn3/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2907"
+    },
+    {
+      "id": "record-3519",
+      "eco": "E60",
+      "name": "Indian Defense: Anti-Grünfeld, Adorjan Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. d5 b5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 d4d5 b7b5",
+      "epd": "rnbqkb1r/p1pppp1p/5np1/1p1P4/2P5/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-3035"
+    },
+    {
+      "id": "record-3520",
+      "eco": "E60",
+      "name": "Indian Defense: Anti-Grünfeld, Advance Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. d5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 d4d5",
+      "epd": "rnbqkb1r/pppppp1p/5np1/3P4/2P5/8/PP2PPPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-3036"
+    },
+    {
+      "id": "record-3521",
+      "eco": "E60",
+      "name": "Indian Defense: Anti-Grünfeld, Alekhine Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. f3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 f2f3",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/2PP4/5P2/PP2P1PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-3037"
+    },
+    {
+      "id": "record-3522",
+      "eco": "E60",
+      "name": "Indian Defense: Anti-Grünfeld, Alekhine Variation, Leko Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. f3 e5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 f2f3 e7e5",
+      "epd": "rnbqkb1r/pppp1p1p/5np1/4p3/2PP4/5P2/PP2P1PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-3038"
+    },
+    {
+      "id": "record-3523",
+      "eco": "E60",
+      "name": "Indian Defense: Anti-Grünfeld, Basman-Williams Attack",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. h4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 h2h4",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/2PP3P/8/PP2PPP1/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-3039"
+    },
+    {
+      "id": "record-3524",
+      "eco": "E60",
+      "name": "Indian Defense: West Indian Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6",
+      "uci": "d2d4 g8f6 c2c4 g7g6",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-3040"
+    },
+    {
+      "id": "record-552",
+      "eco": "A43",
+      "name": "Indian Defense: Pseudo-Benko",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 c5 3. d5 b5",
+      "uci": "d2d4 g8f6 g1f3 c7c5 d4d5 b7b5",
+      "epd": "rnbqkb1r/p2ppppp/5n2/1ppP4/8/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-467"
+    },
+    {
+      "id": "record-558",
+      "eco": "A45",
+      "name": "Indian Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6",
+      "uci": "d2d4 g8f6",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-472"
+    },
+    {
+      "id": "record-559",
+      "eco": "A45",
+      "name": "Indian Defense: Accelerated London System",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Bf4",
+      "uci": "d2d4 g8f6 c1f4",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-473"
+    },
+    {
+      "id": "record-560",
+      "eco": "A45",
+      "name": "Indian Defense: Gedult Attack",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. f3 d5 3. g4",
+      "uci": "d2d4 g8f6 f2f3 d7d5 g2g4",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3P2P1/5P2/PPP1P2P/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-474"
+    },
+    {
+      "id": "record-561",
+      "eco": "A45",
+      "name": "Indian Defense: Gibbins-Weidenhagen Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. g4",
+      "uci": "d2d4 g8f6 g2g4",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3P2P1/8/PPP1PP1P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-475"
+    },
+    {
+      "id": "record-562",
+      "eco": "A45",
+      "name": "Indian Defense: Gibbins-Weidenhagen Gambit Accepted",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. g4 Nxg4",
+      "uci": "d2d4 g8f6 g2g4 f6g4",
+      "epd": "rnbqkb1r/pppppppp/8/8/3P2n1/8/PPP1PP1P/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-476"
+    },
+    {
+      "id": "record-563",
+      "eco": "A45",
+      "name": "Indian Defense: Gibbins-Weidenhagen Gambit, Maltese Falcon",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. g4 Nxg4 3. f3 Nf6 4. e4",
+      "uci": "d2d4 g8f6 g2g4 f6g4 f2f3 g4f6 e2e4",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3PP3/5P2/PPP4P/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-477"
+    },
+    {
+      "id": "record-564",
+      "eco": "A45",
+      "name": "Indian Defense: Gibbins-Weidenhagen Gambit, Oshima Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. g4 e5",
+      "uci": "d2d4 g8f6 g2g4 e7e5",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/3P2P1/8/PPP1PP1P/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-478"
+    },
+    {
+      "id": "record-565",
+      "eco": "A45",
+      "name": "Indian Defense: Gibbins-Weidenhagen Gambit, Stummer Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. g4 Nxg4 3. e4 d6 4. Be2 Nf6 5. Nc3",
+      "uci": "d2d4 g8f6 g2g4 f6g4 e2e4 d7d6 f1e2 g4f6 b1c3",
+      "epd": "rnbqkb1r/ppp1pppp/3p1n2/8/3PP3/2N5/PPP1BP1P/R1BQK1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-479"
+    },
+    {
+      "id": "record-566",
+      "eco": "A45",
+      "name": "Indian Defense: Lazard Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nd2 e5",
+      "uci": "d2d4 g8f6 b1d2 e7e5",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/3P4/8/PPPNPPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-480"
+    },
+    {
+      "id": "record-567",
+      "eco": "A45",
+      "name": "Indian Defense: Maddigan Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nc3 e5",
+      "uci": "d2d4 g8f6 b1c3 e7e5",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-481"
+    },
+    {
+      "id": "record-568",
+      "eco": "A45",
+      "name": "Indian Defense: Omega Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. e4",
+      "uci": "d2d4 g8f6 e2e4",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-482"
+    },
+    {
+      "id": "record-569",
+      "eco": "A45",
+      "name": "Indian Defense: Omega Gambit, Arafat Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. e4 Nxe4 3. Bd3 Nf6 4. Bg5",
+      "uci": "d2d4 g8f6 e2e4 f6e4 f1d3 e4f6 c1g5",
+      "epd": "rnbqkb1r/pppppppp/5n2/6B1/3P4/3B4/PPP2PPP/RN1QK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-483"
+    },
+    {
+      "id": "record-570",
+      "eco": "A45",
+      "name": "Indian Defense: Paleface Attack, Blackmar-Diemer Gambit Deferred",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. f3 d5 3. e4",
+      "uci": "d2d4 g8f6 f2f3 d7d5 e2e4",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/3PP3/5P2/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-484"
+    },
+    {
+      "id": "record-571",
+      "eco": "A45",
+      "name": "Indian Defense: Pawn Push Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. d5",
+      "uci": "d2d4 g8f6 d4d5",
+      "epd": "rnbqkb1r/pppppppp/5n2/3P4/8/8/PPP1PPPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-485"
+    },
+    {
+      "id": "record-572",
+      "eco": "A45",
+      "name": "Indian Defense: Reversed Chigorin Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nc3 c5",
+      "uci": "d2d4 g8f6 b1c3 c7c5",
+      "epd": "rnbqkb1r/pp1ppppp/5n2/2p5/3P4/2N5/PPP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-486"
+    },
+    {
+      "id": "record-573",
+      "eco": "A45",
+      "name": "Indian Defense: Tartakower Attack",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. g3",
+      "uci": "d2d4 g8f6 g2g3",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3P4/6P1/PPP1PP1P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-487"
+    },
+    {
+      "id": "record-588",
+      "eco": "A46",
+      "name": "Indian Defense: Czech-Indian",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 c6",
+      "uci": "d2d4 g8f6 g1f3 c7c6",
+      "epd": "rnbqkb1r/pp1ppppp/2p2n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-500"
+    },
+    {
+      "id": "record-589",
+      "eco": "A46",
+      "name": "Indian Defense: Knights Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3",
+      "uci": "d2d4 g8f6 g1f3",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-501"
+    },
+    {
+      "id": "record-590",
+      "eco": "A46",
+      "name": "Indian Defense: Knights Variation, Alburt-Miles Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 a6",
+      "uci": "d2d4 g8f6 g1f3 a7a6",
+      "epd": "rnbqkb1r/1ppppppp/p4n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-502"
+    },
+    {
+      "id": "record-591",
+      "eco": "A46",
+      "name": "Indian Defense: London System",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 e6 3. Bf4",
+      "uci": "d2d4 g8f6 g1f3 e7e6 c1f4",
+      "epd": "rnbqkb1r/pppp1ppp/4pn2/8/3P1B2/5N2/PPP1PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-503"
+    },
+    {
+      "id": "record-592",
+      "eco": "A46",
+      "name": "Indian Defense: Polish Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 b5",
+      "uci": "d2d4 g8f6 g1f3 b7b5",
+      "epd": "rnbqkb1r/p1pppppp/5n2/1p6/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-504"
+    },
+    {
+      "id": "record-593",
+      "eco": "A46",
+      "name": "Indian Defense: Spielmann-Indian",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 c5",
+      "uci": "d2d4 g8f6 g1f3 c7c5",
+      "epd": "rnbqkb1r/pp1ppppp/5n2/2p5/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-505"
+    },
+    {
+      "id": "record-594",
+      "eco": "A46",
+      "name": "Indian Defense: Wade-Tartakower Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 d6",
+      "uci": "d2d4 g8f6 g1f3 d7d6",
+      "epd": "rnbqkb1r/ppp1pppp/3p1n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-506"
+    },
+    {
+      "id": "record-602",
+      "eco": "A47",
+      "name": "Indian Defense: Schnepper Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 b6 3. c3 e5",
+      "uci": "d2d4 g8f6 g1f3 b7b6 c2c3 e7e5",
+      "epd": "rnbqkb1r/p1pp1ppp/1p3n2/4p3/3P4/2P2N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-514"
+    },
+    {
+      "id": "record-607",
+      "eco": "A48",
+      "name": "Indian Defense: Colle System, King's Indian Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. e3 Bg7 4. Bd3 d6",
+      "uci": "d2d4 g8f6 g1f3 g7g6 e2e3 f8g7 f1d3 d7d6",
+      "epd": "rnbqk2r/ppp1ppbp/3p1np1/8/3P4/3BPN2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-519"
+    },
+    {
+      "id": "record-622",
+      "eco": "A49",
+      "name": "Indian Defense: Przepiorka Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. g3",
+      "uci": "d2d4 g8f6 g1f3 g7g6 g2g3",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/3P4/5NP1/PPP1PP1P/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-529"
+    },
+    {
+      "id": "record-623",
+      "eco": "A50",
+      "name": "Indian Defense: Medusa Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 g5",
+      "uci": "d2d4 g8f6 c2c4 g7g5",
+      "epd": "rnbqkb1r/pppppp1p/5n2/6p1/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-530"
+    },
+    {
+      "id": "record-624",
+      "eco": "A50",
+      "name": "Indian Defense: Normal Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4",
+      "uci": "d2d4 g8f6 c2c4",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-531"
+    },
+    {
+      "id": "record-625",
+      "eco": "A50",
+      "name": "Indian Defense: Pyrenees Gambit",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 b5",
+      "uci": "d2d4 g8f6 c2c4 b7b5",
+      "epd": "rnbqkb1r/p1pppppp/5n2/1p6/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-532"
+    },
+    {
+      "id": "record-630",
+      "eco": "A51",
+      "name": "Indian Defense: Budapest Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5",
+      "uci": "d2d4 g8f6 c2c4 e7e5",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-537"
+    },
+    {
+      "id": "record-631",
+      "eco": "A51",
+      "name": "Indian Defense: Budapest Defense, Fajarowicz Defense, Bonsdorf Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ne4 4. a3 b6",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6e4 a2a3 b7b6",
+      "epd": "rnbqkb1r/p1pp1ppp/1p6/4P3/2P1n3/P7/1P2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-538"
+    },
+    {
+      "id": "record-632",
+      "eco": "A51",
+      "name": "Indian Defense: Budapest Defense, Fajarowicz Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ne4",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6e4",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P3/2P1n3/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-539"
+    },
+    {
+      "id": "record-633",
+      "eco": "A51",
+      "name": "Indian Defense: Budapest Defense, Fajarowicz-Steiner Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ne4 4. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6e4 d1c2",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P3/2P1n3/8/PPQ1PPPP/RNB1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-540"
+    },
+    {
+      "id": "record-634",
+      "eco": "A52",
+      "name": "Indian Defense: Budapest Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ng4",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6g4",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P3/2P3n1/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-537"
+    },
+    {
+      "id": "record-635",
+      "eco": "A52",
+      "name": "Indian Defense: Budapest Defense, Adler Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ng4 4. Nf3",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6g4 g1f3",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P3/2P3n1/5N2/PP2PPPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-541"
+    },
+    {
+      "id": "record-636",
+      "eco": "A52",
+      "name": "Indian Defense: Budapest Defense, Alekhine Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ng4 4. e4",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6g4 e2e4",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P3/2P1P1n1/8/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-542"
+    },
+    {
+      "id": "record-637",
+      "eco": "A52",
+      "name": "Indian Defense: Budapest Defense, Alekhine Variation, Abonyi Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ng4 4. e4 Nxe5 5. f4 Nec6",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6g4 e2e4 g4e5 f2f4 e5c6",
+      "epd": "rnbqkb1r/pppp1ppp/2n5/8/2P1PP2/8/PP4PP/RNBQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-543"
+    },
+    {
+      "id": "record-638",
+      "eco": "A52",
+      "name": "Indian Defense: Budapest Defense, Alekhine Variation, Tartakower Defense",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ng4 4. e4 d6",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6g4 e2e4 d7d6",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/4P3/2P1P1n1/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-544"
+    },
+    {
+      "id": "record-639",
+      "eco": "A52",
+      "name": "Indian Defense: Budapest Defense, Rubinstein Variation",
+      "family": "Indian Defense",
+      "pgn": "1. d4 Nf6 2. c4 e5 3. dxe5 Ng4 4. Bf4",
+      "uci": "d2d4 g8f6 c2c4 e7e5 d4e5 f6g4 c1f4",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P3/2P2Bn1/8/PP2PPPP/RN1QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-545"
+    }
+  ]
+}

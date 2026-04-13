@@ -1,0 +1,762 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Slav Defense",
+    "chunkKey": "slav-defense",
+    "recordCount": 50,
+    "lineCount": 43
+  },
+  "records": [
+    {
+      "id": "record-2924",
+      "eco": "D10",
+      "name": "Slav Defense",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6",
+      "uci": "d2d4 d7d5 c2c4 c7c6",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2562"
+    },
+    {
+      "id": "record-2925",
+      "eco": "D10",
+      "name": "Slav Defense",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2562"
+    },
+    {
+      "id": "record-2926",
+      "eco": "D10",
+      "name": "Slav Defense",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 dxc4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 d5c4",
+      "epd": "rnbqkbnr/pp2pppp/2p5/8/2pP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2562"
+    },
+    {
+      "id": "record-2927",
+      "eco": "D10",
+      "name": "Slav Defense: Diemer Gambit",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. e4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 e2e4",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/2PPP3/8/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2563"
+    },
+    {
+      "id": "record-2928",
+      "eco": "D10",
+      "name": "Slav Defense: Exchange Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. cxd5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 c4d5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PP2PPPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2564"
+    },
+    {
+      "id": "record-2929",
+      "eco": "D10",
+      "name": "Slav Defense: Exchange Variation, Boor Attack",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. f3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 c4d5 c6d5 b1c3 g8f6 f2f3",
+      "epd": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/2N2P2/PP2P1PP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2565"
+    },
+    {
+      "id": "record-2930",
+      "eco": "D10",
+      "name": "Slav Defense: Slav Gambit, Alekhine Attack",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 d5c4 e2e4",
+      "epd": "rnbqkbnr/pp2pppp/2p5/8/2pPP3/2N5/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2566"
+    },
+    {
+      "id": "record-2931",
+      "eco": "D10",
+      "name": "Slav Defense: Winawer Countergambit",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 e5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 e7e5",
+      "epd": "rnbqkbnr/pp3ppp/2p5/3pp3/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2567"
+    },
+    {
+      "id": "record-2932",
+      "eco": "D10",
+      "name": "Slav Defense: Winawer Countergambit, Anti-Winawer Gambit",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 e5 4. e4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 e7e5 e2e4",
+      "epd": "rnbqkbnr/pp3ppp/2p5/3pp3/2PPP3/2N5/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2568"
+    },
+    {
+      "id": "record-2933",
+      "eco": "D11",
+      "name": "Slav Defense: Bonet Gambit",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Bg5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 c1g5",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/3p2B1/2PP4/5N2/PP2PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2569"
+    },
+    {
+      "id": "record-2934",
+      "eco": "D11",
+      "name": "Slav Defense: Breyer Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nbd2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1d2",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/5N2/PP1NPPPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2570"
+    },
+    {
+      "id": "record-2935",
+      "eco": "D11",
+      "name": "Slav Defense: Modern Line",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2571"
+    },
+    {
+      "id": "record-2936",
+      "eco": "D11",
+      "name": "Slav Defense: Modern Line",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. g3 dxc4 5. Bg2 g6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 g2g3 d5c4 f1g2 g7g6",
+      "epd": "rnbqkb1r/pp2pp1p/2p2np1/8/2pP4/5NP1/PP2PPBP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2571"
+    },
+    {
+      "id": "record-2937",
+      "eco": "D11",
+      "name": "Slav Defense: Quiet Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/4PN2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2572"
+    },
+    {
+      "id": "record-2938",
+      "eco": "D11",
+      "name": "Slav Defense: Quiet Variation, Pin Defense",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bg4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 c8g4",
+      "epd": "rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/4PN2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2573"
+    },
+    {
+      "id": "record-2939",
+      "eco": "D12",
+      "name": "Slav Defense: Quiet Variation, Amsterdam Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. cxd5 cxd5 6. Nc3 e6 7. Ne5 Nfd7",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 c8f5 c4d5 c6d5 b1c3 e7e6 f3e5 f6d7",
+      "epd": "rn1qkb1r/pp1n1ppp/4p3/3pNb2/3P4/2N1P3/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2574"
+    },
+    {
+      "id": "record-2940",
+      "eco": "D12",
+      "name": "Slav Defense: Quiet Variation, Landau Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. cxd5 cxd5 6. Qb3 Qc8 7. Bd2 e6 8. Na3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 c8f5 c4d5 c6d5 d1b3 d8c8 c1d2 e7e6 b1a3",
+      "epd": "rnq1kb1r/pp3ppp/4pn2/3p1b2/3P4/NQ2PN2/PP1B1PPP/R3KB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2575"
+    },
+    {
+      "id": "record-2941",
+      "eco": "D12",
+      "name": "Slav Defense: Quiet Variation, Schallopp Defense",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 c8f5",
+      "epd": "rn1qkb1r/pp2pppp/2p2n2/3p1b2/2PP4/4PN2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2576"
+    },
+    {
+      "id": "record-2942",
+      "eco": "D12",
+      "name": "Slav Defense: Quiet Variation, Schallopp Defense",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. Nc3 e6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 c8f5 b1c3 e7e6",
+      "epd": "rn1qkb1r/pp3ppp/2p1pn2/3p1b2/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2576"
+    },
+    {
+      "id": "record-2943",
+      "eco": "D13",
+      "name": "Slav Defense: Exchange Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 c4d5 c6d5",
+      "epd": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2564"
+    },
+    {
+      "id": "record-2944",
+      "eco": "D13",
+      "name": "Slav Defense: Exchange Variation, Schallopp Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. cxd5 cxd5 6. Nc3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 c8f5 c4d5 c6d5 b1c3",
+      "epd": "rn1qkb1r/pp2pppp/5n2/3p1b2/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2577"
+    },
+    {
+      "id": "record-2945",
+      "eco": "D14",
+      "name": "Slav Defense: Exchange Variation, Symmetrical Line",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Nf3 Nc6 6. Bf4 Bf5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 c4d5 c6d5 b1c3 g8f6 g1f3 b8c6 c1f4 c8f5",
+      "epd": "r2qkb1r/pp2pppp/2n2n2/3p1b2/3P1B2/2N2N2/PP2PPPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2578"
+    },
+    {
+      "id": "record-2946",
+      "eco": "D14",
+      "name": "Slav Defense: Exchange Variation, Trifunovic Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Nc3 Nc6 6. Bf4 Bf5 7. e3 e6 8. Qb3 Bb4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 c4d5 c6d5 b1c3 b8c6 c1f4 c8f5 e2e3 e7e6 d1b3 f8b4",
+      "epd": "r2qk2r/pp3ppp/2n1pn2/3p1b2/1b1P1B2/1QN1PN2/PP3PPP/R3KB1R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2579"
+    },
+    {
+      "id": "record-2947",
+      "eco": "D15",
+      "name": "Slav Defense: Alekhine Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 e2e3",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/8/2pP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2580"
+    },
+    {
+      "id": "record-2948",
+      "eco": "D15",
+      "name": "Slav Defense: Chebanenko Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 a6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 a7a6",
+      "epd": "rnbqkb1r/1p2pppp/p1p2n2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2581"
+    },
+    {
+      "id": "record-2949",
+      "eco": "D15",
+      "name": "Slav Defense: Chebanenko Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 a6 5. e3 Bf5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 a7a6 e2e3 c8f5",
+      "epd": "rn1qkb1r/1p2pppp/p1p2n2/3p1b2/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2581"
+    },
+    {
+      "id": "record-2950",
+      "eco": "D15",
+      "name": "Slav Defense: Chebanenko Variation, Advance System",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 a6 5. c5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 a7a6 c4c5",
+      "epd": "rnbqkb1r/1p2pppp/p1p2n2/2Pp4/3P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2582"
+    },
+    {
+      "id": "record-2951",
+      "eco": "D15",
+      "name": "Slav Defense: Geller Gambit",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 e2e4",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/8/2pPP3/2N2N2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2583"
+    },
+    {
+      "id": "record-2952",
+      "eco": "D15",
+      "name": "Slav Defense: Geller Gambit",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e4 b5 6. e5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 e2e4 b7b5 e4e5",
+      "epd": "rnbqkb1r/p3pppp/2p2n2/1p2P3/2pP4/2N2N2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2583"
+    },
+    {
+      "id": "record-2953",
+      "eco": "D15",
+      "name": "Slav Defense: Schlechter Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 g6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 g7g6",
+      "epd": "rnbqkb1r/pp2pp1p/2p2np1/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2584"
+    },
+    {
+      "id": "record-2954",
+      "eco": "D15",
+      "name": "Slav Defense: Süchting Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 Qb6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d8b6",
+      "epd": "rnb1kb1r/pp2pppp/1qp2n2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2585"
+    },
+    {
+      "id": "record-2955",
+      "eco": "D15",
+      "name": "Slav Defense: Three Knights Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2586"
+    },
+    {
+      "id": "record-2956",
+      "eco": "D15",
+      "name": "Slav Defense: Two Knights Attack",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2587"
+    },
+    {
+      "id": "record-2957",
+      "eco": "D16",
+      "name": "Slav Defense: Alapin Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/8/P1pP4/2N2N2/1P2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2588"
+    },
+    {
+      "id": "record-2958",
+      "eco": "D16",
+      "name": "Slav Defense: Smyslov Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Na6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 b8a6",
+      "epd": "r1bqkb1r/pp2pppp/n1p2n2/8/P1pP4/2N2N2/1P2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2589"
+    },
+    {
+      "id": "record-2959",
+      "eco": "D16",
+      "name": "Slav Defense: Soultanbeieff Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 e6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 e7e6",
+      "epd": "rnbqkb1r/pp3ppp/2p1pn2/8/P1pP4/2N2N2/1P2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2590"
+    },
+    {
+      "id": "record-2960",
+      "eco": "D16",
+      "name": "Slav Defense: Steiner Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bg4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8g4",
+      "epd": "rn1qkb1r/pp2pppp/2p2n2/8/P1pP2b1/2N2N2/1P2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2591"
+    },
+    {
+      "id": "record-2961",
+      "eco": "D17",
+      "name": "Slav Defense: Czech Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5",
+      "epd": "rn1qkb1r/pp2pppp/2p2n2/5b2/P1pP4/2N2N2/1P2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2592"
+    },
+    {
+      "id": "record-2962",
+      "eco": "D17",
+      "name": "Slav Defense: Czech Variation, Bled Attack",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Nh4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 f3h4",
+      "epd": "rn1qkb1r/pp2pppp/2p2n2/5b2/P1pP3N/2N5/1P2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2593"
+    },
+    {
+      "id": "record-2963",
+      "eco": "D17",
+      "name": "Slav Defense: Czech Variation, Carlsbad Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Ne5 Nbd7 7. Nxc4 Qc7 8. g3 e5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 f3e5 b8d7 e5c4 d8c7 g2g3 e7e5",
+      "epd": "r3kb1r/ppqn1ppp/2p2n2/4pb2/P1NP4/2N3P1/1P2PP1P/R1BQKB1R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2594"
+    },
+    {
+      "id": "record-2964",
+      "eco": "D17",
+      "name": "Slav Defense: Czech Variation, Carlsbad Variation, Morozevich Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Ne5 Nbd7 7. Nxc4 Qc7 8. g3 e5 9. dxe5 Nxe5 10. Bf4 Nfd7 11. Bg2 g5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 f3e5 b8d7 e5c4 d8c7 g2g3 e7e5 d4e5 d7e5 c1f4 f6d7 f1g2 g7g5",
+      "epd": "r3kb1r/ppqn1p1p/2p5/4nbp1/P1N2B2/2N3P1/1P2PPBP/R2QK2R w KQkq -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2595"
+    },
+    {
+      "id": "record-2965",
+      "eco": "D17",
+      "name": "Slav Defense: Czech Variation, Krause Attack",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Ne5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 f3e5",
+      "epd": "rn1qkb1r/pp2pppp/2p2n2/4Nb2/P1pP4/2N5/1P2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2596"
+    },
+    {
+      "id": "record-2966",
+      "eco": "D17",
+      "name": "Slav Defense: Czech Variation, Krause Attack, Fazekas Gambit",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Ne5 Na6 7. e4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 f3e5 b8a6 e2e4",
+      "epd": "r2qkb1r/pp2pppp/n1p2n2/4Nb2/P1pPP3/2N5/1P3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2597"
+    },
+    {
+      "id": "record-2967",
+      "eco": "D17",
+      "name": "Slav Defense: Czech Variation, Wiesbaden Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Ne5 e6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 f3e5 e7e6",
+      "epd": "rn1qkb1r/pp3ppp/2p1pn2/4Nb2/P1pP4/2N5/1P2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2598"
+    },
+    {
+      "id": "record-2968",
+      "eco": "D17",
+      "name": "Slav Defense: Czech Variation, Wiesbaden Variation, Sharp Line",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Ne5 e6 7. f3 Bb4 8. e4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 f3e5 e7e6 f2f3 f8b4 e2e4",
+      "epd": "rn1qk2r/pp3ppp/2p1pn2/4Nb2/PbpPP3/2N2P2/1P4PP/R1BQKB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2599"
+    },
+    {
+      "id": "record-2969",
+      "eco": "D18",
+      "name": "Slav Defense: Czech Variation, Classical System",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 e2e3",
+      "epd": "rn1qkb1r/pp2pppp/2p2n2/5b2/P1pP4/2N1PN2/1P3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2600"
+    },
+    {
+      "id": "record-2970",
+      "eco": "D18",
+      "name": "Slav Defense: Czech Variation, Lasker Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 Na6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 e2e3 b8a6",
+      "epd": "r2qkb1r/pp2pppp/n1p2n2/5b2/P1pP4/2N1PN2/1P3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2601"
+    },
+    {
+      "id": "record-2971",
+      "eco": "D19",
+      "name": "Slav Defense: Czech Variation, Classical System, Main Line",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 e6 7. Bxc4 Bb4 8. O-O O-O 9. Qe2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 e2e3 e7e6 f1c4 f8b4 e1g1 e8g8 d1e2",
+      "epd": "rn1q1rk1/pp3ppp/2p1pn2/5b2/PbBP4/2N1PN2/1P2QPPP/R1B2RK1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2602"
+    },
+    {
+      "id": "record-2972",
+      "eco": "D19",
+      "name": "Slav Defense: Czech Variation, Dutch Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 e6 7. Bxc4 Bb4 8. O-O",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 e2e3 e7e6 f1c4 f8b4 e1g1",
+      "epd": "rn1qk2r/pp3ppp/2p1pn2/5b2/PbBP4/2N1PN2/1P3PPP/R1BQ1RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2603"
+    },
+    {
+      "id": "record-2973",
+      "eco": "D19",
+      "name": "Slav Defense: Czech Variation, Dutch Variation, Sämisch Variation",
+      "family": "Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 e6 7. Bxc4 Bb4 8. O-O O-O 9. Qe2 Ne4 10. g4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4 a2a4 c8f5 e2e3 e7e6 f1c4 f8b4 e1g1 e8g8 d1e2 f6e4 g2g4",
+      "epd": "rn1q1rk1/pp3ppp/2p1p3/5b2/PbBPn1P1/2N1PN2/1P2QP1P/R1B2RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2604"
+    }
+  ]
+}

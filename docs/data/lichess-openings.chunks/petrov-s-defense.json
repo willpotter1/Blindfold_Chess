@@ -1,0 +1,732 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Petrov's Defense",
+    "chunkKey": "petrov-s-defense",
+    "recordCount": 48,
+    "lineCount": 42
+  },
+  "records": [
+    {
+      "id": "record-2178",
+      "eco": "C42",
+      "name": "Petrov's Defense",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6",
+      "uci": "e2e4 e7e5 g1f3 g8f6",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1914"
+    },
+    {
+      "id": "record-2179",
+      "eco": "C42",
+      "name": "Petrov's Defense",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4N3/4P3/8/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1914"
+    },
+    {
+      "id": "record-2180",
+      "eco": "C42",
+      "name": "Petrov's Defense",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/4N3/4P3/8/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1914"
+    },
+    {
+      "id": "record-2181",
+      "eco": "C42",
+      "name": "Petrov's Defense",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/8/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1914"
+    },
+    {
+      "id": "record-2182",
+      "eco": "C42",
+      "name": "Petrov's Defense",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/8/4n3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1914"
+    },
+    {
+      "id": "record-2183",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/8/3Pn3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1915"
+    },
+    {
+      "id": "record-2184",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Berger Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Be7 7. O-O Nc6 8. Re1 Bg4 9. c3 f5 10. Nbd2",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8e7 e1g1 b8c6 f1e1 c8g4 c2c3 f7f5 b1d2",
+      "epd": "r2qk2r/ppp1b1pp/2n5/3p1p2/3Pn1b1/2PB1N2/PP1N1PPP/R1BQR1K1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1916"
+    },
+    {
+      "id": "record-2185",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Chigorin Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Be7 7. O-O Nc6 8. Re1",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8e7 e1g1 b8c6 f1e1",
+      "epd": "r1bqk2r/ppp1bppp/2n5/3p4/3Pn3/3B1N2/PPP2PPP/RNBQR1K1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1917"
+    },
+    {
+      "id": "record-2186",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Chigorin Variation, Browne Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Nc6 7. O-O Be7 8. c4 Nb4 9. cxd5",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 b8c6 e1g1 f8e7 c2c4 c6b4 c4d5",
+      "epd": "r1bqk2r/ppp1bppp/8/3P4/1n1Pn3/3B1N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1918"
+    },
+    {
+      "id": "record-2187",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Chigorin Variation, Main Line",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Nc6 7. O-O Be7 8. c4 Nb4 9. Be2",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 b8c6 e1g1 f8e7 c2c4 c6b4 d3e2",
+      "epd": "r1bqk2r/ppp1bppp/8/3p4/1nPPn3/5N2/PP2BPPP/RNBQ1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1919"
+    },
+    {
+      "id": "record-2188",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Closed Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 e4f6",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/8/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1920"
+    },
+    {
+      "id": "record-2189",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Jaenisch Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Nc6 7. O-O Be7 8. c4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 b8c6 e1g1 f8e7 c2c4",
+      "epd": "r1bqk2r/ppp1bppp/2n5/3p4/2PPn3/3B1N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1921"
+    },
+    {
+      "id": "record-2190",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Krause Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Nc6 7. O-O Be7 8. Re1 Bg4 9. c3 f5 10. c4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 b8c6 e1g1 f8e7 f1e1 c8g4 c2c3 f7f5 c3c4",
+      "epd": "r2qk2r/ppp1b1pp/2n5/3p1p2/2PPn1b1/3B1N2/PP3PPP/RNBQR1K1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1922"
+    },
+    {
+      "id": "record-2191",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Marshall Trap",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Bd6 7. O-O O-O 8. c4 Bg4 9. cxd5 f5 10. Re1 Bxh2+",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8d6 e1g1 e8g8 c2c4 c8g4 c4d5 f7f5 f1e1 d6h2",
+      "epd": "rn1q1rk1/ppp3pp/8/3P1p2/3Pn1b1/3B1N2/PP3PPb/RNBQR1K1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1924"
+    },
+    {
+      "id": "record-2192",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Marshall Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Bd6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8d6",
+      "epd": "rnbqk2r/ppp2ppp/3b4/3p4/3Pn3/3B1N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1925"
+    },
+    {
+      "id": "record-2193",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Marshall Variation, Chinese Gambit",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Bd6 7. O-O O-O 8. c4 c6 9. Re1 Bg4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8d6 e1g1 e8g8 c2c4 c7c6 f1e1 c8g4",
+      "epd": "rn1q1rk1/pp3ppp/2pb4/3p4/2PPn1b1/3B1N2/PP3PPP/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1926"
+    },
+    {
+      "id": "record-2194",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Maróczy Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Be7 7. O-O Nc6 8. Re1 Bg4 9. c3 f5 10. c4 Bh4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8e7 e1g1 b8c6 f1e1 c8g4 c2c3 f7f5 c3c4 e7h4",
+      "epd": "r2qk2r/ppp3pp/2n5/3p1p2/2PPn1bb/3B1N2/PP3PPP/RNBQR1K1 w kq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1923"
+    },
+    {
+      "id": "record-2195",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Mason Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Be7 7. O-O O-O",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8e7 e1g1 e8g8",
+      "epd": "rnbq1rk1/ppp1bppp/8/3p4/3Pn3/3B1N2/PPP2PPP/RNBQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1927"
+    },
+    {
+      "id": "record-2196",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Mason-Showalter Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Nc6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 b8c6",
+      "epd": "r1bqkb1r/ppp2ppp/2n5/3p4/3Pn3/3B1N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1928"
+    },
+    {
+      "id": "record-2197",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Staunton Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Bd6 7. O-O O-O 8. c4 c6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8d6 e1g1 e8g8 c2c4 c7c6",
+      "epd": "rnbq1rk1/pp3ppp/2pb4/3p4/2PPn3/3B1N2/PP3PPP/RNBQ1RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1929"
+    },
+    {
+      "id": "record-2198",
+      "eco": "C42",
+      "name": "Petrov's Defense: Classical Attack, Tarrasch Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Bd6 7. O-O O-O 8. c4 Bg4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d4 d6d5 f1d3 f8d6 e1g1 e8g8 c2c4 c8g4",
+      "epd": "rn1q1rk1/ppp2ppp/3b4/3p4/2PPn1b1/3B1N2/PP3PPP/RNBQ1RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1930"
+    },
+    {
+      "id": "record-2199",
+      "eco": "C42",
+      "name": "Petrov's Defense: Cochrane Gambit",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nxf7",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f7",
+      "epd": "rnbqkb1r/ppp2Npp/3p1n2/8/4P3/8/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1931"
+    },
+    {
+      "id": "record-2200",
+      "eco": "C42",
+      "name": "Petrov's Defense: Cochrane Gambit, Bishop Check Line",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nxf7 Kxf7 5. Bc4+",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f7 e8f7 f1c4",
+      "epd": "rnbq1b1r/ppp2kpp/3p1n2/8/2B1P3/8/PPPP1PPP/RNBQK2R b KQ -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1932"
+    },
+    {
+      "id": "record-2201",
+      "eco": "C42",
+      "name": "Petrov's Defense: Cochrane Gambit, Center Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nxf7 Kxf7 5. d4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f7 e8f7 d2d4",
+      "epd": "rnbq1b1r/ppp2kpp/3p1n2/8/3PP3/8/PPP2PPP/RNBQKB1R b KQ -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1933"
+    },
+    {
+      "id": "record-2202",
+      "eco": "C42",
+      "name": "Petrov's Defense: Cozio Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. Qe2",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d1e2",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/8/4n3/5N2/PPPPQPPP/RNB1KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1934"
+    },
+    {
+      "id": "record-2203",
+      "eco": "C42",
+      "name": "Petrov's Defense: Damiano Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 Nxe4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 f6e4",
+      "epd": "rnbqkb1r/pppp1ppp/8/4N3/4n3/8/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1935"
+    },
+    {
+      "id": "record-2204",
+      "eco": "C42",
+      "name": "Petrov's Defense: Damiano Variation, Kholmov Gambit",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 Nxe4 4. Qe2 Qe7",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 f6e4 d1e2 d8e7",
+      "epd": "rnb1kb1r/ppppqppp/8/4N3/4n3/8/PPPPQPPP/RNB1KB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1936"
+    },
+    {
+      "id": "record-2205",
+      "eco": "C42",
+      "name": "Petrov's Defense: French Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d3",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 d2d3",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/8/4n3/3P1N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1937"
+    },
+    {
+      "id": "record-2206",
+      "eco": "C42",
+      "name": "Petrov's Defense: Italian Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Bc4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f1c4",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1938"
+    },
+    {
+      "id": "record-2207",
+      "eco": "C42",
+      "name": "Petrov's Defense: Karklins-Martinovsky Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nd3",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5d3",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/8/4P3/3N4/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1939"
+    },
+    {
+      "id": "record-2208",
+      "eco": "C42",
+      "name": "Petrov's Defense: Kaufmann Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. c4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 c2c4",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/8/2P1n3/5N2/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1940"
+    },
+    {
+      "id": "record-2209",
+      "eco": "C42",
+      "name": "Petrov's Defense: Millennium Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. Bd3",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 f1d3",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/8/4n3/3B1N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1941"
+    },
+    {
+      "id": "record-2210",
+      "eco": "C42",
+      "name": "Petrov's Defense: Moody Gambit",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Qe2 Nc6 4. d4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d1e2 b8c6 d2d4",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/3PP3/5N2/PPP1QPPP/RNB1KB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1942"
+    },
+    {
+      "id": "record-2211",
+      "eco": "C42",
+      "name": "Petrov's Defense: Nimzowitsch Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. Nc3",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4 b1c3",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/8/4n3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1943"
+    },
+    {
+      "id": "record-2212",
+      "eco": "C42",
+      "name": "Petrov's Defense: Paulsen Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nc4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5c4",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/8/2N1P3/8/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1944"
+    },
+    {
+      "id": "record-2213",
+      "eco": "C42",
+      "name": "Petrov's Defense: Stafford Gambit",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 Nc6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 b8c6",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4N3/4P3/8/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1945"
+    },
+    {
+      "id": "record-2214",
+      "eco": "C42",
+      "name": "Petrov's Defense: Stafford Gambit",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nxe5 Nc6 4. Nxc6 dxc6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 f3e5 b8c6 e5c6 d7c6",
+      "epd": "r1bqkb1r/ppp2ppp/2p2n2/8/4P3/8/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1945"
+    },
+    {
+      "id": "record-2215",
+      "eco": "C42",
+      "name": "Petrov's Defense: Three Knights Game",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. Nc3",
+      "uci": "e2e4 e7e5 g1f3 g8f6 b1c3",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1946"
+    },
+    {
+      "id": "record-2218",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1949"
+    },
+    {
+      "id": "record-2219",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 exd4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 e5d4",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1949"
+    },
+    {
+      "id": "record-2220",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack, Bardeleben Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 exd4 4. e5 Ne4 5. Qe2 Nc5 6. Nxd4 Nc6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 e5d4 e4e5 f6e4 d1e2 e4c5 f3d4 b8c6",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/2n1P3/3N4/8/PPP1QPPP/RNB1KB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1950"
+    },
+    {
+      "id": "record-2221",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack, Center Attack",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 exd4 4. e5 Ne4 5. Qxd4",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 e5d4 e4e5 f6e4 d1d4",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P3/3Qn3/5N2/PPP2PPP/RNB1KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1951"
+    },
+    {
+      "id": "record-2222",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack, Center Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 Nxe4 4. Bd3",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 f6e4 f1d3",
+      "epd": "rnbqkb1r/pppp1ppp/8/4p3/3Pn3/3B1N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1952"
+    },
+    {
+      "id": "record-2223",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack, Murrey Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 Nxe4 4. Bd3 Nc6",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 f6e4 f1d3 b8c6",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/4p3/3Pn3/3B1N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1953"
+    },
+    {
+      "id": "record-2224",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack, Steinitz Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 exd4 4. e5 Ne4 5. Qe2",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 e5d4 e4e5 f6e4 d1e2",
+      "epd": "rnbqkb1r/pppp1ppp/8/4P3/3pn3/5N2/PPP1QPPP/RNB1KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1954"
+    },
+    {
+      "id": "record-2225",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack, Symmetrical Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 d5",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 d7d5",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3pp3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1955"
+    },
+    {
+      "id": "record-2226",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack, Tal Gambit",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 exd4 4. e5 Ne4 5. Bb5",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 e5d4 e4e5 f6e4 f1b5",
+      "epd": "rnbqkb1r/pppp1ppp/8/1B2P3/3pn3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1956"
+    },
+    {
+      "id": "record-2227",
+      "eco": "C43",
+      "name": "Petrov's Defense: Modern Attack, Trifunovic Variation",
+      "family": "Petrov's Defense",
+      "pgn": "1. e4 e5 2. Nf3 Nf6 3. d4 Nxe4 4. Bd3 d5 5. Nxe5 Bd6 6. O-O O-O 7. c4 Bxe5",
+      "uci": "e2e4 e7e5 g1f3 g8f6 d2d4 f6e4 f1d3 d7d5 f3e5 f8d6 e1g1 e8g8 c2c4 d6e5",
+      "epd": "rnbq1rk1/ppp2ppp/8/3pb3/2PPn3/3B4/PP3PPP/RNBQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1957"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Blackmar-Diemer Gambit Declined",
+    "chunkKey": "blackmar-diemer-gambit-declined",
+    "recordCount": 8,
+    "lineCount": 8
+  },
+  "records": [
+    {
+      "id": "record-2799",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit Declined: Brombacher Countergambit",
+      "family": "Blackmar-Diemer Gambit Declined",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. f3 c5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 c7c5",
+      "epd": "rnbqkb1r/pp2pppp/5n2/2p5/3Pp3/2N2P2/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2452"
+    },
+    {
+      "id": "record-2800",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit Declined: Elbert Countergambit",
+      "family": "Blackmar-Diemer Gambit Declined",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. f3 e5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 e7e5",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/4p3/3Pp3/2N2P2/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2453"
+    },
+    {
+      "id": "record-2801",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit Declined: Gedult Defense",
+      "family": "Blackmar-Diemer Gambit Declined",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. f3 a6",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 a7a6",
+      "epd": "rnbqkb1r/1pp1pppp/p4n2/8/3Pp3/2N2P2/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2454"
+    },
+    {
+      "id": "record-2802",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit Declined: Lamb Defense",
+      "family": "Blackmar-Diemer Gambit Declined",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. f3 Nc6",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 b8c6",
+      "epd": "r1bqkb1r/ppp1pppp/2n2n2/8/3Pp3/2N2P2/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2455"
+    },
+    {
+      "id": "record-2803",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit Declined: Langeheinicke Defense",
+      "family": "Blackmar-Diemer Gambit Declined",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. f3 e3",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 e4e3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/8/3P4/2N1pP2/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2456"
+    },
+    {
+      "id": "record-2804",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit Declined: O'Kelly Defense",
+      "family": "Blackmar-Diemer Gambit Declined",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. f3 c6",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 c7c6",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/8/3Pp3/2N2P2/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2457"
+    },
+    {
+      "id": "record-2805",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit Declined: Vienna Defense",
+      "family": "Blackmar-Diemer Gambit Declined",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. f3 Bf5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 c8f5",
+      "epd": "rn1qkb1r/ppp1pppp/5n2/5b2/3Pp3/2N2P2/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2458"
+    },
+    {
+      "id": "record-2806",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit Declined: Weinsbach Defense",
+      "family": "Blackmar-Diemer Gambit Declined",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. f3 e6",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 e7e6",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/8/3Pp3/2N2P2/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2459"
+    }
+  ]
+}

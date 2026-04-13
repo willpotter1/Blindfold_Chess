@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "King's Indian Attack, with e6",
+    "chunkKey": "king-s-indian-attack-with-e6",
+    "recordCount": 2,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-250",
+      "eco": "A07",
+      "name": "King's Indian Attack, with e6",
+      "family": "King's Indian Attack, with e6",
+      "pgn": "1. Nf3 Nf6 2. g3 d5 3. Bg2 e6",
+      "uci": "g1f3 g8f6 g2g3 d7d5 f1g2 e7e6",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p4/8/5NP1/PPPPPPBP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-232"
+    },
+    {
+      "id": "record-251",
+      "eco": "A07",
+      "name": "King's Indian Attack, with e6",
+      "family": "King's Indian Attack, with e6",
+      "pgn": "1. Nf3 Nf6 2. g3 d5 3. Bg2 e6 4. O-O Be7",
+      "uci": "g1f3 g8f6 g2g3 d7d5 f1g2 e7e6 e1g1 f8e7",
+      "epd": "rnbqk2r/ppp1bppp/4pn2/3p4/8/5NP1/PPPPPPBP/RNBQ1RK1 w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-232"
+    }
+  ]
+}

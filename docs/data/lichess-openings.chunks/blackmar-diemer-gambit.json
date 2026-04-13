@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Blackmar-Diemer Gambit",
+    "chunkKey": "blackmar-diemer-gambit",
+    "recordCount": 18,
+    "lineCount": 17
+  },
+  "records": [
+    {
+      "id": "record-2776",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4",
+      "uci": "d2d4 d7d5 e2e4",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-2430"
+    },
+    {
+      "id": "record-2777",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/8/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2430"
+    },
+    {
+      "id": "record-2807",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Blackmar Gambit",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. f3",
+      "uci": "d2d4 d7d5 e2e4 d5e4 f2f3",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/3Pp3/5P2/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2460"
+    },
+    {
+      "id": "record-2808",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Diemer-Rosenberg Attack",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Be3",
+      "uci": "d2d4 d7d5 e2e4 d5e4 c1e3",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/3Pp3/4B3/PPP2PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2461"
+    },
+    {
+      "id": "record-2809",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Fritz Attack",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Bc4",
+      "uci": "d2d4 d7d5 e2e4 d5e4 f1c4",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/2BPp3/8/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2462"
+    },
+    {
+      "id": "record-2810",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Lemberger Countergambit",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 e5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 e7e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2463"
+    },
+    {
+      "id": "record-2811",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Lemberger Countergambit, Endgame Variation",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 e5 4. dxe5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 e7e5 d4e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/4P3/4p3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2464"
+    },
+    {
+      "id": "record-2812",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Lemberger Countergambit, Lange Gambit",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 e5 4. Nxe4",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 e7e5 c3e4",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/3PN3/8/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2465"
+    },
+    {
+      "id": "record-2813",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Lemberger Countergambit, Rasmussen Attack",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 e5 4. Nge2",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 e7e5 g1e2",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/3Pp3/2N5/PPP1NPPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2466"
+    },
+    {
+      "id": "record-2814",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Lemberger Countergambit, Sneiders Attack",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 e5 4. Qh5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 e7e5 d1h5",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p2Q/3Pp3/2N5/PPP2PPP/R1B1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2467"
+    },
+    {
+      "id": "record-2815",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Lemberger Countergambit, Soller Attack",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 e5 4. Be3",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 e7e5 c1e3",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/3Pp3/2N1B3/PPP2PPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2468"
+    },
+    {
+      "id": "record-2816",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Netherlands Variation",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 f5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 f7f5",
+      "epd": "rnbqkbnr/ppp1p1pp/8/5p2/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2469"
+    },
+    {
+      "id": "record-2817",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Rasa-Studier Gambit",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. Be3",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 c1e3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/8/3Pp3/2N1B3/PPP2PPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2470"
+    },
+    {
+      "id": "record-2818",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Reversed Albin Countergambit",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 c5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2p5/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2471"
+    },
+    {
+      "id": "record-2819",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Zeller Defense",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Bf5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 c8f5",
+      "epd": "rn1qkbnr/ppp1pppp/8/5b2/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2474"
+    },
+    {
+      "id": "record-2820",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: Zeller Defense, Soller Attack",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Bf5 4. f3 Nf6 5. Bc4",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 c8f5 f2f3 g8f6 f1c4",
+      "epd": "rn1qkb1r/ppp1pppp/5n2/5b2/2BPp3/2N2P2/PPP3PP/R1BQK1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2475"
+    },
+    {
+      "id": "record-2821",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: von Popiel Gambit",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. Bg5",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 c1g5",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/6B1/3Pp3/2N5/PPP2PPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2472"
+    },
+    {
+      "id": "record-2822",
+      "eco": "D00",
+      "name": "Blackmar-Diemer Gambit: von Popiel Gambit, Zilbermints Variation",
+      "family": "Blackmar-Diemer Gambit",
+      "pgn": "1. d4 d5 2. e4 dxe4 3. Nc3 Nf6 4. Bg5 Bf5 5. Bxf6 exf6 6. g4 Bg6 7. Qe2 Bb4 8. Qb5+",
+      "uci": "d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 c1g5 c8f5 g5f6 e7f6 g2g4 f5g6 d1e2 f8b4 e2b5",
+      "epd": "rn1qk2r/ppp2ppp/5pb1/1Q6/1b1Pp1P1/2N5/PPP2P1P/R3KBNR b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2473"
+    }
+  ]
+}

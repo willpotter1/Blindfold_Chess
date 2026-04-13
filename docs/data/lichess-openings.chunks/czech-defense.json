@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Czech Defense",
+    "chunkKey": "czech-defense",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-1020",
+      "eco": "B07",
+      "name": "Czech Defense",
+      "family": "Czech Defense",
+      "pgn": "1. e4 d6 2. d4 Nf6 3. Nc3 c6",
+      "uci": "e2e4 d7d6 d2d4 g8f6 b1c3 c7c6",
+      "epd": "rnbqkb1r/pp2pppp/2pp1n2/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-889"
+    }
+  ]
+}

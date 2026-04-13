@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Hungarian Opening",
+    "chunkKey": "hungarian-opening",
+    "recordCount": 20,
+    "lineCount": 20
+  },
+  "records": [
+    {
+      "id": "record-243",
+      "eco": "A07",
+      "name": "Hungarian Opening: Wiedenhagen-Beta Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 d5 2. Nf3 g5",
+      "uci": "g2g3 d7d5 g1f3 g7g5",
+      "epd": "rnbqkbnr/ppp1pp1p/8/3p2p1/8/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-229"
+    },
+    {
+      "id": "record-38",
+      "eco": "A00",
+      "name": "Hungarian Opening",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3",
+      "uci": "g2g3",
+      "epd": "rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-37"
+    },
+    {
+      "id": "record-39",
+      "eco": "A00",
+      "name": "Hungarian Opening: Asten Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 Nc6 2. Nc3 d5 3. d4 e5 4. dxe5 d4 5. Ne4 f5",
+      "uci": "g2g3 b8c6 b1c3 d7d5 d2d4 e7e5 d4e5 d5d4 c3e4 f7f5",
+      "epd": "r1bqkbnr/ppp3pp/2n5/4Pp2/3pN3/6P1/PPP1PP1P/R1BQKBNR w KQkq f6",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-38"
+    },
+    {
+      "id": "record-40",
+      "eco": "A00",
+      "name": "Hungarian Opening: Burk Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 e5 2. a3 d5 3. Nf3 e4 4. Nh4 Be7 5. d3",
+      "uci": "g2g3 e7e5 a2a3 d7d5 g1f3 e5e4 f3h4 f8e7 d2d3",
+      "epd": "rnbqk1nr/ppp1bppp/8/3p4/4p2N/P2P2P1/1PP1PP1P/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-40"
+    },
+    {
+      "id": "record-41",
+      "eco": "A00",
+      "name": "Hungarian Opening: Bücker Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 d5 2. Bg2 e5 3. b4",
+      "uci": "g2g3 d7d5 f1g2 e7e5 b2b4",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/1P6/6P1/P1PPPPBP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-39"
+    },
+    {
+      "id": "record-42",
+      "eco": "A00",
+      "name": "Hungarian Opening: Catalan Formation",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 d5 2. Bg2 e6",
+      "uci": "g2g3 d7d5 f1g2 e7e6",
+      "epd": "rnbqkbnr/ppp2ppp/4p3/3p4/8/6P1/PPPPPPBP/RNBQK1NR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-41"
+    },
+    {
+      "id": "record-43",
+      "eco": "A00",
+      "name": "Hungarian Opening: Dutch Defense",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 f5",
+      "uci": "g2g3 f7f5",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/8/6P1/PPPPPP1P/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-42"
+    },
+    {
+      "id": "record-44",
+      "eco": "A00",
+      "name": "Hungarian Opening: Indian Defense",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 Nf6",
+      "uci": "g2g3 g8f6",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/8/6P1/PPPPPP1P/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-43"
+    },
+    {
+      "id": "record-45",
+      "eco": "A00",
+      "name": "Hungarian Opening: Myers Defense",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 g5",
+      "uci": "g2g3 g7g5",
+      "epd": "rnbqkbnr/pppppp1p/8/6p1/8/6P1/PPPPPP1P/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-44"
+    },
+    {
+      "id": "record-46",
+      "eco": "A00",
+      "name": "Hungarian Opening: Pachman Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 f5 2. e4 fxe4 3. Qh5+ g6",
+      "uci": "g2g3 f7f5 e2e4 f5e4 d1h5 g7g6",
+      "epd": "rnbqkbnr/ppppp2p/6p1/7Q/4p3/6P1/PPPP1P1P/RNB1KBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-45"
+    },
+    {
+      "id": "record-47",
+      "eco": "A00",
+      "name": "Hungarian Opening: Paris Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 e5 2. Nh3 d5 3. f4 Bxh3 4. Bxh3 exf4 5. O-O",
+      "uci": "g2g3 e7e5 g1h3 d7d5 f2f4 c8h3 f1h3 e5f4 e1g1",
+      "epd": "rn1qkbnr/ppp2ppp/8/3p4/5p2/6PB/PPPPP2P/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-46"
+    },
+    {
+      "id": "record-48",
+      "eco": "A00",
+      "name": "Hungarian Opening: Reversed Alekhine",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 e5 2. Nf3",
+      "uci": "g2g3 e7e5 g1f3",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-47"
+    },
+    {
+      "id": "record-49",
+      "eco": "A00",
+      "name": "Hungarian Opening: Reversed Brooklyn Defense, Brooklyn Benko Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 e5 2. Nf3 e4 3. Ng1 Nf6 4. b4",
+      "uci": "g2g3 e7e5 g1f3 e5e4 f3g1 g8f6 b2b4",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/8/1P2p3/6P1/P1PPPP1P/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-48"
+    },
+    {
+      "id": "record-50",
+      "eco": "A00",
+      "name": "Hungarian Opening: Reversed Modern Defense",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 d5 2. Bg2 c5",
+      "uci": "g2g3 d7d5 f1g2 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/8/6P1/PPPPPPBP/RNBQK1NR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-49"
+    },
+    {
+      "id": "record-51",
+      "eco": "A00",
+      "name": "Hungarian Opening: Reversed Norwegian Defense",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 e5 2. Nf3 e4 3. Nh4",
+      "uci": "g2g3 e7e5 g1f3 e5e4 f3h4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/4p2N/6P1/PPPPPP1P/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-50"
+    },
+    {
+      "id": "record-52",
+      "eco": "A00",
+      "name": "Hungarian Opening: Sicilian Invitation",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 c5",
+      "uci": "g2g3 c7c5",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/8/6P1/PPPPPP1P/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-51"
+    },
+    {
+      "id": "record-53",
+      "eco": "A00",
+      "name": "Hungarian Opening: Slav Formation",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 d5 2. Bg2 c6",
+      "uci": "g2g3 d7d5 f1g2 c7c6",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/8/6P1/PPPPPPBP/RNBQK1NR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-52"
+    },
+    {
+      "id": "record-54",
+      "eco": "A00",
+      "name": "Hungarian Opening: Symmetrical Variation",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 g6",
+      "uci": "g2g3 g7g6",
+      "epd": "rnbqkbnr/pppppp1p/6p1/8/8/6P1/PPPPPP1P/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-53"
+    },
+    {
+      "id": "record-55",
+      "eco": "A00",
+      "name": "Hungarian Opening: Van Kuijk Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 h5 2. Nf3 h4",
+      "uci": "g2g3 h7h5 g1f3 h5h4",
+      "epd": "rnbqkbnr/ppppppp1/8/8/7p/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-54"
+    },
+    {
+      "id": "record-56",
+      "eco": "A00",
+      "name": "Hungarian Opening: Winterberg Gambit",
+      "family": "Hungarian Opening",
+      "pgn": "1. g3 d5 2. Bg2 e5 3. c4 dxc4 4. b3",
+      "uci": "g2g3 d7d5 f1g2 e7e5 c2c4 d5c4 b2b3",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/2p5/1P4P1/P2PPPBP/RNBQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-55"
+    }
+  ]
+}

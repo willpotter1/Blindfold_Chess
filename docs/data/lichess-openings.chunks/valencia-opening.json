@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Valencia Opening",
+    "chunkKey": "valencia-opening",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-101",
+      "eco": "A00",
+      "name": "Valencia Opening",
+      "family": "Valencia Opening",
+      "pgn": "1. d3 e5 2. Nd2",
+      "uci": "d2d3 e7e5 b1d2",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/8/3P4/PPPNPPPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-97"
+    }
+  ]
+}

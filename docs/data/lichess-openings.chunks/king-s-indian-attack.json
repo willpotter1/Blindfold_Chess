@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "King's Indian Attack",
+    "chunkKey": "king-s-indian-attack",
+    "recordCount": 18,
+    "lineCount": 12
+  },
+  "records": [
+    {
+      "id": "record-217",
+      "eco": "A05",
+      "name": "King's Indian Attack",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 Nf6 2. g3 d5",
+      "uci": "g1f3 g8f6 g2g3 d7d5",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/3p4/8/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-230"
+    },
+    {
+      "id": "record-218",
+      "eco": "A05",
+      "name": "King's Indian Attack: Smyslov Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 Nf6 2. g3 g6 3. b4",
+      "uci": "g1f3 g8f6 g2g3 g7g6 b2b4",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/1P6/5NP1/P1PPPP1P/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-209"
+    },
+    {
+      "id": "record-219",
+      "eco": "A05",
+      "name": "King's Indian Attack: Spassky Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 Nf6 2. g3 b5",
+      "uci": "g1f3 g8f6 g2g3 b7b5",
+      "epd": "rnbqkb1r/p1pppppp/5n2/1p6/8/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-210"
+    },
+    {
+      "id": "record-220",
+      "eco": "A05",
+      "name": "King's Indian Attack: Symmetrical Defense",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 Nf6 2. g3 g6",
+      "uci": "g1f3 g8f6 g2g3 g7g6",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/8/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-211"
+    },
+    {
+      "id": "record-221",
+      "eco": "A05",
+      "name": "King's Indian Attack: Wahls Defense",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 Nf6 2. g3 g6 3. Bg2 Bg7 4. O-O O-O 5. d3 d5",
+      "uci": "g1f3 g8f6 g2g3 g7g6 f1g2 f8g7 e1g1 e8g8 d2d3 d7d5",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/8/3P1NP1/PPP1PPBP/RNBQ1RK1 w - -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-212"
+    },
+    {
+      "id": "record-244",
+      "eco": "A07",
+      "name": "King's Indian Attack",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3",
+      "uci": "g1f3 d7d5 g2g3",
+      "epd": "rnbqkbnr/ppp1pppp/8/3p4/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-230"
+    },
+    {
+      "id": "record-252",
+      "eco": "A07",
+      "name": "King's Indian Attack: Double Fianchetto",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 g6",
+      "uci": "g1f3 d7d5 g2g3 g7g6",
+      "epd": "rnbqkbnr/ppp1pp1p/6p1/3p4/8/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-233"
+    },
+    {
+      "id": "record-253",
+      "eco": "A07",
+      "name": "King's Indian Attack: Keres Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 Bg4",
+      "uci": "g1f3 d7d5 g2g3 c8g4",
+      "epd": "rn1qkbnr/ppp1pppp/8/3p4/6b1/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-234"
+    },
+    {
+      "id": "record-254",
+      "eco": "A07",
+      "name": "King's Indian Attack: Keres Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 Bg4 3. Bg2 Nd7",
+      "uci": "g1f3 d7d5 g2g3 c8g4 f1g2 b8d7",
+      "epd": "r2qkbnr/pppnpppp/8/3p4/6b1/5NP1/PPPPPPBP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-234"
+    },
+    {
+      "id": "record-255",
+      "eco": "A07",
+      "name": "King's Indian Attack: Keres Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 c6 3. Bg2 Bg4 4. O-O Nd7",
+      "uci": "g1f3 d7d5 g2g3 c7c6 f1g2 c8g4 e1g1 b8d7",
+      "epd": "r2qkbnr/pp1npppp/2p5/3p4/6b1/5NP1/PPPPPPBP/RNBQ1RK1 w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-234"
+    },
+    {
+      "id": "record-256",
+      "eco": "A07",
+      "name": "King's Indian Attack: Omega-Delta Gambit",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 e5",
+      "uci": "g1f3 d7d5 g2g3 e7e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/8/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-235"
+    },
+    {
+      "id": "record-257",
+      "eco": "A07",
+      "name": "King's Indian Attack: Pachman System",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 g6 3. Bg2 Bg7 4. O-O e5 5. d3 Ne7",
+      "uci": "g1f3 d7d5 g2g3 g7g6 f1g2 f8g7 e1g1 e7e5 d2d3 g8e7",
+      "epd": "rnbqk2r/ppp1npbp/6p1/3pp3/8/3P1NP1/PPP1PPBP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-236"
+    },
+    {
+      "id": "record-258",
+      "eco": "A07",
+      "name": "King's Indian Attack: Sicilian Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 c5",
+      "uci": "g1f3 d7d5 g2g3 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/8/5NP1/PPPPPP1P/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-237"
+    },
+    {
+      "id": "record-259",
+      "eco": "A07",
+      "name": "King's Indian Attack: Yugoslav Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 Nf6 2. g3 d5 3. Bg2 c6 4. O-O Bg4",
+      "uci": "g1f3 g8f6 g2g3 d7d5 f1g2 c7c6 e1g1 c8g4",
+      "epd": "rn1qkb1r/pp2pppp/2p2n2/3p4/6b1/5NP1/PPPPPPBP/RNBQ1RK1 w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-238"
+    },
+    {
+      "id": "record-260",
+      "eco": "A08",
+      "name": "King's Indian Attack: French Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 c5 3. Bg2 Nc6",
+      "uci": "g1f3 d7d5 g2g3 c7c5 f1g2 b8c6",
+      "epd": "r1bqkbnr/pp2pppp/2n5/2pp4/8/5NP1/PPPPPPBP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-239"
+    },
+    {
+      "id": "record-261",
+      "eco": "A08",
+      "name": "King's Indian Attack: Sicilian Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. e4 e6 2. d3 d5 3. Nd2 Nf6 4. Ngf3 c5 5. g3 Nc6 6. Bg2 Be7 7. O-O O-O 8. Re1",
+      "uci": "e2e4 e7e6 d2d3 d7d5 b1d2 g8f6 g1f3 c7c5 g2g3 b8c6 f1g2 f8e7 e1g1 e8g8 f1e1",
+      "epd": "r1bq1rk1/pp2bppp/2n1pn2/2pp4/4P3/3P1NP1/PPPN1PBP/R1BQR1K1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-237"
+    },
+    {
+      "id": "record-262",
+      "eco": "A08",
+      "name": "King's Indian Attack: Sicilian Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 c5 3. Bg2",
+      "uci": "g1f3 d7d5 g2g3 c7c5 f1g2",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/8/5NP1/PPPPPPBP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-237"
+    },
+    {
+      "id": "record-263",
+      "eco": "A08",
+      "name": "King's Indian Attack: Sicilian Variation",
+      "family": "King's Indian Attack",
+      "pgn": "1. Nf3 d5 2. g3 c5 3. Bg2 Nf6 4. O-O e6 5. d3",
+      "uci": "g1f3 d7d5 g2g3 c7c5 f1g2 g8f6 e1g1 e7e6 d2d3",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2pp4/8/3P1NP1/PPP1PPBP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-237"
+    }
+  ]
+}

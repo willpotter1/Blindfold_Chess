@@ -1,0 +1,32 @@
+{
+  "name": "Blindchess - Blindfold Chess Trainer",
+  "short_name": "Blindchess",
+  "description": "Train your blindfold chess visualization with games, puzzles, drills, and openings.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1C1B18",
+  "theme_color": "#1C1B18",
+  "icons": [
+    {
+      "src": "/circlepawnwb-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/circlepawnwb-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/circlepawnwb-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/circlepawnwb-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

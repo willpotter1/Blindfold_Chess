@@ -1,0 +1,1002 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Semi-Slav Defense",
+    "chunkKey": "semi-slav-defense",
+    "recordCount": 66,
+    "lineCount": 46
+  },
+  "records": [
+    {
+      "id": "record-3035",
+      "eco": "D30",
+      "name": "Semi-Slav Defense: Quiet Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 e6 5. Nbd2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 e7e6 b1d2",
+      "epd": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/4PN2/PP1N1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2661"
+    },
+    {
+      "id": "record-3036",
+      "eco": "D30",
+      "name": "Semi-Slav Defense: Quiet Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 e6 5. Nbd2 Nbd7",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 e2e3 e7e6 b1d2 b8d7",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/4PN2/PP1N1PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2661"
+    },
+    {
+      "id": "record-3046",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Accelerated Move Order",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6",
+      "epd": "rnbqkbnr/pp3ppp/2p1p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2671"
+    },
+    {
+      "id": "record-3047",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Anti-Noteboom, Stonewall Variation, Portisch Gambit",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. e3 f5 5. g4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 e2e3 f7f5 g2g4",
+      "epd": "rnbqkbnr/pp4pp/2p1p3/3p1p2/2PP2P1/2N1P3/PP3P1P/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2672"
+    },
+    {
+      "id": "record-3048",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Gunderam Gambit",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. e4 dxe4 5. f3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 e2e4 d5e4 f2f3",
+      "epd": "rnbqkbnr/pp3ppp/2p1p3/8/2PPp3/2N2P2/PP4PP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2673"
+    },
+    {
+      "id": "record-3049",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Marshall Gambit",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. e4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 e2e4",
+      "epd": "rnbqkbnr/pp3ppp/2p1p3/3p4/2PPP3/2N5/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2674"
+    },
+    {
+      "id": "record-3050",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Marshall Gambit, Forgotten Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. e4 dxe4 5. Nxe4 Bb4+ 6. Nc3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 e2e4 d5e4 c3e4 f8b4 e4c3",
+      "epd": "rnbqk1nr/pp3ppp/2p1p3/8/1bPP4/2N5/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2675"
+    },
+    {
+      "id": "record-3051",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Marshall Gambit, Main Line",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. e4 dxe4 5. Nxe4 Bb4+ 6. Bd2",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 e2e4 d5e4 c3e4 f8b4 c1d2",
+      "epd": "rnbqk1nr/pp3ppp/2p1p3/8/1bPPN3/8/PP1B1PPP/R2QKBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2676"
+    },
+    {
+      "id": "record-3052",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Marshall Gambit, Tolush Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. e4 dxe4 5. Nxe4 Bb4+ 6. Bd2 Qxd4 7. Bxb4 Qxe4+ 8. Be2 c5 9. Bxc5 Qxg2",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 e2e4 d5e4 c3e4 f8b4 c1d2 d8d4 d2b4 d4e4 f1e2 c6c5 b4c5 e4g2",
+      "epd": "rnb1k1nr/pp3ppp/4p3/2B5/2P5/8/PP2BPqP/R2QK1NR w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2677"
+    },
+    {
+      "id": "record-3053",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Noteboom Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 d5c4",
+      "epd": "rnbqkbnr/pp3ppp/2p1p3/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2678"
+    },
+    {
+      "id": "record-3054",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Noteboom Variation, Abrahams Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. a4 Bb4 6. e3 Bxc3+ 7. bxc3 b5 8. axb5 cxb5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 d5c4 a2a4 f8b4 e2e3 b4c3 b2c3 b7b5 a4b5 c6b5",
+      "epd": "rnbqk1nr/p4ppp/4p3/1p6/2pP4/2P1PN2/5PPP/R1BQKB1R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2679"
+    },
+    {
+      "id": "record-3055",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Gambit",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. g3",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 d5c4 g2g3",
+      "epd": "rnbqkbnr/pp3ppp/2p1p3/8/2pP4/2N2NP1/PP2PP1P/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2680"
+    },
+    {
+      "id": "record-3056",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. Bg5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 d5c4 c1g5",
+      "epd": "rnbqkbnr/pp3ppp/2p1p3/6B1/2pP4/2N2N2/PP2PPPP/R2QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2681"
+    },
+    {
+      "id": "record-3057",
+      "eco": "D31",
+      "name": "Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Variation, Belyavsky Line",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. Bg5 f6",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 d5c4 c1g5 f7f6",
+      "epd": "rnbqkbnr/pp4pp/2p1pp2/6B1/2pP4/2N2N2/PP2PPPP/R2QKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2682"
+    },
+    {
+      "id": "record-3125",
+      "eco": "D43",
+      "name": "Semi-Slav Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6",
+      "epd": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2743"
+    },
+    {
+      "id": "record-3126",
+      "eco": "D43",
+      "name": "Semi-Slav Defense: Anti-Moscow Gambit",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 h6 6. Bh4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 h7h6 g5h4",
+      "epd": "rnbqkb1r/pp3pp1/2p1pn1p/3p4/2PP3B/2N2N2/PP2PPPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2744"
+    },
+    {
+      "id": "record-3128",
+      "eco": "D44",
+      "name": "Semi-Slav Defense: Botvinnik Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 dxc4 6. e4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 d5c4 e2e4",
+      "epd": "rnbqkb1r/pp3ppp/2p1pn2/6B1/2pPP3/2N2N2/PP3PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2746"
+    },
+    {
+      "id": "record-3129",
+      "eco": "D44",
+      "name": "Semi-Slav Defense: Botvinnik Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5 9. Nxg5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 d5c4 e2e4 b7b5 e4e5 h7h6 g5h4 g7g5 f3g5",
+      "epd": "rnbqkb1r/p4p2/2p1pn1p/1p2P1N1/2pP3B/2N5/PP3PPP/R2QKB1R b KQkq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2746"
+    },
+    {
+      "id": "record-3130",
+      "eco": "D44",
+      "name": "Semi-Slav Defense: Botvinnik Variation, Alatortsev System",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c6 5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5 9. Nxg5 Nd5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 c7c6 c1g5 d5c4 e2e4 b7b5 e4e5 h7h6 g5h4 g7g5 f3g5 f6d5",
+      "epd": "rnbqkb1r/p4p2/2p1p2p/1p1nP1N1/2pP3B/2N5/PP3PPP/R2QKB1R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2747"
+    },
+    {
+      "id": "record-3131",
+      "eco": "D44",
+      "name": "Semi-Slav Defense: Botvinnik Variation, Ekstrom Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5 9. exf6 gxh4 10. Ne5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 d5c4 e2e4 b7b5 e4e5 h7h6 g5h4 g7g5 e5f6 g5h4 f3e5",
+      "epd": "rnbqkb1r/p4p2/2p1pP1p/1p2N3/2pP3p/2N5/PP3PPP/R2QKB1R b KQkq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2748"
+    },
+    {
+      "id": "record-3132",
+      "eco": "D44",
+      "name": "Semi-Slav Defense: Botvinnik Variation, Lilienthal Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5 9. Nxg5 hxg5 10. Bxg5 Nbd7 11. g3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 c1g5 d5c4 e2e4 b7b5 e4e5 h7h6 g5h4 g7g5 f3g5 h6g5 h4g5 b8d7 g2g3",
+      "epd": "r1bqkb1r/p2n1p2/2p1pn2/1p2P1B1/2pP4/2N3P1/PP3P1P/R2QKB1R b KQkq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2749"
+    },
+    {
+      "id": "record-3133",
+      "eco": "D44",
+      "name": "Semi-Slav Defense: Botvinnik Variation, Szabo Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c6 5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5 9. Nxg5 hxg5 10. Bxg5 Nbd7 11. Qf3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 b1c3 c7c6 c1g5 d5c4 e2e4 b7b5 e4e5 h7h6 g5h4 g7g5 f3g5 h6g5 h4g5 b8d7 d1f3",
+      "epd": "r1bqkb1r/p2n1p2/2p1pn2/1p2P1B1/2pP4/2N2Q2/PP3PPP/R3KB1R b KQkq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2750"
+    },
+    {
+      "id": "record-3134",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Accelerated Meran Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 a6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 a7a6",
+      "epd": "rnbqkb1r/1p3ppp/p1p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2751"
+    },
+    {
+      "id": "record-3135",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Main Line",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3",
+      "epd": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2752"
+    },
+    {
+      "id": "record-3136",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Normal Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2753"
+    },
+    {
+      "id": "record-3137",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Normal Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. Nf3 d5 2. e3 Nf6 3. c4 c6 4. Nc3 e6 5. b3 Bd6 6. Bb2 O-O 7. d4 Nbd7",
+      "uci": "g1f3 d7d5 e2e3 g8f6 c2c4 c7c6 b1c3 e7e6 b2b3 f8d6 c1b2 e8g8 d2d4 b8d7",
+      "epd": "r1bq1rk1/pp1n1ppp/2pbpn2/3p4/2PP4/1PN1PN2/PB3PPP/R2QKB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2753"
+    },
+    {
+      "id": "record-3138",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Normal Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 Nf6 5. e3 Nbd7 6. b3 Bd6 7. Bb2 O-O 8. Be2",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 g8f6 e2e3 b8d7 b2b3 f8d6 c1b2 e8g8 f1e2",
+      "epd": "r1bq1rk1/pp1n1ppp/2pbpn2/3p4/2PP4/1PN1PN2/PB2BPPP/R2QK2R b KQ -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2753"
+    },
+    {
+      "id": "record-3139",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Rubinstein System",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 Nf6 5. e3 Nbd7 6. Ne5",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 g1f3 g8f6 e2e3 b8d7 f3e5",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3pN3/2PP4/2N1P3/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2754"
+    },
+    {
+      "id": "record-3140",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stoltz Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Qc2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 d1c2",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2755"
+    },
+    {
+      "id": "record-3141",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stoltz Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Qc2 b6 7. b3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 d1c2 b7b6 b2b3",
+      "epd": "r1bqkb1r/p2n1ppp/1pp1pn2/3p4/2PP4/1PN1PN2/P1Q2PPP/R1B1KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2755"
+    },
+    {
+      "id": "record-3142",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stoltz Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Qc2 b6 7. b3 Bb7",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 d1c2 b7b6 b2b3 c8b7",
+      "epd": "r2qkb1r/pb1n1ppp/1pp1pn2/3p4/2PP4/1PN1PN2/P1Q2PPP/R1B1KB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2755"
+    },
+    {
+      "id": "record-3143",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stoltz Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 c6 4. e3 e6 5. Nc3 Nbd7 6. Qc2 Bd6 7. b3",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c2c4 c7c6 e2e3 e7e6 b1c3 b8d7 d1c2 f8d6 b2b3",
+      "epd": "r1bqk2r/pp1n1ppp/2pbpn2/3p4/2PP4/1PN1PN2/P1Q2PPP/R1B1KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2755"
+    },
+    {
+      "id": "record-3144",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stoltz Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 c6 4. e3 e6 5. Nc3 Nbd7 6. Qc2 Bd6 7. b3 O-O 8. Bb2",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c2c4 c7c6 e2e3 e7e6 b1c3 b8d7 d1c2 f8d6 b2b3 e8g8 c1b2",
+      "epd": "r1bq1rk1/pp1n1ppp/2pbpn2/3p4/2PP4/1PN1PN2/PBQ2PPP/R3KB1R b KQ -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2755"
+    },
+    {
+      "id": "record-3145",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stoltz Variation, Center Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Qc2 Bd6 7. e4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 e2e3 b8d7 d1c2 f8d6 e3e4",
+      "epd": "r1bqk2r/pp1n1ppp/2pbpn2/3p4/2PPP3/2N2N2/PPQ2PPP/R1B1KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2756"
+    },
+    {
+      "id": "record-3146",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stoltz Variation, Center Variation, Mikhalchishin Line",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Qc2 Bd6 7. e4 dxe4 8. Nxe4 Nxe4 9. Qxe4 e5 10. dxe5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 e2e3 b8d7 d1c2 f8d6 e3e4 d5e4 c3e4 f6e4 c2e4 e6e5 d4e5",
+      "epd": "r1bqk2r/pp1n1ppp/2pb4/4P3/2P1Q3/5N2/PP3PPP/R1B1KB1R b KQkq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2757"
+    },
+    {
+      "id": "record-3147",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stoltz Variation, Shabalov Attack",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Qc2 Bd6 7. g4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 e2e3 b8d7 d1c2 f8d6 g2g4",
+      "epd": "r1bqk2r/pp1n1ppp/2pbpn2/3p4/2PP2P1/2N1PN2/PPQ2P1P/R1B1KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2758"
+    },
+    {
+      "id": "record-3148",
+      "eco": "D45",
+      "name": "Semi-Slav Defense: Stonewall Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 c6 4. Nc3 e6 5. e3 Ne4 6. Bd3 f5",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c2c4 c7c6 b1c3 e7e6 e2e3 f6e4 f1d3 f7f5",
+      "epd": "rnbqkb1r/pp4pp/2p1p3/3p1p2/2PPn3/2NBPN2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2759"
+    },
+    {
+      "id": "record-3149",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Bogoljubow Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 Be7",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 f8e7",
+      "epd": "r1bqk2r/pp1nbppp/2p1pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2760"
+    },
+    {
+      "id": "record-3150",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 Bd6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 f8d6",
+      "epd": "r1bqk2r/pp1n1ppp/2pbpn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2761"
+    },
+    {
+      "id": "record-3151",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 Bd6 7. Qc2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 f8d6 d1c2",
+      "epd": "r1bqk2r/pp1n1ppp/2pbpn2/3p4/2PP4/2NBPN2/PPQ2PPP/R1B1K2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2761"
+    },
+    {
+      "id": "record-3152",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. b3 Bd6 7. Bb2 O-O 8. Bd3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 b2b3 f8d6 c1b2 e8g8 f1d3",
+      "epd": "r1bq1rk1/pp1n1ppp/2pbpn2/3p4/2PP4/1PNBPN2/PB3PPP/R2QK2R b KQ -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2761"
+    },
+    {
+      "id": "record-3153",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Qc2 b6 7. b3 Bb7 8. Bd3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 d1c2 b7b6 b2b3 c8b7 f1d3",
+      "epd": "r2qkb1r/pb1n1ppp/1pp1pn2/3p4/2PP4/1PNBPN2/P1Q2PPP/R1B1K2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2761"
+    },
+    {
+      "id": "record-3154",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Qc2 Bd6 7. b3 O-O 8. Bb2 Re8 9. Bd3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 d1c2 f8d6 b2b3 e8g8 c1b2 f8e8 f1d3",
+      "epd": "r1bqr1k1/pp1n1ppp/2pbpn2/3p4/2PP4/1PNBPN2/PBQ2PPP/R3K2R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2761"
+    },
+    {
+      "id": "record-3155",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Qc2 Bd6 7. b3 O-O 8. Bb2 Qe7 9. Bd3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 d1c2 f8d6 b2b3 e8g8 c1b2 d8e7 f1d3",
+      "epd": "r1b2rk1/pp1nqppp/2pbpn2/3p4/2PP4/1PNBPN2/PBQ2PPP/R3K2R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2761"
+    },
+    {
+      "id": "record-3156",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 e6 4. e3 Nf6 5. Nc3 Bd6 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 Nbd7 9. O-O O-O 10. Qc2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 e7e6 e2e3 g8f6 b1c3 f8d6 f1d3 d5c4 d3c4 b7b5 c4d3 b8d7 e1g1 e8g8 d1c2",
+      "epd": "r1bq1rk1/p2n1ppp/2pbpn2/1p6/3P4/2NBPN2/PPQ2PPP/R1B2RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2761"
+    },
+    {
+      "id": "record-3157",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 Bd6 9. O-O Bb7 10. a3 O-O 11. Qc2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 f8d6 e1g1 c8b7 a2a3 e8g8 d1c2",
+      "epd": "r2q1rk1/pb1n1ppp/2pbpn2/1p6/3P4/P1NBPN2/1PQ2PPP/R1B2RK1 b - -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2761"
+    },
+    {
+      "id": "record-3158",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Main Line",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2752"
+    },
+    {
+      "id": "record-3159",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Main Line",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Qc2 b6 7. b3 Bb7 8. Bd3 Be7 9. O-O O-O 10. Bb2",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 d1c2 b7b6 b2b3 c8b7 f1d3 f8e7 e1g1 e8g8 c1b2",
+      "epd": "r2q1rk1/pb1nbppp/1pp1pn2/3p4/2PP4/1PNBPN2/PBQ2PPP/R4RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2752"
+    },
+    {
+      "id": "record-3160",
+      "eco": "D46",
+      "name": "Semi-Slav Defense: Romih Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 Bb4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 f8b4",
+      "epd": "r1bqk2r/pp1n1ppp/2p1pn2/3p4/1bPP4/2NBPN2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2762"
+    },
+    {
+      "id": "record-3161",
+      "eco": "D47",
+      "name": "Semi-Slav Defense: Meran Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5",
+      "epd": "r1bqkb1r/p2n1ppp/2p1pn2/1p6/2BP4/2N1PN2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2763"
+    },
+    {
+      "id": "record-3162",
+      "eco": "D47",
+      "name": "Semi-Slav Defense: Meran Variation, Lundin Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 b4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 e2e3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 b5b4",
+      "epd": "r1bqkb1r/p2n1ppp/2p1pn2/8/1p1P4/2NBPN2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2764"
+    },
+    {
+      "id": "record-3163",
+      "eco": "D47",
+      "name": "Semi-Slav Defense: Meran Variation, Wade Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 Bb7",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 c8b7",
+      "epd": "r2qkb1r/pb1n1ppp/2p1pn2/1p6/3P4/2NBPN2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2765"
+    },
+    {
+      "id": "record-3164",
+      "eco": "D47",
+      "name": "Semi-Slav Defense: Meran Variation, Wade Variation, Kaidanov Gambit",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 Bb7 9. e4 b4 10. Na4 c5 11. e5 Nd5 12. O-O cxd4 13. Nxd4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 c8b7 e3e4 b5b4 c3a4 c6c5 e4e5 f6d5 e1g1 c5d4 f3d4",
+      "epd": "r2qkb1r/pb1n1ppp/4p3/3nP3/Np1N4/3B4/PP3PPP/R1BQ1RK1 b kq -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2766"
+    },
+    {
+      "id": "record-3165",
+      "eco": "D47",
+      "name": "Semi-Slav Defense: Meran Variation, Wade Variation, Larsen Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 Bb7 9. e4 b4 10. Na4 c5 11. e5 Nd5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 c8b7 e3e4 b5b4 c3a4 c6c5 e4e5 f6d5",
+      "epd": "r2qkb1r/pb1n1ppp/4p3/2pnP3/Np1P4/3B1N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2767"
+    },
+    {
+      "id": "record-3166",
+      "eco": "D47",
+      "name": "Semi-Slav Defense: Semi-Meran Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4",
+      "epd": "r1bqkb1r/pp1n1ppp/2p1pn2/8/2BP4/2N1PN2/PP3PPP/R1BQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2768"
+    },
+    {
+      "id": "record-3167",
+      "eco": "D48",
+      "name": "Semi-Slav Defense: Meran Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6",
+      "epd": "r1bqkb1r/3n1ppp/p1p1pn2/1p6/3P4/2NBPN2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2763"
+    },
+    {
+      "id": "record-3168",
+      "eco": "D48",
+      "name": "Semi-Slav Defense: Meran Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5",
+      "epd": "r1bqkb1r/3n1ppp/p3pn2/1pp5/3PP3/2NB1N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2763"
+    },
+    {
+      "id": "record-3169",
+      "eco": "D48",
+      "name": "Semi-Slav Defense: Meran Variation, Old Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5 e4e5",
+      "epd": "r1bqkb1r/3n1ppp/p3pn2/1pp1P3/3P4/2NB1N2/PP3PPP/R1BQK2R b KQkq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2769"
+    },
+    {
+      "id": "record-3170",
+      "eco": "D48",
+      "name": "Semi-Slav Defense: Meran Variation, Pirc Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. e3 Nf6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 b4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 b1c3 c7c6 e2e3 g8f6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 b5b4",
+      "epd": "r1bqkb1r/3n1ppp/p1p1pn2/8/1p1PP3/2NB1N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2770"
+    },
+    {
+      "id": "record-3171",
+      "eco": "D48",
+      "name": "Semi-Slav Defense: Meran Variation, Reynolds' Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. d5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 e2e3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5 d4d5",
+      "epd": "r1bqkb1r/3n1ppp/p3pn2/1ppP4/4P3/2NB1N2/PP3PPP/R1BQK2R b KQkq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2771"
+    },
+    {
+      "id": "record-3172",
+      "eco": "D49",
+      "name": "Semi-Slav Defense: Meran Variation, Blumenfeld Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5 e4e5 c5d4 c3b5",
+      "epd": "r1bqkb1r/3n1ppp/p3pn2/1N2P3/3p4/3B1N2/PP3PPP/R1BQK2R b KQkq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2772"
+    },
+    {
+      "id": "record-3173",
+      "eco": "D49",
+      "name": "Semi-Slav Defense: Meran Variation, Rabinovich Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 Ng4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5 e4e5 c5d4 c3b5 f6g4",
+      "epd": "r1bqkb1r/3n1ppp/p3p3/1N2P3/3p2n1/3B1N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2773"
+    },
+    {
+      "id": "record-3174",
+      "eco": "D49",
+      "name": "Semi-Slav Defense: Meran Variation, Rellstab Attack",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. Nf3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 Nxe5 12. Nxe5 axb5 13. O-O Qd5 14. Qe2 Ba6 15. Bg5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 g1f3 e7e6 e2e3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5 e4e5 c5d4 c3b5 d7e5 f3e5 a6b5 e1g1 d8d5 d1e2 c8a6 c1g5",
+      "epd": "r3kb1r/5ppp/b3pn2/1p1qN1B1/3p4/3B4/PP2QPPP/R4RK1 b kq -",
+      "plyCount": 29,
+      "playerMoveCounts": {
+        "white": 15,
+        "black": 14
+      },
+      "lineId": "line-2774"
+    },
+    {
+      "id": "record-3175",
+      "eco": "D49",
+      "name": "Semi-Slav Defense: Meran Variation, Sozin Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 Nxe5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 e7e6 e2e3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5 e4e5 c5d4 c3b5 d7e5",
+      "epd": "r1bqkb1r/5ppp/p3pn2/1N2n3/3p4/3B1N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2775"
+    },
+    {
+      "id": "record-3176",
+      "eco": "D49",
+      "name": "Semi-Slav Defense: Meran Variation, Sozin Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 c6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 Nxe5 12. Nxe5 axb5 13. O-O",
+      "uci": "d2d4 d7d5 g1f3 g8f6 c2c4 c7c6 b1c3 e7e6 e2e3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5 e4e5 c5d4 c3b5 d7e5 f3e5 a6b5 e1g1",
+      "epd": "r1bqkb1r/5ppp/4pn2/1p2N3/3p4/3B4/PP3PPP/R1BQ1RK1 b kq -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2775"
+    },
+    {
+      "id": "record-3177",
+      "eco": "D49",
+      "name": "Semi-Slav Defense: Meran Variation, Stahlberg Variation",
+      "family": "Semi-Slav Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. Nf3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 Nxe5 12. Nxe5 axb5 13. Qf3",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 e7e6 g1f3 b8d7 f1d3 d5c4 d3c4 b7b5 c4d3 a7a6 e3e4 c6c5 e4e5 c5d4 c3b5 d7e5 f3e5 a6b5 d1f3",
+      "epd": "r1bqkb1r/5ppp/4pn2/1p2N3/3p4/3B1Q2/PP3PPP/R1B1K2R b KQkq -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2776"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Blumenfeld Countergambit",
+    "chunkKey": "blumenfeld-countergambit",
+    "recordCount": 3,
+    "lineCount": 3
+  },
+  "records": [
+    {
+      "id": "record-3349",
+      "eco": "E10",
+      "name": "Blumenfeld Countergambit",
+      "family": "Blumenfeld Countergambit",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 c5 4. d5 b5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 c7c5 d4d5 b7b5",
+      "epd": "rnbqkb1r/p2p1ppp/4pn2/1ppP4/2P5/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2902"
+    },
+    {
+      "id": "record-3351",
+      "eco": "E10",
+      "name": "Blumenfeld Countergambit: Duz-Khotimirsky Variation",
+      "family": "Blumenfeld Countergambit",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 c5 4. d5 b5 5. Bg5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 c7c5 d4d5 b7b5 c1g5",
+      "epd": "rnbqkb1r/p2p1ppp/4pn2/1ppP2B1/2P5/5N2/PP2PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2904"
+    },
+    {
+      "id": "record-3352",
+      "eco": "E10",
+      "name": "Blumenfeld Countergambit: Spielmann Variation",
+      "family": "Blumenfeld Countergambit",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 c5 4. d5 b5 5. Bg5 exd5 6. cxd5 h6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 c7c5 d4d5 b7b5 c1g5 e6d5 c4d5 h7h6",
+      "epd": "rnbqkb1r/p2p1pp1/5n1p/1ppP2B1/8/5N2/PP2PPPP/RN1QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2905"
+    }
+  ]
+}

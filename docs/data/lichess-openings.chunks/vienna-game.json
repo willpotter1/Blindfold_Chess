@@ -1,0 +1,627 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Vienna Game",
+    "chunkKey": "vienna-game",
+    "recordCount": 41,
+    "lineCount": 40
+  },
+  "records": [
+    {
+      "id": "record-1856",
+      "eco": "C25",
+      "name": "Vienna Game",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3",
+      "uci": "e2e4 e7e5 b1c3",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1611"
+    },
+    {
+      "id": "record-1857",
+      "eco": "C25",
+      "name": "Vienna Game: Anderssen Defense",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Bc5",
+      "uci": "e2e4 e7e5 b1c3 f8c5",
+      "epd": "rnbqk1nr/pppp1ppp/8/2b1p3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1612"
+    },
+    {
+      "id": "record-1858",
+      "eco": "C25",
+      "name": "Vienna Game: Fyfe Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. d4",
+      "uci": "e2e4 e7e5 b1c3 b8c6 d2d4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1613"
+    },
+    {
+      "id": "record-1859",
+      "eco": "C25",
+      "name": "Vienna Game: Giraffe Attack",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Bc5 3. Qg4",
+      "uci": "e2e4 e7e5 b1c3 f8c5 d1g4",
+      "epd": "rnbqk1nr/pppp1ppp/8/2b1p3/4P1Q1/2N5/PPPP1PPP/R1B1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1614"
+    },
+    {
+      "id": "record-1860",
+      "eco": "C25",
+      "name": "Vienna Game: Hamppe-Meitner Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Bc5 3. Na4",
+      "uci": "e2e4 e7e5 b1c3 f8c5 c3a4",
+      "epd": "rnbqk1nr/pppp1ppp/8/2b1p3/N3P3/8/PPPP1PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1615"
+    },
+    {
+      "id": "record-1861",
+      "eco": "C25",
+      "name": "Vienna Game: Hamppe-Muzio Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. f4 exf4 4. Nf3 g5 5. Bc4 g4 6. O-O",
+      "uci": "e2e4 e7e5 b1c3 b8c6 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1",
+      "epd": "r1bqkbnr/pppp1p1p/2n5/8/2B1Ppp1/2N2N2/PPPP2PP/R1BQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1616"
+    },
+    {
+      "id": "record-1862",
+      "eco": "C25",
+      "name": "Vienna Game: Hamppe-Muzio, Dubois Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. f4 exf4 4. Nf3 g5 5. Bc4 g4 6. O-O gxf3 7. Qxf3 Ne5 8. Qxf4 Qf6",
+      "uci": "e2e4 e7e5 b1c3 b8c6 f2f4 e5f4 g1f3 g7g5 f1c4 g5g4 e1g1 g4f3 d1f3 c6e5 f3f4 d8f6",
+      "epd": "r1b1kbnr/pppp1p1p/5q2/4n3/2B1PQ2/2N5/PPPP2PP/R1B2RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1617"
+    },
+    {
+      "id": "record-1863",
+      "eco": "C25",
+      "name": "Vienna Game: Max Lange Defense",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6",
+      "uci": "e2e4 e7e5 b1c3 b8c6",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1618"
+    },
+    {
+      "id": "record-1864",
+      "eco": "C25",
+      "name": "Vienna Game: Omaha Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 d6 3. f4",
+      "uci": "e2e4 e7e5 b1c3 d7d6 f2f4",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/4p3/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1619"
+    },
+    {
+      "id": "record-1865",
+      "eco": "C25",
+      "name": "Vienna Game: Paulsen Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. g3",
+      "uci": "e2e4 e7e5 b1c3 b8c6 g2g3",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2N3P1/PPPP1P1P/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1620"
+    },
+    {
+      "id": "record-1866",
+      "eco": "C25",
+      "name": "Vienna Game: Paulsen Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. g3 Nf6 4. Bg2 Bc5 5. Nge2 d5",
+      "uci": "e2e4 e7e5 b1c3 b8c6 g2g3 g8f6 f1g2 f8c5 g1e2 d7d5",
+      "epd": "r1bqk2r/ppp2ppp/2n2n2/2bpp3/4P3/2N3P1/PPPPNPBP/R1BQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1620"
+    },
+    {
+      "id": "record-1867",
+      "eco": "C25",
+      "name": "Vienna Game: Paulsen Variation, Mariotti Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. g3 Bc5 4. Bg2 h5 5. Nf3 h4",
+      "uci": "e2e4 e7e5 b1c3 b8c6 g2g3 f8c5 f1g2 h7h5 g1f3 h5h4",
+      "epd": "r1bqk1nr/pppp1pp1/2n5/2b1p3/4P2p/2N2NP1/PPPP1PBP/R1BQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1621"
+    },
+    {
+      "id": "record-1868",
+      "eco": "C25",
+      "name": "Vienna Game: Philidor Countergambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. d4 f5",
+      "uci": "e2e4 e7e5 b1c3 b8c6 d2d4 f7f5",
+      "epd": "r1bqkbnr/pppp2pp/2n5/4pp2/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1622"
+    },
+    {
+      "id": "record-1869",
+      "eco": "C25",
+      "name": "Vienna Game: Pierce Gambit, Rushmere Attack",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. f4 exf4 4. Nf3 g5 5. d4 g4 6. Bc4 gxf3 7. O-O d5 8. exd5 Bg4 9. dxc6",
+      "uci": "e2e4 e7e5 b1c3 b8c6 f2f4 e5f4 g1f3 g7g5 d2d4 g5g4 f1c4 g4f3 e1g1 d7d5 e4d5 c8g4 d5c6",
+      "epd": "r2qkbnr/ppp2p1p/2P5/8/2BP1pb1/2N2p2/PPP3PP/R1BQ1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1623"
+    },
+    {
+      "id": "record-1870",
+      "eco": "C25",
+      "name": "Vienna Game: Stanley Variation, Meitner-Mieses Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. Bc4 Bc5 4. Qg4 Qf6 5. Nd5",
+      "uci": "e2e4 e7e5 b1c3 b8c6 f1c4 f8c5 d1g4 d8f6 c3d5",
+      "epd": "r1b1k1nr/pppp1ppp/2n2q2/2bNp3/2B1P1Q1/8/PPPP1PPP/R1B1K1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1624"
+    },
+    {
+      "id": "record-1871",
+      "eco": "C25",
+      "name": "Vienna Game: Zhuravlev Countergambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Bb4 3. Qg4 Nf6",
+      "uci": "e2e4 e7e5 b1c3 f8b4 d1g4 g8f6",
+      "epd": "rnbqk2r/pppp1ppp/5n2/4p3/1b2P1Q1/2N5/PPPP1PPP/R1B1KBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1625"
+    },
+    {
+      "id": "record-1874",
+      "eco": "C26",
+      "name": "Vienna Game: Falkbeer Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6",
+      "uci": "e2e4 e7e5 b1c3 g8f6",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1628"
+    },
+    {
+      "id": "record-1875",
+      "eco": "C26",
+      "name": "Vienna Game: Mengarini Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. a3",
+      "uci": "e2e4 e7e5 b1c3 g8f6 a2a3",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/P1N5/1PPP1PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1629"
+    },
+    {
+      "id": "record-1876",
+      "eco": "C26",
+      "name": "Vienna Game: Mieses Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. g3",
+      "uci": "e2e4 e7e5 b1c3 g8f6 g2g3",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N3P1/PPPP1P1P/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1630"
+    },
+    {
+      "id": "record-1877",
+      "eco": "C26",
+      "name": "Vienna Game: Mieses Variation, Erben Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. g3 d5 4. exd5 c6",
+      "uci": "e2e4 e7e5 b1c3 g8f6 g2g3 d7d5 e4d5 c7c6",
+      "epd": "rnbqkb1r/pp3ppp/2p2n2/3Pp3/8/2N3P1/PPPP1P1P/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1631"
+    },
+    {
+      "id": "record-1878",
+      "eco": "C26",
+      "name": "Vienna Game: Paulsen Variation, Pollock Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. g3 Bc5 4. Bg2 Nc6 5. Nge2 d5 6. exd5",
+      "uci": "e2e4 e7e5 b1c3 g8f6 g2g3 f8c5 f1g2 b8c6 g1e2 d7d5 e4d5",
+      "epd": "r1bqk2r/ppp2ppp/2n2n2/2bPp3/8/2N3P1/PPPPNPBP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1632"
+    },
+    {
+      "id": "record-1879",
+      "eco": "C26",
+      "name": "Vienna Game: Stanley Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. Bc4",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f1c4",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/2N5/PPPP1PPP/R1BQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1633"
+    },
+    {
+      "id": "record-1880",
+      "eco": "C26",
+      "name": "Vienna Game: Stanley Variation, Eifel Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. Bc4 Bc5 4. Nge2 b5",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f1c4 f8c5 g1e2 b7b5",
+      "epd": "rnbqk2r/p1pp1ppp/5n2/1pb1p3/2B1P3/2N5/PPPPNPPP/R1BQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1634"
+    },
+    {
+      "id": "record-1881",
+      "eco": "C26",
+      "name": "Vienna Game: Stanley Variation, Reversed Spanish",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. Bc4 Bb4",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f1c4 f8b4",
+      "epd": "rnbqk2r/pppp1ppp/5n2/4p3/1bB1P3/2N5/PPPP1PPP/R1BQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1635"
+    },
+    {
+      "id": "record-1884",
+      "eco": "C27",
+      "name": "Vienna Game: Adams' Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. Bc4 Nxe4 4. Qh5 Nd6 5. Bb3 Nc6 6. d4",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f1c4 f6e4 d1h5 e4d6 c4b3 b8c6 d2d4",
+      "epd": "r1bqkb1r/pppp1ppp/2nn4/4p2Q/3P4/1BN5/PPP2PPP/R1B1K1NR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1638"
+    },
+    {
+      "id": "record-1885",
+      "eco": "C27",
+      "name": "Vienna Game: Frankenstein-Dracula Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. Bc4 Nxe4",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f1c4 f6e4",
+      "epd": "rnbqkb1r/pppp1ppp/8/4p3/2B1n3/2N5/PPPP1PPP/R1BQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1639"
+    },
+    {
+      "id": "record-1886",
+      "eco": "C27",
+      "name": "Vienna Game: Stanley Variation, Alekhine Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. Bc4 Nxe4 4. Qh5 Nd6 5. Bb3 Be7 6. Nf3 Nc6 7. Nxe5",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f1c4 f6e4 d1h5 e4d6 c4b3 f8e7 g1f3 b8c6 f3e5",
+      "epd": "r1bqk2r/ppppbppp/2nn4/4N2Q/8/1BN5/PPPP1PPP/R1B1K2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1640"
+    },
+    {
+      "id": "record-1887",
+      "eco": "C27",
+      "name": "Vienna Game: Stanley Variation, Frankenstein-Dracula Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. Bc4 Nxe4 4. Qh5 Nd6 5. Bb3 Nc6 6. Nb5 g6 7. Qf3 f5 8. Qd5 Qe7 9. Nxc7+ Kd8 10. Nxa8 b6",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f1c4 f6e4 d1h5 e4d6 c4b3 b8c6 c3b5 g7g6 h5f3 f7f5 f3d5 d8e7 b5c7 e8d8 c7a8 b7b6",
+      "epd": "N1bk1b1r/p2pq2p/1pnn2p1/3Qpp2/8/1B6/PPPP1PPP/R1B1K1NR w KQ -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1641"
+    },
+    {
+      "id": "record-1888",
+      "eco": "C27",
+      "name": "Vienna Game: Stanley Variation, Monster Declined",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. Bc4 Nxe4 4. Qh5 Nd6 5. Bb3 Be7",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f1c4 f6e4 d1h5 e4d6 c4b3 f8e7",
+      "epd": "rnbqk2r/ppppbppp/3n4/4p2Q/8/1BN5/PPPP1PPP/R1B1K1NR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1642"
+    },
+    {
+      "id": "record-1890",
+      "eco": "C28",
+      "name": "Vienna Game: Stanley Variation, Bronstein Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. Bc4 Nf6 4. f4 Nxe4 5. Nf3",
+      "uci": "e2e4 e7e5 b1c3 b8c6 f1c4 g8f6 f2f4 f6e4 g1f3",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1nP2/2N2N2/PPPP2PP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1644"
+    },
+    {
+      "id": "record-1891",
+      "eco": "C28",
+      "name": "Vienna Game: Stanley Variation, Three Knights Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nc6 3. Bc4 Nf6",
+      "uci": "e2e4 e7e5 b1c3 b8c6 f1c4 g8f6",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N5/PPPP1PPP/R1BQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1645"
+    },
+    {
+      "id": "record-1892",
+      "eco": "C29",
+      "name": "Vienna Game: Heyde Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. fxe5 Nxe4 5. Qf3 f5 6. d4",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 f4e5 f6e4 d1f3 f7f5 d2d4",
+      "epd": "rnbqkb1r/ppp3pp/8/3pPp2/3Pn3/2N2Q2/PPP3PP/R1B1KBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1646"
+    },
+    {
+      "id": "record-1893",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1647"
+    },
+    {
+      "id": "record-1894",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit, Bardeleben Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. fxe5 Nxe4 5. Qf3 f5",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 f4e5 f6e4 d1f3 f7f5",
+      "epd": "rnbqkb1r/ppp3pp/8/3pPp2/4n3/2N2Q2/PPPP2PP/R1B1KBNR w KQkq f6",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1648"
+    },
+    {
+      "id": "record-1895",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit, Breyer Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. fxe5 Nxe4 5. Nf3 Be7",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 f4e5 f6e4 g1f3 f8e7",
+      "epd": "rnbqk2r/ppp1bppp/8/3pP3/4n3/2N2N2/PPPP2PP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1649"
+    },
+    {
+      "id": "record-1896",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit, Kaufmann Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. fxe5 Nxe4 5. Nf3 Bg4 6. Qe2",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 f4e5 f6e4 g1f3 c8g4 d1e2",
+      "epd": "rn1qkb1r/ppp2ppp/8/3pP3/4n1b1/2N2N2/PPPPQ1PP/R1B1KB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1650"
+    },
+    {
+      "id": "record-1897",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit, Main Line",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1651"
+    },
+    {
+      "id": "record-1898",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit, Modern Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. fxe5 Nxe4 5. d3",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 f4e5 f6e4 d2d3",
+      "epd": "rnbqkb1r/ppp2ppp/8/3pP3/4n3/2NP4/PPP3PP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1652"
+    },
+    {
+      "id": "record-1899",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit, Paulsen Attack",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. fxe5 Nxe4 5. Qf3",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 f4e5 f6e4 d1f3",
+      "epd": "rnbqkb1r/ppp2ppp/8/3pP3/4n3/2N2Q2/PPPP2PP/R1B1KBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1653"
+    },
+    {
+      "id": "record-1900",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit, Steinitz Variation",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. d3",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 d2d3",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2NP4/PPP3PP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1654"
+    },
+    {
+      "id": "record-1901",
+      "eco": "C29",
+      "name": "Vienna Game: Vienna Gambit, Wurzburger Trap",
+      "family": "Vienna Game",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. fxe5 Nxe4 5. d3 Qh4+ 6. g3 Nxg3 7. Nf3 Qh5 8. Nxd5",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 f4e5 f6e4 d2d3 d8h4 g2g3 e4g3 g1f3 h4h5 c3d5",
+      "epd": "rnb1kb1r/ppp2ppp/8/3NP2q/8/3P1Nn1/PPP4P/R1BQKB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1655"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "London System",
+    "chunkKey": "london-system",
+    "recordCount": 4,
+    "lineCount": 2
+  },
+  "records": [
+    {
+      "id": "record-2857",
+      "eco": "D02",
+      "name": "London System: Poisoned Pawn Variation",
+      "family": "London System",
+      "pgn": "1. d4 Nf6 2. Nf3 d5 3. Bf4 c5 4. e3 Qb6 5. Nc3",
+      "uci": "d2d4 g8f6 g1f3 d7d5 c1f4 c7c5 e2e3 d8b6 b1c3",
+      "epd": "rnb1kb1r/pp2pppp/1q3n2/2pp4/3P1B2/2N1PN2/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2503"
+    },
+    {
+      "id": "record-608",
+      "eco": "A48",
+      "name": "London System",
+      "family": "London System",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Bf4",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c1f4",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/3P1B2/5N2/PPP1PPPP/RN1QKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-520"
+    },
+    {
+      "id": "record-609",
+      "eco": "A48",
+      "name": "London System",
+      "family": "London System",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Bf4 Bg7 4. e3",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c1f4 f8g7 e2e3",
+      "epd": "rnbqk2r/ppppppbp/5np1/8/3P1B2/4PN2/PPP2PPP/RN1QKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-520"
+    },
+    {
+      "id": "record-610",
+      "eco": "A48",
+      "name": "London System",
+      "family": "London System",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Bf4 Bg7 4. e3 d6",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c1f4 f8g7 e2e3 d7d6",
+      "epd": "rnbqk2r/ppp1ppbp/3p1np1/8/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-520"
+    }
+  ]
+}

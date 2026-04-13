@@ -1,0 +1,807 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "King's Gambit Declined",
+    "chunkKey": "king-s-gambit-declined",
+    "recordCount": 53,
+    "lineCount": 50
+  },
+  "records": [
+    {
+      "id": "record-1903",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5",
+      "uci": "e2e4 e7e5 f2f4 f8c5",
+      "epd": "rnbqk1nr/pppp1ppp/8/2b1p3/4PP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1657"
+    },
+    {
+      "id": "record-1904",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Nf3 d6 4. c3",
+      "uci": "e2e4 e7e5 f2f4 f8c5 g1f3 d7d6 c2c3",
+      "epd": "rnbqk1nr/ppp2ppp/3p4/2b1p3/4PP2/2P2N2/PP1P2PP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1657"
+    },
+    {
+      "id": "record-1905",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical Variation, Euwe Attack",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Nf3 d6 4. c3 Bg4 5. fxe5 dxe5 6. Qa4+",
+      "uci": "e2e4 e7e5 f2f4 f8c5 g1f3 d7d6 c2c3 c8g4 f4e5 d6e5 d1a4",
+      "epd": "rn1qk1nr/ppp2ppp/8/2b1p3/Q3P1b1/2P2N2/PP1P2PP/RNB1KB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1658"
+    },
+    {
+      "id": "record-1906",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical Variation, Rotlewi Countergambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Nf3 d6 4. b4",
+      "uci": "e2e4 e7e5 f2f4 f8c5 g1f3 d7d6 b2b4",
+      "epd": "rnbqk1nr/ppp2ppp/3p4/2b1p3/1P2PP2/5N2/P1PP2PP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1659"
+    },
+    {
+      "id": "record-1907",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical Variation, Rubinstein Countergambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Nf3 d6 4. c3 f5",
+      "uci": "e2e4 e7e5 f2f4 f8c5 g1f3 d7d6 c2c3 f7f5",
+      "epd": "rnbqk1nr/ppp3pp/3p4/2b1pp2/4PP2/2P2N2/PP1P2PP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1660"
+    },
+    {
+      "id": "record-1908",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical Variation, Walthoffen Attack",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Qh5",
+      "uci": "e2e4 e7e5 f2f4 f8c5 d1h5",
+      "epd": "rnbqk1nr/pppp1ppp/8/2b1p2Q/4PP2/8/PPPP2PP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1661"
+    },
+    {
+      "id": "record-1909",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical, Hanham Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Nf3 d6 4. Nc3 Nd7",
+      "uci": "e2e4 e7e5 f2f4 f8c5 g1f3 d7d6 b1c3 b8d7",
+      "epd": "r1bqk1nr/pppn1ppp/3p4/2b1p3/4PP2/2N2N2/PPPP2PP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1662"
+    },
+    {
+      "id": "record-1910",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical, Réti Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Nf3 d6 4. c3 f5 5. fxe5 dxe5 6. d4 exd4 7. Bc4",
+      "uci": "e2e4 e7e5 f2f4 f8c5 g1f3 d7d6 c2c3 f7f5 f4e5 d6e5 d2d4 e5d4 f1c4",
+      "epd": "rnbqk1nr/ppp3pp/8/2b2p2/2BpP3/2P2N2/PP4PP/RNBQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1663"
+    },
+    {
+      "id": "record-1911",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical, Soldatenkov Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Nf3 d6 4. fxe5",
+      "uci": "e2e4 e7e5 f2f4 f8c5 g1f3 d7d6 f4e5",
+      "epd": "rnbqk1nr/ppp2ppp/3p4/2b1P3/4P3/5N2/PPPP2PP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1664"
+    },
+    {
+      "id": "record-1912",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Classical, Svenonius Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. Bc4 Nc6 3. Nc3 Nf6 4. d3 Bc5 5. f4 d6 6. Nf3 Bg4 7. h3 Bxf3 8. Qxf3 exf4",
+      "uci": "e2e4 e7e5 f1c4 b8c6 b1c3 g8f6 d2d3 f8c5 f2f4 d7d6 g1f3 c8g4 h2h3 g4f3 d1f3 e5f4",
+      "epd": "r2qk2r/ppp2ppp/2np1n2/2b5/2B1Pp2/2NP1Q1P/PPP3P1/R1B1K2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1665"
+    },
+    {
+      "id": "record-1913",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Hobbs-Zilbermints Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Nc6 3. Nf3 g5 4. fxg5 h6",
+      "uci": "e2e4 e7e5 f2f4 b8c6 g1f3 g7g5 f4g5 h7h6",
+      "epd": "r1bqkbnr/pppp1p2/2n4p/4p1P1/4P3/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1666"
+    },
+    {
+      "id": "record-1914",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Keene Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Qh4+ 3. g3 Qe7",
+      "uci": "e2e4 e7e5 f2f4 d8h4 g2g3 h4e7",
+      "epd": "rnb1kbnr/ppppqppp/8/4p3/4PP2/6P1/PPPP3P/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1667"
+    },
+    {
+      "id": "record-1915",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Keene's Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Qh4+",
+      "uci": "e2e4 e7e5 f2f4 d8h4",
+      "epd": "rnb1kbnr/pppp1ppp/8/4p3/4PP1q/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1668"
+    },
+    {
+      "id": "record-1916",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Keene's Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Qh4+ 3. g3",
+      "uci": "e2e4 e7e5 f2f4 d8h4 g2g3",
+      "epd": "rnb1kbnr/pppp1ppp/8/4p3/4PP1q/6P1/PPPP3P/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1668"
+    },
+    {
+      "id": "record-1917",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Mafia Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 c5 2. f4 e5",
+      "uci": "e2e4 c7c5 f2f4 e7e5",
+      "epd": "rnbqkbnr/pp1p1ppp/8/2p1p3/4PP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1669"
+    },
+    {
+      "id": "record-1918",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Miles Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Nc6 3. Nf3 f5",
+      "uci": "e2e4 e7e5 f2f4 b8c6 g1f3 f7f5",
+      "epd": "r1bqkbnr/pppp2pp/2n5/4pp2/4PP2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1670"
+    },
+    {
+      "id": "record-1919",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Norwalde Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Qf6",
+      "uci": "e2e4 e7e5 f2f4 d8f6",
+      "epd": "rnb1kbnr/pppp1ppp/5q2/4p3/4PP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1671"
+    },
+    {
+      "id": "record-1920",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Norwalde Variation, Bücker Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Qf6 3. Nc3 Qxf4 4. Nf3 Bb4 5. Bc4",
+      "uci": "e2e4 e7e5 f2f4 d8f6 b1c3 f6f4 g1f3 f8b4 f1c4",
+      "epd": "rnb1k1nr/pppp1ppp/8/4p3/1bB1Pq2/2N2N2/PPPP2PP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1672"
+    },
+    {
+      "id": "record-1921",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Norwalde Variation, Schubert Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Qf6 3. Nc3 Qxf4 4. d4",
+      "uci": "e2e4 e7e5 f2f4 d8f6 b1c3 f6f4 d2d4",
+      "epd": "rnb1kbnr/pppp1ppp/8/4p3/3PPq2/2N5/PPP3PP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1673"
+    },
+    {
+      "id": "record-1922",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Panteldakis Countergambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 f5",
+      "uci": "e2e4 e7e5 f2f4 f7f5",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/4PP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1674"
+    },
+    {
+      "id": "record-1923",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Panteldakis Countergambit, Greco Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 f5 3. exf5 Qh4+",
+      "uci": "e2e4 e7e5 f2f4 f7f5 e4f5 d8h4",
+      "epd": "rnb1kbnr/pppp2pp/8/4pP2/5P1q/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1675"
+    },
+    {
+      "id": "record-1924",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Panteldakis Countergambit, Pawn Sacrifice Line",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 f5 3. exf5 exf4 4. Qh5+ g6 5. fxg6 Qe7+ 6. Kd1",
+      "uci": "e2e4 e7e5 f2f4 f7f5 e4f5 e5f4 d1h5 g7g6 f5g6 d8e7 e1d1",
+      "epd": "rnb1kbnr/ppppq2p/6P1/7Q/5p2/8/PPPP2PP/RNBK1BNR b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1676"
+    },
+    {
+      "id": "record-1925",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Panteldakis Countergambit, Schiller's Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 f5 3. exf5 Bc5",
+      "uci": "e2e4 e7e5 f2f4 f7f5 e4f5 f8c5",
+      "epd": "rnbqk1nr/pppp2pp/8/2b1pP2/5P2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1677"
+    },
+    {
+      "id": "record-1926",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Panteldakis Countergambit, Shirazi Line",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 f5 3. exf5 exf4 4. Qh5+ Ke7",
+      "uci": "e2e4 e7e5 f2f4 f7f5 e4f5 e5f4 d1h5 e8e7",
+      "epd": "rnbq1bnr/ppppk1pp/8/5P1Q/5p2/8/PPPP2PP/RNB1KBNR w KQ -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1678"
+    },
+    {
+      "id": "record-1927",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Panteldakis Countergambit, Symmetrical Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 f5 3. exf5 exf4 4. Nf3 d5 5. d4 Bd6 6. Bd3",
+      "uci": "e2e4 e7e5 f2f4 f7f5 e4f5 e5f4 g1f3 d7d5 d2d4 f8d6 f1d3",
+      "epd": "rnbqk1nr/ppp3pp/3b4/3p1P2/3P1p2/3B1N2/PPP3PP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1679"
+    },
+    {
+      "id": "record-1928",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Petrov's Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Nf6",
+      "uci": "e2e4 e7e5 f2f4 g8f6",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/4PP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1680"
+    },
+    {
+      "id": "record-1929",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Queen's Knight Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Nc6",
+      "uci": "e2e4 e7e5 f2f4 b8c6",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/4PP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1681"
+    },
+    {
+      "id": "record-1930",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Senechaud Countergambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Bc5 3. Nf3 g5",
+      "uci": "e2e4 e7e5 f2f4 f8c5 g1f3 g7g5",
+      "epd": "rnbqk1nr/pppp1p1p/8/2b1p1p1/4PP2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1682"
+    },
+    {
+      "id": "record-1931",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Soller-Zilbermints Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 f6 3. fxe5 Nc6",
+      "uci": "e2e4 e7e5 f2f4 f7f6 f4e5 b8c6",
+      "epd": "r1bqkbnr/pppp2pp/2n2p2/4P3/4P3/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1683"
+    },
+    {
+      "id": "record-1932",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Zilbermints Double Countergambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 g5",
+      "uci": "e2e4 e7e5 f2f4 g7g5",
+      "epd": "rnbqkbnr/pppp1p1p/8/4p1p1/4PP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1684"
+    },
+    {
+      "id": "record-1933",
+      "eco": "C30",
+      "name": "King's Gambit Declined: Zilbermints Double Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 Nc6 3. Nf3 g5",
+      "uci": "e2e4 e7e5 f2f4 b8c6 g1f3 g7g5",
+      "epd": "r1bqkbnr/pppp1p1p/2n5/4p1p1/4PP2/5N2/PPPP2PP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1685"
+    },
+    {
+      "id": "record-1934",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5",
+      "uci": "e2e4 e7e5 f2f4 d7d5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/4PP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1686"
+    },
+    {
+      "id": "record-1935",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit Accepted",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3Pp3/5P2/8/PPPP2PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1687"
+    },
+    {
+      "id": "record-1936",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Anderssen Attack",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. Bb5+",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 f1b5",
+      "epd": "rnbqkbnr/ppp2ppp/8/1B1P4/4pP2/8/PPPP2PP/RNBQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1688"
+    },
+    {
+      "id": "record-1937",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Blackburne Attack",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. Nf3",
+      "uci": "e2e4 e7e5 f2f4 d7d5 g1f3",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/4PP2/5N2/PPPP2PP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1689"
+    },
+    {
+      "id": "record-1938",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3",
+      "epd": "rnbqkbnr/ppp2ppp/8/3P4/4pP2/3P4/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1690"
+    },
+    {
+      "id": "record-1939",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defense",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. exd5 e4 5. d3 Bb4 6. Bd2 e3",
+      "uci": "e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 e4d5 e5e4 d2d3 f8b4 c1d2 e4e3",
+      "epd": "rnbqk2r/ppp2ppp/5n2/3P4/1b3P2/2NPp3/PPPB2PP/R2QKBNR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1691"
+    },
+    {
+      "id": "record-1940",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Hinrichsen Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. d4",
+      "uci": "e2e4 e7e5 f2f4 d7d5 d2d4",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/3PPP2/8/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1692"
+    },
+    {
+      "id": "record-1941",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Miles Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 Bc5",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 f8c5",
+      "epd": "rnbqk1nr/ppp2ppp/8/2bPp3/5P2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1693"
+    },
+    {
+      "id": "record-1942",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Milner-Barry Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. Nc3",
+      "uci": "e2e4 e7e5 f2f4 d7d5 b1c3",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1694"
+    },
+    {
+      "id": "record-1943",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Modern Transfer",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 exf4",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5f4",
+      "epd": "rnbqkbnr/ppp2ppp/8/3P4/5p2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1695"
+    },
+    {
+      "id": "record-1944",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 c6",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 c7c6",
+      "epd": "rnbqkbnr/pp3ppp/2p5/3Pp3/5P2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1696"
+    },
+    {
+      "id": "record-1945",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Pickler Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 c6 4. dxc6 Bc5",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 c7c6 d5c6 f8c5",
+      "epd": "rnbqk1nr/pp3ppp/2P5/2b1p3/5P2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1697"
+    },
+    {
+      "id": "record-1946",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Rubinstein Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. Nc3 Nf6 5. Qe2",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 b1c3 g8f6 d1e2",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3P4/4pP2/2N5/PPPPQ1PP/R1B1KBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1698"
+    },
+    {
+      "id": "record-1947",
+      "eco": "C31",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Staunton Line",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4",
+      "epd": "rnbqkbnr/ppp2ppp/8/3P4/4pP2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1699"
+    },
+    {
+      "id": "record-1949",
+      "eco": "C32",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Alapin Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3 Nf6 5. dxe4 Nxe4 6. Nf3 Bc5 7. Qe2 Bf2+ 8. Kd1 Qxd5+ 9. Nfd2",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3 g8f6 d3e4 f6e4 g1f3 f8c5 d1e2 c5f2 e1d1 d8d5 f3d2",
+      "epd": "rnb1k2r/ppp2ppp/8/3q4/4nP2/8/PPPNQbPP/RNBK1B1R b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1701"
+    },
+    {
+      "id": "record-1950",
+      "eco": "C32",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3 Nf6 5. dxe4 Nxe4 6. Qe2",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3 g8f6 d3e4 f6e4 d1e2",
+      "epd": "rnbqkb1r/ppp2ppp/8/3P4/4nP2/8/PPP1Q1PP/RNB1KBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1690"
+    },
+    {
+      "id": "record-1951",
+      "eco": "C32",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit Accepted",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3 Nf6 5. dxe4",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3 g8f6 d3e4",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3P4/4PP2/8/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1702"
+    },
+    {
+      "id": "record-1952",
+      "eco": "C32",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3 Nf6 5. Nd2",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3 g8f6 b1d2",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3P4/4pP2/3P4/PPPN2PP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1703"
+    },
+    {
+      "id": "record-1953",
+      "eco": "C32",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Main Line",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3 Nf6 5. dxe4 Nxe4 6. Nf3 Bc5 7. Qe2 Bf5",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3 g8f6 d3e4 f6e4 g1f3 f8c5 d1e2 c8f5",
+      "epd": "rn1qk2r/ppp2ppp/8/2bP1b2/4nP2/5N2/PPP1Q1PP/RNB1KB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1704"
+    },
+    {
+      "id": "record-1954",
+      "eco": "C32",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Old Line",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3 Nf6 5. Qe2",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3 g8f6 d1e2",
+      "epd": "rnbqkb1r/ppp2ppp/5n2/3P4/4pP2/3P4/PPP1Q1PP/RNB1KBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1705"
+    },
+    {
+      "id": "record-1955",
+      "eco": "C32",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Charousek Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3 Nf6 5. dxe4 Nxe4 6. Qe2 Qxd5 7. Nd2 f5 8. g4",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3 g8f6 d3e4 f6e4 d1e2 d8d5 b1d2 f7f5 g2g4",
+      "epd": "rnb1kb1r/ppp3pp/8/3q1p2/4nPP1/8/PPPNQ2P/R1B1KBNR b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1706"
+    },
+    {
+      "id": "record-1956",
+      "eco": "C32",
+      "name": "King's Gambit Declined: Falkbeer Countergambit, Tarrasch Variation",
+      "family": "King's Gambit Declined",
+      "pgn": "1. e4 e5 2. f4 d5 3. exd5 e4 4. d3 Nf6 5. dxe4 Nxe4 6. Nf3 Bc5 7. Qe2 Bf5 8. g4 O-O",
+      "uci": "e2e4 e7e5 f2f4 d7d5 e4d5 e5e4 d2d3 g8f6 d3e4 f6e4 g1f3 f8c5 d1e2 c8f5 g2g4 e8g8",
+      "epd": "rn1q1rk1/ppp2ppp/8/2bP1b2/4nPP1/5N2/PPP1Q2P/RNB1KB1R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1707"
+    }
+  ]
+}

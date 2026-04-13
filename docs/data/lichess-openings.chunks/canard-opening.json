@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Canard Opening",
+    "chunkKey": "canard-opening",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-557",
+      "eco": "A45",
+      "name": "Canard Opening",
+      "family": "Canard Opening",
+      "pgn": "1. d4 Nf6 2. f4",
+      "uci": "d2d4 g8f6 f2f4",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3P1P2/8/PPP1P1PP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-471"
+    }
+  ]
+}

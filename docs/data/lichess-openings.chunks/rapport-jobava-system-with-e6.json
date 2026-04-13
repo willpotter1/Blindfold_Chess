@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Rapport-Jobava System, with e6",
+    "chunkKey": "rapport-jobava-system-with-e6",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-2848",
+      "eco": "D01",
+      "name": "Rapport-Jobava System, with e6",
+      "family": "Rapport-Jobava System, with e6",
+      "pgn": "1. d4 d5 2. Nc3 e6 3. Bf4",
+      "uci": "d2d4 d7d5 b1c3 e7e6 c1f4",
+      "epd": "rnbqkbnr/ppp2ppp/4p3/3p4/3P1B2/2N5/PPP1PPPP/R2QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2495"
+    }
+  ]
+}

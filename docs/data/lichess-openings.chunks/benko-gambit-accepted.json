@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Benko Gambit Accepted",
+    "chunkKey": "benko-gambit-accepted",
+    "recordCount": 10,
+    "lineCount": 9
+  },
+  "records": [
+    {
+      "id": "record-661",
+      "eco": "A57",
+      "name": "Benko Gambit Accepted",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6",
+      "epd": "rnbqkb1r/3ppppp/p4n2/1PpP4/8/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-566"
+    },
+    {
+      "id": "record-662",
+      "eco": "A57",
+      "name": "Benko Gambit Accepted: Dlugy Variation",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. f3",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 f2f3",
+      "epd": "rnbqkb1r/3ppppp/p4n2/1PpP4/8/5P2/PP2P1PP/RNBQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-567"
+    },
+    {
+      "id": "record-663",
+      "eco": "A57",
+      "name": "Benko Gambit Accepted: Modern Variation",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. e3",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 e2e3",
+      "epd": "rnbqkb1r/3ppppp/p4n2/1PpP4/8/4P3/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-568"
+    },
+    {
+      "id": "record-664",
+      "eco": "A57",
+      "name": "Benko Gambit Accepted: Pawn Return Variation",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. b6",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 b5b6",
+      "epd": "rnbqkb1r/3ppppp/pP3n2/2pP4/8/8/PP2PPPP/RNBQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-569"
+    },
+    {
+      "id": "record-675",
+      "eco": "A58",
+      "name": "Benko Gambit Accepted: Central Storming Variation",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. bxa6 g6 6. Nc3 Bxa6 7. f4",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 b5a6 g7g6 b1c3 c8a6 f2f4",
+      "epd": "rn1qkb1r/3ppp1p/b4np1/2pP4/5P2/2N5/PP2P1PP/R1BQKBNR b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-580"
+    },
+    {
+      "id": "record-676",
+      "eco": "A58",
+      "name": "Benko Gambit Accepted: Fianchetto Variation",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. bxa6 g6 6. Nc3 Bxa6 7. g3 d6 8. Bg2 Bg7 9. Nf3",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 b5a6 g7g6 b1c3 c8a6 g2g3 d7d6 f1g2 f8g7 g1f3",
+      "epd": "rn1qk2r/4ppbp/b2p1np1/2pP4/8/2N2NP1/PP2PPBP/R1BQK2R b KQkq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-581"
+    },
+    {
+      "id": "record-677",
+      "eco": "A58",
+      "name": "Benko Gambit Accepted: Fully Accepted Variation",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. bxa6",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 b5a6",
+      "epd": "rnbqkb1r/3ppppp/P4n2/2pP4/8/8/PP2PPPP/RNBQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-582"
+    },
+    {
+      "id": "record-681",
+      "eco": "A59",
+      "name": "Benko Gambit Accepted: King Walk Variation",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. bxa6 g6 6. Nc3 Bxa6 7. Nf3 d6 8. e4 Bxf1 9. Kxf1 Bg7 10. g3 O-O 11. Kg2",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 b5a6 g7g6 b1c3 c8a6 g1f3 d7d6 e2e4 a6f1 e1f1 f8g7 g2g3 e8g8 f1g2",
+      "epd": "rn1q1rk1/4ppbp/3p1np1/2pP4/4P3/2N2NP1/PP3PKP/R1BQ3R b - -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-585"
+    },
+    {
+      "id": "record-682",
+      "eco": "A59",
+      "name": "Benko Gambit Accepted: Yugoslav",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. bxa6 Bxa6 6. Nc3 d6 7. e4",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 b5a6 c8a6 b1c3 d7d6 e2e4",
+      "epd": "rn1qkb1r/4pppp/b2p1n2/2pP4/4P3/2N5/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-586"
+    },
+    {
+      "id": "record-683",
+      "eco": "A59",
+      "name": "Benko Gambit Accepted: Yugoslav",
+      "family": "Benko Gambit Accepted",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. bxa6 g6 6. Nc3 Bxa6 7. e4 Bxf1 8. Kxf1 d6 9. Nge2",
+      "uci": "d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6 b5a6 g7g6 b1c3 c8a6 e2e4 a6f1 e1f1 d7d6 g1e2",
+      "epd": "rn1qkb1r/4pp1p/3p1np1/2pP4/4P3/2N5/PP2NPPP/R1BQ1K1R b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-586"
+    }
+  ]
+}

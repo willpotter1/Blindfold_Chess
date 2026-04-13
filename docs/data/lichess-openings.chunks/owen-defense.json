@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Owen Defense",
+    "chunkKey": "owen-defense",
+    "recordCount": 8,
+    "lineCount": 8
+  },
+  "records": [
+    {
+      "id": "record-848",
+      "eco": "B00",
+      "name": "Owen Defense",
+      "family": "Owen Defense",
+      "pgn": "1. e4 b6",
+      "uci": "e2e4 b7b6",
+      "epd": "rnbqkbnr/p1pppppp/1p6/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-726"
+    },
+    {
+      "id": "record-849",
+      "eco": "B00",
+      "name": "Owen Defense: Guatemala Defense",
+      "family": "Owen Defense",
+      "pgn": "1. e4 b6 2. d4 Ba6",
+      "uci": "e2e4 b7b6 d2d4 c8a6",
+      "epd": "rn1qkbnr/p1pppppp/bp6/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-727"
+    },
+    {
+      "id": "record-850",
+      "eco": "B00",
+      "name": "Owen Defense: Hekili-Loa Gambit",
+      "family": "Owen Defense",
+      "pgn": "1. e4 b6 2. d4 c5 3. dxc5 Nc6",
+      "uci": "e2e4 b7b6 d2d4 c7c5 d4c5 b8c6",
+      "epd": "r1bqkbnr/p2ppppp/1pn5/2P5/4P3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-728"
+    },
+    {
+      "id": "record-851",
+      "eco": "B00",
+      "name": "Owen Defense: Matovinsky Gambit",
+      "family": "Owen Defense",
+      "pgn": "1. e4 b6 2. d4 Bb7 3. Bd3 f5 4. exf5 Bxg2 5. Qh5+ g6",
+      "uci": "e2e4 b7b6 d2d4 c8b7 f1d3 f7f5 e4f5 b7g2 d1h5 g7g6",
+      "epd": "rn1qkbnr/p1ppp2p/1p4p1/5P1Q/3P4/3B4/PPP2PbP/RNB1K1NR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-729"
+    },
+    {
+      "id": "record-852",
+      "eco": "B00",
+      "name": "Owen Defense: Naselwaus Gambit",
+      "family": "Owen Defense",
+      "pgn": "1. e4 b6 2. d4 Bb7 3. Bg5",
+      "uci": "e2e4 b7b6 d2d4 c8b7 c1g5",
+      "epd": "rn1qkbnr/pbpppppp/1p6/6B1/3PP3/8/PPP2PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-730"
+    },
+    {
+      "id": "record-853",
+      "eco": "B00",
+      "name": "Owen Defense: Smith Gambit",
+      "family": "Owen Defense",
+      "pgn": "1. e4 b6 2. d4 Bb7 3. Nf3",
+      "uci": "e2e4 b7b6 d2d4 c8b7 g1f3",
+      "epd": "rn1qkbnr/pbpppppp/1p6/8/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-731"
+    },
+    {
+      "id": "record-854",
+      "eco": "B00",
+      "name": "Owen Defense: Unicorn Variation",
+      "family": "Owen Defense",
+      "pgn": "1. e4 f6 2. d4 b6 3. c4 Bb7",
+      "uci": "e2e4 f7f6 d2d4 b7b6 c2c4 c8b7",
+      "epd": "rn1qkbnr/pbppp1pp/1p3p2/8/2PPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-732"
+    },
+    {
+      "id": "record-855",
+      "eco": "B00",
+      "name": "Owen Defense: Wind Gambit",
+      "family": "Owen Defense",
+      "pgn": "1. e4 b6 2. d4 Bb7 3. f3 e5",
+      "uci": "e2e4 b7b6 d2d4 c8b7 f2f3 e7e5",
+      "epd": "rn1qkbnr/pbpp1ppp/1p6/4p3/3PP3/5P2/PPP3PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-733"
+    }
+  ]
+}

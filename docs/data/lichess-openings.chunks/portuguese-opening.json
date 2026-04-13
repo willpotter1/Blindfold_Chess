@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Portuguese Opening",
+    "chunkKey": "portuguese-opening",
+    "recordCount": 3,
+    "lineCount": 3
+  },
+  "records": [
+    {
+      "id": "record-1779",
+      "eco": "C20",
+      "name": "Portuguese Opening",
+      "family": "Portuguese Opening",
+      "pgn": "1. e4 e5 2. Bb5",
+      "uci": "e2e4 e7e5 f1b5",
+      "epd": "rnbqkbnr/pppp1ppp/8/1B2p3/4P3/8/PPPP1PPP/RNBQK1NR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1538"
+    },
+    {
+      "id": "record-1780",
+      "eco": "C20",
+      "name": "Portuguese Opening: Miguel Gambit",
+      "family": "Portuguese Opening",
+      "pgn": "1. e4 e5 2. Bb5 Bc5 3. b4",
+      "uci": "e2e4 e7e5 f1b5 f8c5 b2b4",
+      "epd": "rnbqk1nr/pppp1ppp/8/1Bb1p3/1P2P3/8/P1PP1PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1539"
+    },
+    {
+      "id": "record-1781",
+      "eco": "C20",
+      "name": "Portuguese Opening: Portuguese Gambit",
+      "family": "Portuguese Opening",
+      "pgn": "1. e4 e5 2. Bb5 Nf6 3. d4",
+      "uci": "e2e4 e7e5 f1b5 g8f6 d2d4",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/1B2p3/3PP3/8/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1540"
+    }
+  ]
+}

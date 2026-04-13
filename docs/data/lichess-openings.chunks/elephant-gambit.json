@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Elephant Gambit",
+    "chunkKey": "elephant-gambit",
+    "recordCount": 4,
+    "lineCount": 4
+  },
+  "records": [
+    {
+      "id": "record-2094",
+      "eco": "C40",
+      "name": "Elephant Gambit",
+      "family": "Elephant Gambit",
+      "pgn": "1. e4 e5 2. Nf3 d5",
+      "uci": "e2e4 e7e5 g1f3 d7d5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1836"
+    },
+    {
+      "id": "record-2095",
+      "eco": "C40",
+      "name": "Elephant Gambit: Maróczy Gambit",
+      "family": "Elephant Gambit",
+      "pgn": "1. e4 e5 2. Nf3 d5 3. exd5 Bd6",
+      "uci": "e2e4 e7e5 g1f3 d7d5 e4d5 f8d6",
+      "epd": "rnbqk1nr/ppp2ppp/3b4/3Pp3/8/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1837"
+    },
+    {
+      "id": "record-2096",
+      "eco": "C40",
+      "name": "Elephant Gambit: Paulsen Countergambit",
+      "family": "Elephant Gambit",
+      "pgn": "1. e4 e5 2. Nf3 d5 3. exd5 e4",
+      "uci": "e2e4 e7e5 g1f3 d7d5 e4d5 e5e4",
+      "epd": "rnbqkbnr/ppp2ppp/8/3P4/4p3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1838"
+    },
+    {
+      "id": "record-2097",
+      "eco": "C40",
+      "name": "Elephant Gambit: Wasp Variation",
+      "family": "Elephant Gambit",
+      "pgn": "1. e4 e5 2. Nf3 d5 3. Nxe5 dxe4 4. Bc4 Qg5",
+      "uci": "e2e4 e7e5 g1f3 d7d5 f3e5 d5e4 f1c4 d8g5",
+      "epd": "rnb1kbnr/ppp2ppp/8/4N1q1/2B1p3/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1839"
+    }
+  ]
+}
