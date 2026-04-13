@@ -27,7 +27,10 @@
       "Bash(node -e ':*)",
       "Bash(npm uninstall:*)",
       "Bash(node -e \"const pkg = require\\('./package.json'\\); console.log\\('Dependencies:', Object.keys\\(pkg.dependencies\\).length\\); console.log\\('DevDependencies:', Object.keys\\(pkg.devDependencies\\).length\\);\")",
-      "Bash(npm ci:*)"
+      "Bash(npm ci:*)",
+      "Bash(node -e \" const lock = require\\('./package-lock.json'\\); const pkgs = Object.keys\\(lock.packages\\).filter\\(k => k !== ''\\); const firebase = pkgs.filter\\(k => k.includes\\('firebase'\\)\\); console.log\\('Firebase-related packages:', firebase.length\\); console.log\\(\\); // Check what firebase is used for \")",
+      "Bash(cat .github/workflows/*.yml)",
+      "Bash(ls .github/workflows/)"
     ]
   }
 }
