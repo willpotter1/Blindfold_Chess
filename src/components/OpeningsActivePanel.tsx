@@ -1,4 +1,3 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 type OpeningsActivePanelProps = {
@@ -9,19 +8,6 @@ type OpeningsActivePanelProps = {
   className?: string;
 };
 
-const ActiveMetric = ({
-  label,
-  value,
-}: {
-  label: string;
-  value: string | number;
-}) => (
-  <div className="rounded-xl border-2 border-border bg-surface-white/75 px-3 py-3 text-center">
-    <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary">{label}</div>
-    <div className="mt-1.5 text-[clamp(1.7rem,2.1vw,2.4rem)] font-semibold leading-none text-foreground">{value}</div>
-  </div>
-);
-
 export const OpeningsActivePanel = ({
   playerMoveCount,
   depthPlayerMoves,
@@ -30,25 +16,22 @@ export const OpeningsActivePanel = ({
   className,
 }: OpeningsActivePanelProps) => {
   return (
-    <Card className={cn('flex flex-col overflow-hidden border-2 border-border', className)}>
-      <CardHeader className="space-y-1 pb-1.5">
-        <CardTitle className="text-lg">Opening Round</CardTitle>
-        <CardDescription className="text-sm leading-snug">
-          Stay inside the selected opening pool and play the canonical response.
-        </CardDescription>
-      </CardHeader>
-
-      <CardContent className="grid gap-3 pt-1.5">
-        <div className="grid grid-cols-2 gap-2.5">
-          <ActiveMetric label="Your Moves" value={`${playerMoveCount}/${depthPlayerMoves}`} />
-          <ActiveMetric label="Active Lines" value={activeRecordCount} />
+    <div className={cn('space-y-3', className)}>
+      <div className="grid grid-cols-2 gap-2">
+        <div className="rounded-xl border border-border/50 bg-card px-3 py-3 text-center">
+          <p className="text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Your Moves</p>
+          <p className="mt-1.5 text-2xl font-semibold text-foreground">{playerMoveCount}/{depthPlayerMoves}</p>
         </div>
-
-        <div className="rounded-2xl border-2 border-border bg-surface-white/75 px-4 py-3.5">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary">Status</div>
-          <div className="mt-2 whitespace-pre-line text-sm leading-5 text-foreground">{status}</div>
+        <div className="rounded-xl border border-border/50 bg-card px-3 py-3 text-center">
+          <p className="text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Active Lines</p>
+          <p className="mt-1.5 text-2xl font-semibold text-foreground">{activeRecordCount}</p>
         </div>
-      </CardContent>
-    </Card>
+      </div>
+
+      <div className="rounded-xl border border-border/50 bg-card px-4 py-3">
+        <p className="text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Status</p>
+        <p className="mt-1.5 whitespace-pre-line text-sm leading-relaxed text-foreground">{status}</p>
+      </div>
+    </div>
   );
 };

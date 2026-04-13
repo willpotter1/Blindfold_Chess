@@ -4,19 +4,19 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import Index from "./pages/Index";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import ConfigureGame from "./pages/ConfigureGame";
-import About from "./pages/About";
-import Account from "./pages/Account";
-import AccountUsername from "./pages/AccountUsername";
-import AccountEmail from "./pages/AccountEmail";
-import AccountPassword from "./pages/AccountPassword";
-import Puzzles from "./pages/Puzzles";
-import Drills from "./pages/Drills";
-import Openings from "./pages/Openings";
-import NotFound from "./pages/NotFound";
+import Index from "./pages/home/HomePage";
+import Login from "./pages/auth/LoginPage";
+import Signup from "./pages/auth/SignupPage";
+import ConfigureGame from "./pages/configure/ConfigureGamePage";
+import About from "./pages/about/AboutPage";
+import Account from "./pages/account/AccountPage";
+import AccountUsername from "./pages/account/AccountUsernamePage";
+import AccountEmail from "./pages/account/AccountEmailPage";
+import AccountPassword from "./pages/account/AccountPasswordPage";
+import Puzzles from "./pages/puzzles/PuzzlesPage";
+import Drills from "./pages/drills/DrillsPage";
+import Openings from "./pages/openings/OpeningsPage";
+import NotFound from "./pages/not-found/NotFoundPage";
 import { trackPageView } from "@/lib/firebaseAnalytics";
 
 const queryClient = new QueryClient();
@@ -56,6 +56,7 @@ const App = () => {
           <FirebaseAnalyticsTracker />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/game/:sessionId" element={<Index />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/configure" element={<ConfigureGame />} />
@@ -64,8 +65,11 @@ const App = () => {
             <Route path="/account/email" element={<AccountEmail />} />
             <Route path="/account/password" element={<AccountPassword />} />
             <Route path="/puzzles" element={<Puzzles />} />
+            <Route path="/puzzles/:sessionId" element={<Puzzles />} />
             <Route path="/drills" element={<Drills />} />
+            <Route path="/drills/:sessionId" element={<Drills />} />
             <Route path="/openings" element={<Openings />} />
+            <Route path="/openings/:sessionId" element={<Openings />} />
             <Route path="/games" element={<About />} />
             <Route path="/about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

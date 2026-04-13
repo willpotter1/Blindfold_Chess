@@ -2,54 +2,108 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blindfold Chess Trainer - Practice Chess Visualization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Blindchess.org - Free Blindfold Chess Trainer | Puzzles, Drills & Openings</title>
     <meta
       name="description"
-      content="Train your chess visualization skills with our blindfold chess trainer. Play against AI with configurable board visibility to improve your mental chess abilities."
+      content="Train blindfold chess visualization for free. Play blind chess games vs AI, solve puzzles, practice coordinate drills, and study openings — all without seeing the board. Improve your mental chess skills at blindchess.org."
     />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="author" content="Blindfold Chess Trainer" />
+    <meta
+      name="keywords"
+      content="blindfold chess, blind chess, blindchess, chess visualization, chess trainer, chess puzzles, chess drills, chess openings, mental chess, chess practice, chess board visualization, play blind chess online, blindfold chess trainer"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Blindchess.org" />
+    <meta name="theme-color" content="#1C1B18" />
     <link rel="canonical" href="https://blindchess.org/" />
+
+    <!-- Favicons (white pawn — visible on dark browser tabs) -->
     <link rel="icon" type="image/png" sizes="32x32" href="./Whitepawn.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./Whitepawn.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./Whitepawn.png" />
+    <!-- Apple touch icon & manifest use circlepawnwb (dark pawn on white circle — visible on Google search & home screens) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./circlepawnwb-180.png" />
+    <link rel="manifest" href="./site.webmanifest" />
 
-    <meta property="og:title" content="Blindfold Chess Trainer - Practice Chess Visualization" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blindchess.org - Free Blindfold Chess Trainer" />
     <meta
       property="og:description"
-      content="Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent."
+      content="Train blindfold chess visualization for free. Play blind chess games, solve puzzles, practice drills, and study openings without seeing the board."
     />
-    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://blindchess.org/" />
-    <meta property="og:site_name" content="Blindfold Chess Trainer" />
+    <meta property="og:site_name" content="Blindchess.org" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="https://blindchess.org/BBpawn.png" />
+    <meta property="og:image" content="https://blindchess.org/circlepawnwb-512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Blindchess.org - Blindfold chess pawn logo" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Blindfold Chess Trainer - Practice Chess Visualization" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Blindchess.org - Free Blindfold Chess Trainer" />
     <meta
       name="twitter:description"
-      content="Train your chess visualization skills by playing with limited board visibility. Improve your blindfold chess abilities against an AI opponent."
+      content="Train blindfold chess visualization for free. Play blind chess games, solve puzzles, practice drills, and study openings."
     />
-    <meta name="twitter:image" content="https://blindchess.org/BBpawn.png" />
+    <meta name="twitter:image" content="https://blindchess.org/circlepawnwb-512.png" />
+
+    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
             "@type": "WebSite",
-            "name": "Blindfold Chess Trainer",
-            "url": "https://blindchess.org/"
+            "name": "Blindchess.org",
+            "alternateName": ["Blindchess", "Blindfold Chess Trainer", "Blind Chess"],
+            "url": "https://blindchess.org/",
+            "description": "Free blindfold chess training platform. Play blind chess games, solve puzzles, practice drills, and study openings."
           },
           {
             "@type": "WebApplication",
-            "name": "Blindfold Chess Trainer",
+            "name": "Blindchess.org",
+            "alternateName": "Blindfold Chess Trainer",
             "url": "https://blindchess.org/",
             "applicationCategory": "GameApplication",
+            "applicationSubCategory": "Chess",
             "operatingSystem": "Web",
-            "description": "Train your chess visualization and blindfold chess ability by playing games with configurable board visibility.",
-            "image": "https://blindchess.org/BBpawn.png"
+            "description": "Train your chess visualization and blindfold chess skills by playing games, solving puzzles, running timed drills, and studying openings — all without seeing the board.",
+            "image": "https://blindchess.org/circlepawnwb-512.png",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Play blindfold chess games against AI",
+              "Solve blindfold chess puzzles",
+              "Timed coordinate and move drills",
+              "Opening line practice from Lichess dataset",
+              "Configurable board visibility",
+              "Game analysis export to Chess.com and Lichess"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is blindfold chess?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Blindfold chess is playing chess without seeing the board. Players visualize the position in their mind and announce moves verbally or in notation. Blindchess.org helps you train this skill with configurable board visibility."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I practice blindfold chess?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Start with partial visibility — show the board every few moves. As you improve, increase the interval. Blindchess.org lets you configure how often the board is revealed, play against AI, solve puzzles, and drill coordinates."
+                }
+              }
+            ]
           }
         ]
       }

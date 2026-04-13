@@ -129,18 +129,16 @@ export const OpeningsConfigPanel = ({
   };
 
   return (
-    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border-2 border-border bg-surface-white/75', className)}>
+    <Card className={cn('flex h-full min-h-0 w-full flex-col overflow-hidden border border-border/50 bg-card', className)}>
       <CardHeader className="shrink-0 space-y-1 pb-2">
         <CardTitle className="text-xl">Opening Setup</CardTitle>
       </CardHeader>
 
-      <CardContent className="grid min-h-0 flex-1 grid-cols-1 gap-3 overflow-hidden pt-2 lg:grid-cols-[minmax(15rem,0.8fr)_minmax(13rem,0.92fr)_minmax(0,1.14fr)]">
+      <CardContent className="grid min-h-0 flex-1 gap-3 overflow-auto pt-2 grid-cols-1 lg:grid-cols-[minmax(14rem,0.8fr)_minmax(12rem,0.85fr)_minmax(0,1.2fr)] lg:overflow-hidden">
         <div className="flex min-h-0 flex-col gap-3 overflow-hidden">
-          <div className="grid grid-cols-1 gap-3">
-            <div className="space-y-2">
-              <Label htmlFor="opening-player-color" className="text-[11px] font-semibold text-primary">
-                Play As
-              </Label>
+          <div className="grid grid-cols-1 gap-2.5">
+            <div className="space-y-1.5">
+              <Label htmlFor="opening-player-color" className="text-xs">Play As</Label>
               <Select
                 value={config.playerColor}
                 onValueChange={(value) =>
@@ -150,9 +148,7 @@ export const OpeningsConfigPanel = ({
                   })
                 }
               >
-                <SelectTrigger id="opening-player-color" className="h-11 rounded-xl bg-surface-strong/55 text-[15px]">
-                  <SelectValue />
-                </SelectTrigger>
+                <SelectTrigger id="opening-player-color"><SelectValue /></SelectTrigger>
                 <SelectContent>
                   <SelectItem value="white">White</SelectItem>
                   <SelectItem value="black">Black</SelectItem>
@@ -160,17 +156,14 @@ export const OpeningsConfigPanel = ({
               </Select>
             </div>
 
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <div className="space-y-2">
-                <Label htmlFor="opening-depth" className="text-[11px] font-semibold text-primary">
-                  Depth
-                </Label>
+            <div className="grid grid-cols-2 gap-2.5">
+              <div className="space-y-1.5">
+                <Label htmlFor="opening-depth" className="text-xs">Depth</Label>
                 <Input
                   id="opening-depth"
                   type="number"
                   min={1}
                   step={1}
-                  className="h-11 rounded-xl bg-surface-strong/55 text-[15px]"
                   value={depthInput}
                   onChange={(event) => setDepthInput(event.target.value)}
                   onBlur={commitDepthInput}
@@ -182,16 +175,13 @@ export const OpeningsConfigPanel = ({
                 />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="opening-reveal-frequency" className="text-[11px] font-semibold text-primary">
-                  Reveal Freq.
-                </Label>
+              <div className="space-y-1.5">
+                <Label htmlFor="opening-reveal-frequency" className="text-xs">Reveal Freq.</Label>
                 <Input
                   id="opening-reveal-frequency"
                   type="number"
                   min={0}
                   step={1}
-                  className="h-11 rounded-xl bg-surface-strong/55 text-[15px]"
                   value={revealEveryInput}
                   onChange={(event) => setRevealEveryInput(event.target.value)}
                   onBlur={commitRevealEveryInput}
@@ -200,46 +190,34 @@ export const OpeningsConfigPanel = ({
                       event.currentTarget.blur();
                     }
                   }}
-                  placeholder="0 = never auto-reveal"
+                  placeholder="0 = never"
                 />
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-2 items-stretch">
-            <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border-2 border-border bg-surface-white/75 px-4 py-3">
-              <Label htmlFor="opening-allow-cheats" className="min-w-0 cursor-pointer text-sm font-semibold text-foreground">
-                Allow Cheats
-              </Label>
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
+            <label htmlFor="opening-allow-cheats" className="flex cursor-pointer items-center gap-2">
               <Switch
                 id="opening-allow-cheats"
-                className="shrink-0"
                 checked={config.allowCheats}
                 onCheckedChange={(checked) =>
-                  onConfigChange({
-                    ...config,
-                    allowCheats: checked,
-                  })
+                  onConfigChange({ ...config, allowCheats: checked })
                 }
               />
-            </div>
+              <span className="text-xs font-medium text-foreground">Allow Cheats</span>
+            </label>
 
-            <div className="flex h-full min-h-[54px] items-center justify-between gap-3 rounded-xl border-2 border-border bg-surface-white/75 px-4 py-3">
-              <Label htmlFor="opening-hide-history" className="min-w-0 cursor-pointer text-sm font-semibold text-foreground">
-                Hide History
-              </Label>
+            <label htmlFor="opening-hide-history" className="flex cursor-pointer items-center gap-2">
               <Switch
                 id="opening-hide-history"
-                className="shrink-0"
                 checked={config.hideMoveHistory}
                 onCheckedChange={(checked) =>
-                  onConfigChange({
-                    ...config,
-                    hideMoveHistory: checked,
-                  })
+                  onConfigChange({ ...config, hideMoveHistory: checked })
                 }
               />
-            </div>
+              <span className="text-xs font-medium text-foreground">Hide History</span>
+            </label>
           </div>
 
           <OpeningSelectionBasket
@@ -267,9 +245,9 @@ export const OpeningsConfigPanel = ({
         </div>
 
         <div className="flex min-h-0 flex-col items-center justify-center gap-3 overflow-hidden">
-          <div className="flex w-full max-w-[24rem] min-h-0 flex-col items-center rounded-2xl border-2 border-border bg-surface-white/75 p-4 text-center">
+          <div className="flex w-full max-w-[22rem] min-h-0 flex-col items-center rounded-2xl border border-border/50 bg-card p-4 text-center">
             <div className="w-full space-y-1">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">Preview</div>
+              <div className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Preview</div>
               <div className="min-h-[2.5rem] text-sm font-semibold text-foreground">
                 {previewOpeningName || previewBreadcrumb || 'Select an opening branch'}
               </div>
@@ -278,16 +256,16 @@ export const OpeningsConfigPanel = ({
               </div>
             </div>
 
-            <div className="mt-4 flex h-[22rem] w-full items-center justify-center">
+            <div className="mt-3 flex w-full items-center justify-center">
               <BlindfoldBoard
                 fen={previewFen}
                 perspective={config.playerColor}
                 isVisible
-                className="w-full max-w-[22rem]"
+                className="w-full max-w-[18rem] lg:max-w-[20rem]"
               />
             </div>
 
-            <div className="mt-4 grid w-full max-w-[22rem] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2">
+            <div className="mt-3 grid w-full max-w-[20rem] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2">
               <Button
                 type="button"
                 variant="outline"

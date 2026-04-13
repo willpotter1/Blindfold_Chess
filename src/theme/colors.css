@@ -1,70 +1,129 @@
 :root {
-  --color-warm-tint: 232 212 193;
-  --color-warm-highlight: 214 178 150;
-  --color-light-brown: 217 185 155;
-  --color-brown: 139 69 19;
-  --color-white: 255 255 255;
-  --color-black: 0 0 0;
+  /* ── Custom palette (warm neutral) ── */
+  --cl-white:       255 255 255;
+  --cl-snow:        250 248 245;
+  --cl-pearl:       240 237 232;
+  --cl-silver:      220 216 210;
+  --cl-ash:         170 165 158;
+  --cl-slate:       120 116 110;
+  --cl-iron:        85 82 76;
+  --cl-graphite:    58 56 52;
+  --cl-coal:        40 38 35;
+  --cl-obsidian:    28 27 24;
+  --cl-void:        18 17 15;
+  --cl-red:         210 55 50;
 
-  --background: var(--color-warm-tint);
-  --foreground: var(--color-black);
+  /* ── Semantic tokens (dark — default) ── */
+  --background:           var(--cl-obsidian);
+  --foreground:           var(--cl-snow);
 
-  --card: var(--color-warm-tint);
-  --card-foreground: var(--color-black);
+  --card:                 var(--cl-coal);
+  --card-foreground:      var(--cl-snow);
 
-  --popover: var(--color-white);
-  --popover-foreground: var(--color-black);
+  --popover:              var(--cl-coal);
+  --popover-foreground:   var(--cl-snow);
 
-  --primary: var(--color-brown);
-  --primary-foreground: var(--color-white);
+  --primary:              var(--cl-snow);
+  --primary-foreground:   var(--cl-obsidian);
 
-  --secondary: var(--color-light-brown);
-  --secondary-foreground: var(--color-black);
+  --secondary:            var(--cl-graphite);
+  --secondary-foreground: var(--cl-pearl);
 
-  --muted: var(--color-warm-tint);
-  --muted-foreground: var(--color-brown);
+  --muted:                var(--cl-graphite);
+  --muted-foreground:     var(--cl-ash);
 
-  --accent: var(--color-warm-highlight);
-  --accent-foreground: var(--color-black);
+  --accent:               var(--cl-graphite);
+  --accent-foreground:    var(--cl-pearl);
 
-  --destructive: var(--color-brown);
-  --destructive-foreground: var(--color-white);
+  --destructive:          var(--cl-red);
+  --destructive-foreground: var(--cl-white);
 
-  --border: var(--color-light-brown);
-  --input: var(--color-light-brown);
-  --ring: var(--color-brown);
+  --border:               var(--cl-graphite);
+  --input:                var(--cl-graphite);
+  --ring:                 var(--cl-ash);
 
-  --surface-base: var(--color-warm-tint);
-  --surface-highlight: var(--color-warm-highlight);
-  --surface-strong: var(--color-light-brown);
-  --surface-white: var(--color-white);
-  --surface-dark: var(--color-brown);
-  --surface-ink: var(--color-black);
+  /* ── Surface tokens ── */
+  --surface-base:         var(--cl-obsidian);
+  --surface-highlight:    var(--cl-graphite);
+  --surface-strong:       var(--cl-iron);
+  --surface-white:        var(--cl-coal);
+  --surface-dark:         var(--cl-ash);
+  --surface-ink:          var(--cl-snow);
 
-  --sidebar-background: var(--surface-base);
-  --sidebar-foreground: var(--foreground);
-  --sidebar-primary: var(--primary);
-  --sidebar-primary-foreground: var(--primary-foreground);
-  --sidebar-accent: var(--surface-white);
-  --sidebar-accent-foreground: var(--foreground);
-  --sidebar-border: var(--border);
-  --sidebar-ring: var(--ring);
+  /* ── Sidebar ── */
+  --sidebar-background:           var(--cl-coal);
+  --sidebar-foreground:           var(--cl-snow);
+  --sidebar-primary:              var(--cl-snow);
+  --sidebar-primary-foreground:   var(--cl-obsidian);
+  --sidebar-accent:               var(--cl-graphite);
+  --sidebar-accent-foreground:    var(--cl-pearl);
+  --sidebar-border:               var(--cl-graphite);
+  --sidebar-ring:                 var(--cl-ash);
 
-  --board-light: var(--color-light-brown);
-  --board-dark: var(--color-brown);
-  --board-border: var(--color-light-brown);
-  --board-label-light: var(--color-brown);
-  --board-label-dark: var(--color-white);
-  --board-select: var(--color-white);
-  --board-highlight: var(--color-warm-highlight);
-  --board-feedback-correct: var(--color-warm-highlight);
-  --board-feedback-wrong: var(--color-black);
+  /* ── Board (unchanged) ── */
+  --board-light:            217 185 155;
+  --board-dark:             139 69 19;
+  --board-border:           217 185 155;
+  --board-label-light:      139 69 19;
+  --board-label-dark:       var(--cl-white);
+  --board-select:           var(--cl-white);
+  --board-highlight:        214 178 150;
+  --board-feedback-correct: 214 178 150;
+  --board-feedback-wrong:   var(--cl-obsidian);
 
-  --shadow-soft: 0 18px 40px rgb(var(--color-brown) / 0.16);
-  --shadow-strong: 0 24px 56px rgb(var(--color-brown) / 0.18);
-  --shadow-piece: 0 1px 2px rgb(var(--color-black) / 0.35);
+  /* ── Shadows ── */
+  --shadow-soft:   0 1px 3px rgb(0 0 0 / 0.3), 0 1px 2px rgb(0 0 0 / 0.2);
+  --shadow-strong: 0 4px 16px rgb(0 0 0 / 0.4), 0 1px 3px rgb(0 0 0 / 0.25);
+  --shadow-piece:  0 1px 2px rgb(0 0 0 / 0.5);
 }
 
-.dark {
-  color-scheme: light;
+/* ── Light mode (opt-in via .light class on <html>) ── */
+.light {
+  --background:           var(--cl-snow);
+  --foreground:           var(--cl-obsidian);
+
+  --card:                 var(--cl-white);
+  --card-foreground:      var(--cl-obsidian);
+
+  --popover:              var(--cl-white);
+  --popover-foreground:   var(--cl-obsidian);
+
+  --primary:              var(--cl-obsidian);
+  --primary-foreground:   var(--cl-white);
+
+  --secondary:            var(--cl-pearl);
+  --secondary-foreground: var(--cl-obsidian);
+
+  --muted:                var(--cl-pearl);
+  --muted-foreground:     var(--cl-slate);
+
+  --accent:               var(--cl-pearl);
+  --accent-foreground:    var(--cl-obsidian);
+
+  --destructive:          var(--cl-red);
+  --destructive-foreground: var(--cl-white);
+
+  --border:               var(--cl-silver);
+  --input:                var(--cl-silver);
+  --ring:                 var(--cl-ash);
+
+  --surface-base:         var(--cl-snow);
+  --surface-highlight:    var(--cl-pearl);
+  --surface-strong:       var(--cl-silver);
+  --surface-white:        var(--cl-white);
+  --surface-dark:         var(--cl-iron);
+  --surface-ink:          var(--cl-obsidian);
+
+  --sidebar-background:           var(--cl-white);
+  --sidebar-foreground:           var(--cl-obsidian);
+  --sidebar-primary:              var(--cl-obsidian);
+  --sidebar-primary-foreground:   var(--cl-white);
+  --sidebar-accent:               var(--cl-pearl);
+  --sidebar-accent-foreground:    var(--cl-obsidian);
+  --sidebar-border:               var(--cl-silver);
+  --sidebar-ring:                 var(--cl-ash);
+
+  --shadow-soft:   0 1px 3px rgb(0 0 0 / 0.06), 0 1px 2px rgb(0 0 0 / 0.04);
+  --shadow-strong: 0 4px 16px rgb(0 0 0 / 0.08), 0 1px 3px rgb(0 0 0 / 0.06);
+  --shadow-piece:  0 1px 2px rgb(0 0 0 / 0.3);
 }

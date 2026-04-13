@@ -40,13 +40,13 @@ const SeoHead = ({ title, description, canonicalUrl, ogImage }: SeoHeadProps) =>
     document.title = title;
     ensureCanonicalLink(canonicalUrl);
     ensureMetaTag("name", "description", description);
-    ensureMetaTag("name", "robots", "index, follow, max-image-preview:large");
+    ensureMetaTag("name", "robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
 
     ensureMetaTag("property", "og:type", "website");
     ensureMetaTag("property", "og:title", title);
     ensureMetaTag("property", "og:description", description);
     ensureMetaTag("property", "og:url", canonicalUrl);
-    ensureMetaTag("property", "og:site_name", "Blindfold Chess Trainer");
+    ensureMetaTag("property", "og:site_name", "Blindchess.org");
     ensureMetaTag("property", "og:locale", "en_US");
     ensureMetaTag("property", "og:image", ogImage);
 

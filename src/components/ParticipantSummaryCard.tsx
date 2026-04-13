@@ -1,5 +1,3 @@
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent } from '@/components/ui/card';
 import type { CapturedPieceDescriptor } from '@/lib/chess/material';
 import { cn } from '@/lib/utils';
 
@@ -21,89 +19,66 @@ interface ParticipantSummaryCardProps {
   compact?: boolean;
 }
 
+const getCapturedPieceSrc = (piece: CapturedPieceDescriptor) => {
+  const colorKey = piece.color === 'white' ? 'w' : 'b';
+  return `${assetBase}/pieces/${colorKey}${piece.type.toUpperCase()}.svg`;
+};
+
 export const ParticipantSummaryCard = ({
   participant,
   className,
   compact = false,
 }: ParticipantSummaryCardProps) => {
   const pieceColorLabel = participant.pieceColor === 'white' ? 'White' : 'Black';
-  const compactPawnSrc = `${assetBase}/pieces/${participant.pieceColor === 'white' ? 'w' : 'b'}P.svg`;
-  const compactPawnAlt = `${pieceColorLabel} pawn`;
-  const getCapturedPieceSrc = (piece: CapturedPieceDescriptor) => {
-    const pieceColorKey = piece.color === 'white' ? 'w' : 'b';
-    return `${assetBase}/pieces/${pieceColorKey}${piece.type.toUpperCase()}.svg`;
-  };
-  const getCapturedPieceAlt = (piece: CapturedPieceDescriptor) => (
-    `${piece.color === 'white' ? 'White' : 'Black'} ${piece.type === 'q'
-      ? 'queen'
-      : piece.type === 'r'
-        ? 'rook'
-        : piece.type === 'b'
-          ? 'bishop'
-          : piece.type === 'n'
-            ? 'knight'
-            : 'pawn'}`
-  );
+  const pawnSrc = `${assetBase}/pieces/${participant.pieceColor === 'white' ? 'w' : 'b'}P.svg`;
 
   return (
-    <Card className={cn('bg-surface-white/75', className)}>
-      <CardContent className={cn('p-3 pt-3', compact && 'px-2.5 py-2')}>
-        <div className={cn('flex items-center gap-2.5', compact && 'gap-2')}>
-          <div className={cn('flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border-2 border-border bg-surface-white shadow-theme-soft', compact && 'h-8 w-8 rounded-xl')}>
-            <img
-              src={compact ? compactPawnSrc : participant.iconSrc}
-              alt={compact ? compactPawnAlt : participant.iconAlt}
-              className={cn('h-7 w-7 object-contain', compact && 'h-5 w-5')}
-              draggable={false}
-            />
-          </div>
+    <div
+      className={cn(
+        'rounded-xl border border-border/50 bg-card px-3 py-2.5',
+        participant.isToMove && 'border-foreground/20',
+        className,
+      )}
+    >
+      {/* Top row: icon + name + to-move indicator */}
+      <div className="flex items-center gap-2">
+        <img
+          src={compact ? pawnSrc : participant.iconSrc}
+          alt={compact ? `${pieceColorLabel} pawn` : participant.iconAlt}
+          className={cn('h-5 w-5 shrink-0 object-contain', compact && 'h-4 w-4')}
+          draggable={false}
+        />
+        <span className={cn('text-xs font-semibold text-foreground', compact && 'text-[0.65rem]')}>
+          {participant.label}
+        </span>
+        <span className={cn('text-[0.6rem] text-muted-foreground', compact && 'text-[0.55rem]')}>
+          {pieceColorLabel}
+        </span>
+        {participant.isToMove && (
+          <span className="ml-auto h-1.5 w-1.5 shrink-0 rounded-full bg-foreground" />
+        )}
+      </div>
 
-          <div className="min-w-0 flex-1">
-            <div className="flex items-start justify-between gap-3">
-              <div className="min-w-0">
-                <p className={cn('text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-primary/65', compact && 'text-[0.58rem] tracking-[0.14em]')}>
-                  {participant.label}
-                </p>
-                {!compact && (
-                  <p className="truncate text-sm font-semibold text-primary">
-                    {pieceColorLabel} pieces
-                  </p>
-                )}
-              </div>
-
-              {participant.isToMove && (
-                <Badge className={cn('shrink-0 border-border bg-primary text-primary-foreground hover:bg-primary', compact && 'px-1.5 py-0 text-[0.6rem]')}>
-                  To move
-                </Badge>
-              )}
-            </div>
-
-            <div className={cn('mt-2', compact && 'mt-1')}>
-              <div className={cn('min-h-6', compact && 'min-h-5')}>
-                <div className={cn('flex min-h-6 flex-wrap items-center gap-1', compact && 'min-h-5 gap-0.5')}>
-                  {participant.capturedPieces.map((piece, index) => (
-                    <img
-                      key={`${piece.color}-${piece.type}-${index}`}
-                      src={getCapturedPieceSrc(piece)}
-                      alt={getCapturedPieceAlt(piece)}
-                      className={cn('h-5 w-5 object-contain', compact && 'h-4 w-4')}
-                      draggable={false}
-                    />
-                  ))}
-                  {compact && typeof participant.materialAdvantage === 'number' && participant.materialAdvantage > 0 && (
-                    <span className="ml-1 text-xs font-semibold text-primary">
-                      +{participant.materialAdvantage}
-                    </span>
-                  )}
-                  {compact && participant.capturedPieces.length === 0 && participant.materialAdvantage === 0 && (
-                    <span className="sr-only">No captured material</span>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
+      {/* Captured pieces row */}
+      <div className={cn('mt-1.5 flex min-h-5 flex-wrap items-center gap-0.5', compact && 'mt-1 min-h-4')}>
+        {participant.capturedPieces.map((piece, index) => (
+          <img
+            key={`${piece.color}-${piece.type}-${index}`}
+            src={getCapturedPieceSrc(piece)}
+            alt={`Captured ${piece.color} ${piece.type}`}
+            className={cn('h-4 w-4 object-contain opacity-60', compact && 'h-3.5 w-3.5')}
+            draggable={false}
+          />
+        ))}
+        {typeof participant.materialAdvantage === 'number' && participant.materialAdvantage > 0 && (
+          <span className={cn('ml-0.5 text-[0.65rem] font-semibold text-muted-foreground', compact && 'text-[0.6rem]')}>
+            +{participant.materialAdvantage}
+          </span>
+        )}
+        {participant.capturedPieces.length === 0 && (
+          <span className="text-[0.6rem] text-muted-foreground/40">No captures</span>
+        )}
+      </div>
+    </div>
   );
 };

@@ -44,7 +44,7 @@ export const MoveInput = ({
   };
 
   return (
-    <Card className={cn('bg-surface-white/75', fillHeight && 'h-full', className)}>
+    <Card className={cn('bg-card', fillHeight && 'h-full', className)}>
       <CardContent className={cn(isCompact ? 'p-3.5 pt-3.5' : 'pt-6', fillHeight && 'flex h-full flex-col')}>
         <form onSubmit={handleSubmit} className={cn(isCompact ? 'space-y-2.5' : 'space-y-3', fillHeight && 'flex h-full flex-col')}>
           <div className={cn(isCompact ? 'space-y-1.5' : 'space-y-2')}>
