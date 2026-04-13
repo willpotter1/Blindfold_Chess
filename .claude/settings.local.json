@@ -20,7 +20,8 @@
       "Bash(lsof -ti:8787)",
       "Bash(xargs kill:*)",
       "Bash(fuser -k 8787/tcp)",
-      "Bash(npx skills:*)"
+      "Bash(npx skills:*)",
+      "Bash(gh api:*)"
     ]
   }
 }
