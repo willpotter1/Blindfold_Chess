@@ -312,22 +312,11 @@ const deleteAuthUser = async (userId) => {
 
 const insertProfile = async (userId, username, email) => {
   const client = getSupabaseAdmin();
-  const row = {
+  const { error } = await client.from("profiles").insert({
     id: userId,
     username: normalizeUsername(username),
-  };
-
-  // The email column was added in a later migration and may not exist yet.
-  try {
-    const { error: testError } = await client.from("profiles").select("email").limit(0);
-    if (!testError) {
-      row.email = normalizeEmail(email);
-    }
-  } catch {
-    // Column doesn't exist — skip it.
-  }
-
-  const { error } = await client.from("profiles").insert(row);
+    email: normalizeEmail(email),
+  });
 
   if (error) {
     throw mapSupabaseError(error);
