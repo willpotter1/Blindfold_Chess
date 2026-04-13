@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "London System, with Be2",
+    "chunkKey": "london-system-with-be2",
+    "recordCount": 3,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-612",
+      "eco": "A48",
+      "name": "London System, with Be2",
+      "family": "London System, with Be2",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Bf4 Bg7 4. e3 d6 5. Be2",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c1f4 f8g7 e2e3 d7d6 f1e2",
+      "epd": "rnbqk2r/ppp1ppbp/3p1np1/8/3P1B2/4PN2/PPP1BPPP/RN1QK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-522"
+    },
+    {
+      "id": "record-613",
+      "eco": "A48",
+      "name": "London System, with Be2",
+      "family": "London System, with Be2",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Bf4 Bg7 4. e3 d6 5. Be2 O-O",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c1f4 f8g7 e2e3 d7d6 f1e2 e8g8",
+      "epd": "rnbq1rk1/ppp1ppbp/3p1np1/8/3P1B2/4PN2/PPP1BPPP/RN1QK2R w KQ -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-522"
+    },
+    {
+      "id": "record-614",
+      "eco": "A48",
+      "name": "London System, with Be2",
+      "family": "London System, with Be2",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. Bf4 Bg7 4. e3 d6 5. h3 c5 6. Be2",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c1f4 f8g7 e2e3 d7d6 h2h3 c7c5 f1e2",
+      "epd": "rnbqk2r/pp2ppbp/3p1np1/2p5/3P1B2/4PN1P/PPP1BPP1/RN1QK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-522"
+    }
+  ]
+}

@@ -1,0 +1,3477 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Ruy Lopez",
+    "chunkKey": "ruy-lopez",
+    "recordCount": 231,
+    "lineCount": 199
+  },
+  "records": [
+    {
+      "id": "record-2544",
+      "eco": "C60",
+      "name": "Ruy Lopez",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2230"
+    },
+    {
+      "id": "record-2545",
+      "eco": "C60",
+      "name": "Ruy Lopez: Alapin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bb4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8b4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/1B2p3/1b2P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2231"
+    },
+    {
+      "id": "record-2546",
+      "eco": "C60",
+      "name": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bb4 4. c3 Ba5 5. Bxc6 dxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8b4 c2c3 b4a5 b5c6 d7c6",
+      "epd": "r1bqk1nr/ppp2ppp/2p5/b3p3/4P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2232"
+    },
+    {
+      "id": "record-2547",
+      "eco": "C60",
+      "name": "Ruy Lopez: Brentano Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 g5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g7g5",
+      "epd": "r1bqkbnr/pppp1p1p/2n5/1B2p1p1/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2233"
+    },
+    {
+      "id": "record-2548",
+      "eco": "C60",
+      "name": "Ruy Lopez: Bulgarian Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a5",
+      "epd": "r1bqkbnr/1ppp1ppp/2n5/pB2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2234"
+    },
+    {
+      "id": "record-2549",
+      "eco": "C60",
+      "name": "Ruy Lopez: Cozio Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8e7",
+      "epd": "r1bqkb1r/ppppnppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2235"
+    },
+    {
+      "id": "record-2550",
+      "eco": "C60",
+      "name": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 4. Nc3 g6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8e7 b1c3 g7g6",
+      "epd": "r1bqkb1r/ppppnp1p/2n3p1/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2236"
+    },
+    {
+      "id": "record-2551",
+      "eco": "C60",
+      "name": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 g6 4. d4 exd4 5. Nxd4 Bg7 6. Be3 Nge7 7. Nc3 O-O 8. Qd2 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g7g6 d2d4 e5d4 f3d4 f8g7 c1e3 g8e7 b1c3 e8g8 d1d2 d7d5",
+      "epd": "r1bq1rk1/ppp1npbp/2n3p1/1B1p4/3NP3/2N1B3/PPPQ1PPP/R3K2R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2237"
+    },
+    {
+      "id": "record-2552",
+      "eco": "C60",
+      "name": "Ruy Lopez: Fianchetto Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 g6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g7g6",
+      "epd": "r1bqkbnr/pppp1p1p/2n3p1/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2238"
+    },
+    {
+      "id": "record-2553",
+      "eco": "C60",
+      "name": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 g6 4. c3 f5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g7g6 c2c3 f7f5",
+      "epd": "r1bqkbnr/pppp3p/2n3p1/1B2pp2/4P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2239"
+    },
+    {
+      "id": "record-2554",
+      "eco": "C60",
+      "name": "Ruy Lopez: Lucena Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8e7",
+      "epd": "r1bqk1nr/ppppbppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2240"
+    },
+    {
+      "id": "record-2555",
+      "eco": "C60",
+      "name": "Ruy Lopez: Nürnberg Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f6",
+      "epd": "r1bqkbnr/pppp2pp/2n2p2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2241"
+    },
+    {
+      "id": "record-2556",
+      "eco": "C60",
+      "name": "Ruy Lopez: Pollock Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Na5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 c6a5",
+      "epd": "r1bqkbnr/pppp1ppp/8/nB2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2242"
+    },
+    {
+      "id": "record-2557",
+      "eco": "C60",
+      "name": "Ruy Lopez: Retreat Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nb8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 c6b8",
+      "epd": "rnbqkbnr/pppp1ppp/8/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2243"
+    },
+    {
+      "id": "record-2558",
+      "eco": "C60",
+      "name": "Ruy Lopez: Rotary-Albany Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 b6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 b7b6",
+      "epd": "r1bqkbnr/p1pp1ppp/1pn5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2244"
+    },
+    {
+      "id": "record-2559",
+      "eco": "C60",
+      "name": "Ruy Lopez: Spanish Countergambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d7d5",
+      "epd": "r1bqkbnr/ppp2ppp/2n5/1B1pp3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2245"
+    },
+    {
+      "id": "record-2560",
+      "eco": "C60",
+      "name": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d5 4. Nxe5 Qg5 5. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d7d5 f3e5 d8g5 e1g1",
+      "epd": "r1b1kbnr/ppp2ppp/2n5/1B1pN1q1/4P3/8/PPPP1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2246"
+    },
+    {
+      "id": "record-2561",
+      "eco": "C60",
+      "name": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d5 4. Nxe5 Qg5 5. Nxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d7d5 f3e5 d8g5 e5c6",
+      "epd": "r1b1kbnr/ppp2ppp/2N5/1B1p2q1/4P3/8/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2247"
+    },
+    {
+      "id": "record-2562",
+      "eco": "C60",
+      "name": "Ruy Lopez: Vinogradov Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Qe7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d8e7",
+      "epd": "r1b1kbnr/ppppqppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2248"
+    },
+    {
+      "id": "record-2563",
+      "eco": "C61",
+      "name": "Ruy Lopez: Bird Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 c6d4",
+      "epd": "r1bqkbnr/pppp1ppp/8/1B2p3/3nP3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2249"
+    },
+    {
+      "id": "record-2564",
+      "eco": "C61",
+      "name": "Ruy Lopez: Bird Variation, Paulsen Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. O-O Ne7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 c6d4 f3d4 e5d4 e1g1 g8e7",
+      "epd": "r1bqkb1r/ppppnppp/8/1B6/3pP3/8/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2250"
+    },
+    {
+      "id": "record-2565",
+      "eco": "C62",
+      "name": "Ruy Lopez: Old Steinitz Defense, Semi-Duras Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. c4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d7d6 d2d4 c8d7 c2c4",
+      "epd": "r2qkbnr/pppb1ppp/2np4/1B2p3/2PPP3/5N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2251"
+    },
+    {
+      "id": "record-2566",
+      "eco": "C62",
+      "name": "Ruy Lopez: Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d7d6",
+      "epd": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2252"
+    },
+    {
+      "id": "record-2567",
+      "eco": "C62",
+      "name": "Ruy Lopez: Steinitz Defense, Center Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d7d6 d2d4 e5d4 e1g1",
+      "epd": "r1bqkbnr/ppp2ppp/2np4/1B6/3pP3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2253"
+    },
+    {
+      "id": "record-2568",
+      "eco": "C62",
+      "name": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 Nf6 6. Bxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d7d6 d2d4 c8d7 b1c3 g8f6 b5c6",
+      "epd": "r2qkb1r/pppb1ppp/2Bp1n2/4p3/3PP3/2N2N2/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2254"
+    },
+    {
+      "id": "record-2569",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5",
+      "epd": "r1bqkbnr/pppp2pp/2n5/1B2pp2/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2255"
+    },
+    {
+      "id": "record-2570",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense, Classical Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. Nc3 fxe4 5. Nxe4 d5 6. Nxe5 dxe4 7. Nxc6 Qg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5 b1c3 f5e4 c3e4 d7d5 f3e5 d5e4 e5c6 d8g5",
+      "epd": "r1b1kbnr/ppp3pp/2N5/1B4q1/4p3/8/PPPP1PPP/R1BQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2256"
+    },
+    {
+      "id": "record-2571",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5 b1c3",
+      "epd": "r1bqkbnr/pppp2pp/2n5/1B2pp2/4P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2257"
+    },
+    {
+      "id": "record-2572",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense, Exchange Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. Bxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5 b5c6",
+      "epd": "r1bqkbnr/pppp2pp/2B5/4pp2/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2258"
+    },
+    {
+      "id": "record-2573",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. exf5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5 e4f5",
+      "epd": "r1bqkbnr/pppp2pp/2n5/1B2pP2/8/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2259"
+    },
+    {
+      "id": "record-2574",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense, Kostić Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. Nc3 fxe4 5. Nxe4 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5 b1c3 f5e4 c3e4 f8e7",
+      "epd": "r1bqk1nr/ppppb1pp/2n5/1B2p3/4N3/5N2/PPPP1PPP/R1BQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2260"
+    },
+    {
+      "id": "record-2575",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. Nc3 fxe4 5. Nxe4 d5 6. Nxe5 dxe4 7. Nxc6 Qd5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5 b1c3 f5e4 c3e4 d7d5 f3e5 d5e4 e5c6 d8d5",
+      "epd": "r1b1kbnr/ppp3pp/2N5/1B1q4/4p3/8/PPPP1PPP/R1BQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2261"
+    },
+    {
+      "id": "record-2576",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5 d2d4",
+      "epd": "r1bqkbnr/pppp2pp/2n5/1B2pp2/3PP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2262"
+    },
+    {
+      "id": "record-2577",
+      "eco": "C63",
+      "name": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f5 4. Nc3 fxe4 5. Nxe4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f7f5 b1c3 f5e4 c3e4 g8f6",
+      "epd": "r1bqkb1r/pppp2pp/2n2n2/1B2p3/4N3/5N2/PPPP1PPP/R1BQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2263"
+    },
+    {
+      "id": "record-2578",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Defense, Benelux Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 O-O 6. d4 Bb6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f8c5 c2c3 e8g8 d2d4 c5b6",
+      "epd": "r1bq1rk1/pppp1ppp/1bn2n2/1B2p3/3PP3/2P2N2/PP3PPP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2264"
+    },
+    {
+      "id": "record-2579",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Defense, Boden Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 Qe7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8c5 c2c3 d8e7",
+      "epd": "r1b1k1nr/ppppqppp/2n5/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2265"
+    },
+    {
+      "id": "record-2580",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nd4 5. b4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8c5 e1g1 c6d4 b2b4",
+      "epd": "r1bqk1nr/pppp1ppp/8/1Bb1p3/1P1nP3/5N2/P1PP1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2266"
+    },
+    {
+      "id": "record-2581",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8c5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/1Bb1p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2267"
+    },
+    {
+      "id": "record-2582",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Variation, Central Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8c5 c2c3",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2268"
+    },
+    {
+      "id": "record-2583",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Variation, Charousek Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 Bb6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8c5 c2c3 c5b6",
+      "epd": "r1bqk1nr/pppp1ppp/1bn5/1B2p3/4P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2269"
+    },
+    {
+      "id": "record-2584",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Variation, Cordel Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 f5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8c5 c2c3 f7f5",
+      "epd": "r1bqk1nr/pppp2pp/2n5/1Bb1pp2/4P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2270"
+    },
+    {
+      "id": "record-2585",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Variation, Konikowski Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. c3 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8c5 c2c3 d7d5",
+      "epd": "r1bqk1nr/ppp2ppp/2n5/1Bbpp3/4P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2271"
+    },
+    {
+      "id": "record-2586",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Variation, Modern Main Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 O-O 6. d4 Bb6 7. Bg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f8c5 c2c3 e8g8 d2d4 c5b6 c1g5",
+      "epd": "r1bq1rk1/pppp1ppp/1bn2n2/1B2p1B1/3PP3/2P2N2/PP3PPP/RN1Q1RK1 b - -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2272"
+    },
+    {
+      "id": "record-2587",
+      "eco": "C64",
+      "name": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. b4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 f8c5 b2b4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/1Bb1p3/1P2P3/5N2/P1PP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2273"
+    },
+    {
+      "id": "record-2588",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2274"
+    },
+    {
+      "id": "record-2589",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2274"
+    },
+    {
+      "id": "record-2590",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 d2d3",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/3P1N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2275"
+    },
+    {
+      "id": "record-2591",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Anderssen Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 d6 5. Bxc6+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 d2d3 d7d6 b5c6",
+      "epd": "r1bqkb1r/ppp2ppp/2Bp1n2/4p3/4P3/3P1N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2276"
+    },
+    {
+      "id": "record-2592",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Duras Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 d6 5. c4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 d2d3 d7d6 c2c4",
+      "epd": "r1bqkb1r/ppp2ppp/2np1n2/1B2p3/2P1P3/3P1N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2277"
+    },
+    {
+      "id": "record-2593",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Kaufmann Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Bc5 5. Be3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 d2d3 f8c5 c1e3",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/3PBN2/PPP2PPP/RN1QK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2278"
+    },
+    {
+      "id": "record-2594",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Trap",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Ne7 5. Nxe5 c6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 d2d3 c6e7 f3e5 c7c6",
+      "epd": "r1bqkb1r/pp1pnppp/2p2n2/1B2N3/4P3/3P4/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2279"
+    },
+    {
+      "id": "record-2595",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Ne7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 d2d3 c6e7",
+      "epd": "r1bqkb1r/ppppnppp/5n2/1B2p3/4P3/3P1N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2280"
+    },
+    {
+      "id": "record-2596",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Beverwijk Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f8c5",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2281"
+    },
+    {
+      "id": "record-2597",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Fishing Pole Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Ng4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6g4",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/1B2p3/4P1n1/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2282"
+    },
+    {
+      "id": "record-2598",
+      "eco": "C65",
+      "name": "Ruy Lopez: Berlin Defense, Nyholm Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d4 exd4 5. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 d2d4 e5d4 e1g1",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/1B6/3pP3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2283"
+    },
+    {
+      "id": "record-2599",
+      "eco": "C65",
+      "name": "Ruy Lopez: Classical Variation, Zukertort Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f8c5 c2c3",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2284"
+    },
+    {
+      "id": "record-2600",
+      "eco": "C65",
+      "name": "Ruy Lopez: Halloween Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. Nxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 f3e5",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/1B2N3/4P3/8/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2285"
+    },
+    {
+      "id": "record-2601",
+      "eco": "C66",
+      "name": "Ruy Lopez: Berlin Defense, Closed Bernstein Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 Bd7 6. Nc3 Be7 7. Bg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 d7d6 d2d4 c8d7 b1c3 f8e7 c1g5",
+      "epd": "r2qk2r/pppbbppp/2np1n2/1B2p1B1/3PP3/2N2N2/PPP2PPP/R2Q1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2286"
+    },
+    {
+      "id": "record-2602",
+      "eco": "C66",
+      "name": "Ruy Lopez: Berlin Defense, Closed Showalter Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 Bd7 6. Nc3 Be7 7. Bxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 d7d6 d2d4 c8d7 b1c3 f8e7 b5c6",
+      "epd": "r2qk2r/pppbbppp/2Bp1n2/4p3/3PP3/2N2N2/PPP2PPP/R1BQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2287"
+    },
+    {
+      "id": "record-2603",
+      "eco": "C66",
+      "name": "Ruy Lopez: Berlin Defense, Closed Wolf Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 Bd7 6. Nc3 exd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 d7d6 d2d4 c8d7 b1c3 e5d4",
+      "epd": "r2qkb1r/pppb1ppp/2np1n2/1B6/3pP3/2N2N2/PPP2PPP/R1BQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2288"
+    },
+    {
+      "id": "record-2604",
+      "eco": "C66",
+      "name": "Ruy Lopez: Berlin Defense, Hedgehog Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 Bd7 6. Nc3 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 d7d6 d2d4 c8d7 b1c3 f8e7",
+      "epd": "r2qk2r/pppbbppp/2np1n2/1B2p3/3PP3/2N2N2/PPP2PPP/R1BQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2289"
+    },
+    {
+      "id": "record-2605",
+      "eco": "C66",
+      "name": "Ruy Lopez: Berlin Defense, Improved Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 d7d6",
+      "epd": "r1bqkb1r/ppp2ppp/2np1n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2290"
+    },
+    {
+      "id": "record-2606",
+      "eco": "C66",
+      "name": "Ruy Lopez: Berlin Defense, Tarrasch Trap",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 Nf6 6. O-O Be7 7. Re1 O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 d7d6 d2d4 c8d7 b1c3 g8f6 e1g1 f8e7 f1e1 e8g8",
+      "epd": "r2q1rk1/pppbbppp/2np1n2/1B2p3/3PP3/2N2N2/PPP2PPP/R1BQR1K1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2291"
+    },
+    {
+      "id": "record-2607",
+      "eco": "C66",
+      "name": "Ruy Lopez: Closed Berlin Defense, Chigorin Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 Nd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 d7d6 d2d4 f6d7",
+      "epd": "r1bqkb1r/pppn1ppp/2np4/1B2p3/3PP3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2292"
+    },
+    {
+      "id": "record-2608",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Berlin Wall",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 9. Nc3 Bd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 e4d6 b5c6 d7c6 d4e5 d6f5 d1d8 e8d8 b1c3 c8d7",
+      "epd": "r2k1b1r/pppb1ppp/2p5/4Pn2/8/2N2N2/PPP2PPP/R1B2RK1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2293"
+    },
+    {
+      "id": "record-2609",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Cordel Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nf5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 f8e7 d1e2 e4d6 b5c6 b7c6 d4e5 d6f5",
+      "epd": "r1bqk2r/p1ppbppp/2p5/4Pn2/8/5N2/PPP1QPPP/RNB2RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2294"
+    },
+    {
+      "id": "record-2610",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Minckwitz Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. dxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 f8e7 d4e5",
+      "epd": "r1bqk2r/ppppbppp/2n5/1B2P3/4n3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2298"
+    },
+    {
+      "id": "record-2611",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Pillsbury Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. b3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 f8e7 d1e2 e4d6 b5c6 b7c6 d4e5 d6b7 b2b3",
+      "epd": "r1bqk2r/pnppbppp/2p5/4P3/8/1P3N2/P1P1QPPP/RNB2RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2299"
+    },
+    {
+      "id": "record-2612",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Rio Gambit Accepted",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/1B2p3/4n3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2301"
+    },
+    {
+      "id": "record-2613",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 f8e7",
+      "epd": "r1bqk2r/ppppbppp/2n5/1B2p3/3Pn3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2300"
+    },
+    {
+      "id": "record-2614",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. Nc3 O-O 10. Re1 Nc5 11. Nd4 Ne6 12. Be3 Nxd4 13. Bxd4 c5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 f8e7 d1e2 e4d6 b5c6 b7c6 d4e5 d6b7 b1c3 e8g8 f1e1 b7c5 f3d4 c5e6 c1e3 e6d4 e3d4 c6c5",
+      "epd": "r1bq1rk1/p1ppbppp/8/2p1P3/3B4/2N5/PPP1QPPP/R3R1K1 w - -",
+      "plyCount": 26,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 13
+      },
+      "lineId": "line-2300"
+    },
+    {
+      "id": "record-2615",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Rosenthal Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 a6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 a7a6",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n5/1B2p3/3Pn3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2302"
+    },
+    {
+      "id": "record-2616",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Trifunovic Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 f8e7 d1e2 d7d5",
+      "epd": "r1bqk2r/ppp1bppp/2n5/1B1pp3/3Pn3/5N2/PPP1QPPP/RNB2RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2303"
+    },
+    {
+      "id": "record-2617",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Winawer Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. Nd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 f8e7 d1e2 e4d6 b5c6 b7c6 d4e5 d6b7 f3d4",
+      "epd": "r1bqk2r/pnppbppp/2p5/4P3/3N4/8/PPP1QPPP/RNB2RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2304"
+    },
+    {
+      "id": "record-2618",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, Zukertort Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. c4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 f8e7 d1e2 e4d6 b5c6 b7c6 d4e5 d6b7 c2c4",
+      "epd": "r1bqk2r/pnppbppp/2p5/4P3/2P5/5N2/PP2QPPP/RNB2RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2305"
+    },
+    {
+      "id": "record-2619",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, l'Hermet Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 e4d6",
+      "epd": "r1bqkb1r/pppp1ppp/2nn4/1B2p3/3P4/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2295"
+    },
+    {
+      "id": "record-2620",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 e4d6 b5c6 d7c6 d4e5 d6f5 d1d8 e8d8",
+      "epd": "r1bk1b1r/ppp2ppp/2p5/4Pn2/8/5N2/PPP2PPP/RNB2RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2296"
+    },
+    {
+      "id": "record-2621",
+      "eco": "C67",
+      "name": "Ruy Lopez: Berlin Defense, l'Hermet Variation, Westerinen Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Ne4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 e4d6 b5c6 d7c6 d4e5 d6e4",
+      "epd": "r1bqkb1r/ppp2ppp/2p5/4P3/4n3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2297"
+    },
+    {
+      "id": "record-2622",
+      "eco": "C67",
+      "name": "Ruy Lopez: Open Berlin Defense, Showalter Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Ba4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 e4d6 b5a4",
+      "epd": "r1bqkb1r/pppp1ppp/2nn4/4p3/B2P4/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2307"
+    },
+    {
+      "id": "record-2623",
+      "eco": "C67",
+      "name": "Ruy Lopez: Open Berlin Defense, l'Hermet Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. dxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4 d2d4 e4d6 d4e5",
+      "epd": "r1bqkb1r/pppp1ppp/2nn4/1B2P3/8/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2306"
+    },
+    {
+      "id": "record-2624",
+      "eco": "C68",
+      "name": "Ruy Lopez: Exchange Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6",
+      "epd": "r1bqkbnr/1ppp1ppp/p1B5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2308"
+    },
+    {
+      "id": "record-2625",
+      "eco": "C68",
+      "name": "Ruy Lopez: Exchange Variation, Alekhine Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. d4 exd4 6. Qxd4 Qxd4 7. Nxd4 Bd6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 d2d4 e5d4 d1d4 d8d4 f3d4 f8d6",
+      "epd": "r1b1k1nr/1pp2ppp/p1pb4/8/3NP3/8/PPP2PPP/RNB1K2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2309"
+    },
+    {
+      "id": "record-2626",
+      "eco": "C68",
+      "name": "Ruy Lopez: Exchange Variation, Keres Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 b1c3",
+      "epd": "r1bqkbnr/1pp2ppp/p1p5/4p3/4P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2310"
+    },
+    {
+      "id": "record-2627",
+      "eco": "C68",
+      "name": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 bxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 b7c6",
+      "epd": "r1bqkbnr/2pp1ppp/p1p5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2311"
+    },
+    {
+      "id": "record-2628",
+      "eco": "C68",
+      "name": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. Nc3 f6 6. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 b1c3 f7f6 d2d3",
+      "epd": "r1bqkbnr/1pp3pp/p1p2p2/4p3/4P3/2NP1N2/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2312"
+    },
+    {
+      "id": "record-2629",
+      "eco": "C68",
+      "name": "Ruy Lopez: Exchange, Alekhine Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. d4 exd4 6. Qxd4 Qxd4 7. Nxd4 Bd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 d2d4 e5d4 d1d4 d8d4 f3d4 c8d7",
+      "epd": "r3kbnr/1ppb1ppp/p1p5/8/3NP3/8/PPP2PPP/RNB1K2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2313"
+    },
+    {
+      "id": "record-2630",
+      "eco": "C69",
+      "name": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. O-O Bg4 6. h3 h5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 e1g1 c8g4 h2h3 h7h5",
+      "epd": "r2qkbnr/1pp2pp1/p1p5/4p2p/4P1b1/5N1P/PPPP1PP1/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2314"
+    },
+    {
+      "id": "record-2631",
+      "eco": "C69",
+      "name": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. O-O Qd6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 e1g1 d8d6",
+      "epd": "r1b1kbnr/1pp2ppp/p1pq4/4p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2315"
+    },
+    {
+      "id": "record-2632",
+      "eco": "C69",
+      "name": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. O-O f6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 e1g1 f7f6",
+      "epd": "r1bqkbnr/1pp3pp/p1p2p2/4p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2316"
+    },
+    {
+      "id": "record-2633",
+      "eco": "C69",
+      "name": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. O-O Bd6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 e1g1 f8d6",
+      "epd": "r1bqk1nr/1pp2ppp/p1pb4/4p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2317"
+    },
+    {
+      "id": "record-2634",
+      "eco": "C69",
+      "name": "Ruy Lopez: Exchange Variation, Normal Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6 e1g1",
+      "epd": "r1bqkbnr/1pp2ppp/p1p5/4p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2318"
+    },
+    {
+      "id": "record-2635",
+      "eco": "C70",
+      "name": "Ruy Lopez: Bird's Defense Deferred",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 c6d4",
+      "epd": "r1bqkbnr/1ppp1ppp/p7/4p3/B2nP3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2319"
+    },
+    {
+      "id": "record-2636",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6",
+      "epd": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2320"
+    },
+    {
+      "id": "record-2637",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Alapin's Defense Deferred",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Bb4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 f8b4",
+      "epd": "r1bqk1nr/1ppp1ppp/p1n5/4p3/Bb2P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2321"
+    },
+    {
+      "id": "record-2638",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Caro Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5",
+      "epd": "r1bqkbnr/2pp1ppp/p1n5/1p2p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2322"
+    },
+    {
+      "id": "record-2639",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 f8c5",
+      "epd": "r1bqk1nr/1ppp1ppp/p1n5/2b1p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2323"
+    },
+    {
+      "id": "record-2640",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Cozio Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nge7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8e7",
+      "epd": "r1bqkb1r/1pppnppp/p1n5/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2324"
+    },
+    {
+      "id": "record-2641",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Fianchetto Defense Deferred",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 g6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g7g6",
+      "epd": "r1bqkbnr/1ppp1p1p/p1n3p1/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2325"
+    },
+    {
+      "id": "record-2642",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Graz Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 f8c5",
+      "epd": "r1bqk1nr/2pp1ppp/p1n5/1pb1p3/4P3/1B3N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2326"
+    },
+    {
+      "id": "record-2643",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Norwegian Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Na5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5",
+      "epd": "r1bqkbnr/2pp1ppp/p7/np2p3/4P3/1B3N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2327"
+    },
+    {
+      "id": "record-2644",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Norwegian Variation, Nightingale Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Na5 6. Bxf7+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 c6a5 b3f7",
+      "epd": "r1bqkbnr/2pp1Bpp/p7/np2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2328"
+    },
+    {
+      "id": "record-2645",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 f5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 f7f5",
+      "epd": "r1bqkbnr/1ppp2pp/p1n5/4pp2/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2329"
+    },
+    {
+      "id": "record-2646",
+      "eco": "C70",
+      "name": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 f5 5. exf5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 f7f5 e4f5",
+      "epd": "r1bqkbnr/1ppp2pp/p1n5/4pP2/B7/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2330"
+    },
+    {
+      "id": "record-2647",
+      "eco": "C71",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6",
+      "epd": "r1bqkbnr/1pp2ppp/p1np4/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2648",
+      "eco": "C71",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 b1c3",
+      "epd": "r1bqkbnr/1pp2ppp/p1np4/4p3/B3P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2649",
+      "eco": "C71",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. c4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 c2c4",
+      "epd": "r1bqkbnr/1pp2ppp/p1np4/4p3/B1P1P3/5N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2650",
+      "eco": "C71",
+      "name": "Ruy Lopez: Noah's Ark Trap",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 d6 6. d4 Nxd4 7. Nxd4 exd4 8. Qxd4 c5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 b7b5 a4b3 d7d6 d2d4 c6d4 f3d4 e5d4 d1d4 c7c5",
+      "epd": "r1bqkbnr/5ppp/p2p4/1pp5/3QP3/1B6/PPP2PPP/RNB1K2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2332"
+    },
+    {
+      "id": "record-2651",
+      "eco": "C72",
+      "name": "Ruy Lopez: Closed, Kecskemet Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Bd7 6. c3 Nf6 7. d4 Be7 8. Nbd2 O-O 9. Re1 Be8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 e1g1 c8d7 c2c3 g8f6 d2d4 f8e7 b1d2 e8g8 f1e1 d7e8",
+      "epd": "r2qbrk1/1pp1bppp/p1np1n2/4p3/B2PP3/2P2N2/PP1N1PPP/R1BQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2333"
+    },
+    {
+      "id": "record-2652",
+      "eco": "C72",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 e1g1",
+      "epd": "r1bqkbnr/1pp2ppp/p1np4/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2653",
+      "eco": "C73",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. Bxc6+ bxc6 6. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 a4c6 b7c6 d2d4",
+      "epd": "r1bqkbnr/2p2ppp/p1pp4/4p3/3PP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2654",
+      "eco": "C73",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. Bxc6+ bxc6 6. d4 f6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 a4c6 b7c6 d2d4 f7f6",
+      "epd": "r1bqkbnr/2p3pp/p1pp1p2/4p3/3PP3/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2655",
+      "eco": "C74",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 c2c3",
+      "epd": "r1bqkbnr/1pp2ppp/p1np4/4p3/B3P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2656",
+      "eco": "C74",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. c3 f5 6. exf5 Bxf5 7. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 c2c3 f7f5 e4f5 c8f5 e1g1",
+      "epd": "r2qkbnr/1pp3pp/p1np4/4pb2/B7/2P2N2/PP1P1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2657",
+      "eco": "C74",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Siesta Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. c3 f5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 c2c3 f7f5",
+      "epd": "r1bqkbnr/1pp3pp/p1np4/4pp2/B3P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2334"
+    },
+    {
+      "id": "record-2658",
+      "eco": "C75",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. c3 Bd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 c2c3 c8d7",
+      "epd": "r2qkbnr/1ppb1ppp/p1np4/4p3/B3P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2659",
+      "eco": "C75",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. c3 Bd7 6. d4 Nge7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 d7d6 c2c3 c8d7 d2d4 g8e7",
+      "epd": "r2qkb1r/1ppbnppp/p1np4/4p3/B2PP3/2P2N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2331"
+    },
+    {
+      "id": "record-2660",
+      "eco": "C76",
+      "name": "Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Fianchetto Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 g6 4. c3 a6 5. Ba4 d6 6. d4 Bd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 g7g6 c2c3 a7a6 b5a4 d7d6 d2d4 c8d7",
+      "epd": "r2qkbnr/1ppb1p1p/p1np2p1/4p3/B2PP3/2P2N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2335"
+    },
+    {
+      "id": "record-2661",
+      "eco": "C77",
+      "name": "Ruy Lopez: Morphy Defense, Anderssen Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 d2d3",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/3P1N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2336"
+    },
+    {
+      "id": "record-2662",
+      "eco": "C77",
+      "name": "Ruy Lopez: Morphy Defense, Bayreuth Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Bxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 a4c6",
+      "epd": "r1bqkb1r/1ppp1ppp/p1B2n2/4p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2337"
+    },
+    {
+      "id": "record-2663",
+      "eco": "C77",
+      "name": "Ruy Lopez: Morphy Defense, Duras Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d3 d6 6. c4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 d2d3 d7d6 c2c4",
+      "epd": "r1bqkb1r/1pp2ppp/p1np1n2/4p3/B1P1P3/3P1N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2338"
+    },
+    {
+      "id": "record-2664",
+      "eco": "C77",
+      "name": "Ruy Lopez: Morphy Defense, Jaffe Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 c2c3",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2339"
+    },
+    {
+      "id": "record-2665",
+      "eco": "C77",
+      "name": "Ruy Lopez: Morphy Defense, Mackenzie Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 d2d4",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B2PP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2340"
+    },
+    {
+      "id": "record-2666",
+      "eco": "C77",
+      "name": "Ruy Lopez: Morphy Defense, Tarrasch Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 b1c3",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2341"
+    },
+    {
+      "id": "record-2667",
+      "eco": "C77",
+      "name": "Ruy Lopez: Morphy Defense, Wormald Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Qe2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 d1e2",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPPQPPP/RNB1K2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2342"
+    },
+    {
+      "id": "record-2668",
+      "eco": "C77",
+      "name": "Ruy Lopez: Wormald Attack, Grünfeld Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Qe2 b5 6. Bb3 Be7 7. d4 d6 8. c3 Bg4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 d1e2 b7b5 a4b3 f8e7 d2d4 d7d6 c2c3 c8g4",
+      "epd": "r2qk2r/2p1bppp/p1np1n2/1p2p3/3PP1b1/1BP2N2/PP2QPPP/RNB1K2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2343"
+    },
+    {
+      "id": "record-2669",
+      "eco": "C78",
+      "name": "Ruy Lopez: Brix Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O g6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 g7g6",
+      "epd": "r1bqkb1r/1ppp1p1p/p1n2np1/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2344"
+    },
+    {
+      "id": "record-2670",
+      "eco": "C78",
+      "name": "Ruy Lopez: Central Countergambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 d7d5",
+      "epd": "r1bqkb1r/1pp2ppp/p1n2n2/3pp3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2345"
+    },
+    {
+      "id": "record-2671",
+      "eco": "C78",
+      "name": "Ruy Lopez: Morphy Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2320"
+    },
+    {
+      "id": "record-2672",
+      "eco": "C78",
+      "name": "Ruy Lopez: Morphy Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 b7b5 a4b3 d7d6",
+      "epd": "r1bqkb1r/2p2ppp/p1np1n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2320"
+    },
+    {
+      "id": "record-2673",
+      "eco": "C78",
+      "name": "Ruy Lopez: Morphy Defense, Arkhangelsk Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Bb7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 b7b5 a4b3 c8b7",
+      "epd": "r2qkb1r/1bpp1ppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2346"
+    },
+    {
+      "id": "record-2674",
+      "eco": "C78",
+      "name": "Ruy Lopez: Morphy Defense, Neo-Arkhangelsk Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8c5",
+      "epd": "r1bqk2r/1ppp1ppp/p1n2n2/2b1p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2347"
+    },
+    {
+      "id": "record-2675",
+      "eco": "C78",
+      "name": "Ruy Lopez: Morphy Defense, Wing Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Be7 7. a4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 b7b5 a4b3 f8e7 a2a4",
+      "epd": "r1bqk2r/2ppbppp/p1n2n2/1p2p3/P3P3/1B3N2/1PPP1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2348"
+    },
+    {
+      "id": "record-2676",
+      "eco": "C78",
+      "name": "Ruy Lopez: Rabinovich Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 d6 7. Ng5 d5 8. exd5 Nd4 9. Re1 Bc5 10. Rxe5+ Kf8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 b7b5 a4b3 d7d6 f3g5 d6d5 e4d5 c6d4 f1e1 f8c5 e1e5 e8f8",
+      "epd": "r1bq1k1r/2p2ppp/p4n2/1pbPR1N1/3n4/1B6/PPPP1PPP/RNBQ2K1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2349"
+    },
+    {
+      "id": "record-2677",
+      "eco": "C79",
+      "name": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 d7d6",
+      "epd": "r1bqkb1r/1pp2ppp/p1np1n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2350"
+    },
+    {
+      "id": "record-2678",
+      "eco": "C79",
+      "name": "Ruy Lopez: Morphy Defense, Steinitz Deferred",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O d6 6. Bxc6+ bxc6 7. d4 Nxe4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 d7d6 a4c6 b7c6 d2d4 f6e4",
+      "epd": "r1bqkb1r/2p2ppp/p1pp4/4p3/3Pn3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2350"
+    },
+    {
+      "id": "record-2679",
+      "eco": "C79",
+      "name": "Ruy Lopez: Steinitz Defense Deferred, Boleslavsky Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O d6 6. Bxc6+ bxc6 7. d4 Nxe4 8. Re1 f5 9. dxe5 d5 10. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 d7d6 a4c6 b7c6 d2d4 f6e4 f1e1 f7f5 d4e5 d6d5 b1c3",
+      "epd": "r1bqkb1r/2p3pp/p1p5/3pPp2/4n3/2N2N2/PPP2PPP/R1BQR1K1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2351"
+    },
+    {
+      "id": "record-2680",
+      "eco": "C79",
+      "name": "Ruy Lopez: Steinitz Defense Deferred, Lipnitsky Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O d6 6. Bxc6+ bxc6 7. d4 Bg4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 d7d6 a4c6 b7c6 d2d4 c8g4",
+      "epd": "r2qkb1r/2p2ppp/p1pp1n2/4p3/3PP1b1/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2352"
+    },
+    {
+      "id": "record-2681",
+      "eco": "C80",
+      "name": "Ruy Lopez: Morphy Defense, Tartakower Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. Qe2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d1e2",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n5/4p3/B3n3/5N2/PPPPQPPP/RNB2RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2353"
+    },
+    {
+      "id": "record-2682",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n5/4p3/B3n3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2354"
+    },
+    {
+      "id": "record-2683",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n5/4p3/B2Pn3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2354"
+    },
+    {
+      "id": "record-2684",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3",
+      "epd": "r1bqkb1r/2pp1ppp/p1n5/1p2p3/3Pn3/1B3N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2354"
+    },
+    {
+      "id": "record-2685",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5",
+      "epd": "r1bqkb1r/2p2ppp/p1n5/1p1pP3/4n3/1B3N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2354"
+    },
+    {
+      "id": "record-2686",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Berger Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. a4 Nxd4 9. Nxd4 exd4 10. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 a2a4 c6d4 f3d4 e5d4 b1c3",
+      "epd": "r1bqkb1r/2p2ppp/p7/1p1p4/P2pn3/1BN5/1PP2PPP/R1BQ1RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2355"
+    },
+    {
+      "id": "record-2687",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Bernstein Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Nbd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 b1d2",
+      "epd": "r2qkb1r/2p2ppp/p1n1b3/1p1pP3/4n3/1B3N2/PPPN1PPP/R1BQ1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2356"
+    },
+    {
+      "id": "record-2688",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Bernstein Variation, Luther Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Nbd2 Bc5 10. Qe1",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 b1d2 f8c5 d1e1",
+      "epd": "r2qk2r/2p2ppp/p1n1b3/1pbpP3/4n3/1B3N2/PPPN1PPP/R1B1QRK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2357"
+    },
+    {
+      "id": "record-2689",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Friess Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Nxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 f3e5",
+      "epd": "r1bqkb1r/2pp1ppp/p1n5/1p2N3/B2Pn3/8/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2358"
+    },
+    {
+      "id": "record-2690",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Harksen Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. c4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 c2c4",
+      "epd": "r1bqkb1r/2p2ppp/p1n5/1p1pp3/2PPn3/1B3N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2359"
+    },
+    {
+      "id": "record-2691",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Karpov Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Nbd2 Nc5 10. c3 d4 11. Ng5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 b1d2 e4c5 c2c3 d5d4 f3g5",
+      "epd": "r2qkb1r/2p2ppp/p1n1b3/1pn1P1N1/3p4/1BP5/PP1N1PPP/R1BQ1RK1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2360"
+    },
+    {
+      "id": "record-2692",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Knorre Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 b1c3",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n5/4p3/B3n3/2N2N2/PPPP1PPP/R1BQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2361"
+    },
+    {
+      "id": "record-2693",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Main Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6",
+      "epd": "r2qkb1r/2p2ppp/p1n1b3/1p1pP3/4n3/1B3N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2362"
+    },
+    {
+      "id": "record-2694",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Richter Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 d4d5",
+      "epd": "r1bqkb1r/2pp1ppp/p1n5/1p1Pp3/B3n3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2363"
+    },
+    {
+      "id": "record-2695",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Riga Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 exd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 e5d4",
+      "epd": "r1bqkb1r/1ppp1ppp/p1n5/8/B2pn3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2364"
+    },
+    {
+      "id": "record-2696",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Schlechter Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. a4 Nxd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 a2a4 c6d4",
+      "epd": "r1bqkb1r/2p2ppp/p7/1p1pp3/P2nn3/1B3N2/1PP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2365"
+    },
+    {
+      "id": "record-2697",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Skipworth Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. Re1 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 f1e1 d7d5",
+      "epd": "r1bqkb1r/1pp2ppp/p1n5/3pp3/B3n3/5N2/PPPP1PPP/RNBQR1K1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2366"
+    },
+    {
+      "id": "record-2698",
+      "eco": "C80",
+      "name": "Ruy Lopez: Open, Zukertort Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Ne7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c6e7",
+      "epd": "r1bqkb1r/2p1nppp/p7/1p1pP3/4n3/1B3N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2367"
+    },
+    {
+      "id": "record-2699",
+      "eco": "C81",
+      "name": "Ruy Lopez: Open, Howell Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Qe2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 d1e2",
+      "epd": "r2qkb1r/2p2ppp/p1n1b3/1p1pP3/4n3/1B3N2/PPP1QPPP/RNB2RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2368"
+    },
+    {
+      "id": "record-2700",
+      "eco": "C81",
+      "name": "Ruy Lopez: Open, Howell Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Qe2 Be7 10. c4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 d1e2 f8e7 c2c4",
+      "epd": "r2qk2r/2p1bppp/p1n1b3/1p1pP3/2P1n3/1B3N2/PP2QPPP/RNB2RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2368"
+    },
+    {
+      "id": "record-2701",
+      "eco": "C81",
+      "name": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Qe2 Be7 10. Rd1 O-O 11. c4 bxc4 12. Bxc4 Qd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 d1e2 f8e7 f1d1 e8g8 c2c4 b5c4 b3c4 d8d7",
+      "epd": "r4rk1/2pqbppp/p1n1b3/3pP3/2B1n3/5N2/PP2QPPP/RNBR2K1 w - -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-2369"
+    },
+    {
+      "id": "record-2702",
+      "eco": "C82",
+      "name": "Ruy Lopez: Open",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3",
+      "epd": "r2qkb1r/2p2ppp/p1n1b3/1p1pP3/4n3/1BP2N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2354"
+    },
+    {
+      "id": "record-2703",
+      "eco": "C82",
+      "name": "Ruy Lopez: Open, Berlin Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Nc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 e4c5",
+      "epd": "r2qkb1r/2p2ppp/p1n1b3/1pnpP3/8/1BP2N2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2370"
+    },
+    {
+      "id": "record-2704",
+      "eco": "C82",
+      "name": "Ruy Lopez: Open, Dilworth Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Bc5 10. Nbd2 O-O 11. Bc2 Nxf2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8c5 b1d2 e8g8 b3c2 e4f2",
+      "epd": "r2q1rk1/2p2ppp/p1n1b3/1pbpP3/8/2P2N2/PPBN1nPP/R1BQ1RK1 w - -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2371"
+    },
+    {
+      "id": "record-2705",
+      "eco": "C82",
+      "name": "Ruy Lopez: Open, Italian Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8c5",
+      "epd": "r2qk2r/2p2ppp/p1n1b3/1pbpP3/4n3/1BP2N2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2372"
+    },
+    {
+      "id": "record-2706",
+      "eco": "C82",
+      "name": "Ruy Lopez: Open, Motzko Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Bc5 10. Qd3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8c5 d1d3",
+      "epd": "r2qk2r/2p2ppp/p1n1b3/1pbpP3/4n3/1BPQ1N2/PP3PPP/RNB2RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2373"
+    },
+    {
+      "id": "record-2707",
+      "eco": "C82",
+      "name": "Ruy Lopez: Open, Motzko Attack, Nenarokov Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Bc5 10. Qd3 Ne7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8c5 d1d3 c6e7",
+      "epd": "r2qk2r/2p1nppp/p3b3/1pbpP3/4n3/1BPQ1N2/PP3PPP/RNB2RK1 w kq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2374"
+    },
+    {
+      "id": "record-2708",
+      "eco": "C82",
+      "name": "Ruy Lopez: Open, St. Petersburg Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Bc5 10. Nbd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8c5 b1d2",
+      "epd": "r2qk2r/2p2ppp/p1n1b3/1pbpP3/4n3/1BP2N2/PP1N1PPP/R1BQ1RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2375"
+    },
+    {
+      "id": "record-2709",
+      "eco": "C83",
+      "name": "Ruy Lopez: Open, Breslau Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Be7 10. Re1 O-O 11. Nd4 Nxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8e7 f1e1 e8g8 f3d4 c6e5",
+      "epd": "r2q1rk1/2p1bppp/p3b3/1p1pn3/3Nn3/1BP5/PP3PPP/RNBQR1K1 w - -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2376"
+    },
+    {
+      "id": "record-2710",
+      "eco": "C83",
+      "name": "Ruy Lopez: Open, Classical Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8e7",
+      "epd": "r2qk2r/2p1bppp/p1n1b3/1p1pP3/4n3/1BP2N2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2377"
+    },
+    {
+      "id": "record-2711",
+      "eco": "C83",
+      "name": "Ruy Lopez: Open, Classical Defense, Main Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 Be7 7. Re1 b5 8. Bb3 d5 9. dxe5 Be6 10. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 f8e7 f1e1 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3",
+      "epd": "r2qk2r/2p1bppp/p1n1b3/1p1pP3/4n3/1BP2N2/PP3PPP/RNBQR1K1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2378"
+    },
+    {
+      "id": "record-2712",
+      "eco": "C83",
+      "name": "Ruy Lopez: Open, Malkin Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Be7 10. Nbd2 O-O 11. Qe2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8e7 b1d2 e8g8 d1e2",
+      "epd": "r2q1rk1/2p1bppp/p1n1b3/1p1pP3/4n3/1BP2N2/PP1NQPPP/R1B2RK1 b - -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2379"
+    },
+    {
+      "id": "record-2713",
+      "eco": "C83",
+      "name": "Ruy Lopez: Open, Tarrasch Trap",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Be7 10. Re1 O-O 11. Nd4 Qd7 12. Nxe6 fxe6 13. Rxe4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f6e4 d2d4 b7b5 a4b3 d7d5 d4e5 c8e6 c2c3 f8e7 f1e1 e8g8 f3d4 d8d7 d4e6 f7e6 e1e4",
+      "epd": "r4rk1/2pqb1pp/p1n1p3/1p1pP3/4R3/1BP5/PP3PPP/RNBQ2K1 b - -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2380"
+    },
+    {
+      "id": "record-2714",
+      "eco": "C84",
+      "name": "Ruy Lopez: Closed",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7",
+      "epd": "r1bqk2r/1pppbppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2381"
+    },
+    {
+      "id": "record-2715",
+      "eco": "C84",
+      "name": "Ruy Lopez: Closed, Basque Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d4 exd4 7. e5 Ne4 8. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 d2d4 e5d4 e4e5 f6e4 c2c3",
+      "epd": "r1bqk2r/1pppbppp/p1n5/4P3/B2pn3/2P2N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2382"
+    },
+    {
+      "id": "record-2716",
+      "eco": "C84",
+      "name": "Ruy Lopez: Closed, Center Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 d2d4",
+      "epd": "r1bqk2r/1pppbppp/p1n2n2/4p3/B2PP3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2383"
+    },
+    {
+      "id": "record-2717",
+      "eco": "C84",
+      "name": "Ruy Lopez: Closed, Center Attack, Basque Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d4 exd4 7. e5 Ne4 8. c3 dxc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 d2d4 e5d4 e4e5 f6e4 c2c3 d4c3",
+      "epd": "r1bqk2r/1pppbppp/p1n5/4P3/B3n3/2p2N2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2384"
+    },
+    {
+      "id": "record-2718",
+      "eco": "C84",
+      "name": "Ruy Lopez: Closed, Martinez Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 d2d3",
+      "epd": "r1bqk2r/1pppbppp/p1n2n2/4p3/B3P3/3P1N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2385"
+    },
+    {
+      "id": "record-2719",
+      "eco": "C84",
+      "name": "Ruy Lopez: Closed, Morphy Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 b1c3",
+      "epd": "r1bqk2r/1pppbppp/p1n2n2/4p3/B3P3/2N2N2/PPPP1PPP/R1BQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2386"
+    },
+    {
+      "id": "record-2720",
+      "eco": "C85",
+      "name": "Ruy Lopez: Closed, Delayed Exchange",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Bxc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 a4c6",
+      "epd": "r1bqk2r/1pppbppp/p1B2n2/4p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2387"
+    },
+    {
+      "id": "record-2721",
+      "eco": "C86",
+      "name": "Ruy Lopez: Closed, Worrall Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Qe2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 d1e2",
+      "epd": "r1bqk2r/1pppbppp/p1n2n2/4p3/B3P3/5N2/PPPPQPPP/RNB2RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2388"
+    },
+    {
+      "id": "record-2722",
+      "eco": "C86",
+      "name": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Qe2 b5 7. Bb3 O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 d1e2 b7b5 a4b3 e8g8",
+      "epd": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2389"
+    },
+    {
+      "id": "record-2723",
+      "eco": "C86",
+      "name": "Ruy Lopez: Closed, Worrall Attack, Castling Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Qe2 Be7 6. O-O b5 7. Bb3 O-O 8. c3 d5 9. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 d1e2 f8e7 e1g1 b7b5 a4b3 e8g8 c2c3 d7d5 d2d3",
+      "epd": "r1bq1rk1/2p1bppp/p1n2n2/1p1pp3/4P3/1BPP1N2/PP2QPPP/RNB2RK1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2389"
+    },
+    {
+      "id": "record-2724",
+      "eco": "C86",
+      "name": "Ruy Lopez: Closed, Worrall Attack, Delayed Castling Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Qe2 b5 7. Bb3 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 d1e2 b7b5 a4b3 d7d6",
+      "epd": "r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2390"
+    },
+    {
+      "id": "record-2725",
+      "eco": "C87",
+      "name": "Ruy Lopez: Closed, Averbakh Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 d7d6",
+      "epd": "r1bqk2r/1pp1bppp/p1np1n2/4p3/B3P3/5N2/PPPP1PPP/RNBQR1K1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2391"
+    },
+    {
+      "id": "record-2726",
+      "eco": "C88",
+      "name": "Ruy Lopez: Closed",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3",
+      "epd": "r1bqk2r/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2381"
+    },
+    {
+      "id": "record-2727",
+      "eco": "C88",
+      "name": "Ruy Lopez: Closed",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8",
+      "epd": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2381"
+    },
+    {
+      "id": "record-2728",
+      "eco": "C88",
+      "name": "Ruy Lopez: Closed, Alekhine Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 Na5 9. Bc2 c5 10. d4 Qc7 11. Nbd2 O-O 12. Nf1 Bg4 13. Ne3 Bxf3 14. Qxf3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 c6a5 b3c2 c7c5 d2d4 d8c7 b1d2 e8g8 d2f1 c8g4 f1e3 g4f3 d1f3",
+      "epd": "r4rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P1NQ2/PPB2PPP/R1B1R1K1 b - -",
+      "plyCount": 27,
+      "playerMoveCounts": {
+        "white": 14,
+        "black": 13
+      },
+      "lineId": "line-2392"
+    },
+    {
+      "id": "record-2729",
+      "eco": "C88",
+      "name": "Ruy Lopez: Closed, Anti-Marshall",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. a4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 a2a4",
+      "epd": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/P3P3/1B3N2/1PPP1PPP/RNBQR1K1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2393"
+    },
+    {
+      "id": "record-2730",
+      "eco": "C88",
+      "name": "Ruy Lopez: Closed, Balla Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 Na5 9. Bc2 c5 10. d4 Qc7 11. a4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 c6a5 b3c2 c7c5 d2d4 d8c7 a2a4",
+      "epd": "r1b1k2r/2q1bppp/p2p1n2/npp1p3/P2PP3/2P2N2/1PB2PPP/RNBQR1K1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2394"
+    },
+    {
+      "id": "record-2731",
+      "eco": "C88",
+      "name": "Ruy Lopez: Closed, Leonhardt Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 Na5 9. Bc2 c5 10. d4 Qc7 11. h3 Nc6 12. d5 Nb8 13. Nbd2 g5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 c6a5 b3c2 c7c5 d2d4 d8c7 h2h3 a5c6 d4d5 c6b8 b1d2 g7g5",
+      "epd": "rnb1k2r/2q1bp1p/p2p1n2/1ppPp1p1/4P3/2P2N1P/PPBN1PP1/R1BQR1K1 w kq -",
+      "plyCount": 26,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 13
+      },
+      "lineId": "line-2395"
+    },
+    {
+      "id": "record-2732",
+      "eco": "C88",
+      "name": "Ruy Lopez: Closed, Rosen Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 d2d4",
+      "epd": "r1bqk2r/2p1bppp/p1np1n2/1p2p3/3PP3/1B3N2/PPP2PPP/RNBQR1K1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2396"
+    },
+    {
+      "id": "record-2733",
+      "eco": "C88",
+      "name": "Ruy Lopez: Closed, Trajkovic Counterattack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 Bb7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 c8b7",
+      "epd": "r2qk2r/1bppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2397"
+    },
+    {
+      "id": "record-2734",
+      "eco": "C88",
+      "name": "Ruy Lopez: Noah's Ark Trap",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. d4 Nxd4 9. Nxd4 exd4 10. Qxd4 c5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 d2d4 c6d4 f3d4 e5d4 d1d4 c7c5",
+      "epd": "r1bqk2r/4bppp/p2p1n2/1pp5/3QP3/1B6/PPP2PPP/RNB1R1K1 w kq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2332"
+    },
+    {
+      "id": "record-2735",
+      "eco": "C89",
+      "name": "Ruy Lopez: Marshall Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 c2c3 d7d5",
+      "epd": "r1bq1rk1/2p1bppp/p1n2n2/1p1pp3/4P3/1BP2N2/PP1P1PPP/RNBQR1K1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2398"
+    },
+    {
+      "id": "record-2736",
+      "eco": "C89",
+      "name": "Ruy Lopez: Marshall Attack, Main Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 c2c3 d7d5 e4d5 f6d5 f3e5 c6e5 e1e5 c7c6 d2d4",
+      "epd": "r1bq1rk1/4bppp/p1p5/1p1nR3/3P4/1BP5/PP3PPP/RNBQ2K1 b - -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-2399"
+    },
+    {
+      "id": "record-2737",
+      "eco": "C89",
+      "name": "Ruy Lopez: Marshall Attack, Main Line, Spassky Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Be3 Bg4 16. Qd3 Rae8 17. Nd2 Re6 18. a4 Qh5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 c2c3 d7d5 e4d5 f6d5 f3e5 c6e5 e1e5 c7c6 d2d4 e7d6 e5e1 d8h4 g2g3 h4h3 c1e3 c8g4 d1d3 a8e8 b1d2 e8e6 a2a4 h3h5",
+      "epd": "5rk1/5ppp/p1pbr3/1p1n3q/P2P2b1/1BPQB1P1/1P1N1P1P/R3R1K1 w - -",
+      "plyCount": 36,
+      "playerMoveCounts": {
+        "white": 18,
+        "black": 18
+      },
+      "lineId": "line-2400"
+    },
+    {
+      "id": "record-2738",
+      "eco": "C89",
+      "name": "Ruy Lopez: Marshall Attack, Modern Main Line",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 c2c3 d7d5 e4d5 f6d5 f3e5 c6e5 e1e5 c7c6 d2d4 e7d6 e5e1 d8h4 g2g3 h4h3",
+      "epd": "r1b2rk1/5ppp/p1pb4/1p1n4/3P4/1BP3Pq/PP3P1P/RNBQR1K1 w - -",
+      "plyCount": 28,
+      "playerMoveCounts": {
+        "white": 14,
+        "black": 14
+      },
+      "lineId": "line-2401"
+    },
+    {
+      "id": "record-2739",
+      "eco": "C89",
+      "name": "Ruy Lopez: Marshall Attack, Modern Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 c2c3 d7d5 e4d5 f6d5 f3e5 c6e5 e1e5 c7c6",
+      "epd": "r1bq1rk1/4bppp/p1p5/1p1nR3/8/1BP5/PP1P1PPP/RNBQ2K1 w - -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2402"
+    },
+    {
+      "id": "record-2740",
+      "eco": "C89",
+      "name": "Ruy Lopez: Marshall Attack, Original Marshall Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 c2c3 d7d5 e4d5 f6d5 f3e5 c6e5 e1e5 d5f6",
+      "epd": "r1bq1rk1/2p1bppp/p4n2/1p2R3/8/1BP5/PP1P1PPP/RNBQ2K1 w - -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2403"
+    },
+    {
+      "id": "record-2741",
+      "eco": "C89",
+      "name": "Ruy Lopez: Marshall Attack, Re3 Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. Bxd5 cxd5 13. d4 Bd6 14. Re3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 c2c3 d7d5 e4d5 f6d5 f3e5 c6e5 e1e5 c7c6 b3d5 c6d5 d2d4 e7d6 e5e3",
+      "epd": "r1bq1rk1/5ppp/p2b4/1p1p4/3P4/2P1R3/PP3PPP/RNBQ2K1 b - -",
+      "plyCount": 27,
+      "playerMoveCounts": {
+        "white": 14,
+        "black": 13
+      },
+      "lineId": "line-2404"
+    },
+    {
+      "id": "record-2742",
+      "eco": "C89",
+      "name": "Ruy Lopez: Marshall Attack, Steiner Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 e4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 c2c3 d7d5 e4d5 e5e4",
+      "epd": "r1bq1rk1/2p1bppp/p1n2n2/1p1P4/4p3/1BP2N2/PP1P1PPP/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2405"
+    },
+    {
+      "id": "record-2743",
+      "eco": "C90",
+      "name": "Ruy Lopez: Closed",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8",
+      "epd": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N2/PP1P1PPP/RNBQR1K1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2381"
+    },
+    {
+      "id": "record-2744",
+      "eco": "C90",
+      "name": "Ruy Lopez: Closed, Lutikov Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. Bc2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 b3c2",
+      "epd": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/2P2N2/PPBP1PPP/RNBQR1K1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2406"
+    },
+    {
+      "id": "record-2745",
+      "eco": "C90",
+      "name": "Ruy Lopez: Closed, Pilnik Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. d3 d6 9. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 e8g8 d2d3 d7d6 c2c3",
+      "epd": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1BPP1N2/PP3PPP/RNBQR1K1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2407"
+    },
+    {
+      "id": "record-2746",
+      "eco": "C90",
+      "name": "Ruy Lopez: Closed, Suetin Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. a3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 a2a3",
+      "epd": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/PBP2N2/1P1P1PPP/RNBQR1K1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2408"
+    },
+    {
+      "id": "record-2747",
+      "eco": "C91",
+      "name": "Ruy Lopez: Closed, Bogoljubow Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. d4 Bg4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 d2d4 c8g4",
+      "epd": "r2q1rk1/2p1bppp/p1np1n2/1p2p3/3PP1b1/1BP2N2/PP3PPP/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2409"
+    },
+    {
+      "id": "record-2748",
+      "eco": "C91",
+      "name": "Ruy Lopez: Closed, Yates Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 d2d4",
+      "epd": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/3PP3/1BP2N2/PP3PPP/RNBQR1K1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2410"
+    },
+    {
+      "id": "record-2749",
+      "eco": "C91",
+      "name": "Ruy Lopez: Closed, Yates Variation, Short Attack",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. d4 Bg4 10. a4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 d2d4 c8g4 a2a4",
+      "epd": "r2q1rk1/2p1bppp/p1np1n2/1p2p3/P2PP1b1/1BP2N2/1P3PPP/RNBQR1K1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2411"
+    },
+    {
+      "id": "record-2750",
+      "eco": "C92",
+      "name": "Ruy Lopez: Closed",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3",
+      "epd": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2381"
+    },
+    {
+      "id": "record-2751",
+      "eco": "C92",
+      "name": "Ruy Lopez: Closed, Flohr System",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Bb7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c8b7",
+      "epd": "r2q1rk1/1bp1bppp/p1np1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2412"
+    },
+    {
+      "id": "record-2752",
+      "eco": "C92",
+      "name": "Ruy Lopez: Closed, Karpov Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 f6d7",
+      "epd": "r1bq1rk1/2pnbppp/p1np4/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2413"
+    },
+    {
+      "id": "record-2753",
+      "eco": "C92",
+      "name": "Ruy Lopez: Closed, Kholmov Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Be6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c8e6",
+      "epd": "r2q1rk1/2p1bppp/p1npbn2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2414"
+    },
+    {
+      "id": "record-2754",
+      "eco": "C92",
+      "name": "Ruy Lopez: Closed, Smyslov-Breyer-Zaitsev Hybrid",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Bb7 10. d4 Re8 11. Nbd2 Bf8 12. a3 h6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c8b7 d2d4 f8e8 b1d2 e7f8 a2a3 h7h6",
+      "epd": "r2qrbk1/1bp2pp1/p1np1n1p/1p2p3/3PP3/PBP2N1P/1P1N1PP1/R1BQR1K1 w - -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-2415"
+    },
+    {
+      "id": "record-2755",
+      "eco": "C92",
+      "name": "Ruy Lopez: Closed, Zaitsev System",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Re8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 f8e8",
+      "epd": "r1bqr1k1/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2416"
+    },
+    {
+      "id": "record-2756",
+      "eco": "C93",
+      "name": "Ruy Lopez: Closed, Smyslov Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 h6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 h7h6",
+      "epd": "r1bq1rk1/2p1bpp1/p1np1n1p/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2417"
+    },
+    {
+      "id": "record-2757",
+      "eco": "C94",
+      "name": "Ruy Lopez: Closed, Breyer Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6b8",
+      "epd": "rnbq1rk1/2p1bppp/p2p1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2418"
+    },
+    {
+      "id": "record-2758",
+      "eco": "C94",
+      "name": "Ruy Lopez: Closed, Breyer Defense, Quiet Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6b8 d2d3",
+      "epd": "rnbq1rk1/2p1bppp/p2p1n2/1p2p3/4P3/1BPP1N1P/PP3PP1/RNBQR1K1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2419"
+    },
+    {
+      "id": "record-2759",
+      "eco": "C95",
+      "name": "Ruy Lopez: Closed, Breyer",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6b8 d2d4",
+      "epd": "rnbq1rk1/2p1bppp/p2p1n2/1p2p3/3PP3/1BP2N1P/PP3PP1/RNBQR1K1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2420"
+    },
+    {
+      "id": "record-2760",
+      "eco": "C95",
+      "name": "Ruy Lopez: Closed, Breyer Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d4 Nbd7 11. Nbd2 Bb7 12. Bc2 c5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6b8 d2d4 b8d7 b1d2 c8b7 b3c2 c7c5",
+      "epd": "r2q1rk1/1b1nbppp/p2p1n2/1pp1p3/3PP3/2P2N1P/PPBN1PP1/R1BQR1K1 w - -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-2418"
+    },
+    {
+      "id": "record-2761",
+      "eco": "C95",
+      "name": "Ruy Lopez: Closed, Breyer Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d4 Nbd7 11. Nh4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6b8 d2d4 b8d7 f3h4",
+      "epd": "r1bq1rk1/2pnbppp/p2p1n2/1p2p3/3PP2N/1BP4P/PP3PP1/RNBQR1K1 b - -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2418"
+    },
+    {
+      "id": "record-2762",
+      "eco": "C95",
+      "name": "Ruy Lopez: Closed, Breyer Defense, Zaitsev Hybrid",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d4 Nbd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6b8 d2d4 b8d7",
+      "epd": "r1bq1rk1/2pnbppp/p2p1n2/1p2p3/3PP3/1BP2N1P/PP3PP1/RNBQR1K1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2421"
+    },
+    {
+      "id": "record-2763",
+      "eco": "C96",
+      "name": "Ruy Lopez: Closed, Borisenko Variation",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Nc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c5 d2d4 a5c6",
+      "epd": "r1bq1rk1/4bppp/p1np1n2/1pp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2422"
+    },
+    {
+      "id": "record-2764",
+      "eco": "C96",
+      "name": "Ruy Lopez: Closed, Chigorin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2",
+      "epd": "r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/2P2N1P/PPBP1PP1/RNBQR1K1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2426"
+    },
+    {
+      "id": "record-2765",
+      "eco": "C96",
+      "name": "Ruy Lopez: Closed, Chigorin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c5",
+      "epd": "r1bq1rk1/4bppp/p2p1n2/npp1p3/4P3/2P2N1P/PPBP1PP1/RNBQR1K1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2426"
+    },
+    {
+      "id": "record-2766",
+      "eco": "C96",
+      "name": "Ruy Lopez: Closed, Chigorin Defense, Gajewski Gambit",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 d6d5",
+      "epd": "r1bq1rk1/2p1bppp/p4n2/np1pp3/4P3/2P2N1P/PPBP1PP1/RNBQR1K1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2423"
+    },
+    {
+      "id": "record-2767",
+      "eco": "C96",
+      "name": "Ruy Lopez: Closed, Keres Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Nd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c5 d2d4 f6d7",
+      "epd": "r1bq1rk1/3nbppp/p2p4/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2424"
+    },
+    {
+      "id": "record-2768",
+      "eco": "C96",
+      "name": "Ruy Lopez: Closed, Rossolimo Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c6 11. d4 Qc7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c6 d2d4 d8c7",
+      "epd": "r1b2rk1/2q1bppp/p1pp1n2/np2p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2425"
+    },
+    {
+      "id": "record-2769",
+      "eco": "C97",
+      "name": "Ruy Lopez: Closed, Chigorin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5",
+      "epd": "r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2426"
+    },
+    {
+      "id": "record-2770",
+      "eco": "C97",
+      "name": "Ruy Lopez: Closed, Chigorin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Qc7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c5 d2d4 d8c7",
+      "epd": "r1b2rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2426"
+    },
+    {
+      "id": "record-2771",
+      "eco": "C97",
+      "name": "Ruy Lopez: Closed, Chigorin, Yugoslav System",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Qc7 12. Nbd2 Bd7 13. Nf1 Rfe8 14. Ne3 g6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c5 d2d4 d8c7 b1d2 c8d7 d2f1 f8e8 f1e3 g7g6",
+      "epd": "r3r1k1/2qbbp1p/p2p1np1/npp1p3/3PP3/2P1NN1P/PPB2PP1/R1BQR1K1 w - -",
+      "plyCount": 28,
+      "playerMoveCounts": {
+        "white": 14,
+        "black": 14
+      },
+      "lineId": "line-2427"
+    },
+    {
+      "id": "record-2772",
+      "eco": "C98",
+      "name": "Ruy Lopez: Closed, Chigorin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Qc7 12. Nbd2 Nc6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c5 d2d4 d8c7 b1d2 a5c6",
+      "epd": "r1b2rk1/2q1bppp/p1np1n2/1pp1p3/3PP3/2P2N1P/PPBN1PP1/R1BQR1K1 w - -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-2426"
+    },
+    {
+      "id": "record-2773",
+      "eco": "C98",
+      "name": "Ruy Lopez: Closed, Chigorin Defense",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Qc7 12. Nbd2 Nc6 13. dxc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c5 d2d4 d8c7 b1d2 a5c6 d4c5",
+      "epd": "r1b2rk1/2q1bppp/p1np1n2/1pP1p3/4P3/2P2N1P/PPBN1PP1/R1BQR1K1 b - -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2426"
+    },
+    {
+      "id": "record-2774",
+      "eco": "C99",
+      "name": "Ruy Lopez: Closed, Chigorin Defense, Panov System",
+      "family": "Ruy Lopez",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Qc7 12. Nbd2 cxd4 13. cxd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6 e1g1 f8e7 f1e1 b7b5 a4b3 d7d6 c2c3 e8g8 h2h3 c6a5 b3c2 c7c5 d2d4 d8c7 b1d2 c5d4 c3d4",
+      "epd": "r1b2rk1/2q1bppp/p2p1n2/np2p3/3PP3/5N1P/PPBN1PP1/R1BQR1K1 b - -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2428"
+    }
+  ]
+}

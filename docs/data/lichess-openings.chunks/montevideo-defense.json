@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Montevideo Defense",
+    "chunkKey": "montevideo-defense",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-504",
+      "eco": "A40",
+      "name": "Montevideo Defense",
+      "family": "Montevideo Defense",
+      "pgn": "1. d4 Nc6 2. d5 Nb8",
+      "uci": "d2d4 b8c6 d4d5 c6b8",
+      "epd": "rnbqkbnr/pppppppp/8/3P4/8/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-424"
+    }
+  ]
+}

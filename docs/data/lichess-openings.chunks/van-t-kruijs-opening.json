@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Van't Kruijs Opening",
+    "chunkKey": "van-t-kruijs-opening",
+    "recordCount": 5,
+    "lineCount": 5
+  },
+  "records": [
+    {
+      "id": "record-132",
+      "eco": "A00",
+      "name": "Van't Kruijs Opening",
+      "family": "Van't Kruijs Opening",
+      "pgn": "1. e3",
+      "uci": "e2e3",
+      "epd": "rnbqkbnr/pppppppp/8/8/8/4P3/PPPP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-128"
+    },
+    {
+      "id": "record-133",
+      "eco": "A00",
+      "name": "Van't Kruijs Opening: Bouncing Bishop Variation",
+      "family": "Van't Kruijs Opening",
+      "pgn": "1. e3 e5 2. Bc4 b5 3. Bb3",
+      "uci": "e2e3 e7e5 f1c4 b7b5 c4b3",
+      "epd": "rnbqkbnr/p1pp1ppp/8/1p2p3/8/1B2P3/PPPP1PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-129"
+    },
+    {
+      "id": "record-134",
+      "eco": "A00",
+      "name": "Van't Kruijs Opening: Keoni-Hiva Gambit, Akahi Variation",
+      "family": "Van't Kruijs Opening",
+      "pgn": "1. e3 e5 2. Nc3 Nf6 3. f4 exf4 4. Nf3",
+      "uci": "e2e3 e7e5 b1c3 g8f6 f2f4 e5f4 g1f3",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/8/5p2/2N1PN2/PPPP2PP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-130"
+    },
+    {
+      "id": "record-135",
+      "eco": "A00",
+      "name": "Van't Kruijs Opening: Keoni-Hiva Gambit, Alua Variation",
+      "family": "Van't Kruijs Opening",
+      "pgn": "1. e3 e5 2. Nc3 Nc6 3. f4 exf4 4. Nf3",
+      "uci": "e2e3 e7e5 b1c3 b8c6 f2f4 e5f4 g1f3",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/5p2/2N1PN2/PPPP2PP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-131"
+    },
+    {
+      "id": "record-136",
+      "eco": "A00",
+      "name": "Van't Kruijs Opening: Keoni-Hiva Gambit, Ekolu Variation",
+      "family": "Van't Kruijs Opening",
+      "pgn": "1. e3 e5 2. Nc3 d5 3. f4 exf4 4. Nf3",
+      "uci": "e2e3 e7e5 b1c3 d7d5 f2f4 e5f4 g1f3",
+      "epd": "rnbqkbnr/ppp2ppp/8/3p4/5p2/2N1PN2/PPPP2PP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-132"
+    }
+  ]
+}

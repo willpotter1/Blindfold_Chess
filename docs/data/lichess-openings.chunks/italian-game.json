@@ -1,0 +1,2727 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Italian Game",
+    "chunkKey": "italian-game",
+    "recordCount": 181,
+    "lineCount": 156
+  },
+  "records": [
+    {
+      "id": "record-2363",
+      "eco": "C50",
+      "name": "Italian Game",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2074"
+    },
+    {
+      "id": "record-2364",
+      "eco": "C50",
+      "name": "Italian Game: Anti-Fried Liver Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 h7h6",
+      "epd": "r1bqkbnr/pppp1pp1/2n4p/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2075"
+    },
+    {
+      "id": "record-2365",
+      "eco": "C50",
+      "name": "Italian Game: Blackburne-Kostić Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 c6d4",
+      "epd": "r1bqkbnr/pppp1ppp/8/4p3/2BnP3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2076"
+    },
+    {
+      "id": "record-2366",
+      "eco": "C50",
+      "name": "Italian Game: Classical Variation, Albin Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 c2c3",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2077"
+    },
+    {
+      "id": "record-2367",
+      "eco": "C50",
+      "name": "Italian Game: Deutz Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d4",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2BPP3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2078"
+    },
+    {
+      "id": "record-2368",
+      "eco": "C50",
+      "name": "Italian Game: Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 d2d3",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2079"
+    },
+    {
+      "id": "record-2369",
+      "eco": "C50",
+      "name": "Italian Game: Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. Nc3 d6 6. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 e1g1 f8c5 b1c3 d7d6 d2d3",
+      "epd": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2079"
+    },
+    {
+      "id": "record-2370",
+      "eco": "C50",
+      "name": "Italian Game: Giuoco Pianissimo, Canal Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Nc3 d6 6. Bg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 d2d3 g8f6 b1c3 d7d6 c1g5",
+      "epd": "r1bqk2r/ppp2ppp/2np1n2/2b1p1B1/2B1P3/2NP1N2/PPP2PPP/R2QK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2080"
+    },
+    {
+      "id": "record-2371",
+      "eco": "C50",
+      "name": "Italian Game: Giuoco Pianissimo, Dubois Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 f5 5. Ng5 f4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 d2d3 f7f5 f3g5 f5f4",
+      "epd": "r1bqk1nr/pppp2pp/2n5/2b1p1N1/2B1Pp2/3P4/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2081"
+    },
+    {
+      "id": "record-2372",
+      "eco": "C50",
+      "name": "Italian Game: Giuoco Pianissimo, Italian Four Knights Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 d2d3 g8f6 b1c3",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2082"
+    },
+    {
+      "id": "record-2373",
+      "eco": "C50",
+      "name": "Italian Game: Giuoco Pianissimo, Lucchini Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 f5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 d2d3 f7f5",
+      "epd": "r1bqk1nr/pppp2pp/2n5/2b1pp2/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2083"
+    },
+    {
+      "id": "record-2374",
+      "eco": "C50",
+      "name": "Italian Game: Giuoco Pianissimo, Normal",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d3 f8c5",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2084"
+    },
+    {
+      "id": "record-2375",
+      "eco": "C50",
+      "name": "Italian Game: Giuoco Piano",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2085"
+    },
+    {
+      "id": "record-2376",
+      "eco": "C50",
+      "name": "Italian Game: Hungarian Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8e7",
+      "epd": "r1bqk1nr/ppppbppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2086"
+    },
+    {
+      "id": "record-2377",
+      "eco": "C50",
+      "name": "Italian Game: Hungarian Defense, Tartakower Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 Nf6 6. e5 Ne4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8e7 d2d4 e5d4 c2c3 g8f6 e4e5 f6e4",
+      "epd": "r1bqk2r/ppppbppp/2n5/4P3/2Bpn3/2P2N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2087"
+    },
+    {
+      "id": "record-2378",
+      "eco": "C50",
+      "name": "Italian Game: Jerome Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Bxf7+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c4f7",
+      "epd": "r1bqk1nr/pppp1Bpp/2n5/2b1p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2088"
+    },
+    {
+      "id": "record-2379",
+      "eco": "C50",
+      "name": "Italian Game: Paris Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 d7d6",
+      "epd": "r1bqkbnr/ppp2ppp/2np4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2089"
+    },
+    {
+      "id": "record-2380",
+      "eco": "C50",
+      "name": "Italian Game: Rosentreter Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 d2d4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2090"
+    },
+    {
+      "id": "record-2381",
+      "eco": "C50",
+      "name": "Italian Game: Rousseau Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 f5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f7f5",
+      "epd": "r1bqkbnr/pppp2pp/2n5/4pp2/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2091"
+    },
+    {
+      "id": "record-2382",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b1p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2092"
+    },
+    {
+      "id": "record-2383",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. Nc3 Bg4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6 b1c3 c8g4",
+      "epd": "r2qk1nr/ppp2ppp/1bnp4/8/2BPP1b1/2N2N2/P4PPP/R1BQ1RK1 w kq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2092"
+    },
+    {
+      "id": "record-2384",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Accepted",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/5N2/P1PP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2093"
+    },
+    {
+      "id": "record-2385",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6",
+      "epd": "r1bqk1nr/pppp1ppp/1bn5/4p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2094"
+    },
+    {
+      "id": "record-2386",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. a4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6 a2a4",
+      "epd": "r1bqk1nr/pppp1ppp/1bn5/4p3/PPB1P3/5N2/2PP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2094"
+    },
+    {
+      "id": "record-2387",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined, Cordel Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. Bb2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6 c1b2",
+      "epd": "r1bqk1nr/pppp1ppp/1bn5/4p3/1PB1P3/5N2/PBPP1PPP/RN1QK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2095"
+    },
+    {
+      "id": "record-2388",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined, Hicken Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5 7. Qf3 Qxe5 8. Qxf7+ Kd8 9. Bb2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6 b4b5 c6a5 f3e5 d8g5 d1f3 g5e5 f3f7 e8d8 c1b2",
+      "epd": "r1bk2nr/pppp1Qpp/1b6/nP2q3/2B1P3/8/PBPP1PPP/RN2K2R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2096"
+    },
+    {
+      "id": "record-2389",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined, Hirschbach Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6 b4b5 c6a5 f3e5 d8g5",
+      "epd": "r1b1k1nr/pppp1ppp/1b6/nP2N1q1/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2097"
+    },
+    {
+      "id": "record-2390",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined, Lange Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6 b4b5 c6a5 f3e5 g8h6",
+      "epd": "r1bqk2r/pppp1ppp/1b5n/nP2N3/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2098"
+    },
+    {
+      "id": "record-2391",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined, Pavlov Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. Bxg7 Rg8 10. Bxf7+ Kxf7 11. Bxe5 Qg5 12. Nd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6 b4b5 c6a5 f3e5 g8h6 d2d4 d7d6 c1h6 d6e5 h6g7 h8g8 c4f7 e8f7 g7e5 d8g5 b1d2",
+      "epd": "r1b3r1/ppp2k1p/1b6/nP2B1q1/3PP3/8/P1PN1PPP/R2QK2R b KQ -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-2099"
+    },
+    {
+      "id": "record-2392",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined, Showalter Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. a4 a6 6. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6 a2a4 a7a6 b1c3",
+      "epd": "r1bqk1nr/1ppp1ppp/pbn5/4p3/PPB1P3/2N2N2/2PP1PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2100"
+    },
+    {
+      "id": "record-2393",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit Declined, Vasquez Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5 7. Bxf7+ Ke7 8. Qh5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b6 b4b5 c6a5 f3e5 d8g5 c4f7 e8e7 d1h5",
+      "epd": "r1b3nr/ppppkBpp/1b6/nP2N1qQ/4P3/8/P1PP1PPP/RNB1K2R b KQ -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2101"
+    },
+    {
+      "id": "record-2394",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Anderssen Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4e7",
+      "epd": "r1bqk1nr/ppppbppp/2n5/4p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2102"
+    },
+    {
+      "id": "record-2395",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Anderssen Variation, Cordel Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Be7 6. d4 Na5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4e7 d2d4 c6a5",
+      "epd": "r1bqk1nr/ppppbppp/8/n3p3/2BPP3/2P2N2/P4PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2103"
+    },
+    {
+      "id": "record-2396",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Fontaine Countergambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 b5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 b7b5",
+      "epd": "r1bqk1nr/p1pp1ppp/2n5/1pb1p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2104"
+    },
+    {
+      "id": "record-2397",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Fraser Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. Nc3 Bg4 10. Qa4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6 b1c3 c8g4 d1a4",
+      "epd": "r2qk1nr/ppp2ppp/1bnp4/8/Q1BPP1b1/2N2N2/P4PPP/R1B2RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2105"
+    },
+    {
+      "id": "record-2398",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Fraser-Mortimer Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. Nc3 Bg4 10. Qa4 Bd7 11. Qb3 Na5 12. Bxf7+ Kf8 13. Qc2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6 b1c3 c8g4 d1a4 g4d7 a4b3 c6a5 c4f7 e8f8 b3c2",
+      "epd": "r2q1knr/pppb1Bpp/1b1p4/n7/3PP3/2N2N2/P1Q2PPP/R1B2RK1 b - -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2106"
+    },
+    {
+      "id": "record-2399",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Göring Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. Nc3 Na5 10. Bg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6 b1c3 c6a5 c1g5",
+      "epd": "r1bqk1nr/ppp2ppp/1b1p4/n5B1/2BPP3/2N2N2/P4PPP/R2Q1RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2107"
+    },
+    {
+      "id": "record-2400",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Harding Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. cxd4 Bb4+ 8. Bd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 c3d4 c5b4 c1d2",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/8/1bBPP3/5N2/P2B1PPP/RN1QK2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2108"
+    },
+    {
+      "id": "record-2401",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Hein Countergambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 d7d5",
+      "epd": "r1bqk1nr/ppp2ppp/2n5/2bpp3/1PB1P3/5N2/P1PP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2109"
+    },
+    {
+      "id": "record-2402",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Mayet Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bf8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4f8",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2110"
+    },
+    {
+      "id": "record-2403",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, McDonnell Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2111"
+    },
+    {
+      "id": "record-2404",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, McDonnell Defense, Main Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6",
+      "epd": "r1bqk1nr/ppp2ppp/1bnp4/8/2BPP3/5N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2112"
+    },
+    {
+      "id": "record-2405",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Morphy Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4 e1g1 d7d6 c3d4 a5b6 b1c3",
+      "epd": "r1bqk1nr/ppp2ppp/1bnp4/8/2BPP3/2N2N2/P4PPP/R1BQ1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2113"
+    },
+    {
+      "id": "record-2406",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Mortimer-Evans Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. Nc3 Bg4 10. Qa4 Bd7 11. Qb3 Na5 12. Bxf7+ Kf8 13. Qc2 Kxf7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6 b1c3 c8g4 d1a4 g4d7 a4b3 c6a5 c4f7 e8f8 b3c2 f8f7",
+      "epd": "r2q2nr/pppb1kpp/1b1p4/n7/3PP3/2N2N2/P1Q2PPP/R1B2RK1 w - -",
+      "plyCount": 26,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 13
+      },
+      "lineId": "line-2114"
+    },
+    {
+      "id": "record-2407",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Paulsen Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. d5 Na5 10. Bb2 Ne7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6 d4d5 c6a5 c1b2 g8e7",
+      "epd": "r1bqk2r/ppp1nppp/1b1p4/n2P4/2B1P3/5N2/PB3PPP/RN1Q1RK1 w kq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2115"
+    },
+    {
+      "id": "record-2408",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Steinitz Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. Nc3 Na5 10. Bg5 f6 11. Be3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6 b1c3 c6a5 c1g5 f7f6 g5e3",
+      "epd": "r1bqk1nr/ppp3pp/1b1p1p2/n7/2BPP3/2N1BN2/P4PPP/R2Q1RK1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2116"
+    },
+    {
+      "id": "record-2409",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Stone-Ware Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bd6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4d6",
+      "epd": "r1bqk1nr/pppp1ppp/2nb4/4p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2117"
+    },
+    {
+      "id": "record-2410",
+      "eco": "C51",
+      "name": "Italian Game: Evans Gambit, Ulvestad Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. d5 Na5 10. Bb2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4c5 d2d4 e5d4 e1g1 d7d6 c3d4 c5b6 d4d5 c6a5 c1b2",
+      "epd": "r1bqk1nr/ppp2ppp/1b1p4/n2P4/2B1P3/5N2/PB3PPP/RN1Q1RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2118"
+    },
+    {
+      "id": "record-2411",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 e1g1 d7d6",
+      "epd": "r1bqk1nr/ppp2ppp/2np4/b3p3/2B1P3/2P2N2/P2P1PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2092"
+    },
+    {
+      "id": "record-2412",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Alapin-Steinitz Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O d6 7. d4 Bg4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 e1g1 d7d6 d2d4 c8g4",
+      "epd": "r2qk1nr/ppp2ppp/2np4/b3p3/2BPP1b1/2P2N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2119"
+    },
+    {
+      "id": "record-2413",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Anderssen Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O Nf6 7. d4 exd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 e1g1 g8f6 d2d4 e5d4",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/b7/2BpP3/2P2N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2120"
+    },
+    {
+      "id": "record-2414",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Bronstein Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 d7d6",
+      "epd": "r1bqk1nr/ppp2ppp/2np4/b3p3/2BPP3/2P2N2/P4PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2121"
+    },
+    {
+      "id": "record-2415",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Compromised Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4 e1g1 d4c3",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/b7/2B1P3/2p2N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2122"
+    },
+    {
+      "id": "record-2416",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Compromised Defense, Main Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. e5 Qg6 10. Nxc3 Nge7 11. Ba3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4 e1g1 d4c3 d1b3 d8f6 e4e5 f6g6 b1c3 g8e7 c1a3",
+      "epd": "r1b1k2r/ppppnppp/2n3q1/b3P3/2B5/BQN2N2/P4PPP/R4RK1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2123"
+    },
+    {
+      "id": "record-2417",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Compromised Defense, Potter Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. e5 Qg6 10. Nxc3 Nge7 11. Rd1",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4 e1g1 d4c3 d1b3 d8f6 e4e5 f6g6 b1c3 g8e7 f1d1",
+      "epd": "r1b1k2r/ppppnppp/2n3q1/b3P3/2B5/1QN2N2/P4PPP/R1BR2K1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2124"
+    },
+    {
+      "id": "record-2418",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Dufresne Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4 e1g1 d4d3",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/b7/2B1P3/2Pp1N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2125"
+    },
+    {
+      "id": "record-2419",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Johner Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O b5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4 e1g1 b7b5",
+      "epd": "r1bqk1nr/p1pp1ppp/2n5/bp6/2BpP3/2P2N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2126"
+    },
+    {
+      "id": "record-2420",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Laroche Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 g8f6",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/b3p3/2BPP3/2P2N2/P4PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2127"
+    },
+    {
+      "id": "record-2421",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Lasker Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O d6 7. d4 Bb6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 e1g1 d7d6 d2d4 a5b6",
+      "epd": "r1bqk1nr/ppp2ppp/1bnp4/4p3/2BPP3/2P2N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2128"
+    },
+    {
+      "id": "record-2422",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Leonhardt Countergambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 b5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 b7b5",
+      "epd": "r1bqk1nr/p1pp1ppp/2n5/bp2p3/2BPP3/2P2N2/P4PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2129"
+    },
+    {
+      "id": "record-2423",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Levenfish Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. O-O Bb6 10. Ba3 Na5 11. Nxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 d7d6 d1b3 d8d7 d4e5 d6e5 e1g1 a5b6 c1a3 c6a5 f3e5",
+      "epd": "r1b1k1nr/pppq1ppp/1b6/n3N3/2B1P3/BQP5/P4PPP/RN3RK1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2130"
+    },
+    {
+      "id": "record-2424",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Main Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/b3p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2131"
+    },
+    {
+      "id": "record-2425",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Mieses Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O Nge7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4 e1g1 g8e7",
+      "epd": "r1bqk2r/ppppnppp/2n5/b7/2BpP3/2P2N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2132"
+    },
+    {
+      "id": "record-2426",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Pierce Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/b7/2BpP3/2P2N2/P4PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2133"
+    },
+    {
+      "id": "record-2427",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Richardson Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O Nf6 7. d4 O-O 8. Nxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 e1g1 g8f6 d2d4 e8g8 f3e5",
+      "epd": "r1bq1rk1/pppp1ppp/2n2n2/b3N3/2BPP3/2P5/P4PPP/RNBQ1RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2134"
+    },
+    {
+      "id": "record-2428",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Sanders-Alapin Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O d6 7. d4 Bd7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 e1g1 d7d6 d2d4 c8d7",
+      "epd": "r2qk1nr/pppb1ppp/2np4/b3p3/2BPP3/2P2N2/P4PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2135"
+    },
+    {
+      "id": "record-2429",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Slow Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 e1g1",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/b3p3/2B1P3/2P2N2/P2P1PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2136"
+    },
+    {
+      "id": "record-2430",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Sokolsky Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Bg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 d7d6 c1g5",
+      "epd": "r1bqk1nr/ppp2ppp/2np4/b3p1B1/2BPP3/2P2N2/P4PPP/RN1QK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2137"
+    },
+    {
+      "id": "record-2431",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Tartakower Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 d7d6 d1b3",
+      "epd": "r1bqk1nr/ppp2ppp/2np4/b3p3/2BPP3/1QP2N2/P4PPP/RNB1K2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2138"
+    },
+    {
+      "id": "record-2432",
+      "eco": "C52",
+      "name": "Italian Game: Evans Gambit, Waller Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d6 8. Qb3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 b2b4 c5b4 c2c3 b4a5 d2d4 e5d4 e1g1 d7d6 d1b3",
+      "epd": "r1bqk1nr/ppp2ppp/2np4/b7/2BpP3/1QP2N2/P4PPP/RNB2RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2139"
+    },
+    {
+      "id": "record-2433",
+      "eco": "C53",
+      "name": "Italian Game: Bird's Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. b4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 b2b4",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/1PB1P3/2P2N2/P2P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2140"
+    },
+    {
+      "id": "record-2434",
+      "eco": "C53",
+      "name": "Italian Game: Classical Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2141"
+    },
+    {
+      "id": "record-2435",
+      "eco": "C53",
+      "name": "Italian Game: Classical Variation, Center Holding Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7 5. d4 Bb6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 d8e7 d2d4 c5b6",
+      "epd": "r1b1k1nr/ppppqppp/1bn5/4p3/2BPP3/2P2N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2142"
+    },
+    {
+      "id": "record-2436",
+      "eco": "C53",
+      "name": "Italian Game: Classical Variation, Closed Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 d8e7",
+      "epd": "r1b1k1nr/ppppqppp/2n5/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2143"
+    },
+    {
+      "id": "record-2437",
+      "eco": "C53",
+      "name": "Italian Game: Classical Variation, Eisinger Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7 5. d4 Bb6 6. d5 Nb8 7. d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 d8e7 d2d4 c5b6 d4d5 c6b8 d5d6",
+      "epd": "rnb1k1nr/ppppqppp/1b1P4/4p3/2B1P3/2P2N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2144"
+    },
+    {
+      "id": "record-2438",
+      "eco": "C53",
+      "name": "Italian Game: Classical Variation, La Bourdonnais Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 d7d6 d2d4 e5d4 c3d4 c5b6",
+      "epd": "r1bqk1nr/ppp2ppp/1bnp4/8/2BPP3/5N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2145"
+    },
+    {
+      "id": "record-2439",
+      "eco": "C53",
+      "name": "Italian Game: Classical Variation, Mestel Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7 5. d4 Bb6 6. Bg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 d8e7 d2d4 c5b6 c1g5",
+      "epd": "r1b1k1nr/ppppqppp/1bn5/4p1B1/2BPP3/2P2N2/PP3PPP/RN1QK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2146"
+    },
+    {
+      "id": "record-2440",
+      "eco": "C53",
+      "name": "Italian Game: Classical Variation, Tarrasch Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7 5. d4 Bb6 6. O-O d6 7. a4 a6 8. h3 Nf6 9. Re1",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 d8e7 d2d4 c5b6 e1g1 d7d6 a2a4 a7a6 h2h3 g8f6 f1e1",
+      "epd": "r1b1k2r/1pp1qppp/pbnp1n2/4p3/P1BPP3/2P2N1P/1P3PP1/RNBQR1K1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2147"
+    },
+    {
+      "id": "record-2441",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2141"
+    },
+    {
+      "id": "record-2442",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Center Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2BPP3/2P2N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2148"
+    },
+    {
+      "id": "record-2443",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Ghulam-Kassim Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. e5 Ne4 7. Bd5 Nxf2 8. Kxf2 dxc3+ 9. Kg3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 e4e5 f6e4 c4d5 e4f2 e1f2 d4c3 f2g3",
+      "epd": "r1bqk2r/pppp1ppp/2n5/2bBP3/8/2p2NK1/PP4PP/RNBQ3R b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2149"
+    },
+    {
+      "id": "record-2444",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2445",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3 d7d6",
+      "epd": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2446",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. Nbd2 O-O 7. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3 d7d6 b1d2 e8g8 e1g1",
+      "epd": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP1N1PPP/R1BQ1RK1 b - -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2447",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 h6 6. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 h7h6 c2c3",
+      "epd": "r1bqk2r/pppp1pp1/2n2n1p/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2448",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 a6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 a7a6",
+      "epd": "r1bqk2r/1pp2ppp/p1np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2449",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 a6 7. a4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 a7a6 a2a4",
+      "epd": "r1bqk2r/1pp2ppp/p1np1n2/2b1p3/P1B1P3/2PP1N2/1P3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2450",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 a6 7. a4 Ba7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 a7a6 a2a4 c5a7",
+      "epd": "r1bqk2r/bpp2ppp/p1np1n2/4p3/P1B1P3/2PP1N2/1P3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2451",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 a6 7. a4 O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 a7a6 a2a4 e8g8",
+      "epd": "r1bq1rk1/1pp2ppp/p1np1n2/2b1p3/P1B1P3/2PP1N2/1P3PPP/RNBQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2452",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 a6 7. Re1",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 a7a6 f1e1",
+      "epd": "r1bqk2r/1pp2ppp/p1np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQR1K1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2453",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 a6 7. Re1 Ba7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 a7a6 f1e1 c5a7",
+      "epd": "r1bqk2r/bpp2ppp/p1np1n2/4p3/2B1P3/2PP1N2/PP3PPP/RNBQR1K1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2454",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 h6 7. Re1",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 h7h6 f1e1",
+      "epd": "r1bqk2r/ppp2pp1/2np1n1p/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQR1K1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2455",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 h6 7. Nbd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 h7h6 b1d2",
+      "epd": "r1bqk2r/ppp2pp1/2np1n1p/2b1p3/2B1P3/2PP1N2/PP1N1PPP/R1BQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2456",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 O-O 6. c3 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 e8g8 c2c3 d7d5",
+      "epd": "r1bq1rk1/ppp2ppp/2n2n2/2bpp3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2457",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 O-O 6. c3 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 e8g8 c2c3 d7d6",
+      "epd": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2150"
+    },
+    {
+      "id": "record-2458",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo, Albin Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. b4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3 d7d6 b2b4",
+      "epd": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/1PB1P3/2PP1N2/P4PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2151"
+    },
+    {
+      "id": "record-2459",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo, Main Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O 7. Re1 a6 8. Bb3 Ba7 9. h3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3 d7d6 e1g1 e8g8 f1e1 a7a6 c4b3 c5a7 h2h3",
+      "epd": "r1bq1rk1/bpp2ppp/p1np1n2/4p3/4P3/1BPP1N1P/PP3PP1/RNBQR1K1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2152"
+    },
+    {
+      "id": "record-2460",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo, with a4 a5",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. O-O O-O 7. a4 a5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3 d7d6 e1g1 e8g8 a2a4 a7a5",
+      "epd": "r1bq1rk1/1pp2ppp/2np1n2/p1b1p3/P1B1P3/2PP1N2/1P3PPP/RNBQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2153"
+    },
+    {
+      "id": "record-2461",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo, with a5",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 a5 6. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 a7a5 c2c3",
+      "epd": "r1bqk2r/1ppp1ppp/2n2n2/p1b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2154"
+    },
+    {
+      "id": "record-2462",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo, with a6",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 a6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3 a7a6",
+      "epd": "r1bqk2r/1ppp1ppp/p1n2n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2155"
+    },
+    {
+      "id": "record-2463",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo, with a6",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. Nbd2 a6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3 d7d6 b1d2 a7a6",
+      "epd": "r1bqk2r/1pp2ppp/p1np1n2/2b1p3/2B1P3/2PP1N2/PP1N1PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2155"
+    },
+    {
+      "id": "record-2464",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Giuoco Pianissimo, with h6",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d3 d6 6. c3 h6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d3 d7d6 c2c3 h7h6",
+      "epd": "r1bqk2r/ppp2pp1/2np1n1p/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2156"
+    },
+    {
+      "id": "record-2465",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Anderssen Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. e5 d5 7. Bb5 Ne4 8. cxd4 Bb4+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 e4e5 d7d5 c4b5 f6e4 c3d4 c5b4",
+      "epd": "r1bqk2r/ppp2ppp/2n5/1B1pP3/1b1Pn3/5N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2157"
+    },
+    {
+      "id": "record-2466",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Dubov Italian",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. b4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 b2b4",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b5/1PBpP3/2P2N2/P4PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2158"
+    },
+    {
+      "id": "record-2467",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Greco Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3 f6e4 e1g1 e4c3",
+      "epd": "r1bqk2r/pppp1ppp/2n5/8/1bBP4/2n2N2/PP3PPP/R1BQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2159"
+    },
+    {
+      "id": "record-2468",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Main Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3 f6e4 e1g1 b4c3",
+      "epd": "r1bqk2r/pppp1ppp/2n5/8/2BPn3/2b2N2/PP3PPP/R1BQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2160"
+    },
+    {
+      "id": "record-2469",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Modern Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. e5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 e4e5",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1P3/2Bp4/2P2N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2161"
+    },
+    {
+      "id": "record-2470",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Modern Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. e5 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 e4e5 d7d5",
+      "epd": "r1bqk2r/ppp2ppp/2n2n2/2bpP3/2Bp4/2P2N2/PP3PPP/RNBQK2R w KQkq d6",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2161"
+    },
+    {
+      "id": "record-2471",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Moeller-Bayonet Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. d5 Bf6 10. Re1 Ne7 11. Rxe4 d6 12. g4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3 f6e4 e1g1 b4c3 d4d5 c3f6 f1e1 c6e7 e1e4 d7d6 g2g4",
+      "epd": "r1bqk2r/ppp1nppp/3p1b2/3P4/2B1R1P1/5N2/PP3P1P/R1BQ2K1 b kq -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-2162"
+    },
+    {
+      "id": "record-2472",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Moeller-Therkatz Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3 f6e4 e1g1 b4c3 d4d5",
+      "epd": "r1bqk2r/pppp1ppp/2n5/3P4/2B1n3/2b2N2/PP3PPP/R1BQ1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2163"
+    },
+    {
+      "id": "record-2473",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, Greco Gambit, Traditional Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b5/2BPP3/5N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2164"
+    },
+    {
+      "id": "record-2474",
+      "eco": "C54",
+      "name": "Italian Game: Classical Variation, with d5",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d3 d7d5",
+      "epd": "r1bqk2r/ppp2ppp/2n2n2/2bpp3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2165"
+    },
+    {
+      "id": "record-2475",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Aitken Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. Ba3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3 f6e4 e1g1 e4c3 b2c3 b4c3 c1a3",
+      "epd": "r1bqk2r/pppp1ppp/2n5/8/2BP4/B1b2N2/P4PPP/R2Q1RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2166"
+    },
+    {
+      "id": "record-2476",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Bernstein Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. Qb3 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3 f6e4 e1g1 e4c3 b2c3 b4c3 d1b3 d7d5",
+      "epd": "r1bqk2r/ppp2ppp/2n5/3p4/2BP4/1Qb2N2/P4PPP/R1B2RK1 w kq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2167"
+    },
+    {
+      "id": "record-2477",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Cracow Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Kf1",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 e1f1",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/8/1bBPP3/5N2/PP3PPP/RNBQ1K1R b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2168"
+    },
+    {
+      "id": "record-2478",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Greco's Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/8/1bBPP3/2N2N2/PP3PPP/R1BQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2169"
+    },
+    {
+      "id": "record-2479",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Holzhausen Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 d6 8. f4 Qe7 9. fxe5 dxe5 10. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 e1g1 f8c5 d2d4 c5d4 f3d4 c6d4 c1g5 d7d6 f2f4 d8e7 f4e5 d6e5 b1c3",
+      "epd": "r1b1k2r/ppp1qppp/5n2/4p1B1/2BnP3/2N5/PPP3PP/R2Q1RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2170"
+    },
+    {
+      "id": "record-2480",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Krause Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Bd2 Nxe4 8. Bxb4 Nxb4 9. Bxf7+ Kxf7 10. Qb3+ d5 11. Ne5+ Kf6 12. f3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 c1d2 f6e4 d2b4 c6b4 c4f7 e8f7 d1b3 d7d5 f3e5 f7f6 f2f3",
+      "epd": "r1bq3r/ppp3pp/5k2/3pN3/1n1Pn3/1Q3P2/PP4PP/RN2K2R b KQ -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-2171"
+    },
+    {
+      "id": "record-2481",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Rosentreter Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 h6 8. Bh4 g5 9. f4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 e1g1 f8c5 d2d4 c5d4 f3d4 c6d4 c1g5 h7h6 g5h4 g7g5 f2f4",
+      "epd": "r1bqk2r/pppp1p2/5n1p/4p1p1/2BnPP1B/8/PPP3PP/RN1Q1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2172"
+    },
+    {
+      "id": "record-2482",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Steinitz Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 d5 10. Ba3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3 f6e4 e1g1 b4c3 b2c3 d7d5 c1a3",
+      "epd": "r1bqk2r/ppp2ppp/2n5/3p4/2BPn3/B1P2N2/P4PPP/R2Q1RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2173"
+    },
+    {
+      "id": "record-2483",
+      "eco": "C54",
+      "name": "Italian Game: Giuoco Piano, Therkatz-Herzog Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. d5 Bf6 10. Re1 Ne7 11. Rxe4 d6 12. Bg5 Bxg5 13. Nxg5 O-O 14. Nxh7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 c3d4 c5b4 b1c3 f6e4 e1g1 b4c3 d4d5 c3f6 f1e1 c6e7 e1e4 d7d6 c1g5 f6g5 f3g5 e8g8 g5h7",
+      "epd": "r1bq1rk1/ppp1nppN/3p4/3P4/2B1R3/8/PP3PPP/R2Q2K1 b - -",
+      "plyCount": 27,
+      "playerMoveCounts": {
+        "white": 14,
+        "black": 13
+      },
+      "lineId": "line-2174"
+    },
+    {
+      "id": "record-2484",
+      "eco": "C55",
+      "name": "Italian Game: Two Knights Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2175"
+    },
+    {
+      "id": "record-2485",
+      "eco": "C55",
+      "name": "Italian Game: Two Knights Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 e1g1 f8c5 d2d4 c5d4 f3d4 c6d4 c1g5 d7d6",
+      "epd": "r1bqk2r/ppp2ppp/3p1n2/4p1B1/2BnP3/8/PPP2PPP/RN1Q1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2175"
+    },
+    {
+      "id": "record-2486",
+      "eco": "C55",
+      "name": "Italian Game: Two Knights Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Nc3 Nxe4 5. Nxe4 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 b1c3 f6e4 c3e4 d7d5",
+      "epd": "r1bqkb1r/ppp2ppp/2n5/3pp3/2B1N3/5N2/PPPP1PPP/R1BQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2175"
+    },
+    {
+      "id": "record-2487",
+      "eco": "C55",
+      "name": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d3",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2176"
+    },
+    {
+      "id": "record-2488",
+      "eco": "C55",
+      "name": "Italian Game: Two Knights Defense, Modern Bishop's Opening",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d3 f8e7",
+      "epd": "r1bqk2r/ppppbppp/2n2n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2176"
+    },
+    {
+      "id": "record-2489",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e1g1",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/8/2BpP3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2177"
+    },
+    {
+      "id": "record-2490",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Anderssen Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3",
+      "epd": "r1b1kb1r/ppp2ppp/2n5/3q4/3pn3/2N2N2/PPP2PPP/R1BQR1K1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2178"
+    },
+    {
+      "id": "record-2491",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Anderssen Attack, Main Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3 Qa5 9. Nxe4 Be6 10. Bd2 Qd5 11. Bg5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5a5 c3e4 c8e6 c1d2 a5d5 d2g5",
+      "epd": "r3kb1r/ppp2ppp/2n1b3/3q2B1/3pN3/5N2/PPP2PPP/R2QR1K1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2179"
+    },
+    {
+      "id": "record-2492",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Canal Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Nxe4 6. Re1 d5 7. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 b1c3",
+      "epd": "r1bqkb1r/ppp2ppp/2n5/3p4/2Bpn3/2N2N2/PPP2PPP/R1BQR1K1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2180"
+    },
+    {
+      "id": "record-2493",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Double Gambit Accepted",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e1g1 f6e4",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/8/2Bpn3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2182"
+    },
+    {
+      "id": "record-2494",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Janowski Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 d7d6",
+      "epd": "r1bqkb1r/ppp2ppp/2np1n2/8/2BpP3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2183"
+    },
+    {
+      "id": "record-2495",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Max Lange Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f8c5",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b5/2BpP3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2184"
+    },
+    {
+      "id": "record-2496",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Max Lange Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. e5 d5 6. Bb5 Ne4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e4e5 d7d5 c4b5 f6e4",
+      "epd": "r1bqkb1r/ppp2ppp/2n5/1B1pP3/3pn3/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2184"
+    },
+    {
+      "id": "record-2497",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Max Lange Attack Accepted",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d4 exd4 6. e5 d5 7. exf6 dxc4 8. Re1+ Be6 9. fxg7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 e1g1 g8f6 d2d4 e5d4 e4e5 d7d5 e5f6 d5c4 f1e1 c8e6 f6g7",
+      "epd": "r2qk2r/ppp2pPp/2n1b3/2b5/2pp4/5N2/PPP2PPP/RNBQR1K1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2185"
+    },
+    {
+      "id": "record-2498",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Max Lange Attack, Long Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Bc5 6. e5 d5 7. exf6 dxc4 8. Re1+ Be6 9. Ng5 Qd5 10. Nc3 Qf5 11. Nce4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f8c5 e4e5 d7d5 e5f6 d5c4 f1e1 c8e6 f3g5 d8d5 b1c3 d5f5 c3e4",
+      "epd": "r3k2r/ppp2ppp/2n1bP2/2b2qN1/2ppN3/8/PPP2PPP/R1BQR1K1 b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2186"
+    },
+    {
+      "id": "record-2499",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Max Lange Attack, Spielmann Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Bc5 6. e5 Ng4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f8c5 e4e5 f6g4",
+      "epd": "r1bqk2r/pppp1ppp/2n5/2b1P3/2Bp2n1/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2187"
+    },
+    {
+      "id": "record-2500",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Nakhmanson Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Nc3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e1g1 f6e4 b1c3",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/8/2Bpn3/2N2N2/PPP2PPP/R1BQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2188"
+    },
+    {
+      "id": "record-2501",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, Walbrodt-Baird Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6 d2d4 e5d4 e1g1",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b5/2BpP3/2P2N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2189"
+    },
+    {
+      "id": "record-2502",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Gambit, de Riviere Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f8e7",
+      "epd": "r1bqk2r/ppppbppp/2n2n2/8/2BpP3/5N2/PPP2PPP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2181"
+    },
+    {
+      "id": "record-2503",
+      "eco": "C56",
+      "name": "Italian Game: Scotch Invitation Declined",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 d6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 d7d6",
+      "epd": "r1bqkb1r/ppp2ppp/2np1n2/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2190"
+    },
+    {
+      "id": "record-2504",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Keidansky Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. e5 d5 6. Bb5 Ne4 7. Nxd4 Bc5 8. Nxc6 Bxf2+ 9. Kf1 Qh4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e4e5 d7d5 c4b5 f6e4 f3d4 f8c5 d4c6 c5f2 e1f1 d8h4",
+      "epd": "r1b1k2r/ppp2ppp/2N5/1B1pP3/4n2q/8/PPP2bPP/RNBQ1K1R w kq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2191"
+    },
+    {
+      "id": "record-2505",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Max Lange Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Bc5 6. e5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f8c5 e4e5",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1P3/2Bp4/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2192"
+    },
+    {
+      "id": "record-2506",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Max Lange Attack, Berger Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Bc5 6. e5 d5 7. exf6 dxc4 8. Re1+ Be6 9. Ng5 Qd5 10. Nc3 Qf5 11. g4 Qg6 12. Nce4 Bb6 13. f4 O-O-O",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e1g1 f8c5 e4e5 d7d5 e5f6 d5c4 f1e1 c8e6 f3g5 d8d5 b1c3 d5f5 g2g4 f5g6 c3e4 c5b6 f2f4 e8c8",
+      "epd": "2kr3r/ppp2ppp/1bn1bPq1/6N1/2ppNPP1/8/PPP4P/R1BQR1K1 w - -",
+      "plyCount": 26,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 13
+      },
+      "lineId": "line-2193"
+    },
+    {
+      "id": "record-2507",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Max Lange Attack, Krause Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Bc5 6. e5 Ng4 7. c3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e1g1 f8c5 e4e5 f6g4 c2c3",
+      "epd": "r1bqk2r/pppp1ppp/2n5/2b1P3/2Bp2n1/2P2N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2194"
+    },
+    {
+      "id": "record-2508",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Max Lange Attack, Loman Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. O-O Nf6 6. e5 d5 7. exf6 dxc4 8. Re1+ Be6 9. Ng5 g6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 f8c5 e1g1 g8f6 e4e5 d7d5 e5f6 d5c4 f1e1 c8e6 f3g5 g7g6",
+      "epd": "r2qk2r/ppp2p1p/2n1bPp1/2b3N1/2pp4/8/PPP2PPP/RNBQR1K1 w kq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2195"
+    },
+    {
+      "id": "record-2509",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Max Lange Attack, Rubinstein Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Bc5 6. e5 d5 7. exf6 dxc4 8. Re1+ Be6 9. Ng5 Qd5 10. Nc3 Qf5 11. Nce4 Bf8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 e1g1 f8c5 e4e5 d7d5 e5f6 d5c4 f1e1 c8e6 f3g5 d8d5 b1c3 d5f5 c3e4 c5f8",
+      "epd": "r3kb1r/ppp2ppp/2n1bP2/5qN1/2ppN3/8/PPP2PPP/R1BQR1K1 w kq -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2196"
+    },
+    {
+      "id": "record-2510",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Open Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2197"
+    },
+    {
+      "id": "record-2511",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Perreux Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. Ng5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d4 e5d4 f3g5",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/6N1/2BpP3/8/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2198"
+    },
+    {
+      "id": "record-2512",
+      "eco": "C56",
+      "name": "Italian Game: Two Knights Defense, Yurdansky Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Nf6 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3 Qa5 9. Nxe4 Be6 10. Bg5 h6 11. Bh4 g5 12. Nf6+ Ke7 13. b4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5a5 c3e4 c8e6 c1g5 h7h6 g5h4 g7g5 e4f6 e8e7 b2b4",
+      "epd": "r4b1r/ppp1kp2/2n1bN1p/q5p1/1P1p3B/5N2/P1P2PPP/R2QR1K1 b - -",
+      "plyCount": 25,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 12
+      },
+      "lineId": "line-2199"
+    },
+    {
+      "id": "record-2513",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Fegatello Attack, Leonhardt Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. a3 Na6 11. d4 Nc7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 f6d5 g5f7 e8f7 d1f3 f7e6 b1c3 c6b4 f3e4 c7c6 a2a3 b4a6 d2d4 a6c7",
+      "epd": "r1bq1b1r/ppn3pp/2p1k3/3np3/2BPQ3/P1N5/1PP2PPP/R1B1K2R w KQ -",
+      "plyCount": 22,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 11
+      },
+      "lineId": "line-2200"
+    },
+    {
+      "id": "record-2514",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Fried Liver Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 f6d5 g5f7",
+      "epd": "r1bqkb1r/ppp2Npp/2n5/3np3/2B5/8/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2201"
+    },
+    {
+      "id": "record-2515",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Fritz Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6d4",
+      "epd": "r1bqkb1r/ppp2ppp/5n2/3Pp1N1/2Bn4/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2202"
+    },
+    {
+      "id": "record-2516",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Fritz, Gruber Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. Bf1 Nxd5 8. Ne4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6d4 c2c3 b7b5 c4f1 f6d5 g5e4",
+      "epd": "r1bqkb1r/p1p2ppp/8/1p1np3/3nN3/2P5/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2203"
+    },
+    {
+      "id": "record-2517",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Kloss Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nb4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6b4",
+      "epd": "r1bqkb1r/ppp2ppp/5n2/3Pp1N1/1nB5/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2204"
+    },
+    {
+      "id": "record-2518",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Knight Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p1N1/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2205"
+    },
+    {
+      "id": "record-2519",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Knight Attack, Normal Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5",
+      "epd": "r1bqkb1r/ppp2ppp/2n2n2/3pp1N1/2B1P3/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2206"
+    },
+    {
+      "id": "record-2520",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Lolli Attack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 f6d5 d2d4",
+      "epd": "r1bqkb1r/ppp2ppp/2n5/3np1N1/2BP4/8/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2207"
+    },
+    {
+      "id": "record-2521",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Pincus Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. d4 Bb4+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 f6d5 d2d4 f8b4",
+      "epd": "r1bqk2r/ppp2ppp/2n5/3np1N1/1bBP4/8/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2208"
+    },
+    {
+      "id": "record-2522",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Ponziani-Steinitz Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Nxe4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 f6e4",
+      "epd": "r1bqkb1r/pppp1ppp/2n5/4p1N1/2B1n3/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2209"
+    },
+    {
+      "id": "record-2523",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Traxler Counterattack",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 f8c5",
+      "epd": "r1bqk2r/pppp1ppp/2n2n2/2b1p1N1/2B1P3/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2210"
+    },
+    {
+      "id": "record-2524",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. Bxf7+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 f8c5 c4f7",
+      "epd": "r1bqk2r/pppp1Bpp/2n2n2/2b1p1N1/4P3/8/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2211"
+    },
+    {
+      "id": "record-2525",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Traxler Counterattack, King March Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. Nxf7 Bxf2+ 6. Kxf2 Nxe4+ 7. Ke3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 f8c5 g5f7 c5f2 e1f2 f6e4 f2e3",
+      "epd": "r1bqk2r/pppp1Npp/2n5/4p3/2B1n3/4K3/PPPP2PP/RNBQ3R b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2212"
+    },
+    {
+      "id": "record-2526",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. Nxf7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 f8c5 g5f7",
+      "epd": "r1bqk2r/pppp1Npp/2n2n2/2b1p3/2B1P3/8/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2213"
+    },
+    {
+      "id": "record-2527",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. Bxf7+ Ke7 6. d4",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 f8c5 c4f7 e8e7 d2d4",
+      "epd": "r1bq3r/ppppkBpp/2n2n2/2b1p1N1/3PP3/8/PPP2PPP/RNBQK2R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2214"
+    },
+    {
+      "id": "record-2528",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Ulvestad Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 b7b5",
+      "epd": "r1bqkb1r/p1p2ppp/2n2n2/1p1Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2215"
+    },
+    {
+      "id": "record-2529",
+      "eco": "C57",
+      "name": "Italian Game: Two Knights Defense, Ulvestad Variation, Kurkin Gambit",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. Bf1 h6 7. Nxf7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 b7b5 c4f1 h7h6 g5f7",
+      "epd": "r1bqkb1r/p1p2Np1/2n2n1p/1p1Pp3/8/8/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2216"
+    },
+    {
+      "id": "record-2530",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 b5e2",
+      "epd": "r1bqkb1r/p4ppp/2p2n2/n3p1N1/8/8/PPPPBPPP/RNBQK2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2175"
+    },
+    {
+      "id": "record-2531",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Blackburne Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Qf3 cxb5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 d1f3 c6b5",
+      "epd": "r1bqkb1r/p4ppp/5n2/np2p1N1/8/5Q2/PPPP1PPP/RNB1K2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2217"
+    },
+    {
+      "id": "record-2532",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Colman Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Qf3 Rb8",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 d1f3 a8b8",
+      "epd": "1rbqkb1r/p4ppp/2p2n2/nB2p1N1/8/5Q2/PPPP1PPP/RNB1K2R w KQk -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2218"
+    },
+    {
+      "id": "record-2533",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Maróczy Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. d3 h6 7. Nf3 e4 8. Qe2 Nxc4 9. dxc4 Be7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 d2d3 h7h6 g5f3 e5e4 d1e2 a5c4 d3c4 f8e7",
+      "epd": "r1bqk2r/ppp1bpp1/5n1p/3P4/2P1p3/5N2/PPP1QPPP/RNB1K2R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2219"
+    },
+    {
+      "id": "record-2534",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Paoli Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Qf3 Qc7 9. Bd3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 d1f3 d8c7 b5d3",
+      "epd": "r1b1kb1r/p1q2ppp/2p2n2/n3p1N1/8/3B1Q2/PPPP1PPP/RNB1K2R b KQkq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2220"
+    },
+    {
+      "id": "record-2535",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Polerio Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5",
+      "epd": "r1bqkb1r/ppp2ppp/5n2/n2Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2221"
+    },
+    {
+      "id": "record-2536",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Polerio Defense, Bishop Check Line",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5",
+      "epd": "r1bqkb1r/ppp2ppp/5n2/nB1Pp1N1/8/8/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2222"
+    },
+    {
+      "id": "record-2537",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Polerio Defense, Bogoljubow Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Qf3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 d1f3",
+      "epd": "r1bqkb1r/p4ppp/2p2n2/nB2p1N1/8/5Q2/PPPP1PPP/RNB1K2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2223"
+    },
+    {
+      "id": "record-2538",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Polerio Defense, Kieseritzky Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. d3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 d2d3",
+      "epd": "r1bqkb1r/ppp2ppp/5n2/n2Pp1N1/2B5/3P4/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2224"
+    },
+    {
+      "id": "record-2539",
+      "eco": "C58",
+      "name": "Italian Game: Two Knights Defense, Polerio Defense, Yankovich Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. d3 h6 7. Nf3 e4 8. Qe2 Nxc4 9. dxc4 Bc5 10. Nfd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 d2d3 h7h6 g5f3 e5e4 d1e2 a5c4 d3c4 f8c5 f3d2",
+      "epd": "r1bqk2r/ppp2pp1/5n1p/2bP4/2P1p3/8/PPPNQPPP/RNB1K2R b KQkq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2225"
+    },
+    {
+      "id": "record-2540",
+      "eco": "C59",
+      "name": "Italian Game: Two Knights Defense, Knorre Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. d4 Qc7 12. Bd2",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 b5e2 h7h6 g5f3 e5e4 f3e5 f8d6 d2d4 d8c7 c1d2",
+      "epd": "r1b1k2r/p1q2pp1/2pb1n1p/n3N3/3Pp3/8/PPPBBPPP/RN1QK2R b KQkq -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-2226"
+    },
+    {
+      "id": "record-2541",
+      "eco": "C59",
+      "name": "Italian Game: Two Knights Defense, Polerio Defense, Göring Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Qc7",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 b5e2 h7h6 g5f3 e5e4 f3e5 d8c7",
+      "epd": "r1b1kb1r/p1q2pp1/2p2n1p/n3N3/4p3/8/PPPPBPPP/RNBQK2R w KQkq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2227"
+    },
+    {
+      "id": "record-2542",
+      "eco": "C59",
+      "name": "Italian Game: Two Knights Defense, Polerio Defense, Suhle Defense",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 b5e2 h7h6",
+      "epd": "r1bqkb1r/p4pp1/2p2n1p/n3p1N1/8/8/PPPPBPPP/RNBQK2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2228"
+    },
+    {
+      "id": "record-2543",
+      "eco": "C59",
+      "name": "Italian Game: Two Knights Defense, Steinitz Variation",
+      "family": "Italian Game",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nh3",
+      "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5 c4b5 c7c6 d5c6 b7c6 b5e2 h7h6 g5h3",
+      "epd": "r1bqkb1r/p4pp1/2p2n1p/n3p3/8/7N/PPPPBPPP/RNBQK2R b KQkq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2229"
+    }
+  ]
+}

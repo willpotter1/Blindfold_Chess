@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Dresden Opening",
+    "chunkKey": "dresden-opening",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-2228",
+      "eco": "C44",
+      "name": "Dresden Opening: The Goblin",
+      "family": "Dresden Opening",
+      "pgn": "1. e4 e5 2. Nf3 Nc6 3. c4 Nf6 4. Nxe5",
+      "uci": "e2e4 e7e5 g1f3 b8c6 c2c4 g8f6 f3e5",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4N3/2P1P3/8/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1958"
+    }
+  ]
+}

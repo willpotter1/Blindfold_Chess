@@ -1,0 +1,597 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Modern Defense",
+    "chunkKey": "modern-defense",
+    "recordCount": 39,
+    "lineCount": 37
+  },
+  "records": [
+    {
+      "id": "record-1026",
+      "eco": "B07",
+      "name": "Modern Defense: Geller's System",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c3",
+      "uci": "e2e4 g7g6 d2d4 f8g7 g1f3 d7d6 c2c3",
+      "epd": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-895"
+    },
+    {
+      "id": "record-1248",
+      "eco": "B27",
+      "name": "Modern Defense: Pterodactyl Variation",
+      "family": "Modern Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7 4. Nc3 Qa5",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7 b1c3 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PP3/2N2N2/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1092"
+    },
+    {
+      "id": "record-187",
+      "eco": "A04",
+      "name": "Modern Defense: Semi-Averbakh Variation, Polish Variation",
+      "family": "Modern Defense",
+      "pgn": "1. Nf3 c5 2. c4 g6 3. d4 Bg7 4. e4 Qb6",
+      "uci": "g1f3 c7c5 c2c4 g7g6 d2d4 f8g7 e2e4 d8b6",
+      "epd": "rnb1k1nr/pp1pppbp/1q4p1/2p5/2PPP3/5N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-179"
+    },
+    {
+      "id": "record-188",
+      "eco": "A04",
+      "name": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation",
+      "family": "Modern Defense",
+      "pgn": "1. Nf3 c5 2. c4 g6 3. d4 Bg7 4. e4 Qa5+",
+      "uci": "g1f3 c7c5 c2c4 g7g6 d2d4 f8g7 e2e4 d8a5",
+      "epd": "rnb1k1nr/pp1pppbp/6p1/q1p5/2PPP3/5N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-180"
+    },
+    {
+      "id": "record-189",
+      "eco": "A04",
+      "name": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Accepted",
+      "family": "Modern Defense",
+      "pgn": "1. Nf3 g6 2. d4 Bg7 3. e4 d6 4. c4 c5 5. dxc5 Qa5+",
+      "uci": "g1f3 g7g6 d2d4 f8g7 e2e4 d7d6 c2c4 c7c5 d4c5 d8a5",
+      "epd": "rnb1k1nr/pp2ppbp/3p2p1/q1P5/2P1P3/5N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-181"
+    },
+    {
+      "id": "record-502",
+      "eco": "A40",
+      "name": "Modern Defense: Beefeater Variation",
+      "family": "Modern Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 c5 4. d5 Bxc3+ 5. bxc3 f5",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 c7c5 d4d5 g7c3 b2c3 f7f5",
+      "epd": "rnbqk1nr/pp1pp2p/6p1/2pP1p2/2P5/2P5/P3PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-422"
+    },
+    {
+      "id": "record-503",
+      "eco": "A40",
+      "name": "Modern Defense: Lizard Defense, Pirc-Diemer Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. d4 g6 2. h4 Nf6 3. h5",
+      "uci": "d2d4 g7g6 h2h4 g8f6 h4h5",
+      "epd": "rnbqkb1r/pppppp1p/5np1/7P/3P4/8/PPP1PPP1/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-423"
+    },
+    {
+      "id": "record-518",
+      "eco": "A41",
+      "name": "Modern Defense",
+      "family": "Modern Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 d6",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 d7d6",
+      "epd": "rnbqk1nr/ppp1ppbp/3p2p1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-844"
+    },
+    {
+      "id": "record-519",
+      "eco": "A41",
+      "name": "Modern Defense: Neo-Modern Defense",
+      "family": "Modern Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. e4 e5",
+      "uci": "d2d4 g7g6 c2c4 f8g7 e2e4 e7e5",
+      "epd": "rnbqk1nr/pppp1pbp/6p1/4p3/2PPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-438"
+    },
+    {
+      "id": "record-528",
+      "eco": "A42",
+      "name": "Modern Defense: Averbakh System",
+      "family": "Modern Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 d6 4. e4",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 d7d6 e2e4",
+      "epd": "rnbqk1nr/ppp1ppbp/3p2p1/8/2PPP3/2N5/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-446"
+    },
+    {
+      "id": "record-529",
+      "eco": "A42",
+      "name": "Modern Defense: Averbakh Variation, Pseudo-Sämisch",
+      "family": "Modern Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. e4 d6 4. Be3 Nf6 5. f3",
+      "uci": "d2d4 g7g6 c2c4 f8g7 e2e4 d7d6 c1e3 g8f6 f2f3",
+      "epd": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/4BP2/PP4PP/RN1QKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-447"
+    },
+    {
+      "id": "record-530",
+      "eco": "A42",
+      "name": "Modern Defense: Kotov Variation",
+      "family": "Modern Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 d6 4. e4 Nc6",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 d7d6 e2e4 b8c6",
+      "epd": "r1bqk1nr/ppp1ppbp/2np2p1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-448"
+    },
+    {
+      "id": "record-531",
+      "eco": "A42",
+      "name": "Modern Defense: Randspringer Variation",
+      "family": "Modern Defense",
+      "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 d6 4. e4 f5",
+      "uci": "d2d4 g7g6 c2c4 f8g7 b1c3 d7d6 e2e4 f7f5",
+      "epd": "rnbqk1nr/ppp1p1bp/3p2p1/5p2/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-449"
+    },
+    {
+      "id": "record-974",
+      "eco": "B06",
+      "name": "Modern Defense",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6",
+      "uci": "e2e4 g7g6",
+      "epd": "rnbqkbnr/pppppp1p/6p1/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-844"
+    },
+    {
+      "id": "record-975",
+      "eco": "B06",
+      "name": "Modern Defense",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7",
+      "uci": "e2e4 g7g6 d2d4 f8g7",
+      "epd": "rnbqk1nr/ppppppbp/6p1/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-844"
+    },
+    {
+      "id": "record-976",
+      "eco": "B06",
+      "name": "Modern Defense: Anti-Modern",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c6 4. Bc4 d6 5. Qe2",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c6 f1c4 d7d6 d1e2",
+      "epd": "rnbqk1nr/pp2ppbp/2pp2p1/8/2BPP3/2N5/PPP1QPPP/R1B1K1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-845"
+    },
+    {
+      "id": "record-977",
+      "eco": "B06",
+      "name": "Modern Defense: Bishop Attack",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Bc4",
+      "uci": "e2e4 g7g6 d2d4 f8g7 f1c4",
+      "epd": "rnbqk1nr/ppppppbp/6p1/8/2BPP3/8/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-846"
+    },
+    {
+      "id": "record-978",
+      "eco": "B06",
+      "name": "Modern Defense: Bishop Attack, Bücker Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Bc4 b5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 f1c4 b7b5",
+      "epd": "rnbqk1nr/p1ppppbp/6p1/1p6/2BPP3/8/PPP2PPP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-847"
+    },
+    {
+      "id": "record-979",
+      "eco": "B06",
+      "name": "Modern Defense: Bishop Attack, Monkey's Bum",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. Bc4 Bg7 3. Qf3 e6 4. d4 Bxd4",
+      "uci": "e2e4 g7g6 f1c4 f8g7 d1f3 e7e6 d2d4 g7d4",
+      "epd": "rnbqk1nr/pppp1p1p/4p1p1/8/2BbP3/5Q2/PPP2PPP/RNB1K1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-848"
+    },
+    {
+      "id": "record-980",
+      "eco": "B06",
+      "name": "Modern Defense: Dunworthy Variation",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. c4 d5 4. exd5 c6 5. dxc6 Bxd4",
+      "uci": "e2e4 g7g6 d2d4 f8g7 c2c4 d7d5 e4d5 c7c6 d5c6 g7d4",
+      "epd": "rnbqk1nr/pp2pp1p/2P3p1/8/2Pb4/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-849"
+    },
+    {
+      "id": "record-981",
+      "eco": "B06",
+      "name": "Modern Defense: Fianchetto Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 f5",
+      "uci": "e2e4 g7g6 d2d4 f7f5",
+      "epd": "rnbqkbnr/ppppp2p/6p1/5p2/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-850"
+    },
+    {
+      "id": "record-982",
+      "eco": "B06",
+      "name": "Modern Defense: Gurgenidze Defense",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c6 4. f4 d5 5. e5 h5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c6 f2f4 d7d5 e4e5 h7h5",
+      "epd": "rnbqk1nr/pp2ppb1/2p3p1/3pP2p/3P1P2/2N5/PPP3PP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-851"
+    },
+    {
+      "id": "record-983",
+      "eco": "B06",
+      "name": "Modern Defense: Lizard Defense, Mittenberger Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 d5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 d7d5",
+      "epd": "rnbqk1nr/ppp1ppbp/6p1/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-852"
+    },
+    {
+      "id": "record-984",
+      "eco": "B06",
+      "name": "Modern Defense: Masur Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Nh6 3. Nc3 f5 4. Bxh6 Bxh6 5. exf5 O-O",
+      "uci": "e2e4 g7g6 d2d4 g8h6 b1c3 f7f5 c1h6 f8h6 e4f5 e8g8",
+      "epd": "rnbq1rk1/ppppp2p/6pb/5P2/3P4/2N5/PPP2PPP/R2QKBNR w KQ -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-853"
+    },
+    {
+      "id": "record-985",
+      "eco": "B06",
+      "name": "Modern Defense: Modern Pterodactyl",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c5",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c5",
+      "epd": "rnbqk1nr/pp1pppbp/6p1/2p5/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-854"
+    },
+    {
+      "id": "record-986",
+      "eco": "B06",
+      "name": "Modern Defense: Mongredien Defense, with Nc3",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 b6",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 b7b6",
+      "epd": "rnbqk1nr/p1ppppbp/1p4p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-855"
+    },
+    {
+      "id": "record-987",
+      "eco": "B06",
+      "name": "Modern Defense: Mongredien Defense, with Nf3",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nf3 b6",
+      "uci": "e2e4 g7g6 d2d4 f8g7 g1f3 b7b6",
+      "epd": "rnbqk1nr/p1ppppbp/1p4p1/8/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-856"
+    },
+    {
+      "id": "record-988",
+      "eco": "B06",
+      "name": "Modern Defense: Norwegian Defense",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Nf6",
+      "uci": "e2e4 g7g6 d2d4 g8f6",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-857"
+    },
+    {
+      "id": "record-989",
+      "eco": "B06",
+      "name": "Modern Defense: Norwegian Defense, Norwegian Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Nf6 3. e5 Nh5 4. Be2 d6",
+      "uci": "e2e4 g7g6 d2d4 g8f6 e4e5 f6h5 f1e2 d7d6",
+      "epd": "rnbqkb1r/ppp1pp1p/3p2p1/4P2n/3P4/8/PPP1BPPP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-858"
+    },
+    {
+      "id": "record-990",
+      "eco": "B06",
+      "name": "Modern Defense: Pseudo-Austrian Attack",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 d7d6 f2f4",
+      "epd": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PPP2/2N5/PPP3PP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-859"
+    },
+    {
+      "id": "record-991",
+      "eco": "B06",
+      "name": "Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Declined",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. Nf3 d6 5. Be2 Qa5+",
+      "uci": "e2e4 g7g6 d2d4 f8g7 c2c4 c7c5 g1f3 d7d6 f1e2 d8a5",
+      "epd": "rnb1k1nr/pp2ppbp/3p2p1/q1p5/2PPP3/5N2/PP2BPPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-860"
+    },
+    {
+      "id": "record-992",
+      "eco": "B06",
+      "name": "Modern Defense: Standard Defense",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 d6",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 d7d6",
+      "epd": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-861"
+    },
+    {
+      "id": "record-993",
+      "eco": "B06",
+      "name": "Modern Defense: Standard Line",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3",
+      "epd": "rnbqk1nr/ppppppbp/6p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-862"
+    },
+    {
+      "id": "record-994",
+      "eco": "B06",
+      "name": "Modern Defense: Three Pawns Attack",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. f4",
+      "uci": "e2e4 g7g6 d2d4 f8g7 f2f4",
+      "epd": "rnbqk1nr/ppppppbp/6p1/8/3PPP2/8/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-863"
+    },
+    {
+      "id": "record-995",
+      "eco": "B06",
+      "name": "Modern Defense: Two Knights Variation",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Nf3",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 d7d6 g1f3",
+      "epd": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/2N2N2/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-864"
+    },
+    {
+      "id": "record-996",
+      "eco": "B06",
+      "name": "Modern Defense: Two Knights Variation, Suttles Variation",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 c6 4. Nf3 d6",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 c7c6 g1f3 d7d6",
+      "epd": "rnbqk1nr/pp2ppbp/2pp2p1/8/3PP3/2N2N2/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-865"
+    },
+    {
+      "id": "record-997",
+      "eco": "B06",
+      "name": "Modern Defense: Two Knights Variation, Suttles Variation, Tal Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Nf3 c6 5. Bg5 Qb6 6. Qd2 Qxb2",
+      "uci": "e2e4 g7g6 d2d4 f8g7 b1c3 d7d6 g1f3 c7c6 c1g5 d8b6 d1d2 b6b2",
+      "epd": "rnb1k1nr/pp2ppbp/2pp2p1/6B1/3PP3/2N2N2/PqPQ1PPP/R3KB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-866"
+    },
+    {
+      "id": "record-998",
+      "eco": "B06",
+      "name": "Modern Defense: Westermann Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Bd2",
+      "uci": "e2e4 g7g6 d2d4 f8g7 c1d2",
+      "epd": "rnbqk1nr/ppppppbp/6p1/8/3PP3/8/PPPB1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-867"
+    },
+    {
+      "id": "record-999",
+      "eco": "B06",
+      "name": "Modern Defense: Wind Gambit",
+      "family": "Modern Defense",
+      "pgn": "1. e4 g6 2. d4 Bg7 3. Bd3",
+      "uci": "e2e4 g7g6 d2d4 f8g7 f1d3",
+      "epd": "rnbqk1nr/ppppppbp/6p1/8/3PP3/3B4/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-868"
+    }
+  ]
+}

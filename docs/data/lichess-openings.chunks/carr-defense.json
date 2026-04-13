@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Carr Defense",
+    "chunkKey": "carr-defense",
+    "recordCount": 2,
+    "lineCount": 2
+  },
+  "records": [
+    {
+      "id": "record-794",
+      "eco": "B00",
+      "name": "Carr Defense",
+      "family": "Carr Defense",
+      "pgn": "1. e4 h6",
+      "uci": "e2e4 h7h6",
+      "epd": "rnbqkbnr/ppppppp1/7p/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-675"
+    },
+    {
+      "id": "record-795",
+      "eco": "B00",
+      "name": "Carr Defense: Zilbermints Gambit",
+      "family": "Carr Defense",
+      "pgn": "1. e4 h6 2. d4 e5",
+      "uci": "e2e4 h7h6 d2d4 e7e5",
+      "epd": "rnbqkbnr/pppp1pp1/7p/4p3/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-676"
+    }
+  ]
+}

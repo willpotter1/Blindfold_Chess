@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "East Indian Defense",
+    "chunkKey": "east-indian-defense",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-606",
+      "eco": "A48",
+      "name": "East Indian Defense",
+      "family": "East Indian Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6",
+      "uci": "d2d4 g8f6 g1f3 g7g6",
+      "epd": "rnbqkb1r/pppppp1p/5np1/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-518"
+    }
+  ]
+}

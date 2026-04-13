@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Ware Opening",
+    "chunkKey": "ware-opening",
+    "recordCount": 7,
+    "lineCount": 7
+  },
+  "records": [
+    {
+      "id": "record-137",
+      "eco": "A00",
+      "name": "Ware Opening",
+      "family": "Ware Opening",
+      "pgn": "1. a4",
+      "uci": "a2a4",
+      "epd": "rnbqkbnr/pppppppp/8/8/P7/8/1PPPPPPP/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-133"
+    },
+    {
+      "id": "record-138",
+      "eco": "A00",
+      "name": "Ware Opening: Cologne Gambit",
+      "family": "Ware Opening",
+      "pgn": "1. a4 b6 2. d4 d5 3. Nc3 Nd7",
+      "uci": "a2a4 b7b6 d2d4 d7d5 b1c3 b8d7",
+      "epd": "r1bqkbnr/p1pnpppp/1p6/3p4/P2P4/2N5/1PP1PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-134"
+    },
+    {
+      "id": "record-139",
+      "eco": "A00",
+      "name": "Ware Opening: Crab Variation",
+      "family": "Ware Opening",
+      "pgn": "1. a4 e5 2. h4",
+      "uci": "a2a4 e7e5 h2h4",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/P6P/8/1PPPPPP1/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-135"
+    },
+    {
+      "id": "record-140",
+      "eco": "A00",
+      "name": "Ware Opening: Meadow Hay Trap",
+      "family": "Ware Opening",
+      "pgn": "1. a4 e5 2. Ra3",
+      "uci": "a2a4 e7e5 a1a3",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/P7/R7/1PPPPPPP/1NBQKBNR b Kkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-136"
+    },
+    {
+      "id": "record-141",
+      "eco": "A00",
+      "name": "Ware Opening: Symmetric Variation",
+      "family": "Ware Opening",
+      "pgn": "1. a4 a5",
+      "uci": "a2a4 a7a5",
+      "epd": "rnbqkbnr/1ppppppp/8/p7/P7/8/1PPPPPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-137"
+    },
+    {
+      "id": "record-142",
+      "eco": "A00",
+      "name": "Ware Opening: Ware Gambit",
+      "family": "Ware Opening",
+      "pgn": "1. a4 e5 2. a5 d5 3. e3 f5 4. a6",
+      "uci": "a2a4 e7e5 a4a5 d7d5 e2e3 f7f5 a5a6",
+      "epd": "rnbqkbnr/ppp3pp/P7/3ppp2/8/4P3/1PPP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-138"
+    },
+    {
+      "id": "record-143",
+      "eco": "A00",
+      "name": "Ware Opening: Wing Gambit",
+      "family": "Ware Opening",
+      "pgn": "1. a4 b5 2. axb5 Bb7",
+      "uci": "a2a4 b7b5 a4b5 c8b7",
+      "epd": "rn1qkbnr/pbpppppp/8/1P6/8/8/1PPPPPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-139"
+    }
+  ]
+}

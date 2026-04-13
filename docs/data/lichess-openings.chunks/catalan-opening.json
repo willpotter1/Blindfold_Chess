@@ -1,0 +1,462 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Catalan Opening",
+    "chunkKey": "catalan-opening",
+    "recordCount": 30,
+    "lineCount": 14
+  },
+  "records": [
+    {
+      "id": "record-3316",
+      "eco": "E00",
+      "name": "Catalan Opening",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3",
+      "epd": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2886"
+    },
+    {
+      "id": "record-3317",
+      "eco": "E00",
+      "name": "Catalan Opening",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2886"
+    },
+    {
+      "id": "record-3318",
+      "eco": "E00",
+      "name": "Catalan Opening: Hungarian Gambit",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 e5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 e6e5",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2887"
+    },
+    {
+      "id": "record-3322",
+      "eco": "E01",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/6P1/PP2PPBP/RNBQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3323",
+      "eco": "E02",
+      "name": "Catalan Opening: Open Defense",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 d5c4",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/8/2pP4/6P1/PP2PPBP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2891"
+    },
+    {
+      "id": "record-3324",
+      "eco": "E03",
+      "name": "Catalan Opening: Open Defense",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4 5. Qa4+ Nbd7 6. Qxc4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 d5c4 d1a4 b8d7 a4c4",
+      "epd": "r1bqkb1r/pppn1ppp/4pn2/8/2QP4/6P1/PP2PPBP/RNB1K1NR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2891"
+    },
+    {
+      "id": "record-3325",
+      "eco": "E03",
+      "name": "Catalan Opening: Open Defense, Alekhine Variation",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4 5. Qa4+ Nbd7 6. Qxc4 a6 7. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 d5c4 d1a4 b8d7 a4c4 a7a6 c4c2",
+      "epd": "r1bqkb1r/1ppn1ppp/p3pn2/8/3P4/6P1/PPQ1PPBP/RNB1K1NR b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2892"
+    },
+    {
+      "id": "record-3326",
+      "eco": "E04",
+      "name": "Catalan Opening: Open Defense",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4 5. Nf3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 d5c4 g1f3",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/8/2pP4/5NP1/PP2PPBP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2891"
+    },
+    {
+      "id": "record-3327",
+      "eco": "E04",
+      "name": "Catalan Opening: Open Defense",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 c6 5. Bg2 dxc4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 g2g3 c7c6 f1g2 d5c4",
+      "epd": "rnbqkb1r/pp3ppp/2p1pn2/8/2pP4/5NP1/PP2PPBP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2891"
+    },
+    {
+      "id": "record-3328",
+      "eco": "E04",
+      "name": "Catalan Opening: Open Defense, Modern Sharp Variation",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4 5. Nf3 Nc6 6. Qa4 Bb4+",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 d5c4 g1f3 b8c6 d1a4 f8b4",
+      "epd": "r1bqk2r/ppp2ppp/2n1pn2/8/QbpP4/5NP1/PP2PPBP/RNB1K2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2893"
+    },
+    {
+      "id": "record-3329",
+      "eco": "E05",
+      "name": "Catalan Opening: Open Defense, Classical Line",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4 5. Nf3 Be7",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 d5c4 g1f3 f8e7",
+      "epd": "rnbqk2r/ppp1bppp/4pn2/8/2pP4/5NP1/PP2PPBP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2894"
+    },
+    {
+      "id": "record-3330",
+      "eco": "E05",
+      "name": "Catalan Opening: Open Defense, Classical Line",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 Be7 5. Bg2 O-O 6. O-O dxc4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 g2g3 f8e7 f1g2 e8g8 e1g1 d5c4",
+      "epd": "rnbq1rk1/ppp1bppp/4pn2/8/2pP4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2894"
+    },
+    {
+      "id": "record-3331",
+      "eco": "E06",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3",
+      "epd": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3332",
+      "eco": "E06",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 Bb4+ 5. Bd2 Be7 6. Bg2 O-O 7. O-O c6 8. Bf4 b6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 g2g3 f8b4 c1d2 b4e7 f1g2 e8g8 e1g1 c7c6 d2f4 b7b6",
+      "epd": "rnbq1rk1/p3bppp/1pp1pn2/3p4/2PP1B2/5NP1/PP2PPBP/RN1Q1RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3333",
+      "eco": "E06",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O c6 7. Qc2 b6 8. Nbd2 Bb7 9. e4 Na6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 c7c6 d1c2 b7b6 b1d2 c8b7 e2e4 b8a6",
+      "epd": "r2q1rk1/pb2bppp/npp1pn2/3p4/2PPP3/5NP1/PPQN1PBP/R1B2RK1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3334",
+      "eco": "E07",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 b8d7",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3335",
+      "eco": "E07",
+      "name": "Catalan Opening: Closed, Botvinnik Variation",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7 7. Nc3 c6 8. Qd3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 b8d7 b1c3 c7c6 d1d3",
+      "epd": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/2NQ1NP1/PP2PPBP/R1B2RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2895"
+    },
+    {
+      "id": "record-3336",
+      "eco": "E08",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7 7. Qc2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 b8d7 d1c2",
+      "epd": "r1bq1rk1/pppnbppp/4pn2/3p4/2PP4/5NP1/PPQ1PPBP/RNB2RK1 b - -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3337",
+      "eco": "E08",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7 7. Qc2 c6 8. b3",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 b8d7 d1c2 c7c6 b2b3",
+      "epd": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/1P3NP1/P1Q1PPBP/RNB2RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3338",
+      "eco": "E08",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7 7. Qc2 c6 8. b3 b6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 b8d7 d1c2 c7c6 b2b3 b7b6",
+      "epd": "r1bq1rk1/p2nbppp/1pp1pn2/3p4/2PP4/1P3NP1/P1Q1PPBP/RNB2RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3339",
+      "eco": "E08",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O c6 7. Qc2 b6 8. Rd1 Nbd7 9. Bf4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 c7c6 d1c2 b7b6 f1d1 b8d7 c1f4",
+      "epd": "r1bq1rk1/p2nbppp/1pp1pn2/3p4/2PP1B2/5NP1/PPQ1PPBP/RN1R2K1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3340",
+      "eco": "E08",
+      "name": "Catalan Opening: Closed",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7 7. Qc2 c6 8. Bf4 b6 9. Nbd2 Bb7 10. e4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 b8d7 d1c2 c7c6 c1f4 b7b6 b1d2 c8b7 e2e4",
+      "epd": "r2q1rk1/pb1nbppp/1pp1pn2/3p4/2PPPB2/5NP1/PPQN1PBP/R4RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2890"
+    },
+    {
+      "id": "record-3341",
+      "eco": "E08",
+      "name": "Catalan Opening: Closed, Spassky Gambit",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 Be7 4. Bg2 d5 5. Nf3 O-O 6. O-O Nbd7 7. Qc2 c6 8. b3 b6 9. Rd1 Bb7 10. Nc3 b5",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 f8e7 f1g2 d7d5 g1f3 e8g8 e1g1 b8d7 d1c2 c7c6 b2b3 b7b6 f1d1 c8b7 b1c3 b6b5",
+      "epd": "r2q1rk1/pb1nbppp/2p1pn2/1p1p4/2PP4/1PN2NP1/P1Q1PPBP/R1BR2K1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2896"
+    },
+    {
+      "id": "record-3342",
+      "eco": "E08",
+      "name": "Catalan Opening: Closed, Zagoryansky Variation",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 e6 2. c4 Nf6 3. Nf3 d5 4. g3 Be7 5. Bg2 O-O 6. O-O Nbd7 7. Qc2 c6 8. Rd1 b6 9. a4",
+      "uci": "d2d4 e7e6 c2c4 g8f6 g1f3 d7d5 g2g3 f8e7 f1g2 e8g8 e1g1 b8d7 d1c2 c7c6 f1d1 b7b6 a2a4",
+      "epd": "r1bq1rk1/p2nbppp/1pp1pn2/3p4/P1PP4/5NP1/1PQ1PPBP/RNBR2K1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2897"
+    },
+    {
+      "id": "record-3343",
+      "eco": "E09",
+      "name": "Catalan Opening: Closed Variation, Rabinovich Variation",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Qc2 e6 5. Nbd2 Be7 6. g3 Nbd7 7. Bg2 O-O 8. O-O b5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 d1c2 e7e6 b1d2 f8e7 g2g3 b8d7 f1g2 e8g8 e1g1 b7b5",
+      "epd": "r1bq1rk1/p2nbppp/2p1pn2/1p1p4/2PP4/5NP1/PPQNPPBP/R1B2RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2898"
+    },
+    {
+      "id": "record-3344",
+      "eco": "E09",
+      "name": "Catalan Opening: Closed Variation, Traditional Variation",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 Be7 5. Bg2 O-O 6. O-O Nbd7 7. Qc2 c6 8. Nbd2 b6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 g2g3 f8e7 f1g2 e8g8 e1g1 b8d7 d1c2 c7c6 b1d2 b7b6",
+      "epd": "r1bq1rk1/p2nbppp/1pp1pn2/3p4/2PP4/5NP1/PPQNPPBP/R1B2RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2899"
+    },
+    {
+      "id": "record-3345",
+      "eco": "E09",
+      "name": "Catalan Opening: Closed, Main Line",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 Be7 5. Bg2 O-O 6. O-O Nbd7 7. Qc2 c6 8. Nbd2",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 g2g3 f8e7 f1g2 e8g8 e1g1 b8d7 d1c2 c7c6 b1d2",
+      "epd": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/5NP1/PPQNPPBP/R1B2RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2900"
+    },
+    {
+      "id": "record-3346",
+      "eco": "E09",
+      "name": "Catalan Opening: Closed, Main Line",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 Be7 5. Bg2 O-O 6. O-O c6 7. Qc2 b6 8. Nbd2 Bb7 9. e4 Nbd7",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 g2g3 f8e7 f1g2 e8g8 e1g1 c7c6 d1c2 b7b6 b1d2 c8b7 e2e4 b8d7",
+      "epd": "r2q1rk1/pb1nbppp/1pp1pn2/3p4/2PPP3/5NP1/PPQN1PBP/R1B2RK1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2900"
+    },
+    {
+      "id": "record-3347",
+      "eco": "E09",
+      "name": "Catalan Opening: Closed, Main Line",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 Be7 5. Bg2 O-O 6. O-O Nbd7 7. Qc2 c6 8. Bf4 b6 9. Nbd2 Bb7 10. e4 dxe4 11. Nxe4 Nxe4 12. Qxe4",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g1f3 d7d5 g2g3 f8e7 f1g2 e8g8 e1g1 b8d7 d1c2 c7c6 c1f4 b7b6 b1d2 c8b7 e2e4 d5e4 d2e4 f6e4 c2e4",
+      "epd": "r2q1rk1/pb1nbppp/1pp1p3/8/2PPQB2/5NP1/PP3PBP/R4RK1 b - -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-2900"
+    },
+    {
+      "id": "record-3348",
+      "eco": "E09",
+      "name": "Catalan Opening: Closed, Sokolsky Variation",
+      "family": "Catalan Opening",
+      "pgn": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7 7. Qc2 c6 8. Nbd2 b6 9. b3 a5 10. Bb2 Ba6",
+      "uci": "d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7 g1f3 e8g8 e1g1 b8d7 d1c2 c7c6 b1d2 b7b6 b2b3 a7a5 c1b2 c8a6",
+      "epd": "r2q1rk1/3nbppp/bpp1pn2/p2p4/2PP4/1P3NP1/PBQNPPBP/R4RK1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2901"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Barnes Opening",
+    "chunkKey": "barnes-opening",
+    "recordCount": 6,
+    "lineCount": 5
+  },
+  "records": [
+    {
+      "id": "record-10",
+      "eco": "A00",
+      "name": "Barnes Opening: Gedult Gambit",
+      "family": "Barnes Opening",
+      "pgn": "1. f3 f5 2. e4 fxe4 3. Nc3",
+      "uci": "f2f3 f7f5 e2e4 f5e4 b1c3",
+      "epd": "rnbqkbnr/ppppp1pp/8/8/4p3/2N2P2/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-9"
+    },
+    {
+      "id": "record-11",
+      "eco": "A00",
+      "name": "Barnes Opening: Hammerschlag",
+      "family": "Barnes Opening",
+      "pgn": "1. f3 e5 2. Kf2",
+      "uci": "f2f3 e7e5 e1f2",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/8/5P2/PPPPPKPP/RNBQ1BNR b kq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-10"
+    },
+    {
+      "id": "record-1752",
+      "eco": "C20",
+      "name": "Barnes Opening: Walkerling",
+      "family": "Barnes Opening",
+      "pgn": "1. f3 e5 2. e4 Nf6 3. Bc4",
+      "uci": "f2f3 e7e5 e2e4 g8f6 f1c4",
+      "epd": "rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/5P2/PPPP2PP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1513"
+    },
+    {
+      "id": "record-7",
+      "eco": "A00",
+      "name": "Barnes Opening",
+      "family": "Barnes Opening",
+      "pgn": "1. f3",
+      "uci": "f2f3",
+      "epd": "rnbqkbnr/pppppppp/8/8/8/5P2/PPPPP1PP/RNBQKBNR b KQkq -",
+      "plyCount": 1,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 0
+      },
+      "lineId": "line-7"
+    },
+    {
+      "id": "record-8",
+      "eco": "A00",
+      "name": "Barnes Opening: Fool's Mate",
+      "family": "Barnes Opening",
+      "pgn": "1. f3 e5 2. g4 Qh4#",
+      "uci": "f2f3 e7e5 g2g4 d8h4",
+      "epd": "rnb1kbnr/pppp1ppp/8/4p3/6Pq/5P2/PPPPP2P/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-8"
+    },
+    {
+      "id": "record-9",
+      "eco": "A00",
+      "name": "Barnes Opening: Gedult Gambit",
+      "family": "Barnes Opening",
+      "pgn": "1. f3 d5 2. e4 g6 3. d4 dxe4 4. c3",
+      "uci": "f2f3 d7d5 e2e4 g7g6 d2d4 d5e4 c2c3",
+      "epd": "rnbqkbnr/ppp1pp1p/6p1/8/3Pp3/2P2P2/PP4PP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-9"
+    }
+  ]
+}

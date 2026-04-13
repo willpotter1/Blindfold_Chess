@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Englund Gambit",
+    "chunkKey": "englund-gambit",
+    "recordCount": 9,
+    "lineCount": 9
+  },
+  "records": [
+    {
+      "id": "record-478",
+      "eco": "A40",
+      "name": "Englund Gambit",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5",
+      "uci": "d2d4 e7e5",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-398"
+    },
+    {
+      "id": "record-486",
+      "eco": "A40",
+      "name": "Englund Gambit: Felbecker Gambit",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Bc5",
+      "uci": "d2d4 e7e5 d4e5 b8c6 g1f3 f8c5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b1P3/8/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-406"
+    },
+    {
+      "id": "record-487",
+      "eco": "A40",
+      "name": "Englund Gambit: Hartlaub-Charlick Gambit",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5 2. dxe5 d6",
+      "uci": "d2d4 e7e5 d4e5 d7d6",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-407"
+    },
+    {
+      "id": "record-488",
+      "eco": "A40",
+      "name": "Englund Gambit: Main Line",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7",
+      "uci": "d2d4 e7e5 d4e5 b8c6 g1f3 d8e7",
+      "epd": "r1b1kbnr/ppppqppp/2n5/4P3/8/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-408"
+    },
+    {
+      "id": "record-489",
+      "eco": "A40",
+      "name": "Englund Gambit: Mosquito Gambit",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5 2. dxe5 Qh4",
+      "uci": "d2d4 e7e5 d4e5 d8h4",
+      "epd": "rnb1kbnr/pppp1ppp/8/4P3/7q/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-409"
+    },
+    {
+      "id": "record-490",
+      "eco": "A40",
+      "name": "Englund Gambit: Soller Gambit",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5 2. dxe5 f6",
+      "uci": "d2d4 e7e5 d4e5 f7f6",
+      "epd": "rnbqkbnr/pppp2pp/5p2/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-410"
+    },
+    {
+      "id": "record-491",
+      "eco": "A40",
+      "name": "Englund Gambit: Soller Gambit Deferred",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5 2. dxe5 Nc6 3. Nf3 f6",
+      "uci": "d2d4 e7e5 d4e5 b8c6 g1f3 f7f6",
+      "epd": "r1bqkbnr/pppp2pp/2n2p2/4P3/8/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-411"
+    },
+    {
+      "id": "record-492",
+      "eco": "A40",
+      "name": "Englund Gambit: Stockholm Variation",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Qd5",
+      "uci": "d2d4 e7e5 d4e5 b8c6 g1f3 d8e7 d1d5",
+      "epd": "r1b1kbnr/ppppqppp/2n5/3QP3/8/5N2/PPP1PPPP/RNB1KB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-412"
+    },
+    {
+      "id": "record-493",
+      "eco": "A40",
+      "name": "Englund Gambit: Zilbermints Gambit",
+      "family": "Englund Gambit",
+      "pgn": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Nge7",
+      "uci": "d2d4 e7e5 d4e5 b8c6 g1f3 g8e7",
+      "epd": "r1bqkb1r/ppppnppp/2n5/4P3/8/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-413"
+    }
+  ]
+}

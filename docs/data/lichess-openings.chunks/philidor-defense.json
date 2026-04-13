@@ -1,0 +1,672 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Philidor Defense",
+    "chunkKey": "philidor-defense",
+    "recordCount": 44,
+    "lineCount": 38
+  },
+  "records": [
+    {
+      "id": "record-2134",
+      "eco": "C41",
+      "name": "Philidor Defense",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6",
+      "uci": "e2e4 e7e5 g1f3 d7d6",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1876"
+    },
+    {
+      "id": "record-2135",
+      "eco": "C41",
+      "name": "Philidor Defense",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1876"
+    },
+    {
+      "id": "record-2136",
+      "eco": "C41",
+      "name": "Philidor Defense",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. Bc4",
+      "uci": "e2e4 e7e5 g1f3 d7d6 f1c4",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1876"
+    },
+    {
+      "id": "record-2137",
+      "eco": "C41",
+      "name": "Philidor Defense",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. Bc4 Be7",
+      "uci": "e2e4 e7e5 g1f3 d7d6 f1c4 f8e7",
+      "epd": "rnbqk1nr/ppp1bppp/3p4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1876"
+    },
+    {
+      "id": "record-2138",
+      "eco": "C41",
+      "name": "Philidor Defense: Albin-Blackburne Gambit",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Bg4 4. dxe5 Nd7",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 c8g4 d4e5 b8d7",
+      "epd": "r2qkbnr/pppn1ppp/3p4/4P3/4P1b1/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1877"
+    },
+    {
+      "id": "record-2139",
+      "eco": "C41",
+      "name": "Philidor Defense: Berger Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4 Nf6 5. Nc3 Be7 6. Be2 O-O 7. O-O c5 8. Nf3 Nc6 9. Bg5 Be6 10. Re1",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4 f3d4 g8f6 b1c3 f8e7 f1e2 e8g8 e1g1 c7c5 d4f3 b8c6 c1g5 c8e6 f1e1",
+      "epd": "r2q1rk1/pp2bppp/2npbn2/2p3B1/4P3/2N2N2/PPP1BPPP/R2QR1K1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1878"
+    },
+    {
+      "id": "record-2140",
+      "eco": "C41",
+      "name": "Philidor Defense: Bird Gambit",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. c3",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4 c2c3",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1879"
+    },
+    {
+      "id": "record-2141",
+      "eco": "C41",
+      "name": "Philidor Defense: Boden Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Qxd4 Bd7",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4 d1d4 c8d7",
+      "epd": "rn1qkbnr/pppb1ppp/3p4/8/3QP3/5N2/PPP2PPP/RNB1KB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1880"
+    },
+    {
+      "id": "record-2142",
+      "eco": "C41",
+      "name": "Philidor Defense: Exchange Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1881"
+    },
+    {
+      "id": "record-2143",
+      "eco": "C41",
+      "name": "Philidor Defense: Exchange Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4 f3d4",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1881"
+    },
+    {
+      "id": "record-2144",
+      "eco": "C41",
+      "name": "Philidor Defense: Exchange Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4 f3d4 g8f6",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1881"
+    },
+    {
+      "id": "record-2145",
+      "eco": "C41",
+      "name": "Philidor Defense: Hanham Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nd7",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 b8d7",
+      "epd": "r1bqkbnr/pppn1ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1882"
+    },
+    {
+      "id": "record-2146",
+      "eco": "C41",
+      "name": "Philidor Defense: Hanham Variation, Delmar Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Bc4 c6 5. c3",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 b8d7 f1c4 c7c6 c2c3",
+      "epd": "r1bqkbnr/pp1n1ppp/2pp4/4p3/2BPP3/2P2N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1883"
+    },
+    {
+      "id": "record-2147",
+      "eco": "C41",
+      "name": "Philidor Defense: Hanham Variation, Krause Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Bc4 c6 5. O-O",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 b8d7 f1c4 c7c6 e1g1",
+      "epd": "r1bqkbnr/pp1n1ppp/2pp4/4p3/2BPP3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1884"
+    },
+    {
+      "id": "record-2148",
+      "eco": "C41",
+      "name": "Philidor Defense: Hanham Variation, Schlechter Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Bc4 c6 5. Nc3",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 b8d7 f1c4 c7c6 b1c3",
+      "epd": "r1bqkbnr/pp1n1ppp/2pp4/4p3/2BPP3/2N2N2/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1885"
+    },
+    {
+      "id": "record-2149",
+      "eco": "C41",
+      "name": "Philidor Defense: Hanham Variation, Sharp Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Bc4 Nb6",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 b8d7 f1c4 d7b6",
+      "epd": "r1bqkbnr/ppp2ppp/1n1p4/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1886"
+    },
+    {
+      "id": "record-2150",
+      "eco": "C41",
+      "name": "Philidor Defense: Hanham Variation, Steiner Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Bc4 c6 5. O-O Be7 6. dxe5",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 b8d7 f1c4 c7c6 e1g1 f8e7 d4e5",
+      "epd": "r1bqk1nr/pp1nbppp/2pp4/4P3/2B1P3/5N2/PPP2PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1887"
+    },
+    {
+      "id": "record-2151",
+      "eco": "C41",
+      "name": "Philidor Defense: Hanham, Kmoch Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Bc4 c6 5. Ng5",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 b8d7 f1c4 c7c6 f3g5",
+      "epd": "r1bqkbnr/pp1n1ppp/2pp4/4p1N1/2BPP3/8/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1888"
+    },
+    {
+      "id": "record-2152",
+      "eco": "C41",
+      "name": "Philidor Defense: Larsen Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4 g6",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4 f3d4 g7g6",
+      "epd": "rnbqkbnr/ppp2p1p/3p2p1/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1889"
+    },
+    {
+      "id": "record-2153",
+      "eco": "C41",
+      "name": "Philidor Defense: Lion Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. Nc3 Nbd7",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 b1c3 b8d7",
+      "epd": "r1bqkb1r/pppn1ppp/3p1n2/4p3/3PP3/2N2N2/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1890"
+    },
+    {
+      "id": "record-2154",
+      "eco": "C41",
+      "name": "Philidor Defense: Lion Variation, Bishop Sacrifice",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. Nc3 Nbd7 5. Bc4 Be7 6. Bxf7+",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 b1c3 b8d7 f1c4 f8e7 c4f7",
+      "epd": "r1bqk2r/pppnbBpp/3p1n2/4p3/3PP3/2N2N2/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1891"
+    },
+    {
+      "id": "record-2155",
+      "eco": "C41",
+      "name": "Philidor Defense: Lion Variation, Delayed Bishop Sacrifice",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 d6 2. d4 Nf6 3. Nc3 Nbd7 4. Nf3 e5 5. Bc4 Be7 6. dxe5 dxe5 7. Bxf7+",
+      "uci": "e2e4 d7d6 d2d4 g8f6 b1c3 b8d7 g1f3 e7e5 f1c4 f8e7 d4e5 d6e5 c4f7",
+      "epd": "r1bqk2r/pppnbBpp/5n2/4p3/4P3/2N2N2/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1892"
+    },
+    {
+      "id": "record-2156",
+      "eco": "C41",
+      "name": "Philidor Defense: Lion Variation, Forcing Line",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. Nc3 Nbd7 5. Bc4 Be7 6. Ng5 O-O 7. Bxf7+ Rxf7 8. Ne6",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 b1c3 b8d7 f1c4 f8e7 f3g5 e8g8 c4f7 f8f7 g5e6",
+      "epd": "r1bq2k1/pppnbrpp/3pNn2/4p3/3PP3/2N5/PPP2PPP/R1BQK2R b KQ -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1893"
+    },
+    {
+      "id": "record-2157",
+      "eco": "C41",
+      "name": "Philidor Defense: Lion Variation, Lion's Claw, with Bc4 and h6",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. Nc3 Nbd7 5. Bc4 Be7 6. O-O h6",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 b1c3 b8d7 f1c4 f8e7 e1g1 h7h6",
+      "epd": "r1bqk2r/pppnbpp1/3p1n1p/4p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1894"
+    },
+    {
+      "id": "record-2158",
+      "eco": "C41",
+      "name": "Philidor Defense: Lion Variation, Lion's Claw, with Be2 and c6",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. Nc3 Nbd7 5. Be2 Be7 6. O-O c6",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 b1c3 b8d7 f1e2 f8e7 e1g1 c7c6",
+      "epd": "r1bqk2r/pp1nbppp/2pp1n2/4p3/3PP3/2N2N2/PPP1BPPP/R1BQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1895"
+    },
+    {
+      "id": "record-2159",
+      "eco": "C41",
+      "name": "Philidor Defense: Lion Variation, Shirov Gambit",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nd7 4. Nc3 Ngf6 5. g4",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 b8d7 b1c3 g8f6 g2g4",
+      "epd": "r1bqkb1r/pppn1ppp/3p1n2/4p3/3PP1P1/2N2N2/PPP2P1P/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1896"
+    },
+    {
+      "id": "record-2160",
+      "eco": "C41",
+      "name": "Philidor Defense: Lion Variation, Sozin Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 d6 2. d4 Nf6 3. Nc3 e5 4. Nf3 Nbd7 5. Bc4 Be7 6. O-O O-O 7. Qe2 c6 8. a4 exd4",
+      "uci": "e2e4 d7d6 d2d4 g8f6 b1c3 e7e5 g1f3 b8d7 f1c4 f8e7 e1g1 e8g8 d1e2 c7c6 a2a4 e5d4",
+      "epd": "r1bq1rk1/pp1nbppp/2pp1n2/8/P1BpP3/2N2N2/1PP1QPPP/R1B2RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1897"
+    },
+    {
+      "id": "record-2161",
+      "eco": "C41",
+      "name": "Philidor Defense: Lopez Countergambit",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. Bc4 f5",
+      "uci": "e2e4 e7e5 g1f3 d7d6 f1c4 f7f5",
+      "epd": "rnbqkbnr/ppp3pp/3p4/4pp2/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1898"
+    },
+    {
+      "id": "record-2162",
+      "eco": "C41",
+      "name": "Philidor Defense: Lopez Countergambit, Jaenisch Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 f5 4. Bc4 exd4 5. Ng5 Nh6 6. Nxh7",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 f7f5 f1c4 e5d4 f3g5 g8h6 g5h7",
+      "epd": "rnbqkb1r/ppp3pN/3p3n/5p2/2BpP3/8/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1899"
+    },
+    {
+      "id": "record-2163",
+      "eco": "C41",
+      "name": "Philidor Defense: Morphy Gambit",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Bc4",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4 f1c4",
+      "epd": "rnbqkbnr/ppp2ppp/3p4/8/2BpP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1900"
+    },
+    {
+      "id": "record-2164",
+      "eco": "C41",
+      "name": "Philidor Defense: Nimzowitsch Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1901"
+    },
+    {
+      "id": "record-2165",
+      "eco": "C41",
+      "name": "Philidor Defense: Nimzowitsch Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. dxe5",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 d4e5",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/4P3/4P3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1901"
+    },
+    {
+      "id": "record-2166",
+      "eco": "C41",
+      "name": "Philidor Defense: Nimzowitsch Variation, Klein Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. Bc4",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 f1c4",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1902"
+    },
+    {
+      "id": "record-2167",
+      "eco": "C41",
+      "name": "Philidor Defense: Nimzowitsch Variation, Rellstab Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. dxe5 Nxe4 5. Qd5",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 d4e5 f6e4 d1d5",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/3QP3/4n3/5N2/PPP2PPP/RNB1KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1903"
+    },
+    {
+      "id": "record-2168",
+      "eco": "C41",
+      "name": "Philidor Defense: Nimzowitsch Variation, Sokolsky Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. dxe5 Nxe4 5. Nbd2",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 d4e5 f6e4 b1d2",
+      "epd": "rnbqkb1r/ppp2ppp/3p4/4P3/4n3/5N2/PPPN1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1904"
+    },
+    {
+      "id": "record-2169",
+      "eco": "C41",
+      "name": "Philidor Defense: Nimzowitsch, Larobok Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. Nc3 Nbd7 5. Bc4 Be7 6. Ng5 O-O 7. Bxf7+",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 b1c3 b8d7 f1c4 f8e7 f3g5 e8g8 c4f7",
+      "epd": "r1bq1rk1/pppnbBpp/3p1n2/4p1N1/3PP3/2N5/PPP2PPP/R1BQK2R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1905"
+    },
+    {
+      "id": "record-2170",
+      "eco": "C41",
+      "name": "Philidor Defense: Nimzowitsch, Locock Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Nf6 4. Ng5",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 f3g5",
+      "epd": "rnbqkb1r/ppp2ppp/3p1n2/4p1N1/3PP3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1906"
+    },
+    {
+      "id": "record-2171",
+      "eco": "C41",
+      "name": "Philidor Defense: Paulsen Attack",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4 d5 5. exd5",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 e5d4 f3d4 d6d5 e4d5",
+      "epd": "rnbqkbnr/ppp2ppp/8/3P4/3N4/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1907"
+    },
+    {
+      "id": "record-2172",
+      "eco": "C41",
+      "name": "Philidor Defense: Philidor Countergambit",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 f5",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 f7f5",
+      "epd": "rnbqkbnr/ppp3pp/3p4/4pp2/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1908"
+    },
+    {
+      "id": "record-2173",
+      "eco": "C41",
+      "name": "Philidor Defense: Philidor Countergambit, Berger Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 f5 4. dxe5 fxe4 5. Ng5 d5 6. e6 Bc5 7. Nc3",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 f7f5 d4e5 f5e4 f3g5 d6d5 e5e6 f8c5 b1c3",
+      "epd": "rnbqk1nr/ppp3pp/4P3/2bp2N1/4p3/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1909"
+    },
+    {
+      "id": "record-2174",
+      "eco": "C41",
+      "name": "Philidor Defense: Philidor Countergambit, Zukertort Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 f5 4. Nc3",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 f7f5 b1c3",
+      "epd": "rnbqkbnr/ppp3pp/3p4/4pp2/3PP3/2N2N2/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1911"
+    },
+    {
+      "id": "record-2175",
+      "eco": "C41",
+      "name": "Philidor Defense: Philidor Countergambit, del Rio Attack",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 f5 4. dxe5 fxe4 5. Ng5 d5 6. e6",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 f7f5 d4e5 f5e4 f3g5 d6d5 e5e6",
+      "epd": "rnbqkbnr/ppp3pp/4P3/3p2N1/4p3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1910"
+    },
+    {
+      "id": "record-2176",
+      "eco": "C41",
+      "name": "Philidor Defense: Philidor Gambit",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. d4 Bd7",
+      "uci": "e2e4 e7e5 g1f3 d7d6 d2d4 c8d7",
+      "epd": "rn1qkbnr/pppb1ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1912"
+    },
+    {
+      "id": "record-2177",
+      "eco": "C41",
+      "name": "Philidor Defense: Steinitz Variation",
+      "family": "Philidor Defense",
+      "pgn": "1. e4 e5 2. Nf3 d6 3. Bc4 Be7 4. c3",
+      "uci": "e2e4 e7e5 g1f3 d7d6 f1c4 f8e7 c2c3",
+      "epd": "rnbqk1nr/ppp1bppp/3p4/4p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1913"
+    }
+  ]
+}

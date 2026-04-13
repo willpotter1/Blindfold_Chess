@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Paleface Attack",
+    "chunkKey": "paleface-attack",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-574",
+      "eco": "A45",
+      "name": "Paleface Attack",
+      "family": "Paleface Attack",
+      "pgn": "1. d4 Nf6 2. f3",
+      "uci": "d2d4 g8f6 f2f3",
+      "epd": "rnbqkb1r/pppppppp/5n2/8/3P4/5P2/PPP1P1PP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-488"
+    }
+  ]
+}

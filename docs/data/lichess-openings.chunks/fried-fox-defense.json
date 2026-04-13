@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Fried Fox Defense",
+    "chunkKey": "fried-fox-defense",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-797",
+      "eco": "B00",
+      "name": "Fried Fox Defense",
+      "family": "Fried Fox Defense",
+      "pgn": "1. e4 f6 2. d4 Kf7",
+      "uci": "e2e4 f7f6 d2d4 e8f7",
+      "epd": "rnbq1bnr/pppppkpp/5p2/8/3PP3/8/PPP2PPP/RNBQKBNR w KQ -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-678"
+    }
+  ]
+}

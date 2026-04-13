@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Marienbad System",
+    "chunkKey": "marienbad-system",
+    "recordCount": 2,
+    "lineCount": 2
+  },
+  "records": [
+    {
+      "id": "record-603",
+      "eco": "A47",
+      "name": "Marienbad System",
+      "family": "Marienbad System",
+      "pgn": "1. d4 Nf6 2. Nf3 b6 3. g3 Bb7 4. Bg2 c5",
+      "uci": "d2d4 g8f6 g1f3 b7b6 g2g3 c8b7 f1g2 c7c5",
+      "epd": "rn1qkb1r/pb1ppppp/1p3n2/2p5/3P4/5NP1/PPP1PPBP/RNBQK2R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-515"
+    },
+    {
+      "id": "record-604",
+      "eco": "A47",
+      "name": "Marienbad System: Berg Variation",
+      "family": "Marienbad System",
+      "pgn": "1. d4 Nf6 2. Nf3 b6 3. g3 Bb7 4. Bg2 c5 5. c4 cxd4 6. Qxd4",
+      "uci": "d2d4 g8f6 g1f3 b7b6 g2g3 c8b7 f1g2 c7c5 c2c4 c5d4 d1d4",
+      "epd": "rn1qkb1r/pb1ppppp/1p3n2/8/2PQ4/5NP1/PP2PPBP/RNB1K2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-516"
+    }
+  ]
+}

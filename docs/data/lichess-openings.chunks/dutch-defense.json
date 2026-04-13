@@ -1,0 +1,1032 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Dutch Defense",
+    "chunkKey": "dutch-defense",
+    "recordCount": 68,
+    "lineCount": 57
+  },
+  "records": [
+    {
+      "id": "record-719",
+      "eco": "A80",
+      "name": "Dutch Defense",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5",
+      "uci": "d2d4 f7f5",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-612"
+    },
+    {
+      "id": "record-720",
+      "eco": "A80",
+      "name": "Dutch Defense: Alapin Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Qd3",
+      "uci": "d2d4 f7f5 d1d3",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/3P4/3Q4/PPP1PPPP/RNB1KBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-613"
+    },
+    {
+      "id": "record-721",
+      "eco": "A80",
+      "name": "Dutch Defense: Hevendehl Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g4 e5",
+      "uci": "d2d4 f7f5 g2g4 e7e5",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/3P2P1/8/PPP1PP1P/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-614"
+    },
+    {
+      "id": "record-722",
+      "eco": "A80",
+      "name": "Dutch Defense: Hopton Attack",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Bg5",
+      "uci": "d2d4 f7f5 c1g5",
+      "epd": "rnbqkbnr/ppppp1pp/8/5pB1/3P4/8/PPP1PPPP/RN1QKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-615"
+    },
+    {
+      "id": "record-723",
+      "eco": "A80",
+      "name": "Dutch Defense: Janzen-Korchnoi Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. h3 Nf6 3. g4",
+      "uci": "d2d4 f7f5 h2h3 g8f6 g2g4",
+      "epd": "rnbqkb1r/ppppp1pp/5n2/5p2/3P2P1/7P/PPP1PP2/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-616"
+    },
+    {
+      "id": "record-724",
+      "eco": "A80",
+      "name": "Dutch Defense: Kingfisher Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Nc3 d5 3. e4",
+      "uci": "d2d4 f7f5 b1c3 d7d5 e2e4",
+      "epd": "rnbqkbnr/ppp1p1pp/8/3p1p2/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-617"
+    },
+    {
+      "id": "record-725",
+      "eco": "A80",
+      "name": "Dutch Defense: Korchnoi Attack",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. h3",
+      "uci": "d2d4 f7f5 h2h3",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/3P4/7P/PPP1PPP1/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-618"
+    },
+    {
+      "id": "record-726",
+      "eco": "A80",
+      "name": "Dutch Defense: Krejcik Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g4",
+      "uci": "d2d4 f7f5 g2g4",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/3P2P1/8/PPP1PP1P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-619"
+    },
+    {
+      "id": "record-727",
+      "eco": "A80",
+      "name": "Dutch Defense: Krejcik Gambit, Tate Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g4 fxg4 3. e4 d5 4. Nc3",
+      "uci": "d2d4 f7f5 g2g4 f5g4 e2e4 d7d5 b1c3",
+      "epd": "rnbqkbnr/ppp1p1pp/8/3p4/3PP1p1/2N5/PPP2P1P/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-620"
+    },
+    {
+      "id": "record-728",
+      "eco": "A80",
+      "name": "Dutch Defense: Manhattan Gambit, Anti-Classical Line",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Qd3 e6 3. g4",
+      "uci": "d2d4 f7f5 d1d3 e7e6 g2g4",
+      "epd": "rnbqkbnr/pppp2pp/4p3/5p2/3P2P1/3Q4/PPP1PP1P/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-621"
+    },
+    {
+      "id": "record-729",
+      "eco": "A80",
+      "name": "Dutch Defense: Manhattan Gambit, Anti-Leningrad",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Qd3 g6 3. g4",
+      "uci": "d2d4 f7f5 d1d3 g7g6 g2g4",
+      "epd": "rnbqkbnr/ppppp2p/6p1/5p2/3P2P1/3Q4/PPP1PP1P/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-622"
+    },
+    {
+      "id": "record-730",
+      "eco": "A80",
+      "name": "Dutch Defense: Manhattan Gambit, Anti-Modern",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Qd3 d6 3. g4",
+      "uci": "d2d4 f7f5 d1d3 d7d6 g2g4",
+      "epd": "rnbqkbnr/ppp1p1pp/3p4/5p2/3P2P1/3Q4/PPP1PP1P/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-623"
+    },
+    {
+      "id": "record-731",
+      "eco": "A80",
+      "name": "Dutch Defense: Manhattan Gambit, Anti-Stonewall",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Qd3 d5 3. g4",
+      "uci": "d2d4 f7f5 d1d3 d7d5 g2g4",
+      "epd": "rnbqkbnr/ppp1p1pp/8/3p1p2/3P2P1/3Q4/PPP1PP1P/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-624"
+    },
+    {
+      "id": "record-732",
+      "eco": "A80",
+      "name": "Dutch Defense: Omega-Isis Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Nf3 e5",
+      "uci": "d2d4 f7f5 g1f3 e7e5",
+      "epd": "rnbqkbnr/pppp2pp/8/4pp2/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-625"
+    },
+    {
+      "id": "record-733",
+      "eco": "A80",
+      "name": "Dutch Defense: Raphael Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Nc3",
+      "uci": "d2d4 f7f5 b1c3",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-626"
+    },
+    {
+      "id": "record-734",
+      "eco": "A80",
+      "name": "Dutch Defense: Senechaud Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Bf4 e6 3. g4",
+      "uci": "d2d4 f7f5 c1f4 e7e6 g2g4",
+      "epd": "rnbqkbnr/pppp2pp/4p3/5p2/3P1BP1/8/PPP1PP1P/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-627"
+    },
+    {
+      "id": "record-735",
+      "eco": "A80",
+      "name": "Dutch Defense: Spielmann Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. Nc3 Nf6 3. g4",
+      "uci": "d2d4 f7f5 b1c3 g8f6 g2g4",
+      "epd": "rnbqkb1r/ppppp1pp/5n2/5p2/3P2P1/2N5/PPP1PP1P/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-628"
+    },
+    {
+      "id": "record-737",
+      "eco": "A81",
+      "name": "Dutch Defense: Blackburne Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g3 Nf6 3. Bg2 e6 4. Nh3",
+      "uci": "d2d4 f7f5 g2g3 g8f6 f1g2 e7e6 g1h3",
+      "epd": "rnbqkb1r/pppp2pp/4pn2/5p2/3P4/6PN/PPP1PPBP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-630"
+    },
+    {
+      "id": "record-738",
+      "eco": "A81",
+      "name": "Dutch Defense: Fianchetto Attack",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g3",
+      "uci": "d2d4 f7f5 g2g3",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/3P4/6P1/PPP1PP1P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-631"
+    },
+    {
+      "id": "record-739",
+      "eco": "A81",
+      "name": "Dutch Defense: Leningrad Variation, Carlsbad Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g3 g6 3. Bg2 Bg7 4. Nh3",
+      "uci": "d2d4 f7f5 g2g3 g7g6 f1g2 f8g7 g1h3",
+      "epd": "rnbqk1nr/ppppp1bp/6p1/5p2/3P4/6PN/PPP1PPBP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-632"
+    },
+    {
+      "id": "record-740",
+      "eco": "A81",
+      "name": "Dutch Defense: Leningrad, Basman System",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g3 c6 3. Bg2 g6 4. Nf3 Bg7 5. O-O Nh6",
+      "uci": "d2d4 f7f5 g2g3 c7c6 f1g2 g7g6 g1f3 f8g7 e1g1 g8h6",
+      "epd": "rnbqk2r/pp1pp1bp/2p3pn/5p2/3P4/5NP1/PPP1PPBP/RNBQ1RK1 w kq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-633"
+    },
+    {
+      "id": "record-741",
+      "eco": "A81",
+      "name": "Dutch Defense: Semi-Leningrad Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g3 Nf6 3. Bg2 g6",
+      "uci": "d2d4 f7f5 g2g3 g8f6 f1g2 g7g6",
+      "epd": "rnbqkb1r/ppppp2p/5np1/5p2/3P4/6P1/PPP1PPBP/RNBQK1NR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-634"
+    },
+    {
+      "id": "record-742",
+      "eco": "A82",
+      "name": "Dutch Defense: Blackmar's Second Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. f3",
+      "uci": "d2d4 f7f5 e2e4 f5e4 b1c3 g8f6 f2f3",
+      "epd": "rnbqkb1r/ppppp1pp/5n2/8/3Pp3/2N2P2/PPP3PP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-635"
+    },
+    {
+      "id": "record-743",
+      "eco": "A82",
+      "name": "Dutch Defense: Staunton Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4",
+      "uci": "d2d4 f7f5 e2e4",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-636"
+    },
+    {
+      "id": "record-744",
+      "eco": "A82",
+      "name": "Dutch Defense: Staunton Gambit Accepted",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4",
+      "uci": "d2d4 f7f5 e2e4 f5e4",
+      "epd": "rnbqkbnr/ppppp1pp/8/8/3Pp3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-637"
+    },
+    {
+      "id": "record-745",
+      "eco": "A82",
+      "name": "Dutch Defense: Staunton Gambit, American Attack",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4 3. Nd2",
+      "uci": "d2d4 f7f5 e2e4 f5e4 b1d2",
+      "epd": "rnbqkbnr/ppppp1pp/8/8/3Pp3/8/PPPN1PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-638"
+    },
+    {
+      "id": "record-746",
+      "eco": "A82",
+      "name": "Dutch Defense: Staunton Gambit, Tartakower Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. g4",
+      "uci": "d2d4 f7f5 e2e4 f5e4 b1c3 g8f6 g2g4",
+      "epd": "rnbqkb1r/ppppp1pp/5n2/8/3Pp1P1/2N5/PPP2P1P/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-639"
+    },
+    {
+      "id": "record-748",
+      "eco": "A83",
+      "name": "Dutch Defense: Staunton Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. Bg5",
+      "uci": "d2d4 f7f5 e2e4 f5e4 b1c3 g8f6 c1g5",
+      "epd": "rnbqkb1r/ppppp1pp/5n2/6B1/3Pp3/2N5/PPP2PPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-636"
+    },
+    {
+      "id": "record-749",
+      "eco": "A83",
+      "name": "Dutch Defense: Staunton Gambit, Alekhine Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. Bg5 g6 5. h4",
+      "uci": "d2d4 f7f5 e2e4 f5e4 b1c3 g8f6 c1g5 g7g6 h2h4",
+      "epd": "rnbqkb1r/ppppp2p/5np1/6B1/3Pp2P/2N5/PPP2PP1/R2QKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-641"
+    },
+    {
+      "id": "record-750",
+      "eco": "A83",
+      "name": "Dutch Defense: Staunton Gambit, Chigorin Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. Bg5 c6",
+      "uci": "d2d4 f7f5 e2e4 f5e4 b1c3 g8f6 c1g5 c7c6",
+      "epd": "rnbqkb1r/pp1pp1pp/2p2n2/6B1/3Pp3/2N5/PPP2PPP/R2QKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-642"
+    },
+    {
+      "id": "record-751",
+      "eco": "A83",
+      "name": "Dutch Defense: Staunton Gambit, Lasker Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. Bg5 g6 5. f3",
+      "uci": "d2d4 f7f5 e2e4 f5e4 b1c3 g8f6 c1g5 g7g6 f2f3",
+      "epd": "rnbqkb1r/ppppp2p/5np1/6B1/3Pp3/2N2P2/PPP3PP/R2QKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-643"
+    },
+    {
+      "id": "record-752",
+      "eco": "A83",
+      "name": "Dutch Defense: Staunton Gambit, Nimzowitsch Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. Bg5 b6",
+      "uci": "d2d4 f7f5 e2e4 f5e4 b1c3 g8f6 c1g5 b7b6",
+      "epd": "rnbqkb1r/p1ppp1pp/1p3n2/6B1/3Pp3/2N5/PPP2PPP/R2QKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-644"
+    },
+    {
+      "id": "record-753",
+      "eco": "A84",
+      "name": "Dutch Defense",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4",
+      "uci": "d2d4 f7f5 c2c4",
+      "epd": "rnbqkbnr/ppppp1pp/8/5p2/2PP4/8/PP2PPPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-612"
+    },
+    {
+      "id": "record-754",
+      "eco": "A84",
+      "name": "Dutch Defense: Bellon Gambit",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 e6 3. e4",
+      "uci": "d2d4 f7f5 c2c4 e7e6 e2e4",
+      "epd": "rnbqkbnr/pppp2pp/4p3/5p2/2PPP3/8/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-645"
+    },
+    {
+      "id": "record-755",
+      "eco": "A84",
+      "name": "Dutch Defense: Bladel Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 g6 3. Nc3 Nh6",
+      "uci": "d2d4 f7f5 c2c4 g7g6 b1c3 g8h6",
+      "epd": "rnbqkb1r/ppppp2p/6pn/5p2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-646"
+    },
+    {
+      "id": "record-756",
+      "eco": "A84",
+      "name": "Dutch Defense: Classical Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 e6",
+      "uci": "d2d4 f7f5 c2c4 e7e6",
+      "epd": "rnbqkbnr/pppp2pp/4p3/5p2/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-647"
+    },
+    {
+      "id": "record-757",
+      "eco": "A84",
+      "name": "Dutch Defense: Krause Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. Nc3 d6 4. Nf3 Nc6",
+      "uci": "d2d4 f7f5 c2c4 g8f6 b1c3 d7d6 g1f3 b8c6",
+      "epd": "r1bqkb1r/ppp1p1pp/2np1n2/5p2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-648"
+    },
+    {
+      "id": "record-758",
+      "eco": "A84",
+      "name": "Dutch Defense: Normal Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6",
+      "uci": "d2d4 f7f5 c2c4 g8f6",
+      "epd": "rnbqkb1r/ppppp1pp/5n2/5p2/2PP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-649"
+    },
+    {
+      "id": "record-759",
+      "eco": "A84",
+      "name": "Dutch Defense: Rubinstein Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 e6 3. Nc3",
+      "uci": "d2d4 f7f5 c2c4 e7e6 b1c3",
+      "epd": "rnbqkbnr/pppp2pp/4p3/5p2/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-650"
+    },
+    {
+      "id": "record-760",
+      "eco": "A85",
+      "name": "Dutch Defense: Queen's Knight Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. Nc3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 b1c3",
+      "epd": "rnbqkb1r/ppppp1pp/5n2/5p2/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-651"
+    },
+    {
+      "id": "record-761",
+      "eco": "A86",
+      "name": "Dutch Defense: Fianchetto Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3",
+      "epd": "rnbqkb1r/ppppp1pp/5n2/5p2/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-652"
+    },
+    {
+      "id": "record-762",
+      "eco": "A86",
+      "name": "Dutch Defense: Hort-Antoshin System",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 d6 4. Bg2 c6 5. Nc3 Qc7",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 d7d6 f1g2 c7c6 b1c3 d8c7",
+      "epd": "rnb1kb1r/ppq1p1pp/2pp1n2/5p2/2PP4/2N3P1/PP2PPBP/R1BQK1NR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-653"
+    },
+    {
+      "id": "record-763",
+      "eco": "A86",
+      "name": "Dutch Defense: Leningrad Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 g6",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 g7g6",
+      "epd": "rnbqkb1r/ppppp2p/5np1/5p2/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-654"
+    },
+    {
+      "id": "record-764",
+      "eco": "A87",
+      "name": "Dutch Defense: Leningrad Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 g6 4. Bg2 Bg7 5. Nf3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 g7g6 f1g2 f8g7 g1f3",
+      "epd": "rnbqk2r/ppppp1bp/5np1/5p2/2PP4/5NP1/PP2PPBP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-654"
+    },
+    {
+      "id": "record-765",
+      "eco": "A88",
+      "name": "Dutch Defense: Leningrad Variation, Warsaw Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g3 Nf6 3. Bg2 g6 4. Nf3 Bg7 5. O-O O-O 6. c4 d6 7. Nc3 c6",
+      "uci": "d2d4 f7f5 g2g3 g8f6 f1g2 g7g6 g1f3 f8g7 e1g1 e8g8 c2c4 d7d6 b1c3 c7c6",
+      "epd": "rnbq1rk1/pp2p1bp/2pp1np1/5p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-655"
+    },
+    {
+      "id": "record-766",
+      "eco": "A89",
+      "name": "Dutch Defense: Leningrad Variation, Matulovic Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. g3 Nf6 3. Bg2 g6 4. Nf3 Bg7 5. O-O O-O 6. c4 d6 7. Nc3 Nc6",
+      "uci": "d2d4 f7f5 g2g3 g8f6 f1g2 g7g6 g1f3 f8g7 e1g1 e8g8 c2c4 d7d6 b1c3 b8c6",
+      "epd": "r1bq1rk1/ppp1p1bp/2np1np1/5p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-656"
+    },
+    {
+      "id": "record-767",
+      "eco": "A90",
+      "name": "Dutch Defense: Classical Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2",
+      "epd": "rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/6P1/PP2PPBP/RNBQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-647"
+    },
+    {
+      "id": "record-768",
+      "eco": "A90",
+      "name": "Dutch Defense: Classical Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 d5 5. Nf3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 d7d5 g1f3",
+      "epd": "rnbqkb1r/ppp3pp/4pn2/3p1p2/2PP4/5NP1/PP2PPBP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-647"
+    },
+    {
+      "id": "record-769",
+      "eco": "A90",
+      "name": "Dutch Defense: Nimzo-Dutch Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Bb4+",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8b4",
+      "epd": "rnbqk2r/pppp2pp/4pn2/5p2/1bPP4/6P1/PP2PPBP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-657"
+    },
+    {
+      "id": "record-770",
+      "eco": "A90",
+      "name": "Dutch Defense: Nimzo-Dutch Variation, Alekhine Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Bb4+ 5. Bd2 Be7",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8b4 c1d2 b4e7",
+      "epd": "rnbqk2r/ppppb1pp/4pn2/5p2/2PP4/6P1/PP1BPPBP/RN1QK1NR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-658"
+    },
+    {
+      "id": "record-771",
+      "eco": "A90",
+      "name": "Dutch Defense: Stonewall Variation, Modern Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 e6 3. Nf3 Nf6 4. g3 c6 5. Bg2 d5 6. O-O Bd6",
+      "uci": "d2d4 f7f5 c2c4 e7e6 g1f3 g8f6 g2g3 c7c6 f1g2 d7d5 e1g1 f8d6",
+      "epd": "rnbqk2r/pp4pp/2pbpn2/3p1p2/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-659"
+    },
+    {
+      "id": "record-772",
+      "eco": "A91",
+      "name": "Dutch Defense: Classical Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7",
+      "epd": "rnbqk2r/ppppb1pp/4pn2/5p2/2PP4/6P1/PP2PPBP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-647"
+    },
+    {
+      "id": "record-773",
+      "eco": "A91",
+      "name": "Dutch Defense: Classical Variation, Blackburne Attack",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nh3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1h3",
+      "epd": "rnbqk2r/ppppb1pp/4pn2/5p2/2PP4/6PN/PP2PPBP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-660"
+    },
+    {
+      "id": "record-774",
+      "eco": "A92",
+      "name": "Dutch Defense: Alekhine Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O Ne4",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 f6e4",
+      "epd": "rnbq1rk1/ppppb1pp/4p3/5p2/2PPn3/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-661"
+    },
+    {
+      "id": "record-775",
+      "eco": "A92",
+      "name": "Dutch Defense: Classical Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8",
+      "epd": "rnbq1rk1/ppppb1pp/4pn2/5p2/2PP4/5NP1/PP2PPBP/RNBQK2R w KQ -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-647"
+    },
+    {
+      "id": "record-776",
+      "eco": "A92",
+      "name": "Dutch Defense: Stonewall Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5 7. Nc3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d5 b1c3",
+      "epd": "rnbq1rk1/ppp1b1pp/4pn2/3p1p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-662"
+    },
+    {
+      "id": "record-777",
+      "eco": "A92",
+      "name": "Dutch Defense: Stonewall Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d5",
+      "epd": "rnbq1rk1/ppp1b1pp/4pn2/3p1p2/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-662"
+    },
+    {
+      "id": "record-778",
+      "eco": "A93",
+      "name": "Dutch Defense: Stonewall Variation, Botvinnik Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5 7. b3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d5 b2b3",
+      "epd": "rnbq1rk1/ppp1b1pp/4pn2/3p1p2/2PP4/1P3NP1/P3PPBP/RNBQ1RK1 b - -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-663"
+    },
+    {
+      "id": "record-779",
+      "eco": "A94",
+      "name": "Dutch Defense: Stonewall Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5 7. b3 c6 8. Ba3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d5 b2b3 c7c6 c1a3",
+      "epd": "rnbq1rk1/pp2b1pp/2p1pn2/3p1p2/2PP4/BP3NP1/P3PPBP/RN1Q1RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-662"
+    },
+    {
+      "id": "record-780",
+      "eco": "A95",
+      "name": "Dutch Defense: Stonewall Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5 7. Nc3 c6",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d5 b1c3 c7c6",
+      "epd": "rnbq1rk1/pp2b1pp/2p1pn2/3p1p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-662"
+    },
+    {
+      "id": "record-781",
+      "eco": "A95",
+      "name": "Dutch Defense: Stonewall Variation, Chekhover Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5 7. Nc3 c6 8. Qc2 Qe8 9. Bg5",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d5 b1c3 c7c6 d1c2 d8e8 c1g5",
+      "epd": "rnb1qrk1/pp2b1pp/2p1pn2/3p1pB1/2PP4/2N2NP1/PPQ1PPBP/R4RK1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-664"
+    },
+    {
+      "id": "record-782",
+      "eco": "A96",
+      "name": "Dutch Defense: Classical Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d6",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d6",
+      "epd": "rnbq1rk1/ppp1b1pp/3ppn2/5p2/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w - -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-647"
+    },
+    {
+      "id": "record-783",
+      "eco": "A96",
+      "name": "Dutch Defense: Classical Variation, Buenos Aires Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d6 7. Nc3 a5",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d6 b1c3 a7a5",
+      "epd": "rnbq1rk1/1pp1b1pp/3ppn2/p4p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-665"
+    },
+    {
+      "id": "record-784",
+      "eco": "A96",
+      "name": "Dutch Defense: Classical Variation, Huisl Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d6 7. Nc3 Ne4",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d6 b1c3 f6e4",
+      "epd": "rnbq1rk1/ppp1b1pp/3pp3/5p2/2PPn3/2N2NP1/PP2PPBP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-666"
+    },
+    {
+      "id": "record-785",
+      "eco": "A97",
+      "name": "Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d6 7. Nc3 Qe8",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d6 b1c3 d8e8",
+      "epd": "rnb1qrk1/ppp1b1pp/3ppn2/5p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-667"
+    },
+    {
+      "id": "record-786",
+      "eco": "A97",
+      "name": "Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Winter Variation",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d6 7. Nc3 Qe8 8. Re1",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d6 b1c3 d8e8 f1e1",
+      "epd": "rnb1qrk1/ppp1b1pp/3ppn2/5p2/2PP4/2N2NP1/PP2PPBP/R1BQR1K1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-668"
+    },
+    {
+      "id": "record-787",
+      "eco": "A98",
+      "name": "Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Alatortsev-Lisitsyn Line",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d6 7. Nc3 Qe8 8. Qc2",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d6 b1c3 d8e8 d1c2",
+      "epd": "rnb1qrk1/ppp1b1pp/3ppn2/5p2/2PP4/2N2NP1/PPQ1PPBP/R1B2RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-669"
+    },
+    {
+      "id": "record-788",
+      "eco": "A99",
+      "name": "Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Modern Main Line",
+      "family": "Dutch Defense",
+      "pgn": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d6 7. Nc3 Qe8 8. b3",
+      "uci": "d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7 g1f3 e8g8 e1g1 d7d6 b1c3 d8e8 b2b3",
+      "epd": "rnb1qrk1/ppp1b1pp/3ppn2/5p2/2PP4/1PN2NP1/P3PPBP/R1BQ1RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-670"
+    }
+  ]
+}

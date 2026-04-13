@@ -1,0 +1,1572 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Caro-Kann Defense",
+    "chunkKey": "caro-kann-defense",
+    "recordCount": 104,
+    "lineCount": 91
+  },
+  "records": [
+    {
+      "id": "record-1051",
+      "eco": "B10",
+      "name": "Caro-Kann Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6",
+      "uci": "e2e4 c7c6",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-917"
+    },
+    {
+      "id": "record-1052",
+      "eco": "B10",
+      "name": "Caro-Kann Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3",
+      "uci": "e2e4 c7c6 b1c3",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-917"
+    },
+    {
+      "id": "record-1053",
+      "eco": "B10",
+      "name": "Caro-Kann Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5",
+      "uci": "e2e4 c7c6 b1c3 d7d5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-917"
+    },
+    {
+      "id": "record-1054",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Accelerated Panov Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. c4",
+      "uci": "e2e4 c7c6 c2c4",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/2P1P3/8/PP1P1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-918"
+    },
+    {
+      "id": "record-1055",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Accelerated Panov Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. c4 d5",
+      "uci": "e2e4 c7c6 c2c4 d7d5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/2P1P3/8/PP1P1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-918"
+    },
+    {
+      "id": "record-1056",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Accelerated Panov Attack, Modern Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. c4 d5 3. exd5 cxd5 4. cxd5 Nf6",
+      "uci": "e2e4 c7c6 c2c4 d7d5 e4d5 c6d5 c4d5 g8f6",
+      "epd": "rnbqkb1r/pp2pppp/5n2/3P4/8/8/PP1P1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-919"
+    },
+    {
+      "id": "record-1057",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Accelerated Panov Attack, Open Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. c4 e5",
+      "uci": "e2e4 c7c6 c2c4 e7e5",
+      "epd": "rnbqkbnr/pp1p1ppp/2p5/4p3/2P1P3/8/PP1P1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-920"
+    },
+    {
+      "id": "record-1058",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Accelerated Panov Attack, Pseudo-Scandinavian",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. c4 d5 3. exd5 Qxd5",
+      "uci": "e2e4 c7c6 c2c4 d7d5 e4d5 d8d5",
+      "epd": "rnb1kbnr/pp2pppp/2p5/3q4/2P5/8/PP1P1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-921"
+    },
+    {
+      "id": "record-1059",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Accelerated Panov Attack, Van Weersel Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. c4 d5 3. cxd5 cxd5 4. Qb3",
+      "uci": "e2e4 c7c6 c2c4 d7d5 c4d5 c6d5 d1b3",
+      "epd": "rnbqkbnr/pp2pppp/8/3p4/4P3/1Q6/PP1P1PPP/RNB1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-922"
+    },
+    {
+      "id": "record-1060",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Apocalypse Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nf3 d5 3. exd5 cxd5 4. Ne5",
+      "uci": "e2e4 c7c6 g1f3 d7d5 e4d5 c6d5 f3e5",
+      "epd": "rnbqkbnr/pp2pppp/8/3pN3/8/8/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-923"
+    },
+    {
+      "id": "record-1061",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Breyer Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d3",
+      "uci": "e2e4 c7c6 d2d3",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/4P3/3P4/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-924"
+    },
+    {
+      "id": "record-1062",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Breyer Variation, Stein Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 e5 6. Bg2 Ne7 7. O-O O-O 8. b4",
+      "uci": "e2e4 c7c6 d2d3 d7d5 b1d2 g7g6 g1f3 f8g7 g2g3 e7e5 f1g2 g8e7 e1g1 e8g8 b2b4",
+      "epd": "rnbq1rk1/pp2npbp/2p3p1/3pp3/1P2P3/3P1NP1/P1PN1PBP/R1BQ1RK1 b - -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-925"
+    },
+    {
+      "id": "record-1063",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Endgame Offer",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nf3 d5 3. d3",
+      "uci": "e2e4 c7c6 g1f3 d7d5 d2d3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/3P1N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-926"
+    },
+    {
+      "id": "record-1064",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Endgame Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nf3 d5 3. d3 dxe4 4. dxe4 Qxd1+ 5. Kxd1",
+      "uci": "e2e4 c7c6 g1f3 d7d5 d2d3 d5e4 d3e4 d8d1 e1d1",
+      "epd": "rnb1kbnr/pp2pppp/2p5/8/4P3/5N2/PPP2PPP/RNBK1B1R b kq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-927"
+    },
+    {
+      "id": "record-1065",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Euwe Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. b3",
+      "uci": "e2e4 c7c6 b2b3",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/4P3/1P6/P1PP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-928"
+    },
+    {
+      "id": "record-1066",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Goldman Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5 3. Qf3",
+      "uci": "e2e4 c7c6 b1c3 d7d5 d1f3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2Q2/PPPP1PPP/R1B1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-929"
+    },
+    {
+      "id": "record-1067",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Hector Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5 3. Nf3 dxe4 4. Ng5",
+      "uci": "e2e4 c7c6 b1c3 d7d5 g1f3 d5e4 f3g5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/6N1/4p3/2N5/PPPP1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-930"
+    },
+    {
+      "id": "record-1068",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Hillbilly Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Bc4",
+      "uci": "e2e4 c7c6 f1c4",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-931"
+    },
+    {
+      "id": "record-1069",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Hillbilly Attack, Schaeffer Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Bc4 d5 3. Bb3 dxe4 4. Qh5",
+      "uci": "e2e4 c7c6 f1c4 d7d5 c4b3 d5e4 d1h5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/7Q/4p3/1B6/PPPP1PPP/RNB1K1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-932"
+    },
+    {
+      "id": "record-1070",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Labahn Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. b4",
+      "uci": "e2e4 c7c6 b2b4",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/1P2P3/8/P1PP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-933"
+    },
+    {
+      "id": "record-1071",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Labahn Attack, Double Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. b4 d5 3. b5",
+      "uci": "e2e4 c7c6 b2b4 d7d5 b4b5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/1P1p4/4P3/8/P1PP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-934"
+    },
+    {
+      "id": "record-1072",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Labahn Attack, Polish Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. b4 e5 3. Bb2",
+      "uci": "e2e4 c7c6 b2b4 e7e5 c1b2",
+      "epd": "rnbqkbnr/pp1p1ppp/2p5/4p3/1P2P3/8/PBPP1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-935"
+    },
+    {
+      "id": "record-1073",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Scorpion-Horus Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5 3. d3 dxe4 4. Bg5",
+      "uci": "e2e4 c7c6 b1c3 d7d5 d2d3 d5e4 c1g5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/6B1/4p3/2NP4/PPP2PPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-936"
+    },
+    {
+      "id": "record-1074",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Spike Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. g4",
+      "uci": "e2e4 c7c6 g2g4",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/4P1P1/8/PPPP1P1P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-937"
+    },
+    {
+      "id": "record-1075",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Spike Variation, Scorpion-Grob Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. g4 d5 3. Nc3 dxe4 4. d3",
+      "uci": "e2e4 c7c6 g2g4 d7d5 b1c3 d5e4 d2d3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/8/4p1P1/2NP4/PPP2P1P/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-938"
+    },
+    {
+      "id": "record-1076",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: St. Patrick's Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5 3. h3",
+      "uci": "e2e4 c7c6 b1c3 d7d5 h2h3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N4P/PPPP1PP1/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-939"
+    },
+    {
+      "id": "record-1077",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Toikkanen Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. c4 d5 3. e5",
+      "uci": "e2e4 c7c6 c2c4 d7d5 e4e5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3pP3/2P5/8/PP1P1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-940"
+    },
+    {
+      "id": "record-1078",
+      "eco": "B10",
+      "name": "Caro-Kann Defense: Two Knights Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5 3. Nf3",
+      "uci": "e2e4 c7c6 b1c3 d7d5 g1f3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-941"
+    },
+    {
+      "id": "record-1079",
+      "eco": "B11",
+      "name": "Caro-Kann Defense: Two Knights Attack, Mindeno Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5 3. Nf3 Bg4",
+      "uci": "e2e4 c7c6 b1c3 d7d5 g1f3 c8g4",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3p4/4P1b1/2N2N2/PPPP1PPP/R1BQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-942"
+    },
+    {
+      "id": "record-1080",
+      "eco": "B11",
+      "name": "Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Exchange Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5 3. Nf3 Bg4 4. h3 Bxf3",
+      "uci": "e2e4 c7c6 b1c3 d7d5 g1f3 c8g4 h2h3 g4f3",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3p4/4P3/2N2b1P/PPPP1PP1/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-943"
+    },
+    {
+      "id": "record-1081",
+      "eco": "B11",
+      "name": "Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Retreat Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. Nc3 d5 3. Nf3 Bg4 4. h3 Bh5",
+      "uci": "e2e4 c7c6 b1c3 d7d5 g1f3 c8g4 h2h3 g4h5",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3p3b/4P3/2N2N1P/PPPP1PP1/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-944"
+    },
+    {
+      "id": "record-1082",
+      "eco": "B12",
+      "name": "Caro-Kann Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4",
+      "uci": "e2e4 c7c6 d2d4",
+      "epd": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-917"
+    },
+    {
+      "id": "record-1083",
+      "eco": "B12",
+      "name": "Caro-Kann Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5",
+      "uci": "e2e4 c7c6 d2d4 d7d5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-917"
+    },
+    {
+      "id": "record-1084",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-945"
+    },
+    {
+      "id": "record-1085",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Bayonet Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. g4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 g2g4",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P2P1/8/PPP2P1P/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-946"
+    },
+    {
+      "id": "record-1086",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 c5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c6c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2ppP3/3P4/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-947"
+    },
+    {
+      "id": "record-1087",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Bronstein Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Ne2",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 g1e2",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/8/PPP1NPPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-948"
+    },
+    {
+      "id": "record-1088",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Prins Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. b4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 b2b4",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3pPb2/1P1P4/8/P1P2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-949"
+    },
+    {
+      "id": "record-1089",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Short Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 g1f3",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-950"
+    },
+    {
+      "id": "record-1090",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Tal Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 h2h4",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P3P/8/PPP2PP1/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-951"
+    },
+    {
+      "id": "record-1091",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Van der Wiel Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nc3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 b1c3",
+      "epd": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-952"
+    },
+    {
+      "id": "record-1092",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Van der Wiel Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nc3 e6 5. g4 Bg6 6. Nge2 c5 7. h4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 b1c3 e7e6 g2g4 f5g6 g1e2 c6c5 h2h4",
+      "epd": "rn1qkbnr/pp3ppp/4p1b1/2ppP3/3P2PP/2N5/PPP1NP2/R1BQKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-952"
+    },
+    {
+      "id": "record-1093",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance Variation, Van der Wiel Attack, Dreyev Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nc3 Qb6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 b1c3 d8b6",
+      "epd": "rn2kbnr/pp2pppp/1qp5/3pPb2/3P4/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-953"
+    },
+    {
+      "id": "record-1094",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Advance, Short Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. c3 e6 5. Be2",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 c2c3 e7e6 f1e2",
+      "epd": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/2P5/PP2BPPP/RNBQK1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-954"
+    },
+    {
+      "id": "record-1095",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: De Bruycker Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 Na6",
+      "uci": "e2e4 c7c6 d2d4 b8a6",
+      "epd": "r1bqkbnr/pp1ppppp/n1p5/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-955"
+    },
+    {
+      "id": "record-1096",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: De Bruycker Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 Na6 3. Nc3 Nc7",
+      "uci": "e2e4 c7c6 d2d4 b8a6 b1c3 a6c7",
+      "epd": "r1bqkbnr/ppnppppp/2p5/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-955"
+    },
+    {
+      "id": "record-1097",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Edinburgh Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 Qb6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d8b6",
+      "epd": "rnb1kbnr/pp2pppp/1qp5/3p4/3PP3/8/PPPN1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-956"
+    },
+    {
+      "id": "record-1098",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Maróczy Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. f3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 f2f3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/5P2/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-957"
+    },
+    {
+      "id": "record-1099",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Maróczy Variation, Maróczy Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. f3 dxe4 4. fxe4 e5 5. Nf3 exd4 6. Bc4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 f2f3 d5e4 f3e4 e7e5 g1f3 e5d4 f1c4",
+      "epd": "rnbqkbnr/pp3ppp/2p5/8/2BpP3/5N2/PPP3PP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-958"
+    },
+    {
+      "id": "record-1100",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Masi Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 Nf6",
+      "uci": "e2e4 c7c6 d2d4 g8f6",
+      "epd": "rnbqkb1r/pp1ppppp/2p2n2/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-959"
+    },
+    {
+      "id": "record-1101",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Massachusetts Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 f5",
+      "uci": "e2e4 c7c6 d2d4 f7f5",
+      "epd": "rnbqkbnr/pp1pp1pp/2p5/5p2/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-960"
+    },
+    {
+      "id": "record-1102",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Mieses Attack, Landau Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Bd3 Nf6 4. e5 Nfd7 5. e6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 f1d3 g8f6 e4e5 f6d7 e5e6",
+      "epd": "rnbqkb1r/pp1npppp/2p1P3/3p4/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-961"
+    },
+    {
+      "id": "record-1103",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Mieses Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Be3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 c1e3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/4B3/PPP2PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-962"
+    },
+    {
+      "id": "record-1104",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Modern Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPPN1PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-963"
+    },
+    {
+      "id": "record-1105",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Ulysses Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nf3 dxe4 4. Ng5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 g1f3 d5e4 f3g5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/6N1/3Pp3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-964"
+    },
+    {
+      "id": "record-1106",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Exchange Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-965"
+    },
+    {
+      "id": "record-1107",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Exchange Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Nc6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 g1f3 b8c6",
+      "epd": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-965"
+    },
+    {
+      "id": "record-1108",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Exchange Variation, Bulla Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. g4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 g2g4",
+      "epd": "rnbqkbnr/pp2pppp/8/3p4/3P2P1/8/PPP2P1P/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-966"
+    },
+    {
+      "id": "record-1109",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Exchange Variation, Rubinstein Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Bf4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 f1d3 b8c6 c2c3 g8f6 c1f4",
+      "epd": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/2PB4/PP3PPP/RN1QK1NR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-967"
+    },
+    {
+      "id": "record-1110",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4",
+      "epd": "rnbqkbnr/pp2pppp/8/3p4/2PP4/8/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-968"
+    },
+    {
+      "id": "record-1111",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3",
+      "epd": "rnbqkb1r/pp2pppp/5n2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-968"
+    },
+    {
+      "id": "record-1112",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov Attack, Gunderam Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. c5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 c4c5",
+      "epd": "rnbqkb1r/pp2pppp/5n2/2Pp4/3P4/8/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-969"
+    },
+    {
+      "id": "record-1113",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov Attack, Modern Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Nc6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 b8c6",
+      "epd": "r1bqkb1r/pp2pppp/2n2n2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-970"
+    },
+    {
+      "id": "record-1114",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov Attack, Modern Defense, Carlsbad Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Nc6 6. Bg5 e6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 b8c6 c1g5 e7e6",
+      "epd": "r1bqkb1r/pp3ppp/2n1pn2/3p2B1/2PP4/2N5/PP3PPP/R2QKBNR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-971"
+    },
+    {
+      "id": "record-1115",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov Attack, Modern Defense, Czerniak Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Nc6 6. Bg5 Qa5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 b8c6 c1g5 d8a5",
+      "epd": "r1b1kb1r/pp2pppp/2n2n2/q2p2B1/2PP4/2N5/PP3PPP/R2QKBNR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-972"
+    },
+    {
+      "id": "record-1116",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov Attack, Modern Defense, Mieses Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Nc6 6. Nf3 Bg4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 b8c6 g1f3 c8g4",
+      "epd": "r2qkb1r/pp2pppp/2n2n2/3p4/2PP2b1/2N2N2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-973"
+    },
+    {
+      "id": "record-1117",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov Attack, Modern Defense, Reifir-Spielmann Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Nc6 6. Bg5 Qb6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 b8c6 c1g5 d8b6",
+      "epd": "r1b1kb1r/pp2pppp/1qn2n2/3p2B1/2PP4/2N5/PP3PPP/R2QKBNR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-974"
+    },
+    {
+      "id": "record-1118",
+      "eco": "B13",
+      "name": "Caro-Kann Defense: Panov-Botvinnik, Herzog Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 Nc6 6. Bg5 dxc4 7. d5 Na5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 b8c6 c1g5 d5c4 d4d5 c6a5",
+      "epd": "r1bqkb1r/pp2pppp/5n2/n2P2B1/2p5/2N5/PP3PPP/R2QKBNR w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-975"
+    },
+    {
+      "id": "record-1119",
+      "eco": "B14",
+      "name": "Caro-Kann Defense: Panov Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 e6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 e7e6",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-968"
+    },
+    {
+      "id": "record-1120",
+      "eco": "B14",
+      "name": "Caro-Kann Defense: Panov Attack, Fianchetto Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 g6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 g7g6",
+      "epd": "rnbqkb1r/pp2pp1p/5np1/3p4/2PP4/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-976"
+    },
+    {
+      "id": "record-1121",
+      "eco": "B14",
+      "name": "Caro-Kann Defense: Panov Attack, Fianchetto Defense, Fianchetto Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 g6 6. cxd5 Bg7",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 g7g6 c4d5 f8g7",
+      "epd": "rnbqk2r/pp2ppbp/5np1/3P4/3P4/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-977"
+    },
+    {
+      "id": "record-1122",
+      "eco": "B14",
+      "name": "Caro-Kann Defense: Panov Attack, Main Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 e6 6. Nf3 Bb4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6 b1c3 e7e6 g1f3 f8b4",
+      "epd": "rnbqk2r/pp3ppp/4pn2/3p4/1bPP4/2N2N2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-978"
+    },
+    {
+      "id": "record-1123",
+      "eco": "B15",
+      "name": "Caro-Kann Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-917"
+    },
+    {
+      "id": "record-1124",
+      "eco": "B15",
+      "name": "Caro-Kann Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4",
+      "epd": "rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-917"
+    },
+    {
+      "id": "record-1125",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Alekhine Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Bd3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 f1d3",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/8/3PN3/3B4/PPP2PPP/R1BQK1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-979"
+    },
+    {
+      "id": "record-1126",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Alien Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng5 h6 6. Nxf7",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4g5 h7h6 g5f7",
+      "epd": "rnbqkb1r/pp2pNp1/2p2n1p/8/3P4/8/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-980"
+    },
+    {
+      "id": "record-1127",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Campomanes Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 Nf6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 g8f6",
+      "epd": "rnbqkb1r/pp2pppp/2p2n2/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-981"
+    },
+    {
+      "id": "record-1128",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Forgacs Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. Bc4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 e7f6 f1c4",
+      "epd": "rnbqkb1r/pp3ppp/2p2p2/8/2BP4/8/PPP2PPP/R1BQK1NR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-982"
+    },
+    {
+      "id": "record-1129",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Gurgenidze Counterattack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 b5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 b7b5",
+      "epd": "rnbqkbnr/p3pppp/2p5/1p1p4/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-983"
+    },
+    {
+      "id": "record-1130",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Gurgenidze System",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 g6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 g7g6",
+      "epd": "rnbqkbnr/pp2pp1p/2p3p1/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-984"
+    },
+    {
+      "id": "record-1131",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Main Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4",
+      "epd": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-985"
+    },
+    {
+      "id": "record-1132",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Rasa-Studier Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. f3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 f2f3",
+      "epd": "rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N2P2/PPP3PP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-986"
+    },
+    {
+      "id": "record-1133",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Tartakower Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 e7f6",
+      "epd": "rnbqkb1r/pp3ppp/2p2p2/8/3P4/8/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-987"
+    },
+    {
+      "id": "record-1134",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: Tartakower Variation, Perlis Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 Bd6 7. Bd3 O-O 8. Qc2 h6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 e7f6 c2c3 f8d6 f1d3 e8g8 d1c2 h7h6",
+      "epd": "rnbq1rk1/pp3pp1/2pb1p1p/8/3P4/2PB4/PPQ2PPP/R1B1K1NR w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-988"
+    },
+    {
+      "id": "record-1135",
+      "eco": "B15",
+      "name": "Caro-Kann Defense: von Hennig Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Bc4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 f1c4",
+      "epd": "rnbqkbnr/pp2pppp/2p5/8/2BPp3/2N5/PPP2PPP/R1BQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-989"
+    },
+    {
+      "id": "record-1136",
+      "eco": "B16",
+      "name": "Caro-Kann Defense: Bronstein-Larsen Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ gxf6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 g8f6 e4f6 g7f6",
+      "epd": "rnbqkb1r/pp2pp1p/2p2p2/8/3P4/8/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-990"
+    },
+    {
+      "id": "record-1137",
+      "eco": "B16",
+      "name": "Caro-Kann Defense: Finnish Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 h6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 h7h6",
+      "epd": "rnbqkbnr/pp2ppp1/2p4p/8/3PN3/8/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-991"
+    },
+    {
+      "id": "record-1138",
+      "eco": "B17",
+      "name": "Caro-Kann Defense: Karpov Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Nd7",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 b8d7",
+      "epd": "r1bqkbnr/pp1npppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-992"
+    },
+    {
+      "id": "record-1139",
+      "eco": "B17",
+      "name": "Caro-Kann Defense: Karpov Variation, Modern Main Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Nd7 5. Ng5 Ngf6 6. Bd3 e6 7. N1f3 Bd6 8. Qe2 h6 9. Ne4 Nxe4 10. Qxe4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 b8d7 e4g5 g8f6 f1d3 e7e6 g1f3 f8d6 d1e2 h7h6 g5e4 f6e4 e2e4",
+      "epd": "r1bqk2r/pp1n1pp1/2pbp2p/8/3PQ3/3B1N2/PPP2PPP/R1B1K2R b KQkq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-993"
+    },
+    {
+      "id": "record-1140",
+      "eco": "B17",
+      "name": "Caro-Kann Defense: Karpov Variation, Modern Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Nd7 5. Ng5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 b8d7 e4g5",
+      "epd": "r1bqkbnr/pp1npppp/2p5/6N1/3P4/8/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-994"
+    },
+    {
+      "id": "record-1141",
+      "eco": "B17",
+      "name": "Caro-Kann Defense: Karpov Variation, Modern Variation, Ivanchuk Defense",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Nd7 5. Ng5 Ndf6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 b8d7 e4g5 d7f6",
+      "epd": "r1bqkbnr/pp2pppp/2p2n2/6N1/3P4/8/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-995"
+    },
+    {
+      "id": "record-1142",
+      "eco": "B17",
+      "name": "Caro-Kann Defense: Karpov Variation, Modern Variation, Kasparov Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6. Ng3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 b8d7 g1f3 g8f6 e4g3",
+      "epd": "r1bqkb1r/pp1npppp/2p2n2/8/3P4/5NN1/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-996"
+    },
+    {
+      "id": "record-1143",
+      "eco": "B17",
+      "name": "Caro-Kann Defense: Karpov Variation, Smyslov Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Nd7 5. Bc4 Ngf6 6. Ng5 e6 7. Qe2 Nb6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 b8d7 f1c4 g8f6 e4g5 e7e6 d1e2 d7b6",
+      "epd": "r1bqkb1r/pp3ppp/1np1pn2/6N1/2BP4/8/PPP1QPPP/R1B1K1NR w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-997"
+    },
+    {
+      "id": "record-1144",
+      "eco": "B17",
+      "name": "Caro-Kann Defense: Karpov Variation, Smyslov Variation, Main Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Nd7 5. Bc4 Ngf6 6. Ng5 e6 7. Qe2 Nb6 8. Bb3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 b8d7 f1c4 g8f6 e4g5 e7e6 d1e2 d7b6 c4b3",
+      "epd": "r1bqkb1r/pp3ppp/1np1pn2/6N1/3P4/1B6/PPP1QPPP/R1B1K1NR b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-998"
+    },
+    {
+      "id": "record-1145",
+      "eco": "B17",
+      "name": "Caro-Kann Defense: Karpov Variation, Tiviakov-Fischer Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Nd7 5. Bc4 Ngf6 6. Nxf6+ Nxf6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 b8d7 f1c4 g8f6 e4f6 d7f6",
+      "epd": "r1bqkb1r/pp2pppp/2p2n2/8/2BP4/8/PPP2PPP/R1BQK1NR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-999"
+    },
+    {
+      "id": "record-1146",
+      "eco": "B18",
+      "name": "Caro-Kann Defense: Classical Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5",
+      "epd": "rn1qkbnr/pp2pppp/2p5/5b2/3PN3/8/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1000"
+    },
+    {
+      "id": "record-1147",
+      "eco": "B18",
+      "name": "Caro-Kann Defense: Classical Variation, Flohr Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. Nh3",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5 e4g3 f5g6 g1h3",
+      "epd": "rn1qkbnr/pp2pppp/2p3b1/8/3P4/6NN/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1001"
+    },
+    {
+      "id": "record-1148",
+      "eco": "B18",
+      "name": "Caro-Kann Defense: Classical Variation, Main Line",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5 e4g3 f5g6 h2h4",
+      "epd": "rn1qkbnr/pp2pppp/2p3b1/8/3P3P/6N1/PPP2PP1/R1BQKBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1002"
+    },
+    {
+      "id": "record-1149",
+      "eco": "B18",
+      "name": "Caro-Kann Defense: Classical Variation, Maróczy Attack",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. f4",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5 e4g3 f5g6 f2f4",
+      "epd": "rn1qkbnr/pp2pppp/2p3b1/8/3P1P2/6N1/PPP3PP/R1BQKBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1003"
+    },
+    {
+      "id": "record-1150",
+      "eco": "B18",
+      "name": "Caro-Kann Defense: Martian Gambit",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng5 Bg6 6. N1f3 h6 7. Ne6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5 e4g5 f5g6 g1f3 h7h6 g5e6",
+      "epd": "rn1qkbnr/pp2ppp1/2p1N1bp/8/3P4/5N2/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1004"
+    },
+    {
+      "id": "record-1151",
+      "eco": "B19",
+      "name": "Caro-Kann Defense: Classical Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5 e4g3 f5g6 h2h4 h7h6 g1f3 b8d7",
+      "epd": "r2qkbnr/pp1nppp1/2p3bp/8/3P3P/5NN1/PPP2PP1/R1BQKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1000"
+    },
+    {
+      "id": "record-1152",
+      "eco": "B19",
+      "name": "Caro-Kann Defense: Classical Variation, Lobron System",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 Ngf6 12. O-O-O Be7",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5 e4g3 f5g6 h2h4 h7h6 g1f3 b8d7 h4h5 g6h7 f1d3 h7d3 d1d3 e7e6 c1d2 g8f6 e1c1 f8e7",
+      "epd": "r2qk2r/pp1nbpp1/2p1pn1p/7P/3P4/3Q1NN1/PPPB1PP1/2KR3R w kq -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-1005"
+    },
+    {
+      "id": "record-1153",
+      "eco": "B19",
+      "name": "Caro-Kann Defense: Classical Variation, Seirawan Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 Ngf6 11. Bd2 e6 12. O-O-O Bd6",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5 e4g3 f5g6 h2h4 h7h6 g1f3 b8d7 h4h5 g6h7 f1d3 h7d3 d1d3 g8f6 c1d2 e7e6 e1c1 f8d6",
+      "epd": "r2qk2r/pp1n1pp1/2pbpn1p/7P/3P4/3Q1NN1/PPPB1PP1/2KR3R w kq -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-1006"
+    },
+    {
+      "id": "record-1154",
+      "eco": "B19",
+      "name": "Caro-Kann Defense: Classical Variation, Spassky Variation",
+      "family": "Caro-Kann Defense",
+      "pgn": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5",
+      "uci": "e2e4 c7c6 d2d4 d7d5 b1d2 d5e4 d2e4 c8f5 e4g3 f5g6 h2h4 h7h6 g1f3 b8d7 h4h5",
+      "epd": "r2qkbnr/pp1nppp1/2p3bp/7P/3P4/5NN1/PPP2PP1/R1BQKB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1007"
+    }
+  ]
+}

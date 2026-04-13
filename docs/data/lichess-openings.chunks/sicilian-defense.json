@@ -1,0 +1,5652 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Sicilian Defense",
+    "chunkKey": "sicilian-defense",
+    "recordCount": 376,
+    "lineCount": 325
+  },
+  "records": [
+    {
+      "id": "record-1155",
+      "eco": "B20",
+      "name": "Sicilian Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5",
+      "uci": "e2e4 c7c5",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-1008"
+    },
+    {
+      "id": "record-1156",
+      "eco": "B20",
+      "name": "Sicilian Defense: Amazon Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Qg4",
+      "uci": "e2e4 c7c5 d1g4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P1Q1/8/PPPP1PPP/RNB1KBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1009"
+    },
+    {
+      "id": "record-1157",
+      "eco": "B20",
+      "name": "Sicilian Defense: Big Clamp Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d3 Nc6 3. c3 d6 4. f4",
+      "uci": "e2e4 c7c5 d2d3 b8c6 c2c3 d7d6 f2f4",
+      "epd": "r1bqkbnr/pp2pppp/2np4/2p5/4PP2/2PP4/PP4PP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1010"
+    },
+    {
+      "id": "record-1158",
+      "eco": "B20",
+      "name": "Sicilian Defense: Bowdler Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Bc4",
+      "uci": "e2e4 c7c5 f1c4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1011"
+    },
+    {
+      "id": "record-1159",
+      "eco": "B20",
+      "name": "Sicilian Defense: Brick Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nh3",
+      "uci": "e2e4 c7c5 g1h3",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/7N/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1012"
+    },
+    {
+      "id": "record-1160",
+      "eco": "B20",
+      "name": "Sicilian Defense: Euwe Attack, Prins Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b3 d5 3. Bb2",
+      "uci": "e2e4 c7c5 b2b3 d7d5 c1b2",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/4P3/1P6/PBPP1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1013"
+    },
+    {
+      "id": "record-1161",
+      "eco": "B20",
+      "name": "Sicilian Defense: Gloria Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c4 d6 3. Nc3 Nc6 4. g3 h5",
+      "uci": "e2e4 c7c5 c2c4 d7d6 b1c3 b8c6 g2g3 h7h5",
+      "epd": "r1bqkbnr/pp2ppp1/2np4/2p4p/2P1P3/2N3P1/PP1P1P1P/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1014"
+    },
+    {
+      "id": "record-1162",
+      "eco": "B20",
+      "name": "Sicilian Defense: Grob Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. g4",
+      "uci": "e2e4 c7c5 g2g4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P1P1/8/PPPP1P1P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1015"
+    },
+    {
+      "id": "record-1163",
+      "eco": "B20",
+      "name": "Sicilian Defense: Keres Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Ne2",
+      "uci": "e2e4 c7c5 g1e2",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPPNPPP/RNBQKB1R b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1016"
+    },
+    {
+      "id": "record-1164",
+      "eco": "B20",
+      "name": "Sicilian Defense: King David's Opening",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Ke2",
+      "uci": "e2e4 c7c5 e1e2",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPPKPPP/RNBQ1BNR b kq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1017"
+    },
+    {
+      "id": "record-1165",
+      "eco": "B20",
+      "name": "Sicilian Defense: Kronberger Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Na3",
+      "uci": "e2e4 c7c5 b1a3",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/N7/PPPP1PPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1018"
+    },
+    {
+      "id": "record-1166",
+      "eco": "B20",
+      "name": "Sicilian Defense: Kronberger Variation, Nemeth Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Na3 Nc6 3. d4 cxd4 4. Bc4",
+      "uci": "e2e4 c7c5 b1a3 b8c6 d2d4 c5d4 f1c4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/8/2BpP3/N7/PPP2PPP/R1BQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1019"
+    },
+    {
+      "id": "record-1167",
+      "eco": "B20",
+      "name": "Sicilian Defense: Lasker-Dunne Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. g3",
+      "uci": "e2e4 c7c5 g2g3",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/6P1/PPPP1P1P/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1020"
+    },
+    {
+      "id": "record-1168",
+      "eco": "B20",
+      "name": "Sicilian Defense: Mengarini Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. a3",
+      "uci": "e2e4 c7c5 a2a3",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/P7/1PPP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1021"
+    },
+    {
+      "id": "record-1169",
+      "eco": "B20",
+      "name": "Sicilian Defense: Myers Attack, with a4",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. a4",
+      "uci": "e2e4 c7c5 a2a4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/P3P3/8/1PPP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1022"
+    },
+    {
+      "id": "record-1170",
+      "eco": "B20",
+      "name": "Sicilian Defense: Myers Attack, with h4",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. h4",
+      "uci": "e2e4 c7c5 h2h4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P2P/8/PPPP1PP1/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1023"
+    },
+    {
+      "id": "record-1171",
+      "eco": "B20",
+      "name": "Sicilian Defense: Snyder Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b3",
+      "uci": "e2e4 c7c5 b2b3",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/1P6/P1PP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1024"
+    },
+    {
+      "id": "record-1172",
+      "eco": "B20",
+      "name": "Sicilian Defense: Snyder Variation, Queen Fianchetto Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b3 b6",
+      "uci": "e2e4 c7c5 b2b3 b7b6",
+      "epd": "rnbqkbnr/p2ppppp/1p6/2p5/4P3/1P6/P1PP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1025"
+    },
+    {
+      "id": "record-1173",
+      "eco": "B20",
+      "name": "Sicilian Defense: Staunton-Cochrane Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c4",
+      "uci": "e2e4 c7c5 c2c4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/2P1P3/8/PP1P1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1026"
+    },
+    {
+      "id": "record-1174",
+      "eco": "B20",
+      "name": "Sicilian Defense: Wing Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b4",
+      "uci": "e2e4 c7c5 b2b4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/1P2P3/8/P1PP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1027"
+    },
+    {
+      "id": "record-1175",
+      "eco": "B20",
+      "name": "Sicilian Defense: Wing Gambit, Abrahams Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b4 cxb4 3. Bb2",
+      "uci": "e2e4 c7c5 b2b4 c5b4 c1b2",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/1p2P3/8/PBPP1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1028"
+    },
+    {
+      "id": "record-1176",
+      "eco": "B20",
+      "name": "Sicilian Defense: Wing Gambit, Carlsbad Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b4 cxb4 3. a3 bxa3",
+      "uci": "e2e4 c7c5 b2b4 c5b4 a2a3 b4a3",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/4P3/p7/2PP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1029"
+    },
+    {
+      "id": "record-1177",
+      "eco": "B20",
+      "name": "Sicilian Defense: Wing Gambit, Marienbad Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b4 cxb4 3. a3 d5 4. exd5 Qxd5 5. Bb2",
+      "uci": "e2e4 c7c5 b2b4 c5b4 a2a3 d7d5 e4d5 d8d5 c1b2",
+      "epd": "rnb1kbnr/pp2pppp/8/3q4/1p6/P7/1BPP1PPP/RN1QKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1030"
+    },
+    {
+      "id": "record-1178",
+      "eco": "B20",
+      "name": "Sicilian Defense: Wing Gambit, Marshall Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b4 cxb4 3. a3",
+      "uci": "e2e4 c7c5 b2b4 c5b4 a2a3",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/1p2P3/P7/2PP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1031"
+    },
+    {
+      "id": "record-1179",
+      "eco": "B20",
+      "name": "Sicilian Defense: Wing Gambit, Nanu Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b4 cxb4 3. a3 d5 4. exd5 Qxd5 5. Nf3 e5 6. c4 Qe6 7. Bd3",
+      "uci": "e2e4 c7c5 b2b4 c5b4 a2a3 d7d5 e4d5 d8d5 g1f3 e7e5 c2c4 d5e6 f1d3",
+      "epd": "rnb1kbnr/pp3ppp/4q3/4p3/1pP5/P2B1N2/3P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1032"
+    },
+    {
+      "id": "record-1180",
+      "eco": "B20",
+      "name": "Sicilian Defense: Wing Gambit, Romanian Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b4 cxb4 3. a3 d5 4. exd5 Qxd5 5. Nf3 e5 6. Bb2 Nc6 7. c4 Qe6",
+      "uci": "e2e4 c7c5 b2b4 c5b4 a2a3 d7d5 e4d5 d8d5 g1f3 e7e5 c1b2 b8c6 c2c4 d5e6",
+      "epd": "r1b1kbnr/pp3ppp/2n1q3/4p3/1pP5/P4N2/1B1P1PPP/RN1QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1033"
+    },
+    {
+      "id": "record-1181",
+      "eco": "B20",
+      "name": "Sicilian Defense: Wing Gambit, Santasiere Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. b4 cxb4 3. c4",
+      "uci": "e2e4 c7c5 b2b4 c5b4 c2c4",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/1pP1P3/8/P2P1PPP/RNBQKBNR b KQkq c3",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1034"
+    },
+    {
+      "id": "record-1183",
+      "eco": "B21",
+      "name": "Sicilian Defense: Coles Sicilian Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. Qxd4 Nc6 4. Qd1 Nf6 5. Bc4",
+      "uci": "e2e4 c7c5 d2d4 c5d4 d1d4 b8c6 d4d1 g8f6 f1c4",
+      "epd": "r1bqkb1r/pp1ppppp/2n2n2/8/2B1P3/8/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1036"
+    },
+    {
+      "id": "record-1184",
+      "eco": "B21",
+      "name": "Sicilian Defense: Halasz Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. f4",
+      "uci": "e2e4 c7c5 d2d4 c5d4 f2f4",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/3pPP2/8/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1037"
+    },
+    {
+      "id": "record-1185",
+      "eco": "B21",
+      "name": "Sicilian Defense: McDonnell Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. f4",
+      "uci": "e2e4 c7c5 f2f4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4PP2/8/PPPP2PP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1038"
+    },
+    {
+      "id": "record-1186",
+      "eco": "B21",
+      "name": "Sicilian Defense: McDonnell Attack, Tal Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. f4 d5 3. exd5 Nf6",
+      "uci": "e2e4 c7c5 f2f4 d7d5 e4d5 g8f6",
+      "epd": "rnbqkb1r/pp2pppp/5n2/2pP4/5P2/8/PPPP2PP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1039"
+    },
+    {
+      "id": "record-1187",
+      "eco": "B21",
+      "name": "Sicilian Defense: McDonnell Attack, Toilet Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. f4 d5 3. Nc3",
+      "uci": "e2e4 c7c5 f2f4 d7d5 b1c3",
+      "epd": "rnbqkbnr/pp2pppp/8/2pp4/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1040"
+    },
+    {
+      "id": "record-1188",
+      "eco": "B21",
+      "name": "Sicilian Defense: Morphy Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. Nf3",
+      "uci": "e2e4 c7c5 d2d4 c5d4 g1f3",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/3pP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1041"
+    },
+    {
+      "id": "record-1189",
+      "eco": "B21",
+      "name": "Sicilian Defense: Morphy Gambit, Andreaschek Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. Nf3 e5 4. c3",
+      "uci": "e2e4 c7c5 d2d4 c5d4 g1f3 e7e5 c2c3",
+      "epd": "rnbqkbnr/pp1p1ppp/8/4p3/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1042"
+    },
+    {
+      "id": "record-1190",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4",
+      "uci": "e2e4 c7c5 d2d4",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1043"
+    },
+    {
+      "id": "record-1191",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/3pP3/2P5/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1043"
+    },
+    {
+      "id": "record-1192",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/4P3/2p5/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1044"
+    },
+    {
+      "id": "record-1193",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Chicago Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Bc4 e6 6. Nf3 d6 7. O-O a6 8. Qe2 b5 9. Bb3 Ra7",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 f1c4 e7e6 g1f3 d7d6 e1g1 a7a6 d1e2 b7b5 c4b3 a8a7",
+      "epd": "2bqkbnr/r4ppp/p1npp3/1p6/4P3/1BN2N2/PP2QPPP/R1B2RK1 w k -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1045"
+    },
+    {
+      "id": "record-1194",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Chicago Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 d6 5. Nf3 e6 6. Bc4 Nf6 7. O-O a6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 d7d6 g1f3 e7e6 f1c4 g8f6 e1g1 a7a6",
+      "epd": "rnbqkb1r/1p3ppp/p2ppn2/8/2B1P3/2N2N2/PP3PPP/R1BQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1045"
+    },
+    {
+      "id": "record-1195",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Classical Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 d6 6. Bc4 a6 7. O-O Nf6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 d7d6 f1c4 a7a6 e1g1 g8f6",
+      "epd": "r1bqkb1r/1p2pppp/p1np1n2/8/2B1P3/2N2N2/PP3PPP/R1BQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1046"
+    },
+    {
+      "id": "record-1196",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Danish Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nf3",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 g1f3",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/4P3/2p2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1047"
+    },
+    {
+      "id": "record-1197",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Fianchetto Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 g6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 g7g6",
+      "epd": "r1bqkbnr/pp1ppp1p/2n3p1/8/4P3/2N2N2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1048"
+    },
+    {
+      "id": "record-1198",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Finegold Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 e6 5. Nf3 d6 6. Bc4 a6 7. O-O Be7 8. Qe2 Nf6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 e7e6 g1f3 d7d6 f1c4 a7a6 e1g1 f8e7 d1e2 g8f6",
+      "epd": "rnbqk2r/1p2bppp/p2ppn2/8/2B1P3/2N2N2/PP2QPPP/R1B2RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1049"
+    },
+    {
+      "id": "record-1199",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Kan Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 e6 5. Nf3 a6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 e7e6 g1f3 a7a6",
+      "epd": "rnbqkbnr/1p1p1ppp/p3p3/8/4P3/2N2N2/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1050"
+    },
+    {
+      "id": "record-1200",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Larsen Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Qc7 7. Qe2 a6 8. O-O Bd6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 e7e6 f1c4 d8c7 d1e2 a7a6 e1g1 f8d6",
+      "epd": "r1b1k1nr/1pqp1ppp/p1nbp3/8/2B1P3/2N2N2/PP2QPPP/R1B2RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1051"
+    },
+    {
+      "id": "record-1201",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Morphy Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Bc5",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 e7e6 f1c4 f8c5",
+      "epd": "r1bqk1nr/pp1p1ppp/2n1p3/2b5/2B1P3/2N2N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1052"
+    },
+    {
+      "id": "record-1202",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Morphy Defense Deferred",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 a6 7. O-O b5 8. Bb3 Bc5",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 e7e6 f1c4 a7a6 e1g1 b7b5 c4b3 f8c5",
+      "epd": "r1bqk1nr/3p1ppp/p1n1p3/1pb5/4P3/1BN2N2/PP3PPP/R1BQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1053"
+    },
+    {
+      "id": "record-1203",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 a6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 e7e6 f1c4 a7a6",
+      "epd": "r1bqkbnr/1p1p1ppp/p1n1p3/8/2B1P3/2N2N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1054"
+    },
+    {
+      "id": "record-1204",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Pin Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Bb4",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 e7e6 f1c4 f8b4",
+      "epd": "r1bqk1nr/pp1p1ppp/2n1p3/8/1bB1P3/2N2N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1055"
+    },
+    {
+      "id": "record-1205",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 d6 6. Bc4 e6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 d7d6 f1c4 e7e6",
+      "epd": "r1bqkbnr/pp3ppp/2npp3/8/2B1P3/2N2N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1056"
+    },
+    {
+      "id": "record-1206",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Siberian Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Qc7",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 e7e6 f1c4 d8c7",
+      "epd": "r1b1kbnr/ppqp1ppp/2n1p3/8/2B1P3/2N2N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1057"
+    },
+    {
+      "id": "record-1207",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Siberian Variation, Siberian Trap",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Qc7 7. Qe2 Nf6 8. O-O Ng4",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 g1f3 e7e6 f1c4 d8c7 d1e2 g8f6 e1g1 f6g4",
+      "epd": "r1b1kb1r/ppqp1ppp/2n1p3/8/2B1P1n1/2N2N2/PP2QPPP/R1B2RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1058"
+    },
+    {
+      "id": "record-1208",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Sozin Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Bc4 e6 6. Nf3 d6 7. O-O a6 8. Qe2 b5",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6 f1c4 e7e6 g1f3 d7d6 e1g1 a7a6 d1e2 b7b5",
+      "epd": "r1bqkbnr/5ppp/p1npp3/1p6/2B1P3/2N2N2/PP2QPPP/R1B2RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1059"
+    },
+    {
+      "id": "record-1209",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Taimanov Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 e6 5. Bc4 a6 6. Nf3 Ne7",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 e7e6 f1c4 a7a6 g1f3 g8e7",
+      "epd": "rnbqkb1r/1p1pnppp/p3p3/8/2B1P3/2N2N2/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1060"
+    },
+    {
+      "id": "record-1210",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Declined, Alapin Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 Nf6",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 g8f6",
+      "epd": "rnbqkb1r/pp1ppppp/5n2/8/3pP3/2P5/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1061"
+    },
+    {
+      "id": "record-1211",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Declined, Center Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 e5",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 e7e5",
+      "epd": "rnbqkbnr/pp1p1ppp/8/4p3/3pP3/2P5/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1062"
+    },
+    {
+      "id": "record-1212",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Declined, Dubois Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 d3 4. c4",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4d3 c3c4",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/2P1P3/3p4/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1063"
+    },
+    {
+      "id": "record-1213",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Declined, Push Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 d3",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d4d3",
+      "epd": "rnbqkbnr/pp1ppppp/8/8/4P3/2Pp4/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1064"
+    },
+    {
+      "id": "record-1214",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Declined, Scandinavian Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 d5",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d7d5",
+      "epd": "rnbqkbnr/pp2pppp/8/3p4/3pP3/2P5/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1065"
+    },
+    {
+      "id": "record-1215",
+      "eco": "B21",
+      "name": "Sicilian Defense: Smith-Morra Gambit Declined, Wing Formation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. d4 cxd4 3. c3 Qa5",
+      "uci": "e2e4 c7c5 d2d4 c5d4 c2c3 d8a5",
+      "epd": "rnb1kbnr/pp1ppppp/8/q7/3pP3/2P5/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1066"
+    },
+    {
+      "id": "record-1216",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3",
+      "uci": "e2e4 c7c5 c2c3",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/2P5/PP1P1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1067"
+    },
+    {
+      "id": "record-1217",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Anti-Alapin Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 d5 3. exd5 Nf6",
+      "uci": "e2e4 c7c5 c2c3 d7d5 e4d5 g8f6",
+      "epd": "rnbqkb1r/pp2pppp/5n2/2pP4/8/2P5/PP1P1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1068"
+    },
+    {
+      "id": "record-1218",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Barmen Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 d5 3. exd5 Qxd5",
+      "uci": "e2e4 c7c5 c2c3 d7d5 e4d5 d8d5",
+      "epd": "rnb1kbnr/pp2pppp/8/2pq4/8/2P5/PP1P1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1069"
+    },
+    {
+      "id": "record-1219",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Barmen Defense, Central Exchange",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 cxd4 5. cxd4 Nc6 6. Nf3 Bg4",
+      "uci": "e2e4 c7c5 c2c3 d7d5 e4d5 d8d5 d2d4 c5d4 c3d4 b8c6 g1f3 c8g4",
+      "epd": "r3kbnr/pp2pppp/2n5/3q4/3P2b1/5N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1070"
+    },
+    {
+      "id": "record-1220",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Barmen Defense, Endgame Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 cxd4 5. cxd4 Nc6 6. Nf3 Bg4 7. Nc3 Bxf3 8. gxf3 Qxd4 9. Qxd4 Nxd4",
+      "uci": "e2e4 c7c5 c2c3 d7d5 e4d5 d8d5 d2d4 c5d4 c3d4 b8c6 g1f3 c8g4 b1c3 g4f3 g2f3 d5d4 d1d4 c6d4",
+      "epd": "r3kbnr/pp2pppp/8/8/3n4/2N2P2/PP3P1P/R1B1KB1R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1071"
+    },
+    {
+      "id": "record-1221",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Barmen Defense, Milner-Barry Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 Nc6 5. Nf3 cxd4 6. cxd4 e5 7. Nc3 Bb4 8. Be2",
+      "uci": "e2e4 c7c5 c2c3 d7d5 e4d5 d8d5 d2d4 b8c6 g1f3 c5d4 c3d4 e7e5 b1c3 f8b4 f1e2",
+      "epd": "r1b1k1nr/pp3ppp/2n5/3qp3/1b1P4/2N2N2/PP2BPPP/R1BQK2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1072"
+    },
+    {
+      "id": "record-1222",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 Nf6 5. Nf3 Bg4",
+      "uci": "e2e4 c7c5 c2c3 d7d5 e4d5 d8d5 d2d4 g8f6 g1f3 c8g4",
+      "epd": "rn2kb1r/pp2pppp/5n2/2pq4/3P2b1/2P2N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1073"
+    },
+    {
+      "id": "record-1223",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Smith-Morra Declined",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 Nf6 3. e5 Nd5 4. d4 cxd4",
+      "uci": "e2e4 c7c5 c2c3 g8f6 e4e5 f6d5 d2d4 c5d4",
+      "epd": "rnbqkb1r/pp1ppppp/8/3nP3/3p4/2P5/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1074"
+    },
+    {
+      "id": "record-1224",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Stoltz Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 Nf6 3. e5 Nd5 4. Nf3 Nc6 5. Bc4 Nb6 6. Bb3",
+      "uci": "e2e4 c7c5 c2c3 g8f6 e4e5 f6d5 g1f3 b8c6 f1c4 d5b6 c4b3",
+      "epd": "r1bqkb1r/pp1ppppp/1nn5/2p1P3/8/1BP2N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1075"
+    },
+    {
+      "id": "record-1225",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation, Stoltz Attack, Ivanchuk Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 Nf6 3. e5 Nd5 4. Nf3 Nc6 5. Bc4 Nb6 6. Bb3 c4 7. Bc2 Qc7 8. Qe2 g5",
+      "uci": "e2e4 c7c5 c2c3 g8f6 e4e5 f6d5 g1f3 b8c6 f1c4 d5b6 c4b3 c5c4 b3c2 d8c7 d1e2 g7g5",
+      "epd": "r1b1kb1r/ppqppp1p/1nn5/4P1p1/2p5/2P2N2/PPBPQPPP/RNB1K2R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1076"
+    },
+    {
+      "id": "record-1226",
+      "eco": "B22",
+      "name": "Sicilian Defense: Delayed Alapin Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. c3 d5 4. exd5 Qxd5 5. d4 Nf6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 d8d5 d2d4 g8f6",
+      "epd": "rnb1kb1r/pp3ppp/4pn2/2pq4/3P4/2P2N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1077"
+    },
+    {
+      "id": "record-1227",
+      "eco": "B22",
+      "name": "Sicilian Defense: Heidenfeld Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. c3 Nf6 3. e5 Nd5 4. Nf3 Nc6 5. Na3",
+      "uci": "e2e4 c7c5 c2c3 g8f6 e4e5 f6d5 g1f3 b8c6 b1a3",
+      "epd": "r1bqkb1r/pp1ppppp/2n5/2pnP3/8/N1P2N2/PP1P1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1078"
+    },
+    {
+      "id": "record-1228",
+      "eco": "B23",
+      "name": "Sicilian Defense: Closed",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3",
+      "uci": "e2e4 c7c5 b1c3",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1079"
+    },
+    {
+      "id": "record-1229",
+      "eco": "B23",
+      "name": "Sicilian Defense: Closed",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 e6",
+      "uci": "e2e4 c7c5 b1c3 e7e6",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1079"
+    },
+    {
+      "id": "record-1230",
+      "eco": "B23",
+      "name": "Sicilian Defense: Closed",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 e6 3. g3",
+      "uci": "e2e4 c7c5 b1c3 e7e6 g2g3",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/2p5/4P3/2N3P1/PPPP1P1P/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1079"
+    },
+    {
+      "id": "record-1231",
+      "eco": "B23",
+      "name": "Sicilian Defense: Closed, Carlsen Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 d6 3. d4 cxd4 4. Qxd4 Nc6 5. Qd2",
+      "uci": "e2e4 c7c5 b1c3 d7d6 d2d4 c5d4 d1d4 b8c6 d4d2",
+      "epd": "r1bqkbnr/pp2pppp/2np4/8/4P3/2N5/PPPQ1PPP/R1B1KBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1080"
+    },
+    {
+      "id": "record-1232",
+      "eco": "B23",
+      "name": "Sicilian Defense: Closed, Chameleon Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. Nge2",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g1e2",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/2N5/PPPPNPPP/R1BQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1081"
+    },
+    {
+      "id": "record-1233",
+      "eco": "B23",
+      "name": "Sicilian Defense: Closed, Grob Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g4",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/2p5/4P1P1/2N5/PPPP1P1P/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1082"
+    },
+    {
+      "id": "record-1234",
+      "eco": "B23",
+      "name": "Sicilian Defense: Closed, Korchnoi Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 e6 3. g3 d5",
+      "uci": "e2e4 c7c5 b1c3 e7e6 g2g3 d7d5",
+      "epd": "rnbqkbnr/pp3ppp/4p3/2pp4/4P3/2N3P1/PPPP1P1P/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1083"
+    },
+    {
+      "id": "record-1235",
+      "eco": "B23",
+      "name": "Sicilian Defense: Closed, Traditional",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6",
+      "uci": "e2e4 c7c5 b1c3 b8c6",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1084"
+    },
+    {
+      "id": "record-1236",
+      "eco": "B23",
+      "name": "Sicilian Defense: Grand Prix Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. f4",
+      "uci": "e2e4 c7c5 b1c3 b8c6 f2f4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/2p5/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1085"
+    },
+    {
+      "id": "record-1237",
+      "eco": "B23",
+      "name": "Sicilian Defense: Grand Prix Attack, Schofman Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bc4 e6 6. f5",
+      "uci": "e2e4 c7c5 b1c3 b8c6 f2f4 g7g6 g1f3 f8g7 f1c4 e7e6 f4f5",
+      "epd": "r1bqk1nr/pp1p1pbp/2n1p1p1/2p2P2/2B1P3/2N2N2/PPPP2PP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1086"
+    },
+    {
+      "id": "record-1238",
+      "eco": "B24",
+      "name": "Sicilian Defense: Closed",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6",
+      "epd": "r1bqkbnr/pp1ppp1p/2n3p1/2p5/4P3/2N3P1/PPPP1P1P/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1079"
+    },
+    {
+      "id": "record-1239",
+      "eco": "B24",
+      "name": "Sicilian Defense: Closed",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7",
+      "epd": "r1bqk1nr/pp1pppbp/2n3p1/2p5/4P3/2N3P1/PPPP1PBP/R1BQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1079"
+    },
+    {
+      "id": "record-1240",
+      "eco": "B24",
+      "name": "Sicilian Defense: Closed, Fianchetto Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/2N3P1/PPPP1P1P/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1087"
+    },
+    {
+      "id": "record-1241",
+      "eco": "B24",
+      "name": "Sicilian Defense: Closed, Smyslov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 e6 6. Be3 Nd4 7. Nce2",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7 d2d3 e7e6 c1e3 c6d4 c3e2",
+      "epd": "r1bqk1nr/pp1p1pbp/4p1p1/2p5/3nP3/3PB1P1/PPP1NPBP/R2QK1NR b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1088"
+    },
+    {
+      "id": "record-1242",
+      "eco": "B25",
+      "name": "Sicilian Defense: Closed",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7 d2d3 d7d6",
+      "epd": "r1bqk1nr/pp2ppbp/2np2p1/2p5/4P3/2NP2P1/PPP2PBP/R1BQK1NR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1079"
+    },
+    {
+      "id": "record-1243",
+      "eco": "B25",
+      "name": "Sicilian Defense: Closed",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. f4",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7 d2d3 d7d6 f2f4",
+      "epd": "r1bqk1nr/pp2ppbp/2np2p1/2p5/4PP2/2NP2P1/PPP3BP/R1BQK1NR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1079"
+    },
+    {
+      "id": "record-1244",
+      "eco": "B25",
+      "name": "Sicilian Defense: Closed, Botvinnik Defense, Edge Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. f4 e5 7. Nh3 Nge7",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7 d2d3 d7d6 f2f4 e7e5 g1h3 g8e7",
+      "epd": "r1bqk2r/pp2npbp/2np2p1/2p1p3/4PP2/2NP2PN/PPP3BP/R1BQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1089"
+    },
+    {
+      "id": "record-1245",
+      "eco": "B25",
+      "name": "Sicilian Defense: Closed, Botvinnik Defense, with Nge2",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. Nge2 e5",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7 d2d3 d7d6 g1e2 e7e5",
+      "epd": "r1bqk1nr/pp3pbp/2np2p1/2p1p3/4P3/2NP2P1/PPP1NPBP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1091"
+    },
+    {
+      "id": "record-1246",
+      "eco": "B25",
+      "name": "Sicilian Defense: Closed, Botvinnik Defense, with f4",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. f4 e5",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7 d2d3 d7d6 f2f4 e7e5",
+      "epd": "r1bqk1nr/pp3pbp/2np2p1/2p1p3/4PP2/2NP2P1/PPP3BP/R1BQK1NR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1090"
+    },
+    {
+      "id": "record-1247",
+      "eco": "B26",
+      "name": "Sicilian Defense: Closed",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. Be3",
+      "uci": "e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7 d2d3 d7d6 c1e3",
+      "epd": "r1bqk1nr/pp2ppbp/2np2p1/2p5/4P3/2NPB1P1/PPP2PBP/R2QK1NR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1079"
+    },
+    {
+      "id": "record-1256",
+      "eco": "B27",
+      "name": "Sicilian Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3",
+      "uci": "e2e4 c7c5 g1f3",
+      "epd": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1008"
+    },
+    {
+      "id": "record-1257",
+      "eco": "B27",
+      "name": "Sicilian Defense: Acton Extension",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. c4 Bh6",
+      "uci": "e2e4 c7c5 g1f3 g7g6 c2c4 f8h6",
+      "epd": "rnbqk1nr/pp1ppp1p/6pb/2p5/2P1P3/5N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1100"
+    },
+    {
+      "id": "record-1258",
+      "eco": "B27",
+      "name": "Sicilian Defense: Brussels Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 f5",
+      "uci": "e2e4 c7c5 g1f3 f7f5",
+      "epd": "rnbqkbnr/pp1pp1pp/8/2p2p2/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1101"
+    },
+    {
+      "id": "record-1259",
+      "eco": "B27",
+      "name": "Sicilian Defense: Bücker Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 h6",
+      "uci": "e2e4 c7c5 g1f3 h7h6",
+      "epd": "rnbqkbnr/pp1pppp1/7p/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1102"
+    },
+    {
+      "id": "record-1260",
+      "eco": "B27",
+      "name": "Sicilian Defense: Double-Dutch Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 f5 3. exf5 Nh6",
+      "uci": "e2e4 c7c5 g1f3 f7f5 e4f5 g8h6",
+      "epd": "rnbqkb1r/pp1pp1pp/7n/2p2P2/8/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1103"
+    },
+    {
+      "id": "record-1261",
+      "eco": "B27",
+      "name": "Sicilian Defense: Frederico Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 f5",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f7f5",
+      "epd": "rnbqkbnr/pp1pp2p/6p1/2p2p2/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1104"
+    },
+    {
+      "id": "record-1262",
+      "eco": "B27",
+      "name": "Sicilian Defense: Hyperaccelerated Dragon",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6",
+      "uci": "e2e4 c7c5 g1f3 g7g6",
+      "epd": "rnbqkbnr/pp1ppp1p/6p1/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1105"
+    },
+    {
+      "id": "record-1263",
+      "eco": "B27",
+      "name": "Sicilian Defense: Hyperaccelerated Fianchetto",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4",
+      "epd": "rnbqkbnr/pp1ppp1p/6p1/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1106"
+    },
+    {
+      "id": "record-1264",
+      "eco": "B27",
+      "name": "Sicilian Defense: Hyperaccelerated Pterodactyl",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7",
+      "epd": "rnbqk1nr/pp1pppbp/6p1/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1107"
+    },
+    {
+      "id": "record-1265",
+      "eco": "B27",
+      "name": "Sicilian Defense: Hyperaccelerated Pterodactyl, Exchange Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 Bg7 4. dxc5 Qa5+ 5. Nc3 Bxc3+ 6. bxc3 Qxc3+",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 f8g7 d4c5 d8a5 b1c3 g7c3 b2c3 a5c3",
+      "epd": "rnb1k1nr/pp1ppp1p/6p1/2P5/4P3/2q2N2/P1P2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1108"
+    },
+    {
+      "id": "record-1266",
+      "eco": "B27",
+      "name": "Sicilian Defense: Jalalabad Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e5",
+      "uci": "e2e4 c7c5 g1f3 e7e5",
+      "epd": "rnbqkbnr/pp1p1ppp/8/2p1p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1109"
+    },
+    {
+      "id": "record-1267",
+      "eco": "B27",
+      "name": "Sicilian Defense: Katalimov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 b6",
+      "uci": "e2e4 c7c5 g1f3 b7b6",
+      "epd": "rnbqkbnr/p2ppppp/1p6/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1110"
+    },
+    {
+      "id": "record-1268",
+      "eco": "B27",
+      "name": "Sicilian Defense: Mongoose Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Qa5",
+      "uci": "e2e4 c7c5 g1f3 d8a5",
+      "epd": "rnb1kbnr/pp1ppppp/8/q1p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1111"
+    },
+    {
+      "id": "record-1269",
+      "eco": "B27",
+      "name": "Sicilian Defense: Polish Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 b5",
+      "uci": "e2e4 c7c5 g1f3 b7b5",
+      "epd": "rnbqkbnr/p2ppppp/8/1pp5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1112"
+    },
+    {
+      "id": "record-1270",
+      "eco": "B27",
+      "name": "Sicilian Defense: Quinteros Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Qc7",
+      "uci": "e2e4 c7c5 g1f3 d8c7",
+      "epd": "rnb1kbnr/ppqppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1113"
+    },
+    {
+      "id": "record-1271",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6",
+      "uci": "e2e4 c7c5 g1f3 a7a6",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1114"
+    },
+    {
+      "id": "record-1272",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Aronin System",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. Be2",
+      "uci": "e2e4 c7c5 g1f3 a7a6 f1e2",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/4P3/5N2/PPPPBPPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1115"
+    },
+    {
+      "id": "record-1273",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Kieseritzky System",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. b3",
+      "uci": "e2e4 c7c5 g1f3 a7a6 b2b3",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/4P3/1P3N2/P1PP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1116"
+    },
+    {
+      "id": "record-1274",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Maróczy Bind",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. c4",
+      "uci": "e2e4 c7c5 g1f3 a7a6 c2c4",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/2P1P3/5N2/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1117"
+    },
+    {
+      "id": "record-1275",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Maróczy Bind, Paulsen Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. c4 e6",
+      "uci": "e2e4 c7c5 g1f3 a7a6 c2c4 e7e6",
+      "epd": "rnbqkbnr/1p1p1ppp/p3p3/2p5/2P1P3/5N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1118"
+    },
+    {
+      "id": "record-1276",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Maróczy Bind, Robatsch Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. c4 d6",
+      "uci": "e2e4 c7c5 g1f3 a7a6 c2c4 d7d6",
+      "epd": "rnbqkbnr/1p2pppp/p2p4/2p5/2P1P3/5N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1119"
+    },
+    {
+      "id": "record-1277",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Normal System",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. d4",
+      "uci": "e2e4 c7c5 g1f3 a7a6 d2d4",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1120"
+    },
+    {
+      "id": "record-1278",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Normal System, Cortlever Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. d4 cxd4 4. Bc4",
+      "uci": "e2e4 c7c5 g1f3 a7a6 d2d4 c5d4 f1c4",
+      "epd": "rnbqkbnr/1p1ppppp/p7/8/2BpP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1121"
+    },
+    {
+      "id": "record-1279",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Normal System, Smith-Morra Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. d4 cxd4 4. c3",
+      "uci": "e2e4 c7c5 g1f3 a7a6 d2d4 c5d4 c2c3",
+      "epd": "rnbqkbnr/1p1ppppp/p7/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1122"
+    },
+    {
+      "id": "record-1280",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Normal System, Taimanov Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. d4 cxd4 4. Nxd4 e5",
+      "uci": "e2e4 c7c5 g1f3 a7a6 d2d4 c5d4 f3d4 e7e5",
+      "epd": "rnbqkbnr/1p1p1ppp/p7/4p3/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1123"
+    },
+    {
+      "id": "record-1281",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Normal System, Zagorovsky Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. d4 cxd4 4. Qxd4",
+      "uci": "e2e4 c7c5 g1f3 a7a6 d2d4 c5d4 d1d4",
+      "epd": "rnbqkbnr/1p1ppppp/p7/8/3QP3/5N2/PPP2PPP/RNB1KB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1124"
+    },
+    {
+      "id": "record-1282",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Quiet System",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. d3",
+      "uci": "e2e4 c7c5 g1f3 a7a6 d2d3",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/4P3/3P1N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1125"
+    },
+    {
+      "id": "record-1283",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Réti System",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. g3",
+      "uci": "e2e4 c7c5 g1f3 a7a6 g2g3",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/4P3/5NP1/PPPP1P1P/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1126"
+    },
+    {
+      "id": "record-1284",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Venice System",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. c3",
+      "uci": "e2e4 c7c5 g1f3 a7a6 c2c3",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1127"
+    },
+    {
+      "id": "record-1285",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Venice System, Barcza Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. c3 Nf6",
+      "uci": "e2e4 c7c5 g1f3 a7a6 c2c3 g8f6",
+      "epd": "rnbqkb1r/1p1ppppp/p4n2/2p5/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1128"
+    },
+    {
+      "id": "record-1286",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Venice System, Gambit Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. c3 d5 4. exd5 Nf6",
+      "uci": "e2e4 c7c5 g1f3 a7a6 c2c3 d7d5 e4d5 g8f6",
+      "epd": "rnbqkb1r/1p2pppp/p4n2/2pP4/8/2P2N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1129"
+    },
+    {
+      "id": "record-1287",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Venice System, Ljubojevic Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. c3 b5",
+      "uci": "e2e4 c7c5 g1f3 a7a6 c2c3 b7b5",
+      "epd": "rnbqkbnr/3ppppp/p7/1pp5/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1130"
+    },
+    {
+      "id": "record-1288",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Venice System, Steiner Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. c3 d6",
+      "uci": "e2e4 c7c5 g1f3 a7a6 c2c3 d7d6",
+      "epd": "rnbqkbnr/1p2pppp/p2p4/2p5/4P3/2P2N2/PP1P1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1131"
+    },
+    {
+      "id": "record-1289",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Wing Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. b4",
+      "uci": "e2e4 c7c5 g1f3 a7a6 b2b4",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/1P2P3/5N2/P1PP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1132"
+    },
+    {
+      "id": "record-1290",
+      "eco": "B28",
+      "name": "Sicilian Defense: O'Kelly Variation, Yerevan System",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 a6 3. Nc3",
+      "uci": "e2e4 c7c5 g1f3 a7a6 b1c3",
+      "epd": "rnbqkbnr/1p1ppppp/p7/2p5/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1133"
+    },
+    {
+      "id": "record-1291",
+      "eco": "B29",
+      "name": "Sicilian Defense: Nimzowitsch Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nf6",
+      "uci": "e2e4 c7c5 g1f3 g8f6",
+      "epd": "rnbqkb1r/pp1ppppp/5n2/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1134"
+    },
+    {
+      "id": "record-1292",
+      "eco": "B29",
+      "name": "Sicilian Defense: Nimzowitsch Variation, Advance Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nf6 3. e5",
+      "uci": "e2e4 c7c5 g1f3 g8f6 e4e5",
+      "epd": "rnbqkb1r/pp1ppppp/5n2/2p1P3/8/5N2/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1135"
+    },
+    {
+      "id": "record-1293",
+      "eco": "B29",
+      "name": "Sicilian Defense: Nimzowitsch Variation, Closed Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nf6 3. Nc3",
+      "uci": "e2e4 c7c5 g1f3 g8f6 b1c3",
+      "epd": "rnbqkb1r/pp1ppppp/5n2/2p5/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1136"
+    },
+    {
+      "id": "record-1294",
+      "eco": "B29",
+      "name": "Sicilian Defense: Nimzowitsch Variation, Exchange Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nf6 3. e5 Nd5 4. Nc3 Nxc3",
+      "uci": "e2e4 c7c5 g1f3 g8f6 e4e5 f6d5 b1c3 d5c3",
+      "epd": "rnbqkb1r/pp1ppppp/8/2p1P3/8/2n2N2/PPPP1PPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1137"
+    },
+    {
+      "id": "record-1295",
+      "eco": "B29",
+      "name": "Sicilian Defense: Nimzowitsch Variation, Main Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nf6 3. e5 Nd5 4. Nc3 e6 5. Nxd5 exd5 6. d4 Nc6",
+      "uci": "e2e4 c7c5 g1f3 g8f6 e4e5 f6d5 b1c3 e7e6 c3d5 e6d5 d2d4 b8c6",
+      "epd": "r1bqkb1r/pp1p1ppp/2n5/2ppP3/3P4/5N2/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1138"
+    },
+    {
+      "id": "record-1296",
+      "eco": "B30",
+      "name": "Sicilian Defense: Closed, Anti-Sveshnikov Variation, Kharlov-Kramnik Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Nc3 e5 4. Bc4 Be7 5. d3 d6 6. Nd2 Bg5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 b1c3 e7e5 f1c4 f8e7 d2d3 d7d6 f3d2 e7g5",
+      "epd": "r1bqk1nr/pp3ppp/2np4/2p1p1b1/2B1P3/2NP4/PPPN1PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1139"
+    },
+    {
+      "id": "record-1297",
+      "eco": "B30",
+      "name": "Sicilian Defense: Closed, Anti-Sveshnikov Variation, with Nf6",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Nc3 e5 4. Bc4 Be7 5. d3 Nf6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 b1c3 e7e5 f1c4 f8e7 d2d3 g8f6",
+      "epd": "r1bqk2r/pp1pbppp/2n2n2/2p1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1141"
+    },
+    {
+      "id": "record-1298",
+      "eco": "B30",
+      "name": "Sicilian Defense: Closed, Anti-Sveshnikov Variation, with d6",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Nc3 e5 4. Bc4 Be7 5. d3 d6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 b1c3 e7e5 f1c4 f8e7 d2d3 d7d6",
+      "epd": "r1bqk1nr/pp2bppp/2np4/2p1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1140"
+    },
+    {
+      "id": "record-1299",
+      "eco": "B30",
+      "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 f1b5",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/1Bp5/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1142"
+    },
+    {
+      "id": "record-1300",
+      "eco": "B30",
+      "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Brooklyn Retreat Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5 Nb8",
+      "uci": "e2e4 c7c5 g1f3 b8c6 f1b5 c6b8",
+      "epd": "rnbqkbnr/pp1ppppp/8/1Bp5/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1143"
+    },
+    {
+      "id": "record-1301",
+      "eco": "B30",
+      "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, San Francisco Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5 Na5 4. b4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 f1b5 c6a5 b2b4",
+      "epd": "r1bqkbnr/pp1ppppp/8/nBp5/1P2P3/5N2/P1PP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1144"
+    },
+    {
+      "id": "record-1302",
+      "eco": "B30",
+      "name": "Sicilian Defense: Old Sicilian",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6",
+      "uci": "e2e4 c7c5 g1f3 b8c6",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1145"
+    },
+    {
+      "id": "record-1303",
+      "eco": "B30",
+      "name": "Sicilian Defense: Portsmouth Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. b4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 b2b4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/2p5/1P2P3/5N2/P1PP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1146"
+    },
+    {
+      "id": "record-1304",
+      "eco": "B31",
+      "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 f1b5 g7g6",
+      "epd": "r1bqkbnr/pp1ppp1p/2n3p1/1Bp5/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1147"
+    },
+    {
+      "id": "record-1305",
+      "eco": "B31",
+      "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Gufeld Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. O-O Bg7 5. c3 e5 6. d4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 f1b5 g7g6 e1g1 f8g7 c2c3 e7e5 d2d4",
+      "epd": "r1bqk1nr/pp1p1pbp/2n3p1/1Bp1p3/3PP3/2P2N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1148"
+    },
+    {
+      "id": "record-1306",
+      "eco": "B31",
+      "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Lutikov Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. O-O Bg7 5. c3 Nf6 6. d4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 f1b5 g7g6 e1g1 f8g7 c2c3 g8f6 d2d4",
+      "epd": "r1bqk2r/pp1pppbp/2n2np1/1Bp5/3PP3/2P2N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1149"
+    },
+    {
+      "id": "record-1307",
+      "eco": "B31",
+      "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Totsky Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. O-O Bg7 5. c3 Nf6 6. Qa4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 f1b5 g7g6 e1g1 f8g7 c2c3 g8f6 d1a4",
+      "epd": "r1bqk2r/pp1pppbp/2n2np1/1Bp5/Q3P3/2P2N2/PP1P1PPP/RNB2RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1150"
+    },
+    {
+      "id": "record-1308",
+      "eco": "B31",
+      "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Gurgenidze Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. O-O Bg7 5. Re1 e5 6. b4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 f1b5 g7g6 e1g1 f8g7 f1e1 e7e5 b2b4",
+      "epd": "r1bqk1nr/pp1p1pbp/2n3p1/1Bp1p3/1P2P3/5N2/P1PP1PPP/RNBQR1K1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1151"
+    },
+    {
+      "id": "record-1309",
+      "eco": "B32",
+      "name": "Sicilian Defense: Accelerated Dragon",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6",
+      "epd": "r1bqkbnr/pp1ppp1p/2n3p1/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1152"
+    },
+    {
+      "id": "record-1310",
+      "eco": "B32",
+      "name": "Sicilian Defense: Flohr Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Qc7",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 d8c7",
+      "epd": "r1b1kbnr/ppqppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1153"
+    },
+    {
+      "id": "record-1311",
+      "eco": "B32",
+      "name": "Sicilian Defense: Franco-Sicilian Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 e6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 e7e6",
+      "epd": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1154"
+    },
+    {
+      "id": "record-1312",
+      "eco": "B32",
+      "name": "Sicilian Defense: Godiva Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Qb6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 d8b6",
+      "epd": "r1b1kbnr/pp1ppppp/1qn5/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1155"
+    },
+    {
+      "id": "record-1313",
+      "eco": "B32",
+      "name": "Sicilian Defense: Kalashnikov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 e7e5 d4b5 d7d6",
+      "epd": "r1bqkbnr/pp3ppp/2np4/1N2p3/4P3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1156"
+    },
+    {
+      "id": "record-1314",
+      "eco": "B32",
+      "name": "Sicilian Defense: Löwenthal Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 e7e5",
+      "epd": "r1bqkbnr/pp1p1ppp/2n5/4p3/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1157"
+    },
+    {
+      "id": "record-1315",
+      "eco": "B32",
+      "name": "Sicilian Defense: Nimzo-American Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 d5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 d7d5",
+      "epd": "r1bqkbnr/pp2pppp/2n5/3p4/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1158"
+    },
+    {
+      "id": "record-1316",
+      "eco": "B32",
+      "name": "Sicilian Defense: O'Kelly Variation, Maróczy Bind, Geller Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 a6 5. c4 e5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 a7a6 c2c4 e7e5",
+      "epd": "r1bqkbnr/1p1p1ppp/p1n5/4p3/2PNP3/8/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1159"
+    },
+    {
+      "id": "record-1317",
+      "eco": "B32",
+      "name": "Sicilian Defense: Open",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1160"
+    },
+    {
+      "id": "record-1318",
+      "eco": "B32",
+      "name": "Sicilian Defense: Open",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1160"
+    },
+    {
+      "id": "record-1319",
+      "eco": "B32",
+      "name": "Sicilian Defense: Open",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4",
+      "epd": "r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1160"
+    },
+    {
+      "id": "record-1320",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5",
+      "epd": "r1bqkb1r/pp1p1ppp/2n2n2/4p3/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1161"
+    },
+    {
+      "id": "record-1321",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Bird Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 Be6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4b5 d7d6 c1g5 a7a6 b5a3 c8e6",
+      "epd": "r2qkb1r/1p3ppp/p1npbn2/4p1B1/4P3/N1N5/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1162"
+    },
+    {
+      "id": "record-1322",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nxc6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4c6",
+      "epd": "r1bqkb1r/pp1p1ppp/2N2n2/4p3/4P3/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1163"
+    },
+    {
+      "id": "record-1323",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nf3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4f3",
+      "epd": "r1bqkb1r/pp1p1ppp/2n2n2/4p3/4P3/2N2N2/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1164"
+    },
+    {
+      "id": "record-1324",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nb3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4b3",
+      "epd": "r1bqkb1r/pp1p1ppp/2n2n2/4p3/4P3/1NN5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1165"
+    },
+    {
+      "id": "record-1325",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4b5 d7d6 c1g5 a7a6 b5a3 b7b5",
+      "epd": "r1bqkb1r/5ppp/p1np1n2/1p2p1B1/4P3/N1N5/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1166"
+    },
+    {
+      "id": "record-1326",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Bxf6 gxf6 10. Nd5 f5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4b5 d7d6 c1g5 a7a6 b5a3 b7b5 g5f6 g7f6 c3d5 f6f5",
+      "epd": "r1bqkb1r/5p1p/p1np4/1p1Npp2/4P3/N7/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1166"
+    },
+    {
+      "id": "record-1327",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Nd5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4b5 d7d6 c1g5 a7a6 b5a3 b7b5 c3d5",
+      "epd": "r1bqkb1r/5ppp/p1np1n2/1p1Np1B1/4P3/N7/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1167"
+    },
+    {
+      "id": "record-1328",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Novosibirsk Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Bxf6 gxf6 10. Nd5 Bg7",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4b5 d7d6 c1g5 a7a6 b5a3 b7b5 g5f6 g7f6 c3d5 f8g7",
+      "epd": "r1bqk2r/5pbp/p1np1p2/1p1Np3/4P3/N7/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1168"
+    },
+    {
+      "id": "record-1329",
+      "eco": "B33",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Peresypkin's Sacrifice",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Bxf6 gxf6 10. Nd5 f5 11. Bxb5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 d4b5 d7d6 c1g5 a7a6 b5a3 b7b5 g5f6 g7f6 c3d5 f6f5 f1b5",
+      "epd": "r1bqkb1r/5p1p/p1np4/1B1Npp2/4P3/N7/PPP2PPP/R2QK2R b KQkq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-1169"
+    },
+    {
+      "id": "record-1330",
+      "eco": "B33",
+      "name": "Sicilian Defense: Open",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6",
+      "epd": "r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1160"
+    },
+    {
+      "id": "record-1331",
+      "eco": "B34",
+      "name": "Sicilian Defense: Accelerated Dragon, Exchange Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nxc6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 d4c6",
+      "epd": "r1bqkbnr/pp1ppp1p/2N3p1/8/4P3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1170"
+    },
+    {
+      "id": "record-1332",
+      "eco": "B34",
+      "name": "Sicilian Defense: Accelerated Dragon, Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nc3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 b1c3",
+      "epd": "r1bqkbnr/pp1ppp1p/2n3p1/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1171"
+    },
+    {
+      "id": "record-1333",
+      "eco": "B35",
+      "name": "Sicilian Defense: Accelerated Dragon, Modern Bc4 Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nc3 Bg7 6. Be3 Nf6 7. Bc4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 b1c3 f8g7 c1e3 g8f6 f1c4",
+      "epd": "r1bqk2r/pp1pppbp/2n2np1/8/2BNP3/2N1B3/PPP2PPP/R2QK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1172"
+    },
+    {
+      "id": "record-1334",
+      "eco": "B35",
+      "name": "Sicilian Defense: Dragon Variation, Modern Bc4 Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nc3 Bg7 6. Be3 Nf6 7. Bc4 d6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 b1c3 f8g7 c1e3 g8f6 f1c4 d7d6",
+      "epd": "r1bqk2r/pp2ppbp/2np1np1/8/2BNP3/2N1B3/PPP2PPP/R2QK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1173"
+    },
+    {
+      "id": "record-1335",
+      "eco": "B36",
+      "name": "Sicilian Defense: Accelerated Dragon, Maróczy Bind",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 c2c4",
+      "epd": "r1bqkbnr/pp1ppp1p/2n3p1/8/2PNP3/8/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1174"
+    },
+    {
+      "id": "record-1336",
+      "eco": "B36",
+      "name": "Sicilian Defense: Accelerated Dragon, Maróczy Bind, Gurgenidze Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Nf6 6. Nc3 Nxd4 7. Qxd4 d6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 c2c4 g8f6 b1c3 c6d4 d1d4 d7d6",
+      "epd": "r1bqkb1r/pp2pp1p/3p1np1/8/2PQP3/2N5/PP3PPP/R1B1KB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1175"
+    },
+    {
+      "id": "record-1337",
+      "eco": "B37",
+      "name": "Sicilian Defense: Accelerated Dragon, Maróczy Bind",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Bg7",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 c2c4 f8g7",
+      "epd": "r1bqk1nr/pp1pppbp/2n3p1/8/2PNP3/8/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1174"
+    },
+    {
+      "id": "record-1338",
+      "eco": "B37",
+      "name": "Sicilian Defense: Accelerated Dragon, Simagin Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Bg7 6. Nc2 d6 7. Be2 Nh6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 c2c4 f8g7 d4c2 d7d6 f1e2 g8h6",
+      "epd": "r1bqk2r/pp2ppbp/2np2pn/8/2P1P3/8/PPN1BPPP/RNBQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1176"
+    },
+    {
+      "id": "record-1339",
+      "eco": "B38",
+      "name": "Sicilian Defense: Accelerated Dragon, Maróczy Bind",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Bg7 6. Be3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 c2c4 f8g7 c1e3",
+      "epd": "r1bqk1nr/pp1pppbp/2n3p1/8/2PNP3/4B3/PP3PPP/RN1QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1174"
+    },
+    {
+      "id": "record-1340",
+      "eco": "B39",
+      "name": "Sicilian Defense: Accelerated Dragon, Maróczy Bind, Breyer Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Bg7 6. Be3 Nf6 7. Nc3 Ng4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 c2c4 f8g7 c1e3 g8f6 b1c3 f6g4",
+      "epd": "r1bqk2r/pp1pppbp/2n3p1/8/2PNP1n1/2N1B3/PP3PPP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1177"
+    },
+    {
+      "id": "record-1341",
+      "eco": "B40",
+      "name": "Sicilian Defense: Alapin Variation, Sherzer Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. c3 Nf6 4. e5 Nd5 5. d4 Nc6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 c2c3 g8f6 e4e5 f6d5 d2d4 b8c6",
+      "epd": "r1bqkb1r/pp1p1ppp/2n1p3/2pnP3/3P4/2P2N2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1178"
+    },
+    {
+      "id": "record-1342",
+      "eco": "B40",
+      "name": "Sicilian Defense: Delayed Alapin Variation, with e6",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. c3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 c2c3",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/2p5/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1179"
+    },
+    {
+      "id": "record-1343",
+      "eco": "B40",
+      "name": "Sicilian Defense: Drazic Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 a6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 a7a6",
+      "epd": "rnbqkbnr/1p1p1ppp/p3p3/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1180"
+    },
+    {
+      "id": "record-1344",
+      "eco": "B40",
+      "name": "Sicilian Defense: French Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6",
+      "uci": "e2e4 c7c5 g1f3 e7e6",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1181"
+    },
+    {
+      "id": "record-1345",
+      "eco": "B40",
+      "name": "Sicilian Defense: French Variation, Normal",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6",
+      "epd": "rnbqkb1r/pp1p1ppp/4pn2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1182"
+    },
+    {
+      "id": "record-1346",
+      "eco": "B40",
+      "name": "Sicilian Defense: French Variation, Open",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1183"
+    },
+    {
+      "id": "record-1347",
+      "eco": "B40",
+      "name": "Sicilian Defense: French Variation, Westerinen Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. b3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 b2b3",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/2p5/4P3/1P3N2/P1PP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1184"
+    },
+    {
+      "id": "record-1348",
+      "eco": "B40",
+      "name": "Sicilian Defense: Gaw-Paw Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Qb6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d8b6",
+      "epd": "rnb1kb1r/pp1p1ppp/1q2pn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1185"
+    },
+    {
+      "id": "record-1349",
+      "eco": "B40",
+      "name": "Sicilian Defense: Kan Variation, Wing Attack, Fianchetto Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. Nc3 a6 4. g3 b5 5. d4 cxd4 6. Nxd4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 b1c3 a7a6 g2g3 b7b5 d2d4 c5d4 f3d4",
+      "epd": "rnbqkbnr/3p1ppp/p3p3/1p6/3NP3/2N3P1/PPP2P1P/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1186"
+    },
+    {
+      "id": "record-1350",
+      "eco": "B40",
+      "name": "Sicilian Defense: Kramnik Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. c4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 c2c4",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/2p5/2P1P3/5N2/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1187"
+    },
+    {
+      "id": "record-1351",
+      "eco": "B40",
+      "name": "Sicilian Defense: Kveinis Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Qb6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 d8b6",
+      "epd": "rnb1kbnr/pp1p1ppp/1q2p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1188"
+    },
+    {
+      "id": "record-1352",
+      "eco": "B40",
+      "name": "Sicilian Defense: Marshall Counterattack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 d5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 d7d5",
+      "epd": "rnbqkbnr/pp3ppp/4p3/2pp4/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1189"
+    },
+    {
+      "id": "record-1353",
+      "eco": "B40",
+      "name": "Sicilian Defense: Paulsen-Basman Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Bc5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 f8c5",
+      "epd": "rnbqk1nr/pp1p1ppp/4p3/2b5/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1190"
+    },
+    {
+      "id": "record-1354",
+      "eco": "B40",
+      "name": "Sicilian Defense: Pin Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Bb4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 f8b4",
+      "epd": "rnbqk2r/pp1p1ppp/4pn2/8/1b1NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1191"
+    },
+    {
+      "id": "record-1355",
+      "eco": "B40",
+      "name": "Sicilian Defense: Pin Variation, Jaffe Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Bb4 6. Bd3 e5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 f8b4 f1d3 e6e5",
+      "epd": "rnbqk2r/pp1p1ppp/5n2/4p3/1b1NP3/2NB4/PPP2PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1192"
+    },
+    {
+      "id": "record-1356",
+      "eco": "B40",
+      "name": "Sicilian Defense: Pin Variation, Koch Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Bb4 6. e5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 f8b4 e4e5",
+      "epd": "rnbqk2r/pp1p1ppp/4pn2/4P3/1b1N4/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1193"
+    },
+    {
+      "id": "record-1357",
+      "eco": "B40",
+      "name": "Sicilian Defense: Smith-Morra Gambit Deferred",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. c3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 c2c3",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1194"
+    },
+    {
+      "id": "record-1358",
+      "eco": "B40",
+      "name": "Sicilian Defense: Wing Gambit Deferred",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. b4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 b2b4",
+      "epd": "rnbqkbnr/pp1p1ppp/4p3/2p5/1P2P3/5N2/P1PP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1195"
+    },
+    {
+      "id": "record-1359",
+      "eco": "B41",
+      "name": "Sicilian Defense: Kan Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6",
+      "epd": "rnbqkbnr/1p1p1ppp/p3p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1196"
+    },
+    {
+      "id": "record-1360",
+      "eco": "B41",
+      "name": "Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. c4 Nf6 6. Nc3 Bb4 7. Bd3 Nc6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 c2c4 g8f6 b1c3 f8b4 f1d3 b8c6",
+      "epd": "r1bqk2r/1p1p1ppp/p1n1pn2/8/1bPNP3/2NB4/PP3PPP/R1BQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1197"
+    },
+    {
+      "id": "record-1361",
+      "eco": "B41",
+      "name": "Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. c4 Nf6 6. Nc3 Bb4 7. Bd3 Nc6 8. Bc2",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 c2c4 g8f6 b1c3 f8b4 f1d3 b8c6 d3c2",
+      "epd": "r1bqk2r/1p1p1ppp/p1n1pn2/8/1bPNP3/2N5/PPB2PPP/R1BQK2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1197"
+    },
+    {
+      "id": "record-1362",
+      "eco": "B41",
+      "name": "Sicilian Defense: Kan Variation, Maróczy Bind, Hedgehog Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. c4 g6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 c2c4 g7g6",
+      "epd": "rnbqkbnr/1p1p1p1p/p3p1p1/8/2PNP3/8/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1198"
+    },
+    {
+      "id": "record-1363",
+      "eco": "B41",
+      "name": "Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. c4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 c2c4",
+      "epd": "rnbqkbnr/1p1p1ppp/p3p3/8/2PNP3/8/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1199"
+    },
+    {
+      "id": "record-1364",
+      "eco": "B42",
+      "name": "Sicilian Defense: Kan Variation, Gipslis Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 Nf6 6. O-O d6 7. c4 g6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 f1d3 g8f6 e1g1 d7d6 c2c4 g7g6",
+      "epd": "rnbqkb1r/1p3p1p/p2ppnp1/8/2PNP3/3B4/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1200"
+    },
+    {
+      "id": "record-1365",
+      "eco": "B42",
+      "name": "Sicilian Defense: Kan Variation, Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 f1d3",
+      "epd": "rnbqkbnr/1p1p1ppp/p3p3/8/3NP3/3B4/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1201"
+    },
+    {
+      "id": "record-1366",
+      "eco": "B42",
+      "name": "Sicilian Defense: Kan Variation, Polugaevsky Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 Bc5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 f1d3 f8c5",
+      "epd": "rnbqk1nr/1p1p1ppp/p3p3/2b5/3NP3/3B4/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1202"
+    },
+    {
+      "id": "record-1367",
+      "eco": "B42",
+      "name": "Sicilian Defense: Kan Variation, Swiss Cheese Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 g6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 f1d3 g7g6",
+      "epd": "rnbqkbnr/1p1p1p1p/p3p1p1/8/3NP3/3B4/PPP2PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1203"
+    },
+    {
+      "id": "record-1368",
+      "eco": "B43",
+      "name": "Sicilian Defense: Kan Variation, Knight Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3",
+      "epd": "rnbqkbnr/1p1p1ppp/p3p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1204"
+    },
+    {
+      "id": "record-1369",
+      "eco": "B43",
+      "name": "Sicilian Defense: Kan Variation, Wing Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 b5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3 b7b5",
+      "epd": "rnbqkbnr/3p1ppp/p3p3/1p6/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1205"
+    },
+    {
+      "id": "record-1370",
+      "eco": "B43",
+      "name": "Sicilian Defense: Kan Variation, Wing Attack, Christiansen's Dream",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 b5 6. Bd3 Qb6 7. Be3 Bc5 8. Qg4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3 b7b5 f1d3 d8b6 c1e3 f8c5 d1g4",
+      "epd": "rnb1k1nr/3p1ppp/pq2p3/1pb5/3NP1Q1/2NBB3/PPP2PPP/R3K2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1206"
+    },
+    {
+      "id": "record-1371",
+      "eco": "B43",
+      "name": "Sicilian Defense: Kan Variation, Wing Attack, Spraggett Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Nc3 b5 6. Bd3 Qb6 7. Nf3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 b1c3 b7b5 f1d3 d8b6 d4f3",
+      "epd": "rnb1kbnr/3p1ppp/pq2p3/1p6/4P3/2NB1N2/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1207"
+    },
+    {
+      "id": "record-1372",
+      "eco": "B44",
+      "name": "Sicilian Defense: Taimanov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6",
+      "epd": "r1bqkbnr/pp1p1ppp/2n1p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1208"
+    },
+    {
+      "id": "record-1373",
+      "eco": "B44",
+      "name": "Sicilian Defense: Taimanov Variation, Gary Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nb5 d6 6. c4 Nf6 7. N1c3 a6 8. Na3 d5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 d4b5 d7d6 c2c4 g8f6 b1c3 a7a6 b5a3 d6d5",
+      "epd": "r1bqkb1r/1p3ppp/p1n1pn2/3p4/2P1P3/N1N5/PP3PPP/R1BQKB1R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1209"
+    },
+    {
+      "id": "record-1374",
+      "eco": "B44",
+      "name": "Sicilian Defense: Taimanov Variation, Modern Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nb5 d6 6. c4 Nf6 7. N1c3 a6 8. Na3 Be7 9. Be2 O-O 10. O-O b6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 d4b5 d7d6 c2c4 g8f6 b1c3 a7a6 b5a3 f8e7 f1e2 e8g8 e1g1 b7b6",
+      "epd": "r1bq1rk1/4bppp/ppnppn2/8/2P1P3/N1N5/PP2BPPP/R1BQ1RK1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1210"
+    },
+    {
+      "id": "record-1375",
+      "eco": "B44",
+      "name": "Sicilian Defense: Taimanov Variation, Szén Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nb5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 d4b5",
+      "epd": "r1bqkbnr/pp1p1ppp/2n1p3/1N6/4P3/8/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1211"
+    },
+    {
+      "id": "record-1376",
+      "eco": "B45",
+      "name": "Sicilian Defense: Four Knights Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Nf6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 g8f6",
+      "epd": "r1bqkb1r/pp1p1ppp/2n1pn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1212"
+    },
+    {
+      "id": "record-1377",
+      "eco": "B45",
+      "name": "Sicilian Defense: Four Knights Variation, American Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Nf6 6. Ndb5 Bb4 7. Nd6+",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 g8f6 d4b5 f8b4 b5d6",
+      "epd": "r1bqk2r/pp1p1ppp/2nNpn2/8/1b2P3/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1213"
+    },
+    {
+      "id": "record-1378",
+      "eco": "B45",
+      "name": "Sicilian Defense: Four Knights Variation, Cobra Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Nf6 6. Ndb5 Bc5",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 g8f6 d4b5 f8c5",
+      "epd": "r1bqk2r/pp1p1ppp/2n1pn2/1Nb5/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1214"
+    },
+    {
+      "id": "record-1379",
+      "eco": "B45",
+      "name": "Sicilian Defense: Four Knights Variation, Exchange Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Nf6 6. Nxc6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 g8f6 d4c6",
+      "epd": "r1bqkb1r/pp1p1ppp/2N1pn2/8/4P3/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1215"
+    },
+    {
+      "id": "record-1380",
+      "eco": "B45",
+      "name": "Sicilian Defense: Four Knights Variation, Sveshnikov Transfer",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Nf6 6. Ndb5 d6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 g8f6 d4b5 d7d6",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/1N6/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1216"
+    },
+    {
+      "id": "record-1381",
+      "eco": "B45",
+      "name": "Sicilian Defense: Taimanov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3",
+      "epd": "r1bqkbnr/pp1p1ppp/2n1p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1208"
+    },
+    {
+      "id": "record-1382",
+      "eco": "B46",
+      "name": "Sicilian Defense: Taimanov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 a6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 a7a6",
+      "epd": "r1bqkbnr/1p1p1ppp/p1n1p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1208"
+    },
+    {
+      "id": "record-1383",
+      "eco": "B47",
+      "name": "Sicilian Defense: Taimanov Variation, Bastrikov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d8c7",
+      "epd": "r1b1kbnr/ppqp1ppp/2n1p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1217"
+    },
+    {
+      "id": "record-1384",
+      "eco": "B47",
+      "name": "Sicilian Defense: Taimanov Variation, Bastrikov Variation, Ponomariov Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Ndb5 Qb8 7. Be3 a6 8. Bb6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d8c7 d4b5 c7b8 c1e3 a7a6 e3b6",
+      "epd": "rqb1kbnr/1p1p1ppp/pBn1p3/1N6/4P3/2N5/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1218"
+    },
+    {
+      "id": "record-1385",
+      "eco": "B48",
+      "name": "Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d8c7 c1e3",
+      "epd": "r1b1kbnr/ppqp1ppp/2n1p3/8/3NP3/2N1B3/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1219"
+    },
+    {
+      "id": "record-1386",
+      "eco": "B49",
+      "name": "Sicilian Defense: Taimanov Variation, Bastrikov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be3 a6 7. Be2",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d8c7 c1e3 a7a6 f1e2",
+      "epd": "r1b1kbnr/1pqp1ppp/p1n1p3/8/3NP3/2N1B3/PPP1BPPP/R2QK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1217"
+    },
+    {
+      "id": "record-1387",
+      "eco": "B50",
+      "name": "Sicilian Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4",
+      "epd": "rnbqkbnr/pp2pppp/3p4/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1008"
+    },
+    {
+      "id": "record-1388",
+      "eco": "B50",
+      "name": "Sicilian Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4",
+      "epd": "rnbqkbnr/pp2pppp/3p4/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1008"
+    },
+    {
+      "id": "record-1389",
+      "eco": "B50",
+      "name": "Sicilian Defense: Delayed Alapin Variation, Basman-Palatnik Double Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. Be2 Nc6 5. d4 cxd4 6. cxd4 Nxe4 7. d5 Qa5+ 8. Nc3 Nxc3 9. bxc3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 c2c3 g8f6 f1e2 b8c6 d2d4 c5d4 c3d4 f6e4 d4d5 d8a5 b1c3 e4c3 b2c3",
+      "epd": "r1b1kb1r/pp2pppp/2np4/q2P4/8/2P2N2/P3BPPP/R1BQK2R b KQkq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1220"
+    },
+    {
+      "id": "record-1390",
+      "eco": "B50",
+      "name": "Sicilian Defense: Delayed Alapin Variation, Basman-Palatnik Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. Be2 Nc6 5. d4 cxd4 6. cxd4 Nxe4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 c2c3 g8f6 f1e2 b8c6 d2d4 c5d4 c3d4 f6e4",
+      "epd": "r1bqkb1r/pp2pppp/2np4/8/3Pn3/5N2/PP2BPPP/RNBQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1221"
+    },
+    {
+      "id": "record-1391",
+      "eco": "B50",
+      "name": "Sicilian Defense: Delayed Alapin Variation, with d6",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. c3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 c2c3",
+      "epd": "rnbqkbnr/pp2pppp/3p4/2p5/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1222"
+    },
+    {
+      "id": "record-1392",
+      "eco": "B50",
+      "name": "Sicilian Defense: Kopec System",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. Bd3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 f1d3",
+      "epd": "rnbqkbnr/pp2pppp/3p4/2p5/4P3/3B1N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1223"
+    },
+    {
+      "id": "record-1393",
+      "eco": "B50",
+      "name": "Sicilian Defense: Kotov Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. g3 b5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 g2g3 b7b5",
+      "epd": "rnbqkbnr/p3pppp/3p4/1pp5/4P3/5NP1/PPPP1P1P/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1224"
+    },
+    {
+      "id": "record-1394",
+      "eco": "B50",
+      "name": "Sicilian Defense: Modern Variations",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6",
+      "uci": "e2e4 c7c5 g1f3 d7d6",
+      "epd": "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-1225"
+    },
+    {
+      "id": "record-1395",
+      "eco": "B50",
+      "name": "Sicilian Defense: Modern Variations, Anti-Qxd4 Move Order",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 Nf6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 g8f6",
+      "epd": "rnbqkb1r/pp2pppp/3p1n2/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1226"
+    },
+    {
+      "id": "record-1396",
+      "eco": "B50",
+      "name": "Sicilian Defense: Modern Variations, Anti-Qxd4 Move Order Accepted",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 Nf6 4. dxc5 Nxe4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 g8f6 d4c5 f6e4",
+      "epd": "rnbqkb1r/pp2pppp/3p4/2P5/4n3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1227"
+    },
+    {
+      "id": "record-1397",
+      "eco": "B50",
+      "name": "Sicilian Defense: Modern Variations, Tartakower",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. c3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 c2c3",
+      "epd": "rnbqkbnr/pp2pppp/3p4/8/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1228"
+    },
+    {
+      "id": "record-1398",
+      "eco": "B50",
+      "name": "Sicilian Defense: Wing Gambit, Deferred Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. b4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 b2b4",
+      "epd": "rnbqkbnr/pp2pppp/3p4/2p5/1P2P3/5N2/P1PP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1229"
+    },
+    {
+      "id": "record-1399",
+      "eco": "B51",
+      "name": "Sicilian Defense: Moscow Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. Bb5+",
+      "uci": "e2e4 c7c5 g1f3 d7d6 f1b5",
+      "epd": "rnbqkbnr/pp2pppp/3p4/1Bp5/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1230"
+    },
+    {
+      "id": "record-1400",
+      "eco": "B51",
+      "name": "Sicilian Defense: Moscow Variation, Dorfman Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. Bb5+ Nc6 4. O-O Bd7 5. Qe2 g6 6. e5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 f1b5 b8c6 e1g1 c8d7 d1e2 g7g6 e4e5",
+      "epd": "r2qkbnr/pp1bpp1p/2np2p1/1Bp1P3/8/5N2/PPPPQPPP/RNB2RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1231"
+    },
+    {
+      "id": "record-1401",
+      "eco": "B51",
+      "name": "Sicilian Defense: Moscow Variation, Moscow Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. Bb5+ Nc6 4. O-O Bd7 5. c3 Nf6 6. Re1 a6 7. Bxc6 Bxc6 8. d4 Bxe4 9. Bg5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 f1b5 b8c6 e1g1 c8d7 c2c3 g8f6 f1e1 a7a6 b5c6 d7c6 d2d4 c6e4 c1g5",
+      "epd": "r2qkb1r/1p2pppp/p2p1n2/2p3B1/3Pb3/2P2N2/PP3PPP/RN1QR1K1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1232"
+    },
+    {
+      "id": "record-1402",
+      "eco": "B52",
+      "name": "Sicilian Defense: Moscow Variation, Haag Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. Bb5+ Bd7 4. Bxd7+ Qxd7 5. O-O Nc6 6. c3 Nf6 7. d4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 b5d7 d8d7 e1g1 b8c6 c2c3 g8f6 d2d4",
+      "epd": "r3kb1r/pp1qpppp/2np1n2/2p5/3PP3/2P2N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1233"
+    },
+    {
+      "id": "record-1403",
+      "eco": "B52",
+      "name": "Sicilian Defense: Moscow Variation, Main Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. Bb5+ Bd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7",
+      "epd": "rn1qkbnr/pp1bpppp/3p4/1Bp5/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1234"
+    },
+    {
+      "id": "record-1404",
+      "eco": "B52",
+      "name": "Sicilian Defense: Moscow Variation, Sokolsky Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. Bb5+ Bd7 4. Bxd7+ Qxd7 5. c4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 b5d7 d8d7 c2c4",
+      "epd": "rn2kbnr/pp1qpppp/3p4/2p5/2P1P3/5N2/PP1P1PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1235"
+    },
+    {
+      "id": "record-1405",
+      "eco": "B53",
+      "name": "Sicilian Defense: Chekhover Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Qxd4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 d1d4",
+      "epd": "rnbqkbnr/pp2pppp/3p4/8/3QP3/5N2/PPP2PPP/RNB1KB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1236"
+    },
+    {
+      "id": "record-1406",
+      "eco": "B53",
+      "name": "Sicilian Defense: Chekhover Variation, Zaitsev Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Qxd4 Nc6 5. Bb5 Qd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 d1d4 b8c6 f1b5 d8d7",
+      "epd": "r1b1kbnr/pp1qpppp/2np4/1B6/3QP3/5N2/PPP2PPP/RNB1K2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1237"
+    },
+    {
+      "id": "record-1407",
+      "eco": "B54",
+      "name": "Sicilian Defense: Dragon Variation, Accelerated Dragon",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 g6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g7g6",
+      "epd": "rnbqkbnr/pp2pp1p/3p2p1/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1238"
+    },
+    {
+      "id": "record-1408",
+      "eco": "B54",
+      "name": "Sicilian Defense: Modern Variations, Ginsberg Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Bc4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 f1c4",
+      "epd": "rnbqkb1r/pp2pppp/3p1n2/8/2BNP3/8/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1239"
+    },
+    {
+      "id": "record-1409",
+      "eco": "B54",
+      "name": "Sicilian Defense: Modern Variations, Main Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6",
+      "epd": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1240"
+    },
+    {
+      "id": "record-1410",
+      "eco": "B54",
+      "name": "Sicilian Defense: Prins Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. f3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 f2f3",
+      "epd": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/5P2/PPP3PP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1241"
+    },
+    {
+      "id": "record-1411",
+      "eco": "B55",
+      "name": "Sicilian Defense: Prins Variation, Venice Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. f3 e5 6. Bb5+",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 f2f3 e7e5 f1b5",
+      "epd": "rnbqkb1r/pp3ppp/3p1n2/1B2p3/3NP3/5P2/PPP3PP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1242"
+    },
+    {
+      "id": "record-1412",
+      "eco": "B56",
+      "name": "Sicilian Defense: Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6",
+      "epd": "r1bqkb1r/pp2pppp/2np1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1243"
+    },
+    {
+      "id": "record-1413",
+      "eco": "B56",
+      "name": "Sicilian Defense: Classical Variation, Fianchetto Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. g3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 g2g3",
+      "epd": "r1bqkb1r/pp2pppp/2np1n2/8/3NP3/2N3P1/PPP2P1P/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1244"
+    },
+    {
+      "id": "record-1414",
+      "eco": "B56",
+      "name": "Sicilian Defense: Kupreichik Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Bd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 c8d7",
+      "epd": "rn1qkb1r/pp1bpppp/3p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1245"
+    },
+    {
+      "id": "record-1415",
+      "eco": "B56",
+      "name": "Sicilian Defense: Spielmann Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Nde2",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 d4e2",
+      "epd": "r1bqkb1r/pp2pppp/2np1n2/8/4P3/2N5/PPP1NPPP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1246"
+    },
+    {
+      "id": "record-1416",
+      "eco": "B56",
+      "name": "Sicilian Defense: Venice Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Bb5+",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5 f1b5",
+      "epd": "rnbqkb1r/pp3ppp/3p1n2/1B2p3/3NP3/2N5/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1247"
+    },
+    {
+      "id": "record-1417",
+      "eco": "B56",
+      "name": "Sicilian Defense: Yates Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bd3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1d3",
+      "epd": "r1bqkb1r/pp2pppp/2np1n2/8/3NP3/2NB4/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1248"
+    },
+    {
+      "id": "record-1418",
+      "eco": "B57",
+      "name": "Sicilian Defense: Classical Variation, Anti-Sozin Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4 Qb6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1c4 d8b6",
+      "epd": "r1b1kb1r/pp2pppp/1qnp1n2/8/2BNP3/2N5/PPP2PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1249"
+    },
+    {
+      "id": "record-1419",
+      "eco": "B57",
+      "name": "Sicilian Defense: Classical Variation, Sozin Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bc4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 f1c4",
+      "epd": "r1bqkb1r/pp2pppp/2np1n2/8/2BNP3/2N5/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1250"
+    },
+    {
+      "id": "record-1420",
+      "eco": "B57",
+      "name": "Sicilian Defense: Magnus Smith Trap",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4 g6 7. Nxc6 bxc6 8. e5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1c4 g7g6 d4c6 b7c6 e4e5",
+      "epd": "r1bqkb1r/p3pp1p/2pp1np1/4P3/2B5/2N5/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1251"
+    },
+    {
+      "id": "record-1421",
+      "eco": "B58",
+      "name": "Sicilian Defense: Boleslavsky Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Be2 e5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 f1e2 e7e5",
+      "epd": "r1bqkb1r/pp3ppp/2np1n2/4p3/3NP3/2N5/PPP1BPPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1252"
+    },
+    {
+      "id": "record-1422",
+      "eco": "B58",
+      "name": "Sicilian Defense: Boleslavsky Variation, Louma Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 e5 7. Nxc6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1e2 e7e5 d4c6",
+      "epd": "r1bqkb1r/pp3ppp/2Np1n2/4p3/4P3/2N5/PPP1BPPP/R1BQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1253"
+    },
+    {
+      "id": "record-1423",
+      "eco": "B58",
+      "name": "Sicilian Defense: Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Be2",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 f1e2",
+      "epd": "r1bqkb1r/pp2pppp/2np1n2/8/3NP3/2N5/PPP1BPPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1243"
+    },
+    {
+      "id": "record-1424",
+      "eco": "B58",
+      "name": "Sicilian Defense: Classical Variation, Dragon Transfer",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Be2 Nxd4 7. Qxd4 g6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 f1e2 c6d4 d1d4 g7g6",
+      "epd": "r1bqkb1r/pp2pp1p/3p1np1/8/3QP3/2N5/PPP1BPPP/R1B1K2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1254"
+    },
+    {
+      "id": "record-1425",
+      "eco": "B59",
+      "name": "Sicilian Defense: Boleslavsky Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 e5 7. Nb3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1e2 e7e5 d4b3",
+      "epd": "r1bqkb1r/pp3ppp/2np1n2/4p3/4P3/1NN5/PPP1BPPP/R1BQK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1252"
+    },
+    {
+      "id": "record-1426",
+      "eco": "B60",
+      "name": "Sicilian Defense: Richter-Rauzer Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5",
+      "epd": "r1bqkb1r/pp2pppp/2np1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1255"
+    },
+    {
+      "id": "record-1427",
+      "eco": "B60",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Dragon Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 g6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 c1g5 g7g6",
+      "epd": "r1bqkb1r/pp2pp1p/2np1np1/6B1/3NP3/2N5/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1256"
+    },
+    {
+      "id": "record-1428",
+      "eco": "B60",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 Bd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 c8d7",
+      "epd": "r2qkb1r/pp1bpppp/2np1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1257"
+    },
+    {
+      "id": "record-1429",
+      "eco": "B61",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 Bd7 7. Qd2",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 c1g5 c8d7 d1d2",
+      "epd": "r2qkb1r/pp1bpppp/2np1n2/6B1/3NP3/2N5/PPPQ1PPP/R3KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1257"
+    },
+    {
+      "id": "record-1430",
+      "eco": "B62",
+      "name": "Sicilian Defense: Richter-Rauzer Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1255"
+    },
+    {
+      "id": "record-1431",
+      "eco": "B62",
+      "name": "Sicilian Defense: Richter-Rauzer Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d3",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/6B1/3NP3/2NQ4/PPP2PPP/R3KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1255"
+    },
+    {
+      "id": "record-1432",
+      "eco": "B62",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Exchange Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Nxc6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d4c6",
+      "epd": "r1bqkb1r/pp3ppp/2Nppn2/6B1/4P3/2N5/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1258"
+    },
+    {
+      "id": "record-1433",
+      "eco": "B62",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Podebrady Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Nb3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 c1g5 e7e6 d4b3",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/6B1/4P3/1NN5/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1259"
+    },
+    {
+      "id": "record-1434",
+      "eco": "B62",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Vitolins Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Bb5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 f1b5",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/1B4B1/3NP3/2N5/PPP2PPP/R2QK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1260"
+    },
+    {
+      "id": "record-1435",
+      "eco": "B63",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Be7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d2 f8e7",
+      "epd": "r1bqk2r/pp2bppp/2nppn2/6B1/3NP3/2N5/PPPQ1PPP/R3KB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1261"
+    },
+    {
+      "id": "record-1436",
+      "eco": "B63",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation, Kantscher Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Be7 8. O-O-O Nxd4 9. Qxd4 a6 10. f4 b5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d2 f8e7 e1c1 c6d4 d2d4 a7a6 f2f4 b7b5",
+      "epd": "r1bqk2r/4bppp/p2ppn2/1p4B1/3QPP2/2N5/PPP3PP/2KR1B1R w kq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1262"
+    },
+    {
+      "id": "record-1437",
+      "eco": "B63",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Ivanov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Qb6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d2 d8b6",
+      "epd": "r1b1kb1r/pp3ppp/1qnppn2/6B1/3NP3/2N5/PPPQ1PPP/R3KB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1263"
+    },
+    {
+      "id": "record-1438",
+      "eco": "B63",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Traditional Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d2",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/6B1/3NP3/2N5/PPPQ1PPP/R3KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1264"
+    },
+    {
+      "id": "record-1439",
+      "eco": "B64",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Qd2 Be7 8. O-O-O O-O 9. f4 e5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 c1g5 e7e6 d1d2 f8e7 e1c1 e8g8 f2f4 e6e5",
+      "epd": "r1bq1rk1/pp2bppp/2np1n2/4p1B1/3NPP2/2N5/PPPQ2PP/2KR1B1R w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1261"
+    },
+    {
+      "id": "record-1440",
+      "eco": "B64",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Be7 8. O-O-O O-O 9. f4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d2 f8e7 e1c1 e8g8 f2f4",
+      "epd": "r1bq1rk1/pp2bppp/2nppn2/6B1/3NPP2/2N5/PPPQ2PP/2KR1B1R b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1261"
+    },
+    {
+      "id": "record-1441",
+      "eco": "B65",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Be7 8. O-O-O O-O 9. f4 Nxd4 10. Qxd4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d2 f8e7 e1c1 e8g8 f2f4 c6d4 d2d4",
+      "epd": "r1bq1rk1/pp2bppp/3ppn2/6B1/3QPP2/2N5/PPP3PP/2KR1B1R b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1261"
+    },
+    {
+      "id": "record-1442",
+      "eco": "B65",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Rauzer Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Be7 8. O-O-O O-O 9. f4 Nxd4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d2 f8e7 e1c1 e8g8 f2f4 c6d4",
+      "epd": "r1bq1rk1/pp2bppp/3ppn2/6B1/3nPP2/2N5/PPPQ2PP/2KR1B1R w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1265"
+    },
+    {
+      "id": "record-1443",
+      "eco": "B66",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation, Early Deviations",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 a6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 c1g5 e7e6 d1d2 a7a6",
+      "epd": "r1bqkb1r/1p3ppp/p1nppn2/6B1/3NP3/2N5/PPPQ1PPP/R3KB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1266"
+    },
+    {
+      "id": "record-1444",
+      "eco": "B67",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Qd2 a6 8. O-O-O Bd7",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 c1g5 e7e6 d1d2 a7a6 e1c1 c8d7",
+      "epd": "r2qkb1r/1p1b1ppp/p1nppn2/6B1/3NP3/2N5/PPPQ1PPP/2KR1B1R w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1267"
+    },
+    {
+      "id": "record-1445",
+      "eco": "B68",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Qd2 a6 8. O-O-O Bd7 9. f4 Be7",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 c1g5 e7e6 d1d2 a7a6 e1c1 c8d7 f2f4 f8e7",
+      "epd": "r2qk2r/1p1bbppp/p1nppn2/6B1/3NPP2/2N5/PPPQ2PP/2KR1B1R w kq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1267"
+    },
+    {
+      "id": "record-1446",
+      "eco": "B69",
+      "name": "Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation, Nyezhmetdinov Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Qd2 a6 8. O-O-O Bd7 9. f4 Be7 10. Nf3 b5 11. Bxf6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 c1g5 e7e6 d1d2 a7a6 e1c1 c8d7 f2f4 f8e7 d4f3 b7b5 g5f6",
+      "epd": "r2qk2r/3bbppp/p1nppB2/1p6/4PP2/2N2N2/PPPQ2PP/2KR1B1R b kq -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-1268"
+    },
+    {
+      "id": "record-1447",
+      "eco": "B70",
+      "name": "Sicilian Defense: Dragon Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6",
+      "epd": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1269"
+    },
+    {
+      "id": "record-1448",
+      "eco": "B70",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be2",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 f1e2",
+      "epd": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP1BPPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1270"
+    },
+    {
+      "id": "record-1449",
+      "eco": "B70",
+      "name": "Sicilian Defense: Dragon Variation, Fianchetto Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. g3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 g2g3",
+      "epd": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N3P1/PPP2P1P/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1271"
+    },
+    {
+      "id": "record-1450",
+      "eco": "B71",
+      "name": "Sicilian Defense: Dragon Variation, Levenfish Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 f2f4",
+      "epd": "rnbqkb1r/pp2pp1p/3p1np1/8/3NPP2/2N5/PPP3PP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1272"
+    },
+    {
+      "id": "record-1451",
+      "eco": "B71",
+      "name": "Sicilian Defense: Dragon Variation, Levenfish Variation, Main Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 Nbd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 f2f4 b8d7",
+      "epd": "r1bqkb1r/pp1npp1p/3p1np1/8/3NPP2/2N5/PPP3PP/R1BQKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1273"
+    },
+    {
+      "id": "record-1452",
+      "eco": "B72",
+      "name": "Sicilian Defense: Dragon Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3",
+      "epd": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N1B3/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1269"
+    },
+    {
+      "id": "record-1453",
+      "eco": "B72",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. Be2",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f1e2",
+      "epd": "rnbqk2r/pp2ppbp/3p1np1/8/3NP3/2N1B3/PPP1BPPP/R2QK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1270"
+    },
+    {
+      "id": "record-1454",
+      "eco": "B72",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. Be2 Nc6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f1e2 b8c6",
+      "epd": "r1bqk2r/pp2ppbp/2np1np1/8/3NP3/2N1B3/PPP1BPPP/R2QK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1270"
+    },
+    {
+      "id": "record-1455",
+      "eco": "B72",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. Be2 Nc6 8. Nb3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f1e2 b8c6 d4b3",
+      "epd": "r1bqk2r/pp2ppbp/2np1np1/8/4P3/1NN1B3/PPP1BPPP/R2QK2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1270"
+    },
+    {
+      "id": "record-1456",
+      "eco": "B72",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Amsterdam Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 g6 7. Be3 Bg7 8. Qd2",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1e2 g7g6 c1e3 f8g7 d1d2",
+      "epd": "r1bqk2r/pp2ppbp/2np1np1/8/3NP3/2N1B3/PPPQBPPP/R3K2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1274"
+    },
+    {
+      "id": "record-1457",
+      "eco": "B72",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Grigoriev Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 g6 7. Be3 Bg7 8. Qd2 O-O 9. O-O-O",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1e2 g7g6 c1e3 f8g7 d1d2 e8g8 e1c1",
+      "epd": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1B3/PPPQBPPP/2KR3R b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1275"
+    },
+    {
+      "id": "record-1458",
+      "eco": "B73",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be2 Bg7 7. O-O Nc6 8. Be3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 f1e2 f8g7 e1g1 b8c6 c1e3",
+      "epd": "r1bqk2r/pp2ppbp/2np1np1/8/3NP3/2N1B3/PPP1BPPP/R2Q1RK1 b kq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1270"
+    },
+    {
+      "id": "record-1459",
+      "eco": "B73",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Battery Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be2 Bg7 7. O-O O-O 8. Be3 Nc6 9. Qd2",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 f1e2 f8g7 e1g1 e8g8 c1e3 b8c6 d1d2",
+      "epd": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1B3/PPPQBPPP/R4RK1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1276"
+    },
+    {
+      "id": "record-1460",
+      "eco": "B73",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Zollner Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Be3 Bg7 6. Be2 Nf6 7. Nc3 O-O 8. O-O d6 9. f4 Qb6 10. e5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 c1e3 f8g7 f1e2 g8f6 b1c3 e8g8 e1g1 d7d6 f2f4 d8b6 e4e5",
+      "epd": "r1b2rk1/pp2ppbp/1qnp1np1/4P3/3N1P2/2N1B3/PPP1B1PP/R2Q1RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1277"
+    },
+    {
+      "id": "record-1461",
+      "eco": "B74",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Alekhine Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nc3 Bg7 6. Be3 Nf6 7. Be2 O-O 8. O-O d6 9. Nb3 a5",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 b1c3 f8g7 c1e3 g8f6 f1e2 e8g8 e1g1 d7d6 d4b3 a7a5",
+      "epd": "r1bq1rk1/1p2ppbp/2np1np1/p7/4P3/1NN1B3/PPP1BPPP/R2Q1RK1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1278"
+    },
+    {
+      "id": "record-1462",
+      "eco": "B74",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Bernard Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 g6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 Bg7 7. O-O O-O 8. Be3 Nc6 9. Nb3 Be6 10. f4 Na5 11. f5 Bc4 12. Bd3 Bxd3 13. cxd3 d5",
+      "uci": "e2e4 c7c5 g1f3 g7g6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1e2 f8g7 e1g1 e8g8 c1e3 b8c6 d4b3 c8e6 f2f4 c6a5 f4f5 e6c4 e2d3 c4d3 c2d3 d6d5",
+      "epd": "r2q1rk1/pp2ppbp/5np1/n2p1P2/4P3/1NNPB3/PP4PP/R2Q1RK1 w - -",
+      "plyCount": 26,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 13
+      },
+      "lineId": "line-1279"
+    },
+    {
+      "id": "record-1463",
+      "eco": "B74",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Maróczy Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be2 Bg7 7. O-O O-O 8. Be3 Nc6 9. Nb3 Be6 10. f4 Na5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 f1e2 f8g7 e1g1 e8g8 c1e3 b8c6 d4b3 c8e6 f2f4 c6a5",
+      "epd": "r2q1rk1/pp2ppbp/3pbnp1/n7/4PP2/1NN1B3/PPP1B1PP/R2Q1RK1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1280"
+    },
+    {
+      "id": "record-1464",
+      "eco": "B74",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Normal Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be2 Bg7 7. O-O O-O 8. Be3 Nc6 9. Nb3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 f1e2 f8g7 e1g1 e8g8 c1e3 b8c6 d4b3",
+      "epd": "r1bq1rk1/pp2ppbp/2np1np1/8/4P3/1NN1B3/PPP1BPPP/R2Q1RK1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1281"
+    },
+    {
+      "id": "record-1465",
+      "eco": "B74",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Spielmann Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nc3 Bg7 6. Be3 Nf6 7. Be2 O-O 8. Nb3 d6 9. O-O Be6 10. f4 Na5 11. f5 Bc4 12. Bd3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 b1c3 f8g7 c1e3 g8f6 f1e2 e8g8 d4b3 d7d6 e1g1 c8e6 f2f4 c6a5 f4f5 e6c4 e2d3",
+      "epd": "r2q1rk1/pp2ppbp/3p1np1/n4P2/2b1P3/1NNBB3/PPP3PP/R2Q1RK1 b - -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-1282"
+    },
+    {
+      "id": "record-1466",
+      "eco": "B74",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Stockholm Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nc3 d6 3. f4 Nc6 4. Nf3 g6 5. d4 cxd4 6. Nxd4 Bg7 7. Be3 Nf6 8. Be2 O-O 9. Nb3 Be6 10. O-O Na5 11. f5 Bc4 12. Nxa5 Bxe2 13. Qxe2 Qxa5 14. g4",
+      "uci": "e2e4 c7c5 b1c3 d7d6 f2f4 b8c6 g1f3 g7g6 d2d4 c5d4 f3d4 f8g7 c1e3 g8f6 f1e2 e8g8 d4b3 c8e6 e1g1 c6a5 f4f5 e6c4 b3a5 c4e2 d1e2 d8a5 g2g4",
+      "epd": "r4rk1/pp2ppbp/3p1np1/q4P2/4P1P1/2N1B3/PPP1Q2P/R4RK1 b - -",
+      "plyCount": 27,
+      "playerMoveCounts": {
+        "white": 14,
+        "black": 13
+      },
+      "lineId": "line-1283"
+    },
+    {
+      "id": "record-1467",
+      "eco": "B74",
+      "name": "Sicilian Defense: Dragon Variation, Classical Variation, Tartakower Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be2 Bg7 7. O-O O-O 8. Be3 Nc6 9. Nb3 Be6 10. f4 Qc8",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 f1e2 f8g7 e1g1 e8g8 c1e3 b8c6 d4b3 c8e6 f2f4 d8c8",
+      "epd": "r1q2rk1/pp2ppbp/2npbnp1/8/4PP2/1NN1B3/PPP1B1PP/R2Q1RK1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1284"
+    },
+    {
+      "id": "record-1468",
+      "eco": "B75",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Belezky Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 Nc6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 b8c6",
+      "epd": "r1bqk2r/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPP3PP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1285"
+    },
+    {
+      "id": "record-1469",
+      "eco": "B75",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Early Deviations",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3",
+      "epd": "rnbqk2r/pp2ppbp/3p1np1/8/3NP3/2N1BP2/PPP3PP/R2QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1286"
+    },
+    {
+      "id": "record-1470",
+      "eco": "B75",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Hungarian Dragon",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Nc6 7. f3 h5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 b8c6 f2f3 h7h5",
+      "epd": "r1bqkb1r/pp2pp2/2np1np1/7p/3NP3/2N1BP2/PPP3PP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1287"
+    },
+    {
+      "id": "record-1471",
+      "eco": "B76",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8",
+      "epd": "rnbq1rk1/pp2ppbp/3p1np1/8/3NP3/2N1BP2/PPP3PP/R2QKB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1288"
+    },
+    {
+      "id": "record-1472",
+      "eco": "B76",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6",
+      "epd": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1288"
+    },
+    {
+      "id": "record-1473",
+      "eco": "B76",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 Nc6 8. Qd2 O-O 9. O-O-O",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 b8c6 d1d2 e8g8 e1c1",
+      "epd": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/2KR1B1R b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1289"
+    },
+    {
+      "id": "record-1474",
+      "eco": "B76",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Panov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. g4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 g2g4",
+      "epd": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP1P1/2N1BP2/PPPQ3P/R3KB1R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1290"
+    },
+    {
+      "id": "record-1475",
+      "eco": "B77",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 f1c4 c8d7",
+      "epd": "r2q1rk1/pp1bppbp/2np1np1/8/2BNP3/2N1BP2/PPPQ2PP/R3K2R w KQ -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1288"
+    },
+    {
+      "id": "record-1476",
+      "eco": "B77",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Byrne Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 a5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 f1c4 a7a5",
+      "epd": "r1bq1rk1/1p2ppbp/2np1np1/p7/2BNP3/2N1BP2/PPPQ2PP/R3K2R w KQ -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1291"
+    },
+    {
+      "id": "record-1477",
+      "eco": "B77",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Czerniak Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 Nc6 8. Qd2 O-O 9. Bc4 Nxd4 10. Bxd4 Be6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 b8c6 d1d2 e8g8 f1c4 c6d4 e3d4 c8e6",
+      "epd": "r2q1rk1/pp2ppbp/3pbnp1/8/2BBP3/2N2P2/PPPQ2PP/R3K2R w KQ -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1292"
+    },
+    {
+      "id": "record-1478",
+      "eco": "B77",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Main Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 f1c4",
+      "epd": "r1bq1rk1/pp2ppbp/2np1np1/8/2BNP3/2N1BP2/PPPQ2PP/R3K2R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1293"
+    },
+    {
+      "id": "record-1479",
+      "eco": "B77",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Sosonko Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 Nc6 8. Qd2 O-O 9. Bc4 Nd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 b8c6 d1d2 e8g8 f1c4 f6d7",
+      "epd": "r1bq1rk1/pp1nppbp/2np2p1/8/2BNP3/2N1BP2/PPPQ2PP/R3K2R w KQ -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1294"
+    },
+    {
+      "id": "record-1480",
+      "eco": "B78",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 f1c4 c8d7 e1c1",
+      "epd": "r2q1rk1/pp1bppbp/2np1np1/8/2BNP3/2N1BP2/PPPQ2PP/2KR3R b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1288"
+    },
+    {
+      "id": "record-1481",
+      "eco": "B78",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Chinese Dragon",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O Rb8",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 f1c4 c8d7 e1c1 a8b8",
+      "epd": "1r1q1rk1/pp1bppbp/2np1np1/8/2BNP3/2N1BP2/PPPQ2PP/2KR3R w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1295"
+    },
+    {
+      "id": "record-1482",
+      "eco": "B78",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O Rc8",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 f1c4 c8d7 e1c1 a8c8",
+      "epd": "2rq1rk1/pp1bppbp/2np1np1/8/2BNP3/2N1BP2/PPPQ2PP/2KR3R w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1296"
+    },
+    {
+      "id": "record-1483",
+      "eco": "B79",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. h4 Qa5 11. O-O-O Rfc8 12. Bb3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 f1c4 c8d7 h2h4 d8a5 e1c1 f8c8 c4b3",
+      "epd": "r1r3k1/pp1bppbp/2np1np1/q7/3NP2P/1BN1BP2/PPPQ2P1/2KR3R b - -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-1288"
+    },
+    {
+      "id": "record-1484",
+      "eco": "B79",
+      "name": "Sicilian Defense: Dragon Variation, Yugoslav Attack, Soltis Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 O-O 8. Qd2 Nc6 9. Bc4 Bd7 10. O-O-O Qa5 11. h4 Rfc8 12. Bb3 h5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 c1e3 f8g7 f2f3 e8g8 d1d2 b8c6 f1c4 c8d7 e1c1 d8a5 h2h4 f8c8 c4b3 h7h5",
+      "epd": "r1r3k1/pp1bppb1/2np1np1/q6p/3NP2P/1BN1BP2/PPPQ2P1/2KR3R w - -",
+      "plyCount": 24,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 12
+      },
+      "lineId": "line-1297"
+    },
+    {
+      "id": "record-1485",
+      "eco": "B80",
+      "name": "Sicilian Defense: Scheveningen Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6",
+      "epd": "rnbqkb1r/pp3ppp/3ppn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1298"
+    },
+    {
+      "id": "record-1486",
+      "eco": "B80",
+      "name": "Sicilian Defense: Scheveningen Variation, English Attack, with Qd2",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. Qd2",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1e3 e7e6 d1d2",
+      "epd": "rnbqkb1r/1p3ppp/p2ppn2/8/3NP3/2N1B3/PPPQ1PPP/R3KB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1299"
+    },
+    {
+      "id": "record-1487",
+      "eco": "B80",
+      "name": "Sicilian Defense: Scheveningen Variation, Fianchetto Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. g3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 g2g3",
+      "epd": "rnbqkb1r/pp3ppp/3ppn2/8/3NP3/2N3P1/PPP2P1P/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1300"
+    },
+    {
+      "id": "record-1488",
+      "eco": "B80",
+      "name": "Sicilian Defense: Scheveningen Variation, Vitolins Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bb5+",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1b5",
+      "epd": "rnbqkb1r/pp3ppp/3ppn2/1B6/3NP3/2N5/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1301"
+    },
+    {
+      "id": "record-1489",
+      "eco": "B81",
+      "name": "Sicilian Defense: Scheveningen Variation, Keres Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. g4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 g2g4",
+      "epd": "rnbqkb1r/pp3ppp/3ppn2/8/3NP1P1/2N5/PPP2P1P/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1302"
+    },
+    {
+      "id": "record-1490",
+      "eco": "B82",
+      "name": "Sicilian Defense: Scheveningen Variation, Matanovic Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. f4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f2f4",
+      "epd": "rnbqkb1r/pp3ppp/3ppn2/8/3NPP2/2N5/PPP3PP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1303"
+    },
+    {
+      "id": "record-1491",
+      "eco": "B82",
+      "name": "Sicilian Defense: Scheveningen Variation, Tal Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. f4 Nc6 7. Be3 Be7 8. Qf3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f2f4 b8c6 c1e3 f8e7 d1f3",
+      "epd": "r1bqk2r/pp2bppp/2nppn2/8/3NPP2/2N1BQ2/PPP3PP/R3KB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1304"
+    },
+    {
+      "id": "record-1492",
+      "eco": "B83",
+      "name": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1e2",
+      "epd": "rnbqkb1r/pp3ppp/3ppn2/8/3NP3/2N5/PPP1BPPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1305"
+    },
+    {
+      "id": "record-1493",
+      "eco": "B83",
+      "name": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 d6 6. Be2 Nf6",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d7d6 f1e2 g8f6",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/8/3NP3/2N5/PPP1BPPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1306"
+    },
+    {
+      "id": "record-1494",
+      "eco": "B83",
+      "name": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 Be7 7. O-O O-O 8. f4 Nc6 9. Be3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1e2 f8e7 e1g1 e8g8 f2f4 b8c6 c1e3",
+      "epd": "r1bq1rk1/pp2bppp/2nppn2/8/3NPP2/2N1B3/PPP1B1PP/R2Q1RK1 b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1306"
+    },
+    {
+      "id": "record-1495",
+      "eco": "B83",
+      "name": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 Be7 7. O-O O-O 8. f4 Nc6 9. Be3 Bd7 10. Nb3",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1e2 f8e7 e1g1 e8g8 f2f4 b8c6 c1e3 c8d7 d4b3",
+      "epd": "r2q1rk1/pp1bbppp/2nppn2/8/4PP2/1NN1B3/PPP1B1PP/R2Q1RK1 b - -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1306"
+    },
+    {
+      "id": "record-1496",
+      "eco": "B84",
+      "name": "Sicilian Defense: Najdorf Variation, Scheveningen Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e6 7. O-O Nbd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f1e2 e7e6 e1g1 b8d7",
+      "epd": "r1bqkb1r/1p1n1ppp/p2ppn2/8/3NP3/2N5/PPP1BPPP/R1BQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1307"
+    },
+    {
+      "id": "record-1497",
+      "eco": "B84",
+      "name": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f1e2 e7e6",
+      "epd": "rnbqkb1r/1p3ppp/p2ppn2/8/3NP3/2N5/PPP1BPPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1305"
+    },
+    {
+      "id": "record-1498",
+      "eco": "B84",
+      "name": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e6 7. O-O Qc7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f1e2 e7e6 e1g1 d8c7",
+      "epd": "rnb1kb1r/1pq2ppp/p2ppn2/8/3NP3/2N5/PPP1BPPP/R1BQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1305"
+    },
+    {
+      "id": "record-1499",
+      "eco": "B85",
+      "name": "Sicilian Defense: Scheveningen Variation, Classical Main Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be2 a6 7. O-O Nf6 8. Be3 Be7 9. f4 d6 10. Qe1 O-O",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d8c7 f1e2 a7a6 e1g1 g8f6 c1e3 f8e7 f2f4 d7d6 d1e1 e8g8",
+      "epd": "r1b2rk1/1pq1bppp/p1nppn2/8/3NPP2/2N1B3/PPP1B1PP/R3QRK1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1308"
+    },
+    {
+      "id": "record-1500",
+      "eco": "B85",
+      "name": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. f4 e6 7. Be2 Qc7 8. O-O Nc6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f2f4 e7e6 f1e2 d8c7 e1g1 b8c6",
+      "epd": "r1b1kb1r/1pq2ppp/p1nppn2/8/3NPP2/2N5/PPP1B1PP/R1BQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1309"
+    },
+    {
+      "id": "record-1501",
+      "eco": "B85",
+      "name": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be2 a6 7. O-O Nf6 8. Be3 d6 9. f4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d8c7 f1e2 a7a6 e1g1 g8f6 c1e3 d7d6 f2f4",
+      "epd": "r1b1kb1r/1pq2ppp/p1nppn2/8/3NPP2/2N1B3/PPP1B1PP/R2Q1RK1 b kq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1309"
+    },
+    {
+      "id": "record-1502",
+      "eco": "B85",
+      "name": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be2 a6 7. O-O Nf6 8. Kh1 Be7 9. f4 d6 10. a4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d8c7 f1e2 a7a6 e1g1 g8f6 g1h1 f8e7 f2f4 d7d6 a2a4",
+      "epd": "r1b1k2r/1pq1bppp/p1nppn2/8/P2NPP2/2N5/1PP1B1PP/R1BQ1R1K b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1309"
+    },
+    {
+      "id": "record-1503",
+      "eco": "B86",
+      "name": "Sicilian Defense: Sozin Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4",
+      "uci": "e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1c4",
+      "epd": "rnbqkb1r/pp3ppp/3ppn2/8/2BNP3/2N5/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1310"
+    },
+    {
+      "id": "record-1504",
+      "eco": "B87",
+      "name": "Sicilian Defense: Sozin Attack, Flank Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 e6 7. Bb3 b5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f1c4 e7e6 c4b3 b7b5",
+      "epd": "rnbqkb1r/5ppp/p2ppn2/1p6/3NP3/1BN5/PPP2PPP/R1BQK2R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1311"
+    },
+    {
+      "id": "record-1505",
+      "eco": "B88",
+      "name": "Sicilian Defense: Sozin Attack, Fischer Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4 e6 7. Bb3 Be7 8. Be3 O-O 9. f4",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1c4 e7e6 c4b3 f8e7 c1e3 e8g8 f2f4",
+      "epd": "r1bq1rk1/pp2bppp/2nppn2/8/3NPP2/1BN1B3/PPP3PP/R2QK2R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1312"
+    },
+    {
+      "id": "record-1506",
+      "eco": "B88",
+      "name": "Sicilian Defense: Sozin Attack, Leonhardt Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4 e6",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1c4 e7e6",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/8/2BNP3/2N5/PPP2PPP/R1BQK2R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1313"
+    },
+    {
+      "id": "record-1507",
+      "eco": "B89",
+      "name": "Sicilian Defense: Sozin Attack, Main Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4 e6 7. Be3",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1c4 e7e6 c1e3",
+      "epd": "r1bqkb1r/pp3ppp/2nppn2/8/2BNP3/2N1B3/PPP2PPP/R2QK2R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1314"
+    },
+    {
+      "id": "record-1508",
+      "eco": "B89",
+      "name": "Sicilian Defense: Sozin Attack, Main Line, Sherbakov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bc4 e6 7. Be3 Be7 8. Bb3 O-O 9. O-O Na5 10. f4 b6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 b8c6 f1c4 e7e6 c1e3 f8e7 c4b3 e8g8 e1g1 c6a5 f2f4 b7b6",
+      "epd": "r1bq1rk1/p3bppp/1p1ppn2/n7/3NPP2/1BN1B3/PPP3PP/R2Q1RK1 w - -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-1315"
+    },
+    {
+      "id": "record-1509",
+      "eco": "B89",
+      "name": "Sicilian Defense: Velimirovic Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4 e6 7. Be3 Be7 8. Qe2",
+      "uci": "e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6 f1c4 e7e6 c1e3 f8e7 d1e2",
+      "epd": "r1bqk2r/pp2bppp/2nppn2/8/2BNP3/2N1B3/PPP1QPPP/R3K2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1316"
+    },
+    {
+      "id": "record-1510",
+      "eco": "B90",
+      "name": "Sicilian Defense: Najdorf Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1317"
+    },
+    {
+      "id": "record-1511",
+      "eco": "B90",
+      "name": "Sicilian Defense: Najdorf Variation, Adams Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. h3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 h2h3",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N4P/PPP2PP1/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1318"
+    },
+    {
+      "id": "record-1512",
+      "eco": "B90",
+      "name": "Sicilian Defense: Najdorf Variation, Dekker Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. g4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 g2g4",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP1P1/2N5/PPP2P1P/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1319"
+    },
+    {
+      "id": "record-1513",
+      "eco": "B90",
+      "name": "Sicilian Defense: Najdorf Variation, English Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1e3",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1320"
+    },
+    {
+      "id": "record-1514",
+      "eco": "B90",
+      "name": "Sicilian Defense: Najdorf Variation, English Attack, Anti-English",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 Ng4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1e3 f6g4",
+      "epd": "rnbqkb1r/1p2pppp/p2p4/8/3NP1n1/2N1B3/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1321"
+    },
+    {
+      "id": "record-1515",
+      "eco": "B90",
+      "name": "Sicilian Defense: Najdorf Variation, Freak Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Rg1",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 h1g1",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKBR1 b Qkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1322"
+    },
+    {
+      "id": "record-1516",
+      "eco": "B90",
+      "name": "Sicilian Defense: Najdorf Variation, Lipnitsky Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f1c4",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/2BNP3/2N5/PPP2PPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1323"
+    },
+    {
+      "id": "record-1517",
+      "eco": "B90",
+      "name": "Sicilian Defense: Scheveningen Variation, Delayed Keres Attack",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. g4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1e3 e7e6 g2g4",
+      "epd": "rnbqkb1r/1p3ppp/p2ppn2/8/3NP1P1/2N1B3/PPP2P1P/R2QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1324"
+    },
+    {
+      "id": "record-1518",
+      "eco": "B90",
+      "name": "Sicilian Defense: Scheveningen Variation, Delayed Keres Attack, Perenyi Gambit",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. g4 e5 8. Nf5 g6 9. g5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1e3 e7e6 g2g4 e6e5 d4f5 g7g6 g4g5",
+      "epd": "rnbqkb1r/1p3p1p/p2p1np1/4pNP1/4P3/2N1B3/PPP2P1P/R2QKB1R b KQkq -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1325"
+    },
+    {
+      "id": "record-1519",
+      "eco": "B90",
+      "name": "Sicilian Defense: Scheveningen Variation, English Attack, with f3",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. f3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1e3 e7e6 f2f3",
+      "epd": "rnbqkb1r/1p3ppp/p2ppn2/8/3NP3/2N1BP2/PPP3PP/R2QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1326"
+    },
+    {
+      "id": "record-1520",
+      "eco": "B91",
+      "name": "Sicilian Defense: Najdorf Variation, Zagreb Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. g3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 g2g3",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N3P1/PPP2P1P/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1327"
+    },
+    {
+      "id": "record-1521",
+      "eco": "B92",
+      "name": "Sicilian Defense: Najdorf Variation, Opocensky Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f1e2",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP1BPPP/R1BQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1328"
+    },
+    {
+      "id": "record-1522",
+      "eco": "B92",
+      "name": "Sicilian Defense: Najdorf Variation, Opocensky Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 Nf6 3. Nc3 d6 4. d4 cxd4 5. Nxd4 a6 6. Be2 e5 7. Nb3 Be6 8. Be3",
+      "uci": "e2e4 c7c5 g1f3 g8f6 b1c3 d7d6 d2d4 c5d4 f3d4 a7a6 f1e2 e7e5 d4b3 c8e6 c1e3",
+      "epd": "rn1qkb1r/1p3ppp/p2pbn2/4p3/4P3/1NN1B3/PPP1BPPP/R2QK2R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-1328"
+    },
+    {
+      "id": "record-1523",
+      "eco": "B92",
+      "name": "Sicilian Defense: Najdorf Variation, Opocensky Variation, Modern Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O Be6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f1e2 e7e5 d4b3 f8e7 e1g1 c8e6",
+      "epd": "rn1qk2r/1p2bppp/p2pbn2/4p3/4P3/1NN5/PPP1BPPP/R1BQ1RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1329"
+    },
+    {
+      "id": "record-1524",
+      "eco": "B92",
+      "name": "Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O O-O",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f1e2 e7e5 d4b3 f8e7 e1g1 e8g8",
+      "epd": "rnbq1rk1/1p2bppp/p2p1n2/4p3/4P3/1NN5/PPP1BPPP/R1BQ1RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1330"
+    },
+    {
+      "id": "record-1525",
+      "eco": "B93",
+      "name": "Sicilian Defense: Najdorf Variation, Amsterdam Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. f4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 f2f4",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/8/3NPP2/2N5/PPP3PP/R1BQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1331"
+    },
+    {
+      "id": "record-1526",
+      "eco": "B94",
+      "name": "Sicilian Defense: Najdorf Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5",
+      "epd": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-1317"
+    },
+    {
+      "id": "record-1527",
+      "eco": "B94",
+      "name": "Sicilian Defense: Najdorf Variation, Ivkov Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 Nbd7 7. Bc4 Qa5 8. Qd2 e6 9. O-O-O b5 10. Bb3 Bb7 11. Rhe1 Nc5 12. e5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 b8d7 f1c4 d8a5 d1d2 e7e6 e1c1 b7b5 c4b3 c8b7 h1e1 d7c5 e4e5",
+      "epd": "r3kb1r/1b3ppp/p2ppn2/qpn1P1B1/3N4/1BN5/PPPQ1PPP/2KRR3 b kq -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-1332"
+    },
+    {
+      "id": "record-1528",
+      "eco": "B95",
+      "name": "Sicilian Defense: Najdorf Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6",
+      "epd": "rnbqkb1r/1p3ppp/p2ppn2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-1317"
+    },
+    {
+      "id": "record-1529",
+      "eco": "B96",
+      "name": "Sicilian Defense: Najdorf Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4",
+      "epd": "rnbqkb1r/1p3ppp/p2ppn2/6B1/3NPP2/2N5/PPP3PP/R2QKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-1317"
+    },
+    {
+      "id": "record-1530",
+      "eco": "B96",
+      "name": "Sicilian Defense: Najdorf Variation, Neo-Classical Defense",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Nc6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 b8c6",
+      "epd": "r1bqkb1r/1p3ppp/p1nppn2/6B1/3NPP2/2N5/PPP3PP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1333"
+    },
+    {
+      "id": "record-1531",
+      "eco": "B96",
+      "name": "Sicilian Defense: Najdorf Variation, Polugaevsky Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 b5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 b7b5",
+      "epd": "rnbqkb1r/5ppp/p2ppn2/1p4B1/3NPP2/2N5/PPP3PP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1334"
+    },
+    {
+      "id": "record-1532",
+      "eco": "B96",
+      "name": "Sicilian Defense: Najdorf Variation, Polugaevsky Variation, Simagin Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 b5 8. e5 dxe5 9. fxe5 Qc7 10. Qe2",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 b7b5 e4e5 d6e5 f4e5 d8c7 d1e2",
+      "epd": "rnb1kb1r/2q2ppp/p3pn2/1p2P1B1/3N4/2N5/PPP1Q1PP/R3KB1R b KQkq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-1335"
+    },
+    {
+      "id": "record-1533",
+      "eco": "B97",
+      "name": "Sicilian Defense: Najdorf Variation, Poisoned Pawn Accepted",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Qb6 8. Qd2 Qxb2 9. Rb1 Qa3",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 d8b6 d1d2 b6b2 a1b1 b2a3",
+      "epd": "rnb1kb1r/1p3ppp/p2ppn2/6B1/3NPP2/q1N5/P1PQ2PP/1R2KB1R w Kkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1336"
+    },
+    {
+      "id": "record-1534",
+      "eco": "B97",
+      "name": "Sicilian Defense: Najdorf Variation, Poisoned Pawn Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Qb6",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 d8b6",
+      "epd": "rnb1kb1r/1p3ppp/pq1ppn2/6B1/3NPP2/2N5/PPP3PP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1337"
+    },
+    {
+      "id": "record-1535",
+      "eco": "B98",
+      "name": "Sicilian Defense: Najdorf Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 f8e7",
+      "epd": "rnbqk2r/1p2bppp/p2ppn2/6B1/3NPP2/2N5/PPP3PP/R2QKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-1317"
+    },
+    {
+      "id": "record-1536",
+      "eco": "B98",
+      "name": "Sicilian Defense: Najdorf Variation, Browne Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3 h6 9. Bh4 Qc7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 f8e7 d1f3 h7h6 g5h4 d8c7",
+      "epd": "rnb1k2r/1pq1bpp1/p2ppn1p/8/3NPP1B/2N2Q2/PPP3PP/R3KB1R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1338"
+    },
+    {
+      "id": "record-1537",
+      "eco": "B98",
+      "name": "Sicilian Defense: Najdorf Variation, Goteborg Variation",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3 h6 9. Bh4 g5",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 f8e7 d1f3 h7h6 g5h4 g7g5",
+      "epd": "rnbqk2r/1p2bp2/p2ppn1p/6p1/3NPP1B/2N2Q2/PPP3PP/R3KB1R w KQkq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1339"
+    },
+    {
+      "id": "record-1538",
+      "eco": "B98",
+      "name": "Sicilian Defense: Najdorf Variation, Traditional Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3 Qc7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 f8e7 d1f3 d8c7",
+      "epd": "rnb1k2r/1pq1bppp/p2ppn2/6B1/3NPP2/2N2Q2/PPP3PP/R3KB1R w KQkq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-1340"
+    },
+    {
+      "id": "record-1539",
+      "eco": "B99",
+      "name": "Sicilian Defense: Najdorf Variation, Main Line",
+      "family": "Sicilian Defense",
+      "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3 Qc7 9. O-O-O Nbd7",
+      "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6 c1g5 e7e6 f2f4 f8e7 d1f3 d8c7 e1c1 b8d7",
+      "epd": "r1b1k2r/1pqnbppp/p2ppn2/6B1/3NPP2/2N2Q2/PPP3PP/2KR1B1R w kq -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-1341"
+    }
+  ]
+}

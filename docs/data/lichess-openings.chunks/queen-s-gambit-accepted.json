@@ -1,0 +1,777 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Queen's Gambit Accepted",
+    "chunkKey": "queen-s-gambit-accepted",
+    "recordCount": 51,
+    "lineCount": 47
+  },
+  "records": [
+    {
+      "id": "record-2974",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4",
+      "uci": "d2d4 d7d5 c2c4 d5c4",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/2pP4/8/PP2PPPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-2605"
+    },
+    {
+      "id": "record-2975",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Accelerated Mannheim Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Qa4+",
+      "uci": "d2d4 d7d5 c2c4 d5c4 d1a4",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/Q1pP4/8/PP2PPPP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2606"
+    },
+    {
+      "id": "record-2976",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Central Variation, Alekhine System",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 Nf6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 g8f6",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/8/2pPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2607"
+    },
+    {
+      "id": "record-2977",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Central Variation, Greco Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 b5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 b7b5",
+      "epd": "rnbqkbnr/p1p1pppp/8/1p6/2pPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2608"
+    },
+    {
+      "id": "record-2978",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Central Variation, McDonnell Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 e5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 e7e5",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/2pPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2609"
+    },
+    {
+      "id": "record-2979",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Central Variation, McDonnell Defense, Somov Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 e5 4. Bxc4",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 e7e5 f1c4",
+      "epd": "rnbqkbnr/ppp2ppp/8/4p3/2BPP3/8/PP3PPP/RNBQK1NR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2610"
+    },
+    {
+      "id": "record-2980",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Central Variation, Modern Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 Nc6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 b8c6",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/8/2pPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2611"
+    },
+    {
+      "id": "record-2981",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Central Variation, Rubinstein Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 c5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2p5/2pPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2612"
+    },
+    {
+      "id": "record-2982",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Central Variation, Rubinstein Defense, Yefimov Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 c5 4. d5 b5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 c7c5 d4d5 b7b5",
+      "epd": "rnbqkbnr/p3pppp/8/1ppP4/2p1P3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2613"
+    },
+    {
+      "id": "record-2983",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Linares Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 c5 4. d5 Nf6 5. Nc3 b5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 c7c5 d4d5 g8f6 b1c3 b7b5",
+      "epd": "rnbqkb1r/p3pppp/5n2/1ppP4/2p1P3/2N5/PP3PPP/R1BQKBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2614"
+    },
+    {
+      "id": "record-2984",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Old Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e3",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e3",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/2pP4/4P3/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2615"
+    },
+    {
+      "id": "record-2985",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Old Variation, Billinger Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. Qb3 Qe7 6. a3",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e3 e7e5 f1c4 e5d4 d1b3 d8e7 a2a3",
+      "epd": "rnb1kbnr/ppp1qppp/8/8/2Bp4/PQ2P3/1P3PPP/RNB1K1NR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2616"
+    },
+    {
+      "id": "record-2986",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Old Variation, Christensen Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. Qb3 Qe7 6. Nf3",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e3 e7e5 f1c4 e5d4 d1b3 d8e7 g1f3",
+      "epd": "rnb1kbnr/ppp1qppp/8/8/2Bp4/1Q2PN2/PP3PPP/RNB1K2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2617"
+    },
+    {
+      "id": "record-2987",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Old Variation, Korchnoi Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. Qb3 Qe7 6. Kf1",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e3 e7e5 f1c4 e5d4 d1b3 d8e7 e1f1",
+      "epd": "rnb1kbnr/ppp1qppp/8/8/2Bp4/1Q2P3/PP3PPP/RNB2KNR b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2618"
+    },
+    {
+      "id": "record-2988",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Old Variation, Novikov Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. Qb3 Qe7 6. Nd2",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e3 e7e5 f1c4 e5d4 d1b3 d8e7 b1d2",
+      "epd": "rnb1kbnr/ppp1qppp/8/8/2Bp4/1Q2P3/PP1N1PPP/R1B1K1NR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2619"
+    },
+    {
+      "id": "record-2989",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Saduleto Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/2pPP3/8/PP3PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2620"
+    },
+    {
+      "id": "record-2990",
+      "eco": "D20",
+      "name": "Queen's Gambit Accepted: Schwartz Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e4 f5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e4 f7f5",
+      "epd": "rnbqkbnr/ppp1p1pp/8/5p2/2pPP3/8/PP3PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2621"
+    },
+    {
+      "id": "record-2991",
+      "eco": "D21",
+      "name": "Queen's Gambit Accepted: Alekhine Defense, Borisenko-Furman Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 a6 4. e4",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 a7a6 e2e4",
+      "epd": "rnbqkbnr/1pp1pppp/p7/8/2pPP3/5N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2622"
+    },
+    {
+      "id": "record-2992",
+      "eco": "D21",
+      "name": "Queen's Gambit Accepted: Godes Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nd7",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 b8d7",
+      "epd": "r1bqkbnr/pppnpppp/8/8/2pP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2623"
+    },
+    {
+      "id": "record-2993",
+      "eco": "D21",
+      "name": "Queen's Gambit Accepted: Gunsberg Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 c5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 c7c5",
+      "epd": "rnbqkbnr/pp2pppp/8/2p5/2pP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2624"
+    },
+    {
+      "id": "record-2994",
+      "eco": "D21",
+      "name": "Queen's Gambit Accepted: Normal Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3",
+      "epd": "rnbqkbnr/ppp1pppp/8/8/2pP4/5N2/PP2PPPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-2625"
+    },
+    {
+      "id": "record-2995",
+      "eco": "D21",
+      "name": "Queen's Gambit Accepted: Rosenthal Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 e6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 e7e6",
+      "epd": "rnbqkbnr/ppp2ppp/4p3/8/2pP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2626"
+    },
+    {
+      "id": "record-2996",
+      "eco": "D21",
+      "name": "Queen's Gambit Accepted: Slav Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 b5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 b7b5",
+      "epd": "rnbqkbnr/p1p1pppp/8/1p6/2pP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2627"
+    },
+    {
+      "id": "record-2997",
+      "eco": "D22",
+      "name": "Queen's Gambit Accepted: Alekhine Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 a6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 a7a6",
+      "epd": "rnbqkbnr/1pp1pppp/p7/8/2pP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2628"
+    },
+    {
+      "id": "record-2998",
+      "eco": "D22",
+      "name": "Queen's Gambit Accepted: Alekhine Defense, Alatortsev Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 a6 4. e3 Bg4 5. Bxc4 e6 6. d5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 a7a6 e2e3 c8g4 f1c4 e7e6 d4d5",
+      "epd": "rn1qkbnr/1pp2ppp/p3p3/3P4/2B3b1/4PN2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2629"
+    },
+    {
+      "id": "record-2999",
+      "eco": "D22",
+      "name": "Queen's Gambit Accepted: Alekhine Defense, Haberditz Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 a6 4. e3 b5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 a7a6 e2e3 b7b5",
+      "epd": "rnbqkbnr/2p1pppp/p7/1p6/2pP4/4PN2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2630"
+    },
+    {
+      "id": "record-3000",
+      "eco": "D23",
+      "name": "Queen's Gambit Accepted",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/8/2pP4/5N2/PP2PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2605"
+    },
+    {
+      "id": "record-3001",
+      "eco": "D23",
+      "name": "Queen's Gambit Accepted: Mannheim Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. Qa4+",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 d1a4",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/8/Q1pP4/5N2/PP2PPPP/RNB1KB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2631"
+    },
+    {
+      "id": "record-3002",
+      "eco": "D24",
+      "name": "Queen's Gambit Accepted",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 dxc4 5. e4",
+      "uci": "d2d4 d7d5 c2c4 e7e6 g1f3 g8f6 b1c3 d5c4 e2e4",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/8/2pPP3/2N2N2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2605"
+    },
+    {
+      "id": "record-3003",
+      "eco": "D24",
+      "name": "Queen's Gambit Accepted: Bogoljubow Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. Nc3 a6 5. e4",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 b1c3 a7a6 e2e4",
+      "epd": "rnbqkb1r/1pp1pppp/p4n2/8/2pPP3/2N2N2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2632"
+    },
+    {
+      "id": "record-3004",
+      "eco": "D24",
+      "name": "Queen's Gambit Accepted: Gunsberg Defense, Prianishenmo Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. Nc3 c5 5. d5 e6 6. e4 exd5 7. e5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 b1c3 c7c5 d4d5 e7e6 e2e4 e6d5 e4e5",
+      "epd": "rnbqkb1r/pp3ppp/5n2/2ppP3/2p5/2N2N2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2633"
+    },
+    {
+      "id": "record-3005",
+      "eco": "D24",
+      "name": "Queen's Gambit Accepted: Showalter Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. Nc3",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 b1c3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2634"
+    },
+    {
+      "id": "record-3006",
+      "eco": "D25",
+      "name": "Queen's Gambit Accepted: Janowski-Larsen Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 Bg4",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 c8g4",
+      "epd": "rn1qkb1r/ppp1pppp/5n2/8/2pP2b1/4PN2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2635"
+    },
+    {
+      "id": "record-3007",
+      "eco": "D25",
+      "name": "Queen's Gambit Accepted: Normal Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3",
+      "epd": "rnbqkb1r/ppp1pppp/5n2/8/2pP4/4PN2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2625"
+    },
+    {
+      "id": "record-3008",
+      "eco": "D25",
+      "name": "Queen's Gambit Accepted: Smyslov Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 g6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 g7g6",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/8/2pP4/4PN2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2636"
+    },
+    {
+      "id": "record-3009",
+      "eco": "D25",
+      "name": "Queen's Gambit Accepted: Winawer Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 Be6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 c8e6",
+      "epd": "rn1qkb1r/ppp1pppp/4bn2/8/2pP4/4PN2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2637"
+    },
+    {
+      "id": "record-3010",
+      "eco": "D26",
+      "name": "Queen's Gambit Accepted: Classical Defense",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2p5/2BP4/4PN2/PP3PPP/RNBQK2R w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2638"
+    },
+    {
+      "id": "record-3011",
+      "eco": "D26",
+      "name": "Queen's Gambit Accepted: Classical Defense, Normal Line",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/2p5/2BP4/4PN2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2639"
+    },
+    {
+      "id": "record-3012",
+      "eco": "D26",
+      "name": "Queen's Gambit Accepted: Classical Defense, Steinitz Variation, Development Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O Nc6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 b8c6",
+      "epd": "r1bqkb1r/pp3ppp/2n1pn2/2p5/2BP4/4PN2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2640"
+    },
+    {
+      "id": "record-3013",
+      "eco": "D26",
+      "name": "Queen's Gambit Accepted: Classical Defense, Steinitz Variation, Exchange Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O cxd4",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 c5d4",
+      "epd": "rnbqkb1r/pp3ppp/4pn2/8/2Bp4/4PN2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2641"
+    },
+    {
+      "id": "record-3014",
+      "eco": "D26",
+      "name": "Queen's Gambit Accepted: Classical, Furman Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. Qe2 a6 7. dxc5 Bxc5 8. O-O Nc6 9. e4 b5 10. e5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 d1e2 a7a6 d4c5 f8c5 e1g1 b8c6 e3e4 b7b5 e4e5",
+      "epd": "r1bqk2r/5ppp/p1n1pn2/1pb1P3/2B5/5N2/PP2QPPP/RNB2RK1 b kq -",
+      "plyCount": 19,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 9
+      },
+      "lineId": "line-2642"
+    },
+    {
+      "id": "record-3015",
+      "eco": "D26",
+      "name": "Queen's Gambit Accepted: Normal Variation, Traditional System",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6",
+      "epd": "rnbqkb1r/ppp2ppp/4pn2/8/2pP4/4PN2/PP3PPP/RNBQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2643"
+    },
+    {
+      "id": "record-3016",
+      "eco": "D27",
+      "name": "Queen's Gambit Accepted: Classical Defense, Main Line",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 a7a6",
+      "epd": "rnbqkb1r/1p3ppp/p3pn2/2p5/2BP4/4PN2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2644"
+    },
+    {
+      "id": "record-3017",
+      "eco": "D27",
+      "name": "Queen's Gambit Accepted: Classical Defense, Rubinstein Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. a4",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 a7a6 a2a4",
+      "epd": "rnbqkb1r/1p3ppp/p3pn2/2p5/P1BP4/4PN2/1P3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2645"
+    },
+    {
+      "id": "record-3018",
+      "eco": "D27",
+      "name": "Queen's Gambit Accepted: Classical Defense, Russian Gambit",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. e3 Nf6 4. Bxc4 e6 5. Nf3 c5 6. O-O a6 7. e4",
+      "uci": "d2d4 d7d5 c2c4 d5c4 e2e3 g8f6 f1c4 e7e6 g1f3 c7c5 e1g1 a7a6 e3e4",
+      "epd": "rnbqkb1r/1p3ppp/p3pn2/2p5/2BPP3/5N2/PP3PPP/RNBQ1RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2646"
+    },
+    {
+      "id": "record-3019",
+      "eco": "D27",
+      "name": "Queen's Gambit Accepted: Furman Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. dxc5 Bxc5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 a7a6 d4c5 f8c5",
+      "epd": "rnbqk2r/1p3ppp/p3pn2/2b5/2B5/4PN2/PP3PPP/RNBQ1RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2647"
+    },
+    {
+      "id": "record-3020",
+      "eco": "D28",
+      "name": "Queen's Gambit Accepted: Classical Defense, Alekhine System",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 a7a6 d1e2",
+      "epd": "rnbqkb1r/1p3ppp/p3pn2/2p5/2BP4/4PN2/PP2QPPP/RNB2RK1 b kq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2648"
+    },
+    {
+      "id": "record-3021",
+      "eco": "D28",
+      "name": "Queen's Gambit Accepted: Classical Defense, Alekhine System",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2 b5",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 a7a6 d1e2 b7b5",
+      "epd": "rnbqkb1r/5ppp/p3pn2/1pp5/2BP4/4PN2/PP2QPPP/RNB2RK1 w kq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2648"
+    },
+    {
+      "id": "record-3022",
+      "eco": "D28",
+      "name": "Queen's Gambit Accepted: Classical, Flohr Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2 b5 8. Bb3 Nc6 9. Rd1 c4 10. Bc2 Nb4 11. Nc3 Nxc2 12. Qxc2 Bb7 13. d5 Qc7",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 a7a6 d1e2 b7b5 c4b3 b8c6 f1d1 c5c4 b3c2 c6b4 b1c3 b4c2 e2c2 c8b7 d4d5 d8c7",
+      "epd": "r3kb1r/1bq2ppp/p3pn2/1p1P4/2p5/2N1PN2/PPQ2PPP/R1BR2K1 w kq -",
+      "plyCount": 26,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 13
+      },
+      "lineId": "line-2649"
+    },
+    {
+      "id": "record-3023",
+      "eco": "D29",
+      "name": "Queen's Gambit Accepted: Classical Defense, Alekhine System, Main Line",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2 b5 8. Bb3 Bb7",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 a7a6 d1e2 b7b5 c4b3 c8b7",
+      "epd": "rn1qkb1r/1b3ppp/p3pn2/1pp5/3P4/1B2PN2/PP2QPPP/RNB2RK1 w kq -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2650"
+    },
+    {
+      "id": "record-3024",
+      "eco": "D29",
+      "name": "Queen's Gambit Accepted: Classical Defense, Alekhine System, Smyslov Variation",
+      "family": "Queen's Gambit Accepted",
+      "pgn": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2 b5 8. Bb3 Bb7 9. Rd1 Nbd7 10. Nc3 Bd6",
+      "uci": "d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6 f1c4 c7c5 e1g1 a7a6 d1e2 b7b5 c4b3 c8b7 f1d1 b8d7 b1c3 f8d6",
+      "epd": "r2qk2r/1b1n1ppp/p2bpn2/1pp5/3P4/1BN1PN2/PP2QPPP/R1BR2K1 w kq -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2651"
+    }
+  ]
+}

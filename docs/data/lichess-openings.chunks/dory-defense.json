@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Döry Defense",
+    "chunkKey": "dory-defense",
+    "recordCount": 1,
+    "lineCount": 1
+  },
+  "records": [
+    {
+      "id": "record-587",
+      "eco": "A46",
+      "name": "Döry Defense",
+      "family": "Döry Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 Ne4",
+      "uci": "d2d4 g8f6 g1f3 f6e4",
+      "epd": "rnbqkb1r/pppppppp/8/8/3Pn3/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-499"
+    }
+  ]
+}

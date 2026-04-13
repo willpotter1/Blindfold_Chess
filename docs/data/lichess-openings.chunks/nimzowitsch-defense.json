@@ -1,0 +1,657 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Nimzowitsch Defense",
+    "chunkKey": "nimzowitsch-defense",
+    "recordCount": 43,
+    "lineCount": 41
+  },
+  "records": [
+    {
+      "id": "record-805",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6",
+      "uci": "e2e4 b8c6",
+      "epd": "r1bqkbnr/pppppppp/2n5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",
+      "plyCount": 2,
+      "playerMoveCounts": {
+        "white": 1,
+        "black": 1
+      },
+      "lineId": "line-685"
+    },
+    {
+      "id": "record-806",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4",
+      "uci": "e2e4 b8c6 d2d4",
+      "epd": "r1bqkbnr/pppppppp/2n5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-685"
+    },
+    {
+      "id": "record-807",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Breyer Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nc3 Nf6 3. d4 e5",
+      "uci": "e2e4 b8c6 b1c3 g8f6 d2d4 e7e5",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/4p3/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-686"
+    },
+    {
+      "id": "record-808",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Colorado Countergambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3 f5",
+      "uci": "e2e4 b8c6 g1f3 f7f5",
+      "epd": "r1bqkbnr/ppppp1pp/2n5/5p2/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-687"
+    },
+    {
+      "id": "record-809",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Colorado Countergambit Accepted",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3 f5 3. exf5",
+      "uci": "e2e4 b8c6 g1f3 f7f5 e4f5",
+      "epd": "r1bqkbnr/ppppp1pp/2n5/5P2/8/5N2/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-688"
+    },
+    {
+      "id": "record-810",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Declined Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3",
+      "uci": "e2e4 b8c6 g1f3",
+      "epd": "r1bqkbnr/pppppppp/2n5/8/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-689"
+    },
+    {
+      "id": "record-811",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: El Columpio Defense",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3 Nf6 3. e5 Ng4",
+      "uci": "e2e4 b8c6 g1f3 g8f6 e4e5 f6g4",
+      "epd": "r1bqkb1r/pppppppp/2n5/4P3/6n1/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-690"
+    },
+    {
+      "id": "record-812",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: El Columpio Defense, El Columpio Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3 Nf6 3. e5 Ng4 4. d4 d6 5. h3 Nh6 6. e6",
+      "uci": "e2e4 b8c6 g1f3 g8f6 e4e5 f6g4 d2d4 d7d6 h2h3 g4h6 e5e6",
+      "epd": "r1bqkb1r/ppp1pppp/2npP2n/8/3P4/5N1P/PPP2PP1/RNBQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-691"
+    },
+    {
+      "id": "record-813",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: El Columpio Defense, Exchange Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3 Nf6 3. e5 Ng4 4. d4 d6 5. h3 Nh6 6. exd6",
+      "uci": "e2e4 b8c6 g1f3 g8f6 e4e5 f6g4 d2d4 d7d6 h2h3 g4h6 e5d6",
+      "epd": "r1bqkb1r/ppp1pppp/2nP3n/8/3P4/5N1P/PPP2PP1/RNBQKB1R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-692"
+    },
+    {
+      "id": "record-814",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: El Columpio Defense, Pin Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3 Nf6 3. e5 Ng4 4. d4 d6 5. h3 Nh6 6. Bb5",
+      "uci": "e2e4 b8c6 g1f3 g8f6 e4e5 f6g4 d2d4 d7d6 h2h3 g4h6 f1b5",
+      "epd": "r1bqkb1r/ppp1pppp/2np3n/1B2P3/3P4/5N1P/PPP2PP1/RNBQK2R b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-693"
+    },
+    {
+      "id": "record-815",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Franco-Nimzowitsch Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3 e6",
+      "uci": "e2e4 b8c6 g1f3 e7e6",
+      "epd": "r1bqkbnr/pppp1ppp/2n1p3/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-694"
+    },
+    {
+      "id": "record-816",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: French Connection",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nc3 e6",
+      "uci": "e2e4 b8c6 b1c3 e7e6",
+      "epd": "r1bqkbnr/pppp1ppp/2n1p3/8/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-695"
+    },
+    {
+      "id": "record-817",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Hornung Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Be3",
+      "uci": "e2e4 b8c6 d2d4 d7d5 c1e3",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/3p4/3PP3/4B3/PPP2PPP/RN1QKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-696"
+    },
+    {
+      "id": "record-818",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5",
+      "uci": "e2e4 b8c6 d2d4 e7e5",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-697"
+    },
+    {
+      "id": "record-819",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, Bielefelder Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. dxe5 Bc5",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4e5 f8c5",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b1P3/4P3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-698"
+    },
+    {
+      "id": "record-820",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, Hammer Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. dxe5 f6",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4e5 f7f6",
+      "epd": "r1bqkbnr/pppp2pp/2n2p2/4P3/4P3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-700"
+    },
+    {
+      "id": "record-821",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, Herford Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. dxe5 Qh4",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4e5 d8h4",
+      "epd": "r1b1kbnr/pppp1ppp/2n5/4P3/4P2q/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-701"
+    },
+    {
+      "id": "record-822",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, Keres Attack",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. dxe5 Nxe5 4. Nc3",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4e5 c6e5 b1c3",
+      "epd": "r1bqkbnr/pppp1ppp/8/4n3/4P3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-702"
+    },
+    {
+      "id": "record-823",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, Linksspringer Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. d5",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4d5",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/3Pp3/4P3/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-703"
+    },
+    {
+      "id": "record-824",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, Main Line",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. dxe5 Nxe5 4. f4 Ng6",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4e5 c6e5 f2f4 e5g6",
+      "epd": "r1bqkbnr/pppp1ppp/6n1/8/4PP2/8/PPP3PP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-704"
+    },
+    {
+      "id": "record-825",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, Paulsen Attack",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. dxe5 Nxe5 4. Nf3",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4e5 c6e5 g1f3",
+      "epd": "r1bqkbnr/pppp1ppp/8/4n3/4P3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-705"
+    },
+    {
+      "id": "record-826",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, Riemann Defense",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. dxe5 Nxe5 4. f4 Nc6",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4e5 c6e5 f2f4 e5c6",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/4PP2/8/PPP3PP/RNBQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-706"
+    },
+    {
+      "id": "record-827",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Kennedy Variation, de Smet Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 e5 3. dxe5 d6",
+      "uci": "e2e4 b8c6 d2d4 e7e5 d4e5 d7d6",
+      "epd": "r1bqkbnr/ppp2ppp/2np4/4P3/4P3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-699"
+    },
+    {
+      "id": "record-828",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Mikenas Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d6",
+      "uci": "e2e4 b8c6 d2d4 d7d6",
+      "epd": "r1bqkbnr/ppp1pppp/2np4/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-707"
+    },
+    {
+      "id": "record-829",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Neo-Mongoloid Defense",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 f6",
+      "uci": "e2e4 b8c6 d2d4 f7f6",
+      "epd": "r1bqkbnr/ppppp1pp/2n2p2/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-708"
+    },
+    {
+      "id": "record-830",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Pirc Connection",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nc3 g6",
+      "uci": "e2e4 b8c6 b1c3 g7g6",
+      "epd": "r1bqkbnr/pppppp1p/2n3p1/8/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-709"
+    },
+    {
+      "id": "record-831",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Pseudo-Spanish Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Bb5",
+      "uci": "e2e4 b8c6 f1b5",
+      "epd": "r1bqkbnr/pppppppp/2n5/1B6/4P3/8/PPPP1PPP/RNBQK1NR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-710"
+    },
+    {
+      "id": "record-832",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5",
+      "uci": "e2e4 b8c6 d2d4 d7d5",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-711"
+    },
+    {
+      "id": "record-833",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Aachen Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. exd5 Nb4",
+      "uci": "e2e4 b8c6 d2d4 d7d5 e4d5 c6b4",
+      "epd": "r1bqkbnr/ppp1pppp/8/3P4/1n1P4/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-712"
+    },
+    {
+      "id": "record-834",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Advance Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. e5",
+      "uci": "e2e4 b8c6 d2d4 d7d5 e4e5",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-713"
+    },
+    {
+      "id": "record-835",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-714"
+    },
+    {
+      "id": "record-836",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3 dxe4",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3 d5e4",
+      "epd": "r1bqkbnr/ppp1pppp/2n5/8/3Pp3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-714"
+    },
+    {
+      "id": "record-837",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Brandics Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3 a6",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3 a7a6",
+      "epd": "r1bqkbnr/1pp1pppp/p1n5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-715"
+    },
+    {
+      "id": "record-838",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Erben Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3 g6",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3 g7g6",
+      "epd": "r1bqkbnr/ppp1pp1p/2n3p1/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-716"
+    },
+    {
+      "id": "record-839",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Heinola-Deppe Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3 e5",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3 e7e5",
+      "epd": "r1bqkbnr/ppp2ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-717"
+    },
+    {
+      "id": "record-840",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Nimzowitsch Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3 dxe4 4. d5 Ne5",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3 d5e4 d4d5 c6e5",
+      "epd": "r1bqkbnr/ppp1pppp/8/3Pn3/4p3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-718"
+    },
+    {
+      "id": "record-841",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Richter Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3 dxe4 4. d5 Nb8 5. f3",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3 d5e4 d4d5 c6b8 f2f3",
+      "epd": "rnbqkbnr/ppp1pppp/8/3P4/4p3/2N2P2/PPP3PP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-719"
+    },
+    {
+      "id": "record-842",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Bogoljubow Variation, Vehre Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. Nc3 Nf6",
+      "uci": "e2e4 b8c6 d2d4 d7d5 b1c3 g8f6",
+      "epd": "r1bqkb1r/ppp1pppp/2n2n2/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-720"
+    },
+    {
+      "id": "record-843",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Exchange Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. exd5 Qxd5",
+      "uci": "e2e4 b8c6 d2d4 d7d5 e4d5 d8d5",
+      "epd": "r1b1kbnr/ppp1pppp/2n5/3q4/3P4/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-721"
+    },
+    {
+      "id": "record-844",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Scandinavian Variation, Exchange Variation, Marshall Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 d5 3. exd5 Qxd5 4. Nc3",
+      "uci": "e2e4 b8c6 d2d4 d7d5 e4d5 d8d5 b1c3",
+      "epd": "r1b1kbnr/ppp1pppp/2n5/3q4/3P4/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-722"
+    },
+    {
+      "id": "record-845",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Wheeler Gambit",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. b4",
+      "uci": "e2e4 b8c6 b2b4",
+      "epd": "r1bqkbnr/pppppppp/2n5/8/1P2P3/8/P1PP1PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-723"
+    },
+    {
+      "id": "record-846",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Williams Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. Nf3 d6",
+      "uci": "e2e4 b8c6 g1f3 d7d6",
+      "epd": "r1bqkbnr/ppp1pppp/2np4/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-724"
+    },
+    {
+      "id": "record-847",
+      "eco": "B00",
+      "name": "Nimzowitsch Defense: Woodchuck Variation",
+      "family": "Nimzowitsch Defense",
+      "pgn": "1. e4 Nc6 2. d4 a6",
+      "uci": "e2e4 b8c6 d2d4 a7a6",
+      "epd": "r1bqkbnr/1ppppppp/p1n5/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq -",
+      "plyCount": 4,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 2
+      },
+      "lineId": "line-725"
+    }
+  ]
+}

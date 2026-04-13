@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Center Game",
+    "chunkKey": "center-game",
+    "recordCount": 18,
+    "lineCount": 15
+  },
+  "records": [
+    {
+      "id": "record-1754",
+      "eco": "C20",
+      "name": "Center Game",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4",
+      "uci": "e2e4 e7e5 d2d4",
+      "epd": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq -",
+      "plyCount": 3,
+      "playerMoveCounts": {
+        "white": 2,
+        "black": 1
+      },
+      "lineId": "line-1515"
+    },
+    {
+      "id": "record-1782",
+      "eco": "C21",
+      "name": "Center Game",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Qxd4",
+      "uci": "e2e4 e7e5 d2d4 e5d4 d1d4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/3QP3/8/PPP2PPP/RNB1KBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1515"
+    },
+    {
+      "id": "record-1784",
+      "eco": "C21",
+      "name": "Center Game: Halasz-McDonnell Gambit",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. f4",
+      "uci": "e2e4 e7e5 d2d4 e5d4 f2f4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/3pPP2/8/PPP3PP/RNBQKBNR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1542"
+    },
+    {
+      "id": "record-1785",
+      "eco": "C21",
+      "name": "Center Game: Halasz-McDonnell Gambit, Crocodile Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. f4 Bc5 4. Nf3 Nc6 5. c3",
+      "uci": "e2e4 e7e5 d2d4 e5d4 f2f4 f8c5 g1f3 b8c6 c2c3",
+      "epd": "r1bqk1nr/pppp1ppp/2n5/2b5/3pPP2/2P2N2/PP4PP/RNBQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1543"
+    },
+    {
+      "id": "record-1786",
+      "eco": "C21",
+      "name": "Center Game: Kieseritzky Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Nf3",
+      "uci": "e2e4 e7e5 d2d4 e5d4 g1f3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/3pP3/5N2/PPP2PPP/RNBQKB1R b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1544"
+    },
+    {
+      "id": "record-1787",
+      "eco": "C21",
+      "name": "Center Game: Kieseritzky Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Nf3 c5",
+      "uci": "e2e4 e7e5 d2d4 e5d4 g1f3 c7c5",
+      "epd": "rnbqkbnr/pp1p1ppp/8/2p5/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1544"
+    },
+    {
+      "id": "record-1788",
+      "eco": "C21",
+      "name": "Center Game: Kieseritzky Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Nf3 c5 4. Bc4",
+      "uci": "e2e4 e7e5 d2d4 e5d4 g1f3 c7c5 f1c4",
+      "epd": "rnbqkbnr/pp1p1ppp/8/2p5/2BpP3/5N2/PPP2PPP/RNBQK2R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1544"
+    },
+    {
+      "id": "record-1789",
+      "eco": "C21",
+      "name": "Center Game: Lanc-Arnold Gambit",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Nf3 Bc5 4. c3",
+      "uci": "e2e4 e7e5 d2d4 e5d4 g1f3 f8c5 c2c3",
+      "epd": "rnbqk1nr/pppp1ppp/8/2b5/3pP3/2P2N2/PP3PPP/RNBQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1545"
+    },
+    {
+      "id": "record-1790",
+      "eco": "C21",
+      "name": "Center Game: Lanc-Arnold Gambit, Schippler Gambit",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Nf3 Bc5 4. c3 dxc3 5. Bc4",
+      "uci": "e2e4 e7e5 d2d4 e5d4 g1f3 f8c5 c2c3 d4c3 f1c4",
+      "epd": "rnbqk1nr/pppp1ppp/8/2b5/2B1P3/2p2N2/PP3PPP/RNBQK2R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-1546"
+    },
+    {
+      "id": "record-1791",
+      "eco": "C21",
+      "name": "Center Game: Ross Gambit",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Bd3",
+      "uci": "e2e4 e7e5 d2d4 e5d4 f1d3",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/3pP3/3B4/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1547"
+    },
+    {
+      "id": "record-1792",
+      "eco": "C21",
+      "name": "Center Game: von der Lasa Gambit",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Bc4",
+      "uci": "e2e4 e7e5 d2d4 e5d4 f1c4",
+      "epd": "rnbqkbnr/pppp1ppp/8/8/2BpP3/8/PPP2PPP/RNBQK1NR b KQkq -",
+      "plyCount": 5,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 2
+      },
+      "lineId": "line-1548"
+    },
+    {
+      "id": "record-1801",
+      "eco": "C22",
+      "name": "Center Game: Berger Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qe3 Nf6",
+      "uci": "e2e4 e7e5 d2d4 e5d4 d1d4 b8c6 d4e3 g8f6",
+      "epd": "r1bqkb1r/pppp1ppp/2n2n2/8/4P3/4Q3/PPP2PPP/RNB1KBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1557"
+    },
+    {
+      "id": "record-1802",
+      "eco": "C22",
+      "name": "Center Game: Charousek Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qe3 Bb4+ 5. c3 Be7",
+      "uci": "e2e4 e7e5 d2d4 e5d4 d1d4 b8c6 d4e3 f8b4 c2c3 b4e7",
+      "epd": "r1bqk1nr/ppppbppp/2n5/8/4P3/2P1Q3/PP3PPP/RNB1KBNR w KQkq -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-1558"
+    },
+    {
+      "id": "record-1803",
+      "eco": "C22",
+      "name": "Center Game: Hall Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qc4",
+      "uci": "e2e4 e7e5 d2d4 e5d4 d1d4 b8c6 d4c4",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/2Q1P3/8/PPP2PPP/RNB1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1559"
+    },
+    {
+      "id": "record-1804",
+      "eco": "C22",
+      "name": "Center Game: Kupreichik Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qe3 Nf6 5. Nc3 Bb4 6. Bd2 O-O 7. O-O-O Re8 8. Bc4 d6 9. Nh3",
+      "uci": "e2e4 e7e5 d2d4 e5d4 d1d4 b8c6 d4e3 g8f6 b1c3 f8b4 c1d2 e8g8 e1c1 f8e8 f1c4 d7d6 g1h3",
+      "epd": "r1bqr1k1/ppp2ppp/2np1n2/8/1bB1P3/2N1Q2N/PPPB1PPP/2KR3R b - -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-1560"
+    },
+    {
+      "id": "record-1805",
+      "eco": "C22",
+      "name": "Center Game: Normal Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Qxd4 Nc6",
+      "uci": "e2e4 e7e5 d2d4 e5d4 d1d4 b8c6",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/3QP3/8/PPP2PPP/RNB1KBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-1562"
+    },
+    {
+      "id": "record-1806",
+      "eco": "C22",
+      "name": "Center Game: Paulsen Attack Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qe3",
+      "uci": "e2e4 e7e5 d2d4 e5d4 d1d4 b8c6 d4e3",
+      "epd": "r1bqkbnr/pppp1ppp/2n5/8/4P3/4Q3/PPP2PPP/RNB1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-1563"
+    },
+    {
+      "id": "record-1807",
+      "eco": "C22",
+      "name": "Center Game: l'Hermet Variation",
+      "family": "Center Game",
+      "pgn": "1. e4 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qe3 f5",
+      "uci": "e2e4 e7e5 d2d4 e5d4 d1d4 b8c6 d4e3 f7f5",
+      "epd": "r1bqkbnr/pppp2pp/2n5/5p2/4P3/4Q3/PPP2PPP/RNB1KBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-1561"
+    }
+  ]
+}

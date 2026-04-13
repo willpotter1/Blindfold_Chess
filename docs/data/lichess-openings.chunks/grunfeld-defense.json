@@ -1,0 +1,897 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-26T17:08:56.959Z",
+    "sourceRef": "89797fcc13ad1779411d21bdf8436372264f02ad",
+    "familyName": "Grünfeld Defense",
+    "chunkKey": "grunfeld-defense",
+    "recordCount": 59,
+    "lineCount": 51
+  },
+  "records": [
+    {
+      "id": "record-3259",
+      "eco": "D80",
+      "name": "Grünfeld Defense",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 6,
+      "playerMoveCounts": {
+        "white": 3,
+        "black": 3
+      },
+      "lineId": "line-2837"
+    },
+    {
+      "id": "record-3260",
+      "eco": "D80",
+      "name": "Grünfeld Defense: Gibbon Gambit",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. g4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g2g4",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP2P1/2N5/PP2PP1P/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2838"
+    },
+    {
+      "id": "record-3261",
+      "eco": "D80",
+      "name": "Grünfeld Defense: Lundin Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Nxe4 dxe4 6. Qd2 c5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c1g5 f6e4 c3e4 d5e4 d1d2 c7c5",
+      "epd": "rnbqkb1r/pp2pp1p/6p1/2p3B1/2PPp3/8/PP1QPPPP/R3KBNR w KQkq -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2839"
+    },
+    {
+      "id": "record-3262",
+      "eco": "D80",
+      "name": "Grünfeld Defense: Lutikov Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. f3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 f2f3",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N2P2/PP2P1PP/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2840"
+    },
+    {
+      "id": "record-3263",
+      "eco": "D80",
+      "name": "Grünfeld Defense: Lutikov Variation, Murrey Attack",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. f3 c5 5. cxd5 Nxd5 6. Na4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 f2f3 c7c5 c4d5 f6d5 c3a4",
+      "epd": "rnbqkb1r/pp2pp1p/6p1/2pn4/N2P4/5P2/PP2P1PP/R1BQKBNR b KQkq -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2841"
+    },
+    {
+      "id": "record-3264",
+      "eco": "D80",
+      "name": "Grünfeld Defense: Stockholm Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c1g5",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2842"
+    },
+    {
+      "id": "record-3265",
+      "eco": "D80",
+      "name": "Grünfeld Defense: Zaitsev Gambit",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. h4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 h2h4",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP3P/2N5/PP2PPP1/R1BQKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2843"
+    },
+    {
+      "id": "record-3266",
+      "eco": "D81",
+      "name": "Grünfeld Defense: Russian Variation, Accelerated Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Qb3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 d1b3",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/1QN5/PP2PPPP/R1B1KBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2844"
+    },
+    {
+      "id": "record-3267",
+      "eco": "D82",
+      "name": "Grünfeld Defense: Brinckmann Attack",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c1f4",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP1B2/2N5/PP2PPPP/R2QKBNR b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2845"
+    },
+    {
+      "id": "record-3268",
+      "eco": "D83",
+      "name": "Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 O-O",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c1f4 f8g7 e2e3 e8g8",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP1B2/2N1P3/PP3PPP/R2QKBNR w KQ -",
+      "plyCount": 10,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 5
+      },
+      "lineId": "line-2846"
+    },
+    {
+      "id": "record-3269",
+      "eco": "D83",
+      "name": "Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit, Botvinnik Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 O-O 6. Rc1 c5 7. dxc5 Be6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c1f4 f8g7 e2e3 e8g8 a1c1 c7c5 d4c5 c8e6",
+      "epd": "rn1q1rk1/pp2ppbp/4bnp1/2Pp4/2P2B2/2N1P3/PP3PPP/2RQKBNR w K -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2847"
+    },
+    {
+      "id": "record-3270",
+      "eco": "D83",
+      "name": "Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit, Capablanca Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 O-O 6. Rc1",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c1f4 f8g7 e2e3 e8g8 a1c1",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP1B2/2N1P3/PP3PPP/2RQKBNR b K -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2848"
+    },
+    {
+      "id": "record-3271",
+      "eco": "D83",
+      "name": "Grünfeld Defense: Brinckmann Attack, Reshevsky Gambit",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. Rc1 O-O 6. e3 c5 7. dxc5 Qa5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c1f4 f8g7 a1c1 e8g8 e2e3 c7c5 d4c5 d8a5",
+      "epd": "rnb2rk1/pp2ppbp/5np1/q1Pp4/2P2B2/2N1P3/PP3PPP/2RQKBNR w K -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2849"
+    },
+    {
+      "id": "record-3272",
+      "eco": "D84",
+      "name": "Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit Accepted",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 O-O 6. cxd5 Nxd5 7. Nxd5 Qxd5 8. Bxc7",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c1f4 f8g7 e2e3 e8g8 c4d5 f6d5 c3d5 d8d5 f4c7",
+      "epd": "rnb2rk1/ppB1ppbp/6p1/3q4/3P4/4P3/PP3PPP/R2QKBNR b KQ -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2850"
+    },
+    {
+      "id": "record-3273",
+      "eco": "D85",
+      "name": "Grünfeld Defense: Exchange Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5",
+      "epd": "rnbqkb1r/ppp1pp1p/6p1/3n4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2851"
+    },
+    {
+      "id": "record-3274",
+      "eco": "D85",
+      "name": "Grünfeld Defense: Exchange Variation, Modern Exchange Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 g1f3",
+      "epd": "rnbqk2r/ppp1ppbp/6p1/8/3PP3/2P2N2/P4PPP/R1BQKB1R b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2852"
+    },
+    {
+      "id": "record-3275",
+      "eco": "D85",
+      "name": "Grünfeld Defense: Exchange Variation, Modern Exchange Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 g1f3 c7c5",
+      "epd": "rnbqk2r/pp2ppbp/6p1/2p5/3PP3/2P2N2/P4PPP/R1BQKB1R w KQkq -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2852"
+    },
+    {
+      "id": "record-3276",
+      "eco": "D85",
+      "name": "Grünfeld Defense: Exchange Variation, Modern Exchange Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. c4 Bg7 4. Nc3 d5 5. cxd5 Nxd5 6. e4 Nxc3 7. bxc3 c5 8. Rb1",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c2c4 f8g7 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 c7c5 a1b1",
+      "epd": "rnbqk2r/pp2ppbp/6p1/2p5/3PP3/2P2N2/P4PPP/1RBQKB1R b Kkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2852"
+    },
+    {
+      "id": "record-3277",
+      "eco": "D85",
+      "name": "Grünfeld Defense: Exchange Variation, Modern Exchange Variation, Kramnik's Line",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. Nf3 g6 3. c4 Bg7 4. Nc3 d5 5. cxd5 Nxd5 6. e4 Nxc3 7. bxc3 c5 8. h3",
+      "uci": "d2d4 g8f6 g1f3 g7g6 c2c4 f8g7 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 c7c5 h2h3",
+      "epd": "rnbqk2r/pp2ppbp/6p1/2p5/3PP3/2P2N1P/P4PP1/R1BQKB1R b KQkq -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2853"
+    },
+    {
+      "id": "record-3278",
+      "eco": "D85",
+      "name": "Grünfeld Defense: Exchange Variation, Modern Exchange Variation, Pawn Grab Line",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Rb1 O-O 9. Be2 Nc6 10. d5 Bxc3+",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 g1f3 c7c5 a1b1 e8g8 f1e2 b8c6 d4d5 g7c3",
+      "epd": "r1bq1rk1/pp2pp1p/2n3p1/2pP4/4P3/2b2N2/P3BPPP/1RBQK2R w K -",
+      "plyCount": 20,
+      "playerMoveCounts": {
+        "white": 10,
+        "black": 10
+      },
+      "lineId": "line-2854"
+    },
+    {
+      "id": "record-3279",
+      "eco": "D85",
+      "name": "Grünfeld Defense: Exchange Variation, Nadanian Attack",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Na4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 c3a4",
+      "epd": "rnbqkb1r/ppp1pp1p/6p1/3n4/N2P4/8/PP2PPPP/R1BQKBNR b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2855"
+    },
+    {
+      "id": "record-3280",
+      "eco": "D86",
+      "name": "Grünfeld Defense: Exchange Variation, Classical Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4",
+      "epd": "rnbqk2r/ppp1ppbp/6p1/8/2BPP3/2P5/P4PPP/R1BQK1NR b KQkq -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2856"
+    },
+    {
+      "id": "record-3281",
+      "eco": "D86",
+      "name": "Grünfeld Defense: Exchange Variation, Larsen Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 O-O 8. Ne2 Qd7",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 e8g8 g1e2 d8d7",
+      "epd": "rnb2rk1/pppqppbp/6p1/8/2BPP3/2P5/P3NPPP/R1BQK2R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2857"
+    },
+    {
+      "id": "record-3282",
+      "eco": "D86",
+      "name": "Grünfeld Defense: Exchange Variation, Larsen Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 O-O 8. Ne2 Qd7 9. O-O b6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 e8g8 g1e2 d8d7 e1g1 b7b6",
+      "epd": "rnb2rk1/p1pqppbp/1p4p1/8/2BPP3/2P5/P3NPPP/R1BQ1RK1 w - -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2857"
+    },
+    {
+      "id": "record-3283",
+      "eco": "D86",
+      "name": "Grünfeld Defense: Exchange Variation, Simagin's Improved Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 O-O 8. Ne2 Nc6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 e8g8 g1e2 b8c6",
+      "epd": "r1bq1rk1/ppp1ppbp/2n3p1/8/2BPP3/2P5/P3NPPP/R1BQK2R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2858"
+    },
+    {
+      "id": "record-3284",
+      "eco": "D86",
+      "name": "Grünfeld Defense: Exchange Variation, Simagin's Lesser Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 O-O 8. Ne2 b6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 e8g8 g1e2 b7b6",
+      "epd": "rnbq1rk1/p1p1ppbp/1p4p1/8/2BPP3/2P5/P3NPPP/R1BQK2R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2859"
+    },
+    {
+      "id": "record-3285",
+      "eco": "D87",
+      "name": "Grünfeld Defense: Exchange Variation, Seville Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O Bg4 11. f3 Na5 12. Bxf7+",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 c7c5 g1e2 b8c6 c1e3 e8g8 e1g1 c8g4 f2f3 c6a5 c4f7",
+      "epd": "r2q1rk1/pp2pBbp/6p1/n1p5/3PP1b1/2P1BP2/P3N1PP/R2Q1RK1 b - -",
+      "plyCount": 23,
+      "playerMoveCounts": {
+        "white": 12,
+        "black": 11
+      },
+      "lineId": "line-2860"
+    },
+    {
+      "id": "record-3286",
+      "eco": "D87",
+      "name": "Grünfeld Defense: Exchange Variation, Spassky Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 O-O",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 c7c5 g1e2 e8g8",
+      "epd": "rnbq1rk1/pp2ppbp/6p1/2p5/2BPP3/2P5/P3NPPP/R1BQK2R w KQ -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-2861"
+    },
+    {
+      "id": "record-3287",
+      "eco": "D88",
+      "name": "Grünfeld Defense: Exchange Variation, Spassky Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O cxd4 11. cxd4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 c7c5 g1e2 b8c6 c1e3 e8g8 e1g1 c5d4 c3d4",
+      "epd": "r1bq1rk1/pp2ppbp/2n3p1/8/2BPP3/4B3/P3NPPP/R2Q1RK1 b - -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2861"
+    },
+    {
+      "id": "record-3288",
+      "eco": "D89",
+      "name": "Grünfeld Defense: Exchange Variation, Sokolsky Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 O-O 9. O-O Nc6 10. Be3 Bg4 11. f3 Na5 12. Bd3 cxd4 13. cxd4 Be6 14. d5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 c7c5 g1e2 e8g8 e1g1 b8c6 c1e3 c8g4 f2f3 c6a5 c4d3 c5d4 c3d4 g4e6 d4d5",
+      "epd": "r2q1rk1/pp2ppbp/4b1p1/n2P4/4P3/3BBP2/P3N1PP/R2Q1RK1 b - -",
+      "plyCount": 27,
+      "playerMoveCounts": {
+        "white": 14,
+        "black": 13
+      },
+      "lineId": "line-2862"
+    },
+    {
+      "id": "record-3289",
+      "eco": "D89",
+      "name": "Grünfeld Defense: Exchange Variation, Spassky Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O Bg4 11. f3 Na5 12. Bd3 cxd4 13. cxd4 Be6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5 e2e4 d5c3 b2c3 f8g7 f1c4 c7c5 g1e2 b8c6 c1e3 e8g8 e1g1 c8g4 f2f3 c6a5 c4d3 c5d4 c3d4 g4e6",
+      "epd": "r2q1rk1/pp2ppbp/4b1p1/n7/3PP3/3BBP2/P3N1PP/R2Q1RK1 w - -",
+      "plyCount": 26,
+      "playerMoveCounts": {
+        "white": 13,
+        "black": 13
+      },
+      "lineId": "line-2861"
+    },
+    {
+      "id": "record-3290",
+      "eco": "D90",
+      "name": "Grünfeld Defense: Flohr Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qa4+",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1a4",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/Q1PP4/2N2N2/PP2PPPP/R1B1KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2863"
+    },
+    {
+      "id": "record-3291",
+      "eco": "D90",
+      "name": "Grünfeld Defense: Three Knights Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3",
+      "epd": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq -",
+      "plyCount": 7,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 3
+      },
+      "lineId": "line-2864"
+    },
+    {
+      "id": "record-3292",
+      "eco": "D90",
+      "name": "Grünfeld Defense: Three Knights Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-2864"
+    },
+    {
+      "id": "record-3293",
+      "eco": "D91",
+      "name": "Grünfeld Defense: Three Knights Variation, Petrosian System",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 c1g5",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2865"
+    },
+    {
+      "id": "record-3294",
+      "eco": "D92",
+      "name": "Grünfeld Defense: Three Knights Variation, Hungarian Attack",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 c1f4",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2866"
+    },
+    {
+      "id": "record-3295",
+      "eco": "D93",
+      "name": "Grünfeld Defense: Three Knights Variation, Hungarian Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 O-O 6. e3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 c1f4 e8g8 e2e3",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP1B2/2N1PN2/PP3PPP/R2QKB1R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2867"
+    },
+    {
+      "id": "record-3296",
+      "eco": "D94",
+      "name": "Grünfeld Defense: Flohr Defense",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 g6 5. Nf3 Bg7 6. Bd3 O-O 7. O-O Bf5",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 g7g6 g1f3 f8g7 f1d3 e8g8 e1g1 c8f5",
+      "epd": "rn1q1rk1/pp2ppbp/2p2np1/3p1b2/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2868"
+    },
+    {
+      "id": "record-3297",
+      "eco": "D94",
+      "name": "Grünfeld Defense: Makogonov Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. b4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 e2e3 e8g8 b2b4",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/1PPP4/2N1PN2/P4PPP/R1BQKB1R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2869"
+    },
+    {
+      "id": "record-3298",
+      "eco": "D94",
+      "name": "Grünfeld Defense: Opocensky Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Bd2",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 e2e3 e8g8 c1d2",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP4/2N1PN2/PP1B1PPP/R2QKB1R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2870"
+    },
+    {
+      "id": "record-3299",
+      "eco": "D94",
+      "name": "Grünfeld Defense: Smyslov Defense",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 g6 5. Nf3 Bg7 6. Bd3 O-O 7. O-O Bg4",
+      "uci": "d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 e2e3 g7g6 g1f3 f8g7 f1d3 e8g8 e1g1 c8g4",
+      "epd": "rn1q1rk1/pp2ppbp/2p2np1/3p4/2PP2b1/2NBPN2/PP3PPP/R1BQ1RK1 w - -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2871"
+    },
+    {
+      "id": "record-3300",
+      "eco": "D94",
+      "name": "Grünfeld Defense: Three Knights Variation, Burille Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 e2e3",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2872"
+    },
+    {
+      "id": "record-3301",
+      "eco": "D94",
+      "name": "Grünfeld Defense: Three Knights Variation, Paris Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Bd3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 e2e3 e8g8 f1d3",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2873"
+    },
+    {
+      "id": "record-3302",
+      "eco": "D95",
+      "name": "Grünfeld Defense: Botvinnik Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Qb3 e6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 e2e3 e8g8 d1b3 e7e6",
+      "epd": "rnbq1rk1/ppp2pbp/4pnp1/3p4/2PP4/1QN1PN2/PP3PPP/R1B1KB1R w KQ -",
+      "plyCount": 12,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 6
+      },
+      "lineId": "line-2874"
+    },
+    {
+      "id": "record-3303",
+      "eco": "D95",
+      "name": "Grünfeld Defense: Pachman Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 Bg7 5. Qb3 dxc4 6. Bxc4 O-O 7. Nf3 Nbd7 8. Ng5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 e2e3 f8g7 d1b3 d5c4 f1c4 e8g8 g1f3 b8d7 f3g5",
+      "epd": "r1bq1rk1/pppnppbp/5np1/6N1/2BP4/1QN1P3/PP3PPP/R1B1K2R b KQ -",
+      "plyCount": 15,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 7
+      },
+      "lineId": "line-2875"
+    },
+    {
+      "id": "record-3304",
+      "eco": "D95",
+      "name": "Grünfeld Defense: Three Knights Variation, Vienna Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Qb3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 e2e3 e8g8 d1b3",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP4/1QN1PN2/PP3PPP/R1B1KB1R b KQ -",
+      "plyCount": 11,
+      "playerMoveCounts": {
+        "white": 6,
+        "black": 5
+      },
+      "lineId": "line-2876"
+    },
+    {
+      "id": "record-3305",
+      "eco": "D96",
+      "name": "Grünfeld Defense: Russian Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/1QN2N2/PP2PPPP/R1B1KB1R b KQkq -",
+      "plyCount": 9,
+      "playerMoveCounts": {
+        "white": 5,
+        "black": 4
+      },
+      "lineId": "line-2877"
+    },
+    {
+      "id": "record-3306",
+      "eco": "D97",
+      "name": "Grünfeld Defense: Russian Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4",
+      "epd": "rnbq1rk1/ppp1ppbp/5np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R b KQ -",
+      "plyCount": 13,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 6
+      },
+      "lineId": "line-2877"
+    },
+    {
+      "id": "record-3307",
+      "eco": "D97",
+      "name": "Grünfeld Defense: Russian Variation, Byrne Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Nc6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 b8c6",
+      "epd": "r1bq1rk1/ppp1ppbp/2n2np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2878"
+    },
+    {
+      "id": "record-3308",
+      "eco": "D97",
+      "name": "Grünfeld Defense: Russian Variation, Hungarian Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 a6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 a7a6",
+      "epd": "rnbq1rk1/1pp1ppbp/p4np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2879"
+    },
+    {
+      "id": "record-3309",
+      "eco": "D97",
+      "name": "Grünfeld Defense: Russian Variation, Levenfish Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 b6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 b7b6",
+      "epd": "rnbq1rk1/p1p1ppbp/1p3np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2880"
+    },
+    {
+      "id": "record-3310",
+      "eco": "D97",
+      "name": "Grünfeld Defense: Russian Variation, Prins Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Na6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 b8a6",
+      "epd": "r1bq1rk1/ppp1ppbp/n4np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2881"
+    },
+    {
+      "id": "record-3311",
+      "eco": "D97",
+      "name": "Grünfeld Defense: Russian Variation, Szabo Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 c6",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 c7c6",
+      "epd": "rnbq1rk1/pp2ppbp/2p2np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2882"
+    },
+    {
+      "id": "record-3312",
+      "eco": "D98",
+      "name": "Grünfeld Defense: Russian Variation, Keres Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Bg4 8. Be3 Nfd7 9. Be2 Nb6 10. Qd3 Nc6 11. O-O-O",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 c8g4 c1e3 f6d7 f1e2 d7b6 c4d3 b8c6 e1c1",
+      "epd": "r2q1rk1/ppp1ppbp/1nn3p1/8/3PP1b1/2NQBN2/PP2BPPP/2KR3R b - -",
+      "plyCount": 21,
+      "playerMoveCounts": {
+        "white": 11,
+        "black": 10
+      },
+      "lineId": "line-2883"
+    },
+    {
+      "id": "record-3313",
+      "eco": "D98",
+      "name": "Grünfeld Defense: Russian Variation, Smyslov Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Bg4",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 c8g4",
+      "epd": "rn1q1rk1/ppp1ppbp/5np1/8/2QPP1b1/2N2N2/PP3PPP/R1B1KB1R w KQ -",
+      "plyCount": 14,
+      "playerMoveCounts": {
+        "white": 7,
+        "black": 7
+      },
+      "lineId": "line-2884"
+    },
+    {
+      "id": "record-3314",
+      "eco": "D99",
+      "name": "Grünfeld Defense: Russian Variation, Smyslov Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Bg4 8. Be3 Nfd7 9. Qb3",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 c8g4 c1e3 f6d7 c4b3",
+      "epd": "rn1q1rk1/pppnppbp/6p1/8/3PP1b1/1QN1BN2/PP3PPP/R3KB1R b KQ -",
+      "plyCount": 17,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 8
+      },
+      "lineId": "line-2884"
+    },
+    {
+      "id": "record-3315",
+      "eco": "D99",
+      "name": "Grünfeld Defense: Russian Variation, Yugoslav Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Bg4 8. Be3 Nfd7 9. Qb3 c5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4 b3c4 e8g8 e2e4 c8g4 c1e3 f6d7 c4b3 c7c5",
+      "epd": "rn1q1rk1/pp1nppbp/6p1/2p5/3PP1b1/1QN1BN2/PP3PPP/R3KB1R w KQ -",
+      "plyCount": 18,
+      "playerMoveCounts": {
+        "white": 9,
+        "black": 9
+      },
+      "lineId": "line-2885"
+    },
+    {
+      "id": "record-3518",
+      "eco": "E60",
+      "name": "Grünfeld Defense: Counterthrust Variation",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 d5",
+      "uci": "d2d4 g8f6 c2c4 g7g6 g2g3 f8g7 f1g2 d7d5",
+      "epd": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/6P1/PP2PPBP/RNBQK1NR w KQkq -",
+      "plyCount": 8,
+      "playerMoveCounts": {
+        "white": 4,
+        "black": 4
+      },
+      "lineId": "line-3034"
+    },
+    {
+      "id": "record-658",
+      "eco": "A56",
+      "name": "Grünfeld Defense: Three Knights Variation, Burille Variation, Reversed Tarrasch",
+      "family": "Grünfeld Defense",
+      "pgn": "1. d4 Nf6 2. c4 c5 3. e3 g6 4. Nc3 Bg7 5. Nf3 O-O 6. Be2 cxd4 7. exd4 d5 8. O-O Nc6",
+      "uci": "d2d4 g8f6 c2c4 c7c5 e2e3 g7g6 b1c3 f8g7 g1f3 e8g8 f1e2 c5d4 e3d4 d7d5 e1g1 b8c6",
+      "epd": "r1bq1rk1/pp2ppbp/2n2np1/3p4/2PP4/2N2N2/PP2BPPP/R1BQ1RK1 w - -",
+      "plyCount": 16,
+      "playerMoveCounts": {
+        "white": 8,
+        "black": 8
+      },
+      "lineId": "line-563"
+    }
+  ]
+}
