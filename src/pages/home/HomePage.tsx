@@ -794,9 +794,6 @@ const Index = () => {
                   <h1 className="animate-fade-up delay-100 text-display-balance text-[clamp(2.25rem,4.5vw,4rem)] font-semibold leading-[0.92] text-foreground xl:text-[clamp(2.75rem,5vw,4.5rem)]">
                     Blindchess.org
                   </h1>
-                  <p className="animate-fade-up delay-200 max-w-md text-sm leading-relaxed text-muted-foreground lg:text-base">
-                    Train your visualization by playing games, solving puzzles, and drilling openings — all without seeing the pieces.
-                  </p>
                 </div>
 
                 <div className="animate-fade-up delay-300">
