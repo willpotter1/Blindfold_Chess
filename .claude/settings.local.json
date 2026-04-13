@@ -21,7 +21,9 @@
       "Bash(xargs kill:*)",
       "Bash(fuser -k 8787/tcp)",
       "Bash(npx skills:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(npm install:*)",
+      "Bash(npm ls:*)"
     ]
   }
 }
