@@ -23,7 +23,8 @@
       "Bash(npx skills:*)",
       "Bash(gh api:*)",
       "Bash(npm install:*)",
-      "Bash(npm ls:*)"
+      "Bash(npm ls:*)",
+      "Bash(node -e ':*)"
     ]
   }
 }
