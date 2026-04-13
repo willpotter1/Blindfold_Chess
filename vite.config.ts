@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
    * keeps assets and web workers loading regardless of host, while dev
    * keeps the default "/" for simplicity.
    */
-  base: mode === "production" ? "./" : "/",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
