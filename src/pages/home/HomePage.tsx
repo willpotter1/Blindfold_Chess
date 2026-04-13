@@ -5,6 +5,7 @@ import { useGameState, type GameStartSeed } from "@/hooks/useGameState";
 import { getEngineMove } from "@/lib/chessEngine/getEngineMove";
 import { BlindfoldBoard } from "@/components/BlindfoldBoard";
 import { LandingOperaReplay } from "@/components/LandingOperaReplay";
+import { RotatingQuote } from "@/components/RotatingQuote";
 import { MoveInput } from "@/components/MoveInput";
 import { MoveList } from "@/components/MoveList";
 import { StatusBar } from "@/components/StatusBar";
@@ -798,14 +799,9 @@ const Index = () => {
                   </p>
                 </div>
 
-                <blockquote className="animate-fade-up delay-300 border-l-2 border-muted-foreground/20 pl-4">
-                  <p className="text-sm italic leading-relaxed text-muted-foreground">
-                    &ldquo;Calculation is visualization.&rdquo;
-                  </p>
-                  <footer className="mt-1.5 text-xs font-medium text-muted-foreground/50">
-                    Garry Kasparov
-                  </footer>
-                </blockquote>
+                <div className="animate-fade-up delay-300">
+                  <RotatingQuote />
+                </div>
 
                 <div id="game-config-panel" className="animate-fade-up delay-400">
                   <GameConfigPanel
