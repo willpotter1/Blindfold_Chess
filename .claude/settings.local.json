@@ -24,7 +24,10 @@
       "Bash(gh api:*)",
       "Bash(npm install:*)",
       "Bash(npm ls:*)",
-      "Bash(node -e ':*)"
+      "Bash(node -e ':*)",
+      "Bash(npm uninstall:*)",
+      "Bash(node -e \"const pkg = require\\('./package.json'\\); console.log\\('Dependencies:', Object.keys\\(pkg.dependencies\\).length\\); console.log\\('DevDependencies:', Object.keys\\(pkg.devDependencies\\).length\\);\")",
+      "Bash(npm ci:*)"
     ]
   }
 }
