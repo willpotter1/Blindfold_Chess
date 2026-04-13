@@ -10,6 +10,7 @@ vi.mock('react-router-dom', () => ({
     </a>
   ),
   useLocation: () => ({ pathname: '/', search: '', hash: '', state: null, key: 'default' }),
+  useNavigate: () => () => {},
 }));
 
 const renderSidebar = (desktopMode = true) => renderToStaticMarkup(<AppSidebar desktopMode={desktopMode} />);

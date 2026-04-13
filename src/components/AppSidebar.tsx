@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useAuth } from '@/lib/authContext';
-import { Puzzle, Target, BookOpen, LogIn, UserPlus, User, Menu, X } from 'lucide-react';
+import { supabase } from '@/lib/supabase';
+import { Puzzle, Target, BookOpen, LogIn, LogOut, UserPlus, User, Menu, X } from 'lucide-react';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 type AppSidebarProps = {
@@ -26,6 +27,13 @@ export const AppSidebar = ({
   const [isAnimating, setIsAnimating] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleSignOut = useCallback(async () => {
+    if (!supabase) return;
+    await supabase.auth.signOut();
+    navigate('/');
+  }, [navigate]);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -102,19 +110,30 @@ export const AppSidebar = ({
             style={{ opacity: isAuthLoaded ? 1 : 0 }}
           >
             {!isAuthLoaded ? null : isAuthenticated ? (
-              <Link
-                to="/account"
-                className={cn(
-                  'flex w-full flex-col items-center gap-1 rounded-xl py-2.5 transition-colors',
-                  isActive('/account')
-                    ? 'bg-secondary text-foreground'
-                    : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
-                )}
-                title="Account"
-              >
-                <User size={20} strokeWidth={1.75} />
-                <span className="text-[0.6rem] font-medium leading-none">Account</span>
-              </Link>
+              <>
+                <Link
+                  to="/account"
+                  className={cn(
+                    'flex w-full flex-col items-center gap-1 rounded-xl py-2.5 transition-colors',
+                    isActive('/account')
+                      ? 'bg-secondary text-foreground'
+                      : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                  )}
+                  title="Account"
+                >
+                  <User size={20} strokeWidth={1.75} />
+                  <span className="text-[0.6rem] font-medium leading-none">Account</span>
+                </Link>
+                <button
+                  type="button"
+                  className="flex w-full flex-col items-center gap-1 rounded-xl py-2.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground"
+                  title="Sign Out"
+                  onClick={() => void handleSignOut()}
+                >
+                  <LogOut size={20} strokeWidth={1.75} />
+                  <span className="text-[0.6rem] font-medium leading-none">Sign Out</span>
+                </button>
+              </>
             ) : (
               <>
                 <Link
