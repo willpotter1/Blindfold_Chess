@@ -698,11 +698,7 @@ const Index = () => {
         )}
 
         {/* Move history */}
-        {showDesktopMoveHistory && (
-          <div className="min-h-0 flex-1">
-            <MoveList moves={gameState.moves} className="h-full min-h-0" />
-          </div>
-        )}
+        {showDesktopMoveHistory && <MoveList moves={gameState.moves} />}
 
       </div>
     );

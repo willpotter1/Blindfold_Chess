@@ -237,13 +237,10 @@ const Openings = () => {
         {renderRevealButton()}
 
         {showMoveHistory && (
-          <div className="min-h-0 flex-1">
-            <MoveList
-              moves={round.movesSan}
-              startingTurnColor="white"
-              className="h-full min-h-0"
-            />
-          </div>
+          <MoveList
+            moves={round.movesSan}
+            startingTurnColor="white"
+          />
         )}
       </div>
     );

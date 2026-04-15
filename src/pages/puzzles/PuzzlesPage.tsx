@@ -266,13 +266,10 @@ const Puzzles = () => {
 
           {/* Move history */}
           {showMoveHistory && (
-            <div className="min-h-0 flex-1">
-              <MoveList
-                moves={moves}
-                startingTurnColor={moveHistoryStartingTurnColor}
-                className="h-full min-h-0"
-              />
-            </div>
+            <MoveList
+              moves={moves}
+              startingTurnColor={moveHistoryStartingTurnColor}
+            />
           )}
         </div>
       );
