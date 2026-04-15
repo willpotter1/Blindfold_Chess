@@ -44,7 +44,13 @@ export const MoveList = ({ moves, startingTurnColor = 'white', className, compac
   const displayedMovePairs = isReversed ? [...movePairs].reverse() : movePairs;
 
   return (
-    <Card className={cn('flex h-[min(380px,42vh)] w-full min-h-0 flex-col bg-card', compact && 'h-full', className)}>
+    <Card
+      className={cn(
+        'flex w-full min-h-0 flex-col bg-card',
+        compact ? 'h-[min(280px,34vh)]' : 'h-[min(380px,42vh)]',
+        className,
+      )}
+    >
       <CardHeader className={cn('flex-row items-center justify-between space-y-0 px-5 py-4', compact && 'px-4 py-3')}>
         <CardTitle className={cn('text-[clamp(1.15rem,1.6vw,1.85rem)]', compact && 'text-sm font-semibold leading-none')}>Moves</CardTitle>
         <button
