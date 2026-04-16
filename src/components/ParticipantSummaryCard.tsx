@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { CapturedPieceDescriptor } from '@/lib/chess/material';
 import { cn } from '@/lib/utils';
 
@@ -8,8 +9,9 @@ export interface ParticipantSummaryCardModel {
   pieceColor: 'white' | 'black';
   capturedPieces: CapturedPieceDescriptor[];
   isToMove: boolean;
-  iconSrc: string;
+  iconSrc?: string;
   iconAlt: string;
+  icon?: ReactNode;
   materialAdvantage?: number;
 }
 
@@ -42,12 +44,26 @@ export const ParticipantSummaryCard = ({
     >
       {/* Top row: icon + name + to-move indicator */}
       <div className="flex items-center gap-2">
-        <img
-          src={compact ? pawnSrc : participant.iconSrc}
-          alt={compact ? `${pieceColorLabel} pawn` : participant.iconAlt}
-          className={cn('h-5 w-5 shrink-0 object-contain', compact && 'h-4 w-4')}
-          draggable={false}
-        />
+        {participant.icon ? (
+          <span
+            className={cn(
+              'flex shrink-0 items-center justify-center text-foreground',
+              compact
+                ? 'h-4 w-4 [&_svg]:h-4 [&_svg]:w-4'
+                : 'h-5 w-5 [&_svg]:h-5 [&_svg]:w-5',
+            )}
+            aria-label={participant.iconAlt}
+          >
+            {participant.icon}
+          </span>
+        ) : (
+          <img
+            src={compact ? pawnSrc : (participant.iconSrc ?? pawnSrc)}
+            alt={compact ? `${pieceColorLabel} pawn` : participant.iconAlt}
+            className={cn('h-5 w-5 shrink-0 object-contain', compact && 'h-4 w-4')}
+            draggable={false}
+          />
+        )}
         <span className={cn('text-xs font-semibold text-foreground', compact && 'text-[0.65rem]')}>
           {participant.label}
         </span>

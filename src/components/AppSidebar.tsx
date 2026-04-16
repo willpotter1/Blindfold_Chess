@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useAuth } from '@/lib/authContext';
 import { supabase } from '@/lib/supabase';
-import { Puzzle, Target, BookOpen, LogIn, LogOut, UserPlus, User, Menu, X } from 'lucide-react';
+import { Puzzle, Target, BookOpen, LogIn, LogOut, UserPlus, User, Menu, X, Swords } from 'lucide-react';
 import whitePawnLogo from '../../Visual/Whitepawn.png';
 
 type AppSidebarProps = {
@@ -191,11 +191,7 @@ export const AppSidebar = ({
             className="ml-auto flex items-center gap-1.5 transition-opacity duration-300"
             style={{ opacity: isAuthLoaded ? 1 : 0 }}
           >
-            {!isAuthLoaded ? null : isAuthenticated ? (
-              <Button asChild type="button" size="sm" className="h-8 rounded-lg bg-transparent px-3 text-xs text-foreground hover:bg-secondary">
-                <Link to="/account">Account</Link>
-              </Button>
-            ) : (
+            {!isAuthLoaded || isAuthenticated ? null : (
               <>
                 <Button asChild type="button" size="sm" className="h-7 rounded-md bg-transparent px-2.5 text-[0.7rem] text-muted-foreground hover:bg-secondary hover:text-foreground">
                   <Link to="/login">Log In</Link>
@@ -239,6 +235,19 @@ export const AppSidebar = ({
               <p className="mb-2 px-3 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/60">
                 Training
               </p>
+              <Link
+                to="/"
+                className={cn(
+                  'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
+                  location.pathname === '/' || location.pathname.startsWith('/game')
+                    ? 'bg-secondary text-foreground'
+                    : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
+                )}
+                onClick={closeMenu}
+              >
+                <Swords size={16} strokeWidth={1.75} />
+                Game
+              </Link>
               {NAV_ITEMS.map(({ path, label, icon: Icon }) => (
                 <Link
                   key={path}
@@ -257,58 +266,41 @@ export const AppSidebar = ({
               ))}
             </nav>
 
-            <div className="mx-3 my-2 h-px bg-border/50" />
-
-            {/* Account section */}
-            <div className="flex flex-col gap-0.5 p-3">
-              <p className="mb-2 px-3 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/60">
-                Account
-              </p>
-              {!isAuthLoaded ? null : isAuthenticated ? (
-                <Link
-                  to="/account"
-                  className={cn(
-                    'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
-                    isActive('/account')
-                      ? 'bg-secondary text-foreground'
-                      : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
-                  )}
-                  onClick={closeMenu}
-                >
-                  <User size={16} strokeWidth={1.75} />
-                  Account
-                </Link>
-              ) : (
-                <>
+            {/* Account section — only when signed in */}
+            {isAuthLoaded && isAuthenticated && (
+              <>
+                <div className="mx-3 my-2 h-px bg-border/50" />
+                <div className="flex flex-col gap-0.5 p-3">
+                  <p className="mb-2 px-3 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/60">
+                    Account
+                  </p>
                   <Link
-                    to="/login"
+                    to="/account"
                     className={cn(
                       'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
-                      isActive('/login')
+                      isActive('/account')
                         ? 'bg-secondary text-foreground'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
                     )}
                     onClick={closeMenu}
                   >
-                    <LogIn size={16} strokeWidth={1.75} />
-                    Log In
+                    <User size={16} strokeWidth={1.75} />
+                    Account
                   </Link>
-                  <Link
-                    to="/signup"
-                    className={cn(
-                      'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors',
-                      isActive('/signup')
-                        ? 'bg-secondary text-foreground'
-                        : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
-                    )}
-                    onClick={closeMenu}
+                  <button
+                    type="button"
+                    className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground"
+                    onClick={() => {
+                      closeMenu();
+                      void handleSignOut();
+                    }}
                   >
-                    <UserPlus size={16} strokeWidth={1.75} />
-                    Sign Up
-                  </Link>
-                </>
-              )}
-            </div>
+                    <LogOut size={16} strokeWidth={1.75} />
+                    Log Out
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         </div>
       )}

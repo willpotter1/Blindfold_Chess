@@ -30,7 +30,8 @@
       "Bash(npm ci:*)",
       "Bash(node -e \" const lock = require\\('./package-lock.json'\\); const pkgs = Object.keys\\(lock.packages\\).filter\\(k => k !== ''\\); const firebase = pkgs.filter\\(k => k.includes\\('firebase'\\)\\); console.log\\('Firebase-related packages:', firebase.length\\); console.log\\(\\); // Check what firebase is used for \")",
       "Bash(cat .github/workflows/*.yml)",
-      "Bash(ls .github/workflows/)"
+      "Bash(ls .github/workflows/)",
+      "Bash(npx vitest *)"
     ]
   }
 }

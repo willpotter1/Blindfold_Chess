@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useState } from "react";
-import { RotateCcw, Settings, ExternalLink, Copy, Download } from "lucide-react";
+import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { Bot, RotateCcw, Settings, ExternalLink, Copy, Download, User } from "lucide-react";
 import { Chess, type Square } from "chess.js";
 import { useGameState, type GameStartSeed } from "@/hooks/useGameState";
 import { getEngineMove } from "@/lib/chessEngine/getEngineMove";
@@ -36,8 +36,6 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { AppSidebar } from "@/components/AppSidebar";
 import { useDesktopGameLayout } from "@/hooks/useDesktopGameLayout";
 import { exportPgnToChessCom, exportPgnToLichess } from "@/lib/pgnExport";
-import computerIcon from "../../../Visual/robohead.png";
-import playerIcon from "../../../Visual/BBpawn.png";
 import whitePlayerIcon from "../../../Visual/Whitepawn.png";
 import blackPlayerIcon from "../../../Visual/Blackpawn.png";
 
@@ -56,8 +54,9 @@ type GameConfigState = {
 type ParticipantDescriptor = {
   label: string;
   pieceColor: PieceColor;
-  iconSrc: string;
+  iconSrc?: string;
   iconAlt: string;
+  icon?: ReactNode;
   materialAdvantage: number;
 };
 
@@ -88,6 +87,7 @@ const buildParticipantSummary = (
   isToMove: !gameState.isOver && gameState.turnColor === participant.pieceColor,
   iconSrc: participant.iconSrc,
   iconAlt: participant.iconAlt,
+  icon: participant.icon,
   materialAdvantage: participant.materialAdvantage,
 });
 
@@ -114,7 +114,7 @@ const getParticipantSummaries = (gameState: GameState) => {
         {
           label: "Computer",
           pieceColor: computerColor,
-          iconSrc: computerIcon,
+          icon: <Bot size={20} strokeWidth={2} aria-hidden />,
           iconAlt: "Computer icon",
           materialAdvantage:
             computerColor === "white"
@@ -128,7 +128,7 @@ const getParticipantSummaries = (gameState: GameState) => {
         {
           label: "Player",
           pieceColor: gameState.playerColor,
-          iconSrc: playerIcon,
+          icon: <User size={20} strokeWidth={2} aria-hidden />,
           iconAlt: "Player icon",
           materialAdvantage:
             gameState.playerColor === "white"
@@ -537,16 +537,21 @@ const Index = () => {
     gameState && (gameState.isOver || !gameState.hideMoveHistory),
   );
 
-  const renderRevealButton = (className: string) => {
+  const renderRevealButton = (
+    className: string,
+    variant: "desktop" | "mobile" = "mobile",
+  ) => {
     if (!gameState || gameState.isOver || !gameState.allowCheats) {
       return null;
     }
+
+    const isDesktop = variant === "desktop";
 
     return (
       <Button
         type="button"
         variant="outline"
-        className={className}
+        className={`${isDesktop ? "flex-col gap-0.5 py-2" : ""} ${className}`}
         onPointerDown={() => setIsManualBoardReveal(true)}
         onPointerUp={() => setIsManualBoardReveal(false)}
         onPointerLeave={() => setIsManualBoardReveal(false)}
@@ -565,10 +570,18 @@ const Index = () => {
         onBlur={() => setIsManualBoardReveal(false)}
       >
         <span>Show Board</span>
-        <span className="mx-1.5 text-[0.6rem] text-muted-foreground/40">or press</span>
-        <kbd className="rounded border border-border/50 bg-secondary px-1.5 py-0.5 text-[0.6rem] font-mono leading-none text-muted-foreground">
-          Space
-        </kbd>
+        {isDesktop && (
+          <>
+            <span className="flex items-center justify-center gap-2 text-[0.6rem] text-muted-foreground/40">
+              <span className="h-px w-8 bg-muted-foreground/30" />
+              <span>or press</span>
+              <span className="h-px w-8 bg-muted-foreground/30" />
+            </span>
+            <kbd className="rounded border border-border/50 bg-secondary px-1.5 py-0.5 text-[0.6rem] font-mono leading-none text-muted-foreground">
+              Space
+            </kbd>
+          </>
+        )}
       </Button>
     );
   };
@@ -613,10 +626,25 @@ const Index = () => {
       );
     }
 
+    const mobileRevealButtonClassName =
+      "w-full h-full min-h-9 border border-border/50 bg-card text-xs text-muted-foreground hover:bg-secondary hover:text-foreground";
+    const showMobileStatusAndRevealRow = shouldShowStatusBar || canReveal;
+
     return (
       <div className="space-y-3">
-        {shouldShowStatusBar && (
-          <StatusBar status={statusText} variant="compact" condensed />
+        {showMobileStatusAndRevealRow && (
+          <div
+            className={
+              shouldShowStatusBar && canReveal
+                ? "grid grid-cols-2 gap-2"
+                : "grid grid-cols-1"
+            }
+          >
+            {shouldShowStatusBar && (
+              <StatusBar status={statusText} variant="compact" condensed />
+            )}
+            {canReveal && renderRevealButton(mobileRevealButtonClassName)}
+          </div>
         )}
 
         <MoveInput
@@ -625,12 +653,6 @@ const Index = () => {
           errorMessage={moveError}
           variant="compact"
         />
-
-        {canReveal && (
-          renderRevealButton(
-            "w-full h-9 border border-border/50 bg-card text-xs text-muted-foreground hover:bg-secondary hover:text-foreground",
-          )
-        )}
 
         {!gameState.hideMoveHistory && (
           <MoveList moves={gameState.moves} compact />
@@ -646,17 +668,29 @@ const Index = () => {
 
     const canReveal = !gameState.isOver && gameState.allowCheats;
 
+    const revealButtonClassName =
+      "w-full h-full min-h-9 border border-border/50 bg-card text-xs text-muted-foreground hover:bg-secondary hover:text-foreground";
+    const showStatusAndRevealRow = shouldShowStatusBar || canReveal;
+
     return (
       <div className="flex h-full flex-col gap-2.5">
-        {/* Opponent + Player side by side */}
-        <div className="grid grid-cols-2 gap-2">
-          <ParticipantSummaryCard participant={participantSummaries.top} />
-          <ParticipantSummaryCard participant={participantSummaries.bottom} />
-        </div>
+        {/* Opponent at the top */}
+        <ParticipantSummaryCard participant={participantSummaries.top} />
 
-        {/* Status */}
-        {shouldShowStatusBar && (
-          <StatusBar status={statusText} variant="compact" />
+        {/* Status + Show Board side by side */}
+        {showStatusAndRevealRow && (
+          <div
+            className={
+              shouldShowStatusBar && canReveal
+                ? "grid grid-cols-2 gap-2"
+                : "grid grid-cols-1"
+            }
+          >
+            {shouldShowStatusBar && (
+              <StatusBar status={statusText} variant="compact" />
+            )}
+            {canReveal && renderRevealButton(revealButtonClassName, "desktop")}
+          </div>
         )}
 
         {/* Controls */}
@@ -684,21 +718,19 @@ const Index = () => {
             </div>
           </div>
         ) : (
-          <div className="space-y-2.5">
-            <MoveInput
-              onSubmitMove={handlePlayerMove}
-              disabled={!isHumanTurn}
-              errorMessage={moveError}
-              variant="compact"
-            />
-            {canReveal && renderRevealButton(
-              "w-full h-9 border border-border/50 bg-card text-xs text-muted-foreground hover:bg-secondary hover:text-foreground",
-            )}
-          </div>
+          <MoveInput
+            onSubmitMove={handlePlayerMove}
+            disabled={!isHumanTurn}
+            errorMessage={moveError}
+            variant="compact"
+          />
         )}
 
         {/* Move history */}
         {showDesktopMoveHistory && <MoveList moves={gameState.moves} />}
+
+        {/* Player at the bottom, below moves */}
+        <ParticipantSummaryCard participant={participantSummaries.bottom} />
 
       </div>
     );
@@ -725,10 +757,10 @@ const Index = () => {
         {gameState ? (
           <div className={showDesktopGameLayout ? "h-full" : ""}>
             {showDesktopGameLayout ? (
-              <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-center px-4">
-                <div className="grid w-full items-center gap-5 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] xl:gap-8">
+              <div className="mx-auto flex h-full w-full max-w-[1600px] items-center justify-center px-4">
+                <div className="grid w-full items-center gap-5 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)] xl:gap-8">
                   <div className="flex items-center justify-center">
-                    <div className="w-full max-w-[min(75vh,700px)] xl:max-w-[min(80vh,780px)]">
+                    <div className="w-full max-w-[min(88vh,820px)] xl:max-w-[min(92vh,960px)]">
                       <BlindfoldBoard
                         fen={gameState.fen}
                         perspective={boardPerspective}

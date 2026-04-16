@@ -372,9 +372,9 @@ const Puzzles = () => {
       <AppSidebar />
 
       <div className="min-h-0 px-4 py-4 pb-8 md:flex-1 lg:py-0 lg:pb-0">
-        <div className="mx-auto w-full max-w-xl grid grid-cols-1 gap-4 md:max-w-2xl lg:max-w-7xl lg:h-[calc(100vh-2rem)] lg:my-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-center lg:gap-5 xl:gap-8">
+        <div className="mx-auto w-full max-w-xl grid grid-cols-1 gap-4 md:max-w-2xl lg:max-w-[1600px] lg:h-[calc(100vh-2rem)] lg:my-4 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)] lg:items-center lg:gap-5 xl:gap-8">
           <div className="flex items-center justify-center">
-            <div className="w-full max-w-sm md:max-w-md lg:max-w-[min(75vh,700px)] xl:max-w-[min(80vh,780px)]">
+            <div className="w-full max-w-sm md:max-w-md lg:max-w-[min(88vh,820px)] xl:max-w-[min(92vh,960px)]">
               {renderBoardOrPlaceholder(isSessionActive)}
             </div>
           </div>

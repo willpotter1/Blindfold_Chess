@@ -132,9 +132,9 @@ const Drills = () => {
       <AppSidebar />
 
       <div className="min-h-0 px-4 py-4 pb-8 md:flex-1 lg:py-0 lg:pb-0">
-        <div className="mx-auto w-full max-w-xl grid grid-cols-1 gap-4 md:max-w-2xl lg:max-w-7xl lg:h-[calc(100vh-2rem)] lg:my-4 lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)] lg:items-center lg:gap-5 xl:gap-8">
+        <div className="mx-auto w-full max-w-xl grid grid-cols-1 gap-4 md:max-w-2xl lg:max-w-[1600px] lg:h-[calc(100vh-2rem)] lg:my-4 lg:grid-cols-[minmax(0,1.9fr)_minmax(0,1fr)] lg:items-center lg:gap-5 xl:gap-8">
           <div className="flex items-center justify-center">
-            <div className="w-full md:max-w-lg lg:max-w-[min(82vh,820px)] xl:max-w-[min(88vh,880px)]">
+            <div className="w-full md:max-w-lg lg:max-w-[min(90vh,900px)] xl:max-w-[min(94vh,980px)]">
               <VisionBoard
                 perspective={config.perspective}
                 showCoordinates={config.showCoordinates}
